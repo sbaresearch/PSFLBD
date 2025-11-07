@@ -1,0 +1,78 @@
+2025-12-22 09:53:05,946 [MainThread  ] [INFO ]  Namespace(data='cifar10', num_agents=20, agent_frac=1.0, num_corrupt=4, rounds=100, local_ep=2, bs=64, client_lr=0.1, server_lr=1, target_class=7, poison_frac=0.3, pattern_type='plus', theta=8, theta_ld=10, snap=1, device=device(type='cuda', index=0), num_workers=0, dense_ratio=0.25, anneal_factor=0.0001, se_threshold=0.0001, non_iid=False, debug=False, beta=0.5, attack='DBA', aggr='alignins', lr_decay=0.99, momentum=0.0, mask_init='ERK', wd=0.0001, same_mask=1, cease_poison=100000, exp_name_extra='', super_power=False, clean=False, sparsity=0.3, lambda_s=1.0, lambda_c=1.0, num_target=10, exp_name='iid_pr(0.3)')
+2025-12-22 09:53:08,713 [MainThread  ] [INFO ]  build client:0 mal:1 data_num:2500
+2025-12-22 09:53:08,802 [MainThread  ] [INFO ]  build client:1 mal:1 data_num:2500
+2025-12-22 09:53:08,891 [MainThread  ] [INFO ]  build client:2 mal:1 data_num:2500
+2025-12-22 09:53:08,980 [MainThread  ] [INFO ]  build client:3 mal:1 data_num:2500
+2025-12-22 09:53:08,985 [MainThread  ] [INFO ]  build client:4 mal:0 data_num:2500
+2025-12-22 09:53:08,991 [MainThread  ] [INFO ]  build client:5 mal:0 data_num:2500
+2025-12-22 09:53:08,996 [MainThread  ] [INFO ]  build client:6 mal:0 data_num:2500
+2025-12-22 09:53:09,001 [MainThread  ] [INFO ]  build client:7 mal:0 data_num:2500
+2025-12-22 09:53:09,006 [MainThread  ] [INFO ]  build client:8 mal:0 data_num:2500
+2025-12-22 09:53:09,138 [MainThread  ] [INFO ]  build client:9 mal:0 data_num:2500
+2025-12-22 09:53:09,143 [MainThread  ] [INFO ]  build client:10 mal:0 data_num:2500
+2025-12-22 09:53:09,149 [MainThread  ] [INFO ]  build client:11 mal:0 data_num:2500
+2025-12-22 09:53:09,154 [MainThread  ] [INFO ]  build client:12 mal:0 data_num:2500
+2025-12-22 09:53:09,159 [MainThread  ] [INFO ]  build client:13 mal:0 data_num:2500
+2025-12-22 09:53:09,164 [MainThread  ] [INFO ]  build client:14 mal:0 data_num:2500
+2025-12-22 09:53:09,169 [MainThread  ] [INFO ]  build client:15 mal:0 data_num:2500
+2025-12-22 09:53:09,175 [MainThread  ] [INFO ]  build client:16 mal:0 data_num:2500
+2025-12-22 09:53:09,180 [MainThread  ] [INFO ]  build client:17 mal:0 data_num:2500
+2025-12-22 09:53:09,185 [MainThread  ] [INFO ]  build client:18 mal:0 data_num:2500
+2025-12-22 09:53:09,190 [MainThread  ] [INFO ]  build client:19 mal:0 data_num:2500
+2025-12-22 09:53:09,190 [MainThread  ] [INFO ]  --------round 1 ------------
+Files already downloaded and verified
+Files already downloaded and verified
+local epoch 0 	 client: 0 	 mal: 1 	 loss: 4.34874487 	 time: 1.47
+local epoch 1 	 client: 0 	 mal: 1 	 loss: 5.46432590 	 time: 1.11
+local epoch 0 	 client: 1 	 mal: 1 	 loss: 4.80862904 	 time: 1.11
+local epoch 1 	 client: 1 	 mal: 1 	 loss: 2.31833982 	 time: 1.11
+local epoch 0 	 client: 2 	 mal: 1 	 loss: 4.35879898 	 time: 1.11
+local epoch 1 	 client: 2 	 mal: 1 	 loss: 4.77603292 	 time: 1.11
+local epoch 0 	 client: 3 	 mal: 1 	 loss: 4.88812637 	 time: 1.11
+local epoch 1 	 client: 3 	 mal: 1 	 loss: 2.96007848 	 time: 1.11
+local epoch 0 	 client: 4 	 mal: 0 	 loss: 4.64358377 	 time: 1.11
+local epoch 1 	 client: 4 	 mal: 0 	 loss: 2.40339160 	 time: 1.11
+local epoch 0 	 client: 5 	 mal: 0 	 loss: 3.89972162 	 time: 1.11
+local epoch 1 	 client: 5 	 mal: 0 	 loss: 4.55888033 	 time: 1.11
+local epoch 0 	 client: 6 	 mal: 0 	 loss: 6.28273678 	 time: 1.11
+local epoch 1 	 client: 6 	 mal: 0 	 loss: 2.68058062 	 time: 1.11
+local epoch 0 	 client: 7 	 mal: 0 	 loss: 4.27148676 	 time: 1.11
+local epoch 1 	 client: 7 	 mal: 0 	 loss: 6.03399801 	 time: 1.11
+local epoch 0 	 client: 8 	 mal: 0 	 loss: 3.97084498 	 time: 1.02
+local epoch 1 	 client: 8 	 mal: 0 	 loss: 3.15838146 	 time: 1.01
+Traceback (most recent call last):
+  File "/newstorage4/maleksic/fl-backdoors/AlignIns/src/federated.py", line 319, in <module>
+    update = agents[agent_id].local_train(
+  File "/newstorage4/maleksic/fl-backdoors/AlignIns/src/agent.py", line 65, in local_train
+    for i, (inputs, labels) in enumerate(self.train_loader):
+  File "/newstorage4/maleksic/fl-backdoors/env/lib/python3.10/site-packages/torch/utils/data/dataloader.py", line 701, in __next__
+    data = self._next_data()
+  File "/newstorage4/maleksic/fl-backdoors/env/lib/python3.10/site-packages/torch/utils/data/dataloader.py", line 757, in _next_data
+    data = self._dataset_fetcher.fetch(index)  # may raise StopIteration
+  File "/newstorage4/maleksic/fl-backdoors/env/lib/python3.10/site-packages/torch/utils/data/_utils/fetch.py", line 52, in fetch
+    data = [self.dataset[idx] for idx in possibly_batched_index]
+  File "/newstorage4/maleksic/fl-backdoors/env/lib/python3.10/site-packages/torch/utils/data/_utils/fetch.py", line 52, in <listcomp>
+    data = [self.dataset[idx] for idx in possibly_batched_index]
+  File "/newstorage4/maleksic/fl-backdoors/AlignIns/src/utils.py", line 60, in __getitem__
+    inp, target = self.dataset[self.idxs[item]]
+  File "/newstorage4/maleksic/fl-backdoors/env/lib/python3.10/site-packages/torchvision/datasets/cifar.py", line 119, in __getitem__
+    img = self.transform(img)
+  File "/newstorage4/maleksic/fl-backdoors/env/lib/python3.10/site-packages/torchvision/transforms/transforms.py", line 95, in __call__
+    img = t(img)
+  File "/newstorage4/maleksic/fl-backdoors/env/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1736, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+  File "/newstorage4/maleksic/fl-backdoors/env/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1747, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/newstorage4/maleksic/fl-backdoors/env/lib/python3.10/site-packages/torchvision/transforms/transforms.py", line 669, in forward
+    img = F.pad(img, self.padding, self.fill, self.padding_mode)
+  File "/newstorage4/maleksic/fl-backdoors/env/lib/python3.10/site-packages/torchvision/transforms/functional.py", line 526, in pad
+    return F_pil.pad(img, padding=padding, fill=fill, padding_mode=padding_mode)
+  File "/newstorage4/maleksic/fl-backdoors/env/lib/python3.10/site-packages/torchvision/transforms/_functional_pil.py", line 182, in pad
+    return ImageOps.expand(img, border=padding, **opts)
+  File "/newstorage4/maleksic/fl-backdoors/env/lib/python3.10/site-packages/PIL/ImageOps.py", line 414, in expand
+    out.paste(image, (left, top))
+  File "/newstorage4/maleksic/fl-backdoors/env/lib/python3.10/site-packages/PIL/Image.py", line 1728, in paste
+    self._ensure_mutable()
+  File "/newstorage4/maleksic/fl-backdoors/env/lib/python3.10/site-packages/PIL/Image.py", line 608, in _ensure_mutable
+    def _ensure_mutable(self):
+KeyboardInterrupt

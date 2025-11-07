@@ -1,0 +1,60 @@
+2026-01-20 12:12:59,869 [MainThread  ] [INFO ]  Namespace(data='mnist', num_agents=20, agent_frac=1.0, num_corrupt=4, rounds=25, local_ep=1, bs=64, client_lr=0.01, server_lr=0.01, target_class=7, poison_frac=0.3, pattern_type='plus', theta=8, theta_ld=10, snap=1, device='cuda:2', num_workers=0, dense_ratio=0.25, anneal_factor=0.0001, se_threshold=0.0001, non_iid=False, debug=False, beta=0.5, attack='DBA', aggr='alignins', aggr_server='alignins', lr_decay=0.99, momentum=0.9, mask_init='ERK', wd=0.0001, same_mask=1, cease_poison=100000, exp_name_extra='', super_power=False, clean=False, sparsity=0.3, lambda_s=1.0, lambda_c=1.0, split_point='layer2', num_target=10, exp_name='iid_pr(0.3)')
+25
+2026-01-20 12:13:04,154 [MainThread  ] [INFO ]  build client:0 mal:1 data_num:3006
+2026-01-20 12:13:04,209 [MainThread  ] [INFO ]  build client:1 mal:1 data_num:3005
+2026-01-20 12:13:04,258 [MainThread  ] [INFO ]  build client:2 mal:1 data_num:3003
+2026-01-20 12:13:04,313 [MainThread  ] [INFO ]  build client:3 mal:1 data_num:3002
+2026-01-20 12:13:04,325 [MainThread  ] [INFO ]  build client:4 mal:0 data_num:3002
+2026-01-20 12:13:04,338 [MainThread  ] [INFO ]  build client:5 mal:0 data_num:3001
+2026-01-20 12:13:04,351 [MainThread  ] [INFO ]  build client:6 mal:0 data_num:3001
+2026-01-20 12:13:04,364 [MainThread  ] [INFO ]  build client:7 mal:0 data_num:3001
+2026-01-20 12:13:04,377 [MainThread  ] [INFO ]  build client:8 mal:0 data_num:3001
+2026-01-20 12:13:04,388 [MainThread  ] [INFO ]  build client:9 mal:0 data_num:3000
+2026-01-20 12:13:04,396 [MainThread  ] [INFO ]  build client:10 mal:0 data_num:3000
+2026-01-20 12:13:04,406 [MainThread  ] [INFO ]  build client:11 mal:0 data_num:2998
+2026-01-20 12:13:04,418 [MainThread  ] [INFO ]  build client:12 mal:0 data_num:2998
+2026-01-20 12:13:04,430 [MainThread  ] [INFO ]  build client:13 mal:0 data_num:2998
+2026-01-20 12:13:04,443 [MainThread  ] [INFO ]  build client:14 mal:0 data_num:2998
+2026-01-20 12:13:04,454 [MainThread  ] [INFO ]  build client:15 mal:0 data_num:2998
+2026-01-20 12:13:04,463 [MainThread  ] [INFO ]  build client:16 mal:0 data_num:2998
+2026-01-20 12:13:04,473 [MainThread  ] [INFO ]  build client:17 mal:0 data_num:2998
+2026-01-20 12:13:04,485 [MainThread  ] [INFO ]  build client:18 mal:0 data_num:2996
+2026-01-20 12:13:04,493 [MainThread  ] [INFO ]  build client:19 mal:0 data_num:2996
+2026-01-20 12:13:04,493 [MainThread  ] [INFO ]  --------round 1 ------------
+mean|client_grad| 0.01667068339884281
+local epoch 0 	 client: 0 	 mal: 1 	 loss: 1.95888805 	 time: 3.29
+local epoch 0 	 client: 1 	 mal: 1 	 loss: 1.90717018 	 time: 2.76
+local epoch 0 	 client: 2 	 mal: 1 	 loss: 2.01501489 	 time: 2.75
+local epoch 0 	 client: 3 	 mal: 1 	 loss: 2.14277244 	 time: 2.76
+local epoch 0 	 client: 4 	 mal: 0 	 loss: 2.03194904 	 time: 2.78
+local epoch 0 	 client: 5 	 mal: 0 	 loss: 2.28425002 	 time: 2.79
+local epoch 0 	 client: 6 	 mal: 0 	 loss: 2.28781986 	 time: 2.81
+local epoch 0 	 client: 7 	 mal: 0 	 loss: 2.29167938 	 time: 2.83
+local epoch 0 	 client: 8 	 mal: 0 	 loss: 2.28735256 	 time: 2.78
+local epoch 0 	 client: 9 	 mal: 0 	 loss: 2.28507781 	 time: 2.82
+local epoch 0 	 client: 10 	 mal: 0 	 loss: 2.29191351 	 time: 2.76
+local epoch 0 	 client: 11 	 mal: 0 	 loss: 2.28590178 	 time: 2.78
+local epoch 0 	 client: 12 	 mal: 0 	 loss: 2.24089098 	 time: 1.80
+local epoch 0 	 client: 13 	 mal: 0 	 loss: 2.06952691 	 time: 1.80
+local epoch 0 	 client: 14 	 mal: 0 	 loss: 2.29554558 	 time: 1.93
+local epoch 0 	 client: 15 	 mal: 0 	 loss: 2.28329468 	 time: 1.95
+local epoch 0 	 client: 16 	 mal: 0 	 loss: 2.28415728 	 time: 1.94
+local epoch 0 	 client: 17 	 mal: 0 	 loss: 2.27861452 	 time: 1.94
+local epoch 0 	 client: 18 	 mal: 0 	 loss: 2.28602910 	 time: 1.97
+local epoch 0 	 client: 19 	 mal: 0 	 loss: 2.26452875 	 time: 1.89
+2026-01-20 12:13:57,808 [MainThread  ] [INFO ]  TDA: [-0.039, -0.0402, -0.036, -0.0388, -0.0444, -0.0465, -0.0468, -0.0503, -0.0476, -0.0498, -0.0471, -0.05, -0.0503, -0.0362, -0.0523, -0.0466, -0.0481, -0.05, -0.046, -0.0519]
+2026-01-20 12:13:57,809 [MainThread  ] [INFO ]  MPSA: [0.9269, 0.9319, 0.9215, 0.9255, 0.8026, 0.9824, 0.9713, 0.9819, 0.976, 0.9808, 0.9795, 0.9807, 0.9368, 0.7989, 0.9792, 0.962, 0.9794, 0.9343, 0.9563, 0.9372]
+2026-01-20 12:13:57,810 [MainThread  ] [INFO ]  MZ-score of MPSA: [0.6207, 0.5245, 0.7239, 0.6465, 3.0109, 0.4474, 0.2343, 0.4382, 0.3243, 0.4156, 0.3917, 0.4132, 0.4299, 3.0819, 0.3853, 0.0546, 0.3891, 0.478, 0.0546, 0.4226]
+2026-01-20 12:13:57,811 [MainThread  ] [INFO ]  MZ-score of TDA: [1.6001, 1.3491, 2.202, 1.6285, 0.5083, 0.0962, 0.0334, 0.6685, 0.1242, 0.5617, 0.0334, 0.612, 0.6558, 2.1499, 1.0686, 0.074, 0.2159, 0.6098, 0.1992, 0.9832]
+2026-01-20 12:13:57,827 [MainThread  ] [INFO ]  benign update index:   [4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19]
+2026-01-20 12:13:57,827 [MainThread  ] [INFO ]  selected update index: [5, 6, 7, 8, 9, 10, 11, 12, 15, 16, 17, 18, 19]
+2026-01-20 12:13:57,827 [MainThread  ] [INFO ]  FPR:       0.0000
+2026-01-20 12:13:57,827 [MainThread  ] [INFO ]  TPR:       0.8125
+Traceback (most recent call last):
+  File "/newstorage4/maleksic/fl-backdoors/AlignIns/src/sfl.py", line 442, in <module>
+    main_server.aggregate_server_updates_round(
+  File "/newstorage4/maleksic/fl-backdoors/AlignIns/src/models.py", line 367, in aggregate_server_updates_round
+    S = self._sgn(V)  # [n, d]
+  File "/newstorage4/maleksic/fl-backdoors/AlignIns/src/models.py", line 286, in _sgn
+    return torch.sign(v)
+torch.OutOfMemoryError: CUDA out of memory. Tried to allocate 802.00 MiB. GPU 2 has a total capacity of 10.91 GiB of which 224.06 MiB is free. Process 5874 has 6.00 GiB memory in use. Including non-PyTorch memory, this process has 4.69 GiB memory in use. Of the allocated memory 4.13 GiB is allocated by PyTorch, and 397.31 MiB is reserved by PyTorch but unallocated. If reserved but unallocated memory is large try setting PYTORCH_CUDA_ALLOC_CONF=expandable_segments:True to avoid fragmentation.  See documentation for Memory Management  (https://pytorch.org/docs/stable/notes/cuda.html#environment-variables)

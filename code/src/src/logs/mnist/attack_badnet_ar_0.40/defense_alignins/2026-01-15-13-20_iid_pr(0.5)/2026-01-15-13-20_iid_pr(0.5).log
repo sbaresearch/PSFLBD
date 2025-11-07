@@ -1,0 +1,49 @@
+2026-01-15 13:20:49,348 [MainThread  ] [INFO ]  Namespace(data='mnist', num_agents=5, agent_frac=1.0, num_corrupt=2, rounds=25, local_ep=1, bs=64, client_lr=0.01, server_lr=0.01, target_class=7, poison_frac=0.5, pattern_type='plus', theta=8, theta_ld=10, snap=1, device='cuda:3', num_workers=0, dense_ratio=0.25, anneal_factor=0.0001, se_threshold=0.0001, non_iid=False, debug=False, beta=0.5, attack='badnet', aggr='alignins', lr_decay=0.99, momentum=0.9, mask_init='ERK', wd=0.0001, same_mask=1, cease_poison=100000, exp_name_extra='', super_power=False, clean=False, sparsity=0.3, lambda_s=1.0, lambda_c=1.0, num_target=10, exp_name='iid_pr(0.5)')
+2026-01-15 13:20:51,332 [MainThread  ] [INFO ]  build client:0 mal:1 data_num:12005
+2026-01-15 13:20:51,584 [MainThread  ] [INFO ]  build client:1 mal:1 data_num:12002
+2026-01-15 13:20:51,612 [MainThread  ] [INFO ]  build client:2 mal:0 data_num:12000
+2026-01-15 13:20:51,638 [MainThread  ] [INFO ]  build client:3 mal:0 data_num:11997
+2026-01-15 13:20:51,664 [MainThread  ] [INFO ]  build client:4 mal:0 data_num:11996
+2026-01-15 13:20:51,664 [MainThread  ] [INFO ]  --------round 1 ------------
+2026-01-15 13:21:21,280 [MainThread  ] [INFO ]  TDA: [-0.0298, -0.0197, -0.0529, -0.0494, -0.0276]
+2026-01-15 13:21:21,281 [MainThread  ] [INFO ]  MPSA: [0.8882, 0.8656, 0.8545, 0.8535, 0.8763]
+2026-01-15 13:21:21,281 [MainThread  ] [INFO ]  MZ-score of MPSA: [1.7134, 0.0, 0.8348, 0.9124, 0.8095]
+2026-01-15 13:21:21,282 [MainThread  ] [INFO ]  MZ-score of TDA: [0.0, 0.7808, 1.7801, 1.5118, 0.1725]
+2026-01-15 13:21:21,297 [MainThread  ] [INFO ]  benign update index:   [2, 3, 4]
+2026-01-15 13:21:21,297 [MainThread  ] [INFO ]  selected update index: [1, 4]
+2026-01-15 13:21:21,297 [MainThread  ] [INFO ]  FPR:       0.5000
+2026-01-15 13:21:21,297 [MainThread  ] [INFO ]  TPR:       0.3333
+2026-01-15 13:21:21,390 [MainThread  ] [INFO ]  ---------Test 1 ------------
+2026-01-15 13:21:31,288 [MainThread  ] [INFO ]  Clean ACC:              0.1978
+2026-01-15 13:21:31,289 [MainThread  ] [INFO ]  Attack Success Ratio:   0.6526
+2026-01-15 13:21:31,289 [MainThread  ] [INFO ]  Robustness ACC:           0.0974
+2026-01-15 13:21:31,289 [MainThread  ] [INFO ]  ------------------------------
+2026-01-15 13:21:31,289 [MainThread  ] [INFO ]  --------round 2 ------------
+2026-01-15 13:22:00,704 [MainThread  ] [INFO ]  TDA: [0.0051, 0.0087, -0.0016, -0.0061, -0.0025]
+2026-01-15 13:22:00,705 [MainThread  ] [INFO ]  MPSA: [0.8916, 0.8816, 0.9783, 0.9366, 0.978]
+2026-01-15 13:22:00,706 [MainThread  ] [INFO ]  MZ-score of MPSA: [1.0962, 1.3379, 1.0141, 0.0, 1.0071]
+2026-01-15 13:22:00,706 [MainThread  ] [INFO ]  MZ-score of TDA: [1.2396, 1.917, 0.0, 0.831, 0.1687]
+2026-01-15 13:22:00,707 [MainThread  ] [INFO ]  benign update index:   [2, 3, 4]
+2026-01-15 13:22:00,707 [MainThread  ] [INFO ]  selected update index: [3]
+2026-01-15 13:22:00,707 [MainThread  ] [INFO ]  FPR:       0.0000
+2026-01-15 13:22:00,707 [MainThread  ] [INFO ]  TPR:       0.3333
+2026-01-15 13:22:00,746 [MainThread  ] [INFO ]  ---------Test 2 ------------
+2026-01-15 13:22:09,382 [MainThread  ] [INFO ]  Clean ACC:              0.5897
+2026-01-15 13:22:09,382 [MainThread  ] [INFO ]  Attack Success Ratio:   0.0976
+2026-01-15 13:22:09,382 [MainThread  ] [INFO ]  Robustness ACC:           0.5471
+2026-01-15 13:22:09,382 [MainThread  ] [INFO ]  ------------------------------
+2026-01-15 13:22:09,382 [MainThread  ] [INFO ]  --------round 3 ------------
+2026-01-15 13:22:39,564 [MainThread  ] [INFO ]  TDA: [0.0009, -0.0001, -0.0053, -0.0088, -0.0084]
+2026-01-15 13:22:39,564 [MainThread  ] [INFO ]  MPSA: [0.9304, 0.9331, 0.9914, 0.9924, 0.993]
+2026-01-15 13:22:39,565 [MainThread  ] [INFO ]  MZ-score of MPSA: [2.0562, 1.9674, 0.0, 0.0324, 0.0527]
+2026-01-15 13:22:39,565 [MainThread  ] [INFO ]  MZ-score of TDA: [1.5126, 1.27, 0.0, 0.8746, 0.7702]
+2026-01-15 13:22:39,567 [MainThread  ] [INFO ]  benign update index:   [2, 3, 4]
+2026-01-15 13:22:39,567 [MainThread  ] [INFO ]  selected update index: [2, 3, 4]
+2026-01-15 13:22:39,567 [MainThread  ] [INFO ]  FPR:       0.0000
+2026-01-15 13:22:39,567 [MainThread  ] [INFO ]  TPR:       1.0000
+2026-01-15 13:22:39,606 [MainThread  ] [INFO ]  ---------Test 3 ------------
+2026-01-15 13:22:48,278 [MainThread  ] [INFO ]  Clean ACC:              0.8417
+2026-01-15 13:22:48,278 [MainThread  ] [INFO ]  Attack Success Ratio:   0.1673
+2026-01-15 13:22:48,278 [MainThread  ] [INFO ]  Robustness ACC:           0.7278
+2026-01-15 13:22:48,278 [MainThread  ] [INFO ]  ------------------------------
+2026-01-15 13:22:48,278 [MainThread  ] [INFO ]  --------round 4 ------------

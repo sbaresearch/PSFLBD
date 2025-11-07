@@ -1,0 +1,12 @@
+25
+Sparsity of var:layers.1.weight had to be set to 0.
+Sparsity of var:layers.1.bias had to be set to 0.
+Sparsity of var:layers.4.0.bn1.weight had to be set to 0.
+Sparsity of var:layers.4.0.bn1.bias had to be set to 0.
+Sparsity of var:layers.4.0.bn2.weight had to be set to 0.
+Sparsity of var:layers.4.0.bn2.bias had to be set to 0.
+Sparsity of var:layers.4.1.bn1.weight had to be set to 0.
+Sparsity of var:layers.4.1.bn1.bias had to be set to 0.
+Sparsity of var:layers.4.1.bn2.weight had to be set to 0.
+Sparsity of var:layers.4.1.bn2.bias had to be set to 0.
+Sparsity of var:layers.0.weight had to be set to 0.

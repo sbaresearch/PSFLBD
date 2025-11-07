@@ -1,0 +1,32 @@
+program: sfl.py
+project: sfl-with-start-round
+
+method: grid
+
+parameters:
+  attack:
+    value: neurotoxin
+
+  data:
+    value: cifar10
+  
+  defense_start_round:
+    value: 50
+
+  num_agents:
+    value: 20
+
+  num_corrupt:
+    value: 4
+
+  target_class:
+    value: 7
+
+  poison_frac:
+    value: 0.5
+
+  aggr:
+    values: [mkrum, foolsgold, alignins, feddlad]
+  
+  aggr_server:
+    values: [alignins]

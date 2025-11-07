@@ -1,0 +1,3131 @@
+wandb: Currently logged in as: aleksic-milicica (aleksic-milicica-tu-wien). Use `wandb login --relogin` to force relogin
+wandb: wandb version 0.25.1 is available!  To upgrade, please run:
+wandb:  $ pip install wandb --upgrade
+wandb: Tracking run with wandb version 0.16.3
+wandb: Run data is saved locally in /newstorage4/maleksic/fl-backdoors/code/src/src_more/wandb/run-20260319_202418-8tqsuemj
+wandb: Run `wandb offline` to turn off syncing.
+wandb: Syncing run cifar10_alignment_avg_avg_baseline
+wandb: ⭐️ View project at https://wandb.ai/aleksic-milicica-tu-wien/split-fed-backdoor-3
+wandb: 🚀 View run at https://wandb.ai/aleksic-milicica-tu-wien/split-fed-backdoor-3/runs/8tqsuemj
+Files already downloaded and verified
+Files already downloaded and verified
+100
+local epoch 0 	 client: 0 	 mal: 1 	 loss: 0.05248637 	 time: 18.00
+local epoch 0 	 client: 1 	 mal: 1 	 loss: 0.02361166 	 time: 16.29
+local epoch 0 	 client: 2 	 mal: 0 	 loss: 2.30974674 	 time: 1.43
+local epoch 0 	 client: 3 	 mal: 0 	 loss: 2.23801708 	 time: 1.42
+local epoch 0 	 client: 4 	 mal: 0 	 loss: 2.25537658 	 time: 1.47
+local epoch 0 	 client: 5 	 mal: 0 	 loss: 2.18363070 	 time: 1.42
+local epoch 0 	 client: 6 	 mal: 0 	 loss: 2.25774336 	 time: 1.43
+local epoch 0 	 client: 7 	 mal: 0 	 loss: 2.22112560 	 time: 1.43
+local epoch 0 	 client: 8 	 mal: 0 	 loss: 2.22593212 	 time: 1.44
+local epoch 0 	 client: 9 	 mal: 0 	 loss: 2.25737524 	 time: 1.44
+local epoch 0 	 client: 10 	 mal: 0 	 loss: 2.27078867 	 time: 1.43
+local epoch 0 	 client: 11 	 mal: 0 	 loss: 2.29304743 	 time: 1.43
+local epoch 0 	 client: 12 	 mal: 0 	 loss: 2.27709627 	 time: 1.42
+local epoch 0 	 client: 13 	 mal: 0 	 loss: 2.27748489 	 time: 1.43
+local epoch 0 	 client: 14 	 mal: 0 	 loss: 2.26912022 	 time: 1.42
+local epoch 0 	 client: 15 	 mal: 0 	 loss: 2.25515652 	 time: 1.43
+local epoch 0 	 client: 16 	 mal: 0 	 loss: 2.24813557 	 time: 1.44
+local epoch 0 	 client: 17 	 mal: 0 	 loss: 2.26701450 	 time: 1.43
+local epoch 0 	 client: 18 	 mal: 0 	 loss: 2.26475811 	 time: 1.43
+local epoch 0 	 client: 19 	 mal: 0 	 loss: 2.29756999 	 time: 1.42
+
+[GRADIENT DEBUG Rnd 1]
+Avg Malicious Delta Norm: 0.910671
+Avg Honest Delta Norm:    0.245439
+Power Ratio (Mal/Hon):    3.7104
+[DBG rnd=1] logits mean=0.0199, std=0.2305, maxlogit mean=0.4336
+[DBG rnd=1] probs max mean=0.1478, pred entropy mean=2.2758
+[DBG rnd=1] preds bincount=[6, 0, 0, 0, 0, 0, 0, 58, 0, 0]
+Clean ACC:              0.1464
+Attack Success Ratio:   0.8520
+Robustness ACC:           0.0516
+local epoch 0 	 client: 0 	 mal: 1 	 loss: 0.01463891 	 time: 16.34
+local epoch 0 	 client: 1 	 mal: 1 	 loss: 0.01300211 	 time: 16.47
+local epoch 0 	 client: 2 	 mal: 0 	 loss: 2.19862127 	 time: 1.43
+local epoch 0 	 client: 3 	 mal: 0 	 loss: 2.12530422 	 time: 1.43
+local epoch 0 	 client: 4 	 mal: 0 	 loss: 2.18080854 	 time: 1.43
+local epoch 0 	 client: 5 	 mal: 0 	 loss: 2.13569212 	 time: 1.43
+local epoch 0 	 client: 6 	 mal: 0 	 loss: 2.21856833 	 time: 1.45
+local epoch 0 	 client: 7 	 mal: 0 	 loss: 2.17435575 	 time: 1.43
+local epoch 0 	 client: 8 	 mal: 0 	 loss: 2.10798883 	 time: 1.44
+local epoch 0 	 client: 9 	 mal: 0 	 loss: 2.17372012 	 time: 1.43
+local epoch 0 	 client: 10 	 mal: 0 	 loss: 2.19280219 	 time: 1.44
+local epoch 0 	 client: 11 	 mal: 0 	 loss: 2.17377067 	 time: 1.42
+local epoch 0 	 client: 12 	 mal: 0 	 loss: 2.24674702 	 time: 1.43
+local epoch 0 	 client: 13 	 mal: 0 	 loss: 2.39560938 	 time: 1.43
+local epoch 0 	 client: 14 	 mal: 0 	 loss: 2.13318825 	 time: 1.45
+local epoch 0 	 client: 15 	 mal: 0 	 loss: 2.17217946 	 time: 1.44
+local epoch 0 	 client: 16 	 mal: 0 	 loss: 2.04162264 	 time: 1.42
+local epoch 0 	 client: 17 	 mal: 0 	 loss: 2.22219706 	 time: 1.43
+local epoch 0 	 client: 18 	 mal: 0 	 loss: 2.28544903 	 time: 1.43
+local epoch 0 	 client: 19 	 mal: 0 	 loss: 2.13426876 	 time: 1.50
+
+[GRADIENT DEBUG Rnd 2]
+Avg Malicious Delta Norm: 0.091876
+Avg Honest Delta Norm:    0.122826
+Power Ratio (Mal/Hon):    0.7480
+[DBG rnd=2] logits mean=0.0255, std=0.3548, maxlogit mean=0.5333
+[DBG rnd=2] probs max mean=0.1584, pred entropy mean=2.2497
+[DBG rnd=2] preds bincount=[12, 0, 0, 0, 0, 0, 2, 46, 4, 0]
+Clean ACC:              0.1735
+Attack Success Ratio:   0.7428
+Robustness ACC:           0.0897
+local epoch 0 	 client: 0 	 mal: 1 	 loss: 0.02699214 	 time: 16.30
+local epoch 0 	 client: 1 	 mal: 1 	 loss: 0.05531891 	 time: 16.36
+local epoch 0 	 client: 2 	 mal: 0 	 loss: 2.23074222 	 time: 1.42
+local epoch 0 	 client: 3 	 mal: 0 	 loss: 2.39351082 	 time: 1.43
+local epoch 0 	 client: 4 	 mal: 0 	 loss: 2.16136861 	 time: 1.42
+local epoch 0 	 client: 5 	 mal: 0 	 loss: 2.22909951 	 time: 1.43
+local epoch 0 	 client: 6 	 mal: 0 	 loss: 2.18798208 	 time: 1.43
+local epoch 0 	 client: 7 	 mal: 0 	 loss: 2.15797925 	 time: 1.44
+local epoch 0 	 client: 8 	 mal: 0 	 loss: 2.02306485 	 time: 1.42
+local epoch 0 	 client: 9 	 mal: 0 	 loss: 2.13803387 	 time: 1.47
+local epoch 0 	 client: 10 	 mal: 0 	 loss: 2.40091896 	 time: 1.43
+local epoch 0 	 client: 11 	 mal: 0 	 loss: 2.19148707 	 time: 1.42
+local epoch 0 	 client: 12 	 mal: 0 	 loss: 2.20592213 	 time: 1.48
+local epoch 0 	 client: 13 	 mal: 0 	 loss: 2.26841664 	 time: 1.43
+local epoch 0 	 client: 14 	 mal: 0 	 loss: 2.11695814 	 time: 1.42
+local epoch 0 	 client: 15 	 mal: 0 	 loss: 2.09679222 	 time: 1.48
+local epoch 0 	 client: 16 	 mal: 0 	 loss: 2.08520365 	 time: 1.44
+local epoch 0 	 client: 17 	 mal: 0 	 loss: 2.08937168 	 time: 1.43
+local epoch 0 	 client: 18 	 mal: 0 	 loss: 2.15948462 	 time: 1.48
+local epoch 0 	 client: 19 	 mal: 0 	 loss: 2.03953195 	 time: 1.44
+
+[GRADIENT DEBUG Rnd 3]
+Avg Malicious Delta Norm: 0.572589
+Avg Honest Delta Norm:    0.132898
+Power Ratio (Mal/Hon):    4.3085
+[DBG rnd=3] logits mean=0.0320, std=0.5458, maxlogit mean=0.8851
+[DBG rnd=3] probs max mean=0.2108, pred entropy mean=2.1802
+[DBG rnd=3] preds bincount=[5, 0, 0, 0, 0, 0, 0, 50, 9, 0]
+Clean ACC:              0.1825
+Attack Success Ratio:   0.7640
+Robustness ACC:           0.0954
+local epoch 0 	 client: 0 	 mal: 1 	 loss: 0.05622580 	 time: 16.53
+local epoch 0 	 client: 1 	 mal: 1 	 loss: 0.06074117 	 time: 16.30
+local epoch 0 	 client: 2 	 mal: 0 	 loss: 2.01732445 	 time: 1.45
+local epoch 0 	 client: 3 	 mal: 0 	 loss: 2.15183783 	 time: 1.42
+local epoch 0 	 client: 4 	 mal: 0 	 loss: 2.06483316 	 time: 1.43
+local epoch 0 	 client: 5 	 mal: 0 	 loss: 2.06755209 	 time: 1.42
+local epoch 0 	 client: 6 	 mal: 0 	 loss: 2.26142502 	 time: 1.47
+local epoch 0 	 client: 7 	 mal: 0 	 loss: 2.05672479 	 time: 1.43
+local epoch 0 	 client: 8 	 mal: 0 	 loss: 2.08007407 	 time: 1.44
+local epoch 0 	 client: 9 	 mal: 0 	 loss: 2.28509307 	 time: 1.49
+local epoch 0 	 client: 10 	 mal: 0 	 loss: 2.28445363 	 time: 1.42
+local epoch 0 	 client: 11 	 mal: 0 	 loss: 2.10467768 	 time: 1.42
+local epoch 0 	 client: 12 	 mal: 0 	 loss: 2.10347557 	 time: 1.49
+local epoch 0 	 client: 13 	 mal: 0 	 loss: 2.12649369 	 time: 1.44
+local epoch 0 	 client: 14 	 mal: 0 	 loss: 2.04011774 	 time: 1.42
+local epoch 0 	 client: 15 	 mal: 0 	 loss: 2.08911991 	 time: 1.43
+local epoch 0 	 client: 16 	 mal: 0 	 loss: 2.07288313 	 time: 1.43
+local epoch 0 	 client: 17 	 mal: 0 	 loss: 2.15220571 	 time: 1.43
+local epoch 0 	 client: 18 	 mal: 0 	 loss: 2.03515792 	 time: 1.44
+local epoch 0 	 client: 19 	 mal: 0 	 loss: 2.20020509 	 time: 1.43
+
+[GRADIENT DEBUG Rnd 4]
+Avg Malicious Delta Norm: 0.540642
+Avg Honest Delta Norm:    0.129820
+Power Ratio (Mal/Hon):    4.1646
+[DBG rnd=4] logits mean=0.0601, std=0.5670, maxlogit mean=0.6850
+[DBG rnd=4] probs max mean=0.1670, pred entropy mean=2.1988
+[DBG rnd=4] preds bincount=[2, 6, 0, 0, 0, 5, 6, 28, 10, 7]
+Clean ACC:              0.2481
+Attack Success Ratio:   0.4991
+Robustness ACC:           0.1839
+local epoch 0 	 client: 0 	 mal: 1 	 loss: 0.50000000 	 time: 16.32
+local epoch 0 	 client: 1 	 mal: 1 	 loss: 0.50000000 	 time: 16.44
+local epoch 0 	 client: 2 	 mal: 0 	 loss: 2.19517255 	 time: 1.43
+local epoch 0 	 client: 3 	 mal: 0 	 loss: 2.23512769 	 time: 1.43
+local epoch 0 	 client: 4 	 mal: 0 	 loss: 2.08784389 	 time: 1.43
+local epoch 0 	 client: 5 	 mal: 0 	 loss: 2.05406809 	 time: 1.52
+local epoch 0 	 client: 6 	 mal: 0 	 loss: 2.01467609 	 time: 1.47
+local epoch 0 	 client: 7 	 mal: 0 	 loss: 2.17904758 	 time: 1.43
+local epoch 0 	 client: 8 	 mal: 0 	 loss: 2.11909437 	 time: 1.44
+local epoch 0 	 client: 9 	 mal: 0 	 loss: 2.21630979 	 time: 1.43
+local epoch 0 	 client: 10 	 mal: 0 	 loss: 2.14456916 	 time: 1.48
+local epoch 0 	 client: 11 	 mal: 0 	 loss: 2.06590652 	 time: 1.43
+local epoch 0 	 client: 12 	 mal: 0 	 loss: 2.06244493 	 time: 1.43
+local epoch 0 	 client: 13 	 mal: 0 	 loss: 2.18402886 	 time: 1.43
+local epoch 0 	 client: 14 	 mal: 0 	 loss: 2.13454914 	 time: 1.46
+local epoch 0 	 client: 15 	 mal: 0 	 loss: 2.04516244 	 time: 1.44
+local epoch 0 	 client: 16 	 mal: 0 	 loss: 2.11876512 	 time: 1.43
+local epoch 0 	 client: 17 	 mal: 0 	 loss: 2.04504108 	 time: 1.43
+local epoch 0 	 client: 18 	 mal: 0 	 loss: 2.09881616 	 time: 1.43
+local epoch 0 	 client: 19 	 mal: 0 	 loss: 2.12099719 	 time: 1.43
+
+[GRADIENT DEBUG Rnd 5]
+Avg Malicious Delta Norm: 1.210416
+Avg Honest Delta Norm:    0.126811
+Power Ratio (Mal/Hon):    9.5451
+[DBG rnd=5] logits mean=0.0606, std=0.6680, maxlogit mean=1.0805
+[DBG rnd=5] probs max mean=0.2357, pred entropy mean=2.1279
+[DBG rnd=5] preds bincount=[3, 1, 0, 0, 0, 1, 0, 44, 7, 8]
+Clean ACC:              0.2032
+Attack Success Ratio:   0.7118
+Robustness ACC:           0.1182
+local epoch 0 	 client: 0 	 mal: 1 	 loss: 0.01077204 	 time: 16.30
+local epoch 0 	 client: 1 	 mal: 1 	 loss: 0.03850404 	 time: 16.35
+local epoch 0 	 client: 2 	 mal: 0 	 loss: 2.05495381 	 time: 1.43
+local epoch 0 	 client: 3 	 mal: 0 	 loss: 1.99992073 	 time: 1.43
+local epoch 0 	 client: 4 	 mal: 0 	 loss: 2.04268003 	 time: 1.43
+local epoch 0 	 client: 5 	 mal: 0 	 loss: 2.05515242 	 time: 1.43
+local epoch 0 	 client: 6 	 mal: 0 	 loss: 2.18224072 	 time: 1.43
+local epoch 0 	 client: 7 	 mal: 0 	 loss: 2.12703657 	 time: 1.43
+local epoch 0 	 client: 8 	 mal: 0 	 loss: 1.96149516 	 time: 1.44
+local epoch 0 	 client: 9 	 mal: 0 	 loss: 2.15737033 	 time: 1.44
+local epoch 0 	 client: 10 	 mal: 0 	 loss: 2.13380790 	 time: 1.49
+local epoch 0 	 client: 11 	 mal: 0 	 loss: 2.20760345 	 time: 1.44
+local epoch 0 	 client: 12 	 mal: 0 	 loss: 2.10700560 	 time: 1.46
+local epoch 0 	 client: 13 	 mal: 0 	 loss: 2.10348701 	 time: 1.43
+local epoch 0 	 client: 14 	 mal: 0 	 loss: 2.05077147 	 time: 1.43
+local epoch 0 	 client: 15 	 mal: 0 	 loss: 2.13339376 	 time: 1.43
+local epoch 0 	 client: 16 	 mal: 0 	 loss: 2.06187034 	 time: 1.43
+local epoch 0 	 client: 17 	 mal: 0 	 loss: 2.38341689 	 time: 1.43
+local epoch 0 	 client: 18 	 mal: 0 	 loss: 2.10736823 	 time: 1.48
+local epoch 0 	 client: 19 	 mal: 0 	 loss: 2.15427828 	 time: 1.46
+
+[GRADIENT DEBUG Rnd 6]
+Avg Malicious Delta Norm: 0.469381
+Avg Honest Delta Norm:    0.120379
+Power Ratio (Mal/Hon):    3.8992
+[DBG rnd=6] logits mean=0.0773, std=0.6546, maxlogit mean=0.8250
+[DBG rnd=6] probs max mean=0.1818, pred entropy mean=2.1680
+[DBG rnd=6] preds bincount=[2, 0, 0, 1, 0, 5, 12, 21, 7, 16]
+Clean ACC:              0.2684
+Attack Success Ratio:   0.3839
+Robustness ACC:           0.2167
+local epoch 0 	 client: 0 	 mal: 1 	 loss: 0.49999997 	 time: 16.52
+local epoch 0 	 client: 1 	 mal: 1 	 loss: 0.50000000 	 time: 16.29
+local epoch 0 	 client: 2 	 mal: 0 	 loss: 2.39154148 	 time: 1.42
+local epoch 0 	 client: 3 	 mal: 0 	 loss: 2.10113430 	 time: 1.43
+local epoch 0 	 client: 4 	 mal: 0 	 loss: 2.01519442 	 time: 1.43
+local epoch 0 	 client: 5 	 mal: 0 	 loss: 2.06310463 	 time: 1.44
+local epoch 0 	 client: 6 	 mal: 0 	 loss: 2.04522157 	 time: 1.43
+local epoch 0 	 client: 7 	 mal: 0 	 loss: 1.91828561 	 time: 1.43
+local epoch 0 	 client: 8 	 mal: 0 	 loss: 2.17183924 	 time: 1.43
+local epoch 0 	 client: 9 	 mal: 0 	 loss: 2.01005006 	 time: 1.43
+local epoch 0 	 client: 10 	 mal: 0 	 loss: 2.22713995 	 time: 1.43
+local epoch 0 	 client: 11 	 mal: 0 	 loss: 2.07228613 	 time: 1.51
+local epoch 0 	 client: 12 	 mal: 0 	 loss: 2.07845759 	 time: 1.46
+local epoch 0 	 client: 13 	 mal: 0 	 loss: 2.09202838 	 time: 1.43
+local epoch 0 	 client: 14 	 mal: 0 	 loss: 2.04649138 	 time: 1.43
+local epoch 0 	 client: 15 	 mal: 0 	 loss: 2.12892604 	 time: 1.50
+local epoch 0 	 client: 16 	 mal: 0 	 loss: 2.02628994 	 time: 1.45
+local epoch 0 	 client: 17 	 mal: 0 	 loss: 2.21137691 	 time: 1.45
+local epoch 0 	 client: 18 	 mal: 0 	 loss: 2.06089139 	 time: 1.43
+local epoch 0 	 client: 19 	 mal: 0 	 loss: 2.05268598 	 time: 1.44
+
+[GRADIENT DEBUG Rnd 7]
+Avg Malicious Delta Norm: 0.869992
+Avg Honest Delta Norm:    0.121665
+Power Ratio (Mal/Hon):    7.1507
+[DBG rnd=7] logits mean=0.0787, std=0.6989, maxlogit mean=1.0696
+[DBG rnd=7] probs max mean=0.2232, pred entropy mean=2.1272
+[DBG rnd=7] preds bincount=[1, 0, 0, 0, 0, 4, 0, 41, 7, 11]
+Clean ACC:              0.2156
+Attack Success Ratio:   0.6602
+Robustness ACC:           0.1354
+local epoch 0 	 client: 0 	 mal: 1 	 loss: 0.03485077 	 time: 16.33
+local epoch 0 	 client: 1 	 mal: 1 	 loss: 0.01061398 	 time: 16.34
+local epoch 0 	 client: 2 	 mal: 0 	 loss: 1.91936481 	 time: 1.43
+local epoch 0 	 client: 3 	 mal: 0 	 loss: 2.00305557 	 time: 1.43
+local epoch 0 	 client: 4 	 mal: 0 	 loss: 2.19387937 	 time: 1.43
+local epoch 0 	 client: 5 	 mal: 0 	 loss: 2.03450561 	 time: 1.47
+local epoch 0 	 client: 6 	 mal: 0 	 loss: 2.10895419 	 time: 1.44
+local epoch 0 	 client: 7 	 mal: 0 	 loss: 2.07704020 	 time: 1.43
+local epoch 0 	 client: 8 	 mal: 0 	 loss: 2.00415325 	 time: 1.44
+local epoch 0 	 client: 9 	 mal: 0 	 loss: 2.02481103 	 time: 1.43
+local epoch 0 	 client: 10 	 mal: 0 	 loss: 2.48738980 	 time: 1.43
+local epoch 0 	 client: 11 	 mal: 0 	 loss: 2.07357740 	 time: 1.43
+local epoch 0 	 client: 12 	 mal: 0 	 loss: 2.03358269 	 time: 1.42
+local epoch 0 	 client: 13 	 mal: 0 	 loss: 2.21175885 	 time: 1.46
+local epoch 0 	 client: 14 	 mal: 0 	 loss: 2.01205063 	 time: 1.44
+local epoch 0 	 client: 15 	 mal: 0 	 loss: 2.14910388 	 time: 1.43
+local epoch 0 	 client: 16 	 mal: 0 	 loss: 2.15249205 	 time: 1.46
+local epoch 0 	 client: 17 	 mal: 0 	 loss: 1.97701859 	 time: 1.43
+local epoch 0 	 client: 18 	 mal: 0 	 loss: 2.02451825 	 time: 1.42
+local epoch 0 	 client: 19 	 mal: 0 	 loss: 1.90718532 	 time: 1.50
+
+[GRADIENT DEBUG Rnd 8]
+Avg Malicious Delta Norm: 0.440602
+Avg Honest Delta Norm:    0.118049
+Power Ratio (Mal/Hon):    3.7324
+[DBG rnd=8] logits mean=0.0806, std=0.7271, maxlogit mean=0.9950
+[DBG rnd=8] probs max mean=0.2065, pred entropy mean=2.1244
+[DBG rnd=8] preds bincount=[2, 0, 0, 3, 0, 5, 12, 18, 7, 17]
+Clean ACC:              0.2782
+Attack Success Ratio:   0.3476
+Robustness ACC:           0.2342
+local epoch 0 	 client: 0 	 mal: 1 	 loss: 0.49999967 	 time: 16.45
+local epoch 0 	 client: 1 	 mal: 1 	 loss: 0.08249012 	 time: 16.37
+local epoch 0 	 client: 2 	 mal: 0 	 loss: 1.92667699 	 time: 1.42
+local epoch 0 	 client: 3 	 mal: 0 	 loss: 2.10037494 	 time: 1.43
+local epoch 0 	 client: 4 	 mal: 0 	 loss: 2.03414989 	 time: 1.43
+local epoch 0 	 client: 5 	 mal: 0 	 loss: 2.35948372 	 time: 1.47
+local epoch 0 	 client: 6 	 mal: 0 	 loss: 2.03761148 	 time: 1.44
+local epoch 0 	 client: 7 	 mal: 0 	 loss: 1.93095052 	 time: 1.44
+local epoch 0 	 client: 8 	 mal: 0 	 loss: 2.02850342 	 time: 1.43
+local epoch 0 	 client: 9 	 mal: 0 	 loss: 2.01762629 	 time: 1.44
+local epoch 0 	 client: 10 	 mal: 0 	 loss: 2.04730964 	 time: 1.43
+local epoch 0 	 client: 11 	 mal: 0 	 loss: 2.01190400 	 time: 1.43
+local epoch 0 	 client: 12 	 mal: 0 	 loss: 2.20066166 	 time: 1.43
+local epoch 0 	 client: 13 	 mal: 0 	 loss: 2.22102332 	 time: 1.43
+local epoch 0 	 client: 14 	 mal: 0 	 loss: 2.06512356 	 time: 1.43
+local epoch 0 	 client: 15 	 mal: 0 	 loss: 2.04862404 	 time: 1.43
+local epoch 0 	 client: 16 	 mal: 0 	 loss: 2.00946355 	 time: 1.44
+local epoch 0 	 client: 17 	 mal: 0 	 loss: 2.14275217 	 time: 1.43
+local epoch 0 	 client: 18 	 mal: 0 	 loss: 2.04709315 	 time: 1.43
+local epoch 0 	 client: 19 	 mal: 0 	 loss: 1.95993185 	 time: 1.43
+
+[GRADIENT DEBUG Rnd 9]
+Avg Malicious Delta Norm: 1.314863
+Avg Honest Delta Norm:    0.115639
+Power Ratio (Mal/Hon):    11.3704
+[DBG rnd=9] logits mean=0.0788, std=0.7379, maxlogit mean=0.9815
+[DBG rnd=9] probs max mean=0.2032, pred entropy mean=2.1221
+[DBG rnd=9] preds bincount=[2, 2, 0, 5, 1, 6, 9, 15, 7, 17]
+Clean ACC:              0.2960
+Attack Success Ratio:   0.3154
+Robustness ACC:           0.2576
+local epoch 0 	 client: 0 	 mal: 1 	 loss: 0.01395597 	 time: 16.34
+local epoch 0 	 client: 1 	 mal: 1 	 loss: 0.02263115 	 time: 16.47
+local epoch 0 	 client: 2 	 mal: 0 	 loss: 2.14282513 	 time: 1.42
+local epoch 0 	 client: 3 	 mal: 0 	 loss: 2.06094551 	 time: 1.43
+local epoch 0 	 client: 4 	 mal: 0 	 loss: 1.92354655 	 time: 1.44
+local epoch 0 	 client: 5 	 mal: 0 	 loss: 2.12024093 	 time: 1.42
+local epoch 0 	 client: 6 	 mal: 0 	 loss: 2.01963997 	 time: 1.44
+local epoch 0 	 client: 7 	 mal: 0 	 loss: 1.91809487 	 time: 1.42
+local epoch 0 	 client: 8 	 mal: 0 	 loss: 2.05007553 	 time: 1.43
+local epoch 0 	 client: 9 	 mal: 0 	 loss: 2.04705095 	 time: 1.44
+local epoch 0 	 client: 10 	 mal: 0 	 loss: 1.96786654 	 time: 1.43
+local epoch 0 	 client: 11 	 mal: 0 	 loss: 2.05575848 	 time: 1.42
+local epoch 0 	 client: 12 	 mal: 0 	 loss: 2.07609868 	 time: 1.43
+local epoch 0 	 client: 13 	 mal: 0 	 loss: 1.93939638 	 time: 1.43
+local epoch 0 	 client: 14 	 mal: 0 	 loss: 2.06020522 	 time: 1.44
+local epoch 0 	 client: 15 	 mal: 0 	 loss: 1.93396974 	 time: 1.43
+local epoch 0 	 client: 16 	 mal: 0 	 loss: 2.02833056 	 time: 1.43
+local epoch 0 	 client: 17 	 mal: 0 	 loss: 2.05345130 	 time: 1.42
+local epoch 0 	 client: 18 	 mal: 0 	 loss: 1.92781484 	 time: 1.43
+local epoch 0 	 client: 19 	 mal: 0 	 loss: 1.96517098 	 time: 1.45
+
+[GRADIENT DEBUG Rnd 10]
+Avg Malicious Delta Norm: 1.696564
+Avg Honest Delta Norm:    0.113166
+Power Ratio (Mal/Hon):    14.9918
+[DBG rnd=10] logits mean=0.0861, std=0.7766, maxlogit mean=1.0585
+[DBG rnd=10] probs max mean=0.2139, pred entropy mean=2.1051
+[DBG rnd=10] preds bincount=[2, 2, 0, 2, 0, 7, 19, 7, 6, 19]
+Clean ACC:              0.3009
+Attack Success Ratio:   0.1631
+Robustness ACC:           0.2833
+local epoch 0 	 client: 0 	 mal: 1 	 loss: 0.50000000 	 time: 16.31
+local epoch 0 	 client: 1 	 mal: 1 	 loss: 0.49829143 	 time: 16.32
+local epoch 0 	 client: 2 	 mal: 0 	 loss: 2.00214791 	 time: 1.42
+local epoch 0 	 client: 3 	 mal: 0 	 loss: 2.14195251 	 time: 1.43
+local epoch 0 	 client: 4 	 mal: 0 	 loss: 1.89619446 	 time: 1.43
+local epoch 0 	 client: 5 	 mal: 0 	 loss: 2.19543529 	 time: 1.46
+local epoch 0 	 client: 6 	 mal: 0 	 loss: 2.04763579 	 time: 1.43
+local epoch 0 	 client: 7 	 mal: 0 	 loss: 1.89584100 	 time: 1.43
+local epoch 0 	 client: 8 	 mal: 0 	 loss: 2.04044795 	 time: 1.43
+local epoch 0 	 client: 9 	 mal: 0 	 loss: 1.94893515 	 time: 1.43
+local epoch 0 	 client: 10 	 mal: 0 	 loss: 2.03304577 	 time: 1.45
+local epoch 0 	 client: 11 	 mal: 0 	 loss: 2.08325839 	 time: 1.43
+local epoch 0 	 client: 12 	 mal: 0 	 loss: 2.06513214 	 time: 1.43
+local epoch 0 	 client: 13 	 mal: 0 	 loss: 2.03628325 	 time: 1.46
+local epoch 0 	 client: 14 	 mal: 0 	 loss: 2.15130162 	 time: 1.44
+local epoch 0 	 client: 15 	 mal: 0 	 loss: 1.94063115 	 time: 1.44
+local epoch 0 	 client: 16 	 mal: 0 	 loss: 1.99419427 	 time: 1.45
+local epoch 0 	 client: 17 	 mal: 0 	 loss: 2.03884673 	 time: 1.45
+local epoch 0 	 client: 18 	 mal: 0 	 loss: 1.95278835 	 time: 1.45
+local epoch 0 	 client: 19 	 mal: 0 	 loss: 1.99778342 	 time: 1.49
+
+[GRADIENT DEBUG Rnd 11]
+Avg Malicious Delta Norm: 1.073645
+Avg Honest Delta Norm:    0.114585
+Power Ratio (Mal/Hon):    9.3698
+[DBG rnd=11] logits mean=0.0782, std=0.8179, maxlogit mean=1.1897
+[DBG rnd=11] probs max mean=0.2349, pred entropy mean=2.0777
+[DBG rnd=11] preds bincount=[2, 0, 0, 0, 0, 3, 1, 35, 6, 17]
+Clean ACC:              0.2518
+Attack Success Ratio:   0.5541
+Robustness ACC:           0.1819
+local epoch 0 	 client: 0 	 mal: 1 	 loss: 0.00941538 	 time: 16.30
+local epoch 0 	 client: 1 	 mal: 1 	 loss: 0.03145078 	 time: 16.50
+local epoch 0 	 client: 2 	 mal: 0 	 loss: 2.00459981 	 time: 1.42
+local epoch 0 	 client: 3 	 mal: 0 	 loss: 2.10133314 	 time: 1.43
+local epoch 0 	 client: 4 	 mal: 0 	 loss: 1.89470685 	 time: 1.43
+local epoch 0 	 client: 5 	 mal: 0 	 loss: 1.91201580 	 time: 1.42
+local epoch 0 	 client: 6 	 mal: 0 	 loss: 1.97852349 	 time: 1.43
+local epoch 0 	 client: 7 	 mal: 0 	 loss: 2.04142094 	 time: 1.45
+local epoch 0 	 client: 8 	 mal: 0 	 loss: 2.00341582 	 time: 1.43
+local epoch 0 	 client: 9 	 mal: 0 	 loss: 2.10815716 	 time: 1.43
+local epoch 0 	 client: 10 	 mal: 0 	 loss: 1.98362255 	 time: 1.43
+local epoch 0 	 client: 11 	 mal: 0 	 loss: 1.91104460 	 time: 1.43
+local epoch 0 	 client: 12 	 mal: 0 	 loss: 2.20724654 	 time: 1.43
+local epoch 0 	 client: 13 	 mal: 0 	 loss: 2.04131079 	 time: 1.45
+local epoch 0 	 client: 14 	 mal: 0 	 loss: 2.04301119 	 time: 1.44
+local epoch 0 	 client: 15 	 mal: 0 	 loss: 1.87581146 	 time: 1.44
+local epoch 0 	 client: 16 	 mal: 0 	 loss: 1.96732938 	 time: 1.43
+local epoch 0 	 client: 17 	 mal: 0 	 loss: 1.99153018 	 time: 1.43
+local epoch 0 	 client: 18 	 mal: 0 	 loss: 2.03930521 	 time: 1.42
+local epoch 0 	 client: 19 	 mal: 0 	 loss: 1.92348099 	 time: 1.43
+
+[GRADIENT DEBUG Rnd 12]
+Avg Malicious Delta Norm: 0.968692
+Avg Honest Delta Norm:    0.111647
+Power Ratio (Mal/Hon):    8.6764
+[DBG rnd=12] logits mean=0.0887, std=0.8193, maxlogit mean=1.1126
+[DBG rnd=12] probs max mean=0.2189, pred entropy mean=2.0862
+[DBG rnd=12] preds bincount=[1, 1, 0, 3, 1, 8, 19, 8, 5, 18]
+Clean ACC:              0.3095
+Attack Success Ratio:   0.1797
+Robustness ACC:           0.2842
+local epoch 0 	 client: 0 	 mal: 1 	 loss: 0.04693372 	 time: 16.37
+local epoch 0 	 client: 1 	 mal: 1 	 loss: 0.09969234 	 time: 16.34
+local epoch 0 	 client: 2 	 mal: 0 	 loss: 2.03505445 	 time: 1.42
+local epoch 0 	 client: 3 	 mal: 0 	 loss: 2.01802707 	 time: 1.43
+local epoch 0 	 client: 4 	 mal: 0 	 loss: 2.03446841 	 time: 1.43
+local epoch 0 	 client: 5 	 mal: 0 	 loss: 1.99820197 	 time: 1.43
+local epoch 0 	 client: 6 	 mal: 0 	 loss: 1.99136758 	 time: 1.48
+local epoch 0 	 client: 7 	 mal: 0 	 loss: 1.96428192 	 time: 1.47
+local epoch 0 	 client: 8 	 mal: 0 	 loss: 1.94309843 	 time: 1.43
+local epoch 0 	 client: 9 	 mal: 0 	 loss: 1.94412935 	 time: 1.43
+local epoch 0 	 client: 10 	 mal: 0 	 loss: 2.07124233 	 time: 1.44
+local epoch 0 	 client: 11 	 mal: 0 	 loss: 1.98003101 	 time: 1.43
+local epoch 0 	 client: 12 	 mal: 0 	 loss: 2.07515979 	 time: 1.49
+local epoch 0 	 client: 13 	 mal: 0 	 loss: 2.01971698 	 time: 1.45
+local epoch 0 	 client: 14 	 mal: 0 	 loss: 1.92138314 	 time: 1.42
+local epoch 0 	 client: 15 	 mal: 0 	 loss: 2.10349679 	 time: 1.43
+local epoch 0 	 client: 16 	 mal: 0 	 loss: 1.83199275 	 time: 1.43
+local epoch 0 	 client: 17 	 mal: 0 	 loss: 2.41673565 	 time: 1.44
+local epoch 0 	 client: 18 	 mal: 0 	 loss: 2.12812042 	 time: 1.51
+local epoch 0 	 client: 19 	 mal: 0 	 loss: 1.90106046 	 time: 1.44
+
+[GRADIENT DEBUG Rnd 13]
+Avg Malicious Delta Norm: 1.258257
+Avg Honest Delta Norm:    0.113525
+Power Ratio (Mal/Hon):    11.0835
+[DBG rnd=13] logits mean=0.0866, std=0.8143, maxlogit mean=1.1378
+[DBG rnd=13] probs max mean=0.2251, pred entropy mean=2.0817
+[DBG rnd=13] preds bincount=[2, 1, 0, 1, 0, 8, 19, 9, 7, 17]
+Clean ACC:              0.3127
+Attack Success Ratio:   0.1950
+Robustness ACC:           0.2838
+local epoch 0 	 client: 0 	 mal: 1 	 loss: 0.17236826 	 time: 16.48
+local epoch 0 	 client: 1 	 mal: 1 	 loss: 0.02596314 	 time: 16.33
+local epoch 0 	 client: 2 	 mal: 0 	 loss: 2.16644311 	 time: 1.43
+local epoch 0 	 client: 3 	 mal: 0 	 loss: 1.94568110 	 time: 1.43
+local epoch 0 	 client: 4 	 mal: 0 	 loss: 1.99619973 	 time: 1.43
+local epoch 0 	 client: 5 	 mal: 0 	 loss: 2.04510641 	 time: 1.43
+local epoch 0 	 client: 6 	 mal: 0 	 loss: 1.78299665 	 time: 1.44
+local epoch 0 	 client: 7 	 mal: 0 	 loss: 2.37067747 	 time: 1.49
+local epoch 0 	 client: 8 	 mal: 0 	 loss: 2.07493567 	 time: 1.43
+local epoch 0 	 client: 9 	 mal: 0 	 loss: 1.85775161 	 time: 1.42
+local epoch 0 	 client: 10 	 mal: 0 	 loss: 2.08354735 	 time: 1.46
+local epoch 0 	 client: 11 	 mal: 0 	 loss: 1.96576178 	 time: 1.44
+local epoch 0 	 client: 12 	 mal: 0 	 loss: 2.06864858 	 time: 1.44
+local epoch 0 	 client: 13 	 mal: 0 	 loss: 1.89139867 	 time: 1.43
+local epoch 0 	 client: 14 	 mal: 0 	 loss: 1.92632985 	 time: 1.43
+local epoch 0 	 client: 15 	 mal: 0 	 loss: 1.98086560 	 time: 1.43
+local epoch 0 	 client: 16 	 mal: 0 	 loss: 1.96792591 	 time: 1.43
+local epoch 0 	 client: 17 	 mal: 0 	 loss: 1.94516337 	 time: 1.43
+local epoch 0 	 client: 18 	 mal: 0 	 loss: 1.91897190 	 time: 1.51
+local epoch 0 	 client: 19 	 mal: 0 	 loss: 2.04965210 	 time: 1.47
+
+[GRADIENT DEBUG Rnd 14]
+Avg Malicious Delta Norm: 0.943931
+Avg Honest Delta Norm:    0.109873
+Power Ratio (Mal/Hon):    8.5911
+[DBG rnd=14] logits mean=0.0901, std=0.8529, maxlogit mean=1.1625
+[DBG rnd=14] probs max mean=0.2231, pred entropy mean=2.0705
+[DBG rnd=14] preds bincount=[2, 3, 0, 3, 1, 7, 14, 16, 4, 14]
+Clean ACC:              0.3115
+Attack Success Ratio:   0.3388
+Robustness ACC:           0.2470
+local epoch 0 	 client: 0 	 mal: 1 	 loss: 0.01008401 	 time: 16.30
+local epoch 0 	 client: 1 	 mal: 1 	 loss: 0.01171931 	 time: 16.51
+local epoch 0 	 client: 2 	 mal: 0 	 loss: 1.94414759 	 time: 1.44
+local epoch 0 	 client: 3 	 mal: 0 	 loss: 1.82825899 	 time: 1.43
+local epoch 0 	 client: 4 	 mal: 0 	 loss: 1.82597637 	 time: 1.43
+local epoch 0 	 client: 5 	 mal: 0 	 loss: 1.96709037 	 time: 1.45
+local epoch 0 	 client: 6 	 mal: 0 	 loss: 1.95654142 	 time: 1.46
+local epoch 0 	 client: 7 	 mal: 0 	 loss: 1.89673030 	 time: 1.45
+local epoch 0 	 client: 8 	 mal: 0 	 loss: 2.02861619 	 time: 1.45
+local epoch 0 	 client: 9 	 mal: 0 	 loss: 1.96285188 	 time: 1.43
+local epoch 0 	 client: 10 	 mal: 0 	 loss: 2.05508399 	 time: 1.42
+local epoch 0 	 client: 11 	 mal: 0 	 loss: 1.98262763 	 time: 1.43
+local epoch 0 	 client: 12 	 mal: 0 	 loss: 2.08674836 	 time: 1.43
+local epoch 0 	 client: 13 	 mal: 0 	 loss: 2.14199686 	 time: 1.52
+local epoch 0 	 client: 14 	 mal: 0 	 loss: 1.98000646 	 time: 1.44
+local epoch 0 	 client: 15 	 mal: 0 	 loss: 2.00287294 	 time: 1.44
+local epoch 0 	 client: 16 	 mal: 0 	 loss: 1.91576684 	 time: 1.42
+local epoch 0 	 client: 17 	 mal: 0 	 loss: 1.93870628 	 time: 1.43
+local epoch 0 	 client: 18 	 mal: 0 	 loss: 1.98482668 	 time: 1.43
+local epoch 0 	 client: 19 	 mal: 0 	 loss: 2.02199078 	 time: 1.50
+
+[GRADIENT DEBUG Rnd 15]
+Avg Malicious Delta Norm: 1.111906
+Avg Honest Delta Norm:    0.110508
+Power Ratio (Mal/Hon):    10.0618
+[DBG rnd=15] logits mean=0.0928, std=0.8501, maxlogit mean=1.1674
+[DBG rnd=15] probs max mean=0.2251, pred entropy mean=2.0685
+[DBG rnd=15] preds bincount=[3, 3, 0, 1, 0, 10, 19, 8, 6, 14]
+Clean ACC:              0.3262
+Attack Success Ratio:   0.1830
+Robustness ACC:           0.2938
+local epoch 0 	 client: 0 	 mal: 1 	 loss: 0.50000000 	 time: 16.33
+local epoch 0 	 client: 1 	 mal: 1 	 loss: 0.02560521 	 time: 16.33
+local epoch 0 	 client: 2 	 mal: 0 	 loss: 1.88192940 	 time: 1.45
+local epoch 0 	 client: 3 	 mal: 0 	 loss: 1.82556224 	 time: 1.44
+local epoch 0 	 client: 4 	 mal: 0 	 loss: 1.93859303 	 time: 1.44
+local epoch 0 	 client: 5 	 mal: 0 	 loss: 1.85130906 	 time: 1.45
+local epoch 0 	 client: 6 	 mal: 0 	 loss: 1.99732089 	 time: 1.43
+local epoch 0 	 client: 7 	 mal: 0 	 loss: 2.22566700 	 time: 1.43
+local epoch 0 	 client: 8 	 mal: 0 	 loss: 1.93321311 	 time: 1.43
+local epoch 0 	 client: 9 	 mal: 0 	 loss: 1.96316791 	 time: 1.48
+local epoch 0 	 client: 10 	 mal: 0 	 loss: 1.94356823 	 time: 1.42
+local epoch 0 	 client: 11 	 mal: 0 	 loss: 1.99499083 	 time: 1.43
+local epoch 0 	 client: 12 	 mal: 0 	 loss: 1.98623085 	 time: 1.47
+local epoch 0 	 client: 13 	 mal: 0 	 loss: 2.10109210 	 time: 1.44
+local epoch 0 	 client: 14 	 mal: 0 	 loss: 1.83619606 	 time: 1.44
+local epoch 0 	 client: 15 	 mal: 0 	 loss: 2.22372270 	 time: 1.46
+local epoch 0 	 client: 16 	 mal: 0 	 loss: 1.87445354 	 time: 1.44
+local epoch 0 	 client: 17 	 mal: 0 	 loss: 1.88208520 	 time: 1.42
+local epoch 0 	 client: 18 	 mal: 0 	 loss: 2.09861875 	 time: 1.46
+local epoch 0 	 client: 19 	 mal: 0 	 loss: 2.03592443 	 time: 1.46
+
+[GRADIENT DEBUG Rnd 16]
+Avg Malicious Delta Norm: 1.744636
+Avg Honest Delta Norm:    0.108012
+Power Ratio (Mal/Hon):    16.1523
+[DBG rnd=16] logits mean=0.0914, std=0.8732, maxlogit mean=1.2362
+[DBG rnd=16] probs max mean=0.2363, pred entropy mean=2.0515
+[DBG rnd=16] preds bincount=[2, 2, 0, 2, 0, 9, 10, 18, 3, 18]
+Clean ACC:              0.3049
+Attack Success Ratio:   0.3753
+Robustness ACC:           0.2378
+local epoch 0 	 client: 0 	 mal: 1 	 loss: 0.01440018 	 time: 16.31
+local epoch 0 	 client: 1 	 mal: 1 	 loss: 0.05217854 	 time: 16.45
+local epoch 0 	 client: 2 	 mal: 0 	 loss: 1.84106064 	 time: 1.45
+local epoch 0 	 client: 3 	 mal: 0 	 loss: 2.02452064 	 time: 1.43
+local epoch 0 	 client: 4 	 mal: 0 	 loss: 1.85894859 	 time: 1.43
+local epoch 0 	 client: 5 	 mal: 0 	 loss: 1.81442320 	 time: 1.47
+local epoch 0 	 client: 6 	 mal: 0 	 loss: 2.14105010 	 time: 1.43
+local epoch 0 	 client: 7 	 mal: 0 	 loss: 1.87423170 	 time: 1.43
+local epoch 0 	 client: 8 	 mal: 0 	 loss: 1.79918778 	 time: 1.48
+local epoch 0 	 client: 9 	 mal: 0 	 loss: 1.91486549 	 time: 1.46
+local epoch 0 	 client: 10 	 mal: 0 	 loss: 1.94939411 	 time: 1.46
+local epoch 0 	 client: 11 	 mal: 0 	 loss: 2.32840109 	 time: 1.43
+local epoch 0 	 client: 12 	 mal: 0 	 loss: 2.01213002 	 time: 1.43
+local epoch 0 	 client: 13 	 mal: 0 	 loss: 1.94193685 	 time: 1.43
+local epoch 0 	 client: 14 	 mal: 0 	 loss: 2.32731056 	 time: 1.43
+local epoch 0 	 client: 15 	 mal: 0 	 loss: 2.08570981 	 time: 1.43
+local epoch 0 	 client: 16 	 mal: 0 	 loss: 1.81052995 	 time: 1.44
+local epoch 0 	 client: 17 	 mal: 0 	 loss: 1.70625103 	 time: 1.43
+local epoch 0 	 client: 18 	 mal: 0 	 loss: 1.99578762 	 time: 1.43
+local epoch 0 	 client: 19 	 mal: 0 	 loss: 1.95268512 	 time: 1.43
+
+[GRADIENT DEBUG Rnd 17]
+Avg Malicious Delta Norm: 1.325325
+Avg Honest Delta Norm:    0.111088
+Power Ratio (Mal/Hon):    11.9304
+[DBG rnd=17] logits mean=0.0930, std=0.8635, maxlogit mean=1.2423
+[DBG rnd=17] probs max mean=0.2390, pred entropy mean=2.0529
+[DBG rnd=17] preds bincount=[2, 2, 0, 3, 0, 6, 21, 9, 3, 18]
+Clean ACC:              0.3211
+Attack Success Ratio:   0.1957
+Robustness ACC:           0.2797
+local epoch 0 	 client: 0 	 mal: 1 	 loss: 0.01920232 	 time: 16.32
+local epoch 0 	 client: 1 	 mal: 1 	 loss: 0.04612774 	 time: 16.43
+local epoch 0 	 client: 2 	 mal: 0 	 loss: 1.86097515 	 time: 1.43
+local epoch 0 	 client: 3 	 mal: 0 	 loss: 1.96966171 	 time: 1.44
+local epoch 0 	 client: 4 	 mal: 0 	 loss: 1.76976442 	 time: 1.43
+local epoch 0 	 client: 5 	 mal: 0 	 loss: 1.84557724 	 time: 1.43
+local epoch 0 	 client: 6 	 mal: 0 	 loss: 2.17591214 	 time: 1.43
+local epoch 0 	 client: 7 	 mal: 0 	 loss: 1.94658494 	 time: 1.45
+local epoch 0 	 client: 8 	 mal: 0 	 loss: 1.93720531 	 time: 1.45
+local epoch 0 	 client: 9 	 mal: 0 	 loss: 1.97079611 	 time: 1.43
+local epoch 0 	 client: 10 	 mal: 0 	 loss: 1.98200929 	 time: 1.44
+local epoch 0 	 client: 11 	 mal: 0 	 loss: 1.95877683 	 time: 1.43
+local epoch 0 	 client: 12 	 mal: 0 	 loss: 1.98685360 	 time: 1.47
+local epoch 0 	 client: 13 	 mal: 0 	 loss: 1.90268397 	 time: 1.45
+local epoch 0 	 client: 14 	 mal: 0 	 loss: 1.96694541 	 time: 1.44
+local epoch 0 	 client: 15 	 mal: 0 	 loss: 2.17766547 	 time: 1.43
+local epoch 0 	 client: 16 	 mal: 0 	 loss: 2.01797771 	 time: 1.43
+local epoch 0 	 client: 17 	 mal: 0 	 loss: 2.26155448 	 time: 1.43
+local epoch 0 	 client: 18 	 mal: 0 	 loss: 1.78196239 	 time: 1.48
+local epoch 0 	 client: 19 	 mal: 0 	 loss: 1.92719948 	 time: 1.45
+
+[GRADIENT DEBUG Rnd 18]
+Avg Malicious Delta Norm: 1.190304
+Avg Honest Delta Norm:    0.109268
+Power Ratio (Mal/Hon):    10.8934
+[DBG rnd=18] logits mean=0.0882, std=0.8979, maxlogit mean=1.2474
+[DBG rnd=18] probs max mean=0.2369, pred entropy mean=2.0431
+[DBG rnd=18] preds bincount=[3, 3, 0, 3, 1, 4, 20, 9, 4, 17]
+Clean ACC:              0.3383
+Attack Success Ratio:   0.2127
+Robustness ACC:           0.2947
+local epoch 0 	 client: 0 	 mal: 1 	 loss: 0.05172318 	 time: 16.51
+local epoch 0 	 client: 1 	 mal: 1 	 loss: 0.03049106 	 time: 16.33
+local epoch 0 	 client: 2 	 mal: 0 	 loss: 1.89657712 	 time: 1.43
+local epoch 0 	 client: 3 	 mal: 0 	 loss: 1.81735981 	 time: 1.43
+local epoch 0 	 client: 4 	 mal: 0 	 loss: 1.94876873 	 time: 1.53
+local epoch 0 	 client: 5 	 mal: 0 	 loss: 1.73879540 	 time: 1.53
+local epoch 0 	 client: 6 	 mal: 0 	 loss: 1.83972681 	 time: 1.45
+local epoch 0 	 client: 7 	 mal: 0 	 loss: 1.93497252 	 time: 1.42
+local epoch 0 	 client: 8 	 mal: 0 	 loss: 1.91852880 	 time: 1.43
+local epoch 0 	 client: 9 	 mal: 0 	 loss: 1.86176336 	 time: 1.53
+local epoch 0 	 client: 10 	 mal: 0 	 loss: 1.86256480 	 time: 1.53
+local epoch 0 	 client: 11 	 mal: 0 	 loss: 2.02444172 	 time: 1.45
+local epoch 0 	 client: 12 	 mal: 0 	 loss: 2.21027136 	 time: 1.42
+local epoch 0 	 client: 13 	 mal: 0 	 loss: 1.88834119 	 time: 1.43
+local epoch 0 	 client: 14 	 mal: 0 	 loss: 1.86333179 	 time: 1.42
+local epoch 0 	 client: 15 	 mal: 0 	 loss: 1.93436480 	 time: 1.43
+local epoch 0 	 client: 16 	 mal: 0 	 loss: 1.84512067 	 time: 1.43
+local epoch 0 	 client: 17 	 mal: 0 	 loss: 1.84279728 	 time: 1.43
+local epoch 0 	 client: 18 	 mal: 0 	 loss: 1.92952168 	 time: 1.43
+local epoch 0 	 client: 19 	 mal: 0 	 loss: 1.79147816 	 time: 1.46
+
+[GRADIENT DEBUG Rnd 19]
+Avg Malicious Delta Norm: 1.153089
+Avg Honest Delta Norm:    0.105471
+Power Ratio (Mal/Hon):    10.9327
+[DBG rnd=19] logits mean=0.0892, std=0.9388, maxlogit mean=1.3096
+[DBG rnd=19] probs max mean=0.2452, pred entropy mean=2.0243
+[DBG rnd=19] preds bincount=[3, 3, 0, 0, 1, 8, 15, 13, 5, 16]
+Clean ACC:              0.3380
+Attack Success Ratio:   0.2562
+Robustness ACC:           0.2854
+local epoch 0 	 client: 0 	 mal: 1 	 loss: 0.00980338 	 time: 16.33
+local epoch 0 	 client: 1 	 mal: 1 	 loss: 0.00625432 	 time: 16.48
+local epoch 0 	 client: 2 	 mal: 0 	 loss: 2.10351634 	 time: 1.42
+local epoch 0 	 client: 3 	 mal: 0 	 loss: 1.90368390 	 time: 1.42
+local epoch 0 	 client: 4 	 mal: 0 	 loss: 1.79719853 	 time: 1.45
+local epoch 0 	 client: 5 	 mal: 0 	 loss: 1.98463070 	 time: 1.43
+local epoch 0 	 client: 6 	 mal: 0 	 loss: 1.81015766 	 time: 1.43
+local epoch 0 	 client: 7 	 mal: 0 	 loss: 1.86436307 	 time: 1.48
+local epoch 0 	 client: 8 	 mal: 0 	 loss: 1.76490057 	 time: 1.44
+local epoch 0 	 client: 9 	 mal: 0 	 loss: 2.00823164 	 time: 1.43
+local epoch 0 	 client: 10 	 mal: 0 	 loss: 1.90847373 	 time: 1.49
+local epoch 0 	 client: 11 	 mal: 0 	 loss: 1.90054870 	 time: 1.44
+local epoch 0 	 client: 12 	 mal: 0 	 loss: 1.83945107 	 time: 1.43
+local epoch 0 	 client: 13 	 mal: 0 	 loss: 1.82293832 	 time: 1.43
+local epoch 0 	 client: 14 	 mal: 0 	 loss: 1.83325112 	 time: 1.43
+local epoch 0 	 client: 15 	 mal: 0 	 loss: 1.94602025 	 time: 1.42
+local epoch 0 	 client: 16 	 mal: 0 	 loss: 1.65601587 	 time: 1.43
+local epoch 0 	 client: 17 	 mal: 0 	 loss: 1.91053915 	 time: 1.43
+local epoch 0 	 client: 18 	 mal: 0 	 loss: 1.98187232 	 time: 1.50
+local epoch 0 	 client: 19 	 mal: 0 	 loss: 1.88393390 	 time: 1.46
+
+[GRADIENT DEBUG Rnd 20]
+Avg Malicious Delta Norm: 1.706648
+Avg Honest Delta Norm:    0.104950
+Power Ratio (Mal/Hon):    16.2616
+[DBG rnd=20] logits mean=0.0927, std=0.9699, maxlogit mean=1.3682
+[DBG rnd=20] probs max mean=0.2526, pred entropy mean=2.0055
+[DBG rnd=20] preds bincount=[3, 5, 0, 1, 1, 7, 20, 7, 5, 15]
+Clean ACC:              0.3492
+Attack Success Ratio:   0.1608
+Robustness ACC:           0.3129
+local epoch 0 	 client: 0 	 mal: 1 	 loss: 0.05887935 	 time: 16.31
+local epoch 0 	 client: 1 	 mal: 1 	 loss: 0.06244971 	 time: 16.42
+local epoch 0 	 client: 2 	 mal: 0 	 loss: 1.63651705 	 time: 1.42
+local epoch 0 	 client: 3 	 mal: 0 	 loss: 1.92591667 	 time: 1.43
+local epoch 0 	 client: 4 	 mal: 0 	 loss: 1.86318636 	 time: 1.43
+local epoch 0 	 client: 5 	 mal: 0 	 loss: 1.98750818 	 time: 1.43
+local epoch 0 	 client: 6 	 mal: 0 	 loss: 1.99396622 	 time: 1.44
+local epoch 0 	 client: 7 	 mal: 0 	 loss: 2.08712578 	 time: 1.43
+local epoch 0 	 client: 8 	 mal: 0 	 loss: 2.02320266 	 time: 1.43
+local epoch 0 	 client: 9 	 mal: 0 	 loss: 1.88705456 	 time: 1.42
+local epoch 0 	 client: 10 	 mal: 0 	 loss: 1.94965839 	 time: 1.43
+local epoch 0 	 client: 11 	 mal: 0 	 loss: 1.89607954 	 time: 1.43
+local epoch 0 	 client: 12 	 mal: 0 	 loss: 1.86526012 	 time: 1.44
+local epoch 0 	 client: 13 	 mal: 0 	 loss: 1.97832799 	 time: 1.43
+local epoch 0 	 client: 14 	 mal: 0 	 loss: 1.56969357 	 time: 1.43
+local epoch 0 	 client: 15 	 mal: 0 	 loss: 2.64966154 	 time: 1.44
+local epoch 0 	 client: 16 	 mal: 0 	 loss: 1.90471029 	 time: 1.48
+local epoch 0 	 client: 17 	 mal: 0 	 loss: 1.97317755 	 time: 1.44
+local epoch 0 	 client: 18 	 mal: 0 	 loss: 1.88158607 	 time: 1.43
+local epoch 0 	 client: 19 	 mal: 0 	 loss: 1.83204627 	 time: 1.49
+
+[GRADIENT DEBUG Rnd 21]
+Avg Malicious Delta Norm: 0.978115
+Avg Honest Delta Norm:    0.113381
+Power Ratio (Mal/Hon):    8.6268
+[DBG rnd=21] logits mean=0.0866, std=0.9730, maxlogit mean=1.4254
+[DBG rnd=21] probs max mean=0.2650, pred entropy mean=1.9908
+[DBG rnd=21] preds bincount=[3, 4, 0, 3, 0, 6, 7, 19, 6, 16]
+Clean ACC:              0.3227
+Attack Success Ratio:   0.3518
+Robustness ACC:           0.2623
+local epoch 0 	 client: 0 	 mal: 1 	 loss: 0.01656584 	 time: 16.34
+local epoch 0 	 client: 1 	 mal: 1 	 loss: 0.01603146 	 time: 16.46
+local epoch 0 	 client: 2 	 mal: 0 	 loss: 1.74460697 	 time: 1.42
+local epoch 0 	 client: 3 	 mal: 0 	 loss: 1.92409062 	 time: 1.43
+local epoch 0 	 client: 4 	 mal: 0 	 loss: 1.80967522 	 time: 1.42
+local epoch 0 	 client: 5 	 mal: 0 	 loss: 2.00087690 	 time: 1.50
+local epoch 0 	 client: 6 	 mal: 0 	 loss: 1.93943870 	 time: 1.45
+local epoch 0 	 client: 7 	 mal: 0 	 loss: 2.10799217 	 time: 1.43
+local epoch 0 	 client: 8 	 mal: 0 	 loss: 1.72147512 	 time: 1.43
+local epoch 0 	 client: 9 	 mal: 0 	 loss: 1.80602074 	 time: 1.44
+local epoch 0 	 client: 10 	 mal: 0 	 loss: 2.07885146 	 time: 1.43
+local epoch 0 	 client: 11 	 mal: 0 	 loss: 1.79258204 	 time: 1.46
+local epoch 0 	 client: 12 	 mal: 0 	 loss: 1.88375330 	 time: 1.46
+local epoch 0 	 client: 13 	 mal: 0 	 loss: 1.92740095 	 time: 1.45
+local epoch 0 	 client: 14 	 mal: 0 	 loss: 1.76260936 	 time: 1.43
+local epoch 0 	 client: 15 	 mal: 0 	 loss: 2.15403390 	 time: 1.43
+local epoch 0 	 client: 16 	 mal: 0 	 loss: 2.05689526 	 time: 1.42
+local epoch 0 	 client: 17 	 mal: 0 	 loss: 1.89723229 	 time: 1.43
+local epoch 0 	 client: 18 	 mal: 0 	 loss: 1.85721850 	 time: 1.43
+local epoch 0 	 client: 19 	 mal: 0 	 loss: 1.82318640 	 time: 1.44
+
+[GRADIENT DEBUG Rnd 22]
+Avg Malicious Delta Norm: 1.432153
+Avg Honest Delta Norm:    0.108315
+Power Ratio (Mal/Hon):    13.2222
+[DBG rnd=22] logits mean=0.0846, std=0.9484, maxlogit mean=1.3595
+[DBG rnd=22] probs max mean=0.2556, pred entropy mean=2.0058
+[DBG rnd=22] preds bincount=[3, 4, 0, 1, 0, 7, 20, 8, 6, 15]
+Clean ACC:              0.3536
+Attack Success Ratio:   0.1669
+Robustness ACC:           0.3191
+local epoch 0 	 client: 0 	 mal: 1 	 loss: 0.01458989 	 time: 16.30
+local epoch 0 	 client: 1 	 mal: 1 	 loss: 0.02126154 	 time: 16.33
+local epoch 0 	 client: 2 	 mal: 0 	 loss: 1.95317793 	 time: 1.42
+local epoch 0 	 client: 3 	 mal: 0 	 loss: 1.89829731 	 time: 1.43
+local epoch 0 	 client: 4 	 mal: 0 	 loss: 2.05779219 	 time: 1.43
+local epoch 0 	 client: 5 	 mal: 0 	 loss: 1.75101137 	 time: 1.43
+local epoch 0 	 client: 6 	 mal: 0 	 loss: 1.81122422 	 time: 1.43
+local epoch 0 	 client: 7 	 mal: 0 	 loss: 1.93644798 	 time: 1.49
+local epoch 0 	 client: 8 	 mal: 0 	 loss: 2.48208189 	 time: 1.43
+local epoch 0 	 client: 9 	 mal: 0 	 loss: 2.03244853 	 time: 1.43
+local epoch 0 	 client: 10 	 mal: 0 	 loss: 1.85232472 	 time: 1.48
+local epoch 0 	 client: 11 	 mal: 0 	 loss: 1.91358459 	 time: 1.47
+local epoch 0 	 client: 12 	 mal: 0 	 loss: 1.97194076 	 time: 1.43
+local epoch 0 	 client: 13 	 mal: 0 	 loss: 1.80688000 	 time: 1.43
+local epoch 0 	 client: 14 	 mal: 0 	 loss: 1.87525201 	 time: 1.44
+local epoch 0 	 client: 15 	 mal: 0 	 loss: 1.81223941 	 time: 1.43
+local epoch 0 	 client: 16 	 mal: 0 	 loss: 1.87750137 	 time: 1.49
+local epoch 0 	 client: 17 	 mal: 0 	 loss: 1.75787914 	 time: 1.44
+local epoch 0 	 client: 18 	 mal: 0 	 loss: 1.81269014 	 time: 1.43
+local epoch 0 	 client: 19 	 mal: 0 	 loss: 1.95028114 	 time: 1.43
+
+[GRADIENT DEBUG Rnd 23]
+Avg Malicious Delta Norm: 1.721608
+Avg Honest Delta Norm:    0.105109
+Power Ratio (Mal/Hon):    16.3792
+[DBG rnd=23] logits mean=0.0851, std=0.9738, maxlogit mean=1.3842
+[DBG rnd=23] probs max mean=0.2577, pred entropy mean=1.9966
+[DBG rnd=23] preds bincount=[3, 3, 0, 2, 1, 8, 18, 7, 4, 18]
+Clean ACC:              0.3575
+Attack Success Ratio:   0.1566
+Robustness ACC:           0.3206
+local epoch 0 	 client: 0 	 mal: 1 	 loss: 0.14384946 	 time: 16.44
+local epoch 0 	 client: 1 	 mal: 1 	 loss: 0.02548821 	 time: 16.36
+local epoch 0 	 client: 2 	 mal: 0 	 loss: 1.98235774 	 time: 1.42
+local epoch 0 	 client: 3 	 mal: 0 	 loss: 1.85162878 	 time: 1.44
+local epoch 0 	 client: 4 	 mal: 0 	 loss: 1.81120801 	 time: 1.43
+local epoch 0 	 client: 5 	 mal: 0 	 loss: 1.78665996 	 time: 1.47
+local epoch 0 	 client: 6 	 mal: 0 	 loss: 1.78120208 	 time: 1.44
+local epoch 0 	 client: 7 	 mal: 0 	 loss: 1.89848268 	 time: 1.44
+local epoch 0 	 client: 8 	 mal: 0 	 loss: 1.78794694 	 time: 1.47
+local epoch 0 	 client: 9 	 mal: 0 	 loss: 1.71810937 	 time: 1.44
+local epoch 0 	 client: 10 	 mal: 0 	 loss: 1.85874152 	 time: 1.44
+local epoch 0 	 client: 11 	 mal: 0 	 loss: 1.75446689 	 time: 1.44
+local epoch 0 	 client: 12 	 mal: 0 	 loss: 1.96762109 	 time: 1.43
+local epoch 0 	 client: 13 	 mal: 0 	 loss: 1.87359631 	 time: 1.43
+local epoch 0 	 client: 14 	 mal: 0 	 loss: 1.99937129 	 time: 1.48
+local epoch 0 	 client: 15 	 mal: 0 	 loss: 1.81024504 	 time: 1.44
+local epoch 0 	 client: 16 	 mal: 0 	 loss: 1.62595379 	 time: 1.44
+local epoch 0 	 client: 17 	 mal: 0 	 loss: 1.78005445 	 time: 1.44
+local epoch 0 	 client: 18 	 mal: 0 	 loss: 1.92351198 	 time: 1.45
+local epoch 0 	 client: 19 	 mal: 0 	 loss: 1.67786062 	 time: 1.43
+
+[GRADIENT DEBUG Rnd 24]
+Avg Malicious Delta Norm: 1.152618
+Avg Honest Delta Norm:    0.099540
+Power Ratio (Mal/Hon):    11.5795
+[DBG rnd=24] logits mean=0.0869, std=1.0477, maxlogit mean=1.4980
+[DBG rnd=24] probs max mean=0.2731, pred entropy mean=1.9635
+[DBG rnd=24] preds bincount=[3, 3, 0, 2, 1, 6, 11, 18, 4, 16]
+Clean ACC:              0.3423
+Attack Success Ratio:   0.3042
+Robustness ACC:           0.2769
+local epoch 0 	 client: 0 	 mal: 1 	 loss: 0.03021349 	 time: 16.34
+local epoch 0 	 client: 1 	 mal: 1 	 loss: 0.01169265 	 time: 16.33
+local epoch 0 	 client: 2 	 mal: 0 	 loss: 1.83349764 	 time: 1.45
+local epoch 0 	 client: 3 	 mal: 0 	 loss: 1.77177668 	 time: 1.44
+local epoch 0 	 client: 4 	 mal: 0 	 loss: 1.86576307 	 time: 1.49
+local epoch 0 	 client: 5 	 mal: 0 	 loss: 1.76531863 	 time: 1.43
+local epoch 0 	 client: 6 	 mal: 0 	 loss: 1.92478907 	 time: 1.43
+local epoch 0 	 client: 7 	 mal: 0 	 loss: 2.15399861 	 time: 1.47
+local epoch 0 	 client: 8 	 mal: 0 	 loss: 1.88760042 	 time: 1.43
+local epoch 0 	 client: 9 	 mal: 0 	 loss: 1.84893084 	 time: 1.43
+local epoch 0 	 client: 10 	 mal: 0 	 loss: 1.76844919 	 time: 1.48
+local epoch 0 	 client: 11 	 mal: 0 	 loss: 1.81816304 	 time: 1.45
+local epoch 0 	 client: 12 	 mal: 0 	 loss: 1.82520735 	 time: 1.46
+local epoch 0 	 client: 13 	 mal: 0 	 loss: 1.84548676 	 time: 1.43
+local epoch 0 	 client: 14 	 mal: 0 	 loss: 1.98473442 	 time: 1.44
+local epoch 0 	 client: 15 	 mal: 0 	 loss: 1.90868998 	 time: 1.44
+local epoch 0 	 client: 16 	 mal: 0 	 loss: 1.91001427 	 time: 1.49
+local epoch 0 	 client: 17 	 mal: 0 	 loss: 2.02779460 	 time: 1.45
+local epoch 0 	 client: 18 	 mal: 0 	 loss: 1.73948789 	 time: 1.44
+local epoch 0 	 client: 19 	 mal: 0 	 loss: 1.63288999 	 time: 1.44
+
+[GRADIENT DEBUG Rnd 25]
+Avg Malicious Delta Norm: 0.929569
+Avg Honest Delta Norm:    0.099773
+Power Ratio (Mal/Hon):    9.3169
+[DBG rnd=25] logits mean=0.0898, std=1.0305, maxlogit mean=1.4602
+[DBG rnd=25] probs max mean=0.2661, pred entropy mean=1.9742
+[DBG rnd=25] preds bincount=[2, 5, 0, 5, 1, 8, 17, 7, 6, 13]
+Clean ACC:              0.3687
+Attack Success Ratio:   0.1658
+Robustness ACC:           0.3296
+local epoch 0 	 client: 0 	 mal: 1 	 loss: 0.07200129 	 time: 16.46
+local epoch 0 	 client: 1 	 mal: 1 	 loss: 0.02531462 	 time: 16.34
+local epoch 0 	 client: 2 	 mal: 0 	 loss: 1.78738892 	 time: 1.42
+local epoch 0 	 client: 3 	 mal: 0 	 loss: 1.78166056 	 time: 1.43
+local epoch 0 	 client: 4 	 mal: 0 	 loss: 1.92325616 	 time: 1.44
+local epoch 0 	 client: 5 	 mal: 0 	 loss: 1.79401875 	 time: 1.43
+local epoch 0 	 client: 6 	 mal: 0 	 loss: 1.70365655 	 time: 1.43
+local epoch 0 	 client: 7 	 mal: 0 	 loss: 1.89286292 	 time: 1.43
+local epoch 0 	 client: 8 	 mal: 0 	 loss: 1.76936650 	 time: 1.45
+local epoch 0 	 client: 9 	 mal: 0 	 loss: 1.87321353 	 time: 1.43
+local epoch 0 	 client: 10 	 mal: 0 	 loss: 1.85907054 	 time: 1.42
+local epoch 0 	 client: 11 	 mal: 0 	 loss: 1.76023018 	 time: 1.43
+local epoch 0 	 client: 12 	 mal: 0 	 loss: 1.88433003 	 time: 1.42
+local epoch 0 	 client: 13 	 mal: 0 	 loss: 1.82714486 	 time: 1.43
+local epoch 0 	 client: 14 	 mal: 0 	 loss: 1.89633918 	 time: 1.44
+local epoch 0 	 client: 15 	 mal: 0 	 loss: 1.75509405 	 time: 1.43
+local epoch 0 	 client: 16 	 mal: 0 	 loss: 2.14734054 	 time: 1.44
+local epoch 0 	 client: 17 	 mal: 0 	 loss: 2.25829077 	 time: 1.43
+local epoch 0 	 client: 18 	 mal: 0 	 loss: 2.13796496 	 time: 1.53
+local epoch 0 	 client: 19 	 mal: 0 	 loss: 1.84620583 	 time: 1.48
+
+[GRADIENT DEBUG Rnd 26]
+Avg Malicious Delta Norm: 1.010222
+Avg Honest Delta Norm:    0.108868
+Power Ratio (Mal/Hon):    9.2793
+[DBG rnd=26] logits mean=0.0858, std=1.0313, maxlogit mean=1.4766
+[DBG rnd=26] probs max mean=0.2705, pred entropy mean=1.9635
+[DBG rnd=26] preds bincount=[3, 8, 0, 5, 0, 8, 14, 8, 5, 13]
+Clean ACC:              0.3694
+Attack Success Ratio:   0.1543
+Robustness ACC:           0.3353
+local epoch 0 	 client: 0 	 mal: 1 	 loss: 0.05967409 	 time: 16.30
+local epoch 0 	 client: 1 	 mal: 1 	 loss: 0.02125573 	 time: 16.53
+local epoch 0 	 client: 2 	 mal: 0 	 loss: 1.87352562 	 time: 1.47
+local epoch 0 	 client: 3 	 mal: 0 	 loss: 1.90935087 	 time: 1.44
+local epoch 0 	 client: 4 	 mal: 0 	 loss: 1.77069807 	 time: 1.43
+local epoch 0 	 client: 5 	 mal: 0 	 loss: 1.73311019 	 time: 1.43
+local epoch 0 	 client: 6 	 mal: 0 	 loss: 1.78216362 	 time: 1.47
+local epoch 0 	 client: 7 	 mal: 0 	 loss: 1.88998830 	 time: 1.43
+local epoch 0 	 client: 8 	 mal: 0 	 loss: 1.87330294 	 time: 1.43
+local epoch 0 	 client: 9 	 mal: 0 	 loss: 1.76064718 	 time: 1.43
+local epoch 0 	 client: 10 	 mal: 0 	 loss: 2.12622380 	 time: 1.43
+local epoch 0 	 client: 11 	 mal: 0 	 loss: 1.75482726 	 time: 1.42
+local epoch 0 	 client: 12 	 mal: 0 	 loss: 1.86749625 	 time: 1.43
+local epoch 0 	 client: 13 	 mal: 0 	 loss: 2.00254583 	 time: 1.43
+local epoch 0 	 client: 14 	 mal: 0 	 loss: 1.92522573 	 time: 1.48
+local epoch 0 	 client: 15 	 mal: 0 	 loss: 1.93198824 	 time: 1.45
+local epoch 0 	 client: 16 	 mal: 0 	 loss: 1.74585438 	 time: 1.43
+local epoch 0 	 client: 17 	 mal: 0 	 loss: 1.87576890 	 time: 1.45
+local epoch 0 	 client: 18 	 mal: 0 	 loss: 1.96020210 	 time: 1.44
+local epoch 0 	 client: 19 	 mal: 0 	 loss: 2.04313803 	 time: 1.44
+
+[GRADIENT DEBUG Rnd 27]
+Avg Malicious Delta Norm: 1.013508
+Avg Honest Delta Norm:    0.099902
+Power Ratio (Mal/Hon):    10.1450
+[DBG rnd=27] logits mean=0.0893, std=1.0697, maxlogit mean=1.5455
+[DBG rnd=27] probs max mean=0.2805, pred entropy mean=1.9431
+[DBG rnd=27] preds bincount=[3, 8, 0, 3, 0, 6, 16, 12, 3, 13]
+Clean ACC:              0.3660
+Attack Success Ratio:   0.1753
+Robustness ACC:           0.3249
+local epoch 0 	 client: 0 	 mal: 1 	 loss: 0.01750084 	 time: 16.33
+local epoch 0 	 client: 1 	 mal: 1 	 loss: 0.01865769 	 time: 16.31
+local epoch 0 	 client: 2 	 mal: 0 	 loss: 1.70554602 	 time: 1.43
+local epoch 0 	 client: 3 	 mal: 0 	 loss: 1.60454226 	 time: 1.44
+local epoch 0 	 client: 4 	 mal: 0 	 loss: 1.81473780 	 time: 1.43
+local epoch 0 	 client: 5 	 mal: 0 	 loss: 2.01951933 	 time: 1.43
+local epoch 0 	 client: 6 	 mal: 0 	 loss: 1.85755301 	 time: 1.43
+local epoch 0 	 client: 7 	 mal: 0 	 loss: 1.71340799 	 time: 1.43
+local epoch 0 	 client: 8 	 mal: 0 	 loss: 1.86181200 	 time: 1.42
+local epoch 0 	 client: 9 	 mal: 0 	 loss: 2.01782918 	 time: 1.48
+local epoch 0 	 client: 10 	 mal: 0 	 loss: 1.75726092 	 time: 1.44
+local epoch 0 	 client: 11 	 mal: 0 	 loss: 1.85675895 	 time: 1.42
+local epoch 0 	 client: 12 	 mal: 0 	 loss: 1.91272247 	 time: 1.50
+local epoch 0 	 client: 13 	 mal: 0 	 loss: 1.90651524 	 time: 1.44
+local epoch 0 	 client: 14 	 mal: 0 	 loss: 1.83315861 	 time: 1.43
+local epoch 0 	 client: 15 	 mal: 0 	 loss: 1.64471519 	 time: 1.43
+local epoch 0 	 client: 16 	 mal: 0 	 loss: 1.85892689 	 time: 1.44
+local epoch 0 	 client: 17 	 mal: 0 	 loss: 1.88331521 	 time: 1.43
+local epoch 0 	 client: 18 	 mal: 0 	 loss: 1.87375951 	 time: 1.45
+local epoch 0 	 client: 19 	 mal: 0 	 loss: 1.90363467 	 time: 1.45
+
+[GRADIENT DEBUG Rnd 28]
+Avg Malicious Delta Norm: 1.498705
+Avg Honest Delta Norm:    0.097897
+Power Ratio (Mal/Hon):    15.3090
+[DBG rnd=28] logits mean=0.0900, std=1.1001, maxlogit mean=1.5896
+[DBG rnd=28] probs max mean=0.2855, pred entropy mean=1.9275
+[DBG rnd=28] preds bincount=[3, 8, 0, 3, 1, 6, 14, 13, 4, 12]
+Clean ACC:              0.3774
+Attack Success Ratio:   0.1866
+Robustness ACC:           0.3347
+local epoch 0 	 client: 0 	 mal: 1 	 loss: 0.02160245 	 time: 16.46
+local epoch 0 	 client: 1 	 mal: 1 	 loss: 0.04708923 	 time: 16.36
+local epoch 0 	 client: 2 	 mal: 0 	 loss: 1.90168881 	 time: 1.43
+local epoch 0 	 client: 3 	 mal: 0 	 loss: 1.71247470 	 time: 1.43
+local epoch 0 	 client: 4 	 mal: 0 	 loss: 1.75420237 	 time: 1.44
+local epoch 0 	 client: 5 	 mal: 0 	 loss: 1.94228423 	 time: 1.44
+local epoch 0 	 client: 6 	 mal: 0 	 loss: 2.05193377 	 time: 1.45
+local epoch 0 	 client: 7 	 mal: 0 	 loss: 1.74322116 	 time: 1.43
+local epoch 0 	 client: 8 	 mal: 0 	 loss: 1.78318346 	 time: 1.44
+local epoch 0 	 client: 9 	 mal: 0 	 loss: 1.85072041 	 time: 1.43
+local epoch 0 	 client: 10 	 mal: 0 	 loss: 1.88481247 	 time: 1.48
+local epoch 0 	 client: 11 	 mal: 0 	 loss: 2.02286339 	 time: 1.46
+local epoch 0 	 client: 12 	 mal: 0 	 loss: 1.70592535 	 time: 1.42
+local epoch 0 	 client: 13 	 mal: 0 	 loss: 1.90089929 	 time: 1.43
+local epoch 0 	 client: 14 	 mal: 0 	 loss: 1.82741714 	 time: 1.44
+local epoch 0 	 client: 15 	 mal: 0 	 loss: 1.89206851 	 time: 1.45
+local epoch 0 	 client: 16 	 mal: 0 	 loss: 1.77520645 	 time: 1.46
+local epoch 0 	 client: 17 	 mal: 0 	 loss: 2.08471346 	 time: 1.50
+local epoch 0 	 client: 18 	 mal: 0 	 loss: 1.69227886 	 time: 1.46
+local epoch 0 	 client: 19 	 mal: 0 	 loss: 1.93608987 	 time: 1.43
+
+[GRADIENT DEBUG Rnd 29]
+Avg Malicious Delta Norm: 1.422869
+Avg Honest Delta Norm:    0.100904
+Power Ratio (Mal/Hon):    14.1012
+[DBG rnd=29] logits mean=0.0922, std=1.0443, maxlogit mean=1.5097
+[DBG rnd=29] probs max mean=0.2751, pred entropy mean=1.9574
+[DBG rnd=29] preds bincount=[3, 4, 0, 5, 1, 8, 12, 11, 5, 15]
+Clean ACC:              0.3784
+Attack Success Ratio:   0.1893
+Robustness ACC:           0.3356
+local epoch 0 	 client: 0 	 mal: 1 	 loss: 0.49919915 	 time: 16.30
+local epoch 0 	 client: 1 	 mal: 1 	 loss: 0.00843390 	 time: 16.54
+local epoch 0 	 client: 2 	 mal: 0 	 loss: 1.71495950 	 time: 1.42
+local epoch 0 	 client: 3 	 mal: 0 	 loss: 1.70225716 	 time: 1.43
+local epoch 0 	 client: 4 	 mal: 0 	 loss: 2.12950850 	 time: 1.43
+local epoch 0 	 client: 5 	 mal: 0 	 loss: 1.70558286 	 time: 1.43
+local epoch 0 	 client: 6 	 mal: 0 	 loss: 1.74544549 	 time: 1.46
+local epoch 0 	 client: 7 	 mal: 0 	 loss: 1.82178116 	 time: 1.43
+local epoch 0 	 client: 8 	 mal: 0 	 loss: 1.88713384 	 time: 1.42
+local epoch 0 	 client: 9 	 mal: 0 	 loss: 1.62758005 	 time: 1.45
+local epoch 0 	 client: 10 	 mal: 0 	 loss: 1.83080661 	 time: 1.45
+local epoch 0 	 client: 11 	 mal: 0 	 loss: 1.82697666 	 time: 1.44
+local epoch 0 	 client: 12 	 mal: 0 	 loss: 1.76521659 	 time: 1.50
+local epoch 0 	 client: 13 	 mal: 0 	 loss: 1.84999526 	 time: 1.46
+local epoch 0 	 client: 14 	 mal: 0 	 loss: 1.97737956 	 time: 1.43
+local epoch 0 	 client: 15 	 mal: 0 	 loss: 1.89638484 	 time: 1.42
+local epoch 0 	 client: 16 	 mal: 0 	 loss: 1.73211789 	 time: 1.42
+local epoch 0 	 client: 17 	 mal: 0 	 loss: 1.75038207 	 time: 1.42
+local epoch 0 	 client: 18 	 mal: 0 	 loss: 1.75072408 	 time: 1.44
+local epoch 0 	 client: 19 	 mal: 0 	 loss: 1.76361275 	 time: 1.44
+
+[GRADIENT DEBUG Rnd 30]
+Avg Malicious Delta Norm: 1.261092
+Avg Honest Delta Norm:    0.098365
+Power Ratio (Mal/Hon):    12.8205
+[DBG rnd=30] logits mean=0.0908, std=1.1166, maxlogit mean=1.6102
+[DBG rnd=30] probs max mean=0.2882, pred entropy mean=1.9204
+[DBG rnd=30] preds bincount=[3, 4, 0, 4, 0, 8, 16, 9, 5, 15]
+Clean ACC:              0.3839
+Attack Success Ratio:   0.1572
+Robustness ACC:           0.3488
+local epoch 0 	 client: 0 	 mal: 1 	 loss: 0.01362433 	 time: 16.32
+local epoch 0 	 client: 1 	 mal: 1 	 loss: 0.02995739 	 time: 16.33
+local epoch 0 	 client: 2 	 mal: 0 	 loss: 1.89893520 	 time: 1.45
+local epoch 0 	 client: 3 	 mal: 0 	 loss: 1.86822069 	 time: 1.42
+local epoch 0 	 client: 4 	 mal: 0 	 loss: 1.82783794 	 time: 1.44
+local epoch 0 	 client: 5 	 mal: 0 	 loss: 1.78902471 	 time: 1.43
+local epoch 0 	 client: 6 	 mal: 0 	 loss: 1.76580465 	 time: 1.48
+local epoch 0 	 client: 7 	 mal: 0 	 loss: 1.63077354 	 time: 1.44
+local epoch 0 	 client: 8 	 mal: 0 	 loss: 2.01845217 	 time: 1.44
+local epoch 0 	 client: 9 	 mal: 0 	 loss: 1.84433067 	 time: 1.46
+local epoch 0 	 client: 10 	 mal: 0 	 loss: 1.89292455 	 time: 1.44
+local epoch 0 	 client: 11 	 mal: 0 	 loss: 1.85892975 	 time: 1.43
+local epoch 0 	 client: 12 	 mal: 0 	 loss: 1.99915242 	 time: 1.47
+local epoch 0 	 client: 13 	 mal: 0 	 loss: 1.81977463 	 time: 1.47
+local epoch 0 	 client: 14 	 mal: 0 	 loss: 1.62647903 	 time: 1.43
+local epoch 0 	 client: 15 	 mal: 0 	 loss: 1.68452358 	 time: 1.43
+local epoch 0 	 client: 16 	 mal: 0 	 loss: 1.85144448 	 time: 1.50
+local epoch 0 	 client: 17 	 mal: 0 	 loss: 1.83763826 	 time: 1.48
+local epoch 0 	 client: 18 	 mal: 0 	 loss: 2.02591801 	 time: 1.45
+local epoch 0 	 client: 19 	 mal: 0 	 loss: 1.83647776 	 time: 1.44
+
+[GRADIENT DEBUG Rnd 31]
+Avg Malicious Delta Norm: 1.651701
+Avg Honest Delta Norm:    0.095936
+Power Ratio (Mal/Hon):    17.2167
+[DBG rnd=31] logits mean=0.0950, std=1.1630, maxlogit mean=1.6640
+[DBG rnd=31] probs max mean=0.2936, pred entropy mean=1.9077
+[DBG rnd=31] preds bincount=[3, 4, 0, 4, 1, 8, 16, 8, 5, 15]
+Clean ACC:              0.3841
+Attack Success Ratio:   0.1657
+Robustness ACC:           0.3436
+local epoch 0 	 client: 0 	 mal: 1 	 loss: 0.00862503 	 time: 16.32
+local epoch 0 	 client: 1 	 mal: 1 	 loss: 0.03545920 	 time: 16.52
+local epoch 0 	 client: 2 	 mal: 0 	 loss: 1.61250138 	 time: 1.43
+local epoch 0 	 client: 3 	 mal: 0 	 loss: 1.95355201 	 time: 1.43
+local epoch 0 	 client: 4 	 mal: 0 	 loss: 1.85305989 	 time: 1.44
+local epoch 0 	 client: 5 	 mal: 0 	 loss: 1.89467406 	 time: 1.44
+local epoch 0 	 client: 6 	 mal: 0 	 loss: 1.84267032 	 time: 1.43
+local epoch 0 	 client: 7 	 mal: 0 	 loss: 2.09285450 	 time: 1.43
+local epoch 0 	 client: 8 	 mal: 0 	 loss: 1.67884231 	 time: 1.43
+local epoch 0 	 client: 9 	 mal: 0 	 loss: 1.89115870 	 time: 1.43
+local epoch 0 	 client: 10 	 mal: 0 	 loss: 1.92891347 	 time: 1.43
+local epoch 0 	 client: 11 	 mal: 0 	 loss: 1.77607727 	 time: 1.50
+local epoch 0 	 client: 12 	 mal: 0 	 loss: 1.95021856 	 time: 1.49
+local epoch 0 	 client: 13 	 mal: 0 	 loss: 1.93595231 	 time: 1.45
+local epoch 0 	 client: 14 	 mal: 0 	 loss: 1.82278991 	 time: 1.43
+local epoch 0 	 client: 15 	 mal: 0 	 loss: 1.74525583 	 time: 1.42
+local epoch 0 	 client: 16 	 mal: 0 	 loss: 1.96619785 	 time: 1.43
+local epoch 0 	 client: 17 	 mal: 0 	 loss: 1.75141680 	 time: 1.43
+local epoch 0 	 client: 18 	 mal: 0 	 loss: 1.88092864 	 time: 1.44
+local epoch 0 	 client: 19 	 mal: 0 	 loss: 1.70183516 	 time: 1.43
+
+[GRADIENT DEBUG Rnd 32]
+Avg Malicious Delta Norm: 1.392293
+Avg Honest Delta Norm:    0.096271
+Power Ratio (Mal/Hon):    14.4622
+[DBG rnd=32] logits mean=0.0908, std=1.1518, maxlogit mean=1.6773
+[DBG rnd=32] probs max mean=0.2981, pred entropy mean=1.8944
+[DBG rnd=32] preds bincount=[3, 10, 0, 2, 2, 6, 16, 11, 3, 11]
+Clean ACC:              0.3866
+Attack Success Ratio:   0.1524
+Robustness ACC:           0.3476
+local epoch 0 	 client: 0 	 mal: 1 	 loss: 0.50000000 	 time: 16.30
+local epoch 0 	 client: 1 	 mal: 1 	 loss: 0.50000000 	 time: 16.34
+local epoch 0 	 client: 2 	 mal: 0 	 loss: 1.76559949 	 time: 1.44
+local epoch 0 	 client: 3 	 mal: 0 	 loss: 1.85890925 	 time: 1.42
+local epoch 0 	 client: 4 	 mal: 0 	 loss: 1.86170769 	 time: 1.43
+local epoch 0 	 client: 5 	 mal: 0 	 loss: 1.79076409 	 time: 1.43
+local epoch 0 	 client: 6 	 mal: 0 	 loss: 1.85295200 	 time: 1.44
+local epoch 0 	 client: 7 	 mal: 0 	 loss: 1.86775661 	 time: 1.44
+local epoch 0 	 client: 8 	 mal: 0 	 loss: 1.81054688 	 time: 1.52
+local epoch 0 	 client: 9 	 mal: 0 	 loss: 1.86951411 	 time: 1.51
+local epoch 0 	 client: 10 	 mal: 0 	 loss: 1.97728443 	 time: 1.43
+local epoch 0 	 client: 11 	 mal: 0 	 loss: 1.72190845 	 time: 1.42
+local epoch 0 	 client: 12 	 mal: 0 	 loss: 1.71656621 	 time: 1.43
+local epoch 0 	 client: 13 	 mal: 0 	 loss: 1.85555911 	 time: 1.43
+local epoch 0 	 client: 14 	 mal: 0 	 loss: 1.70491481 	 time: 1.43
+local epoch 0 	 client: 15 	 mal: 0 	 loss: 1.85460877 	 time: 1.49
+local epoch 0 	 client: 16 	 mal: 0 	 loss: 1.81853986 	 time: 1.44
+local epoch 0 	 client: 17 	 mal: 0 	 loss: 1.78939342 	 time: 1.43
+local epoch 0 	 client: 18 	 mal: 0 	 loss: 1.85339904 	 time: 1.43
+local epoch 0 	 client: 19 	 mal: 0 	 loss: 1.87679517 	 time: 1.44
+
+[GRADIENT DEBUG Rnd 33]
+Avg Malicious Delta Norm: 1.834601
+Avg Honest Delta Norm:    0.092697
+Power Ratio (Mal/Hon):    19.7914
+[DBG rnd=33] logits mean=0.0970, std=3.2653, maxlogit mean=5.5458
+[DBG rnd=33] probs max mean=0.8356, pred entropy mean=0.6309
+[DBG rnd=33] preds bincount=[1, 0, 0, 0, 0, 0, 0, 63, 0, 0]
+Clean ACC:              0.1220
+Attack Success Ratio:   0.9694
+Robustness ACC:           0.0192
+local epoch 0 	 client: 0 	 mal: 1 	 loss: 0.03672383 	 time: 16.47
+local epoch 0 	 client: 1 	 mal: 1 	 loss: 0.03104513 	 time: 16.31
+local epoch 0 	 client: 2 	 mal: 0 	 loss: 2.16562057 	 time: 1.42
+local epoch 0 	 client: 3 	 mal: 0 	 loss: 1.89929414 	 time: 1.44
+local epoch 0 	 client: 4 	 mal: 0 	 loss: 2.11382842 	 time: 1.43
+local epoch 0 	 client: 5 	 mal: 0 	 loss: 2.08541298 	 time: 1.43
+local epoch 0 	 client: 6 	 mal: 0 	 loss: 2.15457249 	 time: 1.43
+local epoch 0 	 client: 7 	 mal: 0 	 loss: 2.05341482 	 time: 1.49
+local epoch 0 	 client: 8 	 mal: 0 	 loss: 1.96206009 	 time: 1.44
+local epoch 0 	 client: 9 	 mal: 0 	 loss: 2.15710926 	 time: 1.43
+local epoch 0 	 client: 10 	 mal: 0 	 loss: 1.96336162 	 time: 1.46
+local epoch 0 	 client: 11 	 mal: 0 	 loss: 2.04493093 	 time: 1.44
+local epoch 0 	 client: 12 	 mal: 0 	 loss: 1.98561525 	 time: 1.42
+local epoch 0 	 client: 13 	 mal: 0 	 loss: 2.12830210 	 time: 1.49
+local epoch 0 	 client: 14 	 mal: 0 	 loss: 1.95819080 	 time: 1.45
+local epoch 0 	 client: 15 	 mal: 0 	 loss: 2.13822722 	 time: 1.43
+local epoch 0 	 client: 16 	 mal: 0 	 loss: 2.03790259 	 time: 1.42
+local epoch 0 	 client: 17 	 mal: 0 	 loss: 2.06387305 	 time: 1.43
+local epoch 0 	 client: 18 	 mal: 0 	 loss: 2.01708984 	 time: 1.43
+local epoch 0 	 client: 19 	 mal: 0 	 loss: 2.06063557 	 time: 1.42
+
+[GRADIENT DEBUG Rnd 34]
+Avg Malicious Delta Norm: 0.149123
+Avg Honest Delta Norm:    0.368175
+Power Ratio (Mal/Hon):    0.4050
+!!! ALERT: Malicious signal is too quiet. FedAvg will wash this out.
+[DBG rnd=34] logits mean=0.1112, std=0.5602, maxlogit mean=0.8724
+[DBG rnd=34] probs max mean=0.1896, pred entropy mean=2.1633
+[DBG rnd=34] preds bincount=[0, 3, 4, 5, 0, 16, 15, 1, 5, 15]
+Clean ACC:              0.3051
+Attack Success Ratio:   0.0040
+Robustness ACC:           0.3297
+local epoch 0 	 client: 0 	 mal: 1 	 loss: 0.01876929 	 time: 16.31
+local epoch 0 	 client: 1 	 mal: 1 	 loss: 0.03255911 	 time: 16.39
+local epoch 0 	 client: 2 	 mal: 0 	 loss: 2.04286480 	 time: 1.46
+local epoch 0 	 client: 3 	 mal: 0 	 loss: 1.72623539 	 time: 1.43
+local epoch 0 	 client: 4 	 mal: 0 	 loss: 1.92035234 	 time: 1.43
+local epoch 0 	 client: 5 	 mal: 0 	 loss: 1.77316236 	 time: 1.44
+local epoch 0 	 client: 6 	 mal: 0 	 loss: 1.84879875 	 time: 1.43
+local epoch 0 	 client: 7 	 mal: 0 	 loss: 1.94520879 	 time: 1.43
+local epoch 0 	 client: 8 	 mal: 0 	 loss: 1.81005311 	 time: 1.43
+local epoch 0 	 client: 9 	 mal: 0 	 loss: 1.99041235 	 time: 1.43
+local epoch 0 	 client: 10 	 mal: 0 	 loss: 2.09756756 	 time: 1.51
+local epoch 0 	 client: 11 	 mal: 0 	 loss: 1.89099836 	 time: 1.46
+local epoch 0 	 client: 12 	 mal: 0 	 loss: 1.89141536 	 time: 1.42
+local epoch 0 	 client: 13 	 mal: 0 	 loss: 2.13313317 	 time: 1.43
+local epoch 0 	 client: 14 	 mal: 0 	 loss: 1.86333895 	 time: 1.43
+local epoch 0 	 client: 15 	 mal: 0 	 loss: 1.80103242 	 time: 1.44
+local epoch 0 	 client: 16 	 mal: 0 	 loss: 2.21990728 	 time: 1.51
+local epoch 0 	 client: 17 	 mal: 0 	 loss: 1.86650085 	 time: 1.47
+local epoch 0 	 client: 18 	 mal: 0 	 loss: 2.01983142 	 time: 1.44
+local epoch 0 	 client: 19 	 mal: 0 	 loss: 1.88760042 	 time: 1.44
+
+[GRADIENT DEBUG Rnd 35]
+Avg Malicious Delta Norm: 0.562184
+Avg Honest Delta Norm:    0.105631
+Power Ratio (Mal/Hon):    5.3221
+[DBG rnd=35] logits mean=0.1145, std=0.9208, maxlogit mean=1.2909
+[DBG rnd=35] probs max mean=0.2374, pred entropy mean=2.0297
+[DBG rnd=35] preds bincount=[5, 11, 2, 2, 4, 7, 5, 11, 6, 11]
+Clean ACC:              0.3654
+Attack Success Ratio:   0.1419
+Robustness ACC:           0.3436
+local epoch 0 	 client: 0 	 mal: 1 	 loss: 0.01488353 	 time: 16.47
+local epoch 0 	 client: 1 	 mal: 1 	 loss: 0.03872292 	 time: 16.39
+local epoch 0 	 client: 2 	 mal: 0 	 loss: 1.86116517 	 time: 1.42
+local epoch 0 	 client: 3 	 mal: 0 	 loss: 1.85152578 	 time: 1.43
+local epoch 0 	 client: 4 	 mal: 0 	 loss: 1.92696548 	 time: 1.43
+local epoch 0 	 client: 5 	 mal: 0 	 loss: 1.85563040 	 time: 1.43
+local epoch 0 	 client: 6 	 mal: 0 	 loss: 1.79440224 	 time: 1.45
+local epoch 0 	 client: 7 	 mal: 0 	 loss: 1.78041887 	 time: 1.44
+local epoch 0 	 client: 8 	 mal: 0 	 loss: 1.70437109 	 time: 1.43
+local epoch 0 	 client: 9 	 mal: 0 	 loss: 1.94590259 	 time: 1.48
+local epoch 0 	 client: 10 	 mal: 0 	 loss: 2.01164412 	 time: 1.44
+local epoch 0 	 client: 11 	 mal: 0 	 loss: 1.68514729 	 time: 1.44
+local epoch 0 	 client: 12 	 mal: 0 	 loss: 1.85634458 	 time: 1.45
+local epoch 0 	 client: 13 	 mal: 0 	 loss: 1.75649154 	 time: 1.45
+local epoch 0 	 client: 14 	 mal: 0 	 loss: 1.86903083 	 time: 1.44
+local epoch 0 	 client: 15 	 mal: 0 	 loss: 1.86281097 	 time: 1.43
+local epoch 0 	 client: 16 	 mal: 0 	 loss: 1.76834416 	 time: 1.44
+local epoch 0 	 client: 17 	 mal: 0 	 loss: 1.93300033 	 time: 1.43
+local epoch 0 	 client: 18 	 mal: 0 	 loss: 1.83247352 	 time: 1.51
+local epoch 0 	 client: 19 	 mal: 0 	 loss: 1.77459979 	 time: 1.49
+
+[GRADIENT DEBUG Rnd 36]
+Avg Malicious Delta Norm: 0.460164
+Avg Honest Delta Norm:    0.096138
+Power Ratio (Mal/Hon):    4.7865
+[DBG rnd=36] logits mean=0.1120, std=1.0561, maxlogit mean=1.5069
+[DBG rnd=36] probs max mean=0.2685, pred entropy mean=1.9616
+[DBG rnd=36] preds bincount=[3, 6, 0, 4, 4, 10, 6, 14, 7, 10]
+Clean ACC:              0.3715
+Attack Success Ratio:   0.2164
+Robustness ACC:           0.3374
+local epoch 0 	 client: 0 	 mal: 1 	 loss: 0.08063983 	 time: 16.31
+local epoch 0 	 client: 1 	 mal: 1 	 loss: 0.06455602 	 time: 16.45
+local epoch 0 	 client: 2 	 mal: 0 	 loss: 2.01292086 	 time: 1.42
+local epoch 0 	 client: 3 	 mal: 0 	 loss: 1.88408124 	 time: 1.43
+local epoch 0 	 client: 4 	 mal: 0 	 loss: 1.86942315 	 time: 1.43
+local epoch 0 	 client: 5 	 mal: 0 	 loss: 1.65019572 	 time: 1.43
+local epoch 0 	 client: 6 	 mal: 0 	 loss: 1.82228231 	 time: 1.43
+local epoch 0 	 client: 7 	 mal: 0 	 loss: 1.75742507 	 time: 1.48
+local epoch 0 	 client: 8 	 mal: 0 	 loss: 1.65562010 	 time: 1.44
+local epoch 0 	 client: 9 	 mal: 0 	 loss: 1.58951163 	 time: 1.44
+local epoch 0 	 client: 10 	 mal: 0 	 loss: 1.68107343 	 time: 1.44
+local epoch 0 	 client: 11 	 mal: 0 	 loss: 1.53322315 	 time: 1.44
+local epoch 0 	 client: 12 	 mal: 0 	 loss: 1.85056889 	 time: 1.43
+local epoch 0 	 client: 13 	 mal: 0 	 loss: 1.79756212 	 time: 1.43
+local epoch 0 	 client: 14 	 mal: 0 	 loss: 1.85132992 	 time: 1.43
+local epoch 0 	 client: 15 	 mal: 0 	 loss: 1.87575471 	 time: 1.50
+local epoch 0 	 client: 16 	 mal: 0 	 loss: 2.01173663 	 time: 1.46
+local epoch 0 	 client: 17 	 mal: 0 	 loss: 2.33996511 	 time: 1.43
+local epoch 0 	 client: 18 	 mal: 0 	 loss: 1.68616247 	 time: 1.43
+local epoch 0 	 client: 19 	 mal: 0 	 loss: 2.05459785 	 time: 1.43
+
+[GRADIENT DEBUG Rnd 37]
+Avg Malicious Delta Norm: 0.506646
+Avg Honest Delta Norm:    0.090253
+Power Ratio (Mal/Hon):    5.6136
+[DBG rnd=37] logits mean=0.1076, std=1.1779, maxlogit mean=1.6971
+[DBG rnd=37] probs max mean=0.2932, pred entropy mean=1.8973
+[DBG rnd=37] preds bincount=[3, 6, 0, 7, 3, 6, 6, 12, 6, 15]
+Clean ACC:              0.3735
+Attack Success Ratio:   0.1991
+Robustness ACC:           0.3386
+local epoch 0 	 client: 0 	 mal: 1 	 loss: 0.07729348 	 time: 16.32
+local epoch 0 	 client: 1 	 mal: 1 	 loss: 0.10269748 	 time: 16.41
+local epoch 0 	 client: 2 	 mal: 0 	 loss: 1.70607638 	 time: 1.43
+local epoch 0 	 client: 3 	 mal: 0 	 loss: 1.62966835 	 time: 1.44
+local epoch 0 	 client: 4 	 mal: 0 	 loss: 1.72328043 	 time: 1.47
+local epoch 0 	 client: 5 	 mal: 0 	 loss: 1.76444733 	 time: 1.44
+local epoch 0 	 client: 6 	 mal: 0 	 loss: 1.76086617 	 time: 1.43
+local epoch 0 	 client: 7 	 mal: 0 	 loss: 1.79100037 	 time: 1.43
+local epoch 0 	 client: 8 	 mal: 0 	 loss: 1.62705660 	 time: 1.44
+local epoch 0 	 client: 9 	 mal: 0 	 loss: 1.90632689 	 time: 1.42
+local epoch 0 	 client: 10 	 mal: 0 	 loss: 1.77208352 	 time: 1.43
+local epoch 0 	 client: 11 	 mal: 0 	 loss: 1.83487916 	 time: 1.42
+local epoch 0 	 client: 12 	 mal: 0 	 loss: 1.85627186 	 time: 1.44
+local epoch 0 	 client: 13 	 mal: 0 	 loss: 1.70324910 	 time: 1.44
+local epoch 0 	 client: 14 	 mal: 0 	 loss: 1.57875490 	 time: 1.43
+local epoch 0 	 client: 15 	 mal: 0 	 loss: 1.73800099 	 time: 1.45
+local epoch 0 	 client: 16 	 mal: 0 	 loss: 1.79599583 	 time: 1.43
+local epoch 0 	 client: 17 	 mal: 0 	 loss: 2.00949430 	 time: 1.45
+local epoch 0 	 client: 18 	 mal: 0 	 loss: 1.62036324 	 time: 1.45
+local epoch 0 	 client: 19 	 mal: 0 	 loss: 1.86596417 	 time: 1.44
+
+[GRADIENT DEBUG Rnd 38]
+Avg Malicious Delta Norm: 0.842788
+Avg Honest Delta Norm:    0.086828
+Power Ratio (Mal/Hon):    9.7064
+[DBG rnd=38] logits mean=0.1046, std=1.2250, maxlogit mean=1.7444
+[DBG rnd=38] probs max mean=0.2995, pred entropy mean=1.8835
+[DBG rnd=38] preds bincount=[3, 4, 0, 7, 4, 7, 7, 12, 6, 14]
+Clean ACC:              0.3902
+Attack Success Ratio:   0.1647
+Robustness ACC:           0.3608
+local epoch 0 	 client: 0 	 mal: 1 	 loss: 0.50000000 	 time: 16.48
+local epoch 0 	 client: 1 	 mal: 1 	 loss: 0.50000000 	 time: 16.35
+local epoch 0 	 client: 2 	 mal: 0 	 loss: 1.93648696 	 time: 1.43
+local epoch 0 	 client: 3 	 mal: 0 	 loss: 1.83225822 	 time: 1.44
+local epoch 0 	 client: 4 	 mal: 0 	 loss: 1.67802274 	 time: 1.43
+local epoch 0 	 client: 5 	 mal: 0 	 loss: 1.60885906 	 time: 1.43
+local epoch 0 	 client: 6 	 mal: 0 	 loss: 1.76959085 	 time: 1.46
+local epoch 0 	 client: 7 	 mal: 0 	 loss: 1.70474255 	 time: 1.44
+local epoch 0 	 client: 8 	 mal: 0 	 loss: 1.62360823 	 time: 1.43
+local epoch 0 	 client: 9 	 mal: 0 	 loss: 1.74757445 	 time: 1.48
+local epoch 0 	 client: 10 	 mal: 0 	 loss: 1.58601093 	 time: 1.44
+local epoch 0 	 client: 11 	 mal: 0 	 loss: 1.69806767 	 time: 1.46
+local epoch 0 	 client: 12 	 mal: 0 	 loss: 1.65980756 	 time: 1.46
+local epoch 0 	 client: 13 	 mal: 0 	 loss: 1.82666683 	 time: 1.46
+local epoch 0 	 client: 14 	 mal: 0 	 loss: 1.73031533 	 time: 1.42
+local epoch 0 	 client: 15 	 mal: 0 	 loss: 1.79319930 	 time: 1.42
+local epoch 0 	 client: 16 	 mal: 0 	 loss: 1.76001155 	 time: 1.44
+local epoch 0 	 client: 17 	 mal: 0 	 loss: 1.88035393 	 time: 1.45
+local epoch 0 	 client: 18 	 mal: 0 	 loss: 1.95724547 	 time: 1.44
+local epoch 0 	 client: 19 	 mal: 0 	 loss: 1.77811265 	 time: 1.44
+
+[GRADIENT DEBUG Rnd 39]
+Avg Malicious Delta Norm: 1.106990
+Avg Honest Delta Norm:    0.083139
+Power Ratio (Mal/Hon):    13.3149
+[DBG rnd=39] logits mean=0.0878, std=1.2924, maxlogit mean=1.9305
+[DBG rnd=39] probs max mean=0.3349, pred entropy mean=1.8186
+[DBG rnd=39] preds bincount=[3, 16, 0, 2, 0, 4, 2, 24, 3, 10]
+Clean ACC:              0.3337
+Attack Success Ratio:   0.3399
+Robustness ACC:           0.2789
+local epoch 0 	 client: 0 	 mal: 1 	 loss: 0.01488785 	 time: 16.31
+local epoch 0 	 client: 1 	 mal: 1 	 loss: 0.00661959 	 time: 16.45
+local epoch 0 	 client: 2 	 mal: 0 	 loss: 1.88399243 	 time: 1.42
+local epoch 0 	 client: 3 	 mal: 0 	 loss: 1.58774352 	 time: 1.43
+local epoch 0 	 client: 4 	 mal: 0 	 loss: 1.78159106 	 time: 1.43
+local epoch 0 	 client: 5 	 mal: 0 	 loss: 1.71730888 	 time: 1.44
+local epoch 0 	 client: 6 	 mal: 0 	 loss: 1.80159283 	 time: 1.45
+local epoch 0 	 client: 7 	 mal: 0 	 loss: 1.78104973 	 time: 1.43
+local epoch 0 	 client: 8 	 mal: 0 	 loss: 1.76900685 	 time: 1.43
+local epoch 0 	 client: 9 	 mal: 0 	 loss: 1.71770799 	 time: 1.47
+local epoch 0 	 client: 10 	 mal: 0 	 loss: 1.64310062 	 time: 1.44
+local epoch 0 	 client: 11 	 mal: 0 	 loss: 1.93595231 	 time: 1.43
+local epoch 0 	 client: 12 	 mal: 0 	 loss: 1.84121203 	 time: 1.43
+local epoch 0 	 client: 13 	 mal: 0 	 loss: 1.83966923 	 time: 1.43
+local epoch 0 	 client: 14 	 mal: 0 	 loss: 1.58092558 	 time: 1.43
+local epoch 0 	 client: 15 	 mal: 0 	 loss: 1.86117208 	 time: 1.44
+local epoch 0 	 client: 16 	 mal: 0 	 loss: 2.05081701 	 time: 1.44
+local epoch 0 	 client: 17 	 mal: 0 	 loss: 1.52829778 	 time: 1.44
+local epoch 0 	 client: 18 	 mal: 0 	 loss: 1.78689885 	 time: 1.45
+local epoch 0 	 client: 19 	 mal: 0 	 loss: 1.59670734 	 time: 1.43
+
+[GRADIENT DEBUG Rnd 40]
+Avg Malicious Delta Norm: 1.038816
+Avg Honest Delta Norm:    0.085042
+Power Ratio (Mal/Hon):    12.2153
+[DBG rnd=40] logits mean=0.0962, std=1.2640, maxlogit mean=1.8348
+[DBG rnd=40] probs max mean=0.3164, pred entropy mean=1.8531
+[DBG rnd=40] preds bincount=[3, 6, 0, 8, 1, 6, 8, 14, 6, 12]
+Clean ACC:              0.3908
+Attack Success Ratio:   0.1844
+Robustness ACC:           0.3556
+local epoch 0 	 client: 0 	 mal: 1 	 loss: 0.48182204 	 time: 16.28
+local epoch 0 	 client: 1 	 mal: 1 	 loss: 0.01228032 	 time: 16.41
+local epoch 0 	 client: 2 	 mal: 0 	 loss: 1.64305699 	 time: 1.43
+local epoch 0 	 client: 3 	 mal: 0 	 loss: 1.61591136 	 time: 1.43
+local epoch 0 	 client: 4 	 mal: 0 	 loss: 1.69242620 	 time: 1.49
+local epoch 0 	 client: 5 	 mal: 0 	 loss: 1.68691802 	 time: 1.43
+local epoch 0 	 client: 6 	 mal: 0 	 loss: 1.83565032 	 time: 1.43
+local epoch 0 	 client: 7 	 mal: 0 	 loss: 1.70502377 	 time: 1.45
+local epoch 0 	 client: 8 	 mal: 0 	 loss: 1.82807636 	 time: 1.44
+local epoch 0 	 client: 9 	 mal: 0 	 loss: 1.78213739 	 time: 1.43
+local epoch 0 	 client: 10 	 mal: 0 	 loss: 1.75642908 	 time: 1.49
+local epoch 0 	 client: 11 	 mal: 0 	 loss: 1.65721607 	 time: 1.44
+local epoch 0 	 client: 12 	 mal: 0 	 loss: 1.65538859 	 time: 1.44
+local epoch 0 	 client: 13 	 mal: 0 	 loss: 1.89600539 	 time: 1.43
+local epoch 0 	 client: 14 	 mal: 0 	 loss: 1.88768744 	 time: 1.43
+local epoch 0 	 client: 15 	 mal: 0 	 loss: 1.75792646 	 time: 1.43
+local epoch 0 	 client: 16 	 mal: 0 	 loss: 1.72030640 	 time: 1.47
+local epoch 0 	 client: 17 	 mal: 0 	 loss: 1.87492609 	 time: 1.46
+local epoch 0 	 client: 18 	 mal: 0 	 loss: 1.71104240 	 time: 1.44
+local epoch 0 	 client: 19 	 mal: 0 	 loss: 1.63035440 	 time: 1.43
+
+[GRADIENT DEBUG Rnd 41]
+Avg Malicious Delta Norm: 1.053884
+Avg Honest Delta Norm:    0.081204
+Power Ratio (Mal/Hon):    12.9782
+[DBG rnd=41] logits mean=0.0939, std=1.3633, maxlogit mean=2.0168
+[DBG rnd=41] probs max mean=0.3435, pred entropy mean=1.7852
+[DBG rnd=41] preds bincount=[3, 9, 0, 6, 0, 5, 3, 19, 4, 15]
+Clean ACC:              0.3592
+Attack Success Ratio:   0.2701
+Robustness ACC:           0.3113
+local epoch 0 	 client: 0 	 mal: 1 	 loss: 0.13006562 	 time: 16.33
+local epoch 0 	 client: 1 	 mal: 1 	 loss: 0.10499953 	 time: 16.52
+local epoch 0 	 client: 2 	 mal: 0 	 loss: 1.67055762 	 time: 1.44
+local epoch 0 	 client: 3 	 mal: 0 	 loss: 1.79518139 	 time: 1.43
+local epoch 0 	 client: 4 	 mal: 0 	 loss: 1.55183196 	 time: 1.43
+local epoch 0 	 client: 5 	 mal: 0 	 loss: 1.82488823 	 time: 1.44
+local epoch 0 	 client: 6 	 mal: 0 	 loss: 1.79617453 	 time: 1.46
+local epoch 0 	 client: 7 	 mal: 0 	 loss: 1.83575726 	 time: 1.43
+local epoch 0 	 client: 8 	 mal: 0 	 loss: 1.74193788 	 time: 1.43
+local epoch 0 	 client: 9 	 mal: 0 	 loss: 1.83243155 	 time: 1.48
+local epoch 0 	 client: 10 	 mal: 0 	 loss: 1.87300026 	 time: 1.43
+local epoch 0 	 client: 11 	 mal: 0 	 loss: 1.68522143 	 time: 1.44
+local epoch 0 	 client: 12 	 mal: 0 	 loss: 1.82962871 	 time: 1.48
+local epoch 0 	 client: 13 	 mal: 0 	 loss: 1.83986044 	 time: 1.44
+local epoch 0 	 client: 14 	 mal: 0 	 loss: 1.78341269 	 time: 1.44
+local epoch 0 	 client: 15 	 mal: 0 	 loss: 1.85090601 	 time: 1.45
+local epoch 0 	 client: 16 	 mal: 0 	 loss: 1.63843715 	 time: 1.45
+local epoch 0 	 client: 17 	 mal: 0 	 loss: 1.66061795 	 time: 1.45
+local epoch 0 	 client: 18 	 mal: 0 	 loss: 1.91380894 	 time: 1.45
+local epoch 0 	 client: 19 	 mal: 0 	 loss: 1.67969298 	 time: 1.42
+
+[GRADIENT DEBUG Rnd 42]
+Avg Malicious Delta Norm: 0.935163
+Avg Honest Delta Norm:    0.082718
+Power Ratio (Mal/Hon):    11.3054
+[DBG rnd=42] logits mean=0.0902, std=1.3481, maxlogit mean=1.9948
+[DBG rnd=42] probs max mean=0.3419, pred entropy mean=1.7922
+[DBG rnd=42] preds bincount=[3, 6, 0, 8, 0, 6, 5, 17, 5, 14]
+Clean ACC:              0.3679
+Attack Success Ratio:   0.2460
+Robustness ACC:           0.3234
+local epoch 0 	 client: 0 	 mal: 1 	 loss: 0.09665497 	 time: 16.30
+local epoch 0 	 client: 1 	 mal: 1 	 loss: 0.00893796 	 time: 16.31
+local epoch 0 	 client: 2 	 mal: 0 	 loss: 1.66886461 	 time: 1.42
+local epoch 0 	 client: 3 	 mal: 0 	 loss: 1.83516669 	 time: 1.43
+local epoch 0 	 client: 4 	 mal: 0 	 loss: 1.86655688 	 time: 1.44
+local epoch 0 	 client: 5 	 mal: 0 	 loss: 1.63761258 	 time: 1.43
+local epoch 0 	 client: 6 	 mal: 0 	 loss: 1.72110176 	 time: 1.49
+local epoch 0 	 client: 7 	 mal: 0 	 loss: 1.68619561 	 time: 1.43
+local epoch 0 	 client: 8 	 mal: 0 	 loss: 1.61453497 	 time: 1.43
+local epoch 0 	 client: 9 	 mal: 0 	 loss: 1.71946204 	 time: 1.48
+local epoch 0 	 client: 10 	 mal: 0 	 loss: 1.91540909 	 time: 1.43
+local epoch 0 	 client: 11 	 mal: 0 	 loss: 1.73304486 	 time: 1.44
+local epoch 0 	 client: 12 	 mal: 0 	 loss: 1.75804973 	 time: 1.44
+local epoch 0 	 client: 13 	 mal: 0 	 loss: 1.79411685 	 time: 1.44
+local epoch 0 	 client: 14 	 mal: 0 	 loss: 1.82679951 	 time: 1.43
+local epoch 0 	 client: 15 	 mal: 0 	 loss: 1.96742129 	 time: 1.45
+local epoch 0 	 client: 16 	 mal: 0 	 loss: 1.68511200 	 time: 1.44
+local epoch 0 	 client: 17 	 mal: 0 	 loss: 1.76039720 	 time: 1.44
+local epoch 0 	 client: 18 	 mal: 0 	 loss: 1.62661088 	 time: 1.44
+local epoch 0 	 client: 19 	 mal: 0 	 loss: 1.80241990 	 time: 1.44
+
+[GRADIENT DEBUG Rnd 43]
+Avg Malicious Delta Norm: 1.154642
+Avg Honest Delta Norm:    0.082243
+Power Ratio (Mal/Hon):    14.0394
+[DBG rnd=43] logits mean=0.0936, std=1.3147, maxlogit mean=1.9031
+[DBG rnd=43] probs max mean=0.3249, pred entropy mean=1.8289
+[DBG rnd=43] preds bincount=[3, 3, 0, 8, 1, 6, 8, 14, 8, 13]
+Clean ACC:              0.4056
+Attack Success Ratio:   0.1619
+Robustness ACC:           0.3693
+local epoch 0 	 client: 0 	 mal: 1 	 loss: 0.05177816 	 time: 16.47
+local epoch 0 	 client: 1 	 mal: 1 	 loss: 0.01192751 	 time: 16.43
+local epoch 0 	 client: 2 	 mal: 0 	 loss: 1.67065597 	 time: 1.43
+local epoch 0 	 client: 3 	 mal: 0 	 loss: 1.73751009 	 time: 1.43
+local epoch 0 	 client: 4 	 mal: 0 	 loss: 1.73299384 	 time: 1.43
+local epoch 0 	 client: 5 	 mal: 0 	 loss: 1.77240288 	 time: 1.45
+local epoch 0 	 client: 6 	 mal: 0 	 loss: 1.83267593 	 time: 1.43
+local epoch 0 	 client: 7 	 mal: 0 	 loss: 1.70678735 	 time: 1.49
+local epoch 0 	 client: 8 	 mal: 0 	 loss: 1.69034469 	 time: 1.44
+local epoch 0 	 client: 9 	 mal: 0 	 loss: 1.72764313 	 time: 1.43
+local epoch 0 	 client: 10 	 mal: 0 	 loss: 1.64331210 	 time: 1.48
+local epoch 0 	 client: 11 	 mal: 0 	 loss: 1.64130509 	 time: 1.43
+local epoch 0 	 client: 12 	 mal: 0 	 loss: 1.69454515 	 time: 1.43
+local epoch 0 	 client: 13 	 mal: 0 	 loss: 1.63603926 	 time: 1.43
+local epoch 0 	 client: 14 	 mal: 0 	 loss: 1.79155672 	 time: 1.43
+local epoch 0 	 client: 15 	 mal: 0 	 loss: 1.74634302 	 time: 1.43
+local epoch 0 	 client: 16 	 mal: 0 	 loss: 1.70309627 	 time: 1.45
+local epoch 0 	 client: 17 	 mal: 0 	 loss: 1.79314613 	 time: 1.43
+local epoch 0 	 client: 18 	 mal: 0 	 loss: 1.64239287 	 time: 1.43
+local epoch 0 	 client: 19 	 mal: 0 	 loss: 1.96484232 	 time: 1.43
+
+[GRADIENT DEBUG Rnd 44]
+Avg Malicious Delta Norm: 1.263083
+Avg Honest Delta Norm:    0.078091
+Power Ratio (Mal/Hon):    16.1744
+[DBG rnd=44] logits mean=0.0928, std=1.3532, maxlogit mean=1.9815
+[DBG rnd=44] probs max mean=0.3364, pred entropy mean=1.8022
+[DBG rnd=44] preds bincount=[3, 11, 0, 6, 1, 8, 7, 14, 6, 8]
+Clean ACC:              0.3999
+Attack Success Ratio:   0.1951
+Robustness ACC:           0.3577
+local epoch 0 	 client: 0 	 mal: 1 	 loss: 0.02036162 	 time: 16.34
+local epoch 0 	 client: 1 	 mal: 1 	 loss: 0.03984953 	 time: 16.36
+local epoch 0 	 client: 2 	 mal: 0 	 loss: 1.74559987 	 time: 1.42
+local epoch 0 	 client: 3 	 mal: 0 	 loss: 1.80135489 	 time: 1.43
+local epoch 0 	 client: 4 	 mal: 0 	 loss: 1.74821293 	 time: 1.43
+local epoch 0 	 client: 5 	 mal: 0 	 loss: 1.62799525 	 time: 1.43
+local epoch 0 	 client: 6 	 mal: 0 	 loss: 1.69499922 	 time: 1.44
+local epoch 0 	 client: 7 	 mal: 0 	 loss: 1.64889586 	 time: 1.44
+local epoch 0 	 client: 8 	 mal: 0 	 loss: 1.70518923 	 time: 1.43
+local epoch 0 	 client: 9 	 mal: 0 	 loss: 1.83611619 	 time: 1.43
+local epoch 0 	 client: 10 	 mal: 0 	 loss: 1.68117023 	 time: 1.43
+local epoch 0 	 client: 11 	 mal: 0 	 loss: 1.60575259 	 time: 1.42
+local epoch 0 	 client: 12 	 mal: 0 	 loss: 1.65977263 	 time: 1.49
+local epoch 0 	 client: 13 	 mal: 0 	 loss: 1.80599880 	 time: 1.44
+local epoch 0 	 client: 14 	 mal: 0 	 loss: 1.77030647 	 time: 1.43
+local epoch 0 	 client: 15 	 mal: 0 	 loss: 1.93075371 	 time: 1.44
+local epoch 0 	 client: 16 	 mal: 0 	 loss: 1.64876699 	 time: 1.43
+local epoch 0 	 client: 17 	 mal: 0 	 loss: 1.74102163 	 time: 1.44
+local epoch 0 	 client: 18 	 mal: 0 	 loss: 1.92879939 	 time: 1.43
+local epoch 0 	 client: 19 	 mal: 0 	 loss: 1.67737865 	 time: 1.43
+
+[GRADIENT DEBUG Rnd 45]
+Avg Malicious Delta Norm: 1.231575
+Avg Honest Delta Norm:    0.081886
+Power Ratio (Mal/Hon):    15.0401
+[DBG rnd=45] logits mean=0.0975, std=1.3197, maxlogit mean=1.9417
+[DBG rnd=45] probs max mean=0.3309, pred entropy mean=1.8070
+[DBG rnd=45] preds bincount=[3, 9, 0, 9, 0, 7, 11, 10, 4, 11]
+Clean ACC:              0.4107
+Attack Success Ratio:   0.1174
+Robustness ACC:           0.3837
+local epoch 0 	 client: 0 	 mal: 1 	 loss: 0.03286766 	 time: 16.46
+local epoch 0 	 client: 1 	 mal: 1 	 loss: 0.47684529 	 time: 16.29
+local epoch 0 	 client: 2 	 mal: 0 	 loss: 1.66134179 	 time: 1.42
+local epoch 0 	 client: 3 	 mal: 0 	 loss: 1.90257514 	 time: 1.44
+local epoch 0 	 client: 4 	 mal: 0 	 loss: 1.68757391 	 time: 1.43
+local epoch 0 	 client: 5 	 mal: 0 	 loss: 1.69582200 	 time: 1.52
+local epoch 0 	 client: 6 	 mal: 0 	 loss: 1.70474410 	 time: 1.54
+local epoch 0 	 client: 7 	 mal: 0 	 loss: 1.82652652 	 time: 1.46
+local epoch 0 	 client: 8 	 mal: 0 	 loss: 1.81369495 	 time: 1.43
+local epoch 0 	 client: 9 	 mal: 0 	 loss: 1.98249018 	 time: 1.43
+local epoch 0 	 client: 10 	 mal: 0 	 loss: 1.85954571 	 time: 1.45
+local epoch 0 	 client: 11 	 mal: 0 	 loss: 1.85668242 	 time: 1.43
+local epoch 0 	 client: 12 	 mal: 0 	 loss: 1.71199906 	 time: 1.43
+local epoch 0 	 client: 13 	 mal: 0 	 loss: 1.76131213 	 time: 1.44
+local epoch 0 	 client: 14 	 mal: 0 	 loss: 1.79601169 	 time: 1.45
+local epoch 0 	 client: 15 	 mal: 0 	 loss: 1.67929053 	 time: 1.45
+local epoch 0 	 client: 16 	 mal: 0 	 loss: 1.52577496 	 time: 1.48
+local epoch 0 	 client: 17 	 mal: 0 	 loss: 1.69241154 	 time: 1.45
+local epoch 0 	 client: 18 	 mal: 0 	 loss: 1.64277303 	 time: 1.44
+local epoch 0 	 client: 19 	 mal: 0 	 loss: 1.73975289 	 time: 1.48
+
+[GRADIENT DEBUG Rnd 46]
+Avg Malicious Delta Norm: 1.228911
+Avg Honest Delta Norm:    0.079608
+Power Ratio (Mal/Hon):    15.4371
+[DBG rnd=46] logits mean=0.0872, std=1.3439, maxlogit mean=1.9767
+[DBG rnd=46] probs max mean=0.3386, pred entropy mean=1.7969
+[DBG rnd=46] preds bincount=[3, 13, 0, 8, 1, 6, 6, 14, 4, 9]
+Clean ACC:              0.3873
+Attack Success Ratio:   0.2174
+Robustness ACC:           0.3443
+local epoch 0 	 client: 0 	 mal: 1 	 loss: 0.00756282 	 time: 16.31
+local epoch 0 	 client: 1 	 mal: 1 	 loss: 0.02215135 	 time: 16.53
+local epoch 0 	 client: 2 	 mal: 0 	 loss: 1.59544671 	 time: 1.43
+local epoch 0 	 client: 3 	 mal: 0 	 loss: 1.90989959 	 time: 1.43
+local epoch 0 	 client: 4 	 mal: 0 	 loss: 1.42000771 	 time: 1.43
+local epoch 0 	 client: 5 	 mal: 0 	 loss: 1.82282054 	 time: 1.47
+local epoch 0 	 client: 6 	 mal: 0 	 loss: 1.60267091 	 time: 1.43
+local epoch 0 	 client: 7 	 mal: 0 	 loss: 1.77735829 	 time: 1.45
+local epoch 0 	 client: 8 	 mal: 0 	 loss: 1.57919729 	 time: 1.46
+local epoch 0 	 client: 9 	 mal: 0 	 loss: 1.81641042 	 time: 1.43
+local epoch 0 	 client: 10 	 mal: 0 	 loss: 1.73375523 	 time: 1.43
+local epoch 0 	 client: 11 	 mal: 0 	 loss: 1.80169296 	 time: 1.47
+local epoch 0 	 client: 12 	 mal: 0 	 loss: 1.97318888 	 time: 1.44
+local epoch 0 	 client: 13 	 mal: 0 	 loss: 1.73638332 	 time: 1.43
+local epoch 0 	 client: 14 	 mal: 0 	 loss: 1.86951852 	 time: 1.43
+local epoch 0 	 client: 15 	 mal: 0 	 loss: 1.83470893 	 time: 1.43
+local epoch 0 	 client: 16 	 mal: 0 	 loss: 1.76949430 	 time: 1.43
+local epoch 0 	 client: 17 	 mal: 0 	 loss: 1.77190340 	 time: 1.46
+local epoch 0 	 client: 18 	 mal: 0 	 loss: 1.64540946 	 time: 1.47
+local epoch 0 	 client: 19 	 mal: 0 	 loss: 1.63982534 	 time: 1.45
+
+[GRADIENT DEBUG Rnd 47]
+Avg Malicious Delta Norm: 1.441690
+Avg Honest Delta Norm:    0.079086
+Power Ratio (Mal/Hon):    18.2293
+[DBG rnd=47] logits mean=0.0950, std=1.3293, maxlogit mean=1.9326
+[DBG rnd=47] probs max mean=0.3282, pred entropy mean=1.8126
+[DBG rnd=47] preds bincount=[3, 9, 0, 7, 1, 8, 8, 13, 5, 10]
+Clean ACC:              0.4173
+Attack Success Ratio:   0.1451
+Robustness ACC:           0.3850
+local epoch 0 	 client: 0 	 mal: 1 	 loss: 0.07423242 	 time: 16.36
+local epoch 0 	 client: 1 	 mal: 1 	 loss: 0.03068344 	 time: 16.37
+local epoch 0 	 client: 2 	 mal: 0 	 loss: 1.84281969 	 time: 1.43
+local epoch 0 	 client: 3 	 mal: 0 	 loss: 1.61346340 	 time: 1.43
+local epoch 0 	 client: 4 	 mal: 0 	 loss: 1.75832081 	 time: 1.45
+local epoch 0 	 client: 5 	 mal: 0 	 loss: 1.73590827 	 time: 1.44
+local epoch 0 	 client: 6 	 mal: 0 	 loss: 1.79035151 	 time: 1.44
+local epoch 0 	 client: 7 	 mal: 0 	 loss: 1.63625634 	 time: 1.44
+local epoch 0 	 client: 8 	 mal: 0 	 loss: 1.52270961 	 time: 1.44
+local epoch 0 	 client: 9 	 mal: 0 	 loss: 1.91101515 	 time: 1.44
+local epoch 0 	 client: 10 	 mal: 0 	 loss: 1.81258810 	 time: 1.43
+local epoch 0 	 client: 11 	 mal: 0 	 loss: 1.77313411 	 time: 1.44
+local epoch 0 	 client: 12 	 mal: 0 	 loss: 1.93477273 	 time: 1.43
+local epoch 0 	 client: 13 	 mal: 0 	 loss: 1.77774203 	 time: 1.45
+local epoch 0 	 client: 14 	 mal: 0 	 loss: 1.81336701 	 time: 1.43
+local epoch 0 	 client: 15 	 mal: 0 	 loss: 1.81094813 	 time: 1.51
+local epoch 0 	 client: 16 	 mal: 0 	 loss: 1.57788455 	 time: 1.45
+local epoch 0 	 client: 17 	 mal: 0 	 loss: 1.72390032 	 time: 1.43
+local epoch 0 	 client: 18 	 mal: 0 	 loss: 1.45867145 	 time: 1.44
+local epoch 0 	 client: 19 	 mal: 0 	 loss: 1.67619395 	 time: 1.43
+
+[GRADIENT DEBUG Rnd 48]
+Avg Malicious Delta Norm: 1.081291
+Avg Honest Delta Norm:    0.077966
+Power Ratio (Mal/Hon):    13.8688
+[DBG rnd=48] logits mean=0.0943, std=1.3529, maxlogit mean=1.9537
+[DBG rnd=48] probs max mean=0.3299, pred entropy mean=1.8037
+[DBG rnd=48] preds bincount=[3, 10, 0, 5, 3, 8, 12, 9, 4, 10]
+Clean ACC:              0.4223
+Attack Success Ratio:   0.1343
+Robustness ACC:           0.3927
+local epoch 0 	 client: 0 	 mal: 1 	 loss: 0.05579054 	 time: 16.31
+local epoch 0 	 client: 1 	 mal: 1 	 loss: 0.02522885 	 time: 16.50
+local epoch 0 	 client: 2 	 mal: 0 	 loss: 1.88325500 	 time: 1.44
+local epoch 0 	 client: 3 	 mal: 0 	 loss: 1.65948343 	 time: 1.43
+local epoch 0 	 client: 4 	 mal: 0 	 loss: 1.70723891 	 time: 1.48
+local epoch 0 	 client: 5 	 mal: 0 	 loss: 1.82052362 	 time: 1.44
+local epoch 0 	 client: 6 	 mal: 0 	 loss: 1.50719190 	 time: 1.43
+local epoch 0 	 client: 7 	 mal: 0 	 loss: 1.94519508 	 time: 1.47
+local epoch 0 	 client: 8 	 mal: 0 	 loss: 1.73946071 	 time: 1.44
+local epoch 0 	 client: 9 	 mal: 0 	 loss: 1.73217058 	 time: 1.44
+local epoch 0 	 client: 10 	 mal: 0 	 loss: 1.72070467 	 time: 1.44
+local epoch 0 	 client: 11 	 mal: 0 	 loss: 1.66824114 	 time: 1.45
+local epoch 0 	 client: 12 	 mal: 0 	 loss: 1.80555308 	 time: 1.45
+local epoch 0 	 client: 13 	 mal: 0 	 loss: 1.78359771 	 time: 1.43
+local epoch 0 	 client: 14 	 mal: 0 	 loss: 1.40244997 	 time: 1.45
+local epoch 0 	 client: 15 	 mal: 0 	 loss: 1.78908455 	 time: 1.43
+local epoch 0 	 client: 16 	 mal: 0 	 loss: 1.66998649 	 time: 1.43
+local epoch 0 	 client: 17 	 mal: 0 	 loss: 1.53950310 	 time: 1.44
+local epoch 0 	 client: 18 	 mal: 0 	 loss: 1.72175348 	 time: 1.44
+local epoch 0 	 client: 19 	 mal: 0 	 loss: 1.94632185 	 time: 1.52
+
+[GRADIENT DEBUG Rnd 49]
+Avg Malicious Delta Norm: 1.477129
+Avg Honest Delta Norm:    0.075892
+Power Ratio (Mal/Hon):    19.4635
+[DBG rnd=49] logits mean=0.0997, std=1.3979, maxlogit mean=2.0358
+[DBG rnd=49] probs max mean=0.3393, pred entropy mean=1.7763
+[DBG rnd=49] preds bincount=[3, 10, 0, 8, 4, 7, 11, 7, 4, 10]
+Clean ACC:              0.4248
+Attack Success Ratio:   0.1148
+Robustness ACC:           0.3989
+local epoch 0 	 client: 0 	 mal: 1 	 loss: 0.04906340 	 time: 16.29
+local epoch 0 	 client: 1 	 mal: 1 	 loss: 0.03682237 	 time: 16.38
+local epoch 0 	 client: 2 	 mal: 0 	 loss: 1.50646925 	 time: 1.42
+local epoch 0 	 client: 3 	 mal: 0 	 loss: 1.51268566 	 time: 1.43
+local epoch 0 	 client: 4 	 mal: 0 	 loss: 1.68157279 	 time: 1.46
+local epoch 0 	 client: 5 	 mal: 0 	 loss: 1.66039348 	 time: 1.45
+local epoch 0 	 client: 6 	 mal: 0 	 loss: 1.43907166 	 time: 1.45
+local epoch 0 	 client: 7 	 mal: 0 	 loss: 1.84178030 	 time: 1.46
+local epoch 0 	 client: 8 	 mal: 0 	 loss: 1.59733939 	 time: 1.43
+local epoch 0 	 client: 9 	 mal: 0 	 loss: 1.43785608 	 time: 1.43
+local epoch 0 	 client: 10 	 mal: 0 	 loss: 1.81613600 	 time: 1.44
+local epoch 0 	 client: 11 	 mal: 0 	 loss: 1.46520865 	 time: 1.42
+local epoch 0 	 client: 12 	 mal: 0 	 loss: 1.66514230 	 time: 1.42
+local epoch 0 	 client: 13 	 mal: 0 	 loss: 1.78652072 	 time: 1.42
+local epoch 0 	 client: 14 	 mal: 0 	 loss: 2.05973840 	 time: 1.43
+local epoch 0 	 client: 15 	 mal: 0 	 loss: 1.73181570 	 time: 1.48
+local epoch 0 	 client: 16 	 mal: 0 	 loss: 1.47072136 	 time: 1.48
+local epoch 0 	 client: 17 	 mal: 0 	 loss: 2.02608395 	 time: 1.45
+local epoch 0 	 client: 18 	 mal: 0 	 loss: 1.61968756 	 time: 1.43
+local epoch 0 	 client: 19 	 mal: 0 	 loss: 1.68392277 	 time: 1.48
+
+[GRADIENT DEBUG Rnd 50]
+Avg Malicious Delta Norm: 1.532217
+Avg Honest Delta Norm:    0.073903
+Power Ratio (Mal/Hon):    20.7329
+[DBG rnd=50] logits mean=0.0992, std=1.4155, maxlogit mean=2.0805
+[DBG rnd=50] probs max mean=0.3476, pred entropy mean=1.7599
+[DBG rnd=50] preds bincount=[3, 6, 0, 6, 1, 8, 11, 11, 4, 14]
+Clean ACC:              0.4141
+Attack Success Ratio:   0.1620
+Robustness ACC:           0.3776
+local epoch 0 	 client: 0 	 mal: 1 	 loss: 0.04388565 	 time: 16.51
+local epoch 0 	 client: 1 	 mal: 1 	 loss: 0.01273583 	 time: 16.33
+local epoch 0 	 client: 2 	 mal: 0 	 loss: 1.72472274 	 time: 1.44
+local epoch 0 	 client: 3 	 mal: 0 	 loss: 1.73108780 	 time: 1.43
+local epoch 0 	 client: 4 	 mal: 0 	 loss: 1.71615875 	 time: 1.43
+local epoch 0 	 client: 5 	 mal: 0 	 loss: 1.69072378 	 time: 1.47
+local epoch 0 	 client: 6 	 mal: 0 	 loss: 1.67296386 	 time: 1.43
+local epoch 0 	 client: 7 	 mal: 0 	 loss: 1.78201008 	 time: 1.43
+local epoch 0 	 client: 8 	 mal: 0 	 loss: 1.48343325 	 time: 1.49
+local epoch 0 	 client: 9 	 mal: 0 	 loss: 1.62200499 	 time: 1.42
+local epoch 0 	 client: 10 	 mal: 0 	 loss: 1.66615641 	 time: 1.42
+local epoch 0 	 client: 11 	 mal: 0 	 loss: 1.71996200 	 time: 1.45
+local epoch 0 	 client: 12 	 mal: 0 	 loss: 1.62519193 	 time: 1.47
+local epoch 0 	 client: 13 	 mal: 0 	 loss: 1.73636460 	 time: 1.46
+local epoch 0 	 client: 14 	 mal: 0 	 loss: 1.70184088 	 time: 1.43
+local epoch 0 	 client: 15 	 mal: 0 	 loss: 1.67064941 	 time: 1.43
+local epoch 0 	 client: 16 	 mal: 0 	 loss: 1.61159253 	 time: 1.43
+local epoch 0 	 client: 17 	 mal: 0 	 loss: 1.90984917 	 time: 1.48
+local epoch 0 	 client: 18 	 mal: 0 	 loss: 1.42105031 	 time: 1.45
+local epoch 0 	 client: 19 	 mal: 0 	 loss: 1.84466124 	 time: 1.43
+
+[GRADIENT DEBUG Rnd 51]
+Avg Malicious Delta Norm: 1.194690
+Avg Honest Delta Norm:    0.075647
+Power Ratio (Mal/Hon):    15.7930
+[DBG rnd=51] logits mean=0.0917, std=1.4388, maxlogit mean=2.0989
+[DBG rnd=51] probs max mean=0.3488, pred entropy mean=1.7529
+[DBG rnd=51] preds bincount=[3, 7, 0, 6, 2, 6, 13, 10, 4, 13]
+Clean ACC:              0.4243
+Attack Success Ratio:   0.1462
+Robustness ACC:           0.3864
+local epoch 0 	 client: 0 	 mal: 1 	 loss: 0.02573508 	 time: 16.31
+local epoch 0 	 client: 1 	 mal: 1 	 loss: 0.00889660 	 time: 16.47
+local epoch 0 	 client: 2 	 mal: 0 	 loss: 1.82894123 	 time: 1.47
+local epoch 0 	 client: 3 	 mal: 0 	 loss: 1.53535295 	 time: 1.44
+local epoch 0 	 client: 4 	 mal: 0 	 loss: 1.65505993 	 time: 1.43
+local epoch 0 	 client: 5 	 mal: 0 	 loss: 1.88243675 	 time: 1.44
+local epoch 0 	 client: 6 	 mal: 0 	 loss: 1.59178007 	 time: 1.46
+local epoch 0 	 client: 7 	 mal: 0 	 loss: 1.55505383 	 time: 1.46
+local epoch 0 	 client: 8 	 mal: 0 	 loss: 1.42886710 	 time: 1.44
+local epoch 0 	 client: 9 	 mal: 0 	 loss: 1.57182336 	 time: 1.49
+local epoch 0 	 client: 10 	 mal: 0 	 loss: 1.80820620 	 time: 1.43
+local epoch 0 	 client: 11 	 mal: 0 	 loss: 1.74699986 	 time: 1.43
+local epoch 0 	 client: 12 	 mal: 0 	 loss: 1.63169467 	 time: 1.49
+local epoch 0 	 client: 13 	 mal: 0 	 loss: 1.80987000 	 time: 1.45
+local epoch 0 	 client: 14 	 mal: 0 	 loss: 1.53588963 	 time: 1.43
+local epoch 0 	 client: 15 	 mal: 0 	 loss: 1.58616102 	 time: 1.43
+local epoch 0 	 client: 16 	 mal: 0 	 loss: 2.10639954 	 time: 1.45
+local epoch 0 	 client: 17 	 mal: 0 	 loss: 1.73531294 	 time: 1.44
+local epoch 0 	 client: 18 	 mal: 0 	 loss: 1.77266443 	 time: 1.53
+local epoch 0 	 client: 19 	 mal: 0 	 loss: 1.61795151 	 time: 1.47
+
+[GRADIENT DEBUG Rnd 52]
+Avg Malicious Delta Norm: 1.235294
+Avg Honest Delta Norm:    0.074361
+Power Ratio (Mal/Hon):    16.6122
+[DBG rnd=52] logits mean=0.0941, std=1.4400, maxlogit mean=2.0867
+[DBG rnd=52] probs max mean=0.3452, pred entropy mean=1.7569
+[DBG rnd=52] preds bincount=[3, 6, 0, 7, 3, 6, 12, 9, 4, 14]
+Clean ACC:              0.4265
+Attack Success Ratio:   0.1491
+Robustness ACC:           0.3911
+local epoch 0 	 client: 0 	 mal: 1 	 loss: 0.01248206 	 time: 16.29
+local epoch 0 	 client: 1 	 mal: 1 	 loss: 0.10070573 	 time: 16.46
+local epoch 0 	 client: 2 	 mal: 0 	 loss: 1.48585296 	 time: 1.43
+local epoch 0 	 client: 3 	 mal: 0 	 loss: 1.74564075 	 time: 1.43
+local epoch 0 	 client: 4 	 mal: 0 	 loss: 1.77025580 	 time: 1.46
+local epoch 0 	 client: 5 	 mal: 0 	 loss: 1.62354779 	 time: 1.44
+local epoch 0 	 client: 6 	 mal: 0 	 loss: 1.64002597 	 time: 1.44
+local epoch 0 	 client: 7 	 mal: 0 	 loss: 1.71923316 	 time: 1.43
+local epoch 0 	 client: 8 	 mal: 0 	 loss: 1.66634977 	 time: 1.43
+local epoch 0 	 client: 9 	 mal: 0 	 loss: 1.64303064 	 time: 1.43
+local epoch 0 	 client: 10 	 mal: 0 	 loss: 1.66039717 	 time: 1.43
+local epoch 0 	 client: 11 	 mal: 0 	 loss: 1.70699525 	 time: 1.43
+local epoch 0 	 client: 12 	 mal: 0 	 loss: 1.51551139 	 time: 1.49
+local epoch 0 	 client: 13 	 mal: 0 	 loss: 1.69149089 	 time: 1.46
+local epoch 0 	 client: 14 	 mal: 0 	 loss: 1.76985562 	 time: 1.46
+local epoch 0 	 client: 15 	 mal: 0 	 loss: 1.66170609 	 time: 1.44
+local epoch 0 	 client: 16 	 mal: 0 	 loss: 1.90244234 	 time: 1.49
+local epoch 0 	 client: 17 	 mal: 0 	 loss: 1.52586973 	 time: 1.44
+local epoch 0 	 client: 18 	 mal: 0 	 loss: 1.55105579 	 time: 1.43
+local epoch 0 	 client: 19 	 mal: 0 	 loss: 1.77181780 	 time: 1.49
+
+[GRADIENT DEBUG Rnd 53]
+Avg Malicious Delta Norm: 1.065364
+Avg Honest Delta Norm:    0.074846
+Power Ratio (Mal/Hon):    14.2341
+[DBG rnd=53] logits mean=0.0951, std=1.4413, maxlogit mean=2.1017
+[DBG rnd=53] probs max mean=0.3485, pred entropy mean=1.7532
+[DBG rnd=53] preds bincount=[3, 11, 0, 7, 1, 6, 10, 13, 3, 10]
+Clean ACC:              0.4254
+Attack Success Ratio:   0.1628
+Robustness ACC:           0.3868
+local epoch 0 	 client: 0 	 mal: 1 	 loss: 0.04958213 	 time: 16.50
+local epoch 0 	 client: 1 	 mal: 1 	 loss: 0.48964781 	 time: 16.32
+local epoch 0 	 client: 2 	 mal: 0 	 loss: 1.77097106 	 time: 1.42
+local epoch 0 	 client: 3 	 mal: 0 	 loss: 1.70731115 	 time: 1.43
+local epoch 0 	 client: 4 	 mal: 0 	 loss: 1.64816606 	 time: 1.43
+local epoch 0 	 client: 5 	 mal: 0 	 loss: 1.94687736 	 time: 1.53
+local epoch 0 	 client: 6 	 mal: 0 	 loss: 1.78186941 	 time: 1.51
+local epoch 0 	 client: 7 	 mal: 0 	 loss: 1.69744277 	 time: 1.44
+local epoch 0 	 client: 8 	 mal: 0 	 loss: 1.43775845 	 time: 1.42
+local epoch 0 	 client: 9 	 mal: 0 	 loss: 1.69293272 	 time: 1.43
+local epoch 0 	 client: 10 	 mal: 0 	 loss: 1.71803665 	 time: 1.42
+local epoch 0 	 client: 11 	 mal: 0 	 loss: 1.69900203 	 time: 1.43
+local epoch 0 	 client: 12 	 mal: 0 	 loss: 1.50835979 	 time: 1.47
+local epoch 0 	 client: 13 	 mal: 0 	 loss: 1.67732143 	 time: 1.44
+local epoch 0 	 client: 14 	 mal: 0 	 loss: 1.36529016 	 time: 1.45
+local epoch 0 	 client: 15 	 mal: 0 	 loss: 1.87906063 	 time: 1.46
+local epoch 0 	 client: 16 	 mal: 0 	 loss: 1.61513913 	 time: 1.45
+local epoch 0 	 client: 17 	 mal: 0 	 loss: 1.57723248 	 time: 1.45
+local epoch 0 	 client: 18 	 mal: 0 	 loss: 1.48865986 	 time: 1.44
+local epoch 0 	 client: 19 	 mal: 0 	 loss: 1.92288280 	 time: 1.48
+
+[GRADIENT DEBUG Rnd 54]
+Avg Malicious Delta Norm: 1.383656
+Avg Honest Delta Norm:    0.073292
+Power Ratio (Mal/Hon):    18.8787
+[DBG rnd=54] logits mean=0.1019, std=1.4568, maxlogit mean=2.1722
+[DBG rnd=54] probs max mean=0.3601, pred entropy mean=1.7272
+[DBG rnd=54] preds bincount=[3, 7, 0, 8, 1, 5, 13, 10, 3, 14]
+Clean ACC:              0.4260
+Attack Success Ratio:   0.1367
+Robustness ACC:           0.3879
+local epoch 0 	 client: 0 	 mal: 1 	 loss: 0.01986400 	 time: 16.30
+local epoch 0 	 client: 1 	 mal: 1 	 loss: 0.01980961 	 time: 16.32
+local epoch 0 	 client: 2 	 mal: 0 	 loss: 1.58767009 	 time: 1.44
+local epoch 0 	 client: 3 	 mal: 0 	 loss: 1.57607388 	 time: 1.43
+local epoch 0 	 client: 4 	 mal: 0 	 loss: 1.48613155 	 time: 1.43
+local epoch 0 	 client: 5 	 mal: 0 	 loss: 1.60596073 	 time: 1.46
+local epoch 0 	 client: 6 	 mal: 0 	 loss: 1.64678156 	 time: 1.44
+local epoch 0 	 client: 7 	 mal: 0 	 loss: 1.71627331 	 time: 1.44
+local epoch 0 	 client: 8 	 mal: 0 	 loss: 1.49235570 	 time: 1.44
+local epoch 0 	 client: 9 	 mal: 0 	 loss: 1.76686263 	 time: 1.43
+local epoch 0 	 client: 10 	 mal: 0 	 loss: 1.65686309 	 time: 1.43
+local epoch 0 	 client: 11 	 mal: 0 	 loss: 1.61489153 	 time: 1.48
+local epoch 0 	 client: 12 	 mal: 0 	 loss: 1.68770885 	 time: 1.45
+local epoch 0 	 client: 13 	 mal: 0 	 loss: 1.63224125 	 time: 1.44
+local epoch 0 	 client: 14 	 mal: 0 	 loss: 1.59169841 	 time: 1.43
+local epoch 0 	 client: 15 	 mal: 0 	 loss: 1.57232332 	 time: 1.43
+local epoch 0 	 client: 16 	 mal: 0 	 loss: 1.68718874 	 time: 1.43
+local epoch 0 	 client: 17 	 mal: 0 	 loss: 1.59139943 	 time: 1.44
+local epoch 0 	 client: 18 	 mal: 0 	 loss: 1.55521142 	 time: 1.44
+local epoch 0 	 client: 19 	 mal: 0 	 loss: 1.63956261 	 time: 1.42
+
+[GRADIENT DEBUG Rnd 55]
+Avg Malicious Delta Norm: 0.993749
+Avg Honest Delta Norm:    0.072750
+Power Ratio (Mal/Hon):    13.6598
+[DBG rnd=55] logits mean=0.0980, std=1.4663, maxlogit mean=2.1474
+[DBG rnd=55] probs max mean=0.3534, pred entropy mean=1.7354
+[DBG rnd=55] preds bincount=[3, 7, 0, 5, 2, 6, 14, 10, 3, 14]
+Clean ACC:              0.4313
+Attack Success Ratio:   0.1357
+Robustness ACC:           0.3961
+local epoch 0 	 client: 0 	 mal: 1 	 loss: 0.03375911 	 time: 16.48
+local epoch 0 	 client: 1 	 mal: 1 	 loss: 0.04372050 	 time: 16.39
+local epoch 0 	 client: 2 	 mal: 0 	 loss: 1.74488461 	 time: 1.43
+local epoch 0 	 client: 3 	 mal: 0 	 loss: 1.64653265 	 time: 1.43
+local epoch 0 	 client: 4 	 mal: 0 	 loss: 1.60933459 	 time: 1.43
+local epoch 0 	 client: 5 	 mal: 0 	 loss: 1.78570104 	 time: 1.43
+local epoch 0 	 client: 6 	 mal: 0 	 loss: 1.72378349 	 time: 1.47
+local epoch 0 	 client: 7 	 mal: 0 	 loss: 1.76638544 	 time: 1.44
+local epoch 0 	 client: 8 	 mal: 0 	 loss: 1.73876369 	 time: 1.45
+local epoch 0 	 client: 9 	 mal: 0 	 loss: 1.48561192 	 time: 1.53
+local epoch 0 	 client: 10 	 mal: 0 	 loss: 1.54476833 	 time: 1.52
+local epoch 0 	 client: 11 	 mal: 0 	 loss: 1.68544030 	 time: 1.46
+local epoch 0 	 client: 12 	 mal: 0 	 loss: 1.52359557 	 time: 1.42
+local epoch 0 	 client: 13 	 mal: 0 	 loss: 1.50132620 	 time: 1.44
+local epoch 0 	 client: 14 	 mal: 0 	 loss: 1.59049296 	 time: 1.46
+local epoch 0 	 client: 15 	 mal: 0 	 loss: 1.58332765 	 time: 1.44
+local epoch 0 	 client: 16 	 mal: 0 	 loss: 1.81559348 	 time: 1.43
+local epoch 0 	 client: 17 	 mal: 0 	 loss: 1.70173144 	 time: 1.48
+local epoch 0 	 client: 18 	 mal: 0 	 loss: 1.42070043 	 time: 1.42
+local epoch 0 	 client: 19 	 mal: 0 	 loss: 1.64353919 	 time: 1.43
+
+[GRADIENT DEBUG Rnd 56]
+Avg Malicious Delta Norm: 1.294438
+Avg Honest Delta Norm:    0.071422
+Power Ratio (Mal/Hon):    18.1238
+[DBG rnd=56] logits mean=0.0951, std=1.4875, maxlogit mean=2.1556
+[DBG rnd=56] probs max mean=0.3523, pred entropy mean=1.7335
+[DBG rnd=56] preds bincount=[3, 5, 0, 9, 4, 7, 12, 5, 5, 14]
+Clean ACC:              0.4429
+Attack Success Ratio:   0.1118
+Robustness ACC:           0.4122
+local epoch 0 	 client: 0 	 mal: 1 	 loss: 0.02568532 	 time: 16.36
+local epoch 0 	 client: 1 	 mal: 1 	 loss: 0.01412414 	 time: 16.48
+local epoch 0 	 client: 2 	 mal: 0 	 loss: 1.67176080 	 time: 1.42
+local epoch 0 	 client: 3 	 mal: 0 	 loss: 1.68667269 	 time: 1.52
+local epoch 0 	 client: 4 	 mal: 0 	 loss: 1.60136139 	 time: 1.52
+local epoch 0 	 client: 5 	 mal: 0 	 loss: 1.45419049 	 time: 1.45
+local epoch 0 	 client: 6 	 mal: 0 	 loss: 1.78483772 	 time: 1.43
+local epoch 0 	 client: 7 	 mal: 0 	 loss: 1.50988674 	 time: 1.42
+local epoch 0 	 client: 8 	 mal: 0 	 loss: 1.69706392 	 time: 1.43
+local epoch 0 	 client: 9 	 mal: 0 	 loss: 1.62528169 	 time: 1.42
+local epoch 0 	 client: 10 	 mal: 0 	 loss: 1.86434186 	 time: 1.46
+local epoch 0 	 client: 11 	 mal: 0 	 loss: 1.69080102 	 time: 1.43
+local epoch 0 	 client: 12 	 mal: 0 	 loss: 1.76669216 	 time: 1.43
+local epoch 0 	 client: 13 	 mal: 0 	 loss: 1.76859653 	 time: 1.43
+local epoch 0 	 client: 14 	 mal: 0 	 loss: 1.48069096 	 time: 1.44
+local epoch 0 	 client: 15 	 mal: 0 	 loss: 1.78873515 	 time: 1.49
+local epoch 0 	 client: 16 	 mal: 0 	 loss: 1.72037864 	 time: 1.46
+local epoch 0 	 client: 17 	 mal: 0 	 loss: 1.80338264 	 time: 1.43
+local epoch 0 	 client: 18 	 mal: 0 	 loss: 1.66636050 	 time: 1.43
+local epoch 0 	 client: 19 	 mal: 0 	 loss: 1.68048811 	 time: 1.49
+
+[GRADIENT DEBUG Rnd 57]
+Avg Malicious Delta Norm: 1.744835
+Avg Honest Delta Norm:    0.072797
+Power Ratio (Mal/Hon):    23.9684
+[DBG rnd=57] logits mean=0.0922, std=1.4607, maxlogit mean=2.1287
+[DBG rnd=57] probs max mean=0.3523, pred entropy mean=1.7405
+[DBG rnd=57] preds bincount=[3, 5, 0, 5, 4, 8, 13, 7, 6, 13]
+Clean ACC:              0.4397
+Attack Success Ratio:   0.1263
+Robustness ACC:           0.4084
+local epoch 0 	 client: 0 	 mal: 1 	 loss: 0.01125362 	 time: 16.29
+local epoch 0 	 client: 1 	 mal: 1 	 loss: 0.03939591 	 time: 16.36
+local epoch 0 	 client: 2 	 mal: 0 	 loss: 1.72580647 	 time: 1.43
+local epoch 0 	 client: 3 	 mal: 0 	 loss: 1.64196706 	 time: 1.45
+local epoch 0 	 client: 4 	 mal: 0 	 loss: 1.60542047 	 time: 1.44
+local epoch 0 	 client: 5 	 mal: 0 	 loss: 1.79529989 	 time: 1.45
+local epoch 0 	 client: 6 	 mal: 0 	 loss: 1.65280795 	 time: 1.45
+local epoch 0 	 client: 7 	 mal: 0 	 loss: 1.57087612 	 time: 1.43
+local epoch 0 	 client: 8 	 mal: 0 	 loss: 1.46285808 	 time: 1.43
+local epoch 0 	 client: 9 	 mal: 0 	 loss: 1.53284764 	 time: 1.43
+local epoch 0 	 client: 10 	 mal: 0 	 loss: 1.67956305 	 time: 1.43
+local epoch 0 	 client: 11 	 mal: 0 	 loss: 1.88964820 	 time: 1.43
+local epoch 0 	 client: 12 	 mal: 0 	 loss: 1.46157348 	 time: 1.51
+local epoch 0 	 client: 13 	 mal: 0 	 loss: 1.75014198 	 time: 1.47
+local epoch 0 	 client: 14 	 mal: 0 	 loss: 1.72121680 	 time: 1.46
+local epoch 0 	 client: 15 	 mal: 0 	 loss: 1.45746446 	 time: 1.46
+local epoch 0 	 client: 16 	 mal: 0 	 loss: 1.76484990 	 time: 1.46
+local epoch 0 	 client: 17 	 mal: 0 	 loss: 1.60456312 	 time: 1.44
+local epoch 0 	 client: 18 	 mal: 0 	 loss: 1.68453252 	 time: 1.43
+local epoch 0 	 client: 19 	 mal: 0 	 loss: 1.54719031 	 time: 1.42
+
+[GRADIENT DEBUG Rnd 58]
+Avg Malicious Delta Norm: 1.099129
+Avg Honest Delta Norm:    0.070819
+Power Ratio (Mal/Hon):    15.5203
+[DBG rnd=58] logits mean=0.0900, std=1.5114, maxlogit mean=2.1889
+[DBG rnd=58] probs max mean=0.3570, pred entropy mean=1.7219
+[DBG rnd=58] preds bincount=[3, 10, 0, 5, 3, 7, 14, 8, 5, 9]
+Clean ACC:              0.4431
+Attack Success Ratio:   0.1219
+Robustness ACC:           0.4126
+local epoch 0 	 client: 0 	 mal: 1 	 loss: 0.02441817 	 time: 16.34
+local epoch 0 	 client: 1 	 mal: 1 	 loss: 0.15780024 	 time: 16.59
+local epoch 0 	 client: 2 	 mal: 0 	 loss: 1.39983797 	 time: 1.42
+local epoch 0 	 client: 3 	 mal: 0 	 loss: 1.57244277 	 time: 1.42
+local epoch 0 	 client: 4 	 mal: 0 	 loss: 1.52897608 	 time: 1.42
+local epoch 0 	 client: 5 	 mal: 0 	 loss: 1.74558699 	 time: 1.43
+local epoch 0 	 client: 6 	 mal: 0 	 loss: 1.56180668 	 time: 1.49
+local epoch 0 	 client: 7 	 mal: 0 	 loss: 1.59573483 	 time: 1.43
+local epoch 0 	 client: 8 	 mal: 0 	 loss: 1.75470817 	 time: 1.45
+local epoch 0 	 client: 9 	 mal: 0 	 loss: 2.08962464 	 time: 1.44
+local epoch 0 	 client: 10 	 mal: 0 	 loss: 1.49497128 	 time: 1.44
+local epoch 0 	 client: 11 	 mal: 0 	 loss: 1.76152766 	 time: 1.43
+local epoch 0 	 client: 12 	 mal: 0 	 loss: 1.65172327 	 time: 1.43
+local epoch 0 	 client: 13 	 mal: 0 	 loss: 1.59984207 	 time: 1.43
+local epoch 0 	 client: 14 	 mal: 0 	 loss: 1.52941680 	 time: 1.43
+local epoch 0 	 client: 15 	 mal: 0 	 loss: 1.67323112 	 time: 1.45
+local epoch 0 	 client: 16 	 mal: 0 	 loss: 1.79216480 	 time: 1.44
+local epoch 0 	 client: 17 	 mal: 0 	 loss: 1.60528421 	 time: 1.43
+local epoch 0 	 client: 18 	 mal: 0 	 loss: 1.70047033 	 time: 1.43
+local epoch 0 	 client: 19 	 mal: 0 	 loss: 1.62725616 	 time: 1.43
+
+[GRADIENT DEBUG Rnd 59]
+Avg Malicious Delta Norm: 1.106680
+Avg Honest Delta Norm:    0.071710
+Power Ratio (Mal/Hon):    15.4328
+[DBG rnd=59] logits mean=0.0940, std=1.4817, maxlogit mean=2.1778
+[DBG rnd=59] probs max mean=0.3595, pred entropy mean=1.7243
+[DBG rnd=59] preds bincount=[3, 11, 0, 5, 1, 8, 13, 10, 3, 10]
+Clean ACC:              0.4390
+Attack Success Ratio:   0.1336
+Robustness ACC:           0.4048
+local epoch 0 	 client: 0 	 mal: 1 	 loss: 0.11815366 	 time: 16.36
+local epoch 0 	 client: 1 	 mal: 1 	 loss: 0.04162159 	 time: 16.33
+local epoch 0 	 client: 2 	 mal: 0 	 loss: 1.61382794 	 time: 1.43
+local epoch 0 	 client: 3 	 mal: 0 	 loss: 1.59400690 	 time: 1.44
+local epoch 0 	 client: 4 	 mal: 0 	 loss: 1.74535966 	 time: 1.44
+local epoch 0 	 client: 5 	 mal: 0 	 loss: 1.57978392 	 time: 1.44
+local epoch 0 	 client: 6 	 mal: 0 	 loss: 1.71074045 	 time: 1.43
+local epoch 0 	 client: 7 	 mal: 0 	 loss: 1.59089375 	 time: 1.47
+local epoch 0 	 client: 8 	 mal: 0 	 loss: 1.66122448 	 time: 1.43
+local epoch 0 	 client: 9 	 mal: 0 	 loss: 1.57263565 	 time: 1.43
+local epoch 0 	 client: 10 	 mal: 0 	 loss: 1.81817961 	 time: 1.43
+local epoch 0 	 client: 11 	 mal: 0 	 loss: 1.48203087 	 time: 1.44
+local epoch 0 	 client: 12 	 mal: 0 	 loss: 1.83445346 	 time: 1.45
+local epoch 0 	 client: 13 	 mal: 0 	 loss: 1.70117795 	 time: 1.45
+local epoch 0 	 client: 14 	 mal: 0 	 loss: 1.56977868 	 time: 1.43
+local epoch 0 	 client: 15 	 mal: 0 	 loss: 1.55000186 	 time: 1.46
+local epoch 0 	 client: 16 	 mal: 0 	 loss: 1.76459801 	 time: 1.48
+local epoch 0 	 client: 17 	 mal: 0 	 loss: 1.83969641 	 time: 1.44
+local epoch 0 	 client: 18 	 mal: 0 	 loss: 1.60833502 	 time: 1.44
+local epoch 0 	 client: 19 	 mal: 0 	 loss: 1.74844515 	 time: 1.51
+
+[GRADIENT DEBUG Rnd 60]
+Avg Malicious Delta Norm: 1.050949
+Avg Honest Delta Norm:    0.067972
+Power Ratio (Mal/Hon):    15.4614
+[DBG rnd=60] logits mean=0.0938, std=1.5165, maxlogit mean=2.1929
+[DBG rnd=60] probs max mean=0.3558, pred entropy mean=1.7202
+[DBG rnd=60] preds bincount=[3, 8, 0, 5, 4, 8, 14, 6, 4, 12]
+Clean ACC:              0.4449
+Attack Success Ratio:   0.1209
+Robustness ACC:           0.4137
+local epoch 0 	 client: 0 	 mal: 1 	 loss: 0.02413803 	 time: 16.45
+local epoch 0 	 client: 1 	 mal: 1 	 loss: 0.05839797 	 time: 16.30
+local epoch 0 	 client: 2 	 mal: 0 	 loss: 1.66657770 	 time: 1.42
+local epoch 0 	 client: 3 	 mal: 0 	 loss: 1.47218442 	 time: 1.43
+local epoch 0 	 client: 4 	 mal: 0 	 loss: 1.50458372 	 time: 1.45
+local epoch 0 	 client: 5 	 mal: 0 	 loss: 1.38825798 	 time: 1.44
+local epoch 0 	 client: 6 	 mal: 0 	 loss: 1.64996982 	 time: 1.45
+local epoch 0 	 client: 7 	 mal: 0 	 loss: 1.62915766 	 time: 1.43
+local epoch 0 	 client: 8 	 mal: 0 	 loss: 1.84600866 	 time: 1.47
+local epoch 0 	 client: 9 	 mal: 0 	 loss: 1.80313993 	 time: 1.46
+local epoch 0 	 client: 10 	 mal: 0 	 loss: 1.43438506 	 time: 1.45
+local epoch 0 	 client: 11 	 mal: 0 	 loss: 1.69611239 	 time: 1.43
+local epoch 0 	 client: 12 	 mal: 0 	 loss: 1.62557006 	 time: 1.46
+local epoch 0 	 client: 13 	 mal: 0 	 loss: 1.61540115 	 time: 1.44
+local epoch 0 	 client: 14 	 mal: 0 	 loss: 1.58201003 	 time: 1.43
+local epoch 0 	 client: 15 	 mal: 0 	 loss: 1.75440598 	 time: 1.44
+local epoch 0 	 client: 16 	 mal: 0 	 loss: 1.51960444 	 time: 1.43
+local epoch 0 	 client: 17 	 mal: 0 	 loss: 1.60783684 	 time: 1.47
+local epoch 0 	 client: 18 	 mal: 0 	 loss: 1.61522281 	 time: 1.45
+local epoch 0 	 client: 19 	 mal: 0 	 loss: 1.72467875 	 time: 1.42
+
+[GRADIENT DEBUG Rnd 61]
+Avg Malicious Delta Norm: 1.204911
+Avg Honest Delta Norm:    0.068786
+Power Ratio (Mal/Hon):    17.5168
+[DBG rnd=61] logits mean=0.0889, std=1.4853, maxlogit mean=2.1455
+[DBG rnd=61] probs max mean=0.3520, pred entropy mean=1.7322
+[DBG rnd=61] preds bincount=[3, 2, 1, 7, 4, 8, 14, 4, 7, 14]
+Clean ACC:              0.4518
+Attack Success Ratio:   0.1033
+Robustness ACC:           0.4244
+local epoch 0 	 client: 0 	 mal: 1 	 loss: 0.01526220 	 time: 16.30
+local epoch 0 	 client: 1 	 mal: 1 	 loss: 0.05468546 	 time: 16.59
+local epoch 0 	 client: 2 	 mal: 0 	 loss: 1.81303775 	 time: 1.42
+local epoch 0 	 client: 3 	 mal: 0 	 loss: 1.72823107 	 time: 1.44
+local epoch 0 	 client: 4 	 mal: 0 	 loss: 1.86114120 	 time: 1.45
+local epoch 0 	 client: 5 	 mal: 0 	 loss: 1.55591846 	 time: 1.43
+local epoch 0 	 client: 6 	 mal: 0 	 loss: 1.63577354 	 time: 1.43
+local epoch 0 	 client: 7 	 mal: 0 	 loss: 1.63664412 	 time: 1.43
+local epoch 0 	 client: 8 	 mal: 0 	 loss: 1.60325730 	 time: 1.43
+local epoch 0 	 client: 9 	 mal: 0 	 loss: 1.55259919 	 time: 1.43
+local epoch 0 	 client: 10 	 mal: 0 	 loss: 1.65615904 	 time: 1.43
+local epoch 0 	 client: 11 	 mal: 0 	 loss: 1.64844298 	 time: 1.43
+local epoch 0 	 client: 12 	 mal: 0 	 loss: 1.56773567 	 time: 1.44
+local epoch 0 	 client: 13 	 mal: 0 	 loss: 1.59187543 	 time: 1.43
+local epoch 0 	 client: 14 	 mal: 0 	 loss: 1.53313804 	 time: 1.42
+local epoch 0 	 client: 15 	 mal: 0 	 loss: 2.06656623 	 time: 1.43
+local epoch 0 	 client: 16 	 mal: 0 	 loss: 1.58750212 	 time: 1.42
+local epoch 0 	 client: 17 	 mal: 0 	 loss: 1.54601693 	 time: 1.46
+local epoch 0 	 client: 18 	 mal: 0 	 loss: 1.60916436 	 time: 1.45
+local epoch 0 	 client: 19 	 mal: 0 	 loss: 1.56957138 	 time: 1.42
+
+[GRADIENT DEBUG Rnd 62]
+Avg Malicious Delta Norm: 1.064766
+Avg Honest Delta Norm:    0.068450
+Power Ratio (Mal/Hon):    15.5554
+[DBG rnd=62] logits mean=0.0877, std=1.5305, maxlogit mean=2.1979
+[DBG rnd=62] probs max mean=0.3548, pred entropy mean=1.7150
+[DBG rnd=62] preds bincount=[4, 8, 0, 6, 4, 6, 14, 7, 3, 12]
+Clean ACC:              0.4519
+Attack Success Ratio:   0.1250
+Robustness ACC:           0.4194
+local epoch 0 	 client: 0 	 mal: 1 	 loss: 0.07296366 	 time: 16.37
+local epoch 0 	 client: 1 	 mal: 1 	 loss: 0.07237563 	 time: 16.33
+local epoch 0 	 client: 2 	 mal: 0 	 loss: 1.50876498 	 time: 1.45
+local epoch 0 	 client: 3 	 mal: 0 	 loss: 1.65162051 	 time: 1.43
+local epoch 0 	 client: 4 	 mal: 0 	 loss: 1.71367288 	 time: 1.43
+local epoch 0 	 client: 5 	 mal: 0 	 loss: 1.62857699 	 time: 1.43
+local epoch 0 	 client: 6 	 mal: 0 	 loss: 1.66746879 	 time: 1.44
+local epoch 0 	 client: 7 	 mal: 0 	 loss: 1.66950905 	 time: 1.43
+local epoch 0 	 client: 8 	 mal: 0 	 loss: 1.54004955 	 time: 1.44
+local epoch 0 	 client: 9 	 mal: 0 	 loss: 1.75655103 	 time: 1.43
+local epoch 0 	 client: 10 	 mal: 0 	 loss: 1.91766107 	 time: 1.43
+local epoch 0 	 client: 11 	 mal: 0 	 loss: 1.54350996 	 time: 1.43
+local epoch 0 	 client: 12 	 mal: 0 	 loss: 1.67471862 	 time: 1.44
+local epoch 0 	 client: 13 	 mal: 0 	 loss: 1.65437889 	 time: 1.44
+local epoch 0 	 client: 14 	 mal: 0 	 loss: 1.73000300 	 time: 1.45
+local epoch 0 	 client: 15 	 mal: 0 	 loss: 1.50609207 	 time: 1.43
+local epoch 0 	 client: 16 	 mal: 0 	 loss: 1.56077635 	 time: 1.43
+local epoch 0 	 client: 17 	 mal: 0 	 loss: 1.57578504 	 time: 1.43
+local epoch 0 	 client: 18 	 mal: 0 	 loss: 1.86496091 	 time: 1.44
+local epoch 0 	 client: 19 	 mal: 0 	 loss: 1.98227704 	 time: 1.43
+
+[GRADIENT DEBUG Rnd 63]
+Avg Malicious Delta Norm: 1.125139
+Avg Honest Delta Norm:    0.068461
+Power Ratio (Mal/Hon):    16.4347
+[DBG rnd=63] logits mean=0.0880, std=1.5240, maxlogit mean=2.1951
+[DBG rnd=63] probs max mean=0.3566, pred entropy mean=1.7124
+[DBG rnd=63] preds bincount=[4, 4, 1, 5, 0, 9, 13, 10, 4, 14]
+Clean ACC:              0.4488
+Attack Success Ratio:   0.1302
+Robustness ACC:           0.4163
+local epoch 0 	 client: 0 	 mal: 1 	 loss: 0.04545713 	 time: 16.45
+local epoch 0 	 client: 1 	 mal: 1 	 loss: 0.01555843 	 time: 16.32
+local epoch 0 	 client: 2 	 mal: 0 	 loss: 1.55091751 	 time: 1.42
+local epoch 0 	 client: 3 	 mal: 0 	 loss: 1.63140726 	 time: 1.43
+local epoch 0 	 client: 4 	 mal: 0 	 loss: 1.46936929 	 time: 1.43
+local epoch 0 	 client: 5 	 mal: 0 	 loss: 1.50276458 	 time: 1.48
+local epoch 0 	 client: 6 	 mal: 0 	 loss: 1.49186552 	 time: 1.44
+local epoch 0 	 client: 7 	 mal: 0 	 loss: 1.60662138 	 time: 1.44
+local epoch 0 	 client: 8 	 mal: 0 	 loss: 1.71756172 	 time: 1.47
+local epoch 0 	 client: 9 	 mal: 0 	 loss: 1.59743047 	 time: 1.46
+local epoch 0 	 client: 10 	 mal: 0 	 loss: 1.63318908 	 time: 1.45
+local epoch 0 	 client: 11 	 mal: 0 	 loss: 1.47496307 	 time: 1.44
+local epoch 0 	 client: 12 	 mal: 0 	 loss: 1.68312073 	 time: 1.48
+local epoch 0 	 client: 13 	 mal: 0 	 loss: 1.70646656 	 time: 1.43
+local epoch 0 	 client: 14 	 mal: 0 	 loss: 1.53352571 	 time: 1.43
+local epoch 0 	 client: 15 	 mal: 0 	 loss: 1.42059934 	 time: 1.49
+local epoch 0 	 client: 16 	 mal: 0 	 loss: 1.51710546 	 time: 1.44
+local epoch 0 	 client: 17 	 mal: 0 	 loss: 1.95816946 	 time: 1.43
+local epoch 0 	 client: 18 	 mal: 0 	 loss: 1.69733894 	 time: 1.49
+local epoch 0 	 client: 19 	 mal: 0 	 loss: 1.49025035 	 time: 1.44
+
+[GRADIENT DEBUG Rnd 64]
+Avg Malicious Delta Norm: 0.857087
+Avg Honest Delta Norm:    0.067253
+Power Ratio (Mal/Hon):    12.7441
+[DBG rnd=64] logits mean=0.0905, std=1.5558, maxlogit mean=2.2450
+[DBG rnd=64] probs max mean=0.3618, pred entropy mean=1.6981
+[DBG rnd=64] preds bincount=[4, 7, 0, 5, 2, 9, 13, 9, 3, 12]
+Clean ACC:              0.4514
+Attack Success Ratio:   0.1398
+Robustness ACC:           0.4132
+local epoch 0 	 client: 0 	 mal: 1 	 loss: 0.04410492 	 time: 16.33
+local epoch 0 	 client: 1 	 mal: 1 	 loss: 0.03181072 	 time: 16.41
+local epoch 0 	 client: 2 	 mal: 0 	 loss: 1.36916089 	 time: 1.42
+local epoch 0 	 client: 3 	 mal: 0 	 loss: 1.59661591 	 time: 1.43
+local epoch 0 	 client: 4 	 mal: 0 	 loss: 1.53031337 	 time: 1.44
+local epoch 0 	 client: 5 	 mal: 0 	 loss: 1.49623740 	 time: 1.43
+local epoch 0 	 client: 6 	 mal: 0 	 loss: 1.70559204 	 time: 1.43
+local epoch 0 	 client: 7 	 mal: 0 	 loss: 1.69331050 	 time: 1.42
+local epoch 0 	 client: 8 	 mal: 0 	 loss: 1.50699997 	 time: 1.47
+local epoch 0 	 client: 9 	 mal: 0 	 loss: 1.79345882 	 time: 1.44
+local epoch 0 	 client: 10 	 mal: 0 	 loss: 1.63038945 	 time: 1.43
+local epoch 0 	 client: 11 	 mal: 0 	 loss: 1.68687904 	 time: 1.44
+local epoch 0 	 client: 12 	 mal: 0 	 loss: 1.58371329 	 time: 1.42
+local epoch 0 	 client: 13 	 mal: 0 	 loss: 1.64736104 	 time: 1.43
+local epoch 0 	 client: 14 	 mal: 0 	 loss: 1.48204601 	 time: 1.43
+local epoch 0 	 client: 15 	 mal: 0 	 loss: 1.67593396 	 time: 1.43
+local epoch 0 	 client: 16 	 mal: 0 	 loss: 1.60918093 	 time: 1.51
+local epoch 0 	 client: 17 	 mal: 0 	 loss: 1.41421366 	 time: 1.44
+local epoch 0 	 client: 18 	 mal: 0 	 loss: 1.59715986 	 time: 1.44
+local epoch 0 	 client: 19 	 mal: 0 	 loss: 1.69709611 	 time: 1.43
+
+[GRADIENT DEBUG Rnd 65]
+Avg Malicious Delta Norm: 0.810944
+Avg Honest Delta Norm:    0.065273
+Power Ratio (Mal/Hon):    12.4238
+[DBG rnd=65] logits mean=0.0924, std=1.5803, maxlogit mean=2.2722
+[DBG rnd=65] probs max mean=0.3635, pred entropy mean=1.6953
+[DBG rnd=65] preds bincount=[4, 7, 0, 2, 1, 10, 12, 15, 3, 10]
+Clean ACC:              0.4393
+Attack Success Ratio:   0.1901
+Robustness ACC:           0.3974
+local epoch 0 	 client: 0 	 mal: 1 	 loss: 0.02909617 	 time: 16.53
+local epoch 0 	 client: 1 	 mal: 1 	 loss: 0.03240249 	 time: 16.34
+local epoch 0 	 client: 2 	 mal: 0 	 loss: 1.70262563 	 time: 1.44
+local epoch 0 	 client: 3 	 mal: 0 	 loss: 1.68580866 	 time: 1.42
+local epoch 0 	 client: 4 	 mal: 0 	 loss: 1.48379636 	 time: 1.43
+local epoch 0 	 client: 5 	 mal: 0 	 loss: 1.44601321 	 time: 1.42
+local epoch 0 	 client: 6 	 mal: 0 	 loss: 1.51905179 	 time: 1.43
+local epoch 0 	 client: 7 	 mal: 0 	 loss: 1.77859271 	 time: 1.45
+local epoch 0 	 client: 8 	 mal: 0 	 loss: 1.39115512 	 time: 1.45
+local epoch 0 	 client: 9 	 mal: 0 	 loss: 1.66673112 	 time: 1.43
+local epoch 0 	 client: 10 	 mal: 0 	 loss: 1.54365230 	 time: 1.43
+local epoch 0 	 client: 11 	 mal: 0 	 loss: 1.58860970 	 time: 1.50
+local epoch 0 	 client: 12 	 mal: 0 	 loss: 1.67423046 	 time: 1.44
+local epoch 0 	 client: 13 	 mal: 0 	 loss: 1.68758547 	 time: 1.44
+local epoch 0 	 client: 14 	 mal: 0 	 loss: 1.74701560 	 time: 1.44
+local epoch 0 	 client: 15 	 mal: 0 	 loss: 1.44062281 	 time: 1.43
+local epoch 0 	 client: 16 	 mal: 0 	 loss: 1.52940667 	 time: 1.44
+local epoch 0 	 client: 17 	 mal: 0 	 loss: 1.67234015 	 time: 1.45
+local epoch 0 	 client: 18 	 mal: 0 	 loss: 1.39617109 	 time: 1.43
+local epoch 0 	 client: 19 	 mal: 0 	 loss: 1.65327132 	 time: 1.43
+
+[GRADIENT DEBUG Rnd 66]
+Avg Malicious Delta Norm: 0.913433
+Avg Honest Delta Norm:    0.069094
+Power Ratio (Mal/Hon):    13.2202
+[DBG rnd=66] logits mean=0.0909, std=1.5713, maxlogit mean=2.2521
+[DBG rnd=66] probs max mean=0.3607, pred entropy mean=1.6982
+[DBG rnd=66] preds bincount=[4, 5, 0, 5, 4, 9, 13, 6, 7, 11]
+Clean ACC:              0.4598
+Attack Success Ratio:   0.1099
+Robustness ACC:           0.4296
+local epoch 0 	 client: 0 	 mal: 1 	 loss: 0.02973909 	 time: 16.31
+local epoch 0 	 client: 1 	 mal: 1 	 loss: 0.10482553 	 time: 16.49
+local epoch 0 	 client: 2 	 mal: 0 	 loss: 1.56548083 	 time: 1.43
+local epoch 0 	 client: 3 	 mal: 0 	 loss: 1.62781703 	 time: 1.43
+local epoch 0 	 client: 4 	 mal: 0 	 loss: 1.58164477 	 time: 1.43
+local epoch 0 	 client: 5 	 mal: 0 	 loss: 1.71369827 	 time: 1.48
+local epoch 0 	 client: 6 	 mal: 0 	 loss: 1.85882807 	 time: 1.44
+local epoch 0 	 client: 7 	 mal: 0 	 loss: 1.71051431 	 time: 1.44
+local epoch 0 	 client: 8 	 mal: 0 	 loss: 1.52707994 	 time: 1.44
+local epoch 0 	 client: 9 	 mal: 0 	 loss: 1.49105644 	 time: 1.45
+local epoch 0 	 client: 10 	 mal: 0 	 loss: 1.57965970 	 time: 1.43
+local epoch 0 	 client: 11 	 mal: 0 	 loss: 1.67970777 	 time: 1.49
+local epoch 0 	 client: 12 	 mal: 0 	 loss: 1.75111604 	 time: 1.46
+local epoch 0 	 client: 13 	 mal: 0 	 loss: 1.54488027 	 time: 1.44
+local epoch 0 	 client: 14 	 mal: 0 	 loss: 1.93707752 	 time: 1.43
+local epoch 0 	 client: 15 	 mal: 0 	 loss: 1.51232338 	 time: 1.48
+local epoch 0 	 client: 16 	 mal: 0 	 loss: 1.71626413 	 time: 1.44
+local epoch 0 	 client: 17 	 mal: 0 	 loss: 1.68504357 	 time: 1.42
+local epoch 0 	 client: 18 	 mal: 0 	 loss: 1.76149225 	 time: 1.51
+local epoch 0 	 client: 19 	 mal: 0 	 loss: 1.97851241 	 time: 1.44
+
+[GRADIENT DEBUG Rnd 67]
+Avg Malicious Delta Norm: 0.978621
+Avg Honest Delta Norm:    0.067489
+Power Ratio (Mal/Hon):    14.5005
+[DBG rnd=67] logits mean=0.0890, std=1.5310, maxlogit mean=2.2133
+[DBG rnd=67] probs max mean=0.3575, pred entropy mean=1.7094
+[DBG rnd=67] preds bincount=[3, 5, 1, 8, 2, 7, 12, 7, 6, 13]
+Clean ACC:              0.4669
+Attack Success Ratio:   0.1036
+Robustness ACC:           0.4363
+local epoch 0 	 client: 0 	 mal: 1 	 loss: 0.04524660 	 time: 16.34
+local epoch 0 	 client: 1 	 mal: 1 	 loss: 0.04246465 	 time: 16.40
+local epoch 0 	 client: 2 	 mal: 0 	 loss: 1.50508809 	 time: 1.44
+local epoch 0 	 client: 3 	 mal: 0 	 loss: 1.77186382 	 time: 1.42
+local epoch 0 	 client: 4 	 mal: 0 	 loss: 1.49079335 	 time: 1.43
+local epoch 0 	 client: 5 	 mal: 0 	 loss: 1.62918925 	 time: 1.42
+local epoch 0 	 client: 6 	 mal: 0 	 loss: 1.64973009 	 time: 1.47
+local epoch 0 	 client: 7 	 mal: 0 	 loss: 1.64877617 	 time: 1.45
+local epoch 0 	 client: 8 	 mal: 0 	 loss: 1.37765086 	 time: 1.43
+local epoch 0 	 client: 9 	 mal: 0 	 loss: 1.59564459 	 time: 1.46
+local epoch 0 	 client: 10 	 mal: 0 	 loss: 1.77272880 	 time: 1.45
+local epoch 0 	 client: 11 	 mal: 0 	 loss: 1.55653465 	 time: 1.44
+local epoch 0 	 client: 12 	 mal: 0 	 loss: 1.70929122 	 time: 1.43
+local epoch 0 	 client: 13 	 mal: 0 	 loss: 1.56258428 	 time: 1.43
+local epoch 0 	 client: 14 	 mal: 0 	 loss: 1.63249624 	 time: 1.43
+local epoch 0 	 client: 15 	 mal: 0 	 loss: 1.73300958 	 time: 1.43
+local epoch 0 	 client: 16 	 mal: 0 	 loss: 1.43052232 	 time: 1.43
+local epoch 0 	 client: 17 	 mal: 0 	 loss: 1.42545271 	 time: 1.46
+local epoch 0 	 client: 18 	 mal: 0 	 loss: 1.64167202 	 time: 1.44
+local epoch 0 	 client: 19 	 mal: 0 	 loss: 1.48606229 	 time: 1.43
+
+[GRADIENT DEBUG Rnd 68]
+Avg Malicious Delta Norm: 1.222445
+Avg Honest Delta Norm:    0.063813
+Power Ratio (Mal/Hon):    19.1568
+[DBG rnd=68] logits mean=0.0886, std=1.5948, maxlogit mean=2.3079
+[DBG rnd=68] probs max mean=0.3678, pred entropy mean=1.6811
+[DBG rnd=68] preds bincount=[3, 11, 1, 9, 2, 7, 11, 6, 4, 10]
+Clean ACC:              0.4665
+Attack Success Ratio:   0.0928
+Robustness ACC:           0.4399
+local epoch 0 	 client: 0 	 mal: 1 	 loss: 0.12242949 	 time: 16.56
+local epoch 0 	 client: 1 	 mal: 1 	 loss: 0.18012339 	 time: 16.32
+local epoch 0 	 client: 2 	 mal: 0 	 loss: 1.42215395 	 time: 1.42
+local epoch 0 	 client: 3 	 mal: 0 	 loss: 1.31731856 	 time: 1.43
+local epoch 0 	 client: 4 	 mal: 0 	 loss: 1.52682281 	 time: 1.43
+local epoch 0 	 client: 5 	 mal: 0 	 loss: 1.34912610 	 time: 1.42
+local epoch 0 	 client: 6 	 mal: 0 	 loss: 1.59750009 	 time: 1.48
+local epoch 0 	 client: 7 	 mal: 0 	 loss: 1.51441944 	 time: 1.43
+local epoch 0 	 client: 8 	 mal: 0 	 loss: 1.55995095 	 time: 1.43
+local epoch 0 	 client: 9 	 mal: 0 	 loss: 1.68748701 	 time: 1.46
+local epoch 0 	 client: 10 	 mal: 0 	 loss: 1.68826389 	 time: 1.44
+local epoch 0 	 client: 11 	 mal: 0 	 loss: 1.68762243 	 time: 1.44
+local epoch 0 	 client: 12 	 mal: 0 	 loss: 1.38544106 	 time: 1.44
+local epoch 0 	 client: 13 	 mal: 0 	 loss: 1.67652678 	 time: 1.44
+local epoch 0 	 client: 14 	 mal: 0 	 loss: 1.54610693 	 time: 1.43
+local epoch 0 	 client: 15 	 mal: 0 	 loss: 1.65446877 	 time: 1.47
+local epoch 0 	 client: 16 	 mal: 0 	 loss: 1.68819058 	 time: 1.44
+local epoch 0 	 client: 17 	 mal: 0 	 loss: 1.62251389 	 time: 1.43
+local epoch 0 	 client: 18 	 mal: 0 	 loss: 1.59085727 	 time: 1.43
+local epoch 0 	 client: 19 	 mal: 0 	 loss: 1.54176915 	 time: 1.43
+
+[GRADIENT DEBUG Rnd 69]
+Avg Malicious Delta Norm: 1.063934
+Avg Honest Delta Norm:    0.063726
+Power Ratio (Mal/Hon):    16.6953
+[DBG rnd=69] logits mean=0.0918, std=1.6163, maxlogit mean=2.3585
+[DBG rnd=69] probs max mean=0.3765, pred entropy mean=1.6664
+[DBG rnd=69] preds bincount=[3, 9, 0, 3, 2, 8, 14, 11, 4, 10]
+Clean ACC:              0.4553
+Attack Success Ratio:   0.1538
+Robustness ACC:           0.4140
+local epoch 0 	 client: 0 	 mal: 1 	 loss: 0.01315763 	 time: 16.32
+local epoch 0 	 client: 1 	 mal: 1 	 loss: 0.03178703 	 time: 16.35
+local epoch 0 	 client: 2 	 mal: 0 	 loss: 1.63673818 	 time: 1.44
+local epoch 0 	 client: 3 	 mal: 0 	 loss: 1.74761105 	 time: 1.43
+local epoch 0 	 client: 4 	 mal: 0 	 loss: 1.42375970 	 time: 1.42
+local epoch 0 	 client: 5 	 mal: 0 	 loss: 1.49248314 	 time: 1.45
+local epoch 0 	 client: 6 	 mal: 0 	 loss: 1.46096480 	 time: 1.49
+local epoch 0 	 client: 7 	 mal: 0 	 loss: 1.75007081 	 time: 1.44
+local epoch 0 	 client: 8 	 mal: 0 	 loss: 1.56464303 	 time: 1.43
+local epoch 0 	 client: 9 	 mal: 0 	 loss: 1.45753622 	 time: 1.44
+local epoch 0 	 client: 10 	 mal: 0 	 loss: 1.74336290 	 time: 1.44
+local epoch 0 	 client: 11 	 mal: 0 	 loss: 1.60385597 	 time: 1.44
+local epoch 0 	 client: 12 	 mal: 0 	 loss: 1.53692555 	 time: 1.44
+local epoch 0 	 client: 13 	 mal: 0 	 loss: 1.72832119 	 time: 1.45
+local epoch 0 	 client: 14 	 mal: 0 	 loss: 1.42503917 	 time: 1.43
+local epoch 0 	 client: 15 	 mal: 0 	 loss: 1.83145690 	 time: 1.44
+local epoch 0 	 client: 16 	 mal: 0 	 loss: 1.46561801 	 time: 1.43
+local epoch 0 	 client: 17 	 mal: 0 	 loss: 1.48071134 	 time: 1.42
+local epoch 0 	 client: 18 	 mal: 0 	 loss: 1.57975888 	 time: 1.43
+local epoch 0 	 client: 19 	 mal: 0 	 loss: 1.55619717 	 time: 1.46
+
+[GRADIENT DEBUG Rnd 70]
+Avg Malicious Delta Norm: 0.955683
+Avg Honest Delta Norm:    0.064274
+Power Ratio (Mal/Hon):    14.8688
+[DBG rnd=70] logits mean=0.0882, std=1.6009, maxlogit mean=2.3294
+[DBG rnd=70] probs max mean=0.3727, pred entropy mean=1.6733
+[DBG rnd=70] preds bincount=[3, 10, 1, 7, 2, 7, 13, 7, 4, 10]
+Clean ACC:              0.4676
+Attack Success Ratio:   0.0989
+Robustness ACC:           0.4367
+local epoch 0 	 client: 0 	 mal: 1 	 loss: 0.02373357 	 time: 16.34
+local epoch 0 	 client: 1 	 mal: 1 	 loss: 0.02772167 	 time: 16.40
+local epoch 0 	 client: 2 	 mal: 0 	 loss: 1.82937086 	 time: 1.43
+local epoch 0 	 client: 3 	 mal: 0 	 loss: 1.64635623 	 time: 1.43
+local epoch 0 	 client: 4 	 mal: 0 	 loss: 1.53377581 	 time: 1.44
+local epoch 0 	 client: 5 	 mal: 0 	 loss: 1.49381208 	 time: 1.43
+local epoch 0 	 client: 6 	 mal: 0 	 loss: 1.74219131 	 time: 1.49
+local epoch 0 	 client: 7 	 mal: 0 	 loss: 1.59491718 	 time: 1.43
+local epoch 0 	 client: 8 	 mal: 0 	 loss: 1.66944325 	 time: 1.42
+local epoch 0 	 client: 9 	 mal: 0 	 loss: 1.83608007 	 time: 1.46
+local epoch 0 	 client: 10 	 mal: 0 	 loss: 1.65805352 	 time: 1.44
+local epoch 0 	 client: 11 	 mal: 0 	 loss: 1.57624567 	 time: 1.42
+local epoch 0 	 client: 12 	 mal: 0 	 loss: 1.52513373 	 time: 1.48
+local epoch 0 	 client: 13 	 mal: 0 	 loss: 1.47291112 	 time: 1.44
+local epoch 0 	 client: 14 	 mal: 0 	 loss: 1.60363913 	 time: 1.43
+local epoch 0 	 client: 15 	 mal: 0 	 loss: 1.50466001 	 time: 1.50
+local epoch 0 	 client: 16 	 mal: 0 	 loss: 1.50676155 	 time: 1.43
+local epoch 0 	 client: 17 	 mal: 0 	 loss: 1.72019374 	 time: 1.42
+local epoch 0 	 client: 18 	 mal: 0 	 loss: 1.63785398 	 time: 1.46
+local epoch 0 	 client: 19 	 mal: 0 	 loss: 1.43720591 	 time: 1.45
+
+[GRADIENT DEBUG Rnd 71]
+Avg Malicious Delta Norm: 1.158294
+Avg Honest Delta Norm:    0.063389
+Power Ratio (Mal/Hon):    18.2728
+[DBG rnd=71] logits mean=0.0909, std=1.6380, maxlogit mean=2.3796
+[DBG rnd=71] probs max mean=0.3763, pred entropy mean=1.6588
+[DBG rnd=71] preds bincount=[3, 9, 0, 6, 1, 10, 11, 9, 5, 10]
+Clean ACC:              0.4651
+Attack Success Ratio:   0.1061
+Robustness ACC:           0.4334
+local epoch 0 	 client: 0 	 mal: 1 	 loss: 0.03448696 	 time: 16.38
+local epoch 0 	 client: 1 	 mal: 1 	 loss: 0.04319296 	 time: 16.48
+local epoch 0 	 client: 2 	 mal: 0 	 loss: 1.59567440 	 time: 1.43
+local epoch 0 	 client: 3 	 mal: 0 	 loss: 1.38925374 	 time: 1.43
+local epoch 0 	 client: 4 	 mal: 0 	 loss: 1.54716933 	 time: 1.43
+local epoch 0 	 client: 5 	 mal: 0 	 loss: 1.57007480 	 time: 1.43
+local epoch 0 	 client: 6 	 mal: 0 	 loss: 1.59273124 	 time: 1.43
+local epoch 0 	 client: 7 	 mal: 0 	 loss: 1.72131562 	 time: 1.44
+local epoch 0 	 client: 8 	 mal: 0 	 loss: 1.56573212 	 time: 1.49
+local epoch 0 	 client: 9 	 mal: 0 	 loss: 1.52991128 	 time: 1.43
+local epoch 0 	 client: 10 	 mal: 0 	 loss: 1.39311075 	 time: 1.43
+local epoch 0 	 client: 11 	 mal: 0 	 loss: 1.65574968 	 time: 1.43
+local epoch 0 	 client: 12 	 mal: 0 	 loss: 1.50446832 	 time: 1.43
+local epoch 0 	 client: 13 	 mal: 0 	 loss: 1.88039446 	 time: 1.43
+local epoch 0 	 client: 14 	 mal: 0 	 loss: 1.66137218 	 time: 1.51
+local epoch 0 	 client: 15 	 mal: 0 	 loss: 1.71563053 	 time: 1.44
+local epoch 0 	 client: 16 	 mal: 0 	 loss: 1.64832044 	 time: 1.44
+local epoch 0 	 client: 17 	 mal: 0 	 loss: 1.68406224 	 time: 1.44
+local epoch 0 	 client: 18 	 mal: 0 	 loss: 1.53116989 	 time: 1.50
+local epoch 0 	 client: 19 	 mal: 0 	 loss: 1.62290430 	 time: 1.46
+
+[GRADIENT DEBUG Rnd 72]
+Avg Malicious Delta Norm: 1.396528
+Avg Honest Delta Norm:    0.061094
+Power Ratio (Mal/Hon):    22.8587
+[DBG rnd=72] logits mean=0.0891, std=1.6361, maxlogit mean=2.3827
+[DBG rnd=72] probs max mean=0.3784, pred entropy mean=1.6556
+[DBG rnd=72] preds bincount=[4, 6, 0, 7, 2, 8, 12, 9, 4, 12]
+Clean ACC:              0.4666
+Attack Success Ratio:   0.1106
+Robustness ACC:           0.4382
+local epoch 0 	 client: 0 	 mal: 1 	 loss: 0.02953361 	 time: 16.30
+local epoch 0 	 client: 1 	 mal: 1 	 loss: 0.03895903 	 time: 16.33
+local epoch 0 	 client: 2 	 mal: 0 	 loss: 1.57085991 	 time: 1.42
+local epoch 0 	 client: 3 	 mal: 0 	 loss: 1.48938203 	 time: 1.42
+local epoch 0 	 client: 4 	 mal: 0 	 loss: 1.55421162 	 time: 1.43
+local epoch 0 	 client: 5 	 mal: 0 	 loss: 1.52765012 	 time: 1.43
+local epoch 0 	 client: 6 	 mal: 0 	 loss: 1.56388164 	 time: 1.43
+local epoch 0 	 client: 7 	 mal: 0 	 loss: 1.53505695 	 time: 1.44
+local epoch 0 	 client: 8 	 mal: 0 	 loss: 1.51396930 	 time: 1.43
+local epoch 0 	 client: 9 	 mal: 0 	 loss: 1.57022130 	 time: 1.45
+local epoch 0 	 client: 10 	 mal: 0 	 loss: 1.50666416 	 time: 1.44
+local epoch 0 	 client: 11 	 mal: 0 	 loss: 1.71464539 	 time: 1.43
+local epoch 0 	 client: 12 	 mal: 0 	 loss: 1.50106597 	 time: 1.52
+local epoch 0 	 client: 13 	 mal: 0 	 loss: 1.67475462 	 time: 1.47
+local epoch 0 	 client: 14 	 mal: 0 	 loss: 1.45476127 	 time: 1.46
+local epoch 0 	 client: 15 	 mal: 0 	 loss: 1.79920435 	 time: 1.46
+local epoch 0 	 client: 16 	 mal: 0 	 loss: 1.58670795 	 time: 1.43
+local epoch 0 	 client: 17 	 mal: 0 	 loss: 1.55023503 	 time: 1.52
+local epoch 0 	 client: 18 	 mal: 0 	 loss: 1.64670360 	 time: 1.45
+local epoch 0 	 client: 19 	 mal: 0 	 loss: 1.69206107 	 time: 1.43
+
+[GRADIENT DEBUG Rnd 73]
+Avg Malicious Delta Norm: 1.168052
+Avg Honest Delta Norm:    0.061488
+Power Ratio (Mal/Hon):    18.9963
+[DBG rnd=73] logits mean=0.0862, std=1.6320, maxlogit mean=2.3500
+[DBG rnd=73] probs max mean=0.3713, pred entropy mean=1.6687
+[DBG rnd=73] preds bincount=[4, 6, 1, 5, 3, 8, 14, 7, 4, 12]
+Clean ACC:              0.4713
+Attack Success Ratio:   0.1023
+Robustness ACC:           0.4437
+local epoch 0 	 client: 0 	 mal: 1 	 loss: 0.71541113 	 time: 16.45
+local epoch 0 	 client: 1 	 mal: 1 	 loss: 0.04494441 	 time: 16.37
+local epoch 0 	 client: 2 	 mal: 0 	 loss: 1.60845685 	 time: 1.43
+local epoch 0 	 client: 3 	 mal: 0 	 loss: 1.93959129 	 time: 1.42
+local epoch 0 	 client: 4 	 mal: 0 	 loss: 1.39399385 	 time: 1.44
+local epoch 0 	 client: 5 	 mal: 0 	 loss: 1.38810515 	 time: 1.43
+local epoch 0 	 client: 6 	 mal: 0 	 loss: 1.48823476 	 time: 1.49
+local epoch 0 	 client: 7 	 mal: 0 	 loss: 1.49712062 	 time: 1.43
+local epoch 0 	 client: 8 	 mal: 0 	 loss: 1.88452053 	 time: 1.44
+local epoch 0 	 client: 9 	 mal: 0 	 loss: 1.61374497 	 time: 1.44
+local epoch 0 	 client: 10 	 mal: 0 	 loss: 1.68184471 	 time: 1.44
+local epoch 0 	 client: 11 	 mal: 0 	 loss: 1.56224704 	 time: 1.43
+local epoch 0 	 client: 12 	 mal: 0 	 loss: 1.46164179 	 time: 1.48
+local epoch 0 	 client: 13 	 mal: 0 	 loss: 1.61683118 	 time: 1.46
+local epoch 0 	 client: 14 	 mal: 0 	 loss: 1.51639795 	 time: 1.42
+local epoch 0 	 client: 15 	 mal: 0 	 loss: 1.54418564 	 time: 1.45
+local epoch 0 	 client: 16 	 mal: 0 	 loss: 1.36858690 	 time: 1.44
+local epoch 0 	 client: 17 	 mal: 0 	 loss: 1.93791258 	 time: 1.43
+local epoch 0 	 client: 18 	 mal: 0 	 loss: 1.48814368 	 time: 1.52
+local epoch 0 	 client: 19 	 mal: 0 	 loss: 1.64112008 	 time: 1.45
+
+[GRADIENT DEBUG Rnd 74]
+Avg Malicious Delta Norm: 0.948801
+Avg Honest Delta Norm:    0.061192
+Power Ratio (Mal/Hon):    15.5053
+[DBG rnd=74] logits mean=0.0807, std=1.6418, maxlogit mean=2.3802
+[DBG rnd=74] probs max mean=0.3812, pred entropy mean=1.6588
+[DBG rnd=74] preds bincount=[4, 5, 0, 4, 1, 6, 12, 16, 4, 12]
+Clean ACC:              0.4614
+Attack Success Ratio:   0.1811
+Robustness ACC:           0.4151
+local epoch 0 	 client: 0 	 mal: 1 	 loss: 0.06509894 	 time: 16.38
+local epoch 0 	 client: 1 	 mal: 1 	 loss: 0.01004176 	 time: 16.49
+local epoch 0 	 client: 2 	 mal: 0 	 loss: 1.61066353 	 time: 1.43
+local epoch 0 	 client: 3 	 mal: 0 	 loss: 1.46139586 	 time: 1.43
+local epoch 0 	 client: 4 	 mal: 0 	 loss: 1.35769629 	 time: 1.43
+local epoch 0 	 client: 5 	 mal: 0 	 loss: 1.64619362 	 time: 1.50
+local epoch 0 	 client: 6 	 mal: 0 	 loss: 1.78115976 	 time: 1.43
+local epoch 0 	 client: 7 	 mal: 0 	 loss: 1.44731522 	 time: 1.43
+local epoch 0 	 client: 8 	 mal: 0 	 loss: 1.39770484 	 time: 1.48
+local epoch 0 	 client: 9 	 mal: 0 	 loss: 1.54885256 	 time: 1.45
+local epoch 0 	 client: 10 	 mal: 0 	 loss: 1.69961739 	 time: 1.44
+local epoch 0 	 client: 11 	 mal: 0 	 loss: 1.49278426 	 time: 1.43
+local epoch 0 	 client: 12 	 mal: 0 	 loss: 1.67485595 	 time: 1.43
+local epoch 0 	 client: 13 	 mal: 0 	 loss: 1.77202952 	 time: 1.43
+local epoch 0 	 client: 14 	 mal: 0 	 loss: 1.81149459 	 time: 1.48
+local epoch 0 	 client: 15 	 mal: 0 	 loss: 1.44536185 	 time: 1.46
+local epoch 0 	 client: 16 	 mal: 0 	 loss: 1.43552387 	 time: 1.44
+local epoch 0 	 client: 17 	 mal: 0 	 loss: 1.47125995 	 time: 1.43
+local epoch 0 	 client: 18 	 mal: 0 	 loss: 1.61783588 	 time: 1.44
+local epoch 0 	 client: 19 	 mal: 0 	 loss: 1.51060688 	 time: 1.44
+
+[GRADIENT DEBUG Rnd 75]
+Avg Malicious Delta Norm: 0.901295
+Avg Honest Delta Norm:    0.061162
+Power Ratio (Mal/Hon):    14.7363
+[DBG rnd=75] logits mean=0.0852, std=1.6989, maxlogit mean=2.4688
+[DBG rnd=75] probs max mean=0.3885, pred entropy mean=1.6300
+[DBG rnd=75] preds bincount=[4, 5, 0, 2, 2, 11, 14, 9, 5, 12]
+Clean ACC:              0.4728
+Attack Success Ratio:   0.1202
+Robustness ACC:           0.4380
+local epoch 0 	 client: 0 	 mal: 1 	 loss: 0.05816102 	 time: 16.30
+local epoch 0 	 client: 1 	 mal: 1 	 loss: 0.24384648 	 time: 16.32
+local epoch 0 	 client: 2 	 mal: 0 	 loss: 1.72250473 	 time: 1.43
+local epoch 0 	 client: 3 	 mal: 0 	 loss: 1.49024129 	 time: 1.43
+local epoch 0 	 client: 4 	 mal: 0 	 loss: 1.49958456 	 time: 1.43
+local epoch 0 	 client: 5 	 mal: 0 	 loss: 1.45907247 	 time: 1.42
+local epoch 0 	 client: 6 	 mal: 0 	 loss: 1.47052598 	 time: 1.43
+local epoch 0 	 client: 7 	 mal: 0 	 loss: 1.50564182 	 time: 1.45
+local epoch 0 	 client: 8 	 mal: 0 	 loss: 1.35198224 	 time: 1.43
+local epoch 0 	 client: 9 	 mal: 0 	 loss: 1.70984852 	 time: 1.44
+local epoch 0 	 client: 10 	 mal: 0 	 loss: 1.51350188 	 time: 1.49
+local epoch 0 	 client: 11 	 mal: 0 	 loss: 1.52337050 	 time: 1.45
+local epoch 0 	 client: 12 	 mal: 0 	 loss: 1.47938764 	 time: 1.44
+local epoch 0 	 client: 13 	 mal: 0 	 loss: 1.60010290 	 time: 1.43
+local epoch 0 	 client: 14 	 mal: 0 	 loss: 1.60521615 	 time: 1.44
+local epoch 0 	 client: 15 	 mal: 0 	 loss: 1.48253441 	 time: 1.43
+local epoch 0 	 client: 16 	 mal: 0 	 loss: 1.57693231 	 time: 1.43
+local epoch 0 	 client: 17 	 mal: 0 	 loss: 1.78525805 	 time: 1.43
+local epoch 0 	 client: 18 	 mal: 0 	 loss: 1.58624661 	 time: 1.44
+local epoch 0 	 client: 19 	 mal: 0 	 loss: 1.71312726 	 time: 1.42
+
+[GRADIENT DEBUG Rnd 76]
+Avg Malicious Delta Norm: 0.989206
+Avg Honest Delta Norm:    0.062061
+Power Ratio (Mal/Hon):    15.9393
+[DBG rnd=76] logits mean=0.0801, std=1.7350, maxlogit mean=2.4675
+[DBG rnd=76] probs max mean=0.3823, pred entropy mean=1.6354
+[DBG rnd=76] preds bincount=[3, 7, 0, 3, 1, 10, 12, 12, 5, 11]
+Clean ACC:              0.4703
+Attack Success Ratio:   0.1450
+Robustness ACC:           0.4349
+local epoch 0 	 client: 0 	 mal: 1 	 loss: 0.01368827 	 time: 16.33
+local epoch 0 	 client: 1 	 mal: 1 	 loss: 0.04779367 	 time: 16.55
+local epoch 0 	 client: 2 	 mal: 0 	 loss: 1.50164914 	 time: 1.42
+local epoch 0 	 client: 3 	 mal: 0 	 loss: 1.69285882 	 time: 1.43
+local epoch 0 	 client: 4 	 mal: 0 	 loss: 1.66981888 	 time: 1.43
+local epoch 0 	 client: 5 	 mal: 0 	 loss: 1.70566952 	 time: 1.43
+local epoch 0 	 client: 6 	 mal: 0 	 loss: 1.39277077 	 time: 1.48
+local epoch 0 	 client: 7 	 mal: 0 	 loss: 1.51000047 	 time: 1.44
+local epoch 0 	 client: 8 	 mal: 0 	 loss: 1.41671193 	 time: 1.43
+local epoch 0 	 client: 9 	 mal: 0 	 loss: 1.72299123 	 time: 1.46
+local epoch 0 	 client: 10 	 mal: 0 	 loss: 1.56069684 	 time: 1.43
+local epoch 0 	 client: 11 	 mal: 0 	 loss: 1.57182670 	 time: 1.43
+local epoch 0 	 client: 12 	 mal: 0 	 loss: 1.49499178 	 time: 1.44
+local epoch 0 	 client: 13 	 mal: 0 	 loss: 1.69113290 	 time: 1.44
+local epoch 0 	 client: 14 	 mal: 0 	 loss: 1.81591034 	 time: 1.43
+local epoch 0 	 client: 15 	 mal: 0 	 loss: 1.38401985 	 time: 1.43
+local epoch 0 	 client: 16 	 mal: 0 	 loss: 1.43773091 	 time: 1.43
+local epoch 0 	 client: 17 	 mal: 0 	 loss: 1.56923366 	 time: 1.44
+local epoch 0 	 client: 18 	 mal: 0 	 loss: 1.40592587 	 time: 1.42
+local epoch 0 	 client: 19 	 mal: 0 	 loss: 1.75434601 	 time: 1.44
+
+[GRADIENT DEBUG Rnd 77]
+Avg Malicious Delta Norm: 1.113151
+Avg Honest Delta Norm:    0.058944
+Power Ratio (Mal/Hon):    18.8850
+[DBG rnd=77] logits mean=0.0793, std=1.6709, maxlogit mean=2.3986
+[DBG rnd=77] probs max mean=0.3783, pred entropy mean=1.6515
+[DBG rnd=77] preds bincount=[4, 4, 1, 3, 2, 12, 12, 8, 6, 12]
+Clean ACC:              0.4812
+Attack Success Ratio:   0.0947
+Robustness ACC:           0.4564
+local epoch 0 	 client: 0 	 mal: 1 	 loss: 0.05892538 	 time: 16.39
+local epoch 0 	 client: 1 	 mal: 1 	 loss: 0.16916512 	 time: 16.33
+local epoch 0 	 client: 2 	 mal: 0 	 loss: 1.56696177 	 time: 1.42
+local epoch 0 	 client: 3 	 mal: 0 	 loss: 1.49630284 	 time: 1.43
+local epoch 0 	 client: 4 	 mal: 0 	 loss: 1.68909729 	 time: 1.43
+local epoch 0 	 client: 5 	 mal: 0 	 loss: 1.32951343 	 time: 1.42
+local epoch 0 	 client: 6 	 mal: 0 	 loss: 1.74633574 	 time: 1.47
+local epoch 0 	 client: 7 	 mal: 0 	 loss: 1.36775434 	 time: 1.44
+local epoch 0 	 client: 8 	 mal: 0 	 loss: 1.41770840 	 time: 1.43
+local epoch 0 	 client: 9 	 mal: 0 	 loss: 1.76042485 	 time: 1.48
+local epoch 0 	 client: 10 	 mal: 0 	 loss: 1.57543659 	 time: 1.45
+local epoch 0 	 client: 11 	 mal: 0 	 loss: 1.57938135 	 time: 1.43
+local epoch 0 	 client: 12 	 mal: 0 	 loss: 1.47336876 	 time: 1.45
+local epoch 0 	 client: 13 	 mal: 0 	 loss: 1.48734462 	 time: 1.45
+local epoch 0 	 client: 14 	 mal: 0 	 loss: 1.83767259 	 time: 1.43
+local epoch 0 	 client: 15 	 mal: 0 	 loss: 1.31329107 	 time: 1.45
+local epoch 0 	 client: 16 	 mal: 0 	 loss: 1.54812539 	 time: 1.44
+local epoch 0 	 client: 17 	 mal: 0 	 loss: 1.47123969 	 time: 1.45
+local epoch 0 	 client: 18 	 mal: 0 	 loss: 1.72805941 	 time: 1.46
+local epoch 0 	 client: 19 	 mal: 0 	 loss: 1.56381440 	 time: 1.45
+
+[GRADIENT DEBUG Rnd 78]
+Avg Malicious Delta Norm: 0.981300
+Avg Honest Delta Norm:    0.059953
+Power Ratio (Mal/Hon):    16.3678
+[DBG rnd=78] logits mean=0.0767, std=1.6918, maxlogit mean=2.4318
+[DBG rnd=78] probs max mean=0.3830, pred entropy mean=1.6405
+[DBG rnd=78] preds bincount=[6, 5, 1, 5, 2, 8, 13, 9, 5, 10]
+Clean ACC:              0.4798
+Attack Success Ratio:   0.1251
+Robustness ACC:           0.4464
+local epoch 0 	 client: 0 	 mal: 1 	 loss: 0.03687860 	 time: 16.43
+local epoch 0 	 client: 1 	 mal: 1 	 loss: 0.00736550 	 time: 16.35
+local epoch 0 	 client: 2 	 mal: 0 	 loss: 1.61600661 	 time: 1.43
+local epoch 0 	 client: 3 	 mal: 0 	 loss: 1.41248226 	 time: 1.44
+local epoch 0 	 client: 4 	 mal: 0 	 loss: 1.44851434 	 time: 1.45
+local epoch 0 	 client: 5 	 mal: 0 	 loss: 1.30387318 	 time: 1.44
+local epoch 0 	 client: 6 	 mal: 0 	 loss: 1.53007042 	 time: 1.43
+local epoch 0 	 client: 7 	 mal: 0 	 loss: 1.60838199 	 time: 1.48
+local epoch 0 	 client: 8 	 mal: 0 	 loss: 1.54668880 	 time: 1.43
+local epoch 0 	 client: 9 	 mal: 0 	 loss: 1.62377954 	 time: 1.44
+local epoch 0 	 client: 10 	 mal: 0 	 loss: 1.60133171 	 time: 1.53
+local epoch 0 	 client: 11 	 mal: 0 	 loss: 1.71653616 	 time: 1.52
+local epoch 0 	 client: 12 	 mal: 0 	 loss: 1.23663807 	 time: 1.46
+local epoch 0 	 client: 13 	 mal: 0 	 loss: 1.77938211 	 time: 1.43
+local epoch 0 	 client: 14 	 mal: 0 	 loss: 1.57936084 	 time: 1.44
+local epoch 0 	 client: 15 	 mal: 0 	 loss: 1.44052029 	 time: 1.43
+local epoch 0 	 client: 16 	 mal: 0 	 loss: 1.65944076 	 time: 1.44
+local epoch 0 	 client: 17 	 mal: 0 	 loss: 1.48523033 	 time: 1.43
+local epoch 0 	 client: 18 	 mal: 0 	 loss: 1.57620096 	 time: 1.48
+local epoch 0 	 client: 19 	 mal: 0 	 loss: 1.65607679 	 time: 1.45
+
+[GRADIENT DEBUG Rnd 79]
+Avg Malicious Delta Norm: 1.164499
+Avg Honest Delta Norm:    0.059191
+Power Ratio (Mal/Hon):    19.6735
+[DBG rnd=79] logits mean=0.0792, std=1.7189, maxlogit mean=2.4731
+[DBG rnd=79] probs max mean=0.3859, pred entropy mean=1.6294
+[DBG rnd=79] preds bincount=[4, 7, 1, 3, 2, 10, 14, 8, 4, 11]
+Clean ACC:              0.4794
+Attack Success Ratio:   0.0997
+Robustness ACC:           0.4514
+local epoch 0 	 client: 0 	 mal: 1 	 loss: 0.02379723 	 time: 16.34
+local epoch 0 	 client: 1 	 mal: 1 	 loss: 0.01861658 	 time: 16.39
+local epoch 0 	 client: 2 	 mal: 0 	 loss: 1.53058064 	 time: 1.42
+local epoch 0 	 client: 3 	 mal: 0 	 loss: 1.75849497 	 time: 1.45
+local epoch 0 	 client: 4 	 mal: 0 	 loss: 1.30276644 	 time: 1.43
+local epoch 0 	 client: 5 	 mal: 0 	 loss: 1.52435005 	 time: 1.42
+local epoch 0 	 client: 6 	 mal: 0 	 loss: 1.59906888 	 time: 1.43
+local epoch 0 	 client: 7 	 mal: 0 	 loss: 1.52418554 	 time: 1.43
+local epoch 0 	 client: 8 	 mal: 0 	 loss: 1.66224229 	 time: 1.48
+local epoch 0 	 client: 9 	 mal: 0 	 loss: 1.62593544 	 time: 1.44
+local epoch 0 	 client: 10 	 mal: 0 	 loss: 1.62733769 	 time: 1.44
+local epoch 0 	 client: 11 	 mal: 0 	 loss: 1.44788384 	 time: 1.43
+local epoch 0 	 client: 12 	 mal: 0 	 loss: 1.71477616 	 time: 1.43
+local epoch 0 	 client: 13 	 mal: 0 	 loss: 1.56675446 	 time: 1.43
+local epoch 0 	 client: 14 	 mal: 0 	 loss: 1.54669023 	 time: 1.44
+local epoch 0 	 client: 15 	 mal: 0 	 loss: 1.58429074 	 time: 1.44
+local epoch 0 	 client: 16 	 mal: 0 	 loss: 1.65122008 	 time: 1.43
+local epoch 0 	 client: 17 	 mal: 0 	 loss: 1.41853774 	 time: 1.44
+local epoch 0 	 client: 18 	 mal: 0 	 loss: 1.96484268 	 time: 1.43
+local epoch 0 	 client: 19 	 mal: 0 	 loss: 1.58332086 	 time: 1.46
+
+[GRADIENT DEBUG Rnd 80]
+Avg Malicious Delta Norm: 0.988362
+Avg Honest Delta Norm:    0.058155
+Power Ratio (Mal/Hon):    16.9953
+[DBG rnd=80] logits mean=0.0783, std=1.7001, maxlogit mean=2.4399
+[DBG rnd=80] probs max mean=0.3827, pred entropy mean=1.6383
+[DBG rnd=80] preds bincount=[4, 4, 1, 7, 2, 8, 12, 8, 6, 12]
+Clean ACC:              0.4875
+Attack Success Ratio:   0.0937
+Robustness ACC:           0.4642
+local epoch 0 	 client: 0 	 mal: 1 	 loss: 0.04380044 	 time: 16.50
+local epoch 0 	 client: 1 	 mal: 1 	 loss: 0.02030303 	 time: 16.32
+local epoch 0 	 client: 2 	 mal: 0 	 loss: 1.67589045 	 time: 1.43
+local epoch 0 	 client: 3 	 mal: 0 	 loss: 1.72115660 	 time: 1.43
+local epoch 0 	 client: 4 	 mal: 0 	 loss: 1.43948388 	 time: 1.43
+local epoch 0 	 client: 5 	 mal: 0 	 loss: 1.60345340 	 time: 1.42
+local epoch 0 	 client: 6 	 mal: 0 	 loss: 1.57731736 	 time: 1.42
+local epoch 0 	 client: 7 	 mal: 0 	 loss: 1.59215426 	 time: 1.42
+local epoch 0 	 client: 8 	 mal: 0 	 loss: 1.30229640 	 time: 1.42
+local epoch 0 	 client: 9 	 mal: 0 	 loss: 1.40593863 	 time: 1.49
+local epoch 0 	 client: 10 	 mal: 0 	 loss: 1.43395710 	 time: 1.45
+local epoch 0 	 client: 11 	 mal: 0 	 loss: 1.40513992 	 time: 1.43
+local epoch 0 	 client: 12 	 mal: 0 	 loss: 1.49458146 	 time: 1.46
+local epoch 0 	 client: 13 	 mal: 0 	 loss: 1.51186275 	 time: 1.46
+local epoch 0 	 client: 14 	 mal: 0 	 loss: 1.45685482 	 time: 1.46
+local epoch 0 	 client: 15 	 mal: 0 	 loss: 1.63841546 	 time: 1.44
+local epoch 0 	 client: 16 	 mal: 0 	 loss: 1.61896122 	 time: 1.49
+local epoch 0 	 client: 17 	 mal: 0 	 loss: 1.53381753 	 time: 1.45
+local epoch 0 	 client: 18 	 mal: 0 	 loss: 1.47477186 	 time: 1.44
+local epoch 0 	 client: 19 	 mal: 0 	 loss: 1.38388705 	 time: 1.43
+
+[GRADIENT DEBUG Rnd 81]
+Avg Malicious Delta Norm: 1.310432
+Avg Honest Delta Norm:    0.058887
+Power Ratio (Mal/Hon):    22.2532
+[DBG rnd=81] logits mean=0.0800, std=1.7034, maxlogit mean=2.4759
+[DBG rnd=81] probs max mean=0.3894, pred entropy mean=1.6272
+[DBG rnd=81] preds bincount=[3, 6, 1, 6, 1, 8, 14, 8, 5, 12]
+Clean ACC:              0.4842
+Attack Success Ratio:   0.0911
+Robustness ACC:           0.4597
+local epoch 0 	 client: 0 	 mal: 1 	 loss: 0.04707934 	 time: 16.30
+local epoch 0 	 client: 1 	 mal: 1 	 loss: 0.01719613 	 time: 16.45
+local epoch 0 	 client: 2 	 mal: 0 	 loss: 1.38612151 	 time: 1.43
+local epoch 0 	 client: 3 	 mal: 0 	 loss: 1.62751043 	 time: 1.43
+local epoch 0 	 client: 4 	 mal: 0 	 loss: 1.51174831 	 time: 1.43
+local epoch 0 	 client: 5 	 mal: 0 	 loss: 1.69588208 	 time: 1.44
+local epoch 0 	 client: 6 	 mal: 0 	 loss: 1.47137511 	 time: 1.44
+local epoch 0 	 client: 7 	 mal: 0 	 loss: 1.54293311 	 time: 1.48
+local epoch 0 	 client: 8 	 mal: 0 	 loss: 1.94395554 	 time: 1.44
+local epoch 0 	 client: 9 	 mal: 0 	 loss: 1.44089854 	 time: 1.44
+local epoch 0 	 client: 10 	 mal: 0 	 loss: 1.44001412 	 time: 1.48
+local epoch 0 	 client: 11 	 mal: 0 	 loss: 1.67622840 	 time: 1.42
+local epoch 0 	 client: 12 	 mal: 0 	 loss: 1.51273501 	 time: 1.45
+local epoch 0 	 client: 13 	 mal: 0 	 loss: 1.68284631 	 time: 1.43
+local epoch 0 	 client: 14 	 mal: 0 	 loss: 1.69216132 	 time: 1.43
+local epoch 0 	 client: 15 	 mal: 0 	 loss: 1.69766855 	 time: 1.43
+local epoch 0 	 client: 16 	 mal: 0 	 loss: 1.62872827 	 time: 1.45
+local epoch 0 	 client: 17 	 mal: 0 	 loss: 1.42186892 	 time: 1.43
+local epoch 0 	 client: 18 	 mal: 0 	 loss: 1.73978329 	 time: 1.43
+local epoch 0 	 client: 19 	 mal: 0 	 loss: 1.45488358 	 time: 1.45
+
+[GRADIENT DEBUG Rnd 82]
+Avg Malicious Delta Norm: 0.911228
+Avg Honest Delta Norm:    0.058486
+Power Ratio (Mal/Hon):    15.5804
+[DBG rnd=82] logits mean=0.0820, std=1.7227, maxlogit mean=2.5133
+[DBG rnd=82] probs max mean=0.3954, pred entropy mean=1.6170
+[DBG rnd=82] preds bincount=[3, 6, 0, 8, 2, 8, 10, 10, 6, 11]
+Clean ACC:              0.4817
+Attack Success Ratio:   0.1297
+Robustness ACC:           0.4482
+local epoch 0 	 client: 0 	 mal: 1 	 loss: 0.02484218 	 time: 16.35
+local epoch 0 	 client: 1 	 mal: 1 	 loss: 0.02880296 	 time: 16.38
+local epoch 0 	 client: 2 	 mal: 0 	 loss: 1.62162220 	 time: 1.42
+local epoch 0 	 client: 3 	 mal: 0 	 loss: 1.57893264 	 time: 1.45
+local epoch 0 	 client: 4 	 mal: 0 	 loss: 1.31985128 	 time: 1.43
+local epoch 0 	 client: 5 	 mal: 0 	 loss: 1.27287734 	 time: 1.42
+local epoch 0 	 client: 6 	 mal: 0 	 loss: 1.57622635 	 time: 1.43
+local epoch 0 	 client: 7 	 mal: 0 	 loss: 1.65266788 	 time: 1.43
+local epoch 0 	 client: 8 	 mal: 0 	 loss: 1.62278402 	 time: 1.49
+local epoch 0 	 client: 9 	 mal: 0 	 loss: 1.75523388 	 time: 1.45
+local epoch 0 	 client: 10 	 mal: 0 	 loss: 1.49330616 	 time: 1.45
+local epoch 0 	 client: 11 	 mal: 0 	 loss: 1.56660604 	 time: 1.47
+local epoch 0 	 client: 12 	 mal: 0 	 loss: 1.53198957 	 time: 1.46
+local epoch 0 	 client: 13 	 mal: 0 	 loss: 1.65276885 	 time: 1.44
+local epoch 0 	 client: 14 	 mal: 0 	 loss: 1.66280305 	 time: 1.48
+local epoch 0 	 client: 15 	 mal: 0 	 loss: 1.67097342 	 time: 1.44
+local epoch 0 	 client: 16 	 mal: 0 	 loss: 1.58521903 	 time: 1.44
+local epoch 0 	 client: 17 	 mal: 0 	 loss: 1.45986712 	 time: 1.43
+local epoch 0 	 client: 18 	 mal: 0 	 loss: 1.62831891 	 time: 1.43
+local epoch 0 	 client: 19 	 mal: 0 	 loss: 1.60099220 	 time: 1.43
+
+[GRADIENT DEBUG Rnd 83]
+Avg Malicious Delta Norm: 0.827051
+Avg Honest Delta Norm:    0.055746
+Power Ratio (Mal/Hon):    14.8361
+[DBG rnd=83] logits mean=0.0794, std=1.6806, maxlogit mean=2.4211
+[DBG rnd=83] probs max mean=0.3803, pred entropy mean=1.6448
+[DBG rnd=83] preds bincount=[6, 5, 1, 8, 2, 8, 10, 9, 5, 10]
+Clean ACC:              0.4903
+Attack Success Ratio:   0.1051
+Robustness ACC:           0.4600
+local epoch 0 	 client: 0 	 mal: 1 	 loss: 0.01616036 	 time: 16.51
+local epoch 0 	 client: 1 	 mal: 1 	 loss: 0.02196134 	 time: 16.33
+local epoch 0 	 client: 2 	 mal: 0 	 loss: 1.40680194 	 time: 1.42
+local epoch 0 	 client: 3 	 mal: 0 	 loss: 1.63499141 	 time: 1.43
+local epoch 0 	 client: 4 	 mal: 0 	 loss: 1.58083928 	 time: 1.44
+local epoch 0 	 client: 5 	 mal: 0 	 loss: 1.72019804 	 time: 1.43
+local epoch 0 	 client: 6 	 mal: 0 	 loss: 1.42281497 	 time: 1.48
+local epoch 0 	 client: 7 	 mal: 0 	 loss: 1.47908187 	 time: 1.44
+local epoch 0 	 client: 8 	 mal: 0 	 loss: 1.64173710 	 time: 1.43
+local epoch 0 	 client: 9 	 mal: 0 	 loss: 1.76530397 	 time: 1.44
+local epoch 0 	 client: 10 	 mal: 0 	 loss: 1.67853451 	 time: 1.44
+local epoch 0 	 client: 11 	 mal: 0 	 loss: 1.38919044 	 time: 1.43
+local epoch 0 	 client: 12 	 mal: 0 	 loss: 1.58070171 	 time: 1.49
+local epoch 0 	 client: 13 	 mal: 0 	 loss: 1.55279851 	 time: 1.46
+local epoch 0 	 client: 14 	 mal: 0 	 loss: 1.49441659 	 time: 1.42
+local epoch 0 	 client: 15 	 mal: 0 	 loss: 1.57665861 	 time: 1.43
+local epoch 0 	 client: 16 	 mal: 0 	 loss: 1.42745996 	 time: 1.43
+local epoch 0 	 client: 17 	 mal: 0 	 loss: 1.39583278 	 time: 1.43
+local epoch 0 	 client: 18 	 mal: 0 	 loss: 1.42255986 	 time: 1.50
+local epoch 0 	 client: 19 	 mal: 0 	 loss: 1.37742090 	 time: 1.48
+
+[GRADIENT DEBUG Rnd 84]
+Avg Malicious Delta Norm: 1.008992
+Avg Honest Delta Norm:    0.056396
+Power Ratio (Mal/Hon):    17.8912
+[DBG rnd=84] logits mean=0.0787, std=1.7221, maxlogit mean=2.4827
+[DBG rnd=84] probs max mean=0.3881, pred entropy mean=1.6255
+[DBG rnd=84] preds bincount=[4, 4, 2, 7, 1, 8, 11, 9, 6, 12]
+Clean ACC:              0.4904
+Attack Success Ratio:   0.0872
+Robustness ACC:           0.4637
+local epoch 0 	 client: 0 	 mal: 1 	 loss: 0.21390784 	 time: 16.29
+local epoch 0 	 client: 1 	 mal: 1 	 loss: 0.05082008 	 time: 16.33
+local epoch 0 	 client: 2 	 mal: 0 	 loss: 1.48886538 	 time: 1.42
+local epoch 0 	 client: 3 	 mal: 0 	 loss: 1.59736955 	 time: 1.43
+local epoch 0 	 client: 4 	 mal: 0 	 loss: 1.49211168 	 time: 1.43
+local epoch 0 	 client: 5 	 mal: 0 	 loss: 1.54959524 	 time: 1.46
+local epoch 0 	 client: 6 	 mal: 0 	 loss: 1.46244681 	 time: 1.46
+local epoch 0 	 client: 7 	 mal: 0 	 loss: 1.41505468 	 time: 1.46
+local epoch 0 	 client: 8 	 mal: 0 	 loss: 1.51239014 	 time: 1.45
+local epoch 0 	 client: 9 	 mal: 0 	 loss: 1.55954671 	 time: 1.51
+local epoch 0 	 client: 10 	 mal: 0 	 loss: 1.45414460 	 time: 1.44
+local epoch 0 	 client: 11 	 mal: 0 	 loss: 1.44311297 	 time: 1.43
+local epoch 0 	 client: 12 	 mal: 0 	 loss: 1.34375036 	 time: 1.44
+local epoch 0 	 client: 13 	 mal: 0 	 loss: 1.39760029 	 time: 1.44
+local epoch 0 	 client: 14 	 mal: 0 	 loss: 1.44436908 	 time: 1.43
+local epoch 0 	 client: 15 	 mal: 0 	 loss: 1.79309583 	 time: 1.50
+local epoch 0 	 client: 16 	 mal: 0 	 loss: 1.35718203 	 time: 1.43
+local epoch 0 	 client: 17 	 mal: 0 	 loss: 1.37191463 	 time: 1.43
+local epoch 0 	 client: 18 	 mal: 0 	 loss: 1.49220669 	 time: 1.43
+local epoch 0 	 client: 19 	 mal: 0 	 loss: 1.58893847 	 time: 1.43
+
+[GRADIENT DEBUG Rnd 85]
+Avg Malicious Delta Norm: 0.931875
+Avg Honest Delta Norm:    0.057195
+Power Ratio (Mal/Hon):    16.2929
+[DBG rnd=85] logits mean=0.0802, std=1.7249, maxlogit mean=2.5188
+[DBG rnd=85] probs max mean=0.3952, pred entropy mean=1.6143
+[DBG rnd=85] preds bincount=[5, 7, 1, 7, 2, 8, 11, 9, 3, 11]
+Clean ACC:              0.4875
+Attack Success Ratio:   0.1058
+Robustness ACC:           0.4544
+local epoch 0 	 client: 0 	 mal: 1 	 loss: 0.04417713 	 time: 16.53
+local epoch 0 	 client: 1 	 mal: 1 	 loss: 0.02881546 	 time: 16.36
+local epoch 0 	 client: 2 	 mal: 0 	 loss: 1.26835108 	 time: 1.43
+local epoch 0 	 client: 3 	 mal: 0 	 loss: 1.46156263 	 time: 1.44
+local epoch 0 	 client: 4 	 mal: 0 	 loss: 1.72494662 	 time: 1.43
+local epoch 0 	 client: 5 	 mal: 0 	 loss: 1.53598654 	 time: 1.43
+local epoch 0 	 client: 6 	 mal: 0 	 loss: 1.60203493 	 time: 1.44
+local epoch 0 	 client: 7 	 mal: 0 	 loss: 1.47775662 	 time: 1.43
+local epoch 0 	 client: 8 	 mal: 0 	 loss: 1.63333154 	 time: 1.43
+local epoch 0 	 client: 9 	 mal: 0 	 loss: 1.65747893 	 time: 1.43
+local epoch 0 	 client: 10 	 mal: 0 	 loss: 1.45781255 	 time: 1.43
+local epoch 0 	 client: 11 	 mal: 0 	 loss: 1.45695806 	 time: 1.46
+local epoch 0 	 client: 12 	 mal: 0 	 loss: 1.40025544 	 time: 1.44
+local epoch 0 	 client: 13 	 mal: 0 	 loss: 1.50025845 	 time: 1.43
+local epoch 0 	 client: 14 	 mal: 0 	 loss: 1.57400918 	 time: 1.44
+local epoch 0 	 client: 15 	 mal: 0 	 loss: 1.30254889 	 time: 1.44
+local epoch 0 	 client: 16 	 mal: 0 	 loss: 1.75263882 	 time: 1.44
+local epoch 0 	 client: 17 	 mal: 0 	 loss: 1.61110783 	 time: 1.43
+local epoch 0 	 client: 18 	 mal: 0 	 loss: 1.36213517 	 time: 1.44
+local epoch 0 	 client: 19 	 mal: 0 	 loss: 1.48231411 	 time: 1.50
+
+[GRADIENT DEBUG Rnd 86]
+Avg Malicious Delta Norm: 0.814681
+Avg Honest Delta Norm:    0.056628
+Power Ratio (Mal/Hon):    14.3866
+[DBG rnd=86] logits mean=0.0839, std=1.7181, maxlogit mean=2.5352
+[DBG rnd=86] probs max mean=0.3996, pred entropy mean=1.6092
+[DBG rnd=86] preds bincount=[4, 6, 0, 6, 1, 10, 11, 11, 4, 11]
+Clean ACC:              0.4851
+Attack Success Ratio:   0.1211
+Robustness ACC:           0.4510
+local epoch 0 	 client: 0 	 mal: 1 	 loss: 0.03165987 	 time: 16.36
+local epoch 0 	 client: 1 	 mal: 1 	 loss: 0.06912804 	 time: 16.45
+local epoch 0 	 client: 2 	 mal: 0 	 loss: 1.55037439 	 time: 1.42
+local epoch 0 	 client: 3 	 mal: 0 	 loss: 1.69569707 	 time: 1.44
+local epoch 0 	 client: 4 	 mal: 0 	 loss: 1.73041940 	 time: 1.44
+local epoch 0 	 client: 5 	 mal: 0 	 loss: 1.64797890 	 time: 1.47
+local epoch 0 	 client: 6 	 mal: 0 	 loss: 1.66849506 	 time: 1.44
+local epoch 0 	 client: 7 	 mal: 0 	 loss: 1.53869092 	 time: 1.43
+local epoch 0 	 client: 8 	 mal: 0 	 loss: 1.47991979 	 time: 1.49
+local epoch 0 	 client: 9 	 mal: 0 	 loss: 1.68113923 	 time: 1.45
+local epoch 0 	 client: 10 	 mal: 0 	 loss: 1.46407044 	 time: 1.43
+local epoch 0 	 client: 11 	 mal: 0 	 loss: 1.30039990 	 time: 1.43
+local epoch 0 	 client: 12 	 mal: 0 	 loss: 1.61363482 	 time: 1.43
+local epoch 0 	 client: 13 	 mal: 0 	 loss: 1.59998167 	 time: 1.43
+local epoch 0 	 client: 14 	 mal: 0 	 loss: 1.37254238 	 time: 1.49
+local epoch 0 	 client: 15 	 mal: 0 	 loss: 1.64329243 	 time: 1.46
+local epoch 0 	 client: 16 	 mal: 0 	 loss: 1.48322999 	 time: 1.45
+local epoch 0 	 client: 17 	 mal: 0 	 loss: 1.39820814 	 time: 1.44
+local epoch 0 	 client: 18 	 mal: 0 	 loss: 1.52138972 	 time: 1.44
+local epoch 0 	 client: 19 	 mal: 0 	 loss: 1.49237823 	 time: 1.43
+
+[GRADIENT DEBUG Rnd 87]
+Avg Malicious Delta Norm: 0.878609
+Avg Honest Delta Norm:    0.055649
+Power Ratio (Mal/Hon):    15.7885
+[DBG rnd=87] logits mean=0.0802, std=1.7243, maxlogit mean=2.5197
+[DBG rnd=87] probs max mean=0.3973, pred entropy mean=1.6140
+[DBG rnd=87] preds bincount=[4, 5, 0, 4, 2, 8, 11, 14, 4, 12]
+Clean ACC:              0.4864
+Attack Success Ratio:   0.1558
+Robustness ACC:           0.4446
+local epoch 0 	 client: 0 	 mal: 1 	 loss: 0.01618571 	 time: 16.31
+local epoch 0 	 client: 1 	 mal: 1 	 loss: 0.06103460 	 time: 16.32
+local epoch 0 	 client: 2 	 mal: 0 	 loss: 1.56922114 	 time: 1.43
+local epoch 0 	 client: 3 	 mal: 0 	 loss: 1.63147068 	 time: 1.42
+local epoch 0 	 client: 4 	 mal: 0 	 loss: 1.75460494 	 time: 1.44
+local epoch 0 	 client: 5 	 mal: 0 	 loss: 1.39268315 	 time: 1.43
+local epoch 0 	 client: 6 	 mal: 0 	 loss: 1.35761416 	 time: 1.49
+local epoch 0 	 client: 7 	 mal: 0 	 loss: 1.76183069 	 time: 1.44
+local epoch 0 	 client: 8 	 mal: 0 	 loss: 1.56055498 	 time: 1.43
+local epoch 0 	 client: 9 	 mal: 0 	 loss: 1.44799089 	 time: 1.43
+local epoch 0 	 client: 10 	 mal: 0 	 loss: 1.71262383 	 time: 1.43
+local epoch 0 	 client: 11 	 mal: 0 	 loss: 1.27679110 	 time: 1.43
+local epoch 0 	 client: 12 	 mal: 0 	 loss: 1.71211946 	 time: 1.52
+local epoch 0 	 client: 13 	 mal: 0 	 loss: 1.31531441 	 time: 1.44
+local epoch 0 	 client: 14 	 mal: 0 	 loss: 1.51674378 	 time: 1.43
+local epoch 0 	 client: 15 	 mal: 0 	 loss: 2.07163000 	 time: 1.43
+local epoch 0 	 client: 16 	 mal: 0 	 loss: 1.46918058 	 time: 1.44
+local epoch 0 	 client: 17 	 mal: 0 	 loss: 1.63230836 	 time: 1.44
+local epoch 0 	 client: 18 	 mal: 0 	 loss: 1.56327224 	 time: 1.52
+local epoch 0 	 client: 19 	 mal: 0 	 loss: 1.73337555 	 time: 1.46
+
+[GRADIENT DEBUG Rnd 88]
+Avg Malicious Delta Norm: 1.059316
+Avg Honest Delta Norm:    0.054747
+Power Ratio (Mal/Hon):    19.3492
+[DBG rnd=88] logits mean=0.0851, std=1.7387, maxlogit mean=2.5793
+[DBG rnd=88] probs max mean=0.4062, pred entropy mean=1.5952
+[DBG rnd=88] preds bincount=[5, 6, 1, 6, 1, 10, 11, 10, 3, 11]
+Clean ACC:              0.4852
+Attack Success Ratio:   0.1077
+Robustness ACC:           0.4536
+local epoch 0 	 client: 0 	 mal: 1 	 loss: 0.18177691 	 time: 16.37
+local epoch 0 	 client: 1 	 mal: 1 	 loss: 0.02668028 	 time: 16.52
+local epoch 0 	 client: 2 	 mal: 0 	 loss: 1.69062316 	 time: 1.42
+local epoch 0 	 client: 3 	 mal: 0 	 loss: 1.32865357 	 time: 1.43
+local epoch 0 	 client: 4 	 mal: 0 	 loss: 1.36252582 	 time: 1.43
+local epoch 0 	 client: 5 	 mal: 0 	 loss: 1.46709561 	 time: 1.43
+local epoch 0 	 client: 6 	 mal: 0 	 loss: 1.59994018 	 time: 1.48
+local epoch 0 	 client: 7 	 mal: 0 	 loss: 1.42964542 	 time: 1.43
+local epoch 0 	 client: 8 	 mal: 0 	 loss: 1.31634331 	 time: 1.43
+local epoch 0 	 client: 9 	 mal: 0 	 loss: 1.58920217 	 time: 1.46
+local epoch 0 	 client: 10 	 mal: 0 	 loss: 1.59200549 	 time: 1.46
+local epoch 0 	 client: 11 	 mal: 0 	 loss: 1.55831885 	 time: 1.44
+local epoch 0 	 client: 12 	 mal: 0 	 loss: 1.40050423 	 time: 1.44
+local epoch 0 	 client: 13 	 mal: 0 	 loss: 1.53803992 	 time: 1.44
+local epoch 0 	 client: 14 	 mal: 0 	 loss: 1.27961576 	 time: 1.43
+local epoch 0 	 client: 15 	 mal: 0 	 loss: 1.51853955 	 time: 1.45
+local epoch 0 	 client: 16 	 mal: 0 	 loss: 1.54891062 	 time: 1.43
+local epoch 0 	 client: 17 	 mal: 0 	 loss: 1.77713645 	 time: 1.44
+local epoch 0 	 client: 18 	 mal: 0 	 loss: 1.50793386 	 time: 1.43
+local epoch 0 	 client: 19 	 mal: 0 	 loss: 1.46646154 	 time: 1.43
+
+[GRADIENT DEBUG Rnd 89]
+Avg Malicious Delta Norm: 0.718830
+Avg Honest Delta Norm:    0.054991
+Power Ratio (Mal/Hon):    13.0718
+[DBG rnd=89] logits mean=0.0804, std=1.7452, maxlogit mean=2.5728
+[DBG rnd=89] probs max mean=0.4068, pred entropy mean=1.5995
+[DBG rnd=89] preds bincount=[4, 6, 0, 5, 0, 11, 11, 12, 4, 11]
+Clean ACC:              0.4835
+Attack Success Ratio:   0.1480
+Robustness ACC:           0.4444
+local epoch 0 	 client: 0 	 mal: 1 	 loss: 0.03504734 	 time: 16.36
+local epoch 0 	 client: 1 	 mal: 1 	 loss: 0.10315304 	 time: 16.33
+local epoch 0 	 client: 2 	 mal: 0 	 loss: 1.53709972 	 time: 1.43
+local epoch 0 	 client: 3 	 mal: 0 	 loss: 1.46750474 	 time: 1.43
+local epoch 0 	 client: 4 	 mal: 0 	 loss: 1.43276620 	 time: 1.48
+local epoch 0 	 client: 5 	 mal: 0 	 loss: 1.48152924 	 time: 1.43
+local epoch 0 	 client: 6 	 mal: 0 	 loss: 1.77099240 	 time: 1.42
+local epoch 0 	 client: 7 	 mal: 0 	 loss: 1.37873721 	 time: 1.43
+local epoch 0 	 client: 8 	 mal: 0 	 loss: 1.58781636 	 time: 1.44
+local epoch 0 	 client: 9 	 mal: 0 	 loss: 1.38472342 	 time: 1.44
+local epoch 0 	 client: 10 	 mal: 0 	 loss: 1.47755003 	 time: 1.43
+local epoch 0 	 client: 11 	 mal: 0 	 loss: 1.26593065 	 time: 1.43
+local epoch 0 	 client: 12 	 mal: 0 	 loss: 1.37560940 	 time: 1.44
+local epoch 0 	 client: 13 	 mal: 0 	 loss: 1.61253524 	 time: 1.43
+local epoch 0 	 client: 14 	 mal: 0 	 loss: 1.58351815 	 time: 1.44
+local epoch 0 	 client: 15 	 mal: 0 	 loss: 1.39181733 	 time: 1.44
+local epoch 0 	 client: 16 	 mal: 0 	 loss: 1.66357887 	 time: 1.43
+local epoch 0 	 client: 17 	 mal: 0 	 loss: 1.72346115 	 time: 1.49
+local epoch 0 	 client: 18 	 mal: 0 	 loss: 1.24023843 	 time: 1.53
+local epoch 0 	 client: 19 	 mal: 0 	 loss: 1.76538205 	 time: 1.45
+
+[GRADIENT DEBUG Rnd 90]
+Avg Malicious Delta Norm: 0.946401
+Avg Honest Delta Norm:    0.052479
+Power Ratio (Mal/Hon):    18.0338
+[DBG rnd=90] logits mean=0.0800, std=1.7843, maxlogit mean=2.5802
+[DBG rnd=90] probs max mean=0.3991, pred entropy mean=1.5973
+[DBG rnd=90] preds bincount=[6, 5, 0, 8, 4, 8, 10, 8, 5, 10]
+Clean ACC:              0.4965
+Attack Success Ratio:   0.1049
+Robustness ACC:           0.4664
+local epoch 0 	 client: 0 	 mal: 1 	 loss: 0.03300730 	 time: 16.46
+local epoch 0 	 client: 1 	 mal: 1 	 loss: 0.01830848 	 time: 16.32
+local epoch 0 	 client: 2 	 mal: 0 	 loss: 1.38536251 	 time: 1.43
+local epoch 0 	 client: 3 	 mal: 0 	 loss: 1.32815838 	 time: 1.44
+local epoch 0 	 client: 4 	 mal: 0 	 loss: 1.57979953 	 time: 1.43
+local epoch 0 	 client: 5 	 mal: 0 	 loss: 1.62283313 	 time: 1.44
+local epoch 0 	 client: 6 	 mal: 0 	 loss: 1.32732081 	 time: 1.43
+local epoch 0 	 client: 7 	 mal: 0 	 loss: 1.45769286 	 time: 1.44
+local epoch 0 	 client: 8 	 mal: 0 	 loss: 1.45732296 	 time: 1.50
+local epoch 0 	 client: 9 	 mal: 0 	 loss: 1.57727814 	 time: 1.45
+local epoch 0 	 client: 10 	 mal: 0 	 loss: 1.38242841 	 time: 1.43
+local epoch 0 	 client: 11 	 mal: 0 	 loss: 1.58316648 	 time: 1.43
+local epoch 0 	 client: 12 	 mal: 0 	 loss: 1.36202168 	 time: 1.43
+local epoch 0 	 client: 13 	 mal: 0 	 loss: 1.37005019 	 time: 1.43
+local epoch 0 	 client: 14 	 mal: 0 	 loss: 1.62617397 	 time: 1.46
+local epoch 0 	 client: 15 	 mal: 0 	 loss: 1.51522207 	 time: 1.43
+local epoch 0 	 client: 16 	 mal: 0 	 loss: 1.44426811 	 time: 1.45
+local epoch 0 	 client: 17 	 mal: 0 	 loss: 1.65154111 	 time: 1.43
+local epoch 0 	 client: 18 	 mal: 0 	 loss: 1.94430947 	 time: 1.43
+local epoch 0 	 client: 19 	 mal: 0 	 loss: 1.47543669 	 time: 1.43
+
+[GRADIENT DEBUG Rnd 91]
+Avg Malicious Delta Norm: 0.985481
+Avg Honest Delta Norm:    0.052648
+Power Ratio (Mal/Hon):    18.7182
+[DBG rnd=91] logits mean=0.0769, std=1.7575, maxlogit mean=2.5845
+[DBG rnd=91] probs max mean=0.4083, pred entropy mean=1.5881
+[DBG rnd=91] preds bincount=[5, 3, 1, 5, 1, 11, 12, 9, 5, 12]
+Clean ACC:              0.4954
+Attack Success Ratio:   0.0952
+Robustness ACC:           0.4667
+local epoch 0 	 client: 0 	 mal: 1 	 loss: 0.07013351 	 time: 16.36
+local epoch 0 	 client: 1 	 mal: 1 	 loss: 0.03186204 	 time: 16.53
+local epoch 0 	 client: 2 	 mal: 0 	 loss: 1.55805135 	 time: 1.42
+local epoch 0 	 client: 3 	 mal: 0 	 loss: 1.52476943 	 time: 1.44
+local epoch 0 	 client: 4 	 mal: 0 	 loss: 1.64631701 	 time: 1.44
+local epoch 0 	 client: 5 	 mal: 0 	 loss: 1.56061995 	 time: 1.45
+local epoch 0 	 client: 6 	 mal: 0 	 loss: 1.22839248 	 time: 1.43
+local epoch 0 	 client: 7 	 mal: 0 	 loss: 1.32184720 	 time: 1.42
+local epoch 0 	 client: 8 	 mal: 0 	 loss: 1.43575573 	 time: 1.45
+local epoch 0 	 client: 9 	 mal: 0 	 loss: 1.40719271 	 time: 1.44
+local epoch 0 	 client: 10 	 mal: 0 	 loss: 1.63662088 	 time: 1.43
+local epoch 0 	 client: 11 	 mal: 0 	 loss: 1.57322967 	 time: 1.49
+local epoch 0 	 client: 12 	 mal: 0 	 loss: 1.34614992 	 time: 1.44
+local epoch 0 	 client: 13 	 mal: 0 	 loss: 1.55581284 	 time: 1.43
+local epoch 0 	 client: 14 	 mal: 0 	 loss: 1.51147509 	 time: 1.44
+local epoch 0 	 client: 15 	 mal: 0 	 loss: 1.68562484 	 time: 1.44
+local epoch 0 	 client: 16 	 mal: 0 	 loss: 1.68797672 	 time: 1.44
+local epoch 0 	 client: 17 	 mal: 0 	 loss: 1.49730563 	 time: 1.50
+local epoch 0 	 client: 18 	 mal: 0 	 loss: 1.13071370 	 time: 1.45
+local epoch 0 	 client: 19 	 mal: 0 	 loss: 1.30834782 	 time: 1.45
+
+[GRADIENT DEBUG Rnd 92]
+Avg Malicious Delta Norm: 0.891784
+Avg Honest Delta Norm:    0.051939
+Power Ratio (Mal/Hon):    17.1697
+[DBG rnd=92] logits mean=0.0824, std=1.8034, maxlogit mean=2.6446
+[DBG rnd=92] probs max mean=0.4101, pred entropy mean=1.5765
+[DBG rnd=92] preds bincount=[4, 6, 0, 8, 2, 8, 11, 10, 4, 11]
+Clean ACC:              0.4968
+Attack Success Ratio:   0.0954
+Robustness ACC:           0.4701
+local epoch 0 	 client: 0 	 mal: 1 	 loss: 0.03546217 	 time: 16.35
+local epoch 0 	 client: 1 	 mal: 1 	 loss: 0.11552923 	 time: 16.32
+local epoch 0 	 client: 2 	 mal: 0 	 loss: 1.39930356 	 time: 1.43
+local epoch 0 	 client: 3 	 mal: 0 	 loss: 1.64318883 	 time: 1.43
+local epoch 0 	 client: 4 	 mal: 0 	 loss: 1.36811280 	 time: 1.43
+local epoch 0 	 client: 5 	 mal: 0 	 loss: 1.67270732 	 time: 1.44
+local epoch 0 	 client: 6 	 mal: 0 	 loss: 1.53720403 	 time: 1.42
+local epoch 0 	 client: 7 	 mal: 0 	 loss: 1.47407556 	 time: 1.46
+local epoch 0 	 client: 8 	 mal: 0 	 loss: 1.55658150 	 time: 1.45
+local epoch 0 	 client: 9 	 mal: 0 	 loss: 1.81592202 	 time: 1.43
+local epoch 0 	 client: 10 	 mal: 0 	 loss: 1.53158021 	 time: 1.43
+local epoch 0 	 client: 11 	 mal: 0 	 loss: 1.67586279 	 time: 1.42
+local epoch 0 	 client: 12 	 mal: 0 	 loss: 1.58646464 	 time: 1.43
+local epoch 0 	 client: 13 	 mal: 0 	 loss: 1.38759100 	 time: 1.45
+local epoch 0 	 client: 14 	 mal: 0 	 loss: 1.53371000 	 time: 1.45
+local epoch 0 	 client: 15 	 mal: 0 	 loss: 1.63837540 	 time: 1.45
+local epoch 0 	 client: 16 	 mal: 0 	 loss: 1.43091452 	 time: 1.43
+local epoch 0 	 client: 17 	 mal: 0 	 loss: 1.65978849 	 time: 1.43
+local epoch 0 	 client: 18 	 mal: 0 	 loss: 1.42909122 	 time: 1.51
+local epoch 0 	 client: 19 	 mal: 0 	 loss: 1.42235959 	 time: 1.52
+
+[GRADIENT DEBUG Rnd 93]
+Avg Malicious Delta Norm: 0.861272
+Avg Honest Delta Norm:    0.052936
+Power Ratio (Mal/Hon):    16.2702
+[DBG rnd=93] logits mean=0.0766, std=1.7624, maxlogit mean=2.5746
+[DBG rnd=93] probs max mean=0.4033, pred entropy mean=1.5952
+[DBG rnd=93] preds bincount=[5, 5, 2, 7, 1, 9, 11, 8, 5, 11]
+Clean ACC:              0.5003
+Attack Success Ratio:   0.0820
+Robustness ACC:           0.4762
+local epoch 0 	 client: 0 	 mal: 1 	 loss: 0.87883478 	 time: 16.32
+local epoch 0 	 client: 1 	 mal: 1 	 loss: 0.03847089 	 time: 16.47
+local epoch 0 	 client: 2 	 mal: 0 	 loss: 1.47554040 	 time: 1.43
+local epoch 0 	 client: 3 	 mal: 0 	 loss: 1.62953532 	 time: 1.42
+local epoch 0 	 client: 4 	 mal: 0 	 loss: 1.63383186 	 time: 1.43
+local epoch 0 	 client: 5 	 mal: 0 	 loss: 1.31870413 	 time: 1.43
+local epoch 0 	 client: 6 	 mal: 0 	 loss: 1.50947332 	 time: 1.43
+local epoch 0 	 client: 7 	 mal: 0 	 loss: 1.67338777 	 time: 1.47
+local epoch 0 	 client: 8 	 mal: 0 	 loss: 1.46010613 	 time: 1.44
+local epoch 0 	 client: 9 	 mal: 0 	 loss: 1.43536520 	 time: 1.44
+local epoch 0 	 client: 10 	 mal: 0 	 loss: 1.52966344 	 time: 1.44
+local epoch 0 	 client: 11 	 mal: 0 	 loss: 1.43976045 	 time: 1.43
+local epoch 0 	 client: 12 	 mal: 0 	 loss: 1.48672724 	 time: 1.43
+local epoch 0 	 client: 13 	 mal: 0 	 loss: 1.43545485 	 time: 1.46
+local epoch 0 	 client: 14 	 mal: 0 	 loss: 1.18952274 	 time: 1.44
+local epoch 0 	 client: 15 	 mal: 0 	 loss: 1.68329310 	 time: 1.45
+local epoch 0 	 client: 16 	 mal: 0 	 loss: 1.40040743 	 time: 1.50
+local epoch 0 	 client: 17 	 mal: 0 	 loss: 1.38787770 	 time: 1.44
+local epoch 0 	 client: 18 	 mal: 0 	 loss: 1.47321641 	 time: 1.43
+local epoch 0 	 client: 19 	 mal: 0 	 loss: 1.42131579 	 time: 1.44
+
+[GRADIENT DEBUG Rnd 94]
+Avg Malicious Delta Norm: 0.880803
+Avg Honest Delta Norm:    0.051608
+Power Ratio (Mal/Hon):    17.0671
+[DBG rnd=94] logits mean=0.0785, std=1.7673, maxlogit mean=2.5961
+[DBG rnd=94] probs max mean=0.4084, pred entropy mean=1.5858
+[DBG rnd=94] preds bincount=[5, 5, 1, 6, 2, 9, 12, 9, 4, 11]
+Clean ACC:              0.4976
+Attack Success Ratio:   0.0970
+Robustness ACC:           0.4704
+local epoch 0 	 client: 0 	 mal: 1 	 loss: 0.03400604 	 time: 16.37
+local epoch 0 	 client: 1 	 mal: 1 	 loss: 0.01888205 	 time: 16.33
+local epoch 0 	 client: 2 	 mal: 0 	 loss: 1.59063065 	 time: 1.44
+local epoch 0 	 client: 3 	 mal: 0 	 loss: 1.36575878 	 time: 1.42
+local epoch 0 	 client: 4 	 mal: 0 	 loss: 1.34988785 	 time: 1.43
+local epoch 0 	 client: 5 	 mal: 0 	 loss: 1.48483121 	 time: 1.43
+local epoch 0 	 client: 6 	 mal: 0 	 loss: 1.55245733 	 time: 1.45
+local epoch 0 	 client: 7 	 mal: 0 	 loss: 1.62833130 	 time: 1.43
+local epoch 0 	 client: 8 	 mal: 0 	 loss: 1.56542933 	 time: 1.43
+local epoch 0 	 client: 9 	 mal: 0 	 loss: 1.50412083 	 time: 1.49
+local epoch 0 	 client: 10 	 mal: 0 	 loss: 1.34808755 	 time: 1.44
+local epoch 0 	 client: 11 	 mal: 0 	 loss: 1.45218849 	 time: 1.43
+local epoch 0 	 client: 12 	 mal: 0 	 loss: 1.31461203 	 time: 1.47
+local epoch 0 	 client: 13 	 mal: 0 	 loss: 1.48496318 	 time: 1.43
+local epoch 0 	 client: 14 	 mal: 0 	 loss: 1.52015018 	 time: 1.46
+local epoch 0 	 client: 15 	 mal: 0 	 loss: 1.52112830 	 time: 1.44
+local epoch 0 	 client: 16 	 mal: 0 	 loss: 1.68228626 	 time: 1.43
+local epoch 0 	 client: 17 	 mal: 0 	 loss: 1.58441615 	 time: 1.44
+local epoch 0 	 client: 18 	 mal: 0 	 loss: 1.20533323 	 time: 1.44
+local epoch 0 	 client: 19 	 mal: 0 	 loss: 1.38565445 	 time: 1.44
+
+[GRADIENT DEBUG Rnd 95]
+Avg Malicious Delta Norm: 0.955839
+Avg Honest Delta Norm:    0.051226
+Power Ratio (Mal/Hon):    18.6591
+[DBG rnd=95] logits mean=0.0823, std=1.8059, maxlogit mean=2.6429
+[DBG rnd=95] probs max mean=0.4091, pred entropy mean=1.5767
+[DBG rnd=95] preds bincount=[5, 6, 2, 7, 2, 7, 14, 6, 4, 11]
+Clean ACC:              0.5012
+Attack Success Ratio:   0.0680
+Robustness ACC:           0.4797
+local epoch 0 	 client: 0 	 mal: 1 	 loss: 0.03716543 	 time: 16.49
+local epoch 0 	 client: 1 	 mal: 1 	 loss: 0.12558830 	 time: 16.34
+local epoch 0 	 client: 2 	 mal: 0 	 loss: 1.46606565 	 time: 1.43
+local epoch 0 	 client: 3 	 mal: 0 	 loss: 1.26499033 	 time: 1.43
+local epoch 0 	 client: 4 	 mal: 0 	 loss: 1.44880569 	 time: 1.43
+local epoch 0 	 client: 5 	 mal: 0 	 loss: 1.64806473 	 time: 1.43
+local epoch 0 	 client: 6 	 mal: 0 	 loss: 1.44203842 	 time: 1.43
+local epoch 0 	 client: 7 	 mal: 0 	 loss: 1.50059462 	 time: 1.43
+local epoch 0 	 client: 8 	 mal: 0 	 loss: 1.52668297 	 time: 1.49
+local epoch 0 	 client: 9 	 mal: 0 	 loss: 1.31775796 	 time: 1.46
+local epoch 0 	 client: 10 	 mal: 0 	 loss: 1.67040324 	 time: 1.44
+local epoch 0 	 client: 11 	 mal: 0 	 loss: 1.38978982 	 time: 1.43
+local epoch 0 	 client: 12 	 mal: 0 	 loss: 1.40029693 	 time: 1.43
+local epoch 0 	 client: 13 	 mal: 0 	 loss: 1.50840652 	 time: 1.43
+local epoch 0 	 client: 14 	 mal: 0 	 loss: 1.42539001 	 time: 1.44
+local epoch 0 	 client: 15 	 mal: 0 	 loss: 1.56213999 	 time: 1.45
+local epoch 0 	 client: 16 	 mal: 0 	 loss: 1.54119992 	 time: 1.46
+local epoch 0 	 client: 17 	 mal: 0 	 loss: 1.36241436 	 time: 1.45
+local epoch 0 	 client: 18 	 mal: 0 	 loss: 1.42971480 	 time: 1.44
+local epoch 0 	 client: 19 	 mal: 0 	 loss: 1.50794721 	 time: 1.43
+
+[GRADIENT DEBUG Rnd 96]
+Avg Malicious Delta Norm: 0.796262
+Avg Honest Delta Norm:    0.050071
+Power Ratio (Mal/Hon):    15.9028
+[DBG rnd=96] logits mean=0.0862, std=1.9142, maxlogit mean=2.8725
+[DBG rnd=96] probs max mean=0.4450, pred entropy mean=1.5029
+[DBG rnd=96] preds bincount=[5, 5, 0, 4, 0, 7, 11, 18, 3, 11]
+Clean ACC:              0.4658
+Attack Success Ratio:   0.2380
+Robustness ACC:           0.4080
+local epoch 0 	 client: 0 	 mal: 1 	 loss: 0.02529333 	 time: 16.30
+local epoch 0 	 client: 1 	 mal: 1 	 loss: 0.07376310 	 time: 16.35
+local epoch 0 	 client: 2 	 mal: 0 	 loss: 1.57430315 	 time: 1.43
+local epoch 0 	 client: 3 	 mal: 0 	 loss: 1.43645644 	 time: 1.43
+local epoch 0 	 client: 4 	 mal: 0 	 loss: 1.46612680 	 time: 1.43
+local epoch 0 	 client: 5 	 mal: 0 	 loss: 1.36708498 	 time: 1.43
+local epoch 0 	 client: 6 	 mal: 0 	 loss: 1.51293111 	 time: 1.43
+local epoch 0 	 client: 7 	 mal: 0 	 loss: 1.44266653 	 time: 1.44
+local epoch 0 	 client: 8 	 mal: 0 	 loss: 1.27128375 	 time: 1.43
+local epoch 0 	 client: 9 	 mal: 0 	 loss: 1.51040232 	 time: 1.44
+local epoch 0 	 client: 10 	 mal: 0 	 loss: 1.34282112 	 time: 1.43
+local epoch 0 	 client: 11 	 mal: 0 	 loss: 1.58267927 	 time: 1.50
+local epoch 0 	 client: 12 	 mal: 0 	 loss: 1.91428792 	 time: 1.45
+local epoch 0 	 client: 13 	 mal: 0 	 loss: 1.83086944 	 time: 1.43
+local epoch 0 	 client: 14 	 mal: 0 	 loss: 1.63811243 	 time: 1.43
+local epoch 0 	 client: 15 	 mal: 0 	 loss: 1.40321290 	 time: 1.43
+local epoch 0 	 client: 16 	 mal: 0 	 loss: 1.42510200 	 time: 1.43
+local epoch 0 	 client: 17 	 mal: 0 	 loss: 1.34238970 	 time: 1.47
+local epoch 0 	 client: 18 	 mal: 0 	 loss: 1.67389679 	 time: 1.48
+local epoch 0 	 client: 19 	 mal: 0 	 loss: 1.53089571 	 time: 1.46
+
+[GRADIENT DEBUG Rnd 97]
+Avg Malicious Delta Norm: 0.912044
+Avg Honest Delta Norm:    0.051022
+Power Ratio (Mal/Hon):    17.8756
+[DBG rnd=97] logits mean=0.0853, std=1.8217, maxlogit mean=2.6932
+[DBG rnd=97] probs max mean=0.4179, pred entropy mean=1.5621
+[DBG rnd=97] preds bincount=[4, 6, 1, 6, 1, 10, 12, 9, 4, 11]
+Clean ACC:              0.5033
+Attack Success Ratio:   0.0912
+wandb: - 0.006 MB of 0.006 MB uploadedwandb: \ 0.006 MB of 0.006 MB uploadedwandb: | 0.006 MB of 0.006 MB uploadedwandb: / 0.006 MB of 0.006 MB uploadedwandb: - 0.006 MB of 0.179 MB uploadedwandb: \ 0.006 MB of 0.179 MB uploadedwandb: | 0.179 MB of 0.179 MB uploadedwandb:                                                                                
+wandb: 
+wandb: Run history:
+wandb:            asr █▇▄▄▆▃▄▃▄▂▂▃▂▁▃▄▃▃▃▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂
+wandb:      clean_acc ▁▂▃▄▃▄▄▅▄▅▅▅▆▄▅▅▅▆▆▆▆▆▇▇▇▇▇▇▇▇▇▇▇██▇████
+wandb: robustness acc ▁▂▄▄▃▅▄▅▄▅▆▆▆▆▆▅▅▆▆▇▇▇▇▇▇▇▇▇▇▇████▇▇████
+wandb:          round ▁▁▁▁▂▂▂▂▂▃▃▃▃▃▃▄▄▄▄▄▅▅▅▅▅▅▆▆▆▆▆▇▇▇▇▇▇███
+wandb: 
+wandb: Run summary:
+wandb:            asr 0.108
+wandb:      clean_acc 0.5115
+wandb: robustness acc 0.47678
+wandb:          round 100
+wandb: 
+wandb: 🚀 View run cifar10_alignment_avg_avg_baseline at: https://wandb.ai/aleksic-milicica-tu-wien/split-fed-backdoor-3/runs/8tqsuemj
+wandb: ️⚡ View job at https://wandb.ai/aleksic-milicica-tu-wien/split-fed-backdoor-3/jobs/QXJ0aWZhY3RDb2xsZWN0aW9uOjk0NTY0MTM5Mg==/version_details/v1
+wandb: Synced 5 W&B file(s), 0 media file(s), 0 artifact file(s) and 0 other file(s)
+wandb: Find logs at: ./wandb/run-20260319_202418-8tqsuemj/logs
+Robustness ACC:           0.4756
+local epoch 0 	 client: 0 	 mal: 1 	 loss: 0.01236674 	 time: 16.56
+local epoch 0 	 client: 1 	 mal: 1 	 loss: 0.03914374 	 time: 16.34
+local epoch 0 	 client: 2 	 mal: 0 	 loss: 1.41236949 	 time: 1.43
+local epoch 0 	 client: 3 	 mal: 0 	 loss: 1.68201995 	 time: 1.43
+local epoch 0 	 client: 4 	 mal: 0 	 loss: 1.43548656 	 time: 1.43
+local epoch 0 	 client: 5 	 mal: 0 	 loss: 1.45594263 	 time: 1.44
+local epoch 0 	 client: 6 	 mal: 0 	 loss: 1.42253911 	 time: 1.53
+local epoch 0 	 client: 7 	 mal: 0 	 loss: 1.52902627 	 time: 1.51
+local epoch 0 	 client: 8 	 mal: 0 	 loss: 1.31885314 	 time: 1.44
+local epoch 0 	 client: 9 	 mal: 0 	 loss: 1.35107791 	 time: 1.42
+local epoch 0 	 client: 10 	 mal: 0 	 loss: 1.51323152 	 time: 1.43
+local epoch 0 	 client: 11 	 mal: 0 	 loss: 1.58254552 	 time: 1.43
+local epoch 0 	 client: 12 	 mal: 0 	 loss: 1.45299900 	 time: 1.42
+local epoch 0 	 client: 13 	 mal: 0 	 loss: 1.43064785 	 time: 1.48
+local epoch 0 	 client: 14 	 mal: 0 	 loss: 1.35653698 	 time: 1.42
+local epoch 0 	 client: 15 	 mal: 0 	 loss: 1.55391586 	 time: 1.43
+local epoch 0 	 client: 16 	 mal: 0 	 loss: 1.45725906 	 time: 1.46
+local epoch 0 	 client: 17 	 mal: 0 	 loss: 1.40427053 	 time: 1.45
+local epoch 0 	 client: 18 	 mal: 0 	 loss: 1.47448814 	 time: 1.43
+local epoch 0 	 client: 19 	 mal: 0 	 loss: 1.21439850 	 time: 1.46
+
+[GRADIENT DEBUG Rnd 98]
+Avg Malicious Delta Norm: 0.985825
+Avg Honest Delta Norm:    0.049812
+Power Ratio (Mal/Hon):    19.7908
+[DBG rnd=98] logits mean=0.0782, std=1.8066, maxlogit mean=2.6557
+[DBG rnd=98] probs max mean=0.4133, pred entropy mean=1.5689
+[DBG rnd=98] preds bincount=[5, 4, 4, 9, 1, 7, 11, 7, 5, 11]
+Clean ACC:              0.5050
+Attack Success Ratio:   0.0762
+Robustness ACC:           0.4822
+local epoch 0 	 client: 0 	 mal: 1 	 loss: 0.89422834 	 time: 16.35
+local epoch 0 	 client: 1 	 mal: 1 	 loss: 0.04321717 	 time: 16.45
+local epoch 0 	 client: 2 	 mal: 0 	 loss: 1.61787975 	 time: 1.43
+local epoch 0 	 client: 3 	 mal: 0 	 loss: 1.49781501 	 time: 1.44
+local epoch 0 	 client: 4 	 mal: 0 	 loss: 1.72554767 	 time: 1.43
+local epoch 0 	 client: 5 	 mal: 0 	 loss: 1.45987916 	 time: 1.45
+local epoch 0 	 client: 6 	 mal: 0 	 loss: 1.51665246 	 time: 1.43
+local epoch 0 	 client: 7 	 mal: 0 	 loss: 1.59486163 	 time: 1.43
+local epoch 0 	 client: 8 	 mal: 0 	 loss: 1.34281445 	 time: 1.51
+local epoch 0 	 client: 9 	 mal: 0 	 loss: 1.48463047 	 time: 1.44
+local epoch 0 	 client: 10 	 mal: 0 	 loss: 1.37938857 	 time: 1.43
+local epoch 0 	 client: 11 	 mal: 0 	 loss: 1.36713684 	 time: 1.43
+local epoch 0 	 client: 12 	 mal: 0 	 loss: 1.39779592 	 time: 1.43
+local epoch 0 	 client: 13 	 mal: 0 	 loss: 1.31873548 	 time: 1.44
+local epoch 0 	 client: 14 	 mal: 0 	 loss: 1.62371635 	 time: 1.52
+local epoch 0 	 client: 15 	 mal: 0 	 loss: 1.52349567 	 time: 1.48
+local epoch 0 	 client: 16 	 mal: 0 	 loss: 1.57269275 	 time: 1.46
+local epoch 0 	 client: 17 	 mal: 0 	 loss: 1.38078940 	 time: 1.45
+local epoch 0 	 client: 18 	 mal: 0 	 loss: 1.55375123 	 time: 1.44
+local epoch 0 	 client: 19 	 mal: 0 	 loss: 1.29438436 	 time: 1.50
+
+[GRADIENT DEBUG Rnd 99]
+Avg Malicious Delta Norm: 1.011609
+Avg Honest Delta Norm:    0.049867
+Power Ratio (Mal/Hon):    20.2863
+[DBG rnd=99] logits mean=0.0779, std=1.8319, maxlogit mean=2.7211
+[DBG rnd=99] probs max mean=0.4258, pred entropy mean=1.5483
+[DBG rnd=99] preds bincount=[5, 4, 0, 6, 2, 9, 12, 10, 5, 11]
+Clean ACC:              0.5072
+Attack Success Ratio:   0.1030
+Robustness ACC:           0.4753
+local epoch 0 	 client: 0 	 mal: 1 	 loss: 0.06329832 	 time: 16.33
+local epoch 0 	 client: 1 	 mal: 1 	 loss: 0.05299332 	 time: 16.35
+local epoch 0 	 client: 2 	 mal: 0 	 loss: 1.42752361 	 time: 1.42
+local epoch 0 	 client: 3 	 mal: 0 	 loss: 1.44833815 	 time: 1.43
+local epoch 0 	 client: 4 	 mal: 0 	 loss: 1.27485216 	 time: 1.45
+local epoch 0 	 client: 5 	 mal: 0 	 loss: 1.43737900 	 time: 1.44
+local epoch 0 	 client: 6 	 mal: 0 	 loss: 1.45957136 	 time: 1.43
+local epoch 0 	 client: 7 	 mal: 0 	 loss: 1.40055799 	 time: 1.43
+local epoch 0 	 client: 8 	 mal: 0 	 loss: 1.51587284 	 time: 1.43
+local epoch 0 	 client: 9 	 mal: 0 	 loss: 1.64641905 	 time: 1.43
+local epoch 0 	 client: 10 	 mal: 0 	 loss: 1.41162336 	 time: 1.48
+local epoch 0 	 client: 11 	 mal: 0 	 loss: 1.58638966 	 time: 1.45
+local epoch 0 	 client: 12 	 mal: 0 	 loss: 1.39758396 	 time: 1.43
+local epoch 0 	 client: 13 	 mal: 0 	 loss: 1.87836635 	 time: 1.46
+local epoch 0 	 client: 14 	 mal: 0 	 loss: 1.36985505 	 time: 1.44
+local epoch 0 	 client: 15 	 mal: 0 	 loss: 1.45228660 	 time: 1.44
+local epoch 0 	 client: 16 	 mal: 0 	 loss: 1.25669444 	 time: 1.45
+local epoch 0 	 client: 17 	 mal: 0 	 loss: 1.35849202 	 time: 1.45
+local epoch 0 	 client: 18 	 mal: 0 	 loss: 1.64955783 	 time: 1.43
+local epoch 0 	 client: 19 	 mal: 0 	 loss: 1.43881297 	 time: 1.44
+
+[GRADIENT DEBUG Rnd 100]
+Avg Malicious Delta Norm: 0.808935
+Avg Honest Delta Norm:    0.049664
+Power Ratio (Mal/Hon):    16.2883
+[DBG rnd=100] logits mean=0.0784, std=1.7915, maxlogit mean=2.6562
+[DBG rnd=100] probs max mean=0.4175, pred entropy mean=1.5660
+[DBG rnd=100] preds bincount=[5, 4, 0, 8, 3, 8, 10, 10, 5, 11]
+Clean ACC:              0.5115
+Attack Success Ratio:   0.1080
+Robustness ACC:           0.4768

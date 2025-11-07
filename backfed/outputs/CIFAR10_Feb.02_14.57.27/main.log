@@ -1,0 +1,101 @@
+[INFO] Date: 2026-02-02 | PyTorch 2.6.0+cu124
+[INFO] Total CPUs: 32, Total GPUs: 3 on troubadix.ifs.tuwien.ac.at.
+[INFO] Client CPUS: 1, Client GPUs: 0.5
+[INFO] Number of concurrent clients: 6
+[INFO] Set random seed to 123456
+[INFO] Malicious clients: []
+[INFO] Attack type: all2one, Target class: 2
+[ERROR] Error: The actor died because of an error raised in its creation task, [36mray::MainServer.__init__()[39m (pid=3327596, ip=128.131.169.146, actor_id=dcce4bac24a3044242dfcde501000000, repr=<backfed.servers.main_server.MainServer object at 0x7f2375bacfa0>)
+  File "/newstorage4/maleksic/fl-backdoors/backfed/backfed/servers/fedavg_server.py", line 47, in __init__
+    super(UnweightedFedAvgServer, self).__init__(server_config, server_type, **kwargs)
+  File "/newstorage4/maleksic/fl-backdoors/backfed/backfed/servers/base_server.py", line 72, in __init__
+    self._init_model()
+  File "/newstorage4/maleksic/fl-backdoors/backfed/backfed/servers/base_server.py", line 115, in _init_model
+    checkpoint = self._load_checkpoint()
+  File "/newstorage4/maleksic/fl-backdoors/backfed/backfed/servers/base_server.py", line 272, in _load_checkpoint
+    resume_model_dict = torch.load(self.config.checkpoint)
+  File "/newstorage4/maleksic/BackFed/env/lib/python3.10/site-packages/torch/serialization.py", line 1462, in load
+    return _load(
+  File "/newstorage4/maleksic/BackFed/env/lib/python3.10/site-packages/torch/serialization.py", line 1964, in _load
+    result = unpickler.load()
+  File "/newstorage4/maleksic/BackFed/env/lib/python3.10/site-packages/torch/_weights_only_unpickler.py", line 512, in load
+    self.append(self.persistent_load(pid))
+  File "/newstorage4/maleksic/BackFed/env/lib/python3.10/site-packages/torch/serialization.py", line 1928, in persistent_load
+    typed_storage = load_tensor(
+  File "/newstorage4/maleksic/BackFed/env/lib/python3.10/site-packages/torch/serialization.py", line 1900, in load_tensor
+    wrap_storage=restore_location(storage, location),
+  File "/newstorage4/maleksic/BackFed/env/lib/python3.10/site-packages/torch/serialization.py", line 693, in default_restore_location
+    result = fn(storage, location)
+  File "/newstorage4/maleksic/BackFed/env/lib/python3.10/site-packages/torch/serialization.py", line 631, in _deserialize
+    device = _validate_device(location, backend_name)
+  File "/newstorage4/maleksic/BackFed/env/lib/python3.10/site-packages/torch/serialization.py", line 600, in _validate_device
+    raise RuntimeError(
+RuntimeError: Attempting to deserialize object on a CUDA device but torch.cuda.is_available() is False. If you are running on a CPU-only machine, please use torch.load with map_location=torch.device('cpu') to map your storages to the CPU.
+
+The above exception was the direct cause of the following exception:
+
+[36mray::MainServer.__init__()[39m (pid=3327596, ip=128.131.169.146, actor_id=dcce4bac24a3044242dfcde501000000, repr=<backfed.servers.main_server.MainServer object at 0x7f2375bacfa0>)
+  File "/newstorage4/maleksic/fl-backdoors/backfed/backfed/servers/main_server.py", line 87, in __init__
+    self.aggregator = instantiate(
+  File "/newstorage4/maleksic/BackFed/env/lib/python3.10/site-packages/hydra/_internal/instantiate/_instantiate2.py", line 226, in instantiate
+    return instantiate_node(
+  File "/newstorage4/maleksic/BackFed/env/lib/python3.10/site-packages/hydra/_internal/instantiate/_instantiate2.py", line 347, in instantiate_node
+    return _call_target(_target_, partial, args, kwargs, full_key)
+  File "/newstorage4/maleksic/BackFed/env/lib/python3.10/site-packages/hydra/_internal/instantiate/_instantiate2.py", line 97, in _call_target
+    raise InstantiationException(msg) from e
+hydra.errors.InstantiationException: Error in call to target 'backfed.servers.fedavg_server.UnweightedFedAvgServer':
+RuntimeError("Attempting to deserialize object on a CUDA device but torch.cuda.is_available() is False. If you are running on a CPU-only machine, please use torch.load with map_location=torch.device('cpu') to map your storages to the CPU.")
+full_key: aggregator_config.unweighted_fedavg
+Traceback (most recent call last):
+  File "/newstorage4/maleksic/fl-backdoors/backfed/main_sfl.py", line 40, in main
+    ray.get(server.run_experiment.remote())
+  File "/newstorage4/maleksic/BackFed/env/lib/python3.10/site-packages/ray/_private/auto_init_hook.py", line 21, in auto_init_wrapper
+    return fn(*args, **kwargs)
+  File "/newstorage4/maleksic/BackFed/env/lib/python3.10/site-packages/ray/_private/client_mode_hook.py", line 103, in wrapper
+    return func(*args, **kwargs)
+  File "/newstorage4/maleksic/BackFed/env/lib/python3.10/site-packages/ray/_private/worker.py", line 2667, in get
+    values, debugger_breakpoint = worker.get_objects(object_refs, timeout=timeout)
+  File "/newstorage4/maleksic/BackFed/env/lib/python3.10/site-packages/ray/_private/worker.py", line 866, in get_objects
+    raise value
+ray.exceptions.RayActorError: The actor died because of an error raised in its creation task, [36mray::MainServer.__init__()[39m (pid=3327596, ip=128.131.169.146, actor_id=dcce4bac24a3044242dfcde501000000, repr=<backfed.servers.main_server.MainServer object at 0x7f2375bacfa0>)
+  File "/newstorage4/maleksic/fl-backdoors/backfed/backfed/servers/fedavg_server.py", line 47, in __init__
+    super(UnweightedFedAvgServer, self).__init__(server_config, server_type, **kwargs)
+  File "/newstorage4/maleksic/fl-backdoors/backfed/backfed/servers/base_server.py", line 72, in __init__
+    self._init_model()
+  File "/newstorage4/maleksic/fl-backdoors/backfed/backfed/servers/base_server.py", line 115, in _init_model
+    checkpoint = self._load_checkpoint()
+  File "/newstorage4/maleksic/fl-backdoors/backfed/backfed/servers/base_server.py", line 272, in _load_checkpoint
+    resume_model_dict = torch.load(self.config.checkpoint)
+  File "/newstorage4/maleksic/BackFed/env/lib/python3.10/site-packages/torch/serialization.py", line 1462, in load
+    return _load(
+  File "/newstorage4/maleksic/BackFed/env/lib/python3.10/site-packages/torch/serialization.py", line 1964, in _load
+    result = unpickler.load()
+  File "/newstorage4/maleksic/BackFed/env/lib/python3.10/site-packages/torch/_weights_only_unpickler.py", line 512, in load
+    self.append(self.persistent_load(pid))
+  File "/newstorage4/maleksic/BackFed/env/lib/python3.10/site-packages/torch/serialization.py", line 1928, in persistent_load
+    typed_storage = load_tensor(
+  File "/newstorage4/maleksic/BackFed/env/lib/python3.10/site-packages/torch/serialization.py", line 1900, in load_tensor
+    wrap_storage=restore_location(storage, location),
+  File "/newstorage4/maleksic/BackFed/env/lib/python3.10/site-packages/torch/serialization.py", line 693, in default_restore_location
+    result = fn(storage, location)
+  File "/newstorage4/maleksic/BackFed/env/lib/python3.10/site-packages/torch/serialization.py", line 631, in _deserialize
+    device = _validate_device(location, backend_name)
+  File "/newstorage4/maleksic/BackFed/env/lib/python3.10/site-packages/torch/serialization.py", line 600, in _validate_device
+    raise RuntimeError(
+RuntimeError: Attempting to deserialize object on a CUDA device but torch.cuda.is_available() is False. If you are running on a CPU-only machine, please use torch.load with map_location=torch.device('cpu') to map your storages to the CPU.
+
+The above exception was the direct cause of the following exception:
+
+[36mray::MainServer.__init__()[39m (pid=3327596, ip=128.131.169.146, actor_id=dcce4bac24a3044242dfcde501000000, repr=<backfed.servers.main_server.MainServer object at 0x7f2375bacfa0>)
+  File "/newstorage4/maleksic/fl-backdoors/backfed/backfed/servers/main_server.py", line 87, in __init__
+    self.aggregator = instantiate(
+  File "/newstorage4/maleksic/BackFed/env/lib/python3.10/site-packages/hydra/_internal/instantiate/_instantiate2.py", line 226, in instantiate
+    return instantiate_node(
+  File "/newstorage4/maleksic/BackFed/env/lib/python3.10/site-packages/hydra/_internal/instantiate/_instantiate2.py", line 347, in instantiate_node
+    return _call_target(_target_, partial, args, kwargs, full_key)
+  File "/newstorage4/maleksic/BackFed/env/lib/python3.10/site-packages/hydra/_internal/instantiate/_instantiate2.py", line 97, in _call_target
+    raise InstantiationException(msg) from e
+hydra.errors.InstantiationException: Error in call to target 'backfed.servers.fedavg_server.UnweightedFedAvgServer':
+RuntimeError("Attempting to deserialize object on a CUDA device but torch.cuda.is_available() is False. If you are running on a CPU-only machine, please use torch.load with map_location=torch.device('cpu') to map your storages to the CPU.")
+full_key: aggregator_config.unweighted_fedavg
+

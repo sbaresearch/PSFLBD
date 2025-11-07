@@ -1,0 +1,35 @@
+program: sfl.py
+project: sfl-with-start-round
+
+method: grid
+
+parameters:
+  attack:
+    values: [DBA]
+
+  data:
+    value: mnist
+  
+  defense_start_round:
+    value: 50
+
+  rounds:
+    value: 500
+
+  num_agents:
+    value: 20
+
+  num_corrupt:
+    value: 4
+
+  target_class:
+    value: 7
+
+  poison_frac:
+    value: 0.5
+
+  aggr:
+    values: [mkrum]
+  
+  aggr_server:
+    values: [alignins, mkrum]

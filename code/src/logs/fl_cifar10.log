@@ -1,0 +1,2628 @@
+2026-01-15 04:19:47,769 [MainThread  ] [INFO ]  Namespace(data='cifar10', num_agents=20, agent_frac=1.0, num_corrupt=2, rounds=100, local_ep=1, bs=64, client_lr=0.001, server_lr=0.001, target_class=2, poison_frac=0.5, pattern_type='plus', theta=8, theta_ld=10, snap=1, device='cuda:3', num_workers=0, dense_ratio=0.25, anneal_factor=0.0001, se_threshold=0.0001, non_iid=False, debug=False, beta=0.5, attack='badnet', aggr='avg', lr_decay=0.99, momentum=0.0, mask_init='ERK', wd=0.0001, same_mask=1, cease_poison=100000, exp_name_extra='', super_power=False, clean=False, sparsity=0.3, lambda_s=1.0, lambda_c=1.0, num_target=10, exp_name='iid_pr(0.5)')
+Files already downloaded and verified
+Files already downloaded and verified
+2026-01-15 04:19:50,681 [MainThread  ] [INFO ]  build client:0 mal:1 data_num:2500
+2026-01-15 04:19:50,847 [MainThread  ] [INFO ]  build client:1 mal:1 data_num:2500
+2026-01-15 04:19:50,853 [MainThread  ] [INFO ]  build client:2 mal:0 data_num:2500
+2026-01-15 04:19:50,858 [MainThread  ] [INFO ]  build client:3 mal:0 data_num:2500
+2026-01-15 04:19:50,863 [MainThread  ] [INFO ]  build client:4 mal:0 data_num:2500
+2026-01-15 04:19:50,868 [MainThread  ] [INFO ]  build client:5 mal:0 data_num:2500
+2026-01-15 04:19:50,873 [MainThread  ] [INFO ]  build client:6 mal:0 data_num:2500
+2026-01-15 04:19:50,878 [MainThread  ] [INFO ]  build client:7 mal:0 data_num:2500
+2026-01-15 04:19:50,883 [MainThread  ] [INFO ]  build client:8 mal:0 data_num:2500
+2026-01-15 04:19:51,013 [MainThread  ] [INFO ]  build client:9 mal:0 data_num:2500
+2026-01-15 04:19:51,018 [MainThread  ] [INFO ]  build client:10 mal:0 data_num:2500
+2026-01-15 04:19:51,023 [MainThread  ] [INFO ]  build client:11 mal:0 data_num:2500
+2026-01-15 04:19:51,028 [MainThread  ] [INFO ]  build client:12 mal:0 data_num:2500
+2026-01-15 04:19:51,034 [MainThread  ] [INFO ]  build client:13 mal:0 data_num:2500
+2026-01-15 04:19:51,039 [MainThread  ] [INFO ]  build client:14 mal:0 data_num:2500
+2026-01-15 04:19:51,044 [MainThread  ] [INFO ]  build client:15 mal:0 data_num:2500
+2026-01-15 04:19:51,049 [MainThread  ] [INFO ]  build client:16 mal:0 data_num:2500
+2026-01-15 04:19:51,054 [MainThread  ] [INFO ]  build client:17 mal:0 data_num:2500
+2026-01-15 04:19:51,059 [MainThread  ] [INFO ]  build client:18 mal:0 data_num:2500
+2026-01-15 04:19:51,064 [MainThread  ] [INFO ]  build client:19 mal:0 data_num:2500
+2026-01-15 04:19:51,064 [MainThread  ] [INFO ]  --------round 1 ------------
+local epoch 0 	 client: 0 	 mal: 1 	 loss: 1.34128892 	 time: 1.40
+local epoch 0 	 client: 1 	 mal: 1 	 loss: 1.31607330 	 time: 1.07
+local epoch 0 	 client: 2 	 mal: 0 	 loss: 2.10589218 	 time: 1.07
+local epoch 0 	 client: 3 	 mal: 0 	 loss: 2.11780310 	 time: 1.07
+local epoch 0 	 client: 4 	 mal: 0 	 loss: 2.09798765 	 time: 1.07
+local epoch 0 	 client: 5 	 mal: 0 	 loss: 2.02321029 	 time: 1.07
+local epoch 0 	 client: 6 	 mal: 0 	 loss: 2.07285547 	 time: 1.07
+local epoch 0 	 client: 7 	 mal: 0 	 loss: 1.99642420 	 time: 1.07
+local epoch 0 	 client: 8 	 mal: 0 	 loss: 2.09755349 	 time: 1.06
+local epoch 0 	 client: 9 	 mal: 0 	 loss: 2.32453752 	 time: 1.07
+local epoch 0 	 client: 10 	 mal: 0 	 loss: 1.96371913 	 time: 1.07
+local epoch 0 	 client: 11 	 mal: 0 	 loss: 2.10367489 	 time: 1.07
+local epoch 0 	 client: 12 	 mal: 0 	 loss: 2.05100465 	 time: 1.07
+local epoch 0 	 client: 13 	 mal: 0 	 loss: 2.10119128 	 time: 1.11
+local epoch 0 	 client: 14 	 mal: 0 	 loss: 2.11021161 	 time: 1.08
+local epoch 0 	 client: 15 	 mal: 0 	 loss: 2.22525287 	 time: 1.08
+local epoch 0 	 client: 16 	 mal: 0 	 loss: 1.99483335 	 time: 1.08
+local epoch 0 	 client: 17 	 mal: 0 	 loss: 2.11231399 	 time: 1.09
+local epoch 0 	 client: 18 	 mal: 0 	 loss: 2.17081046 	 time: 1.08
+local epoch 0 	 client: 19 	 mal: 0 	 loss: 2.03222728 	 time: 1.08
+2026-01-15 04:20:13,812 [MainThread  ] [INFO ]  ---------Test 1 ------------
+2026-01-15 04:20:22,664 [MainThread  ] [INFO ]  Clean ACC:              0.1000
+2026-01-15 04:20:22,664 [MainThread  ] [INFO ]  Attack Success Ratio:   0.0000
+2026-01-15 04:20:22,664 [MainThread  ] [INFO ]  Backdoor ACC:           0.1111
+2026-01-15 04:20:22,664 [MainThread  ] [INFO ]  ------------------------------
+2026-01-15 04:20:22,664 [MainThread  ] [INFO ]  --------round 2 ------------
+local epoch 0 	 client: 0 	 mal: 1 	 loss: 1.28735018 	 time: 1.09
+local epoch 0 	 client: 1 	 mal: 1 	 loss: 1.42266190 	 time: 1.08
+local epoch 0 	 client: 2 	 mal: 0 	 loss: 2.07540703 	 time: 1.08
+local epoch 0 	 client: 3 	 mal: 0 	 loss: 2.20898414 	 time: 1.09
+local epoch 0 	 client: 4 	 mal: 0 	 loss: 2.07739067 	 time: 1.08
+local epoch 0 	 client: 5 	 mal: 0 	 loss: 1.98362184 	 time: 1.08
+local epoch 0 	 client: 6 	 mal: 0 	 loss: 2.12404680 	 time: 1.08
+local epoch 0 	 client: 7 	 mal: 0 	 loss: 1.91686738 	 time: 1.08
+local epoch 0 	 client: 8 	 mal: 0 	 loss: 2.03979230 	 time: 1.08
+local epoch 0 	 client: 9 	 mal: 0 	 loss: 2.15821791 	 time: 1.08
+local epoch 0 	 client: 10 	 mal: 0 	 loss: 2.08070135 	 time: 1.08
+local epoch 0 	 client: 11 	 mal: 0 	 loss: 2.04145813 	 time: 1.08
+local epoch 0 	 client: 12 	 mal: 0 	 loss: 2.05655384 	 time: 1.08
+local epoch 0 	 client: 13 	 mal: 0 	 loss: 2.14764953 	 time: 1.09
+local epoch 0 	 client: 14 	 mal: 0 	 loss: 2.04967594 	 time: 1.08
+local epoch 0 	 client: 15 	 mal: 0 	 loss: 2.03682923 	 time: 1.08
+local epoch 0 	 client: 16 	 mal: 0 	 loss: 2.06060553 	 time: 1.08
+local epoch 0 	 client: 17 	 mal: 0 	 loss: 2.15309405 	 time: 1.08
+local epoch 0 	 client: 18 	 mal: 0 	 loss: 2.05238652 	 time: 1.08
+local epoch 0 	 client: 19 	 mal: 0 	 loss: 2.01491642 	 time: 1.08
+2026-01-15 04:20:45,128 [MainThread  ] [INFO ]  ---------Test 2 ------------
+2026-01-15 04:20:53,809 [MainThread  ] [INFO ]  Clean ACC:              0.1000
+2026-01-15 04:20:53,810 [MainThread  ] [INFO ]  Attack Success Ratio:   0.0000
+2026-01-15 04:20:53,810 [MainThread  ] [INFO ]  Backdoor ACC:           0.1111
+2026-01-15 04:20:53,810 [MainThread  ] [INFO ]  ------------------------------
+2026-01-15 04:20:53,810 [MainThread  ] [INFO ]  --------round 3 ------------
+local epoch 0 	 client: 0 	 mal: 1 	 loss: 1.24282098 	 time: 1.08
+local epoch 0 	 client: 1 	 mal: 1 	 loss: 1.52053809 	 time: 1.09
+local epoch 0 	 client: 2 	 mal: 0 	 loss: 2.07894588 	 time: 1.08
+local epoch 0 	 client: 3 	 mal: 0 	 loss: 2.04294538 	 time: 1.09
+local epoch 0 	 client: 4 	 mal: 0 	 loss: 2.01766276 	 time: 1.08
+local epoch 0 	 client: 5 	 mal: 0 	 loss: 2.10388970 	 time: 1.07
+local epoch 0 	 client: 6 	 mal: 0 	 loss: 2.12535334 	 time: 1.08
+local epoch 0 	 client: 7 	 mal: 0 	 loss: 2.03659081 	 time: 1.08
+local epoch 0 	 client: 8 	 mal: 0 	 loss: 1.92786431 	 time: 1.08
+local epoch 0 	 client: 9 	 mal: 0 	 loss: 2.00442505 	 time: 1.08
+local epoch 0 	 client: 10 	 mal: 0 	 loss: 1.96240747 	 time: 1.08
+local epoch 0 	 client: 11 	 mal: 0 	 loss: 2.09301448 	 time: 1.09
+local epoch 0 	 client: 12 	 mal: 0 	 loss: 2.02039838 	 time: 1.08
+local epoch 0 	 client: 13 	 mal: 0 	 loss: 2.09601116 	 time: 1.08
+local epoch 0 	 client: 14 	 mal: 0 	 loss: 1.89107585 	 time: 1.08
+local epoch 0 	 client: 15 	 mal: 0 	 loss: 2.10114264 	 time: 1.08
+local epoch 0 	 client: 16 	 mal: 0 	 loss: 2.13842130 	 time: 1.08
+local epoch 0 	 client: 17 	 mal: 0 	 loss: 1.97542417 	 time: 1.09
+local epoch 0 	 client: 18 	 mal: 0 	 loss: 2.13531327 	 time: 1.08
+local epoch 0 	 client: 19 	 mal: 0 	 loss: 1.97612190 	 time: 1.08
+2026-01-15 04:21:16,274 [MainThread  ] [INFO ]  ---------Test 3 ------------
+2026-01-15 04:21:25,032 [MainThread  ] [INFO ]  Clean ACC:              0.1000
+2026-01-15 04:21:25,032 [MainThread  ] [INFO ]  Attack Success Ratio:   0.0000
+2026-01-15 04:21:25,032 [MainThread  ] [INFO ]  Backdoor ACC:           0.1111
+2026-01-15 04:21:25,032 [MainThread  ] [INFO ]  ------------------------------
+2026-01-15 04:21:25,032 [MainThread  ] [INFO ]  --------round 4 ------------
+local epoch 0 	 client: 0 	 mal: 1 	 loss: 1.27966928 	 time: 1.09
+local epoch 0 	 client: 1 	 mal: 1 	 loss: 1.34228396 	 time: 1.08
+local epoch 0 	 client: 2 	 mal: 0 	 loss: 2.01347065 	 time: 1.08
+local epoch 0 	 client: 3 	 mal: 0 	 loss: 1.94224834 	 time: 1.08
+local epoch 0 	 client: 4 	 mal: 0 	 loss: 2.16751361 	 time: 1.09
+local epoch 0 	 client: 5 	 mal: 0 	 loss: 2.01916242 	 time: 1.08
+local epoch 0 	 client: 6 	 mal: 0 	 loss: 2.01461220 	 time: 1.08
+local epoch 0 	 client: 7 	 mal: 0 	 loss: 2.09482408 	 time: 1.08
+local epoch 0 	 client: 8 	 mal: 0 	 loss: 2.15175557 	 time: 1.08
+local epoch 0 	 client: 9 	 mal: 0 	 loss: 2.15343809 	 time: 1.08
+local epoch 0 	 client: 10 	 mal: 0 	 loss: 2.04318643 	 time: 1.08
+local epoch 0 	 client: 11 	 mal: 0 	 loss: 2.14714789 	 time: 1.08
+local epoch 0 	 client: 12 	 mal: 0 	 loss: 1.86052787 	 time: 1.08
+local epoch 0 	 client: 13 	 mal: 0 	 loss: 2.15050721 	 time: 1.08
+local epoch 0 	 client: 14 	 mal: 0 	 loss: 2.02755499 	 time: 1.08
+local epoch 0 	 client: 15 	 mal: 0 	 loss: 2.09274554 	 time: 1.08
+local epoch 0 	 client: 16 	 mal: 0 	 loss: 2.00244093 	 time: 1.08
+local epoch 0 	 client: 17 	 mal: 0 	 loss: 2.22283816 	 time: 1.08
+local epoch 0 	 client: 18 	 mal: 0 	 loss: 2.07950425 	 time: 1.09
+local epoch 0 	 client: 19 	 mal: 0 	 loss: 2.05371165 	 time: 1.08
+2026-01-15 04:21:47,490 [MainThread  ] [INFO ]  ---------Test 4 ------------
+2026-01-15 04:21:56,149 [MainThread  ] [INFO ]  Clean ACC:              0.1000
+2026-01-15 04:21:56,149 [MainThread  ] [INFO ]  Attack Success Ratio:   0.0000
+2026-01-15 04:21:56,149 [MainThread  ] [INFO ]  Backdoor ACC:           0.1111
+2026-01-15 04:21:56,149 [MainThread  ] [INFO ]  ------------------------------
+2026-01-15 04:21:56,149 [MainThread  ] [INFO ]  --------round 5 ------------
+local epoch 0 	 client: 0 	 mal: 1 	 loss: 1.20822346 	 time: 1.09
+local epoch 0 	 client: 1 	 mal: 1 	 loss: 1.27199006 	 time: 1.08
+local epoch 0 	 client: 2 	 mal: 0 	 loss: 1.92502177 	 time: 1.09
+local epoch 0 	 client: 3 	 mal: 0 	 loss: 1.94379556 	 time: 1.08
+local epoch 0 	 client: 4 	 mal: 0 	 loss: 1.96606719 	 time: 1.09
+local epoch 0 	 client: 5 	 mal: 0 	 loss: 2.17719507 	 time: 1.08
+local epoch 0 	 client: 6 	 mal: 0 	 loss: 2.20507240 	 time: 1.09
+local epoch 0 	 client: 7 	 mal: 0 	 loss: 1.93707573 	 time: 1.08
+local epoch 0 	 client: 8 	 mal: 0 	 loss: 2.10830379 	 time: 1.08
+local epoch 0 	 client: 9 	 mal: 0 	 loss: 2.00947833 	 time: 1.08
+local epoch 0 	 client: 10 	 mal: 0 	 loss: 2.10687280 	 time: 1.09
+local epoch 0 	 client: 11 	 mal: 0 	 loss: 2.03043461 	 time: 1.09
+local epoch 0 	 client: 12 	 mal: 0 	 loss: 2.03257346 	 time: 1.09
+local epoch 0 	 client: 13 	 mal: 0 	 loss: 1.99043751 	 time: 1.08
+local epoch 0 	 client: 14 	 mal: 0 	 loss: 2.08217454 	 time: 1.09
+local epoch 0 	 client: 15 	 mal: 0 	 loss: 2.00842881 	 time: 1.08
+local epoch 0 	 client: 16 	 mal: 0 	 loss: 2.11768270 	 time: 1.08
+local epoch 0 	 client: 17 	 mal: 0 	 loss: 2.01831698 	 time: 1.08
+local epoch 0 	 client: 18 	 mal: 0 	 loss: 2.00097251 	 time: 1.08
+local epoch 0 	 client: 19 	 mal: 0 	 loss: 2.17555833 	 time: 1.08
+2026-01-15 04:22:18,629 [MainThread  ] [INFO ]  ---------Test 5 ------------
+2026-01-15 04:22:27,371 [MainThread  ] [INFO ]  Clean ACC:              0.1000
+2026-01-15 04:22:27,371 [MainThread  ] [INFO ]  Attack Success Ratio:   0.0000
+2026-01-15 04:22:27,371 [MainThread  ] [INFO ]  Backdoor ACC:           0.1111
+2026-01-15 04:22:27,371 [MainThread  ] [INFO ]  ------------------------------
+2026-01-15 04:22:27,371 [MainThread  ] [INFO ]  --------round 6 ------------
+local epoch 0 	 client: 0 	 mal: 1 	 loss: 1.09881401 	 time: 1.08
+local epoch 0 	 client: 1 	 mal: 1 	 loss: 1.26280189 	 time: 1.08
+local epoch 0 	 client: 2 	 mal: 0 	 loss: 2.08875918 	 time: 1.08
+local epoch 0 	 client: 3 	 mal: 0 	 loss: 2.04919291 	 time: 1.08
+local epoch 0 	 client: 4 	 mal: 0 	 loss: 2.16621590 	 time: 1.08
+local epoch 0 	 client: 5 	 mal: 0 	 loss: 1.98874927 	 time: 1.08
+local epoch 0 	 client: 6 	 mal: 0 	 loss: 2.09968185 	 time: 1.08
+local epoch 0 	 client: 7 	 mal: 0 	 loss: 2.01282167 	 time: 1.08
+local epoch 0 	 client: 8 	 mal: 0 	 loss: 2.01382804 	 time: 1.09
+local epoch 0 	 client: 9 	 mal: 0 	 loss: 2.20899558 	 time: 1.08
+local epoch 0 	 client: 10 	 mal: 0 	 loss: 1.95618308 	 time: 1.08
+local epoch 0 	 client: 11 	 mal: 0 	 loss: 2.11864567 	 time: 1.08
+local epoch 0 	 client: 12 	 mal: 0 	 loss: 2.07997251 	 time: 1.08
+local epoch 0 	 client: 13 	 mal: 0 	 loss: 2.11226320 	 time: 1.08
+local epoch 0 	 client: 14 	 mal: 0 	 loss: 1.95019400 	 time: 1.08
+local epoch 0 	 client: 15 	 mal: 0 	 loss: 2.05802822 	 time: 1.09
+local epoch 0 	 client: 16 	 mal: 0 	 loss: 2.18787289 	 time: 1.08
+local epoch 0 	 client: 17 	 mal: 0 	 loss: 2.07226324 	 time: 1.09
+local epoch 0 	 client: 18 	 mal: 0 	 loss: 2.03993869 	 time: 1.08
+local epoch 0 	 client: 19 	 mal: 0 	 loss: 2.07258081 	 time: 1.08
+2026-01-15 04:22:49,834 [MainThread  ] [INFO ]  ---------Test 6 ------------
+2026-01-15 04:22:58,483 [MainThread  ] [INFO ]  Clean ACC:              0.1000
+2026-01-15 04:22:58,483 [MainThread  ] [INFO ]  Attack Success Ratio:   0.0000
+2026-01-15 04:22:58,483 [MainThread  ] [INFO ]  Backdoor ACC:           0.1111
+2026-01-15 04:22:58,483 [MainThread  ] [INFO ]  ------------------------------
+2026-01-15 04:22:58,483 [MainThread  ] [INFO ]  --------round 7 ------------
+local epoch 0 	 client: 0 	 mal: 1 	 loss: 1.25343430 	 time: 1.08
+local epoch 0 	 client: 1 	 mal: 1 	 loss: 1.40328121 	 time: 1.09
+local epoch 0 	 client: 2 	 mal: 0 	 loss: 2.02108407 	 time: 1.09
+local epoch 0 	 client: 3 	 mal: 0 	 loss: 2.01635385 	 time: 1.09
+local epoch 0 	 client: 4 	 mal: 0 	 loss: 2.15582776 	 time: 1.08
+local epoch 0 	 client: 5 	 mal: 0 	 loss: 2.17502165 	 time: 1.09
+local epoch 0 	 client: 6 	 mal: 0 	 loss: 2.11530471 	 time: 1.08
+local epoch 0 	 client: 7 	 mal: 0 	 loss: 2.10553718 	 time: 1.08
+local epoch 0 	 client: 8 	 mal: 0 	 loss: 1.96828854 	 time: 1.08
+local epoch 0 	 client: 9 	 mal: 0 	 loss: 2.13044477 	 time: 1.09
+local epoch 0 	 client: 10 	 mal: 0 	 loss: 2.07915950 	 time: 1.08
+local epoch 0 	 client: 11 	 mal: 0 	 loss: 2.04863501 	 time: 1.08
+local epoch 0 	 client: 12 	 mal: 0 	 loss: 2.10844398 	 time: 1.08
+local epoch 0 	 client: 13 	 mal: 0 	 loss: 2.13301802 	 time: 1.08
+local epoch 0 	 client: 14 	 mal: 0 	 loss: 2.19491053 	 time: 1.08
+local epoch 0 	 client: 15 	 mal: 0 	 loss: 1.94571090 	 time: 1.09
+local epoch 0 	 client: 16 	 mal: 0 	 loss: 2.05467391 	 time: 1.08
+local epoch 0 	 client: 17 	 mal: 0 	 loss: 2.02162862 	 time: 1.09
+local epoch 0 	 client: 18 	 mal: 0 	 loss: 1.95796597 	 time: 1.08
+local epoch 0 	 client: 19 	 mal: 0 	 loss: 2.09937406 	 time: 1.08
+2026-01-15 04:23:20,956 [MainThread  ] [INFO ]  ---------Test 7 ------------
+2026-01-15 04:23:29,680 [MainThread  ] [INFO ]  Clean ACC:              0.1000
+2026-01-15 04:23:29,680 [MainThread  ] [INFO ]  Attack Success Ratio:   0.0000
+2026-01-15 04:23:29,680 [MainThread  ] [INFO ]  Backdoor ACC:           0.1111
+2026-01-15 04:23:29,680 [MainThread  ] [INFO ]  ------------------------------
+2026-01-15 04:23:29,680 [MainThread  ] [INFO ]  --------round 8 ------------
+local epoch 0 	 client: 0 	 mal: 1 	 loss: 1.21337461 	 time: 1.08
+local epoch 0 	 client: 1 	 mal: 1 	 loss: 1.49204588 	 time: 1.08
+local epoch 0 	 client: 2 	 mal: 0 	 loss: 2.08228874 	 time: 1.08
+local epoch 0 	 client: 3 	 mal: 0 	 loss: 1.98253393 	 time: 1.08
+local epoch 0 	 client: 4 	 mal: 0 	 loss: 1.96582198 	 time: 1.09
+local epoch 0 	 client: 5 	 mal: 0 	 loss: 2.00501895 	 time: 1.08
+local epoch 0 	 client: 6 	 mal: 0 	 loss: 2.23883128 	 time: 1.08
+local epoch 0 	 client: 7 	 mal: 0 	 loss: 1.96882868 	 time: 1.08
+local epoch 0 	 client: 8 	 mal: 0 	 loss: 2.05677795 	 time: 1.09
+local epoch 0 	 client: 9 	 mal: 0 	 loss: 2.13038135 	 time: 1.08
+local epoch 0 	 client: 10 	 mal: 0 	 loss: 2.13060570 	 time: 1.08
+local epoch 0 	 client: 11 	 mal: 0 	 loss: 2.00283670 	 time: 1.08
+local epoch 0 	 client: 12 	 mal: 0 	 loss: 2.03461504 	 time: 1.09
+local epoch 0 	 client: 13 	 mal: 0 	 loss: 2.12655544 	 time: 1.08
+local epoch 0 	 client: 14 	 mal: 0 	 loss: 2.02671409 	 time: 1.08
+local epoch 0 	 client: 15 	 mal: 0 	 loss: 2.11411619 	 time: 1.08
+local epoch 0 	 client: 16 	 mal: 0 	 loss: 1.99245346 	 time: 1.08
+local epoch 0 	 client: 17 	 mal: 0 	 loss: 2.10594249 	 time: 1.08
+local epoch 0 	 client: 18 	 mal: 0 	 loss: 2.12816072 	 time: 1.08
+local epoch 0 	 client: 19 	 mal: 0 	 loss: 2.25965834 	 time: 1.08
+2026-01-15 04:23:52,155 [MainThread  ] [INFO ]  ---------Test 8 ------------
+2026-01-15 04:24:00,847 [MainThread  ] [INFO ]  Clean ACC:              0.1000
+2026-01-15 04:24:00,847 [MainThread  ] [INFO ]  Attack Success Ratio:   0.0000
+2026-01-15 04:24:00,847 [MainThread  ] [INFO ]  Backdoor ACC:           0.1111
+2026-01-15 04:24:00,847 [MainThread  ] [INFO ]  ------------------------------
+2026-01-15 04:24:00,848 [MainThread  ] [INFO ]  --------round 9 ------------
+local epoch 0 	 client: 0 	 mal: 1 	 loss: 1.26713192 	 time: 1.08
+local epoch 0 	 client: 1 	 mal: 1 	 loss: 1.26491785 	 time: 1.08
+local epoch 0 	 client: 2 	 mal: 0 	 loss: 2.12364864 	 time: 1.08
+local epoch 0 	 client: 3 	 mal: 0 	 loss: 2.13020158 	 time: 1.08
+local epoch 0 	 client: 4 	 mal: 0 	 loss: 2.07847238 	 time: 1.07
+local epoch 0 	 client: 5 	 mal: 0 	 loss: 2.07465982 	 time: 1.08
+local epoch 0 	 client: 6 	 mal: 0 	 loss: 2.00249362 	 time: 1.08
+local epoch 0 	 client: 7 	 mal: 0 	 loss: 1.99244356 	 time: 1.08
+local epoch 0 	 client: 8 	 mal: 0 	 loss: 1.98449028 	 time: 1.08
+local epoch 0 	 client: 9 	 mal: 0 	 loss: 2.06678605 	 time: 1.08
+local epoch 0 	 client: 10 	 mal: 0 	 loss: 2.04462504 	 time: 1.08
+local epoch 0 	 client: 11 	 mal: 0 	 loss: 2.24072814 	 time: 1.08
+local epoch 0 	 client: 12 	 mal: 0 	 loss: 2.07945776 	 time: 1.08
+local epoch 0 	 client: 13 	 mal: 0 	 loss: 2.09228158 	 time: 1.08
+local epoch 0 	 client: 14 	 mal: 0 	 loss: 2.12864089 	 time: 1.08
+local epoch 0 	 client: 15 	 mal: 0 	 loss: 2.04508305 	 time: 1.08
+local epoch 0 	 client: 16 	 mal: 0 	 loss: 2.03088450 	 time: 1.08
+local epoch 0 	 client: 17 	 mal: 0 	 loss: 2.18123293 	 time: 1.08
+local epoch 0 	 client: 18 	 mal: 0 	 loss: 2.04787874 	 time: 1.08
+local epoch 0 	 client: 19 	 mal: 0 	 loss: 2.12820148 	 time: 1.08
+2026-01-15 04:24:23,258 [MainThread  ] [INFO ]  ---------Test 9 ------------
+2026-01-15 04:24:31,985 [MainThread  ] [INFO ]  Clean ACC:              0.1000
+2026-01-15 04:24:31,985 [MainThread  ] [INFO ]  Attack Success Ratio:   0.0000
+2026-01-15 04:24:31,985 [MainThread  ] [INFO ]  Backdoor ACC:           0.1111
+2026-01-15 04:24:31,985 [MainThread  ] [INFO ]  ------------------------------
+2026-01-15 04:24:31,985 [MainThread  ] [INFO ]  --------round 10 ------------
+local epoch 0 	 client: 0 	 mal: 1 	 loss: 1.27758622 	 time: 1.08
+local epoch 0 	 client: 1 	 mal: 1 	 loss: 1.23075914 	 time: 1.08
+local epoch 0 	 client: 2 	 mal: 0 	 loss: 2.02721500 	 time: 1.08
+local epoch 0 	 client: 3 	 mal: 0 	 loss: 2.04829073 	 time: 1.08
+local epoch 0 	 client: 4 	 mal: 0 	 loss: 2.19192076 	 time: 1.08
+local epoch 0 	 client: 5 	 mal: 0 	 loss: 2.09166718 	 time: 1.08
+local epoch 0 	 client: 6 	 mal: 0 	 loss: 2.01603580 	 time: 1.08
+local epoch 0 	 client: 7 	 mal: 0 	 loss: 2.13970447 	 time: 1.08
+local epoch 0 	 client: 8 	 mal: 0 	 loss: 2.06068540 	 time: 1.09
+local epoch 0 	 client: 9 	 mal: 0 	 loss: 2.09133840 	 time: 1.08
+local epoch 0 	 client: 10 	 mal: 0 	 loss: 2.05340743 	 time: 1.08
+local epoch 0 	 client: 11 	 mal: 0 	 loss: 2.13721871 	 time: 1.08
+local epoch 0 	 client: 12 	 mal: 0 	 loss: 1.99712884 	 time: 1.08
+local epoch 0 	 client: 13 	 mal: 0 	 loss: 2.01887536 	 time: 1.08
+local epoch 0 	 client: 14 	 mal: 0 	 loss: 2.05883908 	 time: 1.08
+local epoch 0 	 client: 15 	 mal: 0 	 loss: 2.01928806 	 time: 1.08
+local epoch 0 	 client: 16 	 mal: 0 	 loss: 1.94772279 	 time: 1.08
+local epoch 0 	 client: 17 	 mal: 0 	 loss: 2.10971904 	 time: 1.08
+local epoch 0 	 client: 18 	 mal: 0 	 loss: 2.01166415 	 time: 1.08
+local epoch 0 	 client: 19 	 mal: 0 	 loss: 2.09225845 	 time: 1.08
+2026-01-15 04:24:54,419 [MainThread  ] [INFO ]  ---------Test 10 ------------
+2026-01-15 04:25:03,062 [MainThread  ] [INFO ]  Clean ACC:              0.1000
+2026-01-15 04:25:03,062 [MainThread  ] [INFO ]  Attack Success Ratio:   0.0000
+2026-01-15 04:25:03,062 [MainThread  ] [INFO ]  Backdoor ACC:           0.1111
+2026-01-15 04:25:03,062 [MainThread  ] [INFO ]  ------------------------------
+2026-01-15 04:25:03,062 [MainThread  ] [INFO ]  --------round 11 ------------
+local epoch 0 	 client: 0 	 mal: 1 	 loss: 1.33083117 	 time: 1.08
+local epoch 0 	 client: 1 	 mal: 1 	 loss: 1.32067120 	 time: 1.08
+local epoch 0 	 client: 2 	 mal: 0 	 loss: 1.98664606 	 time: 1.08
+local epoch 0 	 client: 3 	 mal: 0 	 loss: 2.04687500 	 time: 1.08
+local epoch 0 	 client: 4 	 mal: 0 	 loss: 2.01795912 	 time: 1.08
+local epoch 0 	 client: 5 	 mal: 0 	 loss: 2.27544522 	 time: 1.08
+local epoch 0 	 client: 6 	 mal: 0 	 loss: 1.99450552 	 time: 1.08
+local epoch 0 	 client: 7 	 mal: 0 	 loss: 2.09931660 	 time: 1.08
+local epoch 0 	 client: 8 	 mal: 0 	 loss: 2.03270578 	 time: 1.08
+local epoch 0 	 client: 9 	 mal: 0 	 loss: 2.01065183 	 time: 1.08
+local epoch 0 	 client: 10 	 mal: 0 	 loss: 2.16889143 	 time: 1.08
+local epoch 0 	 client: 11 	 mal: 0 	 loss: 2.14518952 	 time: 1.08
+local epoch 0 	 client: 12 	 mal: 0 	 loss: 2.01975083 	 time: 1.08
+local epoch 0 	 client: 13 	 mal: 0 	 loss: 2.12216401 	 time: 1.08
+local epoch 0 	 client: 14 	 mal: 0 	 loss: 2.09913230 	 time: 1.08
+local epoch 0 	 client: 15 	 mal: 0 	 loss: 2.08349895 	 time: 1.08
+local epoch 0 	 client: 16 	 mal: 0 	 loss: 1.94634461 	 time: 1.08
+local epoch 0 	 client: 17 	 mal: 0 	 loss: 2.01021290 	 time: 1.08
+local epoch 0 	 client: 18 	 mal: 0 	 loss: 2.14387703 	 time: 1.08
+local epoch 0 	 client: 19 	 mal: 0 	 loss: 2.08158803 	 time: 1.08
+2026-01-15 04:25:25,478 [MainThread  ] [INFO ]  ---------Test 11 ------------
+2026-01-15 04:25:34,213 [MainThread  ] [INFO ]  Clean ACC:              0.1000
+2026-01-15 04:25:34,214 [MainThread  ] [INFO ]  Attack Success Ratio:   0.0000
+2026-01-15 04:25:34,214 [MainThread  ] [INFO ]  Backdoor ACC:           0.1111
+2026-01-15 04:25:34,214 [MainThread  ] [INFO ]  ------------------------------
+2026-01-15 04:25:34,214 [MainThread  ] [INFO ]  --------round 12 ------------
+local epoch 0 	 client: 0 	 mal: 1 	 loss: 1.11798143 	 time: 1.08
+local epoch 0 	 client: 1 	 mal: 1 	 loss: 1.08200455 	 time: 1.09
+local epoch 0 	 client: 2 	 mal: 0 	 loss: 2.09379578 	 time: 1.08
+local epoch 0 	 client: 3 	 mal: 0 	 loss: 2.13455224 	 time: 1.08
+local epoch 0 	 client: 4 	 mal: 0 	 loss: 2.08807874 	 time: 1.08
+local epoch 0 	 client: 5 	 mal: 0 	 loss: 2.08023882 	 time: 1.08
+local epoch 0 	 client: 6 	 mal: 0 	 loss: 2.05781865 	 time: 1.08
+local epoch 0 	 client: 7 	 mal: 0 	 loss: 2.14194131 	 time: 1.08
+local epoch 0 	 client: 8 	 mal: 0 	 loss: 2.13608432 	 time: 1.08
+local epoch 0 	 client: 9 	 mal: 0 	 loss: 2.18393898 	 time: 1.08
+local epoch 0 	 client: 10 	 mal: 0 	 loss: 2.19857979 	 time: 1.08
+local epoch 0 	 client: 11 	 mal: 0 	 loss: 2.12671828 	 time: 1.08
+local epoch 0 	 client: 12 	 mal: 0 	 loss: 2.08059525 	 time: 1.09
+local epoch 0 	 client: 13 	 mal: 0 	 loss: 2.08203626 	 time: 1.08
+local epoch 0 	 client: 14 	 mal: 0 	 loss: 1.89580870 	 time: 1.08
+local epoch 0 	 client: 15 	 mal: 0 	 loss: 2.03434110 	 time: 1.08
+local epoch 0 	 client: 16 	 mal: 0 	 loss: 2.04875922 	 time: 1.08
+local epoch 0 	 client: 17 	 mal: 0 	 loss: 2.04840708 	 time: 1.08
+local epoch 0 	 client: 18 	 mal: 0 	 loss: 2.07070804 	 time: 1.08
+local epoch 0 	 client: 19 	 mal: 0 	 loss: 2.13723183 	 time: 1.08
+2026-01-15 04:25:56,674 [MainThread  ] [INFO ]  ---------Test 12 ------------
+2026-01-15 04:26:05,308 [MainThread  ] [INFO ]  Clean ACC:              0.1000
+2026-01-15 04:26:05,308 [MainThread  ] [INFO ]  Attack Success Ratio:   0.0000
+2026-01-15 04:26:05,308 [MainThread  ] [INFO ]  Backdoor ACC:           0.1111
+2026-01-15 04:26:05,308 [MainThread  ] [INFO ]  ------------------------------
+2026-01-15 04:26:05,308 [MainThread  ] [INFO ]  --------round 13 ------------
+local epoch 0 	 client: 0 	 mal: 1 	 loss: 1.44023991 	 time: 1.09
+local epoch 0 	 client: 1 	 mal: 1 	 loss: 1.37556219 	 time: 1.08
+local epoch 0 	 client: 2 	 mal: 0 	 loss: 2.03808308 	 time: 1.08
+local epoch 0 	 client: 3 	 mal: 0 	 loss: 1.97165859 	 time: 1.08
+local epoch 0 	 client: 4 	 mal: 0 	 loss: 1.97267509 	 time: 1.08
+local epoch 0 	 client: 5 	 mal: 0 	 loss: 2.07699037 	 time: 1.08
+local epoch 0 	 client: 6 	 mal: 0 	 loss: 2.05327702 	 time: 1.08
+local epoch 0 	 client: 7 	 mal: 0 	 loss: 2.08060455 	 time: 1.08
+local epoch 0 	 client: 8 	 mal: 0 	 loss: 2.03648067 	 time: 1.08
+local epoch 0 	 client: 9 	 mal: 0 	 loss: 2.15023851 	 time: 1.08
+local epoch 0 	 client: 10 	 mal: 0 	 loss: 2.16805005 	 time: 1.09
+local epoch 0 	 client: 11 	 mal: 0 	 loss: 2.02384615 	 time: 1.08
+local epoch 0 	 client: 12 	 mal: 0 	 loss: 1.99087751 	 time: 1.08
+local epoch 0 	 client: 13 	 mal: 0 	 loss: 1.96811283 	 time: 1.08
+local epoch 0 	 client: 14 	 mal: 0 	 loss: 2.01314402 	 time: 1.08
+local epoch 0 	 client: 15 	 mal: 0 	 loss: 1.94266367 	 time: 1.08
+local epoch 0 	 client: 16 	 mal: 0 	 loss: 2.07218170 	 time: 1.08
+local epoch 0 	 client: 17 	 mal: 0 	 loss: 2.09798121 	 time: 1.08
+local epoch 0 	 client: 18 	 mal: 0 	 loss: 2.01831341 	 time: 1.09
+local epoch 0 	 client: 19 	 mal: 0 	 loss: 2.02584195 	 time: 1.08
+2026-01-15 04:26:27,759 [MainThread  ] [INFO ]  ---------Test 13 ------------
+2026-01-15 04:26:36,502 [MainThread  ] [INFO ]  Clean ACC:              0.1000
+2026-01-15 04:26:36,503 [MainThread  ] [INFO ]  Attack Success Ratio:   0.0000
+2026-01-15 04:26:36,503 [MainThread  ] [INFO ]  Backdoor ACC:           0.1111
+2026-01-15 04:26:36,503 [MainThread  ] [INFO ]  ------------------------------
+2026-01-15 04:26:36,503 [MainThread  ] [INFO ]  --------round 14 ------------
+local epoch 0 	 client: 0 	 mal: 1 	 loss: 1.38294816 	 time: 1.09
+local epoch 0 	 client: 1 	 mal: 1 	 loss: 1.54419923 	 time: 1.08
+local epoch 0 	 client: 2 	 mal: 0 	 loss: 2.03012133 	 time: 1.08
+local epoch 0 	 client: 3 	 mal: 0 	 loss: 2.04104447 	 time: 1.08
+local epoch 0 	 client: 4 	 mal: 0 	 loss: 2.14527702 	 time: 1.08
+local epoch 0 	 client: 5 	 mal: 0 	 loss: 2.10460806 	 time: 1.08
+local epoch 0 	 client: 6 	 mal: 0 	 loss: 2.09466958 	 time: 1.08
+local epoch 0 	 client: 7 	 mal: 0 	 loss: 2.03669763 	 time: 1.08
+local epoch 0 	 client: 8 	 mal: 0 	 loss: 2.13892412 	 time: 1.08
+local epoch 0 	 client: 9 	 mal: 0 	 loss: 1.94427156 	 time: 1.08
+local epoch 0 	 client: 10 	 mal: 0 	 loss: 2.09245896 	 time: 1.08
+local epoch 0 	 client: 11 	 mal: 0 	 loss: 2.19408393 	 time: 1.08
+local epoch 0 	 client: 12 	 mal: 0 	 loss: 1.98453081 	 time: 1.08
+local epoch 0 	 client: 13 	 mal: 0 	 loss: 2.09519553 	 time: 1.08
+local epoch 0 	 client: 14 	 mal: 0 	 loss: 2.08286762 	 time: 1.08
+local epoch 0 	 client: 15 	 mal: 0 	 loss: 2.01086831 	 time: 1.08
+local epoch 0 	 client: 16 	 mal: 0 	 loss: 2.07830477 	 time: 1.08
+local epoch 0 	 client: 17 	 mal: 0 	 loss: 2.14239764 	 time: 1.08
+local epoch 0 	 client: 18 	 mal: 0 	 loss: 1.90479398 	 time: 1.08
+local epoch 0 	 client: 19 	 mal: 0 	 loss: 1.99331307 	 time: 1.08
+2026-01-15 04:26:58,932 [MainThread  ] [INFO ]  ---------Test 14 ------------
+2026-01-15 04:27:07,592 [MainThread  ] [INFO ]  Clean ACC:              0.1000
+2026-01-15 04:27:07,592 [MainThread  ] [INFO ]  Attack Success Ratio:   0.0000
+2026-01-15 04:27:07,592 [MainThread  ] [INFO ]  Backdoor ACC:           0.1111
+2026-01-15 04:27:07,592 [MainThread  ] [INFO ]  ------------------------------
+2026-01-15 04:27:07,592 [MainThread  ] [INFO ]  --------round 15 ------------
+local epoch 0 	 client: 0 	 mal: 1 	 loss: 1.30446410 	 time: 1.08
+local epoch 0 	 client: 1 	 mal: 1 	 loss: 1.29193985 	 time: 1.08
+local epoch 0 	 client: 2 	 mal: 0 	 loss: 2.20021248 	 time: 1.08
+local epoch 0 	 client: 3 	 mal: 0 	 loss: 1.97434592 	 time: 1.08
+local epoch 0 	 client: 4 	 mal: 0 	 loss: 2.02348590 	 time: 1.08
+local epoch 0 	 client: 5 	 mal: 0 	 loss: 2.14879060 	 time: 1.08
+local epoch 0 	 client: 6 	 mal: 0 	 loss: 1.97916436 	 time: 1.08
+local epoch 0 	 client: 7 	 mal: 0 	 loss: 2.15452600 	 time: 1.08
+local epoch 0 	 client: 8 	 mal: 0 	 loss: 2.04130244 	 time: 1.08
+local epoch 0 	 client: 9 	 mal: 0 	 loss: 1.93684924 	 time: 1.08
+local epoch 0 	 client: 10 	 mal: 0 	 loss: 2.01758361 	 time: 1.08
+local epoch 0 	 client: 11 	 mal: 0 	 loss: 2.08781195 	 time: 1.08
+local epoch 0 	 client: 12 	 mal: 0 	 loss: 2.09888148 	 time: 1.08
+local epoch 0 	 client: 13 	 mal: 0 	 loss: 2.00345373 	 time: 1.08
+local epoch 0 	 client: 14 	 mal: 0 	 loss: 2.01816463 	 time: 1.08
+local epoch 0 	 client: 15 	 mal: 0 	 loss: 2.01220560 	 time: 1.09
+local epoch 0 	 client: 16 	 mal: 0 	 loss: 2.08515000 	 time: 1.08
+local epoch 0 	 client: 17 	 mal: 0 	 loss: 2.03281045 	 time: 1.08
+local epoch 0 	 client: 18 	 mal: 0 	 loss: 2.06681776 	 time: 1.08
+local epoch 0 	 client: 19 	 mal: 0 	 loss: 2.04148698 	 time: 1.09
+2026-01-15 04:27:30,050 [MainThread  ] [INFO ]  ---------Test 15 ------------
+2026-01-15 04:27:38,779 [MainThread  ] [INFO ]  Clean ACC:              0.1000
+2026-01-15 04:27:38,779 [MainThread  ] [INFO ]  Attack Success Ratio:   0.0000
+2026-01-15 04:27:38,779 [MainThread  ] [INFO ]  Backdoor ACC:           0.1111
+2026-01-15 04:27:38,779 [MainThread  ] [INFO ]  ------------------------------
+2026-01-15 04:27:38,779 [MainThread  ] [INFO ]  --------round 16 ------------
+local epoch 0 	 client: 0 	 mal: 1 	 loss: 1.26943314 	 time: 1.08
+local epoch 0 	 client: 1 	 mal: 1 	 loss: 1.33940041 	 time: 1.08
+local epoch 0 	 client: 2 	 mal: 0 	 loss: 2.19033909 	 time: 1.08
+local epoch 0 	 client: 3 	 mal: 0 	 loss: 2.03070426 	 time: 1.08
+local epoch 0 	 client: 4 	 mal: 0 	 loss: 2.02135038 	 time: 1.08
+local epoch 0 	 client: 5 	 mal: 0 	 loss: 1.99853611 	 time: 1.09
+local epoch 0 	 client: 6 	 mal: 0 	 loss: 2.09323025 	 time: 1.08
+local epoch 0 	 client: 7 	 mal: 0 	 loss: 2.06804776 	 time: 1.09
+local epoch 0 	 client: 8 	 mal: 0 	 loss: 2.12304497 	 time: 1.08
+local epoch 0 	 client: 9 	 mal: 0 	 loss: 2.10510182 	 time: 1.09
+local epoch 0 	 client: 10 	 mal: 0 	 loss: 2.01474047 	 time: 1.08
+local epoch 0 	 client: 11 	 mal: 0 	 loss: 2.06285572 	 time: 1.09
+local epoch 0 	 client: 12 	 mal: 0 	 loss: 2.05928302 	 time: 1.08
+local epoch 0 	 client: 13 	 mal: 0 	 loss: 2.06790948 	 time: 1.08
+local epoch 0 	 client: 14 	 mal: 0 	 loss: 2.01619720 	 time: 1.08
+local epoch 0 	 client: 15 	 mal: 0 	 loss: 1.96258307 	 time: 1.08
+local epoch 0 	 client: 16 	 mal: 0 	 loss: 2.06837630 	 time: 1.08
+local epoch 0 	 client: 17 	 mal: 0 	 loss: 2.12426472 	 time: 1.08
+local epoch 0 	 client: 18 	 mal: 0 	 loss: 2.05774760 	 time: 1.08
+local epoch 0 	 client: 19 	 mal: 0 	 loss: 1.98951197 	 time: 1.08
+2026-01-15 04:28:01,237 [MainThread  ] [INFO ]  ---------Test 16 ------------
+2026-01-15 04:28:09,884 [MainThread  ] [INFO ]  Clean ACC:              0.1000
+2026-01-15 04:28:09,885 [MainThread  ] [INFO ]  Attack Success Ratio:   0.0000
+2026-01-15 04:28:09,885 [MainThread  ] [INFO ]  Backdoor ACC:           0.1111
+2026-01-15 04:28:09,885 [MainThread  ] [INFO ]  ------------------------------
+2026-01-15 04:28:09,885 [MainThread  ] [INFO ]  --------round 17 ------------
+local epoch 0 	 client: 0 	 mal: 1 	 loss: 1.28907645 	 time: 1.08
+local epoch 0 	 client: 1 	 mal: 1 	 loss: 1.15702903 	 time: 1.08
+local epoch 0 	 client: 2 	 mal: 0 	 loss: 2.00889301 	 time: 1.08
+local epoch 0 	 client: 3 	 mal: 0 	 loss: 2.06785083 	 time: 1.08
+local epoch 0 	 client: 4 	 mal: 0 	 loss: 2.06987238 	 time: 1.08
+local epoch 0 	 client: 5 	 mal: 0 	 loss: 1.98355937 	 time: 1.08
+local epoch 0 	 client: 6 	 mal: 0 	 loss: 2.03830385 	 time: 1.08
+local epoch 0 	 client: 7 	 mal: 0 	 loss: 2.18503237 	 time: 1.08
+local epoch 0 	 client: 8 	 mal: 0 	 loss: 1.90079916 	 time: 1.08
+local epoch 0 	 client: 9 	 mal: 0 	 loss: 1.99998903 	 time: 1.08
+local epoch 0 	 client: 10 	 mal: 0 	 loss: 2.10024977 	 time: 1.08
+local epoch 0 	 client: 11 	 mal: 0 	 loss: 2.13784122 	 time: 1.08
+local epoch 0 	 client: 12 	 mal: 0 	 loss: 1.99394977 	 time: 1.08
+local epoch 0 	 client: 13 	 mal: 0 	 loss: 2.10484123 	 time: 1.08
+local epoch 0 	 client: 14 	 mal: 0 	 loss: 2.14144778 	 time: 1.08
+local epoch 0 	 client: 15 	 mal: 0 	 loss: 2.11321282 	 time: 1.08
+local epoch 0 	 client: 16 	 mal: 0 	 loss: 2.00865221 	 time: 1.08
+local epoch 0 	 client: 17 	 mal: 0 	 loss: 2.02896762 	 time: 1.08
+local epoch 0 	 client: 18 	 mal: 0 	 loss: 2.03570867 	 time: 1.08
+local epoch 0 	 client: 19 	 mal: 0 	 loss: 2.03830385 	 time: 1.08
+2026-01-15 04:28:32,318 [MainThread  ] [INFO ]  ---------Test 17 ------------
+2026-01-15 04:28:41,059 [MainThread  ] [INFO ]  Clean ACC:              0.1000
+2026-01-15 04:28:41,059 [MainThread  ] [INFO ]  Attack Success Ratio:   0.0000
+2026-01-15 04:28:41,059 [MainThread  ] [INFO ]  Backdoor ACC:           0.1111
+2026-01-15 04:28:41,059 [MainThread  ] [INFO ]  ------------------------------
+2026-01-15 04:28:41,059 [MainThread  ] [INFO ]  --------round 18 ------------
+local epoch 0 	 client: 0 	 mal: 1 	 loss: 1.49193144 	 time: 1.09
+local epoch 0 	 client: 1 	 mal: 1 	 loss: 1.58417201 	 time: 1.08
+local epoch 0 	 client: 2 	 mal: 0 	 loss: 2.06642151 	 time: 1.08
+local epoch 0 	 client: 3 	 mal: 0 	 loss: 2.19504309 	 time: 1.08
+local epoch 0 	 client: 4 	 mal: 0 	 loss: 2.14915490 	 time: 1.08
+local epoch 0 	 client: 5 	 mal: 0 	 loss: 2.04580331 	 time: 1.08
+local epoch 0 	 client: 6 	 mal: 0 	 loss: 2.20564079 	 time: 1.08
+local epoch 0 	 client: 7 	 mal: 0 	 loss: 2.09869957 	 time: 1.08
+local epoch 0 	 client: 8 	 mal: 0 	 loss: 2.21644020 	 time: 1.08
+local epoch 0 	 client: 9 	 mal: 0 	 loss: 2.00438070 	 time: 1.08
+local epoch 0 	 client: 10 	 mal: 0 	 loss: 2.08033061 	 time: 1.09
+local epoch 0 	 client: 11 	 mal: 0 	 loss: 2.14110851 	 time: 1.08
+local epoch 0 	 client: 12 	 mal: 0 	 loss: 2.04896140 	 time: 1.09
+local epoch 0 	 client: 13 	 mal: 0 	 loss: 2.11358571 	 time: 1.08
+local epoch 0 	 client: 14 	 mal: 0 	 loss: 2.07082725 	 time: 1.08
+local epoch 0 	 client: 15 	 mal: 0 	 loss: 2.00995636 	 time: 1.08
+local epoch 0 	 client: 16 	 mal: 0 	 loss: 2.10675931 	 time: 1.08
+local epoch 0 	 client: 17 	 mal: 0 	 loss: 1.99490726 	 time: 1.08
+local epoch 0 	 client: 18 	 mal: 0 	 loss: 2.08039904 	 time: 1.08
+local epoch 0 	 client: 19 	 mal: 0 	 loss: 2.04313374 	 time: 1.09
+2026-01-15 04:29:03,521 [MainThread  ] [INFO ]  ---------Test 18 ------------
+2026-01-15 04:29:12,164 [MainThread  ] [INFO ]  Clean ACC:              0.1000
+2026-01-15 04:29:12,164 [MainThread  ] [INFO ]  Attack Success Ratio:   0.0000
+2026-01-15 04:29:12,164 [MainThread  ] [INFO ]  Backdoor ACC:           0.1111
+2026-01-15 04:29:12,164 [MainThread  ] [INFO ]  ------------------------------
+2026-01-15 04:29:12,164 [MainThread  ] [INFO ]  --------round 19 ------------
+local epoch 0 	 client: 0 	 mal: 1 	 loss: 1.28106332 	 time: 1.08
+local epoch 0 	 client: 1 	 mal: 1 	 loss: 1.33972228 	 time: 1.08
+local epoch 0 	 client: 2 	 mal: 0 	 loss: 2.18800426 	 time: 1.08
+local epoch 0 	 client: 3 	 mal: 0 	 loss: 1.92083693 	 time: 1.08
+local epoch 0 	 client: 4 	 mal: 0 	 loss: 2.12216854 	 time: 1.08
+local epoch 0 	 client: 5 	 mal: 0 	 loss: 2.15971136 	 time: 1.08
+local epoch 0 	 client: 6 	 mal: 0 	 loss: 2.15484405 	 time: 1.08
+local epoch 0 	 client: 7 	 mal: 0 	 loss: 2.14740562 	 time: 1.09
+local epoch 0 	 client: 8 	 mal: 0 	 loss: 2.08874536 	 time: 1.08
+local epoch 0 	 client: 9 	 mal: 0 	 loss: 2.06085658 	 time: 1.08
+local epoch 0 	 client: 10 	 mal: 0 	 loss: 2.11664963 	 time: 1.08
+local epoch 0 	 client: 11 	 mal: 0 	 loss: 2.04118466 	 time: 1.09
+local epoch 0 	 client: 12 	 mal: 0 	 loss: 2.08817315 	 time: 1.08
+local epoch 0 	 client: 13 	 mal: 0 	 loss: 2.08772373 	 time: 1.08
+local epoch 0 	 client: 14 	 mal: 0 	 loss: 1.96532059 	 time: 1.08
+local epoch 0 	 client: 15 	 mal: 0 	 loss: 1.95587671 	 time: 1.09
+local epoch 0 	 client: 16 	 mal: 0 	 loss: 2.10819674 	 time: 1.08
+local epoch 0 	 client: 17 	 mal: 0 	 loss: 2.02838588 	 time: 1.08
+local epoch 0 	 client: 18 	 mal: 0 	 loss: 2.04540873 	 time: 1.08
+local epoch 0 	 client: 19 	 mal: 0 	 loss: 2.08775234 	 time: 1.09
+2026-01-15 04:29:34,614 [MainThread  ] [INFO ]  ---------Test 19 ------------
+2026-01-15 04:29:43,362 [MainThread  ] [INFO ]  Clean ACC:              0.1000
+2026-01-15 04:29:43,362 [MainThread  ] [INFO ]  Attack Success Ratio:   0.0000
+2026-01-15 04:29:43,362 [MainThread  ] [INFO ]  Backdoor ACC:           0.1111
+2026-01-15 04:29:43,362 [MainThread  ] [INFO ]  ------------------------------
+2026-01-15 04:29:43,362 [MainThread  ] [INFO ]  --------round 20 ------------
+local epoch 0 	 client: 0 	 mal: 1 	 loss: 1.31172967 	 time: 1.08
+local epoch 0 	 client: 1 	 mal: 1 	 loss: 1.14024663 	 time: 1.09
+local epoch 0 	 client: 2 	 mal: 0 	 loss: 2.11290765 	 time: 1.08
+local epoch 0 	 client: 3 	 mal: 0 	 loss: 1.99398541 	 time: 1.08
+local epoch 0 	 client: 4 	 mal: 0 	 loss: 2.05976510 	 time: 1.08
+local epoch 0 	 client: 5 	 mal: 0 	 loss: 1.98650301 	 time: 1.08
+local epoch 0 	 client: 6 	 mal: 0 	 loss: 2.05619884 	 time: 1.08
+local epoch 0 	 client: 7 	 mal: 0 	 loss: 2.12483978 	 time: 1.08
+local epoch 0 	 client: 8 	 mal: 0 	 loss: 2.11202645 	 time: 1.08
+local epoch 0 	 client: 9 	 mal: 0 	 loss: 2.05582023 	 time: 1.09
+local epoch 0 	 client: 10 	 mal: 0 	 loss: 2.15870190 	 time: 1.08
+local epoch 0 	 client: 11 	 mal: 0 	 loss: 2.01227212 	 time: 1.08
+local epoch 0 	 client: 12 	 mal: 0 	 loss: 2.03031135 	 time: 1.08
+local epoch 0 	 client: 13 	 mal: 0 	 loss: 2.02408552 	 time: 1.08
+local epoch 0 	 client: 14 	 mal: 0 	 loss: 2.10348129 	 time: 1.08
+local epoch 0 	 client: 15 	 mal: 0 	 loss: 2.06805325 	 time: 1.08
+local epoch 0 	 client: 16 	 mal: 0 	 loss: 1.96764350 	 time: 1.08
+local epoch 0 	 client: 17 	 mal: 0 	 loss: 1.99289894 	 time: 1.08
+local epoch 0 	 client: 18 	 mal: 0 	 loss: 2.09479141 	 time: 1.09
+local epoch 0 	 client: 19 	 mal: 0 	 loss: 2.18566751 	 time: 1.08
+2026-01-15 04:30:05,824 [MainThread  ] [INFO ]  ---------Test 20 ------------
+2026-01-15 04:30:14,472 [MainThread  ] [INFO ]  Clean ACC:              0.1000
+2026-01-15 04:30:14,473 [MainThread  ] [INFO ]  Attack Success Ratio:   0.0000
+2026-01-15 04:30:14,473 [MainThread  ] [INFO ]  Backdoor ACC:           0.1111
+2026-01-15 04:30:14,473 [MainThread  ] [INFO ]  ------------------------------
+2026-01-15 04:30:14,473 [MainThread  ] [INFO ]  --------round 21 ------------
+local epoch 0 	 client: 0 	 mal: 1 	 loss: 1.24631953 	 time: 1.08
+local epoch 0 	 client: 1 	 mal: 1 	 loss: 1.24547815 	 time: 1.08
+local epoch 0 	 client: 2 	 mal: 0 	 loss: 2.10867381 	 time: 1.08
+local epoch 0 	 client: 3 	 mal: 0 	 loss: 2.11427379 	 time: 1.08
+local epoch 0 	 client: 4 	 mal: 0 	 loss: 2.11251140 	 time: 1.08
+local epoch 0 	 client: 5 	 mal: 0 	 loss: 2.00179958 	 time: 1.08
+local epoch 0 	 client: 6 	 mal: 0 	 loss: 2.18662238 	 time: 1.09
+local epoch 0 	 client: 7 	 mal: 0 	 loss: 2.05548716 	 time: 1.08
+local epoch 0 	 client: 8 	 mal: 0 	 loss: 2.07895851 	 time: 1.08
+local epoch 0 	 client: 9 	 mal: 0 	 loss: 2.09213138 	 time: 1.08
+local epoch 0 	 client: 10 	 mal: 0 	 loss: 2.03082561 	 time: 1.08
+local epoch 0 	 client: 11 	 mal: 0 	 loss: 2.02853298 	 time: 1.08
+local epoch 0 	 client: 12 	 mal: 0 	 loss: 2.15798044 	 time: 1.08
+local epoch 0 	 client: 13 	 mal: 0 	 loss: 2.03529310 	 time: 1.08
+local epoch 0 	 client: 14 	 mal: 0 	 loss: 1.96344352 	 time: 1.08
+local epoch 0 	 client: 15 	 mal: 0 	 loss: 2.12906837 	 time: 1.08
+local epoch 0 	 client: 16 	 mal: 0 	 loss: 2.14506078 	 time: 1.08
+local epoch 0 	 client: 17 	 mal: 0 	 loss: 2.13051295 	 time: 1.08
+local epoch 0 	 client: 18 	 mal: 0 	 loss: 2.08800721 	 time: 1.08
+local epoch 0 	 client: 19 	 mal: 0 	 loss: 2.12811756 	 time: 1.08
+2026-01-15 04:30:36,914 [MainThread  ] [INFO ]  ---------Test 21 ------------
+2026-01-15 04:30:45,638 [MainThread  ] [INFO ]  Clean ACC:              0.1000
+2026-01-15 04:30:45,638 [MainThread  ] [INFO ]  Attack Success Ratio:   0.0000
+2026-01-15 04:30:45,638 [MainThread  ] [INFO ]  Backdoor ACC:           0.1111
+2026-01-15 04:30:45,639 [MainThread  ] [INFO ]  ------------------------------
+2026-01-15 04:30:45,639 [MainThread  ] [INFO ]  --------round 22 ------------
+local epoch 0 	 client: 0 	 mal: 1 	 loss: 1.40927923 	 time: 1.09
+local epoch 0 	 client: 1 	 mal: 1 	 loss: 1.51571226 	 time: 1.08
+local epoch 0 	 client: 2 	 mal: 0 	 loss: 1.99209058 	 time: 1.09
+local epoch 0 	 client: 3 	 mal: 0 	 loss: 2.08268142 	 time: 1.08
+local epoch 0 	 client: 4 	 mal: 0 	 loss: 2.01528049 	 time: 1.09
+local epoch 0 	 client: 5 	 mal: 0 	 loss: 2.03835201 	 time: 1.08
+local epoch 0 	 client: 6 	 mal: 0 	 loss: 2.21750593 	 time: 1.08
+local epoch 0 	 client: 7 	 mal: 0 	 loss: 2.12102032 	 time: 1.08
+local epoch 0 	 client: 8 	 mal: 0 	 loss: 2.01907682 	 time: 1.08
+local epoch 0 	 client: 9 	 mal: 0 	 loss: 2.05749536 	 time: 1.08
+local epoch 0 	 client: 10 	 mal: 0 	 loss: 2.06524754 	 time: 1.08
+local epoch 0 	 client: 11 	 mal: 0 	 loss: 2.25181293 	 time: 1.08
+local epoch 0 	 client: 12 	 mal: 0 	 loss: 2.11756539 	 time: 1.09
+local epoch 0 	 client: 13 	 mal: 0 	 loss: 2.12863064 	 time: 1.08
+local epoch 0 	 client: 14 	 mal: 0 	 loss: 2.07253194 	 time: 1.08
+local epoch 0 	 client: 15 	 mal: 0 	 loss: 2.14490271 	 time: 1.08
+local epoch 0 	 client: 16 	 mal: 0 	 loss: 2.02577090 	 time: 1.08
+local epoch 0 	 client: 17 	 mal: 0 	 loss: 2.15763879 	 time: 1.08
+local epoch 0 	 client: 18 	 mal: 0 	 loss: 2.00619793 	 time: 1.08
+local epoch 0 	 client: 19 	 mal: 0 	 loss: 2.10930634 	 time: 1.09
+2026-01-15 04:31:08,115 [MainThread  ] [INFO ]  ---------Test 22 ------------
+2026-01-15 04:31:16,767 [MainThread  ] [INFO ]  Clean ACC:              0.1000
+2026-01-15 04:31:16,767 [MainThread  ] [INFO ]  Attack Success Ratio:   0.0000
+2026-01-15 04:31:16,767 [MainThread  ] [INFO ]  Backdoor ACC:           0.1111
+2026-01-15 04:31:16,767 [MainThread  ] [INFO ]  ------------------------------
+2026-01-15 04:31:16,767 [MainThread  ] [INFO ]  --------round 23 ------------
+local epoch 0 	 client: 0 	 mal: 1 	 loss: 1.53092194 	 time: 1.08
+local epoch 0 	 client: 1 	 mal: 1 	 loss: 1.48051572 	 time: 1.08
+local epoch 0 	 client: 2 	 mal: 0 	 loss: 2.04138970 	 time: 1.08
+local epoch 0 	 client: 3 	 mal: 0 	 loss: 2.01716137 	 time: 1.08
+local epoch 0 	 client: 4 	 mal: 0 	 loss: 2.04065537 	 time: 1.08
+local epoch 0 	 client: 5 	 mal: 0 	 loss: 2.10047579 	 time: 1.08
+local epoch 0 	 client: 6 	 mal: 0 	 loss: 2.06455564 	 time: 1.08
+local epoch 0 	 client: 7 	 mal: 0 	 loss: 2.13403368 	 time: 1.08
+local epoch 0 	 client: 8 	 mal: 0 	 loss: 2.05372190 	 time: 1.08
+local epoch 0 	 client: 9 	 mal: 0 	 loss: 2.02942491 	 time: 1.09
+local epoch 0 	 client: 10 	 mal: 0 	 loss: 2.05207515 	 time: 1.08
+local epoch 0 	 client: 11 	 mal: 0 	 loss: 2.12656283 	 time: 1.08
+local epoch 0 	 client: 12 	 mal: 0 	 loss: 2.10728312 	 time: 1.08
+local epoch 0 	 client: 13 	 mal: 0 	 loss: 2.08888483 	 time: 1.08
+local epoch 0 	 client: 14 	 mal: 0 	 loss: 2.16377163 	 time: 1.08
+local epoch 0 	 client: 15 	 mal: 0 	 loss: 2.23966813 	 time: 1.08
+local epoch 0 	 client: 16 	 mal: 0 	 loss: 1.98957002 	 time: 1.08
+local epoch 0 	 client: 17 	 mal: 0 	 loss: 2.04450440 	 time: 1.08
+local epoch 0 	 client: 18 	 mal: 0 	 loss: 2.10921526 	 time: 1.08
+local epoch 0 	 client: 19 	 mal: 0 	 loss: 2.03458381 	 time: 1.08
+2026-01-15 04:31:39,207 [MainThread  ] [INFO ]  ---------Test 23 ------------
+2026-01-15 04:31:47,936 [MainThread  ] [INFO ]  Clean ACC:              0.1000
+2026-01-15 04:31:47,936 [MainThread  ] [INFO ]  Attack Success Ratio:   0.0000
+2026-01-15 04:31:47,936 [MainThread  ] [INFO ]  Backdoor ACC:           0.1111
+2026-01-15 04:31:47,936 [MainThread  ] [INFO ]  ------------------------------
+2026-01-15 04:31:47,936 [MainThread  ] [INFO ]  --------round 24 ------------
+local epoch 0 	 client: 0 	 mal: 1 	 loss: 1.29003525 	 time: 1.08
+local epoch 0 	 client: 1 	 mal: 1 	 loss: 1.28618205 	 time: 1.08
+local epoch 0 	 client: 2 	 mal: 0 	 loss: 2.19612980 	 time: 1.08
+local epoch 0 	 client: 3 	 mal: 0 	 loss: 2.10965466 	 time: 1.08
+local epoch 0 	 client: 4 	 mal: 0 	 loss: 2.14378738 	 time: 1.08
+local epoch 0 	 client: 5 	 mal: 0 	 loss: 2.11939692 	 time: 1.08
+local epoch 0 	 client: 6 	 mal: 0 	 loss: 2.18435359 	 time: 1.08
+local epoch 0 	 client: 7 	 mal: 0 	 loss: 2.05697727 	 time: 1.08
+local epoch 0 	 client: 8 	 mal: 0 	 loss: 1.98239326 	 time: 1.08
+local epoch 0 	 client: 9 	 mal: 0 	 loss: 2.02990437 	 time: 1.08
+local epoch 0 	 client: 10 	 mal: 0 	 loss: 2.09197807 	 time: 1.08
+local epoch 0 	 client: 11 	 mal: 0 	 loss: 2.14116955 	 time: 1.08
+local epoch 0 	 client: 12 	 mal: 0 	 loss: 2.04055071 	 time: 1.08
+local epoch 0 	 client: 13 	 mal: 0 	 loss: 2.11382031 	 time: 1.08
+local epoch 0 	 client: 14 	 mal: 0 	 loss: 1.98125076 	 time: 1.08
+local epoch 0 	 client: 15 	 mal: 0 	 loss: 2.16160583 	 time: 1.08
+local epoch 0 	 client: 16 	 mal: 0 	 loss: 2.08429694 	 time: 1.08
+local epoch 0 	 client: 17 	 mal: 0 	 loss: 2.20878196 	 time: 1.08
+local epoch 0 	 client: 18 	 mal: 0 	 loss: 2.11899328 	 time: 1.08
+local epoch 0 	 client: 19 	 mal: 0 	 loss: 2.07096505 	 time: 1.08
+2026-01-15 04:32:10,357 [MainThread  ] [INFO ]  ---------Test 24 ------------
+2026-01-15 04:32:18,985 [MainThread  ] [INFO ]  Clean ACC:              0.1000
+2026-01-15 04:32:18,985 [MainThread  ] [INFO ]  Attack Success Ratio:   0.0000
+2026-01-15 04:32:18,985 [MainThread  ] [INFO ]  Backdoor ACC:           0.1111
+2026-01-15 04:32:18,985 [MainThread  ] [INFO ]  ------------------------------
+2026-01-15 04:32:18,985 [MainThread  ] [INFO ]  --------round 25 ------------
+local epoch 0 	 client: 0 	 mal: 1 	 loss: 1.48179924 	 time: 1.08
+local epoch 0 	 client: 1 	 mal: 1 	 loss: 1.33358002 	 time: 1.08
+local epoch 0 	 client: 2 	 mal: 0 	 loss: 2.12667251 	 time: 1.08
+local epoch 0 	 client: 3 	 mal: 0 	 loss: 2.18915939 	 time: 1.08
+local epoch 0 	 client: 4 	 mal: 0 	 loss: 2.05052400 	 time: 1.08
+local epoch 0 	 client: 5 	 mal: 0 	 loss: 2.01745057 	 time: 1.08
+local epoch 0 	 client: 6 	 mal: 0 	 loss: 2.21872568 	 time: 1.08
+local epoch 0 	 client: 7 	 mal: 0 	 loss: 1.98908067 	 time: 1.08
+local epoch 0 	 client: 8 	 mal: 0 	 loss: 1.98992360 	 time: 1.08
+local epoch 0 	 client: 9 	 mal: 0 	 loss: 2.06601810 	 time: 1.08
+local epoch 0 	 client: 10 	 mal: 0 	 loss: 2.15031242 	 time: 1.08
+local epoch 0 	 client: 11 	 mal: 0 	 loss: 2.25792289 	 time: 1.08
+local epoch 0 	 client: 12 	 mal: 0 	 loss: 2.05388355 	 time: 1.09
+local epoch 0 	 client: 13 	 mal: 0 	 loss: 2.13948560 	 time: 1.08
+local epoch 0 	 client: 14 	 mal: 0 	 loss: 2.02854276 	 time: 1.08
+local epoch 0 	 client: 15 	 mal: 0 	 loss: 2.10629106 	 time: 1.08
+local epoch 0 	 client: 16 	 mal: 0 	 loss: 2.14627051 	 time: 1.08
+local epoch 0 	 client: 17 	 mal: 0 	 loss: 2.12585950 	 time: 1.08
+local epoch 0 	 client: 18 	 mal: 0 	 loss: 2.07168770 	 time: 1.08
+local epoch 0 	 client: 19 	 mal: 0 	 loss: 1.94969487 	 time: 1.08
+2026-01-15 04:32:41,428 [MainThread  ] [INFO ]  ---------Test 25 ------------
+2026-01-15 04:32:50,171 [MainThread  ] [INFO ]  Clean ACC:              0.1000
+2026-01-15 04:32:50,172 [MainThread  ] [INFO ]  Attack Success Ratio:   0.0000
+2026-01-15 04:32:50,172 [MainThread  ] [INFO ]  Backdoor ACC:           0.1111
+2026-01-15 04:32:50,172 [MainThread  ] [INFO ]  ------------------------------
+2026-01-15 04:32:50,172 [MainThread  ] [INFO ]  --------round 26 ------------
+local epoch 0 	 client: 0 	 mal: 1 	 loss: 1.12654090 	 time: 1.08
+local epoch 0 	 client: 1 	 mal: 1 	 loss: 1.27590835 	 time: 1.08
+local epoch 0 	 client: 2 	 mal: 0 	 loss: 2.10759544 	 time: 1.08
+local epoch 0 	 client: 3 	 mal: 0 	 loss: 2.06351948 	 time: 1.08
+local epoch 0 	 client: 4 	 mal: 0 	 loss: 2.03517675 	 time: 1.08
+local epoch 0 	 client: 5 	 mal: 0 	 loss: 2.08753538 	 time: 1.08
+local epoch 0 	 client: 6 	 mal: 0 	 loss: 2.10828876 	 time: 1.09
+local epoch 0 	 client: 7 	 mal: 0 	 loss: 2.02113175 	 time: 1.08
+local epoch 0 	 client: 8 	 mal: 0 	 loss: 2.03842711 	 time: 1.08
+local epoch 0 	 client: 9 	 mal: 0 	 loss: 2.12855959 	 time: 1.08
+local epoch 0 	 client: 10 	 mal: 0 	 loss: 2.16934633 	 time: 1.08
+local epoch 0 	 client: 11 	 mal: 0 	 loss: 2.17868519 	 time: 1.08
+local epoch 0 	 client: 12 	 mal: 0 	 loss: 2.15022922 	 time: 1.08
+local epoch 0 	 client: 13 	 mal: 0 	 loss: 2.12560701 	 time: 1.08
+local epoch 0 	 client: 14 	 mal: 0 	 loss: 2.09284377 	 time: 1.08
+local epoch 0 	 client: 15 	 mal: 0 	 loss: 2.08806920 	 time: 1.08
+local epoch 0 	 client: 16 	 mal: 0 	 loss: 2.12340713 	 time: 1.08
+local epoch 0 	 client: 17 	 mal: 0 	 loss: 2.19074106 	 time: 1.08
+local epoch 0 	 client: 18 	 mal: 0 	 loss: 1.96788108 	 time: 1.08
+local epoch 0 	 client: 19 	 mal: 0 	 loss: 2.11281610 	 time: 1.08
+2026-01-15 04:33:12,625 [MainThread  ] [INFO ]  ---------Test 26 ------------
+2026-01-15 04:33:21,273 [MainThread  ] [INFO ]  Clean ACC:              0.1000
+2026-01-15 04:33:21,274 [MainThread  ] [INFO ]  Attack Success Ratio:   0.0000
+2026-01-15 04:33:21,274 [MainThread  ] [INFO ]  Backdoor ACC:           0.1111
+2026-01-15 04:33:21,274 [MainThread  ] [INFO ]  ------------------------------
+2026-01-15 04:33:21,274 [MainThread  ] [INFO ]  --------round 27 ------------
+local epoch 0 	 client: 0 	 mal: 1 	 loss: 0.95539027 	 time: 1.08
+local epoch 0 	 client: 1 	 mal: 1 	 loss: 1.50819600 	 time: 1.09
+local epoch 0 	 client: 2 	 mal: 0 	 loss: 2.17331505 	 time: 1.08
+local epoch 0 	 client: 3 	 mal: 0 	 loss: 2.10205674 	 time: 1.08
+local epoch 0 	 client: 4 	 mal: 0 	 loss: 2.10134268 	 time: 1.08
+local epoch 0 	 client: 5 	 mal: 0 	 loss: 2.05252957 	 time: 1.07
+local epoch 0 	 client: 6 	 mal: 0 	 loss: 2.16333485 	 time: 1.08
+local epoch 0 	 client: 7 	 mal: 0 	 loss: 1.90189815 	 time: 1.08
+local epoch 0 	 client: 8 	 mal: 0 	 loss: 2.09515548 	 time: 1.08
+local epoch 0 	 client: 9 	 mal: 0 	 loss: 1.99136949 	 time: 1.08
+local epoch 0 	 client: 10 	 mal: 0 	 loss: 2.05380726 	 time: 1.08
+local epoch 0 	 client: 11 	 mal: 0 	 loss: 2.08827925 	 time: 1.08
+local epoch 0 	 client: 12 	 mal: 0 	 loss: 2.15854812 	 time: 1.08
+local epoch 0 	 client: 13 	 mal: 0 	 loss: 2.05912495 	 time: 1.08
+local epoch 0 	 client: 14 	 mal: 0 	 loss: 2.08090568 	 time: 1.08
+local epoch 0 	 client: 15 	 mal: 0 	 loss: 2.14974833 	 time: 1.08
+local epoch 0 	 client: 16 	 mal: 0 	 loss: 2.06391883 	 time: 1.07
+local epoch 0 	 client: 17 	 mal: 0 	 loss: 2.15739179 	 time: 1.08
+local epoch 0 	 client: 18 	 mal: 0 	 loss: 1.94373453 	 time: 1.07
+local epoch 0 	 client: 19 	 mal: 0 	 loss: 2.04572988 	 time: 1.08
+2026-01-15 04:33:43,640 [MainThread  ] [INFO ]  ---------Test 27 ------------
+2026-01-15 04:33:52,372 [MainThread  ] [INFO ]  Clean ACC:              0.1000
+2026-01-15 04:33:52,373 [MainThread  ] [INFO ]  Attack Success Ratio:   0.0000
+2026-01-15 04:33:52,373 [MainThread  ] [INFO ]  Backdoor ACC:           0.1111
+2026-01-15 04:33:52,373 [MainThread  ] [INFO ]  ------------------------------
+2026-01-15 04:33:52,373 [MainThread  ] [INFO ]  --------round 28 ------------
+local epoch 0 	 client: 0 	 mal: 1 	 loss: 1.25305700 	 time: 1.08
+local epoch 0 	 client: 1 	 mal: 1 	 loss: 1.29837167 	 time: 1.07
+local epoch 0 	 client: 2 	 mal: 0 	 loss: 2.02958155 	 time: 1.07
+local epoch 0 	 client: 3 	 mal: 0 	 loss: 2.11632752 	 time: 1.08
+local epoch 0 	 client: 4 	 mal: 0 	 loss: 2.01734972 	 time: 1.08
+local epoch 0 	 client: 5 	 mal: 0 	 loss: 2.04752707 	 time: 1.08
+local epoch 0 	 client: 6 	 mal: 0 	 loss: 2.11568356 	 time: 1.07
+local epoch 0 	 client: 7 	 mal: 0 	 loss: 2.17588615 	 time: 1.08
+local epoch 0 	 client: 8 	 mal: 0 	 loss: 2.04001665 	 time: 1.08
+local epoch 0 	 client: 9 	 mal: 0 	 loss: 1.96884036 	 time: 1.08
+local epoch 0 	 client: 10 	 mal: 0 	 loss: 2.05980396 	 time: 1.08
+local epoch 0 	 client: 11 	 mal: 0 	 loss: 2.10830688 	 time: 1.07
+local epoch 0 	 client: 12 	 mal: 0 	 loss: 2.07837844 	 time: 1.08
+local epoch 0 	 client: 13 	 mal: 0 	 loss: 2.18148065 	 time: 1.08
+local epoch 0 	 client: 14 	 mal: 0 	 loss: 2.12756157 	 time: 1.08
+local epoch 0 	 client: 15 	 mal: 0 	 loss: 2.10885787 	 time: 1.07
+local epoch 0 	 client: 16 	 mal: 0 	 loss: 2.08768129 	 time: 1.08
+local epoch 0 	 client: 17 	 mal: 0 	 loss: 2.12426448 	 time: 1.07
+local epoch 0 	 client: 18 	 mal: 0 	 loss: 2.07844329 	 time: 1.08
+local epoch 0 	 client: 19 	 mal: 0 	 loss: 2.14554048 	 time: 1.07
+2026-01-15 04:34:14,697 [MainThread  ] [INFO ]  ---------Test 28 ------------
+2026-01-15 04:34:23,361 [MainThread  ] [INFO ]  Clean ACC:              0.1000
+2026-01-15 04:34:23,362 [MainThread  ] [INFO ]  Attack Success Ratio:   0.0000
+2026-01-15 04:34:23,362 [MainThread  ] [INFO ]  Backdoor ACC:           0.1111
+2026-01-15 04:34:23,362 [MainThread  ] [INFO ]  ------------------------------
+2026-01-15 04:34:23,362 [MainThread  ] [INFO ]  --------round 29 ------------
+local epoch 0 	 client: 0 	 mal: 1 	 loss: 1.26286328 	 time: 1.08
+local epoch 0 	 client: 1 	 mal: 1 	 loss: 1.42924869 	 time: 1.08
+local epoch 0 	 client: 2 	 mal: 0 	 loss: 1.99242032 	 time: 1.07
+local epoch 0 	 client: 3 	 mal: 0 	 loss: 1.99838936 	 time: 1.07
+local epoch 0 	 client: 4 	 mal: 0 	 loss: 2.08875918 	 time: 1.08
+local epoch 0 	 client: 5 	 mal: 0 	 loss: 2.08375573 	 time: 1.08
+local epoch 0 	 client: 6 	 mal: 0 	 loss: 2.02456903 	 time: 1.07
+local epoch 0 	 client: 7 	 mal: 0 	 loss: 2.19744492 	 time: 1.07
+local epoch 0 	 client: 8 	 mal: 0 	 loss: 2.23608375 	 time: 1.07
+local epoch 0 	 client: 9 	 mal: 0 	 loss: 2.05798101 	 time: 1.07
+local epoch 0 	 client: 10 	 mal: 0 	 loss: 2.14395070 	 time: 1.08
+local epoch 0 	 client: 11 	 mal: 0 	 loss: 2.22462440 	 time: 1.08
+local epoch 0 	 client: 12 	 mal: 0 	 loss: 1.98631406 	 time: 1.08
+local epoch 0 	 client: 13 	 mal: 0 	 loss: 1.99368513 	 time: 1.08
+local epoch 0 	 client: 14 	 mal: 0 	 loss: 2.06155944 	 time: 1.08
+local epoch 0 	 client: 15 	 mal: 0 	 loss: 2.07981539 	 time: 1.08
+local epoch 0 	 client: 16 	 mal: 0 	 loss: 2.10225201 	 time: 1.08
+local epoch 0 	 client: 17 	 mal: 0 	 loss: 2.12214756 	 time: 1.08
+local epoch 0 	 client: 18 	 mal: 0 	 loss: 2.06646800 	 time: 1.07
+local epoch 0 	 client: 19 	 mal: 0 	 loss: 2.10157442 	 time: 1.08
+2026-01-15 04:34:45,704 [MainThread  ] [INFO ]  ---------Test 29 ------------
+2026-01-15 04:34:54,438 [MainThread  ] [INFO ]  Clean ACC:              0.1000
+2026-01-15 04:34:54,438 [MainThread  ] [INFO ]  Attack Success Ratio:   0.0000
+2026-01-15 04:34:54,438 [MainThread  ] [INFO ]  Backdoor ACC:           0.1111
+2026-01-15 04:34:54,438 [MainThread  ] [INFO ]  ------------------------------
+2026-01-15 04:34:54,438 [MainThread  ] [INFO ]  --------round 30 ------------
+local epoch 0 	 client: 0 	 mal: 1 	 loss: 1.14957190 	 time: 1.08
+local epoch 0 	 client: 1 	 mal: 1 	 loss: 1.26008964 	 time: 1.08
+local epoch 0 	 client: 2 	 mal: 0 	 loss: 2.15261126 	 time: 1.08
+local epoch 0 	 client: 3 	 mal: 0 	 loss: 2.03280258 	 time: 1.08
+local epoch 0 	 client: 4 	 mal: 0 	 loss: 2.10439897 	 time: 1.08
+local epoch 0 	 client: 5 	 mal: 0 	 loss: 2.06125832 	 time: 1.08
+local epoch 0 	 client: 6 	 mal: 0 	 loss: 2.00898170 	 time: 1.08
+local epoch 0 	 client: 7 	 mal: 0 	 loss: 2.07554722 	 time: 1.08
+local epoch 0 	 client: 8 	 mal: 0 	 loss: 2.11241841 	 time: 1.08
+local epoch 0 	 client: 9 	 mal: 0 	 loss: 1.94195652 	 time: 1.08
+local epoch 0 	 client: 10 	 mal: 0 	 loss: 2.15949225 	 time: 1.08
+local epoch 0 	 client: 11 	 mal: 0 	 loss: 2.07871270 	 time: 1.08
+local epoch 0 	 client: 12 	 mal: 0 	 loss: 2.11090946 	 time: 1.08
+local epoch 0 	 client: 13 	 mal: 0 	 loss: 2.09955454 	 time: 1.08
+local epoch 0 	 client: 14 	 mal: 0 	 loss: 2.11016035 	 time: 1.08
+local epoch 0 	 client: 15 	 mal: 0 	 loss: 2.20064139 	 time: 1.08
+local epoch 0 	 client: 16 	 mal: 0 	 loss: 2.15289450 	 time: 1.07
+local epoch 0 	 client: 17 	 mal: 0 	 loss: 2.13507295 	 time: 1.08
+local epoch 0 	 client: 18 	 mal: 0 	 loss: 2.01429296 	 time: 1.08
+local epoch 0 	 client: 19 	 mal: 0 	 loss: 2.12184596 	 time: 1.08
+2026-01-15 04:35:16,801 [MainThread  ] [INFO ]  ---------Test 30 ------------
+2026-01-15 04:35:25,455 [MainThread  ] [INFO ]  Clean ACC:              0.1000
+2026-01-15 04:35:25,455 [MainThread  ] [INFO ]  Attack Success Ratio:   0.0000
+2026-01-15 04:35:25,455 [MainThread  ] [INFO ]  Backdoor ACC:           0.1111
+2026-01-15 04:35:25,455 [MainThread  ] [INFO ]  ------------------------------
+2026-01-15 04:35:25,455 [MainThread  ] [INFO ]  --------round 31 ------------
+local epoch 0 	 client: 0 	 mal: 1 	 loss: 1.43064260 	 time: 1.08
+local epoch 0 	 client: 1 	 mal: 1 	 loss: 1.15973687 	 time: 1.08
+local epoch 0 	 client: 2 	 mal: 0 	 loss: 2.11468220 	 time: 1.08
+local epoch 0 	 client: 3 	 mal: 0 	 loss: 2.04112720 	 time: 1.08
+local epoch 0 	 client: 4 	 mal: 0 	 loss: 2.10929585 	 time: 1.08
+local epoch 0 	 client: 5 	 mal: 0 	 loss: 2.14075899 	 time: 1.08
+local epoch 0 	 client: 6 	 mal: 0 	 loss: 2.01722145 	 time: 1.08
+local epoch 0 	 client: 7 	 mal: 0 	 loss: 2.12770557 	 time: 1.08
+local epoch 0 	 client: 8 	 mal: 0 	 loss: 2.05988717 	 time: 1.07
+local epoch 0 	 client: 9 	 mal: 0 	 loss: 2.01956296 	 time: 1.08
+local epoch 0 	 client: 10 	 mal: 0 	 loss: 2.13396716 	 time: 1.08
+local epoch 0 	 client: 11 	 mal: 0 	 loss: 2.01865840 	 time: 1.08
+local epoch 0 	 client: 12 	 mal: 0 	 loss: 2.05922365 	 time: 1.08
+local epoch 0 	 client: 13 	 mal: 0 	 loss: 2.11771464 	 time: 1.08
+local epoch 0 	 client: 14 	 mal: 0 	 loss: 2.07746196 	 time: 1.08
+local epoch 0 	 client: 15 	 mal: 0 	 loss: 2.11746955 	 time: 1.08
+local epoch 0 	 client: 16 	 mal: 0 	 loss: 2.06487560 	 time: 1.08
+local epoch 0 	 client: 17 	 mal: 0 	 loss: 2.08928752 	 time: 1.07
+local epoch 0 	 client: 18 	 mal: 0 	 loss: 2.01318502 	 time: 1.07
+local epoch 0 	 client: 19 	 mal: 0 	 loss: 2.04314566 	 time: 1.07
+2026-01-15 04:35:47,792 [MainThread  ] [INFO ]  ---------Test 31 ------------
+2026-01-15 04:35:56,549 [MainThread  ] [INFO ]  Clean ACC:              0.1000
+2026-01-15 04:35:56,549 [MainThread  ] [INFO ]  Attack Success Ratio:   0.0000
+2026-01-15 04:35:56,549 [MainThread  ] [INFO ]  Backdoor ACC:           0.1111
+2026-01-15 04:35:56,549 [MainThread  ] [INFO ]  ------------------------------
+2026-01-15 04:35:56,549 [MainThread  ] [INFO ]  --------round 32 ------------
+local epoch 0 	 client: 0 	 mal: 1 	 loss: 1.54415214 	 time: 1.07
+local epoch 0 	 client: 1 	 mal: 1 	 loss: 1.46449697 	 time: 1.08
+local epoch 0 	 client: 2 	 mal: 0 	 loss: 2.12581134 	 time: 1.07
+local epoch 0 	 client: 3 	 mal: 0 	 loss: 2.05085015 	 time: 1.07
+local epoch 0 	 client: 4 	 mal: 0 	 loss: 2.06744933 	 time: 1.07
+local epoch 0 	 client: 5 	 mal: 0 	 loss: 2.04126191 	 time: 1.07
+local epoch 0 	 client: 6 	 mal: 0 	 loss: 2.03355455 	 time: 1.08
+local epoch 0 	 client: 7 	 mal: 0 	 loss: 2.04567981 	 time: 1.07
+local epoch 0 	 client: 8 	 mal: 0 	 loss: 2.07163095 	 time: 1.08
+local epoch 0 	 client: 9 	 mal: 0 	 loss: 2.05170679 	 time: 1.07
+local epoch 0 	 client: 10 	 mal: 0 	 loss: 2.10535145 	 time: 1.08
+local epoch 0 	 client: 11 	 mal: 0 	 loss: 2.29559994 	 time: 1.08
+local epoch 0 	 client: 12 	 mal: 0 	 loss: 2.04902768 	 time: 1.08
+local epoch 0 	 client: 13 	 mal: 0 	 loss: 2.14831185 	 time: 1.08
+local epoch 0 	 client: 14 	 mal: 0 	 loss: 2.16131854 	 time: 1.08
+local epoch 0 	 client: 15 	 mal: 0 	 loss: 2.17528272 	 time: 1.07
+local epoch 0 	 client: 16 	 mal: 0 	 loss: 2.17316365 	 time: 1.07
+local epoch 0 	 client: 17 	 mal: 0 	 loss: 2.15193248 	 time: 1.07
+local epoch 0 	 client: 18 	 mal: 0 	 loss: 2.04221630 	 time: 1.07
+local epoch 0 	 client: 19 	 mal: 0 	 loss: 2.07749605 	 time: 1.07
+2026-01-15 04:36:18,848 [MainThread  ] [INFO ]  ---------Test 32 ------------
+2026-01-15 04:36:27,524 [MainThread  ] [INFO ]  Clean ACC:              0.1000
+2026-01-15 04:36:27,524 [MainThread  ] [INFO ]  Attack Success Ratio:   0.0000
+2026-01-15 04:36:27,524 [MainThread  ] [INFO ]  Backdoor ACC:           0.1111
+2026-01-15 04:36:27,524 [MainThread  ] [INFO ]  ------------------------------
+2026-01-15 04:36:27,524 [MainThread  ] [INFO ]  --------round 33 ------------
+local epoch 0 	 client: 0 	 mal: 1 	 loss: 1.34929228 	 time: 1.08
+local epoch 0 	 client: 1 	 mal: 1 	 loss: 1.83175850 	 time: 1.07
+local epoch 0 	 client: 2 	 mal: 0 	 loss: 2.15691376 	 time: 1.07
+local epoch 0 	 client: 3 	 mal: 0 	 loss: 2.10689998 	 time: 1.07
+local epoch 0 	 client: 4 	 mal: 0 	 loss: 2.16654015 	 time: 1.08
+local epoch 0 	 client: 5 	 mal: 0 	 loss: 2.07471156 	 time: 1.08
+local epoch 0 	 client: 6 	 mal: 0 	 loss: 2.20597625 	 time: 1.06
+local epoch 0 	 client: 7 	 mal: 0 	 loss: 2.09375548 	 time: 1.07
+local epoch 0 	 client: 8 	 mal: 0 	 loss: 2.13349319 	 time: 1.07
+local epoch 0 	 client: 9 	 mal: 0 	 loss: 2.05522799 	 time: 1.08
+local epoch 0 	 client: 10 	 mal: 0 	 loss: 2.06395268 	 time: 1.07
+local epoch 0 	 client: 11 	 mal: 0 	 loss: 2.12943840 	 time: 1.08
+local epoch 0 	 client: 12 	 mal: 0 	 loss: 2.20667481 	 time: 1.07
+local epoch 0 	 client: 13 	 mal: 0 	 loss: 2.08710432 	 time: 1.07
+local epoch 0 	 client: 14 	 mal: 0 	 loss: 2.04733157 	 time: 1.07
+local epoch 0 	 client: 15 	 mal: 0 	 loss: 1.96914399 	 time: 1.08
+local epoch 0 	 client: 16 	 mal: 0 	 loss: 2.01909518 	 time: 1.07
+local epoch 0 	 client: 17 	 mal: 0 	 loss: 2.12659097 	 time: 1.08
+local epoch 0 	 client: 18 	 mal: 0 	 loss: 2.12807274 	 time: 1.06
+local epoch 0 	 client: 19 	 mal: 0 	 loss: 2.00648808 	 time: 1.08
+2026-01-15 04:36:49,791 [MainThread  ] [INFO ]  ---------Test 33 ------------
+2026-01-15 04:36:58,517 [MainThread  ] [INFO ]  Clean ACC:              0.1000
+2026-01-15 04:36:58,517 [MainThread  ] [INFO ]  Attack Success Ratio:   0.0000
+2026-01-15 04:36:58,517 [MainThread  ] [INFO ]  Backdoor ACC:           0.1111
+2026-01-15 04:36:58,517 [MainThread  ] [INFO ]  ------------------------------
+2026-01-15 04:36:58,517 [MainThread  ] [INFO ]  --------round 34 ------------
+local epoch 0 	 client: 0 	 mal: 1 	 loss: 1.33074200 	 time: 1.07
+local epoch 0 	 client: 1 	 mal: 1 	 loss: 1.00603735 	 time: 1.07
+local epoch 0 	 client: 2 	 mal: 0 	 loss: 2.12625599 	 time: 1.08
+local epoch 0 	 client: 3 	 mal: 0 	 loss: 2.20357251 	 time: 1.08
+local epoch 0 	 client: 4 	 mal: 0 	 loss: 2.13056612 	 time: 1.07
+local epoch 0 	 client: 5 	 mal: 0 	 loss: 2.01351666 	 time: 1.08
+local epoch 0 	 client: 6 	 mal: 0 	 loss: 2.09693265 	 time: 1.07
+local epoch 0 	 client: 7 	 mal: 0 	 loss: 2.14772224 	 time: 1.06
+local epoch 0 	 client: 8 	 mal: 0 	 loss: 2.21896338 	 time: 1.08
+local epoch 0 	 client: 9 	 mal: 0 	 loss: 2.20562482 	 time: 1.08
+local epoch 0 	 client: 10 	 mal: 0 	 loss: 2.18915772 	 time: 1.07
+local epoch 0 	 client: 11 	 mal: 0 	 loss: 2.06784916 	 time: 1.08
+local epoch 0 	 client: 12 	 mal: 0 	 loss: 1.98479354 	 time: 1.07
+local epoch 0 	 client: 13 	 mal: 0 	 loss: 2.04306746 	 time: 1.08
+local epoch 0 	 client: 14 	 mal: 0 	 loss: 2.01290250 	 time: 1.08
+local epoch 0 	 client: 15 	 mal: 0 	 loss: 2.21677065 	 time: 1.07
+local epoch 0 	 client: 16 	 mal: 0 	 loss: 2.08623695 	 time: 1.08
+local epoch 0 	 client: 17 	 mal: 0 	 loss: 2.14979053 	 time: 1.08
+local epoch 0 	 client: 18 	 mal: 0 	 loss: 2.17809105 	 time: 1.08
+local epoch 0 	 client: 19 	 mal: 0 	 loss: 2.22848272 	 time: 1.08
+2026-01-15 04:37:20,815 [MainThread  ] [INFO ]  ---------Test 34 ------------
+2026-01-15 04:37:29,469 [MainThread  ] [INFO ]  Clean ACC:              0.1000
+2026-01-15 04:37:29,469 [MainThread  ] [INFO ]  Attack Success Ratio:   0.0000
+2026-01-15 04:37:29,469 [MainThread  ] [INFO ]  Backdoor ACC:           0.1111
+2026-01-15 04:37:29,469 [MainThread  ] [INFO ]  ------------------------------
+2026-01-15 04:37:29,469 [MainThread  ] [INFO ]  --------round 35 ------------
+local epoch 0 	 client: 0 	 mal: 1 	 loss: 1.40409017 	 time: 1.08
+local epoch 0 	 client: 1 	 mal: 1 	 loss: 1.30704808 	 time: 1.08
+local epoch 0 	 client: 2 	 mal: 0 	 loss: 2.12659740 	 time: 1.08
+local epoch 0 	 client: 3 	 mal: 0 	 loss: 2.16032314 	 time: 1.07
+local epoch 0 	 client: 4 	 mal: 0 	 loss: 2.04968977 	 time: 1.08
+local epoch 0 	 client: 5 	 mal: 0 	 loss: 2.15992022 	 time: 1.07
+local epoch 0 	 client: 6 	 mal: 0 	 loss: 2.12031245 	 time: 1.08
+local epoch 0 	 client: 7 	 mal: 0 	 loss: 2.24229383 	 time: 1.07
+local epoch 0 	 client: 8 	 mal: 0 	 loss: 2.05638409 	 time: 1.08
+local epoch 0 	 client: 9 	 mal: 0 	 loss: 2.05365992 	 time: 1.08
+local epoch 0 	 client: 10 	 mal: 0 	 loss: 2.08813238 	 time: 1.08
+local epoch 0 	 client: 11 	 mal: 0 	 loss: 2.17728996 	 time: 1.07
+local epoch 0 	 client: 12 	 mal: 0 	 loss: 2.21667790 	 time: 1.08
+local epoch 0 	 client: 13 	 mal: 0 	 loss: 2.10886979 	 time: 1.07
+local epoch 0 	 client: 14 	 mal: 0 	 loss: 2.03681612 	 time: 1.08
+local epoch 0 	 client: 15 	 mal: 0 	 loss: 2.15821767 	 time: 1.08
+local epoch 0 	 client: 16 	 mal: 0 	 loss: 2.11651516 	 time: 1.08
+local epoch 0 	 client: 17 	 mal: 0 	 loss: 2.15001893 	 time: 1.08
+local epoch 0 	 client: 18 	 mal: 0 	 loss: 2.09334040 	 time: 1.07
+local epoch 0 	 client: 19 	 mal: 0 	 loss: 2.05268168 	 time: 1.08
+2026-01-15 04:37:51,802 [MainThread  ] [INFO ]  ---------Test 35 ------------
+2026-01-15 04:38:00,542 [MainThread  ] [INFO ]  Clean ACC:              0.1000
+2026-01-15 04:38:00,542 [MainThread  ] [INFO ]  Attack Success Ratio:   0.0000
+2026-01-15 04:38:00,542 [MainThread  ] [INFO ]  Backdoor ACC:           0.1111
+2026-01-15 04:38:00,542 [MainThread  ] [INFO ]  ------------------------------
+2026-01-15 04:38:00,542 [MainThread  ] [INFO ]  --------round 36 ------------
+local epoch 0 	 client: 0 	 mal: 1 	 loss: 1.44485354 	 time: 1.08
+local epoch 0 	 client: 1 	 mal: 1 	 loss: 1.44843054 	 time: 1.07
+local epoch 0 	 client: 2 	 mal: 0 	 loss: 2.07966375 	 time: 1.08
+local epoch 0 	 client: 3 	 mal: 0 	 loss: 2.10740280 	 time: 1.07
+local epoch 0 	 client: 4 	 mal: 0 	 loss: 2.02418590 	 time: 1.07
+local epoch 0 	 client: 5 	 mal: 0 	 loss: 2.12694478 	 time: 1.08
+local epoch 0 	 client: 6 	 mal: 0 	 loss: 2.19495392 	 time: 1.08
+local epoch 0 	 client: 7 	 mal: 0 	 loss: 2.20240498 	 time: 1.08
+local epoch 0 	 client: 8 	 mal: 0 	 loss: 2.05730438 	 time: 1.09
+local epoch 0 	 client: 9 	 mal: 0 	 loss: 2.22636151 	 time: 1.08
+local epoch 0 	 client: 10 	 mal: 0 	 loss: 2.23296046 	 time: 1.09
+local epoch 0 	 client: 11 	 mal: 0 	 loss: 2.14717960 	 time: 1.08
+local epoch 0 	 client: 12 	 mal: 0 	 loss: 2.13631415 	 time: 1.08
+local epoch 0 	 client: 13 	 mal: 0 	 loss: 2.07671309 	 time: 1.08
+local epoch 0 	 client: 14 	 mal: 0 	 loss: 2.04193258 	 time: 1.09
+local epoch 0 	 client: 15 	 mal: 0 	 loss: 2.14677262 	 time: 1.08
+local epoch 0 	 client: 16 	 mal: 0 	 loss: 2.05399704 	 time: 1.09
+local epoch 0 	 client: 17 	 mal: 0 	 loss: 2.02413154 	 time: 1.08
+local epoch 0 	 client: 18 	 mal: 0 	 loss: 2.23358369 	 time: 1.09
+local epoch 0 	 client: 19 	 mal: 0 	 loss: 2.21219444 	 time: 1.08
+2026-01-15 04:38:22,963 [MainThread  ] [INFO ]  ---------Test 36 ------------
+2026-01-15 04:38:31,625 [MainThread  ] [INFO ]  Clean ACC:              0.1000
+2026-01-15 04:38:31,625 [MainThread  ] [INFO ]  Attack Success Ratio:   0.0000
+2026-01-15 04:38:31,625 [MainThread  ] [INFO ]  Backdoor ACC:           0.1111
+2026-01-15 04:38:31,625 [MainThread  ] [INFO ]  ------------------------------
+2026-01-15 04:38:31,625 [MainThread  ] [INFO ]  --------round 37 ------------
+local epoch 0 	 client: 0 	 mal: 1 	 loss: 1.33955240 	 time: 1.09
+local epoch 0 	 client: 1 	 mal: 1 	 loss: 1.07861161 	 time: 1.08
+local epoch 0 	 client: 2 	 mal: 0 	 loss: 2.09523988 	 time: 1.08
+local epoch 0 	 client: 3 	 mal: 0 	 loss: 2.05756164 	 time: 1.08
+local epoch 0 	 client: 4 	 mal: 0 	 loss: 2.12380314 	 time: 1.09
+local epoch 0 	 client: 5 	 mal: 0 	 loss: 2.16655159 	 time: 1.08
+local epoch 0 	 client: 6 	 mal: 0 	 loss: 2.19257450 	 time: 1.08
+local epoch 0 	 client: 7 	 mal: 0 	 loss: 2.19157028 	 time: 1.08
+local epoch 0 	 client: 8 	 mal: 0 	 loss: 2.28042746 	 time: 1.08
+local epoch 0 	 client: 9 	 mal: 0 	 loss: 2.09791780 	 time: 1.08
+local epoch 0 	 client: 10 	 mal: 0 	 loss: 2.03136659 	 time: 1.08
+local epoch 0 	 client: 11 	 mal: 0 	 loss: 2.18951821 	 time: 1.08
+local epoch 0 	 client: 12 	 mal: 0 	 loss: 1.99622953 	 time: 1.08
+local epoch 0 	 client: 13 	 mal: 0 	 loss: 2.03906918 	 time: 1.09
+local epoch 0 	 client: 14 	 mal: 0 	 loss: 2.08714080 	 time: 1.08
+local epoch 0 	 client: 15 	 mal: 0 	 loss: 2.02033329 	 time: 1.08
+local epoch 0 	 client: 16 	 mal: 0 	 loss: 2.05956578 	 time: 1.08
+local epoch 0 	 client: 17 	 mal: 0 	 loss: 2.05712581 	 time: 1.09
+local epoch 0 	 client: 18 	 mal: 0 	 loss: 2.01038599 	 time: 1.08
+local epoch 0 	 client: 19 	 mal: 0 	 loss: 2.09690762 	 time: 1.08
+2026-01-15 04:38:54,088 [MainThread  ] [INFO ]  ---------Test 37 ------------
+2026-01-15 04:39:02,835 [MainThread  ] [INFO ]  Clean ACC:              0.1000
+2026-01-15 04:39:02,835 [MainThread  ] [INFO ]  Attack Success Ratio:   0.0000
+2026-01-15 04:39:02,835 [MainThread  ] [INFO ]  Backdoor ACC:           0.1111
+2026-01-15 04:39:02,835 [MainThread  ] [INFO ]  ------------------------------
+2026-01-15 04:39:02,835 [MainThread  ] [INFO ]  --------round 38 ------------
+local epoch 0 	 client: 0 	 mal: 1 	 loss: 1.40528834 	 time: 1.08
+local epoch 0 	 client: 1 	 mal: 1 	 loss: 1.25676453 	 time: 1.08
+local epoch 0 	 client: 2 	 mal: 0 	 loss: 2.23892665 	 time: 1.08
+local epoch 0 	 client: 3 	 mal: 0 	 loss: 2.10587549 	 time: 1.08
+local epoch 0 	 client: 4 	 mal: 0 	 loss: 2.16502881 	 time: 1.08
+local epoch 0 	 client: 5 	 mal: 0 	 loss: 2.08906031 	 time: 1.09
+local epoch 0 	 client: 6 	 mal: 0 	 loss: 2.19175291 	 time: 1.08
+local epoch 0 	 client: 7 	 mal: 0 	 loss: 1.96848142 	 time: 1.09
+local epoch 0 	 client: 8 	 mal: 0 	 loss: 2.11703634 	 time: 1.08
+local epoch 0 	 client: 9 	 mal: 0 	 loss: 2.11870098 	 time: 1.09
+local epoch 0 	 client: 10 	 mal: 0 	 loss: 2.01721144 	 time: 1.08
+local epoch 0 	 client: 11 	 mal: 0 	 loss: 2.02869153 	 time: 1.09
+local epoch 0 	 client: 12 	 mal: 0 	 loss: 2.21004796 	 time: 1.08
+local epoch 0 	 client: 13 	 mal: 0 	 loss: 2.09751654 	 time: 1.09
+local epoch 0 	 client: 14 	 mal: 0 	 loss: 2.20567918 	 time: 1.08
+local epoch 0 	 client: 15 	 mal: 0 	 loss: 2.10248041 	 time: 1.08
+local epoch 0 	 client: 16 	 mal: 0 	 loss: 1.95380485 	 time: 1.08
+local epoch 0 	 client: 17 	 mal: 0 	 loss: 2.06855679 	 time: 1.08
+local epoch 0 	 client: 18 	 mal: 0 	 loss: 2.06038713 	 time: 1.08
+local epoch 0 	 client: 19 	 mal: 0 	 loss: 2.21774483 	 time: 1.08
+2026-01-15 04:39:25,301 [MainThread  ] [INFO ]  ---------Test 38 ------------
+2026-01-15 04:39:33,943 [MainThread  ] [INFO ]  Clean ACC:              0.1000
+2026-01-15 04:39:33,944 [MainThread  ] [INFO ]  Attack Success Ratio:   0.0000
+2026-01-15 04:39:33,944 [MainThread  ] [INFO ]  Backdoor ACC:           0.1111
+2026-01-15 04:39:33,944 [MainThread  ] [INFO ]  ------------------------------
+2026-01-15 04:39:33,944 [MainThread  ] [INFO ]  --------round 39 ------------
+local epoch 0 	 client: 0 	 mal: 1 	 loss: 1.19993126 	 time: 1.08
+local epoch 0 	 client: 1 	 mal: 1 	 loss: 1.39243734 	 time: 1.08
+local epoch 0 	 client: 2 	 mal: 0 	 loss: 2.16401076 	 time: 1.08
+local epoch 0 	 client: 3 	 mal: 0 	 loss: 2.04169559 	 time: 1.08
+local epoch 0 	 client: 4 	 mal: 0 	 loss: 2.17903161 	 time: 1.08
+local epoch 0 	 client: 5 	 mal: 0 	 loss: 2.09153008 	 time: 1.08
+local epoch 0 	 client: 6 	 mal: 0 	 loss: 2.22934771 	 time: 1.08
+local epoch 0 	 client: 7 	 mal: 0 	 loss: 2.12002277 	 time: 1.08
+local epoch 0 	 client: 8 	 mal: 0 	 loss: 2.01396108 	 time: 1.08
+local epoch 0 	 client: 9 	 mal: 0 	 loss: 2.20348835 	 time: 1.08
+local epoch 0 	 client: 10 	 mal: 0 	 loss: 2.14496732 	 time: 1.08
+local epoch 0 	 client: 11 	 mal: 0 	 loss: 2.25061393 	 time: 1.08
+local epoch 0 	 client: 12 	 mal: 0 	 loss: 2.13413835 	 time: 1.08
+local epoch 0 	 client: 13 	 mal: 0 	 loss: 2.19532275 	 time: 1.08
+local epoch 0 	 client: 14 	 mal: 0 	 loss: 2.09758043 	 time: 1.08
+local epoch 0 	 client: 15 	 mal: 0 	 loss: 2.16671467 	 time: 1.08
+local epoch 0 	 client: 16 	 mal: 0 	 loss: 2.03635764 	 time: 1.08
+local epoch 0 	 client: 17 	 mal: 0 	 loss: 2.07121730 	 time: 1.08
+local epoch 0 	 client: 18 	 mal: 0 	 loss: 2.13719821 	 time: 1.09
+local epoch 0 	 client: 19 	 mal: 0 	 loss: 2.11790562 	 time: 1.08
+2026-01-15 04:39:56,403 [MainThread  ] [INFO ]  ---------Test 39 ------------
+2026-01-15 04:40:05,135 [MainThread  ] [INFO ]  Clean ACC:              0.1000
+2026-01-15 04:40:05,135 [MainThread  ] [INFO ]  Attack Success Ratio:   0.0000
+2026-01-15 04:40:05,135 [MainThread  ] [INFO ]  Backdoor ACC:           0.1111
+2026-01-15 04:40:05,135 [MainThread  ] [INFO ]  ------------------------------
+2026-01-15 04:40:05,135 [MainThread  ] [INFO ]  --------round 40 ------------
+local epoch 0 	 client: 0 	 mal: 1 	 loss: 1.55833006 	 time: 1.07
+local epoch 0 	 client: 1 	 mal: 1 	 loss: 1.36370134 	 time: 1.07
+local epoch 0 	 client: 2 	 mal: 0 	 loss: 2.13905191 	 time: 1.08
+local epoch 0 	 client: 3 	 mal: 0 	 loss: 2.14324617 	 time: 1.08
+local epoch 0 	 client: 4 	 mal: 0 	 loss: 1.99942052 	 time: 1.08
+local epoch 0 	 client: 5 	 mal: 0 	 loss: 2.04972386 	 time: 1.08
+local epoch 0 	 client: 6 	 mal: 0 	 loss: 2.04073715 	 time: 1.09
+local epoch 0 	 client: 7 	 mal: 0 	 loss: 2.08489871 	 time: 1.08
+local epoch 0 	 client: 8 	 mal: 0 	 loss: 2.02518535 	 time: 1.09
+local epoch 0 	 client: 9 	 mal: 0 	 loss: 2.11355257 	 time: 1.08
+local epoch 0 	 client: 10 	 mal: 0 	 loss: 2.21199203 	 time: 1.09
+local epoch 0 	 client: 11 	 mal: 0 	 loss: 2.15993094 	 time: 1.08
+local epoch 0 	 client: 12 	 mal: 0 	 loss: 1.97119212 	 time: 1.09
+local epoch 0 	 client: 13 	 mal: 0 	 loss: 2.14636397 	 time: 1.08
+local epoch 0 	 client: 14 	 mal: 0 	 loss: 2.05681014 	 time: 1.09
+local epoch 0 	 client: 15 	 mal: 0 	 loss: 2.11446142 	 time: 1.08
+local epoch 0 	 client: 16 	 mal: 0 	 loss: 2.10282111 	 time: 1.09
+local epoch 0 	 client: 17 	 mal: 0 	 loss: 2.21819186 	 time: 1.08
+local epoch 0 	 client: 18 	 mal: 0 	 loss: 2.10191417 	 time: 1.08
+local epoch 0 	 client: 19 	 mal: 0 	 loss: 2.06125522 	 time: 1.08
+2026-01-15 04:40:27,593 [MainThread  ] [INFO ]  ---------Test 40 ------------
+2026-01-15 04:40:36,249 [MainThread  ] [INFO ]  Clean ACC:              0.1000
+2026-01-15 04:40:36,250 [MainThread  ] [INFO ]  Attack Success Ratio:   0.0000
+2026-01-15 04:40:36,250 [MainThread  ] [INFO ]  Backdoor ACC:           0.1111
+2026-01-15 04:40:36,250 [MainThread  ] [INFO ]  ------------------------------
+2026-01-15 04:40:36,250 [MainThread  ] [INFO ]  --------round 41 ------------
+local epoch 0 	 client: 0 	 mal: 1 	 loss: 1.33717060 	 time: 1.08
+local epoch 0 	 client: 1 	 mal: 1 	 loss: 1.38728666 	 time: 1.08
+local epoch 0 	 client: 2 	 mal: 0 	 loss: 2.14095259 	 time: 1.08
+local epoch 0 	 client: 3 	 mal: 0 	 loss: 2.18713212 	 time: 1.08
+local epoch 0 	 client: 4 	 mal: 0 	 loss: 2.06960130 	 time: 1.08
+local epoch 0 	 client: 5 	 mal: 0 	 loss: 2.09490561 	 time: 1.08
+local epoch 0 	 client: 6 	 mal: 0 	 loss: 2.11614919 	 time: 1.08
+local epoch 0 	 client: 7 	 mal: 0 	 loss: 2.00257659 	 time: 1.08
+local epoch 0 	 client: 8 	 mal: 0 	 loss: 2.11668229 	 time: 1.08
+local epoch 0 	 client: 9 	 mal: 0 	 loss: 2.04178405 	 time: 1.08
+local epoch 0 	 client: 10 	 mal: 0 	 loss: 2.16047049 	 time: 1.08
+local epoch 0 	 client: 11 	 mal: 0 	 loss: 2.07301521 	 time: 1.08
+local epoch 0 	 client: 12 	 mal: 0 	 loss: 2.07432008 	 time: 1.08
+local epoch 0 	 client: 13 	 mal: 0 	 loss: 1.96274567 	 time: 1.09
+local epoch 0 	 client: 14 	 mal: 0 	 loss: 2.19906354 	 time: 1.08
+local epoch 0 	 client: 15 	 mal: 0 	 loss: 2.04425311 	 time: 1.08
+local epoch 0 	 client: 16 	 mal: 0 	 loss: 2.05257940 	 time: 1.08
+local epoch 0 	 client: 17 	 mal: 0 	 loss: 2.14841580 	 time: 1.08
+local epoch 0 	 client: 18 	 mal: 0 	 loss: 2.14105892 	 time: 1.08
+local epoch 0 	 client: 19 	 mal: 0 	 loss: 2.13582921 	 time: 1.08
+2026-01-15 04:40:58,709 [MainThread  ] [INFO ]  ---------Test 41 ------------
+2026-01-15 04:41:07,443 [MainThread  ] [INFO ]  Clean ACC:              0.1000
+2026-01-15 04:41:07,443 [MainThread  ] [INFO ]  Attack Success Ratio:   0.0000
+2026-01-15 04:41:07,443 [MainThread  ] [INFO ]  Backdoor ACC:           0.1111
+2026-01-15 04:41:07,443 [MainThread  ] [INFO ]  ------------------------------
+2026-01-15 04:41:07,443 [MainThread  ] [INFO ]  --------round 42 ------------
+local epoch 0 	 client: 0 	 mal: 1 	 loss: 1.49678099 	 time: 1.08
+local epoch 0 	 client: 1 	 mal: 1 	 loss: 1.13307774 	 time: 1.09
+local epoch 0 	 client: 2 	 mal: 0 	 loss: 1.99012208 	 time: 1.08
+local epoch 0 	 client: 3 	 mal: 0 	 loss: 2.03025556 	 time: 1.08
+local epoch 0 	 client: 4 	 mal: 0 	 loss: 1.98738766 	 time: 1.08
+local epoch 0 	 client: 5 	 mal: 0 	 loss: 2.05738306 	 time: 1.08
+local epoch 0 	 client: 6 	 mal: 0 	 loss: 2.16479039 	 time: 1.08
+local epoch 0 	 client: 7 	 mal: 0 	 loss: 2.16061163 	 time: 1.08
+local epoch 0 	 client: 8 	 mal: 0 	 loss: 2.12770772 	 time: 1.08
+local epoch 0 	 client: 9 	 mal: 0 	 loss: 2.09013939 	 time: 1.08
+local epoch 0 	 client: 10 	 mal: 0 	 loss: 2.09311604 	 time: 1.09
+local epoch 0 	 client: 11 	 mal: 0 	 loss: 2.14117813 	 time: 1.08
+local epoch 0 	 client: 12 	 mal: 0 	 loss: 2.04106188 	 time: 1.08
+local epoch 0 	 client: 13 	 mal: 0 	 loss: 2.08826685 	 time: 1.08
+local epoch 0 	 client: 14 	 mal: 0 	 loss: 2.06102157 	 time: 1.08
+local epoch 0 	 client: 15 	 mal: 0 	 loss: 2.15219712 	 time: 1.08
+local epoch 0 	 client: 16 	 mal: 0 	 loss: 2.16655755 	 time: 1.08
+local epoch 0 	 client: 17 	 mal: 0 	 loss: 2.11327720 	 time: 1.08
+local epoch 0 	 client: 18 	 mal: 0 	 loss: 2.15424752 	 time: 1.08
+local epoch 0 	 client: 19 	 mal: 0 	 loss: 2.23210549 	 time: 1.09
+2026-01-15 04:41:29,921 [MainThread  ] [INFO ]  ---------Test 42 ------------
+2026-01-15 04:41:38,584 [MainThread  ] [INFO ]  Clean ACC:              0.1000
+2026-01-15 04:41:38,584 [MainThread  ] [INFO ]  Attack Success Ratio:   0.0000
+2026-01-15 04:41:38,584 [MainThread  ] [INFO ]  Backdoor ACC:           0.1111
+2026-01-15 04:41:38,584 [MainThread  ] [INFO ]  ------------------------------
+2026-01-15 04:41:38,584 [MainThread  ] [INFO ]  --------round 43 ------------
+local epoch 0 	 client: 0 	 mal: 1 	 loss: 1.46349597 	 time: 1.08
+local epoch 0 	 client: 1 	 mal: 1 	 loss: 1.74430382 	 time: 1.08
+local epoch 0 	 client: 2 	 mal: 0 	 loss: 2.20668697 	 time: 1.08
+local epoch 0 	 client: 3 	 mal: 0 	 loss: 2.17454290 	 time: 1.08
+local epoch 0 	 client: 4 	 mal: 0 	 loss: 2.14033413 	 time: 1.08
+local epoch 0 	 client: 5 	 mal: 0 	 loss: 2.11694789 	 time: 1.08
+local epoch 0 	 client: 6 	 mal: 0 	 loss: 2.03102279 	 time: 1.08
+local epoch 0 	 client: 7 	 mal: 0 	 loss: 2.06426835 	 time: 1.08
+local epoch 0 	 client: 8 	 mal: 0 	 loss: 2.09219265 	 time: 1.08
+local epoch 0 	 client: 9 	 mal: 0 	 loss: 2.09706402 	 time: 1.08
+local epoch 0 	 client: 10 	 mal: 0 	 loss: 2.14626145 	 time: 1.08
+local epoch 0 	 client: 11 	 mal: 0 	 loss: 2.35336781 	 time: 1.08
+local epoch 0 	 client: 12 	 mal: 0 	 loss: 2.02665997 	 time: 1.08
+local epoch 0 	 client: 13 	 mal: 0 	 loss: 2.11642075 	 time: 1.08
+local epoch 0 	 client: 14 	 mal: 0 	 loss: 2.07441092 	 time: 1.08
+local epoch 0 	 client: 15 	 mal: 0 	 loss: 2.11414957 	 time: 1.08
+local epoch 0 	 client: 16 	 mal: 0 	 loss: 2.10118723 	 time: 1.08
+local epoch 0 	 client: 17 	 mal: 0 	 loss: 2.16410112 	 time: 1.09
+local epoch 0 	 client: 18 	 mal: 0 	 loss: 2.11396742 	 time: 1.08
+local epoch 0 	 client: 19 	 mal: 0 	 loss: 2.15346956 	 time: 1.08
+2026-01-15 04:42:01,027 [MainThread  ] [INFO ]  ---------Test 43 ------------
+2026-01-15 04:42:09,766 [MainThread  ] [INFO ]  Clean ACC:              0.1000
+2026-01-15 04:42:09,766 [MainThread  ] [INFO ]  Attack Success Ratio:   0.0000
+2026-01-15 04:42:09,766 [MainThread  ] [INFO ]  Backdoor ACC:           0.1111
+2026-01-15 04:42:09,766 [MainThread  ] [INFO ]  ------------------------------
+2026-01-15 04:42:09,766 [MainThread  ] [INFO ]  --------round 44 ------------
+local epoch 0 	 client: 0 	 mal: 1 	 loss: 1.21779740 	 time: 1.08
+local epoch 0 	 client: 1 	 mal: 1 	 loss: 1.52107513 	 time: 1.08
+local epoch 0 	 client: 2 	 mal: 0 	 loss: 2.20712662 	 time: 1.08
+local epoch 0 	 client: 3 	 mal: 0 	 loss: 2.21495128 	 time: 1.08
+local epoch 0 	 client: 4 	 mal: 0 	 loss: 2.09566259 	 time: 1.07
+local epoch 0 	 client: 5 	 mal: 0 	 loss: 2.07405758 	 time: 1.08
+local epoch 0 	 client: 6 	 mal: 0 	 loss: 2.12172699 	 time: 1.09
+local epoch 0 	 client: 7 	 mal: 0 	 loss: 2.21577191 	 time: 1.08
+local epoch 0 	 client: 8 	 mal: 0 	 loss: 2.07657766 	 time: 1.08
+local epoch 0 	 client: 9 	 mal: 0 	 loss: 2.00259328 	 time: 1.08
+local epoch 0 	 client: 10 	 mal: 0 	 loss: 2.10529017 	 time: 1.08
+local epoch 0 	 client: 11 	 mal: 0 	 loss: 2.09643459 	 time: 1.08
+local epoch 0 	 client: 12 	 mal: 0 	 loss: 2.11112499 	 time: 1.08
+local epoch 0 	 client: 13 	 mal: 0 	 loss: 2.18506169 	 time: 1.08
+local epoch 0 	 client: 14 	 mal: 0 	 loss: 2.12937188 	 time: 1.08
+local epoch 0 	 client: 15 	 mal: 0 	 loss: 2.27455306 	 time: 1.08
+local epoch 0 	 client: 16 	 mal: 0 	 loss: 2.00311470 	 time: 1.08
+local epoch 0 	 client: 17 	 mal: 0 	 loss: 2.13077211 	 time: 1.08
+local epoch 0 	 client: 18 	 mal: 0 	 loss: 2.05069447 	 time: 1.08
+local epoch 0 	 client: 19 	 mal: 0 	 loss: 2.02531528 	 time: 1.08
+2026-01-15 04:42:32,195 [MainThread  ] [INFO ]  ---------Test 44 ------------
+2026-01-15 04:42:40,859 [MainThread  ] [INFO ]  Clean ACC:              0.1000
+2026-01-15 04:42:40,860 [MainThread  ] [INFO ]  Attack Success Ratio:   0.0000
+2026-01-15 04:42:40,860 [MainThread  ] [INFO ]  Backdoor ACC:           0.1111
+2026-01-15 04:42:40,860 [MainThread  ] [INFO ]  ------------------------------
+2026-01-15 04:42:40,860 [MainThread  ] [INFO ]  --------round 45 ------------
+local epoch 0 	 client: 0 	 mal: 1 	 loss: 1.23325956 	 time: 1.08
+local epoch 0 	 client: 1 	 mal: 1 	 loss: 1.50140762 	 time: 1.08
+local epoch 0 	 client: 2 	 mal: 0 	 loss: 2.19665408 	 time: 1.08
+local epoch 0 	 client: 3 	 mal: 0 	 loss: 2.07145429 	 time: 1.08
+local epoch 0 	 client: 4 	 mal: 0 	 loss: 2.10310054 	 time: 1.08
+local epoch 0 	 client: 5 	 mal: 0 	 loss: 2.00445485 	 time: 1.08
+local epoch 0 	 client: 6 	 mal: 0 	 loss: 2.26694155 	 time: 1.08
+local epoch 0 	 client: 7 	 mal: 0 	 loss: 2.23244691 	 time: 1.08
+local epoch 0 	 client: 8 	 mal: 0 	 loss: 2.16691399 	 time: 1.08
+local epoch 0 	 client: 9 	 mal: 0 	 loss: 2.19104695 	 time: 1.08
+local epoch 0 	 client: 10 	 mal: 0 	 loss: 2.14287925 	 time: 1.09
+local epoch 0 	 client: 11 	 mal: 0 	 loss: 2.17543077 	 time: 1.08
+local epoch 0 	 client: 12 	 mal: 0 	 loss: 2.22414660 	 time: 1.09
+local epoch 0 	 client: 13 	 mal: 0 	 loss: 2.11186624 	 time: 1.08
+local epoch 0 	 client: 14 	 mal: 0 	 loss: 2.00283766 	 time: 1.09
+local epoch 0 	 client: 15 	 mal: 0 	 loss: 2.20249748 	 time: 1.08
+local epoch 0 	 client: 16 	 mal: 0 	 loss: 2.15606117 	 time: 1.08
+local epoch 0 	 client: 17 	 mal: 0 	 loss: 2.18137169 	 time: 1.08
+local epoch 0 	 client: 18 	 mal: 0 	 loss: 2.17831397 	 time: 1.09
+local epoch 0 	 client: 19 	 mal: 0 	 loss: 2.19130087 	 time: 1.09
+2026-01-15 04:43:03,323 [MainThread  ] [INFO ]  ---------Test 45 ------------
+2026-01-15 04:43:12,066 [MainThread  ] [INFO ]  Clean ACC:              0.1000
+2026-01-15 04:43:12,067 [MainThread  ] [INFO ]  Attack Success Ratio:   0.0000
+2026-01-15 04:43:12,067 [MainThread  ] [INFO ]  Backdoor ACC:           0.1111
+2026-01-15 04:43:12,067 [MainThread  ] [INFO ]  ------------------------------
+2026-01-15 04:43:12,067 [MainThread  ] [INFO ]  --------round 46 ------------
+local epoch 0 	 client: 0 	 mal: 1 	 loss: 1.35445309 	 time: 1.08
+local epoch 0 	 client: 1 	 mal: 1 	 loss: 1.33929360 	 time: 1.08
+local epoch 0 	 client: 2 	 mal: 0 	 loss: 2.09721637 	 time: 1.08
+local epoch 0 	 client: 3 	 mal: 0 	 loss: 2.14601493 	 time: 1.08
+local epoch 0 	 client: 4 	 mal: 0 	 loss: 2.13804746 	 time: 1.08
+local epoch 0 	 client: 5 	 mal: 0 	 loss: 2.01501632 	 time: 1.08
+local epoch 0 	 client: 6 	 mal: 0 	 loss: 2.21173620 	 time: 1.08
+local epoch 0 	 client: 7 	 mal: 0 	 loss: 1.99514925 	 time: 1.08
+local epoch 0 	 client: 8 	 mal: 0 	 loss: 2.02858782 	 time: 1.08
+local epoch 0 	 client: 9 	 mal: 0 	 loss: 2.09920073 	 time: 1.08
+local epoch 0 	 client: 10 	 mal: 0 	 loss: 2.23011971 	 time: 1.08
+local epoch 0 	 client: 11 	 mal: 0 	 loss: 2.27217841 	 time: 1.08
+local epoch 0 	 client: 12 	 mal: 0 	 loss: 2.12751460 	 time: 1.08
+local epoch 0 	 client: 13 	 mal: 0 	 loss: 2.07990432 	 time: 1.08
+local epoch 0 	 client: 14 	 mal: 0 	 loss: 2.14256978 	 time: 1.08
+local epoch 0 	 client: 15 	 mal: 0 	 loss: 2.10086465 	 time: 1.08
+local epoch 0 	 client: 16 	 mal: 0 	 loss: 2.17909455 	 time: 1.08
+local epoch 0 	 client: 17 	 mal: 0 	 loss: 2.05532670 	 time: 1.07
+local epoch 0 	 client: 18 	 mal: 0 	 loss: 2.12213993 	 time: 1.08
+local epoch 0 	 client: 19 	 mal: 0 	 loss: 2.08856869 	 time: 1.08
+2026-01-15 04:43:34,481 [MainThread  ] [INFO ]  ---------Test 46 ------------
+2026-01-15 04:43:43,158 [MainThread  ] [INFO ]  Clean ACC:              0.1000
+2026-01-15 04:43:43,158 [MainThread  ] [INFO ]  Attack Success Ratio:   0.0000
+2026-01-15 04:43:43,159 [MainThread  ] [INFO ]  Backdoor ACC:           0.1111
+2026-01-15 04:43:43,159 [MainThread  ] [INFO ]  ------------------------------
+2026-01-15 04:43:43,159 [MainThread  ] [INFO ]  --------round 47 ------------
+local epoch 0 	 client: 0 	 mal: 1 	 loss: 1.23684216 	 time: 1.08
+local epoch 0 	 client: 1 	 mal: 1 	 loss: 1.40584397 	 time: 1.07
+local epoch 0 	 client: 2 	 mal: 0 	 loss: 2.21265221 	 time: 1.08
+local epoch 0 	 client: 3 	 mal: 0 	 loss: 2.13945651 	 time: 1.08
+local epoch 0 	 client: 4 	 mal: 0 	 loss: 2.17837334 	 time: 1.09
+local epoch 0 	 client: 5 	 mal: 0 	 loss: 2.16026545 	 time: 1.09
+local epoch 0 	 client: 6 	 mal: 0 	 loss: 2.05971336 	 time: 1.08
+local epoch 0 	 client: 7 	 mal: 0 	 loss: 2.02866602 	 time: 1.09
+local epoch 0 	 client: 8 	 mal: 0 	 loss: 2.07128596 	 time: 1.08
+local epoch 0 	 client: 9 	 mal: 0 	 loss: 2.09030962 	 time: 1.08
+local epoch 0 	 client: 10 	 mal: 0 	 loss: 2.22567725 	 time: 1.08
+local epoch 0 	 client: 11 	 mal: 0 	 loss: 2.10166311 	 time: 1.08
+local epoch 0 	 client: 12 	 mal: 0 	 loss: 2.19849324 	 time: 1.09
+local epoch 0 	 client: 13 	 mal: 0 	 loss: 2.04956532 	 time: 1.08
+local epoch 0 	 client: 14 	 mal: 0 	 loss: 2.18773794 	 time: 1.08
+local epoch 0 	 client: 15 	 mal: 0 	 loss: 2.08910990 	 time: 1.08
+local epoch 0 	 client: 16 	 mal: 0 	 loss: 2.14175010 	 time: 1.08
+local epoch 0 	 client: 17 	 mal: 0 	 loss: 2.01691556 	 time: 1.08
+local epoch 0 	 client: 18 	 mal: 0 	 loss: 2.10895610 	 time: 1.08
+local epoch 0 	 client: 19 	 mal: 0 	 loss: 2.12507749 	 time: 1.08
+2026-01-15 04:44:05,611 [MainThread  ] [INFO ]  ---------Test 47 ------------
+2026-01-15 04:44:14,345 [MainThread  ] [INFO ]  Clean ACC:              0.1000
+2026-01-15 04:44:14,345 [MainThread  ] [INFO ]  Attack Success Ratio:   0.0000
+2026-01-15 04:44:14,345 [MainThread  ] [INFO ]  Backdoor ACC:           0.1111
+2026-01-15 04:44:14,345 [MainThread  ] [INFO ]  ------------------------------
+2026-01-15 04:44:14,345 [MainThread  ] [INFO ]  --------round 48 ------------
+local epoch 0 	 client: 0 	 mal: 1 	 loss: 1.38221788 	 time: 1.08
+local epoch 0 	 client: 1 	 mal: 1 	 loss: 1.23745012 	 time: 1.08
+local epoch 0 	 client: 2 	 mal: 0 	 loss: 2.11816669 	 time: 1.07
+local epoch 0 	 client: 3 	 mal: 0 	 loss: 2.22676778 	 time: 1.08
+local epoch 0 	 client: 4 	 mal: 0 	 loss: 2.07477188 	 time: 1.07
+local epoch 0 	 client: 5 	 mal: 0 	 loss: 2.17421317 	 time: 1.08
+local epoch 0 	 client: 6 	 mal: 0 	 loss: 2.17738533 	 time: 1.08
+local epoch 0 	 client: 7 	 mal: 0 	 loss: 2.08717513 	 time: 1.08
+local epoch 0 	 client: 8 	 mal: 0 	 loss: 2.02550197 	 time: 1.08
+local epoch 0 	 client: 9 	 mal: 0 	 loss: 2.09338808 	 time: 1.08
+local epoch 0 	 client: 10 	 mal: 0 	 loss: 2.02969074 	 time: 1.08
+local epoch 0 	 client: 11 	 mal: 0 	 loss: 2.07012224 	 time: 1.08
+local epoch 0 	 client: 12 	 mal: 0 	 loss: 2.13813710 	 time: 1.08
+local epoch 0 	 client: 13 	 mal: 0 	 loss: 2.05215454 	 time: 1.08
+local epoch 0 	 client: 14 	 mal: 0 	 loss: 2.17580891 	 time: 1.08
+local epoch 0 	 client: 15 	 mal: 0 	 loss: 2.22298241 	 time: 1.08
+local epoch 0 	 client: 16 	 mal: 0 	 loss: 2.08263922 	 time: 1.08
+local epoch 0 	 client: 17 	 mal: 0 	 loss: 2.08565927 	 time: 1.08
+local epoch 0 	 client: 18 	 mal: 0 	 loss: 1.99557424 	 time: 1.07
+local epoch 0 	 client: 19 	 mal: 0 	 loss: 2.10152388 	 time: 1.08
+2026-01-15 04:44:36,758 [MainThread  ] [INFO ]  ---------Test 48 ------------
+2026-01-15 04:44:45,430 [MainThread  ] [INFO ]  Clean ACC:              0.1000
+2026-01-15 04:44:45,431 [MainThread  ] [INFO ]  Attack Success Ratio:   0.0000
+2026-01-15 04:44:45,431 [MainThread  ] [INFO ]  Backdoor ACC:           0.1111
+2026-01-15 04:44:45,431 [MainThread  ] [INFO ]  ------------------------------
+2026-01-15 04:44:45,431 [MainThread  ] [INFO ]  --------round 49 ------------
+local epoch 0 	 client: 0 	 mal: 1 	 loss: 1.20244420 	 time: 1.09
+local epoch 0 	 client: 1 	 mal: 1 	 loss: 1.41293347 	 time: 1.08
+local epoch 0 	 client: 2 	 mal: 0 	 loss: 2.15642166 	 time: 1.09
+local epoch 0 	 client: 3 	 mal: 0 	 loss: 2.08959770 	 time: 1.08
+local epoch 0 	 client: 4 	 mal: 0 	 loss: 2.18461823 	 time: 1.09
+local epoch 0 	 client: 5 	 mal: 0 	 loss: 2.18712163 	 time: 1.08
+local epoch 0 	 client: 6 	 mal: 0 	 loss: 2.12294054 	 time: 1.09
+local epoch 0 	 client: 7 	 mal: 0 	 loss: 2.09334016 	 time: 1.08
+local epoch 0 	 client: 8 	 mal: 0 	 loss: 2.16763473 	 time: 1.08
+local epoch 0 	 client: 9 	 mal: 0 	 loss: 2.13710833 	 time: 1.08
+local epoch 0 	 client: 10 	 mal: 0 	 loss: 2.08643055 	 time: 1.08
+local epoch 0 	 client: 11 	 mal: 0 	 loss: 2.12880731 	 time: 1.08
+local epoch 0 	 client: 12 	 mal: 0 	 loss: 2.28762913 	 time: 1.08
+local epoch 0 	 client: 13 	 mal: 0 	 loss: 2.06987429 	 time: 1.08
+local epoch 0 	 client: 14 	 mal: 0 	 loss: 2.10240555 	 time: 1.08
+local epoch 0 	 client: 15 	 mal: 0 	 loss: 2.09167337 	 time: 1.08
+local epoch 0 	 client: 16 	 mal: 0 	 loss: 2.08148932 	 time: 1.08
+local epoch 0 	 client: 17 	 mal: 0 	 loss: 2.16458583 	 time: 1.08
+local epoch 0 	 client: 18 	 mal: 0 	 loss: 2.04864025 	 time: 1.08
+local epoch 0 	 client: 19 	 mal: 0 	 loss: 2.19217849 	 time: 1.09
+2026-01-15 04:45:07,902 [MainThread  ] [INFO ]  ---------Test 49 ------------
+2026-01-15 04:45:16,635 [MainThread  ] [INFO ]  Clean ACC:              0.1000
+2026-01-15 04:45:16,635 [MainThread  ] [INFO ]  Attack Success Ratio:   0.0000
+2026-01-15 04:45:16,635 [MainThread  ] [INFO ]  Backdoor ACC:           0.1111
+2026-01-15 04:45:16,635 [MainThread  ] [INFO ]  ------------------------------
+2026-01-15 04:45:16,635 [MainThread  ] [INFO ]  --------round 50 ------------
+local epoch 0 	 client: 0 	 mal: 1 	 loss: 1.60004020 	 time: 1.08
+local epoch 0 	 client: 1 	 mal: 1 	 loss: 1.29603612 	 time: 1.08
+local epoch 0 	 client: 2 	 mal: 0 	 loss: 2.09653306 	 time: 1.08
+local epoch 0 	 client: 3 	 mal: 0 	 loss: 2.04768896 	 time: 1.09
+local epoch 0 	 client: 4 	 mal: 0 	 loss: 2.13285017 	 time: 1.08
+local epoch 0 	 client: 5 	 mal: 0 	 loss: 2.06160569 	 time: 1.08
+local epoch 0 	 client: 6 	 mal: 0 	 loss: 2.11761713 	 time: 1.08
+local epoch 0 	 client: 7 	 mal: 0 	 loss: 2.00984025 	 time: 1.08
+local epoch 0 	 client: 8 	 mal: 0 	 loss: 2.01600170 	 time: 1.08
+local epoch 0 	 client: 9 	 mal: 0 	 loss: 2.04422474 	 time: 1.08
+local epoch 0 	 client: 10 	 mal: 0 	 loss: 2.20782590 	 time: 1.08
+local epoch 0 	 client: 11 	 mal: 0 	 loss: 2.07280493 	 time: 1.08
+local epoch 0 	 client: 12 	 mal: 0 	 loss: 1.97082210 	 time: 1.08
+local epoch 0 	 client: 13 	 mal: 0 	 loss: 2.22636485 	 time: 1.08
+local epoch 0 	 client: 14 	 mal: 0 	 loss: 2.11192870 	 time: 1.08
+local epoch 0 	 client: 15 	 mal: 0 	 loss: 2.21514106 	 time: 1.08
+local epoch 0 	 client: 16 	 mal: 0 	 loss: 2.16471314 	 time: 1.08
+local epoch 0 	 client: 17 	 mal: 0 	 loss: 2.14814425 	 time: 1.08
+local epoch 0 	 client: 18 	 mal: 0 	 loss: 2.17765045 	 time: 1.08
+local epoch 0 	 client: 19 	 mal: 0 	 loss: 2.05572772 	 time: 1.08
+2026-01-15 04:45:39,062 [MainThread  ] [INFO ]  ---------Test 50 ------------
+2026-01-15 04:45:47,725 [MainThread  ] [INFO ]  Clean ACC:              0.1000
+2026-01-15 04:45:47,726 [MainThread  ] [INFO ]  Attack Success Ratio:   0.0000
+2026-01-15 04:45:47,726 [MainThread  ] [INFO ]  Backdoor ACC:           0.1111
+2026-01-15 04:45:47,726 [MainThread  ] [INFO ]  ------------------------------
+2026-01-15 04:45:47,726 [MainThread  ] [INFO ]  --------round 51 ------------
+local epoch 0 	 client: 0 	 mal: 1 	 loss: 1.43804991 	 time: 1.08
+local epoch 0 	 client: 1 	 mal: 1 	 loss: 1.44411099 	 time: 1.09
+local epoch 0 	 client: 2 	 mal: 0 	 loss: 2.13052559 	 time: 1.08
+local epoch 0 	 client: 3 	 mal: 0 	 loss: 2.16836429 	 time: 1.09
+local epoch 0 	 client: 4 	 mal: 0 	 loss: 2.16797996 	 time: 1.08
+local epoch 0 	 client: 5 	 mal: 0 	 loss: 2.12792873 	 time: 1.09
+local epoch 0 	 client: 6 	 mal: 0 	 loss: 2.13320923 	 time: 1.08
+local epoch 0 	 client: 7 	 mal: 0 	 loss: 2.08680439 	 time: 1.09
+local epoch 0 	 client: 8 	 mal: 0 	 loss: 2.17677593 	 time: 1.09
+local epoch 0 	 client: 9 	 mal: 0 	 loss: 2.20978045 	 time: 1.09
+local epoch 0 	 client: 10 	 mal: 0 	 loss: 2.17836833 	 time: 1.09
+local epoch 0 	 client: 11 	 mal: 0 	 loss: 2.16701984 	 time: 1.08
+local epoch 0 	 client: 12 	 mal: 0 	 loss: 2.15602612 	 time: 1.09
+local epoch 0 	 client: 13 	 mal: 0 	 loss: 2.01490164 	 time: 1.09
+local epoch 0 	 client: 14 	 mal: 0 	 loss: 2.15614939 	 time: 1.09
+local epoch 0 	 client: 15 	 mal: 0 	 loss: 2.16399670 	 time: 1.08
+local epoch 0 	 client: 16 	 mal: 0 	 loss: 2.18740273 	 time: 1.09
+local epoch 0 	 client: 17 	 mal: 0 	 loss: 2.08654833 	 time: 1.08
+local epoch 0 	 client: 18 	 mal: 0 	 loss: 1.97682762 	 time: 1.09
+local epoch 0 	 client: 19 	 mal: 0 	 loss: 2.10907388 	 time: 1.09
+2026-01-15 04:46:10,248 [MainThread  ] [INFO ]  ---------Test 51 ------------
+2026-01-15 04:46:19,002 [MainThread  ] [INFO ]  Clean ACC:              0.1000
+2026-01-15 04:46:19,002 [MainThread  ] [INFO ]  Attack Success Ratio:   0.0000
+2026-01-15 04:46:19,002 [MainThread  ] [INFO ]  Backdoor ACC:           0.1111
+2026-01-15 04:46:19,002 [MainThread  ] [INFO ]  ------------------------------
+2026-01-15 04:46:19,002 [MainThread  ] [INFO ]  --------round 52 ------------
+local epoch 0 	 client: 0 	 mal: 1 	 loss: 1.20715845 	 time: 1.09
+local epoch 0 	 client: 1 	 mal: 1 	 loss: 1.30008543 	 time: 1.08
+local epoch 0 	 client: 2 	 mal: 0 	 loss: 2.02472591 	 time: 1.08
+local epoch 0 	 client: 3 	 mal: 0 	 loss: 2.27988601 	 time: 1.08
+local epoch 0 	 client: 4 	 mal: 0 	 loss: 2.14104080 	 time: 1.08
+local epoch 0 	 client: 5 	 mal: 0 	 loss: 2.21283722 	 time: 1.08
+local epoch 0 	 client: 6 	 mal: 0 	 loss: 1.97682452 	 time: 1.08
+local epoch 0 	 client: 7 	 mal: 0 	 loss: 2.19487071 	 time: 1.08
+local epoch 0 	 client: 8 	 mal: 0 	 loss: 2.09095192 	 time: 1.09
+local epoch 0 	 client: 9 	 mal: 0 	 loss: 2.11911845 	 time: 1.08
+local epoch 0 	 client: 10 	 mal: 0 	 loss: 2.14098668 	 time: 1.08
+local epoch 0 	 client: 11 	 mal: 0 	 loss: 2.09762692 	 time: 1.08
+local epoch 0 	 client: 12 	 mal: 0 	 loss: 2.10863352 	 time: 1.08
+local epoch 0 	 client: 13 	 mal: 0 	 loss: 2.16378832 	 time: 1.08
+local epoch 0 	 client: 14 	 mal: 0 	 loss: 2.13444185 	 time: 1.08
+local epoch 0 	 client: 15 	 mal: 0 	 loss: 2.05466104 	 time: 1.08
+local epoch 0 	 client: 16 	 mal: 0 	 loss: 2.16851091 	 time: 1.08
+local epoch 0 	 client: 17 	 mal: 0 	 loss: 2.09827137 	 time: 1.08
+local epoch 0 	 client: 18 	 mal: 0 	 loss: 2.04020810 	 time: 1.08
+local epoch 0 	 client: 19 	 mal: 0 	 loss: 2.18046665 	 time: 1.08
+2026-01-15 04:46:41,436 [MainThread  ] [INFO ]  ---------Test 52 ------------
+2026-01-15 04:46:50,090 [MainThread  ] [INFO ]  Clean ACC:              0.1000
+2026-01-15 04:46:50,090 [MainThread  ] [INFO ]  Attack Success Ratio:   0.0000
+2026-01-15 04:46:50,090 [MainThread  ] [INFO ]  Backdoor ACC:           0.1111
+2026-01-15 04:46:50,090 [MainThread  ] [INFO ]  ------------------------------
+2026-01-15 04:46:50,090 [MainThread  ] [INFO ]  --------round 53 ------------
+local epoch 0 	 client: 0 	 mal: 1 	 loss: 1.33604801 	 time: 1.08
+local epoch 0 	 client: 1 	 mal: 1 	 loss: 1.36539924 	 time: 1.08
+local epoch 0 	 client: 2 	 mal: 0 	 loss: 2.14996624 	 time: 1.08
+local epoch 0 	 client: 3 	 mal: 0 	 loss: 2.04150534 	 time: 1.08
+local epoch 0 	 client: 4 	 mal: 0 	 loss: 1.98375058 	 time: 1.08
+local epoch 0 	 client: 5 	 mal: 0 	 loss: 2.04378295 	 time: 1.08
+local epoch 0 	 client: 6 	 mal: 0 	 loss: 2.08543754 	 time: 1.08
+local epoch 0 	 client: 7 	 mal: 0 	 loss: 2.12740040 	 time: 1.08
+local epoch 0 	 client: 8 	 mal: 0 	 loss: 2.10866690 	 time: 1.08
+local epoch 0 	 client: 9 	 mal: 0 	 loss: 2.01568699 	 time: 1.08
+local epoch 0 	 client: 10 	 mal: 0 	 loss: 1.96624613 	 time: 1.08
+local epoch 0 	 client: 11 	 mal: 0 	 loss: 2.07464337 	 time: 1.08
+local epoch 0 	 client: 12 	 mal: 0 	 loss: 2.13416052 	 time: 1.08
+local epoch 0 	 client: 13 	 mal: 0 	 loss: 2.12098932 	 time: 1.08
+local epoch 0 	 client: 14 	 mal: 0 	 loss: 2.05916619 	 time: 1.08
+local epoch 0 	 client: 15 	 mal: 0 	 loss: 2.14917040 	 time: 1.08
+local epoch 0 	 client: 16 	 mal: 0 	 loss: 2.10928392 	 time: 1.08
+local epoch 0 	 client: 17 	 mal: 0 	 loss: 2.14341331 	 time: 1.08
+local epoch 0 	 client: 18 	 mal: 0 	 loss: 2.10975361 	 time: 1.08
+local epoch 0 	 client: 19 	 mal: 0 	 loss: 2.14599061 	 time: 1.08
+2026-01-15 04:47:12,532 [MainThread  ] [INFO ]  ---------Test 53 ------------
+2026-01-15 04:47:21,269 [MainThread  ] [INFO ]  Clean ACC:              0.1000
+2026-01-15 04:47:21,269 [MainThread  ] [INFO ]  Attack Success Ratio:   0.0000
+2026-01-15 04:47:21,269 [MainThread  ] [INFO ]  Backdoor ACC:           0.1111
+2026-01-15 04:47:21,269 [MainThread  ] [INFO ]  ------------------------------
+2026-01-15 04:47:21,269 [MainThread  ] [INFO ]  --------round 54 ------------
+local epoch 0 	 client: 0 	 mal: 1 	 loss: 1.32843971 	 time: 1.08
+local epoch 0 	 client: 1 	 mal: 1 	 loss: 1.53572345 	 time: 1.08
+local epoch 0 	 client: 2 	 mal: 0 	 loss: 2.17364407 	 time: 1.08
+local epoch 0 	 client: 3 	 mal: 0 	 loss: 2.16730309 	 time: 1.09
+local epoch 0 	 client: 4 	 mal: 0 	 loss: 2.24126911 	 time: 1.08
+local epoch 0 	 client: 5 	 mal: 0 	 loss: 2.08434296 	 time: 1.09
+local epoch 0 	 client: 6 	 mal: 0 	 loss: 2.26102614 	 time: 1.08
+local epoch 0 	 client: 7 	 mal: 0 	 loss: 2.11024857 	 time: 1.08
+local epoch 0 	 client: 8 	 mal: 0 	 loss: 2.06477571 	 time: 1.08
+local epoch 0 	 client: 9 	 mal: 0 	 loss: 2.34399199 	 time: 1.08
+local epoch 0 	 client: 10 	 mal: 0 	 loss: 2.21959400 	 time: 1.08
+local epoch 0 	 client: 11 	 mal: 0 	 loss: 2.07797790 	 time: 1.08
+local epoch 0 	 client: 12 	 mal: 0 	 loss: 2.21087694 	 time: 1.08
+local epoch 0 	 client: 13 	 mal: 0 	 loss: 2.13252950 	 time: 1.09
+local epoch 0 	 client: 14 	 mal: 0 	 loss: 2.09921551 	 time: 1.08
+local epoch 0 	 client: 15 	 mal: 0 	 loss: 2.08991218 	 time: 1.08
+local epoch 0 	 client: 16 	 mal: 0 	 loss: 2.13452482 	 time: 1.08
+local epoch 0 	 client: 17 	 mal: 0 	 loss: 2.18491650 	 time: 1.08
+local epoch 0 	 client: 18 	 mal: 0 	 loss: 2.19845986 	 time: 1.08
+local epoch 0 	 client: 19 	 mal: 0 	 loss: 2.17503309 	 time: 1.08
+2026-01-15 04:47:43,724 [MainThread  ] [INFO ]  ---------Test 54 ------------
+2026-01-15 04:47:52,397 [MainThread  ] [INFO ]  Clean ACC:              0.1000
+2026-01-15 04:47:52,398 [MainThread  ] [INFO ]  Attack Success Ratio:   0.0000
+2026-01-15 04:47:52,398 [MainThread  ] [INFO ]  Backdoor ACC:           0.1111
+2026-01-15 04:47:52,398 [MainThread  ] [INFO ]  ------------------------------
+2026-01-15 04:47:52,398 [MainThread  ] [INFO ]  --------round 55 ------------
+local epoch 0 	 client: 0 	 mal: 1 	 loss: 1.44780970 	 time: 1.08
+local epoch 0 	 client: 1 	 mal: 1 	 loss: 1.52809203 	 time: 1.08
+local epoch 0 	 client: 2 	 mal: 0 	 loss: 2.14044905 	 time: 1.08
+local epoch 0 	 client: 3 	 mal: 0 	 loss: 2.16277766 	 time: 1.08
+local epoch 0 	 client: 4 	 mal: 0 	 loss: 2.17809916 	 time: 1.08
+local epoch 0 	 client: 5 	 mal: 0 	 loss: 2.24858809 	 time: 1.08
+local epoch 0 	 client: 6 	 mal: 0 	 loss: 2.08320045 	 time: 1.08
+local epoch 0 	 client: 7 	 mal: 0 	 loss: 2.02519155 	 time: 1.08
+local epoch 0 	 client: 8 	 mal: 0 	 loss: 2.24766850 	 time: 1.08
+local epoch 0 	 client: 9 	 mal: 0 	 loss: 2.01975894 	 time: 1.08
+local epoch 0 	 client: 10 	 mal: 0 	 loss: 2.04894066 	 time: 1.08
+local epoch 0 	 client: 11 	 mal: 0 	 loss: 2.04851413 	 time: 1.08
+local epoch 0 	 client: 12 	 mal: 0 	 loss: 1.97994316 	 time: 1.08
+local epoch 0 	 client: 13 	 mal: 0 	 loss: 2.00276136 	 time: 1.08
+local epoch 0 	 client: 14 	 mal: 0 	 loss: 2.17288113 	 time: 1.08
+local epoch 0 	 client: 15 	 mal: 0 	 loss: 2.18761086 	 time: 1.08
+local epoch 0 	 client: 16 	 mal: 0 	 loss: 2.18605947 	 time: 1.08
+local epoch 0 	 client: 17 	 mal: 0 	 loss: 2.22033405 	 time: 1.08
+local epoch 0 	 client: 18 	 mal: 0 	 loss: 2.13245511 	 time: 1.08
+local epoch 0 	 client: 19 	 mal: 0 	 loss: 2.16870332 	 time: 1.08
+2026-01-15 04:48:14,837 [MainThread  ] [INFO ]  ---------Test 55 ------------
+2026-01-15 04:48:23,583 [MainThread  ] [INFO ]  Clean ACC:              0.1000
+2026-01-15 04:48:23,583 [MainThread  ] [INFO ]  Attack Success Ratio:   0.0000
+2026-01-15 04:48:23,583 [MainThread  ] [INFO ]  Backdoor ACC:           0.1111
+2026-01-15 04:48:23,583 [MainThread  ] [INFO ]  ------------------------------
+2026-01-15 04:48:23,583 [MainThread  ] [INFO ]  --------round 56 ------------
+local epoch 0 	 client: 0 	 mal: 1 	 loss: 1.33169520 	 time: 1.07
+local epoch 0 	 client: 1 	 mal: 1 	 loss: 1.38975859 	 time: 1.08
+local epoch 0 	 client: 2 	 mal: 0 	 loss: 2.12446070 	 time: 1.08
+local epoch 0 	 client: 3 	 mal: 0 	 loss: 2.12105727 	 time: 1.08
+local epoch 0 	 client: 4 	 mal: 0 	 loss: 2.07408929 	 time: 1.08
+local epoch 0 	 client: 5 	 mal: 0 	 loss: 2.08205795 	 time: 1.08
+local epoch 0 	 client: 6 	 mal: 0 	 loss: 2.17917204 	 time: 1.08
+local epoch 0 	 client: 7 	 mal: 0 	 loss: 2.13832569 	 time: 1.09
+local epoch 0 	 client: 8 	 mal: 0 	 loss: 2.14575195 	 time: 1.08
+local epoch 0 	 client: 9 	 mal: 0 	 loss: 2.08450937 	 time: 1.08
+local epoch 0 	 client: 10 	 mal: 0 	 loss: 2.19915652 	 time: 1.08
+local epoch 0 	 client: 11 	 mal: 0 	 loss: 2.10248065 	 time: 1.08
+local epoch 0 	 client: 12 	 mal: 0 	 loss: 2.07808137 	 time: 1.08
+local epoch 0 	 client: 13 	 mal: 0 	 loss: 2.10213661 	 time: 1.08
+local epoch 0 	 client: 14 	 mal: 0 	 loss: 2.09972858 	 time: 1.08
+local epoch 0 	 client: 15 	 mal: 0 	 loss: 2.24373531 	 time: 1.08
+local epoch 0 	 client: 16 	 mal: 0 	 loss: 2.23747087 	 time: 1.09
+local epoch 0 	 client: 17 	 mal: 0 	 loss: 2.11888766 	 time: 1.08
+local epoch 0 	 client: 18 	 mal: 0 	 loss: 2.18663502 	 time: 1.07
+local epoch 0 	 client: 19 	 mal: 0 	 loss: 2.05003977 	 time: 1.08
+2026-01-15 04:48:45,993 [MainThread  ] [INFO ]  ---------Test 56 ------------
+2026-01-15 04:48:54,640 [MainThread  ] [INFO ]  Clean ACC:              0.1000
+2026-01-15 04:48:54,641 [MainThread  ] [INFO ]  Attack Success Ratio:   0.0000
+2026-01-15 04:48:54,641 [MainThread  ] [INFO ]  Backdoor ACC:           0.1111
+2026-01-15 04:48:54,641 [MainThread  ] [INFO ]  ------------------------------
+2026-01-15 04:48:54,641 [MainThread  ] [INFO ]  --------round 57 ------------
+local epoch 0 	 client: 0 	 mal: 1 	 loss: 1.36162257 	 time: 1.08
+local epoch 0 	 client: 1 	 mal: 1 	 loss: 1.20099998 	 time: 1.08
+local epoch 0 	 client: 2 	 mal: 0 	 loss: 2.21972156 	 time: 1.08
+local epoch 0 	 client: 3 	 mal: 0 	 loss: 2.16221142 	 time: 1.08
+local epoch 0 	 client: 4 	 mal: 0 	 loss: 2.21715474 	 time: 1.08
+local epoch 0 	 client: 5 	 mal: 0 	 loss: 2.05922842 	 time: 1.08
+local epoch 0 	 client: 6 	 mal: 0 	 loss: 2.17950654 	 time: 1.08
+local epoch 0 	 client: 7 	 mal: 0 	 loss: 1.95566010 	 time: 1.08
+local epoch 0 	 client: 8 	 mal: 0 	 loss: 2.08073330 	 time: 1.08
+local epoch 0 	 client: 9 	 mal: 0 	 loss: 2.03598189 	 time: 1.08
+local epoch 0 	 client: 10 	 mal: 0 	 loss: 2.13966537 	 time: 1.08
+local epoch 0 	 client: 11 	 mal: 0 	 loss: 2.14478493 	 time: 1.08
+local epoch 0 	 client: 12 	 mal: 0 	 loss: 2.18373919 	 time: 1.08
+local epoch 0 	 client: 13 	 mal: 0 	 loss: 2.18845248 	 time: 1.08
+local epoch 0 	 client: 14 	 mal: 0 	 loss: 2.08604813 	 time: 1.08
+local epoch 0 	 client: 15 	 mal: 0 	 loss: 2.19988966 	 time: 1.08
+local epoch 0 	 client: 16 	 mal: 0 	 loss: 2.11492562 	 time: 1.08
+local epoch 0 	 client: 17 	 mal: 0 	 loss: 2.15590167 	 time: 1.08
+local epoch 0 	 client: 18 	 mal: 0 	 loss: 2.14849663 	 time: 1.08
+local epoch 0 	 client: 19 	 mal: 0 	 loss: 2.05031395 	 time: 1.08
+2026-01-15 04:49:17,073 [MainThread  ] [INFO ]  ---------Test 57 ------------
+2026-01-15 04:49:25,822 [MainThread  ] [INFO ]  Clean ACC:              0.1000
+2026-01-15 04:49:25,823 [MainThread  ] [INFO ]  Attack Success Ratio:   0.0000
+2026-01-15 04:49:25,823 [MainThread  ] [INFO ]  Backdoor ACC:           0.1111
+2026-01-15 04:49:25,823 [MainThread  ] [INFO ]  ------------------------------
+2026-01-15 04:49:25,823 [MainThread  ] [INFO ]  --------round 58 ------------
+local epoch 0 	 client: 0 	 mal: 1 	 loss: 1.62041748 	 time: 1.08
+local epoch 0 	 client: 1 	 mal: 1 	 loss: 1.55229414 	 time: 1.08
+local epoch 0 	 client: 2 	 mal: 0 	 loss: 2.04359126 	 time: 1.08
+local epoch 0 	 client: 3 	 mal: 0 	 loss: 2.02857399 	 time: 1.07
+local epoch 0 	 client: 4 	 mal: 0 	 loss: 2.22132421 	 time: 1.08
+local epoch 0 	 client: 5 	 mal: 0 	 loss: 2.19522810 	 time: 1.08
+local epoch 0 	 client: 6 	 mal: 0 	 loss: 2.15618920 	 time: 1.08
+local epoch 0 	 client: 7 	 mal: 0 	 loss: 2.28054786 	 time: 1.07
+local epoch 0 	 client: 8 	 mal: 0 	 loss: 2.00488591 	 time: 1.08
+local epoch 0 	 client: 9 	 mal: 0 	 loss: 2.07053828 	 time: 1.08
+local epoch 0 	 client: 10 	 mal: 0 	 loss: 2.05533218 	 time: 1.08
+local epoch 0 	 client: 11 	 mal: 0 	 loss: 2.15764475 	 time: 1.08
+local epoch 0 	 client: 12 	 mal: 0 	 loss: 2.14029336 	 time: 1.08
+local epoch 0 	 client: 13 	 mal: 0 	 loss: 2.15088868 	 time: 1.07
+local epoch 0 	 client: 14 	 mal: 0 	 loss: 2.12665296 	 time: 1.08
+local epoch 0 	 client: 15 	 mal: 0 	 loss: 2.09130192 	 time: 1.07
+local epoch 0 	 client: 16 	 mal: 0 	 loss: 2.06880784 	 time: 1.08
+local epoch 0 	 client: 17 	 mal: 0 	 loss: 2.27229548 	 time: 1.08
+local epoch 0 	 client: 18 	 mal: 0 	 loss: 2.14145684 	 time: 1.08
+local epoch 0 	 client: 19 	 mal: 0 	 loss: 2.06839085 	 time: 1.08
+2026-01-15 04:49:48,197 [MainThread  ] [INFO ]  ---------Test 58 ------------
+2026-01-15 04:49:56,864 [MainThread  ] [INFO ]  Clean ACC:              0.1000
+2026-01-15 04:49:56,864 [MainThread  ] [INFO ]  Attack Success Ratio:   0.0000
+2026-01-15 04:49:56,864 [MainThread  ] [INFO ]  Backdoor ACC:           0.1111
+2026-01-15 04:49:56,864 [MainThread  ] [INFO ]  ------------------------------
+2026-01-15 04:49:56,864 [MainThread  ] [INFO ]  --------round 59 ------------
+local epoch 0 	 client: 0 	 mal: 1 	 loss: 1.34409225 	 time: 1.08
+local epoch 0 	 client: 1 	 mal: 1 	 loss: 1.20972645 	 time: 1.08
+local epoch 0 	 client: 2 	 mal: 0 	 loss: 2.13579416 	 time: 1.08
+local epoch 0 	 client: 3 	 mal: 0 	 loss: 2.01283169 	 time: 1.08
+local epoch 0 	 client: 4 	 mal: 0 	 loss: 2.14537430 	 time: 1.08
+local epoch 0 	 client: 5 	 mal: 0 	 loss: 2.11246920 	 time: 1.08
+local epoch 0 	 client: 6 	 mal: 0 	 loss: 2.15825486 	 time: 1.08
+local epoch 0 	 client: 7 	 mal: 0 	 loss: 2.13976312 	 time: 1.08
+local epoch 0 	 client: 8 	 mal: 0 	 loss: 2.09404683 	 time: 1.08
+local epoch 0 	 client: 9 	 mal: 0 	 loss: 2.19845700 	 time: 1.08
+local epoch 0 	 client: 10 	 mal: 0 	 loss: 2.09608698 	 time: 1.08
+local epoch 0 	 client: 11 	 mal: 0 	 loss: 2.17181110 	 time: 1.08
+local epoch 0 	 client: 12 	 mal: 0 	 loss: 2.17995095 	 time: 1.07
+local epoch 0 	 client: 13 	 mal: 0 	 loss: 2.18065286 	 time: 1.08
+local epoch 0 	 client: 14 	 mal: 0 	 loss: 2.05850339 	 time: 1.07
+local epoch 0 	 client: 15 	 mal: 0 	 loss: 2.07325363 	 time: 1.08
+local epoch 0 	 client: 16 	 mal: 0 	 loss: 2.07748628 	 time: 1.08
+local epoch 0 	 client: 17 	 mal: 0 	 loss: 2.05226231 	 time: 1.08
+local epoch 0 	 client: 18 	 mal: 0 	 loss: 2.16362882 	 time: 1.08
+local epoch 0 	 client: 19 	 mal: 0 	 loss: 2.13349462 	 time: 1.08
+2026-01-15 04:50:19,284 [MainThread  ] [INFO ]  ---------Test 59 ------------
+2026-01-15 04:50:28,029 [MainThread  ] [INFO ]  Clean ACC:              0.1000
+2026-01-15 04:50:28,029 [MainThread  ] [INFO ]  Attack Success Ratio:   0.0000
+2026-01-15 04:50:28,029 [MainThread  ] [INFO ]  Backdoor ACC:           0.1111
+2026-01-15 04:50:28,029 [MainThread  ] [INFO ]  ------------------------------
+2026-01-15 04:50:28,030 [MainThread  ] [INFO ]  --------round 60 ------------
+local epoch 0 	 client: 0 	 mal: 1 	 loss: 1.29775369 	 time: 1.09
+local epoch 0 	 client: 1 	 mal: 1 	 loss: 1.59150839 	 time: 1.08
+local epoch 0 	 client: 2 	 mal: 0 	 loss: 2.12575531 	 time: 1.08
+local epoch 0 	 client: 3 	 mal: 0 	 loss: 2.20270681 	 time: 1.08
+local epoch 0 	 client: 4 	 mal: 0 	 loss: 2.09854007 	 time: 1.08
+local epoch 0 	 client: 5 	 mal: 0 	 loss: 2.26572537 	 time: 1.08
+local epoch 0 	 client: 6 	 mal: 0 	 loss: 2.22573400 	 time: 1.08
+local epoch 0 	 client: 7 	 mal: 0 	 loss: 2.02492118 	 time: 1.08
+local epoch 0 	 client: 8 	 mal: 0 	 loss: 2.18421173 	 time: 1.08
+local epoch 0 	 client: 9 	 mal: 0 	 loss: 2.02243781 	 time: 1.08
+local epoch 0 	 client: 10 	 mal: 0 	 loss: 2.13377666 	 time: 1.08
+local epoch 0 	 client: 11 	 mal: 0 	 loss: 2.24793196 	 time: 1.08
+local epoch 0 	 client: 12 	 mal: 0 	 loss: 2.15954399 	 time: 1.11
+local epoch 0 	 client: 13 	 mal: 0 	 loss: 2.25675225 	 time: 1.09
+local epoch 0 	 client: 14 	 mal: 0 	 loss: 2.08395529 	 time: 1.08
+local epoch 0 	 client: 15 	 mal: 0 	 loss: 2.06391692 	 time: 1.08
+local epoch 0 	 client: 16 	 mal: 0 	 loss: 2.22690988 	 time: 1.08
+local epoch 0 	 client: 17 	 mal: 0 	 loss: 2.10386992 	 time: 1.08
+local epoch 0 	 client: 18 	 mal: 0 	 loss: 2.07964802 	 time: 1.08
+local epoch 0 	 client: 19 	 mal: 0 	 loss: 2.15653801 	 time: 1.08
+2026-01-15 04:50:50,481 [MainThread  ] [INFO ]  ---------Test 60 ------------
+2026-01-15 04:50:59,131 [MainThread  ] [INFO ]  Clean ACC:              0.1000
+2026-01-15 04:50:59,131 [MainThread  ] [INFO ]  Attack Success Ratio:   0.0000
+2026-01-15 04:50:59,131 [MainThread  ] [INFO ]  Backdoor ACC:           0.1111
+2026-01-15 04:50:59,131 [MainThread  ] [INFO ]  ------------------------------
+2026-01-15 04:50:59,131 [MainThread  ] [INFO ]  --------round 61 ------------
+local epoch 0 	 client: 0 	 mal: 1 	 loss: 1.41415739 	 time: 1.08
+local epoch 0 	 client: 1 	 mal: 1 	 loss: 1.54150152 	 time: 1.08
+local epoch 0 	 client: 2 	 mal: 0 	 loss: 2.15264893 	 time: 1.08
+local epoch 0 	 client: 3 	 mal: 0 	 loss: 2.06618929 	 time: 1.08
+local epoch 0 	 client: 4 	 mal: 0 	 loss: 2.11593699 	 time: 1.08
+local epoch 0 	 client: 5 	 mal: 0 	 loss: 2.19945931 	 time: 1.08
+local epoch 0 	 client: 6 	 mal: 0 	 loss: 2.17592525 	 time: 1.08
+local epoch 0 	 client: 7 	 mal: 0 	 loss: 2.03520250 	 time: 1.08
+local epoch 0 	 client: 8 	 mal: 0 	 loss: 2.10816360 	 time: 1.08
+local epoch 0 	 client: 9 	 mal: 0 	 loss: 1.97989702 	 time: 1.08
+local epoch 0 	 client: 10 	 mal: 0 	 loss: 2.20808673 	 time: 1.08
+local epoch 0 	 client: 11 	 mal: 0 	 loss: 2.21986890 	 time: 1.08
+local epoch 0 	 client: 12 	 mal: 0 	 loss: 2.27241445 	 time: 1.08
+local epoch 0 	 client: 13 	 mal: 0 	 loss: 2.20788884 	 time: 1.08
+local epoch 0 	 client: 14 	 mal: 0 	 loss: 2.16702676 	 time: 1.08
+local epoch 0 	 client: 15 	 mal: 0 	 loss: 2.18723202 	 time: 1.08
+local epoch 0 	 client: 16 	 mal: 0 	 loss: 2.07433343 	 time: 1.08
+local epoch 0 	 client: 17 	 mal: 0 	 loss: 2.13660789 	 time: 1.08
+local epoch 0 	 client: 18 	 mal: 0 	 loss: 2.14391589 	 time: 1.08
+local epoch 0 	 client: 19 	 mal: 0 	 loss: 2.19321775 	 time: 1.08
+2026-01-15 04:51:21,570 [MainThread  ] [INFO ]  ---------Test 61 ------------
+2026-01-15 04:51:30,295 [MainThread  ] [INFO ]  Clean ACC:              0.1000
+2026-01-15 04:51:30,295 [MainThread  ] [INFO ]  Attack Success Ratio:   0.0000
+2026-01-15 04:51:30,295 [MainThread  ] [INFO ]  Backdoor ACC:           0.1111
+2026-01-15 04:51:30,295 [MainThread  ] [INFO ]  ------------------------------
+2026-01-15 04:51:30,295 [MainThread  ] [INFO ]  --------round 62 ------------
+local epoch 0 	 client: 0 	 mal: 1 	 loss: 1.26962352 	 time: 1.08
+local epoch 0 	 client: 1 	 mal: 1 	 loss: 1.55604076 	 time: 1.08
+local epoch 0 	 client: 2 	 mal: 0 	 loss: 2.07575154 	 time: 1.08
+local epoch 0 	 client: 3 	 mal: 0 	 loss: 2.21741796 	 time: 1.08
+local epoch 0 	 client: 4 	 mal: 0 	 loss: 1.95403993 	 time: 1.08
+local epoch 0 	 client: 5 	 mal: 0 	 loss: 2.12377453 	 time: 1.08
+local epoch 0 	 client: 6 	 mal: 0 	 loss: 2.13536882 	 time: 1.08
+local epoch 0 	 client: 7 	 mal: 0 	 loss: 2.25426412 	 time: 1.08
+local epoch 0 	 client: 8 	 mal: 0 	 loss: 2.15689945 	 time: 1.08
+local epoch 0 	 client: 9 	 mal: 0 	 loss: 2.05022049 	 time: 1.08
+local epoch 0 	 client: 10 	 mal: 0 	 loss: 2.19441319 	 time: 1.08
+local epoch 0 	 client: 11 	 mal: 0 	 loss: 2.07244754 	 time: 1.08
+local epoch 0 	 client: 12 	 mal: 0 	 loss: 2.11980152 	 time: 1.08
+local epoch 0 	 client: 13 	 mal: 0 	 loss: 2.17455268 	 time: 1.08
+local epoch 0 	 client: 14 	 mal: 0 	 loss: 2.22148323 	 time: 1.08
+local epoch 0 	 client: 15 	 mal: 0 	 loss: 2.14593458 	 time: 1.08
+local epoch 0 	 client: 16 	 mal: 0 	 loss: 2.16635180 	 time: 1.08
+local epoch 0 	 client: 17 	 mal: 0 	 loss: 2.09139037 	 time: 1.08
+local epoch 0 	 client: 18 	 mal: 0 	 loss: 2.11151743 	 time: 1.08
+local epoch 0 	 client: 19 	 mal: 0 	 loss: 2.18791842 	 time: 1.08
+2026-01-15 04:51:52,692 [MainThread  ] [INFO ]  ---------Test 62 ------------
+2026-01-15 04:52:01,324 [MainThread  ] [INFO ]  Clean ACC:              0.1000
+2026-01-15 04:52:01,325 [MainThread  ] [INFO ]  Attack Success Ratio:   0.0000
+2026-01-15 04:52:01,325 [MainThread  ] [INFO ]  Backdoor ACC:           0.1111
+2026-01-15 04:52:01,325 [MainThread  ] [INFO ]  ------------------------------
+2026-01-15 04:52:01,325 [MainThread  ] [INFO ]  --------round 63 ------------
+local epoch 0 	 client: 0 	 mal: 1 	 loss: 1.40759170 	 time: 1.08
+local epoch 0 	 client: 1 	 mal: 1 	 loss: 1.73659742 	 time: 1.08
+local epoch 0 	 client: 2 	 mal: 0 	 loss: 2.06444192 	 time: 1.08
+local epoch 0 	 client: 3 	 mal: 0 	 loss: 2.27292228 	 time: 1.08
+local epoch 0 	 client: 4 	 mal: 0 	 loss: 2.02346516 	 time: 1.08
+local epoch 0 	 client: 5 	 mal: 0 	 loss: 2.24802065 	 time: 1.08
+local epoch 0 	 client: 6 	 mal: 0 	 loss: 2.10927558 	 time: 1.08
+local epoch 0 	 client: 7 	 mal: 0 	 loss: 2.16231060 	 time: 1.08
+local epoch 0 	 client: 8 	 mal: 0 	 loss: 2.16368914 	 time: 1.08
+local epoch 0 	 client: 9 	 mal: 0 	 loss: 2.23553181 	 time: 1.08
+local epoch 0 	 client: 10 	 mal: 0 	 loss: 2.14120960 	 time: 1.08
+local epoch 0 	 client: 11 	 mal: 0 	 loss: 2.22455215 	 time: 1.08
+local epoch 0 	 client: 12 	 mal: 0 	 loss: 2.07719660 	 time: 1.08
+local epoch 0 	 client: 13 	 mal: 0 	 loss: 2.15085173 	 time: 1.08
+local epoch 0 	 client: 14 	 mal: 0 	 loss: 2.16414618 	 time: 1.08
+local epoch 0 	 client: 15 	 mal: 0 	 loss: 2.24174404 	 time: 1.08
+local epoch 0 	 client: 16 	 mal: 0 	 loss: 2.08548665 	 time: 1.08
+local epoch 0 	 client: 17 	 mal: 0 	 loss: 2.15219378 	 time: 1.08
+local epoch 0 	 client: 18 	 mal: 0 	 loss: 2.08288598 	 time: 1.08
+local epoch 0 	 client: 19 	 mal: 0 	 loss: 2.12423444 	 time: 1.08
+2026-01-15 04:52:23,735 [MainThread  ] [INFO ]  ---------Test 63 ------------
+2026-01-15 04:52:32,461 [MainThread  ] [INFO ]  Clean ACC:              0.1000
+2026-01-15 04:52:32,461 [MainThread  ] [INFO ]  Attack Success Ratio:   0.0000
+2026-01-15 04:52:32,461 [MainThread  ] [INFO ]  Backdoor ACC:           0.1111
+2026-01-15 04:52:32,461 [MainThread  ] [INFO ]  ------------------------------
+2026-01-15 04:52:32,461 [MainThread  ] [INFO ]  --------round 64 ------------
+local epoch 0 	 client: 0 	 mal: 1 	 loss: 1.20513761 	 time: 1.08
+local epoch 0 	 client: 1 	 mal: 1 	 loss: 1.47053301 	 time: 1.08
+local epoch 0 	 client: 2 	 mal: 0 	 loss: 2.17707348 	 time: 1.08
+local epoch 0 	 client: 3 	 mal: 0 	 loss: 2.10090160 	 time: 1.07
+local epoch 0 	 client: 4 	 mal: 0 	 loss: 2.07853985 	 time: 1.08
+local epoch 0 	 client: 5 	 mal: 0 	 loss: 2.10556006 	 time: 1.08
+local epoch 0 	 client: 6 	 mal: 0 	 loss: 2.17692852 	 time: 1.09
+local epoch 0 	 client: 7 	 mal: 0 	 loss: 2.22427106 	 time: 1.08
+local epoch 0 	 client: 8 	 mal: 0 	 loss: 2.12733483 	 time: 1.08
+local epoch 0 	 client: 9 	 mal: 0 	 loss: 2.13688755 	 time: 1.08
+local epoch 0 	 client: 10 	 mal: 0 	 loss: 2.12540555 	 time: 1.08
+local epoch 0 	 client: 11 	 mal: 0 	 loss: 2.08622742 	 time: 1.08
+local epoch 0 	 client: 12 	 mal: 0 	 loss: 1.97690332 	 time: 1.08
+local epoch 0 	 client: 13 	 mal: 0 	 loss: 2.21399069 	 time: 1.08
+local epoch 0 	 client: 14 	 mal: 0 	 loss: 2.18178630 	 time: 1.08
+local epoch 0 	 client: 15 	 mal: 0 	 loss: 2.14649081 	 time: 1.08
+local epoch 0 	 client: 16 	 mal: 0 	 loss: 2.16485476 	 time: 1.08
+local epoch 0 	 client: 17 	 mal: 0 	 loss: 2.00503278 	 time: 1.08
+local epoch 0 	 client: 18 	 mal: 0 	 loss: 2.21681166 	 time: 1.08
+local epoch 0 	 client: 19 	 mal: 0 	 loss: 2.06390715 	 time: 1.08
+2026-01-15 04:52:54,872 [MainThread  ] [INFO ]  ---------Test 64 ------------
+2026-01-15 04:53:03,512 [MainThread  ] [INFO ]  Clean ACC:              0.1000
+2026-01-15 04:53:03,512 [MainThread  ] [INFO ]  Attack Success Ratio:   0.0000
+2026-01-15 04:53:03,512 [MainThread  ] [INFO ]  Backdoor ACC:           0.1111
+2026-01-15 04:53:03,512 [MainThread  ] [INFO ]  ------------------------------
+2026-01-15 04:53:03,512 [MainThread  ] [INFO ]  --------round 65 ------------
+local epoch 0 	 client: 0 	 mal: 1 	 loss: 1.69008565 	 time: 1.08
+local epoch 0 	 client: 1 	 mal: 1 	 loss: 1.45110190 	 time: 1.08
+local epoch 0 	 client: 2 	 mal: 0 	 loss: 2.18573523 	 time: 1.08
+local epoch 0 	 client: 3 	 mal: 0 	 loss: 2.06606531 	 time: 1.07
+local epoch 0 	 client: 4 	 mal: 0 	 loss: 2.06304359 	 time: 1.08
+local epoch 0 	 client: 5 	 mal: 0 	 loss: 2.20199442 	 time: 1.08
+local epoch 0 	 client: 6 	 mal: 0 	 loss: 2.17720032 	 time: 1.08
+local epoch 0 	 client: 7 	 mal: 0 	 loss: 2.13733149 	 time: 1.08
+local epoch 0 	 client: 8 	 mal: 0 	 loss: 2.03008676 	 time: 1.08
+local epoch 0 	 client: 9 	 mal: 0 	 loss: 2.18157935 	 time: 1.08
+local epoch 0 	 client: 10 	 mal: 0 	 loss: 2.01120114 	 time: 1.08
+local epoch 0 	 client: 11 	 mal: 0 	 loss: 2.05623603 	 time: 1.08
+local epoch 0 	 client: 12 	 mal: 0 	 loss: 2.11201811 	 time: 1.08
+local epoch 0 	 client: 13 	 mal: 0 	 loss: 2.15135074 	 time: 1.08
+local epoch 0 	 client: 14 	 mal: 0 	 loss: 2.13615322 	 time: 1.08
+local epoch 0 	 client: 15 	 mal: 0 	 loss: 2.09031248 	 time: 1.08
+local epoch 0 	 client: 16 	 mal: 0 	 loss: 2.01453114 	 time: 1.08
+local epoch 0 	 client: 17 	 mal: 0 	 loss: 2.21998072 	 time: 1.08
+local epoch 0 	 client: 18 	 mal: 0 	 loss: 2.05535579 	 time: 1.08
+local epoch 0 	 client: 19 	 mal: 0 	 loss: 2.19783139 	 time: 1.08
+2026-01-15 04:53:25,911 [MainThread  ] [INFO ]  ---------Test 65 ------------
+2026-01-15 04:53:34,632 [MainThread  ] [INFO ]  Clean ACC:              0.1000
+2026-01-15 04:53:34,632 [MainThread  ] [INFO ]  Attack Success Ratio:   0.0000
+2026-01-15 04:53:34,632 [MainThread  ] [INFO ]  Backdoor ACC:           0.1111
+2026-01-15 04:53:34,632 [MainThread  ] [INFO ]  ------------------------------
+2026-01-15 04:53:34,632 [MainThread  ] [INFO ]  --------round 66 ------------
+local epoch 0 	 client: 0 	 mal: 1 	 loss: 1.52947628 	 time: 1.08
+local epoch 0 	 client: 1 	 mal: 1 	 loss: 1.46683466 	 time: 1.08
+local epoch 0 	 client: 2 	 mal: 0 	 loss: 2.18894291 	 time: 1.08
+local epoch 0 	 client: 3 	 mal: 0 	 loss: 2.10060835 	 time: 1.08
+local epoch 0 	 client: 4 	 mal: 0 	 loss: 2.17803216 	 time: 1.08
+local epoch 0 	 client: 5 	 mal: 0 	 loss: 2.07749081 	 time: 1.08
+local epoch 0 	 client: 6 	 mal: 0 	 loss: 2.13602495 	 time: 1.08
+local epoch 0 	 client: 7 	 mal: 0 	 loss: 2.10051084 	 time: 1.08
+local epoch 0 	 client: 8 	 mal: 0 	 loss: 2.14177704 	 time: 1.08
+local epoch 0 	 client: 9 	 mal: 0 	 loss: 2.07024193 	 time: 1.08
+local epoch 0 	 client: 10 	 mal: 0 	 loss: 2.10144997 	 time: 1.08
+local epoch 0 	 client: 11 	 mal: 0 	 loss: 2.07712102 	 time: 1.08
+local epoch 0 	 client: 12 	 mal: 0 	 loss: 2.07488990 	 time: 1.08
+local epoch 0 	 client: 13 	 mal: 0 	 loss: 2.14727592 	 time: 1.08
+local epoch 0 	 client: 14 	 mal: 0 	 loss: 2.01583529 	 time: 1.08
+local epoch 0 	 client: 15 	 mal: 0 	 loss: 2.24220419 	 time: 1.08
+local epoch 0 	 client: 16 	 mal: 0 	 loss: 2.14406753 	 time: 1.08
+local epoch 0 	 client: 17 	 mal: 0 	 loss: 2.11774659 	 time: 1.08
+local epoch 0 	 client: 18 	 mal: 0 	 loss: 2.12719178 	 time: 1.08
+local epoch 0 	 client: 19 	 mal: 0 	 loss: 2.10651708 	 time: 1.08
+2026-01-15 04:53:57,035 [MainThread  ] [INFO ]  ---------Test 66 ------------
+2026-01-15 04:54:05,676 [MainThread  ] [INFO ]  Clean ACC:              0.1000
+2026-01-15 04:54:05,676 [MainThread  ] [INFO ]  Attack Success Ratio:   0.0000
+2026-01-15 04:54:05,676 [MainThread  ] [INFO ]  Backdoor ACC:           0.1111
+2026-01-15 04:54:05,676 [MainThread  ] [INFO ]  ------------------------------
+2026-01-15 04:54:05,676 [MainThread  ] [INFO ]  --------round 67 ------------
+local epoch 0 	 client: 0 	 mal: 1 	 loss: 1.32590377 	 time: 1.08
+local epoch 0 	 client: 1 	 mal: 1 	 loss: 1.37693465 	 time: 1.08
+local epoch 0 	 client: 2 	 mal: 0 	 loss: 2.10330701 	 time: 1.08
+local epoch 0 	 client: 3 	 mal: 0 	 loss: 2.24296117 	 time: 1.08
+local epoch 0 	 client: 4 	 mal: 0 	 loss: 2.07265115 	 time: 1.08
+local epoch 0 	 client: 5 	 mal: 0 	 loss: 2.04482698 	 time: 1.08
+local epoch 0 	 client: 6 	 mal: 0 	 loss: 2.16574097 	 time: 1.08
+local epoch 0 	 client: 7 	 mal: 0 	 loss: 2.04597616 	 time: 1.08
+local epoch 0 	 client: 8 	 mal: 0 	 loss: 2.17524195 	 time: 1.09
+local epoch 0 	 client: 9 	 mal: 0 	 loss: 2.18501973 	 time: 1.08
+local epoch 0 	 client: 10 	 mal: 0 	 loss: 2.07496095 	 time: 1.08
+local epoch 0 	 client: 11 	 mal: 0 	 loss: 2.08445215 	 time: 1.08
+local epoch 0 	 client: 12 	 mal: 0 	 loss: 2.04070973 	 time: 1.08
+local epoch 0 	 client: 13 	 mal: 0 	 loss: 2.15682340 	 time: 1.08
+local epoch 0 	 client: 14 	 mal: 0 	 loss: 2.08135033 	 time: 1.08
+local epoch 0 	 client: 15 	 mal: 0 	 loss: 2.04834533 	 time: 1.08
+local epoch 0 	 client: 16 	 mal: 0 	 loss: 2.12618113 	 time: 1.08
+local epoch 0 	 client: 17 	 mal: 0 	 loss: 2.12335086 	 time: 1.08
+local epoch 0 	 client: 18 	 mal: 0 	 loss: 2.16728473 	 time: 1.08
+local epoch 0 	 client: 19 	 mal: 0 	 loss: 2.15317106 	 time: 1.08
+2026-01-15 04:54:28,118 [MainThread  ] [INFO ]  ---------Test 67 ------------
+2026-01-15 04:54:36,836 [MainThread  ] [INFO ]  Clean ACC:              0.1000
+2026-01-15 04:54:36,836 [MainThread  ] [INFO ]  Attack Success Ratio:   0.0000
+2026-01-15 04:54:36,836 [MainThread  ] [INFO ]  Backdoor ACC:           0.1111
+2026-01-15 04:54:36,836 [MainThread  ] [INFO ]  ------------------------------
+2026-01-15 04:54:36,836 [MainThread  ] [INFO ]  --------round 68 ------------
+local epoch 0 	 client: 0 	 mal: 1 	 loss: 1.46739185 	 time: 1.08
+local epoch 0 	 client: 1 	 mal: 1 	 loss: 1.29434752 	 time: 1.08
+local epoch 0 	 client: 2 	 mal: 0 	 loss: 2.04636621 	 time: 1.08
+local epoch 0 	 client: 3 	 mal: 0 	 loss: 2.23565292 	 time: 1.08
+local epoch 0 	 client: 4 	 mal: 0 	 loss: 2.19803905 	 time: 1.08
+local epoch 0 	 client: 5 	 mal: 0 	 loss: 1.98373079 	 time: 1.08
+local epoch 0 	 client: 6 	 mal: 0 	 loss: 2.12903285 	 time: 1.08
+local epoch 0 	 client: 7 	 mal: 0 	 loss: 2.09156871 	 time: 1.08
+local epoch 0 	 client: 8 	 mal: 0 	 loss: 2.06659698 	 time: 1.08
+local epoch 0 	 client: 9 	 mal: 0 	 loss: 2.13942838 	 time: 1.08
+local epoch 0 	 client: 10 	 mal: 0 	 loss: 2.14009237 	 time: 1.08
+local epoch 0 	 client: 11 	 mal: 0 	 loss: 2.15637088 	 time: 1.08
+local epoch 0 	 client: 12 	 mal: 0 	 loss: 2.08909202 	 time: 1.08
+local epoch 0 	 client: 13 	 mal: 0 	 loss: 2.06325507 	 time: 1.08
+local epoch 0 	 client: 14 	 mal: 0 	 loss: 2.20713615 	 time: 1.08
+local epoch 0 	 client: 15 	 mal: 0 	 loss: 2.15939426 	 time: 1.08
+local epoch 0 	 client: 16 	 mal: 0 	 loss: 2.17436886 	 time: 1.08
+local epoch 0 	 client: 17 	 mal: 0 	 loss: 2.11526322 	 time: 1.08
+local epoch 0 	 client: 18 	 mal: 0 	 loss: 2.23011470 	 time: 1.08
+local epoch 0 	 client: 19 	 mal: 0 	 loss: 2.22129178 	 time: 1.08
+2026-01-15 04:54:59,233 [MainThread  ] [INFO ]  ---------Test 68 ------------
+2026-01-15 04:55:07,880 [MainThread  ] [INFO ]  Clean ACC:              0.1000
+2026-01-15 04:55:07,880 [MainThread  ] [INFO ]  Attack Success Ratio:   0.0000
+2026-01-15 04:55:07,880 [MainThread  ] [INFO ]  Backdoor ACC:           0.1111
+2026-01-15 04:55:07,880 [MainThread  ] [INFO ]  ------------------------------
+2026-01-15 04:55:07,880 [MainThread  ] [INFO ]  --------round 69 ------------
+local epoch 0 	 client: 0 	 mal: 1 	 loss: 1.40750921 	 time: 1.08
+local epoch 0 	 client: 1 	 mal: 1 	 loss: 1.39172292 	 time: 1.08
+local epoch 0 	 client: 2 	 mal: 0 	 loss: 2.17457628 	 time: 1.08
+local epoch 0 	 client: 3 	 mal: 0 	 loss: 2.13385940 	 time: 1.08
+local epoch 0 	 client: 4 	 mal: 0 	 loss: 2.20875430 	 time: 1.08
+local epoch 0 	 client: 5 	 mal: 0 	 loss: 2.06053925 	 time: 1.07
+local epoch 0 	 client: 6 	 mal: 0 	 loss: 2.19139004 	 time: 1.08
+local epoch 0 	 client: 7 	 mal: 0 	 loss: 2.07275772 	 time: 1.07
+local epoch 0 	 client: 8 	 mal: 0 	 loss: 2.04147744 	 time: 1.08
+local epoch 0 	 client: 9 	 mal: 0 	 loss: 2.14512110 	 time: 1.07
+local epoch 0 	 client: 10 	 mal: 0 	 loss: 2.22763824 	 time: 1.08
+local epoch 0 	 client: 11 	 mal: 0 	 loss: 1.99595904 	 time: 1.08
+local epoch 0 	 client: 12 	 mal: 0 	 loss: 2.10285425 	 time: 1.08
+local epoch 0 	 client: 13 	 mal: 0 	 loss: 2.16679549 	 time: 1.08
+local epoch 0 	 client: 14 	 mal: 0 	 loss: 2.19563103 	 time: 1.08
+local epoch 0 	 client: 15 	 mal: 0 	 loss: 2.05361414 	 time: 1.08
+local epoch 0 	 client: 16 	 mal: 0 	 loss: 2.11610317 	 time: 1.08
+local epoch 0 	 client: 17 	 mal: 0 	 loss: 2.09525371 	 time: 1.08
+local epoch 0 	 client: 18 	 mal: 0 	 loss: 2.13820124 	 time: 1.08
+local epoch 0 	 client: 19 	 mal: 0 	 loss: 2.13053894 	 time: 1.08
+2026-01-15 04:55:30,234 [MainThread  ] [INFO ]  ---------Test 69 ------------
+2026-01-15 04:55:38,995 [MainThread  ] [INFO ]  Clean ACC:              0.1000
+2026-01-15 04:55:38,996 [MainThread  ] [INFO ]  Attack Success Ratio:   0.0000
+2026-01-15 04:55:38,996 [MainThread  ] [INFO ]  Backdoor ACC:           0.1111
+2026-01-15 04:55:38,996 [MainThread  ] [INFO ]  ------------------------------
+2026-01-15 04:55:38,996 [MainThread  ] [INFO ]  --------round 70 ------------
+local epoch 0 	 client: 0 	 mal: 1 	 loss: 1.43930137 	 time: 1.08
+local epoch 0 	 client: 1 	 mal: 1 	 loss: 1.59739292 	 time: 1.09
+local epoch 0 	 client: 2 	 mal: 0 	 loss: 2.11895251 	 time: 1.08
+local epoch 0 	 client: 3 	 mal: 0 	 loss: 2.14971924 	 time: 1.09
+local epoch 0 	 client: 4 	 mal: 0 	 loss: 2.03064895 	 time: 1.08
+local epoch 0 	 client: 5 	 mal: 0 	 loss: 2.11280537 	 time: 1.08
+local epoch 0 	 client: 6 	 mal: 0 	 loss: 2.14729285 	 time: 1.08
+local epoch 0 	 client: 7 	 mal: 0 	 loss: 2.15284371 	 time: 1.08
+local epoch 0 	 client: 8 	 mal: 0 	 loss: 2.14377761 	 time: 1.08
+local epoch 0 	 client: 9 	 mal: 0 	 loss: 2.12683558 	 time: 1.08
+local epoch 0 	 client: 10 	 mal: 0 	 loss: 2.10457373 	 time: 1.08
+local epoch 0 	 client: 11 	 mal: 0 	 loss: 2.10794425 	 time: 1.08
+local epoch 0 	 client: 12 	 mal: 0 	 loss: 2.18380785 	 time: 1.07
+local epoch 0 	 client: 13 	 mal: 0 	 loss: 2.13068891 	 time: 1.08
+local epoch 0 	 client: 14 	 mal: 0 	 loss: 2.15470791 	 time: 1.08
+local epoch 0 	 client: 15 	 mal: 0 	 loss: 2.13152814 	 time: 1.08
+local epoch 0 	 client: 16 	 mal: 0 	 loss: 2.06076860 	 time: 1.09
+local epoch 0 	 client: 17 	 mal: 0 	 loss: 2.12013125 	 time: 1.08
+local epoch 0 	 client: 18 	 mal: 0 	 loss: 2.05736184 	 time: 1.08
+local epoch 0 	 client: 19 	 mal: 0 	 loss: 2.07608891 	 time: 1.08
+2026-01-15 04:56:01,428 [MainThread  ] [INFO ]  ---------Test 70 ------------
+2026-01-15 04:56:10,088 [MainThread  ] [INFO ]  Clean ACC:              0.1000
+2026-01-15 04:56:10,088 [MainThread  ] [INFO ]  Attack Success Ratio:   0.0000
+2026-01-15 04:56:10,088 [MainThread  ] [INFO ]  Backdoor ACC:           0.1111
+2026-01-15 04:56:10,088 [MainThread  ] [INFO ]  ------------------------------
+2026-01-15 04:56:10,088 [MainThread  ] [INFO ]  --------round 71 ------------
+local epoch 0 	 client: 0 	 mal: 1 	 loss: 1.32866848 	 time: 1.08
+local epoch 0 	 client: 1 	 mal: 1 	 loss: 1.58482254 	 time: 1.08
+local epoch 0 	 client: 2 	 mal: 0 	 loss: 2.16635585 	 time: 1.08
+local epoch 0 	 client: 3 	 mal: 0 	 loss: 2.01665640 	 time: 1.08
+local epoch 0 	 client: 4 	 mal: 0 	 loss: 2.13577199 	 time: 1.08
+local epoch 0 	 client: 5 	 mal: 0 	 loss: 2.24759555 	 time: 1.08
+local epoch 0 	 client: 6 	 mal: 0 	 loss: 2.13443136 	 time: 1.08
+local epoch 0 	 client: 7 	 mal: 0 	 loss: 2.07536459 	 time: 1.08
+local epoch 0 	 client: 8 	 mal: 0 	 loss: 2.16475892 	 time: 1.08
+local epoch 0 	 client: 9 	 mal: 0 	 loss: 2.21354771 	 time: 1.08
+local epoch 0 	 client: 10 	 mal: 0 	 loss: 2.11990595 	 time: 1.08
+local epoch 0 	 client: 11 	 mal: 0 	 loss: 2.16099358 	 time: 1.08
+local epoch 0 	 client: 12 	 mal: 0 	 loss: 2.06162953 	 time: 1.08
+local epoch 0 	 client: 13 	 mal: 0 	 loss: 2.12210441 	 time: 1.08
+local epoch 0 	 client: 14 	 mal: 0 	 loss: 2.08435988 	 time: 1.08
+local epoch 0 	 client: 15 	 mal: 0 	 loss: 2.26172161 	 time: 1.08
+local epoch 0 	 client: 16 	 mal: 0 	 loss: 2.08060670 	 time: 1.08
+local epoch 0 	 client: 17 	 mal: 0 	 loss: 2.15724325 	 time: 1.09
+local epoch 0 	 client: 18 	 mal: 0 	 loss: 2.05930448 	 time: 1.08
+local epoch 0 	 client: 19 	 mal: 0 	 loss: 2.07729173 	 time: 1.08
+2026-01-15 04:56:32,531 [MainThread  ] [INFO ]  ---------Test 71 ------------
+2026-01-15 04:56:41,268 [MainThread  ] [INFO ]  Clean ACC:              0.1000
+2026-01-15 04:56:41,268 [MainThread  ] [INFO ]  Attack Success Ratio:   0.0000
+2026-01-15 04:56:41,268 [MainThread  ] [INFO ]  Backdoor ACC:           0.1111
+2026-01-15 04:56:41,268 [MainThread  ] [INFO ]  ------------------------------
+2026-01-15 04:56:41,268 [MainThread  ] [INFO ]  --------round 72 ------------
+local epoch 0 	 client: 0 	 mal: 1 	 loss: 1.41283989 	 time: 1.09
+local epoch 0 	 client: 1 	 mal: 1 	 loss: 1.61242652 	 time: 1.08
+local epoch 0 	 client: 2 	 mal: 0 	 loss: 2.23431325 	 time: 1.08
+local epoch 0 	 client: 3 	 mal: 0 	 loss: 2.12259698 	 time: 1.08
+local epoch 0 	 client: 4 	 mal: 0 	 loss: 2.14761877 	 time: 1.09
+local epoch 0 	 client: 5 	 mal: 0 	 loss: 2.23450422 	 time: 1.08
+local epoch 0 	 client: 6 	 mal: 0 	 loss: 2.16449451 	 time: 1.09
+local epoch 0 	 client: 7 	 mal: 0 	 loss: 2.21154165 	 time: 1.08
+local epoch 0 	 client: 8 	 mal: 0 	 loss: 2.19607449 	 time: 1.08
+local epoch 0 	 client: 9 	 mal: 0 	 loss: 2.08783054 	 time: 1.09
+local epoch 0 	 client: 10 	 mal: 0 	 loss: 2.10380435 	 time: 1.09
+local epoch 0 	 client: 11 	 mal: 0 	 loss: 2.15603542 	 time: 1.08
+local epoch 0 	 client: 12 	 mal: 0 	 loss: 2.11337614 	 time: 1.08
+local epoch 0 	 client: 13 	 mal: 0 	 loss: 2.17531967 	 time: 1.09
+local epoch 0 	 client: 14 	 mal: 0 	 loss: 2.06421876 	 time: 1.08
+local epoch 0 	 client: 15 	 mal: 0 	 loss: 2.14382792 	 time: 1.09
+local epoch 0 	 client: 16 	 mal: 0 	 loss: 2.15628791 	 time: 1.08
+local epoch 0 	 client: 17 	 mal: 0 	 loss: 2.11839676 	 time: 1.09
+local epoch 0 	 client: 18 	 mal: 0 	 loss: 2.05223322 	 time: 1.08
+local epoch 0 	 client: 19 	 mal: 0 	 loss: 2.29325318 	 time: 1.09
+2026-01-15 04:57:03,750 [MainThread  ] [INFO ]  ---------Test 72 ------------
+2026-01-15 04:57:12,434 [MainThread  ] [INFO ]  Clean ACC:              0.1000
+2026-01-15 04:57:12,434 [MainThread  ] [INFO ]  Attack Success Ratio:   0.0000
+2026-01-15 04:57:12,434 [MainThread  ] [INFO ]  Backdoor ACC:           0.1111
+2026-01-15 04:57:12,434 [MainThread  ] [INFO ]  ------------------------------
+2026-01-15 04:57:12,434 [MainThread  ] [INFO ]  --------round 73 ------------
+local epoch 0 	 client: 0 	 mal: 1 	 loss: 1.51118016 	 time: 1.08
+local epoch 0 	 client: 1 	 mal: 1 	 loss: 1.54155350 	 time: 1.07
+local epoch 0 	 client: 2 	 mal: 0 	 loss: 2.15759587 	 time: 1.08
+local epoch 0 	 client: 3 	 mal: 0 	 loss: 2.10591483 	 time: 1.09
+local epoch 0 	 client: 4 	 mal: 0 	 loss: 2.18293095 	 time: 1.08
+local epoch 0 	 client: 5 	 mal: 0 	 loss: 2.16156006 	 time: 1.07
+local epoch 0 	 client: 6 	 mal: 0 	 loss: 2.19416189 	 time: 1.08
+local epoch 0 	 client: 7 	 mal: 0 	 loss: 2.15307355 	 time: 1.08
+local epoch 0 	 client: 8 	 mal: 0 	 loss: 2.18368244 	 time: 1.08
+local epoch 0 	 client: 9 	 mal: 0 	 loss: 2.10485744 	 time: 1.07
+local epoch 0 	 client: 10 	 mal: 0 	 loss: 2.17210340 	 time: 1.08
+local epoch 0 	 client: 11 	 mal: 0 	 loss: 2.10938048 	 time: 1.08
+local epoch 0 	 client: 12 	 mal: 0 	 loss: 2.05999231 	 time: 1.09
+local epoch 0 	 client: 13 	 mal: 0 	 loss: 2.11121655 	 time: 1.07
+local epoch 0 	 client: 14 	 mal: 0 	 loss: 2.09631658 	 time: 1.08
+local epoch 0 	 client: 15 	 mal: 0 	 loss: 2.07117677 	 time: 1.08
+local epoch 0 	 client: 16 	 mal: 0 	 loss: 2.11489987 	 time: 1.08
+local epoch 0 	 client: 17 	 mal: 0 	 loss: 2.19888592 	 time: 1.08
+local epoch 0 	 client: 18 	 mal: 0 	 loss: 2.23272419 	 time: 1.08
+local epoch 0 	 client: 19 	 mal: 0 	 loss: 2.16594172 	 time: 1.09
+2026-01-15 04:57:34,856 [MainThread  ] [INFO ]  ---------Test 73 ------------
+2026-01-15 04:57:43,624 [MainThread  ] [INFO ]  Clean ACC:              0.1000
+2026-01-15 04:57:43,624 [MainThread  ] [INFO ]  Attack Success Ratio:   0.0000
+2026-01-15 04:57:43,624 [MainThread  ] [INFO ]  Backdoor ACC:           0.1111
+2026-01-15 04:57:43,624 [MainThread  ] [INFO ]  ------------------------------
+2026-01-15 04:57:43,624 [MainThread  ] [INFO ]  --------round 74 ------------
+local epoch 0 	 client: 0 	 mal: 1 	 loss: 1.40103185 	 time: 1.08
+local epoch 0 	 client: 1 	 mal: 1 	 loss: 1.36833692 	 time: 1.09
+local epoch 0 	 client: 2 	 mal: 0 	 loss: 2.06775331 	 time: 1.08
+local epoch 0 	 client: 3 	 mal: 0 	 loss: 2.23628569 	 time: 1.09
+local epoch 0 	 client: 4 	 mal: 0 	 loss: 2.26766372 	 time: 1.08
+local epoch 0 	 client: 5 	 mal: 0 	 loss: 2.12146592 	 time: 1.09
+local epoch 0 	 client: 6 	 mal: 0 	 loss: 2.16548371 	 time: 1.08
+local epoch 0 	 client: 7 	 mal: 0 	 loss: 2.17476606 	 time: 1.09
+local epoch 0 	 client: 8 	 mal: 0 	 loss: 2.10237384 	 time: 1.08
+local epoch 0 	 client: 9 	 mal: 0 	 loss: 2.23459888 	 time: 1.08
+local epoch 0 	 client: 10 	 mal: 0 	 loss: 2.04634762 	 time: 1.08
+local epoch 0 	 client: 11 	 mal: 0 	 loss: 2.10829449 	 time: 1.09
+local epoch 0 	 client: 12 	 mal: 0 	 loss: 2.09669638 	 time: 1.08
+local epoch 0 	 client: 13 	 mal: 0 	 loss: 2.14434576 	 time: 1.08
+local epoch 0 	 client: 14 	 mal: 0 	 loss: 2.21137524 	 time: 1.09
+local epoch 0 	 client: 15 	 mal: 0 	 loss: 2.16975355 	 time: 1.08
+local epoch 0 	 client: 16 	 mal: 0 	 loss: 2.11636949 	 time: 1.09
+local epoch 0 	 client: 17 	 mal: 0 	 loss: 2.09796596 	 time: 1.08
+local epoch 0 	 client: 18 	 mal: 0 	 loss: 2.17876244 	 time: 1.09
+local epoch 0 	 client: 19 	 mal: 0 	 loss: 2.17091537 	 time: 1.09
+2026-01-15 04:58:06,118 [MainThread  ] [INFO ]  ---------Test 74 ------------
+2026-01-15 04:58:14,782 [MainThread  ] [INFO ]  Clean ACC:              0.1000
+2026-01-15 04:58:14,782 [MainThread  ] [INFO ]  Attack Success Ratio:   0.0000
+2026-01-15 04:58:14,782 [MainThread  ] [INFO ]  Backdoor ACC:           0.1111
+2026-01-15 04:58:14,782 [MainThread  ] [INFO ]  ------------------------------
+2026-01-15 04:58:14,782 [MainThread  ] [INFO ]  --------round 75 ------------
+local epoch 0 	 client: 0 	 mal: 1 	 loss: 1.53748572 	 time: 1.08
+local epoch 0 	 client: 1 	 mal: 1 	 loss: 1.63225055 	 time: 1.08
+local epoch 0 	 client: 2 	 mal: 0 	 loss: 2.13038611 	 time: 1.07
+local epoch 0 	 client: 3 	 mal: 0 	 loss: 2.11464095 	 time: 1.08
+local epoch 0 	 client: 4 	 mal: 0 	 loss: 2.16228294 	 time: 1.07
+local epoch 0 	 client: 5 	 mal: 0 	 loss: 2.12982678 	 time: 1.08
+local epoch 0 	 client: 6 	 mal: 0 	 loss: 2.22793508 	 time: 1.07
+local epoch 0 	 client: 7 	 mal: 0 	 loss: 2.09092665 	 time: 1.08
+local epoch 0 	 client: 8 	 mal: 0 	 loss: 2.21739912 	 time: 1.08
+local epoch 0 	 client: 9 	 mal: 0 	 loss: 2.11183882 	 time: 1.08
+local epoch 0 	 client: 10 	 mal: 0 	 loss: 2.17465258 	 time: 1.09
+local epoch 0 	 client: 11 	 mal: 0 	 loss: 2.13844109 	 time: 1.08
+local epoch 0 	 client: 12 	 mal: 0 	 loss: 2.22057939 	 time: 1.09
+local epoch 0 	 client: 13 	 mal: 0 	 loss: 2.15018225 	 time: 1.08
+local epoch 0 	 client: 14 	 mal: 0 	 loss: 2.16748381 	 time: 1.07
+local epoch 0 	 client: 15 	 mal: 0 	 loss: 2.22179604 	 time: 1.08
+local epoch 0 	 client: 16 	 mal: 0 	 loss: 2.01467133 	 time: 1.08
+local epoch 0 	 client: 17 	 mal: 0 	 loss: 2.13060260 	 time: 1.08
+local epoch 0 	 client: 18 	 mal: 0 	 loss: 2.15024567 	 time: 1.08
+local epoch 0 	 client: 19 	 mal: 0 	 loss: 2.12502670 	 time: 1.08
+2026-01-15 04:58:37,156 [MainThread  ] [INFO ]  ---------Test 75 ------------
+2026-01-15 04:58:45,909 [MainThread  ] [INFO ]  Clean ACC:              0.1000
+2026-01-15 04:58:45,909 [MainThread  ] [INFO ]  Attack Success Ratio:   0.0000
+2026-01-15 04:58:45,909 [MainThread  ] [INFO ]  Backdoor ACC:           0.1111
+2026-01-15 04:58:45,910 [MainThread  ] [INFO ]  ------------------------------
+2026-01-15 04:58:45,910 [MainThread  ] [INFO ]  --------round 76 ------------
+local epoch 0 	 client: 0 	 mal: 1 	 loss: 1.44849658 	 time: 1.07
+local epoch 0 	 client: 1 	 mal: 1 	 loss: 1.38316095 	 time: 1.08
+local epoch 0 	 client: 2 	 mal: 0 	 loss: 2.18855762 	 time: 1.07
+local epoch 0 	 client: 3 	 mal: 0 	 loss: 2.23567629 	 time: 1.08
+local epoch 0 	 client: 4 	 mal: 0 	 loss: 2.12485981 	 time: 1.08
+local epoch 0 	 client: 5 	 mal: 0 	 loss: 2.14985061 	 time: 1.09
+local epoch 0 	 client: 6 	 mal: 0 	 loss: 2.19877625 	 time: 1.09
+local epoch 0 	 client: 7 	 mal: 0 	 loss: 2.17707443 	 time: 1.08
+local epoch 0 	 client: 8 	 mal: 0 	 loss: 2.14264345 	 time: 1.08
+local epoch 0 	 client: 9 	 mal: 0 	 loss: 2.23010564 	 time: 1.08
+local epoch 0 	 client: 10 	 mal: 0 	 loss: 2.17270160 	 time: 1.08
+local epoch 0 	 client: 11 	 mal: 0 	 loss: 2.11764193 	 time: 1.08
+local epoch 0 	 client: 12 	 mal: 0 	 loss: 2.18312573 	 time: 1.08
+local epoch 0 	 client: 13 	 mal: 0 	 loss: 2.26974320 	 time: 1.09
+local epoch 0 	 client: 14 	 mal: 0 	 loss: 2.20609045 	 time: 1.08
+local epoch 0 	 client: 15 	 mal: 0 	 loss: 2.15075135 	 time: 1.08
+local epoch 0 	 client: 16 	 mal: 0 	 loss: 2.16299391 	 time: 1.08
+local epoch 0 	 client: 17 	 mal: 0 	 loss: 2.16924143 	 time: 1.09
+local epoch 0 	 client: 18 	 mal: 0 	 loss: 2.23409033 	 time: 1.08
+local epoch 0 	 client: 19 	 mal: 0 	 loss: 2.17690539 	 time: 1.08
+2026-01-15 04:59:08,336 [MainThread  ] [INFO ]  ---------Test 76 ------------
+2026-01-15 04:59:17,018 [MainThread  ] [INFO ]  Clean ACC:              0.1000
+2026-01-15 04:59:17,018 [MainThread  ] [INFO ]  Attack Success Ratio:   0.0000
+2026-01-15 04:59:17,018 [MainThread  ] [INFO ]  Backdoor ACC:           0.1111
+2026-01-15 04:59:17,018 [MainThread  ] [INFO ]  ------------------------------
+2026-01-15 04:59:17,018 [MainThread  ] [INFO ]  --------round 77 ------------
+local epoch 0 	 client: 0 	 mal: 1 	 loss: 1.35372686 	 time: 1.08
+local epoch 0 	 client: 1 	 mal: 1 	 loss: 1.44454837 	 time: 1.08
+local epoch 0 	 client: 2 	 mal: 0 	 loss: 2.15900612 	 time: 1.08
+local epoch 0 	 client: 3 	 mal: 0 	 loss: 2.12261367 	 time: 1.08
+local epoch 0 	 client: 4 	 mal: 0 	 loss: 2.14177060 	 time: 1.08
+local epoch 0 	 client: 5 	 mal: 0 	 loss: 2.22113514 	 time: 1.08
+local epoch 0 	 client: 6 	 mal: 0 	 loss: 2.23798990 	 time: 1.08
+local epoch 0 	 client: 7 	 mal: 0 	 loss: 2.08982658 	 time: 1.08
+local epoch 0 	 client: 8 	 mal: 0 	 loss: 2.13909721 	 time: 1.08
+local epoch 0 	 client: 9 	 mal: 0 	 loss: 2.04316306 	 time: 1.08
+local epoch 0 	 client: 10 	 mal: 0 	 loss: 2.14092803 	 time: 1.08
+local epoch 0 	 client: 11 	 mal: 0 	 loss: 2.16302228 	 time: 1.07
+local epoch 0 	 client: 12 	 mal: 0 	 loss: 2.15828228 	 time: 1.08
+local epoch 0 	 client: 13 	 mal: 0 	 loss: 2.16626048 	 time: 1.08
+local epoch 0 	 client: 14 	 mal: 0 	 loss: 2.12475443 	 time: 1.08
+local epoch 0 	 client: 15 	 mal: 0 	 loss: 2.10123897 	 time: 1.08
+local epoch 0 	 client: 16 	 mal: 0 	 loss: 2.11476350 	 time: 1.08
+local epoch 0 	 client: 17 	 mal: 0 	 loss: 2.10922790 	 time: 1.08
+local epoch 0 	 client: 18 	 mal: 0 	 loss: 2.17654443 	 time: 1.08
+local epoch 0 	 client: 19 	 mal: 0 	 loss: 2.12589216 	 time: 1.08
+2026-01-15 04:59:39,454 [MainThread  ] [INFO ]  ---------Test 77 ------------
+2026-01-15 04:59:48,201 [MainThread  ] [INFO ]  Clean ACC:              0.1000
+2026-01-15 04:59:48,201 [MainThread  ] [INFO ]  Attack Success Ratio:   0.0000
+2026-01-15 04:59:48,201 [MainThread  ] [INFO ]  Backdoor ACC:           0.1111
+2026-01-15 04:59:48,201 [MainThread  ] [INFO ]  ------------------------------
+2026-01-15 04:59:48,201 [MainThread  ] [INFO ]  --------round 78 ------------
+local epoch 0 	 client: 0 	 mal: 1 	 loss: 1.31761956 	 time: 1.08
+local epoch 0 	 client: 1 	 mal: 1 	 loss: 1.20005095 	 time: 1.08
+local epoch 0 	 client: 2 	 mal: 0 	 loss: 2.12590003 	 time: 1.08
+local epoch 0 	 client: 3 	 mal: 0 	 loss: 2.28786635 	 time: 1.08
+local epoch 0 	 client: 4 	 mal: 0 	 loss: 2.19949818 	 time: 1.08
+local epoch 0 	 client: 5 	 mal: 0 	 loss: 2.09744287 	 time: 1.08
+local epoch 0 	 client: 6 	 mal: 0 	 loss: 2.18701649 	 time: 1.08
+local epoch 0 	 client: 7 	 mal: 0 	 loss: 2.19601488 	 time: 1.08
+local epoch 0 	 client: 8 	 mal: 0 	 loss: 2.04554534 	 time: 1.08
+local epoch 0 	 client: 9 	 mal: 0 	 loss: 2.17666197 	 time: 1.08
+local epoch 0 	 client: 10 	 mal: 0 	 loss: 2.10699582 	 time: 1.08
+local epoch 0 	 client: 11 	 mal: 0 	 loss: 2.19012046 	 time: 1.08
+local epoch 0 	 client: 12 	 mal: 0 	 loss: 2.15267992 	 time: 1.08
+local epoch 0 	 client: 13 	 mal: 0 	 loss: 2.24079514 	 time: 1.08
+local epoch 0 	 client: 14 	 mal: 0 	 loss: 2.10901093 	 time: 1.08
+local epoch 0 	 client: 15 	 mal: 0 	 loss: 2.23057318 	 time: 1.08
+local epoch 0 	 client: 16 	 mal: 0 	 loss: 2.14894652 	 time: 1.08
+local epoch 0 	 client: 17 	 mal: 0 	 loss: 2.19586730 	 time: 1.08
+local epoch 0 	 client: 18 	 mal: 0 	 loss: 2.06612587 	 time: 1.08
+local epoch 0 	 client: 19 	 mal: 0 	 loss: 2.23091722 	 time: 1.08
+2026-01-15 05:00:10,629 [MainThread  ] [INFO ]  ---------Test 78 ------------
+2026-01-15 05:00:19,295 [MainThread  ] [INFO ]  Clean ACC:              0.1000
+2026-01-15 05:00:19,295 [MainThread  ] [INFO ]  Attack Success Ratio:   0.0000
+2026-01-15 05:00:19,295 [MainThread  ] [INFO ]  Backdoor ACC:           0.1111
+2026-01-15 05:00:19,295 [MainThread  ] [INFO ]  ------------------------------
+2026-01-15 05:00:19,295 [MainThread  ] [INFO ]  --------round 79 ------------
+local epoch 0 	 client: 0 	 mal: 1 	 loss: 1.57996356 	 time: 1.07
+local epoch 0 	 client: 1 	 mal: 1 	 loss: 1.66294312 	 time: 1.08
+local epoch 0 	 client: 2 	 mal: 0 	 loss: 2.18091702 	 time: 1.08
+local epoch 0 	 client: 3 	 mal: 0 	 loss: 2.17658567 	 time: 1.08
+local epoch 0 	 client: 4 	 mal: 0 	 loss: 2.19878411 	 time: 1.08
+local epoch 0 	 client: 5 	 mal: 0 	 loss: 2.29232883 	 time: 1.08
+local epoch 0 	 client: 6 	 mal: 0 	 loss: 2.17086196 	 time: 1.08
+local epoch 0 	 client: 7 	 mal: 0 	 loss: 2.19099021 	 time: 1.09
+local epoch 0 	 client: 8 	 mal: 0 	 loss: 2.09443474 	 time: 1.08
+local epoch 0 	 client: 9 	 mal: 0 	 loss: 2.16391778 	 time: 1.08
+local epoch 0 	 client: 10 	 mal: 0 	 loss: 2.17169785 	 time: 1.08
+local epoch 0 	 client: 11 	 mal: 0 	 loss: 2.19207644 	 time: 1.08
+local epoch 0 	 client: 12 	 mal: 0 	 loss: 2.32749367 	 time: 1.08
+local epoch 0 	 client: 13 	 mal: 0 	 loss: 2.16762614 	 time: 1.08
+local epoch 0 	 client: 14 	 mal: 0 	 loss: 2.18750930 	 time: 1.08
+local epoch 0 	 client: 15 	 mal: 0 	 loss: 2.11650848 	 time: 1.08
+local epoch 0 	 client: 16 	 mal: 0 	 loss: 2.18194604 	 time: 1.09
+local epoch 0 	 client: 17 	 mal: 0 	 loss: 2.16444683 	 time: 1.08
+local epoch 0 	 client: 18 	 mal: 0 	 loss: 2.17164183 	 time: 1.08
+local epoch 0 	 client: 19 	 mal: 0 	 loss: 2.19730043 	 time: 1.08
+2026-01-15 05:00:41,717 [MainThread  ] [INFO ]  ---------Test 79 ------------
+2026-01-15 05:00:50,454 [MainThread  ] [INFO ]  Clean ACC:              0.1000
+2026-01-15 05:00:50,454 [MainThread  ] [INFO ]  Attack Success Ratio:   0.0000
+2026-01-15 05:00:50,454 [MainThread  ] [INFO ]  Backdoor ACC:           0.1111
+2026-01-15 05:00:50,454 [MainThread  ] [INFO ]  ------------------------------
+2026-01-15 05:00:50,454 [MainThread  ] [INFO ]  --------round 80 ------------
+local epoch 0 	 client: 0 	 mal: 1 	 loss: 1.51530981 	 time: 1.08
+local epoch 0 	 client: 1 	 mal: 1 	 loss: 1.51124406 	 time: 1.08
+local epoch 0 	 client: 2 	 mal: 0 	 loss: 2.12817192 	 time: 1.08
+local epoch 0 	 client: 3 	 mal: 0 	 loss: 2.19355440 	 time: 1.08
+local epoch 0 	 client: 4 	 mal: 0 	 loss: 2.15300655 	 time: 1.08
+local epoch 0 	 client: 5 	 mal: 0 	 loss: 2.25754070 	 time: 1.08
+local epoch 0 	 client: 6 	 mal: 0 	 loss: 2.07672000 	 time: 1.08
+local epoch 0 	 client: 7 	 mal: 0 	 loss: 2.05273056 	 time: 1.08
+local epoch 0 	 client: 8 	 mal: 0 	 loss: 2.11764002 	 time: 1.08
+local epoch 0 	 client: 9 	 mal: 0 	 loss: 2.18724751 	 time: 1.08
+local epoch 0 	 client: 10 	 mal: 0 	 loss: 2.13205624 	 time: 1.08
+local epoch 0 	 client: 11 	 mal: 0 	 loss: 2.08007956 	 time: 1.08
+local epoch 0 	 client: 12 	 mal: 0 	 loss: 2.05217719 	 time: 1.08
+local epoch 0 	 client: 13 	 mal: 0 	 loss: 2.29541731 	 time: 1.08
+local epoch 0 	 client: 14 	 mal: 0 	 loss: 2.22578216 	 time: 1.08
+local epoch 0 	 client: 15 	 mal: 0 	 loss: 2.07708669 	 time: 1.08
+local epoch 0 	 client: 16 	 mal: 0 	 loss: 2.17257857 	 time: 1.08
+local epoch 0 	 client: 17 	 mal: 0 	 loss: 2.15439391 	 time: 1.08
+local epoch 0 	 client: 18 	 mal: 0 	 loss: 2.09081101 	 time: 1.08
+local epoch 0 	 client: 19 	 mal: 0 	 loss: 2.15242457 	 time: 1.08
+2026-01-15 05:01:12,895 [MainThread  ] [INFO ]  ---------Test 80 ------------
+2026-01-15 05:01:21,563 [MainThread  ] [INFO ]  Clean ACC:              0.1000
+2026-01-15 05:01:21,563 [MainThread  ] [INFO ]  Attack Success Ratio:   0.0000
+2026-01-15 05:01:21,563 [MainThread  ] [INFO ]  Backdoor ACC:           0.1111
+2026-01-15 05:01:21,563 [MainThread  ] [INFO ]  ------------------------------
+2026-01-15 05:01:21,563 [MainThread  ] [INFO ]  --------round 81 ------------
+local epoch 0 	 client: 0 	 mal: 1 	 loss: 1.23861718 	 time: 1.08
+local epoch 0 	 client: 1 	 mal: 1 	 loss: 1.56879520 	 time: 1.09
+local epoch 0 	 client: 2 	 mal: 0 	 loss: 2.18618321 	 time: 1.08
+local epoch 0 	 client: 3 	 mal: 0 	 loss: 2.23306036 	 time: 1.08
+local epoch 0 	 client: 4 	 mal: 0 	 loss: 2.12812281 	 time: 1.08
+local epoch 0 	 client: 5 	 mal: 0 	 loss: 2.19392133 	 time: 1.08
+local epoch 0 	 client: 6 	 mal: 0 	 loss: 2.18879533 	 time: 1.08
+local epoch 0 	 client: 7 	 mal: 0 	 loss: 2.21511364 	 time: 1.08
+local epoch 0 	 client: 8 	 mal: 0 	 loss: 2.19760323 	 time: 1.08
+local epoch 0 	 client: 9 	 mal: 0 	 loss: 2.09034395 	 time: 1.08
+local epoch 0 	 client: 10 	 mal: 0 	 loss: 2.11180210 	 time: 1.08
+local epoch 0 	 client: 11 	 mal: 0 	 loss: 2.18430638 	 time: 1.08
+local epoch 0 	 client: 12 	 mal: 0 	 loss: 2.19230580 	 time: 1.08
+local epoch 0 	 client: 13 	 mal: 0 	 loss: 2.15802097 	 time: 1.08
+local epoch 0 	 client: 14 	 mal: 0 	 loss: 2.06201029 	 time: 1.08
+local epoch 0 	 client: 15 	 mal: 0 	 loss: 2.18751550 	 time: 1.08
+local epoch 0 	 client: 16 	 mal: 0 	 loss: 2.12778115 	 time: 1.08
+local epoch 0 	 client: 17 	 mal: 0 	 loss: 2.09319162 	 time: 1.08
+local epoch 0 	 client: 18 	 mal: 0 	 loss: 2.04614592 	 time: 1.08
+local epoch 0 	 client: 19 	 mal: 0 	 loss: 2.21576166 	 time: 1.08
+2026-01-15 05:01:44,002 [MainThread  ] [INFO ]  ---------Test 81 ------------
+2026-01-15 05:01:52,756 [MainThread  ] [INFO ]  Clean ACC:              0.1000
+2026-01-15 05:01:52,756 [MainThread  ] [INFO ]  Attack Success Ratio:   0.0000
+2026-01-15 05:01:52,756 [MainThread  ] [INFO ]  Backdoor ACC:           0.1111
+2026-01-15 05:01:52,756 [MainThread  ] [INFO ]  ------------------------------
+2026-01-15 05:01:52,756 [MainThread  ] [INFO ]  --------round 82 ------------
+local epoch 0 	 client: 0 	 mal: 1 	 loss: 1.32181966 	 time: 1.08
+local epoch 0 	 client: 1 	 mal: 1 	 loss: 1.60470533 	 time: 1.08
+local epoch 0 	 client: 2 	 mal: 0 	 loss: 2.23021412 	 time: 1.08
+local epoch 0 	 client: 3 	 mal: 0 	 loss: 2.23993611 	 time: 1.08
+local epoch 0 	 client: 4 	 mal: 0 	 loss: 2.14287925 	 time: 1.08
+local epoch 0 	 client: 5 	 mal: 0 	 loss: 2.11417174 	 time: 1.08
+local epoch 0 	 client: 6 	 mal: 0 	 loss: 2.27531433 	 time: 1.08
+local epoch 0 	 client: 7 	 mal: 0 	 loss: 2.19427657 	 time: 1.08
+local epoch 0 	 client: 8 	 mal: 0 	 loss: 2.13127279 	 time: 1.08
+local epoch 0 	 client: 9 	 mal: 0 	 loss: 2.29475212 	 time: 1.08
+local epoch 0 	 client: 10 	 mal: 0 	 loss: 2.14079046 	 time: 1.08
+local epoch 0 	 client: 11 	 mal: 0 	 loss: 2.14409089 	 time: 1.08
+local epoch 0 	 client: 12 	 mal: 0 	 loss: 2.07442212 	 time: 1.08
+local epoch 0 	 client: 13 	 mal: 0 	 loss: 2.15427327 	 time: 1.08
+local epoch 0 	 client: 14 	 mal: 0 	 loss: 2.10853314 	 time: 1.08
+local epoch 0 	 client: 15 	 mal: 0 	 loss: 2.09208822 	 time: 1.09
+local epoch 0 	 client: 16 	 mal: 0 	 loss: 2.19669294 	 time: 1.08
+local epoch 0 	 client: 17 	 mal: 0 	 loss: 2.19626451 	 time: 1.09
+local epoch 0 	 client: 18 	 mal: 0 	 loss: 2.12492800 	 time: 1.08
+local epoch 0 	 client: 19 	 mal: 0 	 loss: 2.11999345 	 time: 1.08
+2026-01-15 05:02:15,199 [MainThread  ] [INFO ]  ---------Test 82 ------------
+2026-01-15 05:02:23,856 [MainThread  ] [INFO ]  Clean ACC:              0.1000
+2026-01-15 05:02:23,856 [MainThread  ] [INFO ]  Attack Success Ratio:   0.0000
+2026-01-15 05:02:23,856 [MainThread  ] [INFO ]  Backdoor ACC:           0.1111
+2026-01-15 05:02:23,856 [MainThread  ] [INFO ]  ------------------------------
+2026-01-15 05:02:23,856 [MainThread  ] [INFO ]  --------round 83 ------------
+local epoch 0 	 client: 0 	 mal: 1 	 loss: 1.37284172 	 time: 1.08
+local epoch 0 	 client: 1 	 mal: 1 	 loss: 1.33561897 	 time: 1.08
+local epoch 0 	 client: 2 	 mal: 0 	 loss: 2.22028375 	 time: 1.08
+local epoch 0 	 client: 3 	 mal: 0 	 loss: 2.08545947 	 time: 1.08
+local epoch 0 	 client: 4 	 mal: 0 	 loss: 2.07939601 	 time: 1.09
+local epoch 0 	 client: 5 	 mal: 0 	 loss: 2.07559037 	 time: 1.08
+local epoch 0 	 client: 6 	 mal: 0 	 loss: 2.18338704 	 time: 1.09
+local epoch 0 	 client: 7 	 mal: 0 	 loss: 2.21539092 	 time: 1.08
+local epoch 0 	 client: 8 	 mal: 0 	 loss: 2.17013359 	 time: 1.09
+local epoch 0 	 client: 9 	 mal: 0 	 loss: 2.11018920 	 time: 1.08
+local epoch 0 	 client: 10 	 mal: 0 	 loss: 2.16725206 	 time: 1.09
+local epoch 0 	 client: 11 	 mal: 0 	 loss: 2.21089721 	 time: 1.08
+local epoch 0 	 client: 12 	 mal: 0 	 loss: 2.13359404 	 time: 1.09
+local epoch 0 	 client: 13 	 mal: 0 	 loss: 2.14226174 	 time: 1.08
+local epoch 0 	 client: 14 	 mal: 0 	 loss: 2.13482165 	 time: 1.09
+local epoch 0 	 client: 15 	 mal: 0 	 loss: 2.03101873 	 time: 1.09
+local epoch 0 	 client: 16 	 mal: 0 	 loss: 2.22125125 	 time: 1.09
+local epoch 0 	 client: 17 	 mal: 0 	 loss: 2.23730206 	 time: 1.08
+local epoch 0 	 client: 18 	 mal: 0 	 loss: 2.17449474 	 time: 1.08
+local epoch 0 	 client: 19 	 mal: 0 	 loss: 1.99297011 	 time: 1.08
+2026-01-15 05:02:46,329 [MainThread  ] [INFO ]  ---------Test 83 ------------
+2026-01-15 05:02:55,089 [MainThread  ] [INFO ]  Clean ACC:              0.1000
+2026-01-15 05:02:55,090 [MainThread  ] [INFO ]  Attack Success Ratio:   0.0000
+2026-01-15 05:02:55,090 [MainThread  ] [INFO ]  Backdoor ACC:           0.1111
+2026-01-15 05:02:55,090 [MainThread  ] [INFO ]  ------------------------------
+2026-01-15 05:02:55,090 [MainThread  ] [INFO ]  --------round 84 ------------
+local epoch 0 	 client: 0 	 mal: 1 	 loss: 1.53209138 	 time: 1.08
+local epoch 0 	 client: 1 	 mal: 1 	 loss: 1.21819639 	 time: 1.08
+local epoch 0 	 client: 2 	 mal: 0 	 loss: 2.28747821 	 time: 1.08
+local epoch 0 	 client: 3 	 mal: 0 	 loss: 2.19655609 	 time: 1.08
+local epoch 0 	 client: 4 	 mal: 0 	 loss: 2.13408566 	 time: 1.09
+local epoch 0 	 client: 5 	 mal: 0 	 loss: 2.14156270 	 time: 1.08
+local epoch 0 	 client: 6 	 mal: 0 	 loss: 2.20782971 	 time: 1.08
+local epoch 0 	 client: 7 	 mal: 0 	 loss: 2.09376836 	 time: 1.08
+local epoch 0 	 client: 8 	 mal: 0 	 loss: 2.07884669 	 time: 1.08
+local epoch 0 	 client: 9 	 mal: 0 	 loss: 2.14376426 	 time: 1.08
+local epoch 0 	 client: 10 	 mal: 0 	 loss: 2.19317412 	 time: 1.09
+local epoch 0 	 client: 11 	 mal: 0 	 loss: 2.33378363 	 time: 1.08
+local epoch 0 	 client: 12 	 mal: 0 	 loss: 2.17667127 	 time: 1.08
+local epoch 0 	 client: 13 	 mal: 0 	 loss: 2.16963673 	 time: 1.08
+local epoch 0 	 client: 14 	 mal: 0 	 loss: 2.11439753 	 time: 1.09
+local epoch 0 	 client: 15 	 mal: 0 	 loss: 2.17664647 	 time: 1.08
+local epoch 0 	 client: 16 	 mal: 0 	 loss: 2.07461119 	 time: 1.09
+local epoch 0 	 client: 17 	 mal: 0 	 loss: 2.16170430 	 time: 1.08
+local epoch 0 	 client: 18 	 mal: 0 	 loss: 2.12674618 	 time: 1.09
+local epoch 0 	 client: 19 	 mal: 0 	 loss: 2.25090480 	 time: 1.08
+2026-01-15 05:03:17,554 [MainThread  ] [INFO ]  ---------Test 84 ------------
+2026-01-15 05:03:26,216 [MainThread  ] [INFO ]  Clean ACC:              0.1000
+2026-01-15 05:03:26,216 [MainThread  ] [INFO ]  Attack Success Ratio:   0.0000
+2026-01-15 05:03:26,216 [MainThread  ] [INFO ]  Backdoor ACC:           0.1111
+2026-01-15 05:03:26,216 [MainThread  ] [INFO ]  ------------------------------
+2026-01-15 05:03:26,216 [MainThread  ] [INFO ]  --------round 85 ------------
+local epoch 0 	 client: 0 	 mal: 1 	 loss: 1.30748308 	 time: 1.08
+local epoch 0 	 client: 1 	 mal: 1 	 loss: 1.31944573 	 time: 1.08
+local epoch 0 	 client: 2 	 mal: 0 	 loss: 2.20827007 	 time: 1.08
+local epoch 0 	 client: 3 	 mal: 0 	 loss: 2.06057239 	 time: 1.08
+local epoch 0 	 client: 4 	 mal: 0 	 loss: 2.11855030 	 time: 1.08
+local epoch 0 	 client: 5 	 mal: 0 	 loss: 2.15438890 	 time: 1.08
+local epoch 0 	 client: 6 	 mal: 0 	 loss: 2.16549087 	 time: 1.08
+local epoch 0 	 client: 7 	 mal: 0 	 loss: 2.18782401 	 time: 1.08
+local epoch 0 	 client: 8 	 mal: 0 	 loss: 2.14882731 	 time: 1.08
+local epoch 0 	 client: 9 	 mal: 0 	 loss: 2.17330456 	 time: 1.08
+local epoch 0 	 client: 10 	 mal: 0 	 loss: 2.25812030 	 time: 1.09
+local epoch 0 	 client: 11 	 mal: 0 	 loss: 2.12889910 	 time: 1.08
+local epoch 0 	 client: 12 	 mal: 0 	 loss: 2.13946033 	 time: 1.08
+local epoch 0 	 client: 13 	 mal: 0 	 loss: 2.17783451 	 time: 1.08
+local epoch 0 	 client: 14 	 mal: 0 	 loss: 2.16143489 	 time: 1.08
+local epoch 0 	 client: 15 	 mal: 0 	 loss: 2.14622474 	 time: 1.08
+local epoch 0 	 client: 16 	 mal: 0 	 loss: 2.10422969 	 time: 1.08
+local epoch 0 	 client: 17 	 mal: 0 	 loss: 2.24143672 	 time: 1.08
+local epoch 0 	 client: 18 	 mal: 0 	 loss: 2.14248848 	 time: 1.08
+local epoch 0 	 client: 19 	 mal: 0 	 loss: 2.26444817 	 time: 1.09
+2026-01-15 05:03:48,681 [MainThread  ] [INFO ]  ---------Test 85 ------------
+2026-01-15 05:03:57,429 [MainThread  ] [INFO ]  Clean ACC:              0.1000
+2026-01-15 05:03:57,429 [MainThread  ] [INFO ]  Attack Success Ratio:   0.0000
+2026-01-15 05:03:57,429 [MainThread  ] [INFO ]  Backdoor ACC:           0.1111
+2026-01-15 05:03:57,429 [MainThread  ] [INFO ]  ------------------------------
+2026-01-15 05:03:57,429 [MainThread  ] [INFO ]  --------round 86 ------------
+local epoch 0 	 client: 0 	 mal: 1 	 loss: 1.40504467 	 time: 1.08
+local epoch 0 	 client: 1 	 mal: 1 	 loss: 1.37172055 	 time: 1.08
+local epoch 0 	 client: 2 	 mal: 0 	 loss: 2.27885962 	 time: 1.08
+local epoch 0 	 client: 3 	 mal: 0 	 loss: 2.17780328 	 time: 1.08
+local epoch 0 	 client: 4 	 mal: 0 	 loss: 2.11271763 	 time: 1.08
+local epoch 0 	 client: 5 	 mal: 0 	 loss: 2.19944882 	 time: 1.08
+local epoch 0 	 client: 6 	 mal: 0 	 loss: 2.24528408 	 time: 1.08
+local epoch 0 	 client: 7 	 mal: 0 	 loss: 2.17699909 	 time: 1.08
+local epoch 0 	 client: 8 	 mal: 0 	 loss: 2.20164776 	 time: 1.08
+local epoch 0 	 client: 9 	 mal: 0 	 loss: 2.16716003 	 time: 1.08
+local epoch 0 	 client: 10 	 mal: 0 	 loss: 2.18866801 	 time: 1.08
+local epoch 0 	 client: 11 	 mal: 0 	 loss: 2.21550679 	 time: 1.08
+local epoch 0 	 client: 12 	 mal: 0 	 loss: 2.19693375 	 time: 1.08
+local epoch 0 	 client: 13 	 mal: 0 	 loss: 2.03941894 	 time: 1.08
+local epoch 0 	 client: 14 	 mal: 0 	 loss: 2.17509341 	 time: 1.08
+local epoch 0 	 client: 15 	 mal: 0 	 loss: 2.18452883 	 time: 1.08
+local epoch 0 	 client: 16 	 mal: 0 	 loss: 2.15566421 	 time: 1.08
+local epoch 0 	 client: 17 	 mal: 0 	 loss: 2.20008230 	 time: 1.08
+local epoch 0 	 client: 18 	 mal: 0 	 loss: 2.19947052 	 time: 1.08
+local epoch 0 	 client: 19 	 mal: 0 	 loss: 2.08442521 	 time: 1.08
+2026-01-15 05:04:19,868 [MainThread  ] [INFO ]  ---------Test 86 ------------
+2026-01-15 05:04:28,529 [MainThread  ] [INFO ]  Clean ACC:              0.1000
+2026-01-15 05:04:28,529 [MainThread  ] [INFO ]  Attack Success Ratio:   0.0000
+2026-01-15 05:04:28,529 [MainThread  ] [INFO ]  Backdoor ACC:           0.1111
+2026-01-15 05:04:28,529 [MainThread  ] [INFO ]  ------------------------------
+2026-01-15 05:04:28,529 [MainThread  ] [INFO ]  --------round 87 ------------
+local epoch 0 	 client: 0 	 mal: 1 	 loss: 1.43884659 	 time: 1.08
+local epoch 0 	 client: 1 	 mal: 1 	 loss: 1.52837610 	 time: 1.08
+local epoch 0 	 client: 2 	 mal: 0 	 loss: 2.12099504 	 time: 1.08
+local epoch 0 	 client: 3 	 mal: 0 	 loss: 2.14201903 	 time: 1.08
+local epoch 0 	 client: 4 	 mal: 0 	 loss: 2.22791219 	 time: 1.08
+local epoch 0 	 client: 5 	 mal: 0 	 loss: 2.04950261 	 time: 1.08
+local epoch 0 	 client: 6 	 mal: 0 	 loss: 2.15361023 	 time: 1.08
+local epoch 0 	 client: 7 	 mal: 0 	 loss: 2.16748929 	 time: 1.08
+local epoch 0 	 client: 8 	 mal: 0 	 loss: 2.14136410 	 time: 1.08
+local epoch 0 	 client: 9 	 mal: 0 	 loss: 2.19881582 	 time: 1.08
+local epoch 0 	 client: 10 	 mal: 0 	 loss: 2.17191768 	 time: 1.08
+local epoch 0 	 client: 11 	 mal: 0 	 loss: 2.19354463 	 time: 1.08
+local epoch 0 	 client: 12 	 mal: 0 	 loss: 2.07684135 	 time: 1.08
+local epoch 0 	 client: 13 	 mal: 0 	 loss: 2.22585225 	 time: 1.08
+local epoch 0 	 client: 14 	 mal: 0 	 loss: 2.20522094 	 time: 1.08
+local epoch 0 	 client: 15 	 mal: 0 	 loss: 2.13682985 	 time: 1.08
+local epoch 0 	 client: 16 	 mal: 0 	 loss: 2.12017846 	 time: 1.08
+local epoch 0 	 client: 17 	 mal: 0 	 loss: 2.18170714 	 time: 1.08
+local epoch 0 	 client: 18 	 mal: 0 	 loss: 2.21211720 	 time: 1.08
+local epoch 0 	 client: 19 	 mal: 0 	 loss: 2.24307704 	 time: 1.08
+2026-01-15 05:04:50,963 [MainThread  ] [INFO ]  ---------Test 87 ------------
+2026-01-15 05:04:59,706 [MainThread  ] [INFO ]  Clean ACC:              0.1000
+2026-01-15 05:04:59,706 [MainThread  ] [INFO ]  Attack Success Ratio:   0.0000
+2026-01-15 05:04:59,706 [MainThread  ] [INFO ]  Backdoor ACC:           0.1111
+2026-01-15 05:04:59,706 [MainThread  ] [INFO ]  ------------------------------
+2026-01-15 05:04:59,706 [MainThread  ] [INFO ]  --------round 88 ------------
+local epoch 0 	 client: 0 	 mal: 1 	 loss: 1.27950871 	 time: 1.08
+local epoch 0 	 client: 1 	 mal: 1 	 loss: 1.57615197 	 time: 1.08
+local epoch 0 	 client: 2 	 mal: 0 	 loss: 2.19326591 	 time: 1.08
+local epoch 0 	 client: 3 	 mal: 0 	 loss: 2.16667390 	 time: 1.08
+local epoch 0 	 client: 4 	 mal: 0 	 loss: 2.15259480 	 time: 1.08
+local epoch 0 	 client: 5 	 mal: 0 	 loss: 2.09704924 	 time: 1.08
+local epoch 0 	 client: 6 	 mal: 0 	 loss: 2.18986130 	 time: 1.08
+local epoch 0 	 client: 7 	 mal: 0 	 loss: 2.11440945 	 time: 1.08
+local epoch 0 	 client: 8 	 mal: 0 	 loss: 2.09714508 	 time: 1.08
+local epoch 0 	 client: 9 	 mal: 0 	 loss: 2.19339609 	 time: 1.08
+local epoch 0 	 client: 10 	 mal: 0 	 loss: 2.18403053 	 time: 1.08
+local epoch 0 	 client: 11 	 mal: 0 	 loss: 2.24061966 	 time: 1.08
+local epoch 0 	 client: 12 	 mal: 0 	 loss: 2.19261765 	 time: 1.08
+local epoch 0 	 client: 13 	 mal: 0 	 loss: 2.12454486 	 time: 1.08
+local epoch 0 	 client: 14 	 mal: 0 	 loss: 2.21495032 	 time: 1.08
+local epoch 0 	 client: 15 	 mal: 0 	 loss: 2.12879753 	 time: 1.08
+local epoch 0 	 client: 16 	 mal: 0 	 loss: 2.08738256 	 time: 1.08
+local epoch 0 	 client: 17 	 mal: 0 	 loss: 2.23331332 	 time: 1.08
+local epoch 0 	 client: 18 	 mal: 0 	 loss: 2.16237664 	 time: 1.08
+local epoch 0 	 client: 19 	 mal: 0 	 loss: 2.19709086 	 time: 1.08
+2026-01-15 05:05:22,127 [MainThread  ] [INFO ]  ---------Test 88 ------------
+2026-01-15 05:05:30,793 [MainThread  ] [INFO ]  Clean ACC:              0.1000
+2026-01-15 05:05:30,793 [MainThread  ] [INFO ]  Attack Success Ratio:   0.0000
+2026-01-15 05:05:30,793 [MainThread  ] [INFO ]  Backdoor ACC:           0.1111
+2026-01-15 05:05:30,793 [MainThread  ] [INFO ]  ------------------------------
+2026-01-15 05:05:30,793 [MainThread  ] [INFO ]  --------round 89 ------------
+local epoch 0 	 client: 0 	 mal: 1 	 loss: 1.20443368 	 time: 1.08
+local epoch 0 	 client: 1 	 mal: 1 	 loss: 1.63364029 	 time: 1.08
+local epoch 0 	 client: 2 	 mal: 0 	 loss: 2.24818087 	 time: 1.09
+local epoch 0 	 client: 3 	 mal: 0 	 loss: 2.22607183 	 time: 1.08
+local epoch 0 	 client: 4 	 mal: 0 	 loss: 2.12850332 	 time: 1.08
+local epoch 0 	 client: 5 	 mal: 0 	 loss: 2.17320061 	 time: 1.08
+local epoch 0 	 client: 6 	 mal: 0 	 loss: 2.18145895 	 time: 1.09
+local epoch 0 	 client: 7 	 mal: 0 	 loss: 2.13260412 	 time: 1.08
+local epoch 0 	 client: 8 	 mal: 0 	 loss: 2.12790918 	 time: 1.08
+local epoch 0 	 client: 9 	 mal: 0 	 loss: 2.16330433 	 time: 1.09
+local epoch 0 	 client: 10 	 mal: 0 	 loss: 2.26590276 	 time: 1.08
+local epoch 0 	 client: 11 	 mal: 0 	 loss: 2.11735773 	 time: 1.09
+local epoch 0 	 client: 12 	 mal: 0 	 loss: 2.16541290 	 time: 1.08
+local epoch 0 	 client: 13 	 mal: 0 	 loss: 2.19135189 	 time: 1.09
+local epoch 0 	 client: 14 	 mal: 0 	 loss: 2.08406186 	 time: 1.08
+local epoch 0 	 client: 15 	 mal: 0 	 loss: 2.14304590 	 time: 1.09
+local epoch 0 	 client: 16 	 mal: 0 	 loss: 2.15087628 	 time: 1.08
+local epoch 0 	 client: 17 	 mal: 0 	 loss: 2.27078009 	 time: 1.09
+local epoch 0 	 client: 18 	 mal: 0 	 loss: 2.15349388 	 time: 1.08
+local epoch 0 	 client: 19 	 mal: 0 	 loss: 2.22175050 	 time: 1.09
+2026-01-15 05:05:53,271 [MainThread  ] [INFO ]  ---------Test 89 ------------
+2026-01-15 05:06:02,035 [MainThread  ] [INFO ]  Clean ACC:              0.1000
+2026-01-15 05:06:02,035 [MainThread  ] [INFO ]  Attack Success Ratio:   0.0000
+2026-01-15 05:06:02,035 [MainThread  ] [INFO ]  Backdoor ACC:           0.1111
+2026-01-15 05:06:02,035 [MainThread  ] [INFO ]  ------------------------------
+2026-01-15 05:06:02,035 [MainThread  ] [INFO ]  --------round 90 ------------
+local epoch 0 	 client: 0 	 mal: 1 	 loss: 1.42005610 	 time: 1.08
+local epoch 0 	 client: 1 	 mal: 1 	 loss: 1.57746434 	 time: 1.09
+local epoch 0 	 client: 2 	 mal: 0 	 loss: 2.25620055 	 time: 1.08
+local epoch 0 	 client: 3 	 mal: 0 	 loss: 2.23691893 	 time: 1.09
+local epoch 0 	 client: 4 	 mal: 0 	 loss: 2.11016011 	 time: 1.08
+local epoch 0 	 client: 5 	 mal: 0 	 loss: 2.29209352 	 time: 1.09
+local epoch 0 	 client: 6 	 mal: 0 	 loss: 2.21871710 	 time: 1.08
+local epoch 0 	 client: 7 	 mal: 0 	 loss: 2.04669309 	 time: 1.09
+local epoch 0 	 client: 8 	 mal: 0 	 loss: 2.13438368 	 time: 1.08
+local epoch 0 	 client: 9 	 mal: 0 	 loss: 2.30289435 	 time: 1.09
+local epoch 0 	 client: 10 	 mal: 0 	 loss: 2.21828699 	 time: 1.08
+local epoch 0 	 client: 11 	 mal: 0 	 loss: 2.18851829 	 time: 1.09
+local epoch 0 	 client: 12 	 mal: 0 	 loss: 2.18046927 	 time: 1.08
+local epoch 0 	 client: 13 	 mal: 0 	 loss: 2.11898017 	 time: 1.08
+local epoch 0 	 client: 14 	 mal: 0 	 loss: 2.16417170 	 time: 1.08
+local epoch 0 	 client: 15 	 mal: 0 	 loss: 2.27171469 	 time: 1.09
+local epoch 0 	 client: 16 	 mal: 0 	 loss: 2.19305062 	 time: 1.09
+local epoch 0 	 client: 17 	 mal: 0 	 loss: 2.14363050 	 time: 1.09
+local epoch 0 	 client: 18 	 mal: 0 	 loss: 2.20218349 	 time: 1.08
+local epoch 0 	 client: 19 	 mal: 0 	 loss: 2.11711717 	 time: 1.07
+2026-01-15 05:06:24,516 [MainThread  ] [INFO ]  ---------Test 90 ------------
+2026-01-15 05:06:33,181 [MainThread  ] [INFO ]  Clean ACC:              0.1000
+2026-01-15 05:06:33,181 [MainThread  ] [INFO ]  Attack Success Ratio:   0.0000
+2026-01-15 05:06:33,181 [MainThread  ] [INFO ]  Backdoor ACC:           0.1111
+2026-01-15 05:06:33,181 [MainThread  ] [INFO ]  ------------------------------
+2026-01-15 05:06:33,181 [MainThread  ] [INFO ]  --------round 91 ------------
+local epoch 0 	 client: 0 	 mal: 1 	 loss: 1.14696622 	 time: 1.08
+local epoch 0 	 client: 1 	 mal: 1 	 loss: 2.02651095 	 time: 1.09
+local epoch 0 	 client: 2 	 mal: 0 	 loss: 2.19520593 	 time: 1.08
+local epoch 0 	 client: 3 	 mal: 0 	 loss: 2.19255996 	 time: 1.09
+local epoch 0 	 client: 4 	 mal: 0 	 loss: 2.33112550 	 time: 1.08
+local epoch 0 	 client: 5 	 mal: 0 	 loss: 2.25691104 	 time: 1.09
+local epoch 0 	 client: 6 	 mal: 0 	 loss: 2.09976029 	 time: 1.08
+local epoch 0 	 client: 7 	 mal: 0 	 loss: 2.16781878 	 time: 1.08
+local epoch 0 	 client: 8 	 mal: 0 	 loss: 2.15049791 	 time: 1.08
+local epoch 0 	 client: 9 	 mal: 0 	 loss: 2.23475242 	 time: 1.08
+local epoch 0 	 client: 10 	 mal: 0 	 loss: 2.12549305 	 time: 1.08
+local epoch 0 	 client: 11 	 mal: 0 	 loss: 2.14651299 	 time: 1.08
+local epoch 0 	 client: 12 	 mal: 0 	 loss: 2.13335609 	 time: 1.08
+local epoch 0 	 client: 13 	 mal: 0 	 loss: 2.25952411 	 time: 1.08
+local epoch 0 	 client: 14 	 mal: 0 	 loss: 2.19568706 	 time: 1.09
+local epoch 0 	 client: 15 	 mal: 0 	 loss: 2.10021925 	 time: 1.08
+local epoch 0 	 client: 16 	 mal: 0 	 loss: 2.20232821 	 time: 1.09
+local epoch 0 	 client: 17 	 mal: 0 	 loss: 2.15614653 	 time: 1.08
+local epoch 0 	 client: 18 	 mal: 0 	 loss: 2.11873245 	 time: 1.09
+local epoch 0 	 client: 19 	 mal: 0 	 loss: 2.15663600 	 time: 1.08
+2026-01-15 05:06:55,682 [MainThread  ] [INFO ]  ---------Test 91 ------------
+2026-01-15 05:07:04,440 [MainThread  ] [INFO ]  Clean ACC:              0.1000
+2026-01-15 05:07:04,440 [MainThread  ] [INFO ]  Attack Success Ratio:   0.0000
+2026-01-15 05:07:04,440 [MainThread  ] [INFO ]  Backdoor ACC:           0.1111
+2026-01-15 05:07:04,440 [MainThread  ] [INFO ]  ------------------------------
+2026-01-15 05:07:04,440 [MainThread  ] [INFO ]  --------round 92 ------------
+local epoch 0 	 client: 0 	 mal: 1 	 loss: 1.40810931 	 time: 1.07
+local epoch 0 	 client: 1 	 mal: 1 	 loss: 1.29289484 	 time: 1.08
+local epoch 0 	 client: 2 	 mal: 0 	 loss: 2.26718736 	 time: 1.08
+local epoch 0 	 client: 3 	 mal: 0 	 loss: 2.15689731 	 time: 1.08
+local epoch 0 	 client: 4 	 mal: 0 	 loss: 2.11005306 	 time: 1.08
+local epoch 0 	 client: 5 	 mal: 0 	 loss: 2.14594841 	 time: 1.08
+local epoch 0 	 client: 6 	 mal: 0 	 loss: 2.18724799 	 time: 1.08
+local epoch 0 	 client: 7 	 mal: 0 	 loss: 2.20073843 	 time: 1.08
+local epoch 0 	 client: 8 	 mal: 0 	 loss: 2.17962408 	 time: 1.07
+local epoch 0 	 client: 9 	 mal: 0 	 loss: 2.09884787 	 time: 1.08
+local epoch 0 	 client: 10 	 mal: 0 	 loss: 2.14303374 	 time: 1.07
+local epoch 0 	 client: 11 	 mal: 0 	 loss: 2.18821335 	 time: 1.08
+local epoch 0 	 client: 12 	 mal: 0 	 loss: 2.16629767 	 time: 1.08
+local epoch 0 	 client: 13 	 mal: 0 	 loss: 2.19425631 	 time: 1.08
+local epoch 0 	 client: 14 	 mal: 0 	 loss: 2.22731304 	 time: 1.08
+local epoch 0 	 client: 15 	 mal: 0 	 loss: 2.17974949 	 time: 1.08
+local epoch 0 	 client: 16 	 mal: 0 	 loss: 2.16535783 	 time: 1.07
+local epoch 0 	 client: 17 	 mal: 0 	 loss: 2.28020215 	 time: 1.08
+local epoch 0 	 client: 18 	 mal: 0 	 loss: 2.19896722 	 time: 1.08
+local epoch 0 	 client: 19 	 mal: 0 	 loss: 2.12208986 	 time: 1.08
+2026-01-15 05:07:26,812 [MainThread  ] [INFO ]  ---------Test 92 ------------
+2026-01-15 05:07:35,477 [MainThread  ] [INFO ]  Clean ACC:              0.1000
+2026-01-15 05:07:35,477 [MainThread  ] [INFO ]  Attack Success Ratio:   0.0000
+2026-01-15 05:07:35,477 [MainThread  ] [INFO ]  Backdoor ACC:           0.1111
+2026-01-15 05:07:35,477 [MainThread  ] [INFO ]  ------------------------------
+2026-01-15 05:07:35,477 [MainThread  ] [INFO ]  --------round 93 ------------
+local epoch 0 	 client: 0 	 mal: 1 	 loss: 1.20183384 	 time: 1.09
+local epoch 0 	 client: 1 	 mal: 1 	 loss: 1.31162310 	 time: 1.08
+local epoch 0 	 client: 2 	 mal: 0 	 loss: 2.10942173 	 time: 1.08
+local epoch 0 	 client: 3 	 mal: 0 	 loss: 2.29075789 	 time: 1.10
+local epoch 0 	 client: 4 	 mal: 0 	 loss: 2.10267019 	 time: 1.09
+local epoch 0 	 client: 5 	 mal: 0 	 loss: 2.24074626 	 time: 1.08
+local epoch 0 	 client: 6 	 mal: 0 	 loss: 2.12236762 	 time: 1.08
+local epoch 0 	 client: 7 	 mal: 0 	 loss: 2.22230530 	 time: 1.08
+local epoch 0 	 client: 8 	 mal: 0 	 loss: 2.09363723 	 time: 1.08
+local epoch 0 	 client: 9 	 mal: 0 	 loss: 2.16771650 	 time: 1.08
+local epoch 0 	 client: 10 	 mal: 0 	 loss: 2.11871552 	 time: 1.08
+local epoch 0 	 client: 11 	 mal: 0 	 loss: 2.09130859 	 time: 1.08
+local epoch 0 	 client: 12 	 mal: 0 	 loss: 2.10624456 	 time: 1.08
+local epoch 0 	 client: 13 	 mal: 0 	 loss: 2.09780478 	 time: 1.08
+local epoch 0 	 client: 14 	 mal: 0 	 loss: 2.13400531 	 time: 1.08
+local epoch 0 	 client: 15 	 mal: 0 	 loss: 2.09807944 	 time: 1.08
+local epoch 0 	 client: 16 	 mal: 0 	 loss: 2.06277370 	 time: 1.08
+local epoch 0 	 client: 17 	 mal: 0 	 loss: 2.03113151 	 time: 1.08
+local epoch 0 	 client: 18 	 mal: 0 	 loss: 2.06848121 	 time: 1.08
+local epoch 0 	 client: 19 	 mal: 0 	 loss: 2.04510713 	 time: 1.08
+2026-01-15 05:07:57,914 [MainThread  ] [INFO ]  ---------Test 93 ------------
+2026-01-15 05:08:06,643 [MainThread  ] [INFO ]  Clean ACC:              0.1000
+2026-01-15 05:08:06,643 [MainThread  ] [INFO ]  Attack Success Ratio:   0.0000
+2026-01-15 05:08:06,643 [MainThread  ] [INFO ]  Backdoor ACC:           0.1111
+2026-01-15 05:08:06,643 [MainThread  ] [INFO ]  ------------------------------
+2026-01-15 05:08:06,643 [MainThread  ] [INFO ]  --------round 94 ------------
+local epoch 0 	 client: 0 	 mal: 1 	 loss: 1.58694315 	 time: 1.08
+local epoch 0 	 client: 1 	 mal: 1 	 loss: 1.35810304 	 time: 1.08
+local epoch 0 	 client: 2 	 mal: 0 	 loss: 2.18082976 	 time: 1.08
+local epoch 0 	 client: 3 	 mal: 0 	 loss: 2.17818093 	 time: 1.08
+local epoch 0 	 client: 4 	 mal: 0 	 loss: 2.21367645 	 time: 1.08
+local epoch 0 	 client: 5 	 mal: 0 	 loss: 2.13151407 	 time: 1.08
+local epoch 0 	 client: 6 	 mal: 0 	 loss: 2.26456928 	 time: 1.08
+local epoch 0 	 client: 7 	 mal: 0 	 loss: 2.25459170 	 time: 1.08
+local epoch 0 	 client: 8 	 mal: 0 	 loss: 2.11406827 	 time: 1.08
+local epoch 0 	 client: 9 	 mal: 0 	 loss: 2.21672487 	 time: 1.08
+local epoch 0 	 client: 10 	 mal: 0 	 loss: 2.18380570 	 time: 1.08
+local epoch 0 	 client: 11 	 mal: 0 	 loss: 2.20889831 	 time: 1.08
+local epoch 0 	 client: 12 	 mal: 0 	 loss: 2.08537197 	 time: 1.08
+local epoch 0 	 client: 13 	 mal: 0 	 loss: 2.23287249 	 time: 1.08
+local epoch 0 	 client: 14 	 mal: 0 	 loss: 2.07883263 	 time: 1.08
+local epoch 0 	 client: 15 	 mal: 0 	 loss: 2.15778542 	 time: 1.08
+local epoch 0 	 client: 16 	 mal: 0 	 loss: 2.22650766 	 time: 1.08
+local epoch 0 	 client: 17 	 mal: 0 	 loss: 2.12130284 	 time: 1.08
+local epoch 0 	 client: 18 	 mal: 0 	 loss: 2.11015987 	 time: 1.08
+local epoch 0 	 client: 19 	 mal: 0 	 loss: 2.19813371 	 time: 1.09
+2026-01-15 05:08:29,053 [MainThread  ] [INFO ]  ---------Test 94 ------------
+2026-01-15 05:08:37,717 [MainThread  ] [INFO ]  Clean ACC:              0.1000
+2026-01-15 05:08:37,717 [MainThread  ] [INFO ]  Attack Success Ratio:   0.0000
+2026-01-15 05:08:37,717 [MainThread  ] [INFO ]  Backdoor ACC:           0.1111
+2026-01-15 05:08:37,717 [MainThread  ] [INFO ]  ------------------------------
+2026-01-15 05:08:37,717 [MainThread  ] [INFO ]  --------round 95 ------------
+local epoch 0 	 client: 0 	 mal: 1 	 loss: 1.74284041 	 time: 1.07
+local epoch 0 	 client: 1 	 mal: 1 	 loss: 1.53255951 	 time: 1.08
+local epoch 0 	 client: 2 	 mal: 0 	 loss: 2.26400733 	 time: 1.08
+local epoch 0 	 client: 3 	 mal: 0 	 loss: 2.19596004 	 time: 1.07
+local epoch 0 	 client: 4 	 mal: 0 	 loss: 2.08561516 	 time: 1.08
+local epoch 0 	 client: 5 	 mal: 0 	 loss: 2.06906199 	 time: 1.08
+local epoch 0 	 client: 6 	 mal: 0 	 loss: 2.14115000 	 time: 1.08
+local epoch 0 	 client: 7 	 mal: 0 	 loss: 2.20183349 	 time: 1.08
+local epoch 0 	 client: 8 	 mal: 0 	 loss: 2.00392461 	 time: 1.08
+local epoch 0 	 client: 9 	 mal: 0 	 loss: 2.15757251 	 time: 1.08
+local epoch 0 	 client: 10 	 mal: 0 	 loss: 2.16049457 	 time: 1.08
+local epoch 0 	 client: 11 	 mal: 0 	 loss: 2.13097072 	 time: 1.08
+local epoch 0 	 client: 12 	 mal: 0 	 loss: 2.27204943 	 time: 1.08
+local epoch 0 	 client: 13 	 mal: 0 	 loss: 2.22032905 	 time: 1.08
+local epoch 0 	 client: 14 	 mal: 0 	 loss: 2.16669130 	 time: 1.08
+local epoch 0 	 client: 15 	 mal: 0 	 loss: 2.12486172 	 time: 1.08
+local epoch 0 	 client: 16 	 mal: 0 	 loss: 2.21617627 	 time: 1.08
+local epoch 0 	 client: 17 	 mal: 0 	 loss: 2.26729083 	 time: 1.08
+local epoch 0 	 client: 18 	 mal: 0 	 loss: 2.14702034 	 time: 1.07
+local epoch 0 	 client: 19 	 mal: 0 	 loss: 2.14824986 	 time: 1.08
+2026-01-15 05:09:00,131 [MainThread  ] [INFO ]  ---------Test 95 ------------
+2026-01-15 05:09:08,881 [MainThread  ] [INFO ]  Clean ACC:              0.1000
+2026-01-15 05:09:08,881 [MainThread  ] [INFO ]  Attack Success Ratio:   0.0000
+2026-01-15 05:09:08,881 [MainThread  ] [INFO ]  Backdoor ACC:           0.1111
+2026-01-15 05:09:08,881 [MainThread  ] [INFO ]  ------------------------------
+2026-01-15 05:09:08,881 [MainThread  ] [INFO ]  --------round 96 ------------
+local epoch 0 	 client: 0 	 mal: 1 	 loss: 1.43489683 	 time: 1.07
+local epoch 0 	 client: 1 	 mal: 1 	 loss: 1.32500005 	 time: 1.08
+local epoch 0 	 client: 2 	 mal: 0 	 loss: 2.19579792 	 time: 1.08
+local epoch 0 	 client: 3 	 mal: 0 	 loss: 2.17005086 	 time: 1.08
+local epoch 0 	 client: 4 	 mal: 0 	 loss: 2.08951974 	 time: 1.08
+local epoch 0 	 client: 5 	 mal: 0 	 loss: 2.13897562 	 time: 1.08
+local epoch 0 	 client: 6 	 mal: 0 	 loss: 2.16527295 	 time: 1.09
+local epoch 0 	 client: 7 	 mal: 0 	 loss: 2.13555980 	 time: 1.08
+local epoch 0 	 client: 8 	 mal: 0 	 loss: 2.14764357 	 time: 1.08
+local epoch 0 	 client: 9 	 mal: 0 	 loss: 2.25423145 	 time: 1.08
+local epoch 0 	 client: 10 	 mal: 0 	 loss: 2.34394932 	 time: 1.08
+local epoch 0 	 client: 11 	 mal: 0 	 loss: 2.12555838 	 time: 1.08
+local epoch 0 	 client: 12 	 mal: 0 	 loss: 2.19285774 	 time: 1.08
+local epoch 0 	 client: 13 	 mal: 0 	 loss: 2.22879124 	 time: 1.08
+local epoch 0 	 client: 14 	 mal: 0 	 loss: 2.09118748 	 time: 1.08
+local epoch 0 	 client: 15 	 mal: 0 	 loss: 2.32594609 	 time: 1.08
+local epoch 0 	 client: 16 	 mal: 0 	 loss: 2.10723734 	 time: 1.08
+local epoch 0 	 client: 17 	 mal: 0 	 loss: 2.11668253 	 time: 1.08
+local epoch 0 	 client: 18 	 mal: 0 	 loss: 2.22606397 	 time: 1.08
+local epoch 0 	 client: 19 	 mal: 0 	 loss: 2.15533042 	 time: 1.08
+2026-01-15 05:09:31,313 [MainThread  ] [INFO ]  ---------Test 96 ------------
+2026-01-15 05:09:39,971 [MainThread  ] [INFO ]  Clean ACC:              0.1000
+2026-01-15 05:09:39,972 [MainThread  ] [INFO ]  Attack Success Ratio:   0.0000
+2026-01-15 05:09:39,972 [MainThread  ] [INFO ]  Backdoor ACC:           0.1111
+2026-01-15 05:09:39,972 [MainThread  ] [INFO ]  ------------------------------
+2026-01-15 05:09:39,972 [MainThread  ] [INFO ]  --------round 97 ------------
+local epoch 0 	 client: 0 	 mal: 1 	 loss: 1.49470425 	 time: 1.09
+local epoch 0 	 client: 1 	 mal: 1 	 loss: 1.33639991 	 time: 1.08
+local epoch 0 	 client: 2 	 mal: 0 	 loss: 2.14213395 	 time: 1.08
+local epoch 0 	 client: 3 	 mal: 0 	 loss: 2.15537715 	 time: 1.08
+local epoch 0 	 client: 4 	 mal: 0 	 loss: 2.19776654 	 time: 1.08
+local epoch 0 	 client: 5 	 mal: 0 	 loss: 2.18334842 	 time: 1.08
+local epoch 0 	 client: 6 	 mal: 0 	 loss: 2.14591956 	 time: 1.08
+local epoch 0 	 client: 7 	 mal: 0 	 loss: 2.17430878 	 time: 1.08
+local epoch 0 	 client: 8 	 mal: 0 	 loss: 2.22481871 	 time: 1.08
+local epoch 0 	 client: 9 	 mal: 0 	 loss: 2.23282409 	 time: 1.08
+local epoch 0 	 client: 10 	 mal: 0 	 loss: 2.16559172 	 time: 1.08
+local epoch 0 	 client: 11 	 mal: 0 	 loss: 2.22672725 	 time: 1.08
+local epoch 0 	 client: 12 	 mal: 0 	 loss: 2.16422582 	 time: 1.08
+local epoch 0 	 client: 13 	 mal: 0 	 loss: 2.25834537 	 time: 1.08
+local epoch 0 	 client: 14 	 mal: 0 	 loss: 2.18549180 	 time: 1.08
+local epoch 0 	 client: 15 	 mal: 0 	 loss: 2.20273352 	 time: 1.08
+local epoch 0 	 client: 16 	 mal: 0 	 loss: 2.21434593 	 time: 1.08
+local epoch 0 	 client: 17 	 mal: 0 	 loss: 2.07218099 	 time: 1.08
+local epoch 0 	 client: 18 	 mal: 0 	 loss: 2.06236672 	 time: 1.08
+local epoch 0 	 client: 19 	 mal: 0 	 loss: 2.11288571 	 time: 1.08
+2026-01-15 05:10:02,421 [MainThread  ] [INFO ]  ---------Test 97 ------------
+2026-01-15 05:10:11,152 [MainThread  ] [INFO ]  Clean ACC:              0.1000
+2026-01-15 05:10:11,153 [MainThread  ] [INFO ]  Attack Success Ratio:   0.0000
+2026-01-15 05:10:11,153 [MainThread  ] [INFO ]  Backdoor ACC:           0.1111
+2026-01-15 05:10:11,153 [MainThread  ] [INFO ]  ------------------------------
+2026-01-15 05:10:11,153 [MainThread  ] [INFO ]  --------round 98 ------------
+local epoch 0 	 client: 0 	 mal: 1 	 loss: 1.51686919 	 time: 1.08
+local epoch 0 	 client: 1 	 mal: 1 	 loss: 1.27089000 	 time: 1.08
+local epoch 0 	 client: 2 	 mal: 0 	 loss: 2.28105116 	 time: 1.08
+local epoch 0 	 client: 3 	 mal: 0 	 loss: 2.16407657 	 time: 1.08
+local epoch 0 	 client: 4 	 mal: 0 	 loss: 2.18070674 	 time: 1.08
+local epoch 0 	 client: 5 	 mal: 0 	 loss: 2.20971680 	 time: 1.08
+local epoch 0 	 client: 6 	 mal: 0 	 loss: 2.21347523 	 time: 1.08
+local epoch 0 	 client: 7 	 mal: 0 	 loss: 2.18863750 	 time: 1.08
+local epoch 0 	 client: 8 	 mal: 0 	 loss: 2.08953261 	 time: 1.08
+local epoch 0 	 client: 9 	 mal: 0 	 loss: 2.09805965 	 time: 1.08
+local epoch 0 	 client: 10 	 mal: 0 	 loss: 2.20159793 	 time: 1.08
+local epoch 0 	 client: 11 	 mal: 0 	 loss: 2.10761404 	 time: 1.08
+local epoch 0 	 client: 12 	 mal: 0 	 loss: 2.14671564 	 time: 1.08
+local epoch 0 	 client: 13 	 mal: 0 	 loss: 2.15879059 	 time: 1.08
+local epoch 0 	 client: 14 	 mal: 0 	 loss: 2.16824269 	 time: 1.08
+local epoch 0 	 client: 15 	 mal: 0 	 loss: 2.28445506 	 time: 1.08
+local epoch 0 	 client: 16 	 mal: 0 	 loss: 2.18637013 	 time: 1.08
+local epoch 0 	 client: 17 	 mal: 0 	 loss: 2.15648651 	 time: 1.08
+local epoch 0 	 client: 18 	 mal: 0 	 loss: 2.14552927 	 time: 1.08
+local epoch 0 	 client: 19 	 mal: 0 	 loss: 2.18324661 	 time: 1.08
+2026-01-15 05:10:33,558 [MainThread  ] [INFO ]  ---------Test 98 ------------
+2026-01-15 05:10:42,205 [MainThread  ] [INFO ]  Clean ACC:              0.1000
+2026-01-15 05:10:42,205 [MainThread  ] [INFO ]  Attack Success Ratio:   0.0000
+2026-01-15 05:10:42,205 [MainThread  ] [INFO ]  Backdoor ACC:           0.1111
+2026-01-15 05:10:42,205 [MainThread  ] [INFO ]  ------------------------------
+2026-01-15 05:10:42,205 [MainThread  ] [INFO ]  --------round 99 ------------
+local epoch 0 	 client: 0 	 mal: 1 	 loss: 1.61157477 	 time: 1.08
+local epoch 0 	 client: 1 	 mal: 1 	 loss: 1.34693265 	 time: 1.08
+local epoch 0 	 client: 2 	 mal: 0 	 loss: 2.27889776 	 time: 1.08
+local epoch 0 	 client: 3 	 mal: 0 	 loss: 2.14668417 	 time: 1.08
+local epoch 0 	 client: 4 	 mal: 0 	 loss: 2.14211869 	 time: 1.08
+local epoch 0 	 client: 5 	 mal: 0 	 loss: 2.24379230 	 time: 1.08
+local epoch 0 	 client: 6 	 mal: 0 	 loss: 2.16241407 	 time: 1.08
+local epoch 0 	 client: 7 	 mal: 0 	 loss: 2.18127108 	 time: 1.08
+local epoch 0 	 client: 8 	 mal: 0 	 loss: 2.16408968 	 time: 1.08
+local epoch 0 	 client: 9 	 mal: 0 	 loss: 2.16898727 	 time: 1.08
+local epoch 0 	 client: 10 	 mal: 0 	 loss: 2.17170143 	 time: 1.08
+local epoch 0 	 client: 11 	 mal: 0 	 loss: 2.11981559 	 time: 1.08
+local epoch 0 	 client: 12 	 mal: 0 	 loss: 2.17485523 	 time: 1.08
+local epoch 0 	 client: 13 	 mal: 0 	 loss: 2.22783279 	 time: 1.08
+local epoch 0 	 client: 14 	 mal: 0 	 loss: 2.21052742 	 time: 1.08
+local epoch 0 	 client: 15 	 mal: 0 	 loss: 2.31434393 	 time: 1.08
+local epoch 0 	 client: 16 	 mal: 0 	 loss: 2.12403631 	 time: 1.08
+local epoch 0 	 client: 17 	 mal: 0 	 loss: 2.13417578 	 time: 1.08
+local epoch 0 	 client: 18 	 mal: 0 	 loss: 2.23145986 	 time: 1.08
+local epoch 0 	 client: 19 	 mal: 0 	 loss: 2.17725611 	 time: 1.08
+2026-01-15 05:11:04,632 [MainThread  ] [INFO ]  ---------Test 99 ------------
+2026-01-15 05:11:13,371 [MainThread  ] [INFO ]  Clean ACC:              0.1000
+2026-01-15 05:11:13,371 [MainThread  ] [INFO ]  Attack Success Ratio:   0.0000
+2026-01-15 05:11:13,371 [MainThread  ] [INFO ]  Backdoor ACC:           0.1111
+2026-01-15 05:11:13,371 [MainThread  ] [INFO ]  ------------------------------
+2026-01-15 05:11:13,371 [MainThread  ] [INFO ]  --------round 100 ------------
+local epoch 0 	 client: 0 	 mal: 1 	 loss: 1.49490285 	 time: 1.08
+local epoch 0 	 client: 1 	 mal: 1 	 loss: 1.73629165 	 time: 1.08
+local epoch 0 	 client: 2 	 mal: 0 	 loss: 2.24974871 	 time: 1.08
+local epoch 0 	 client: 3 	 mal: 0 	 loss: 2.26453447 	 time: 1.08
+local epoch 0 	 client: 4 	 mal: 0 	 loss: 2.24058151 	 time: 1.08
+local epoch 0 	 client: 5 	 mal: 0 	 loss: 2.22685409 	 time: 1.08
+local epoch 0 	 client: 6 	 mal: 0 	 loss: 2.15798187 	 time: 1.08
+local epoch 0 	 client: 7 	 mal: 0 	 loss: 2.18508434 	 time: 1.08
+local epoch 0 	 client: 8 	 mal: 0 	 loss: 2.14457870 	 time: 1.08
+local epoch 0 	 client: 9 	 mal: 0 	 loss: 2.23944402 	 time: 1.08
+local epoch 0 	 client: 10 	 mal: 0 	 loss: 2.31662107 	 time: 1.08
+local epoch 0 	 client: 11 	 mal: 0 	 loss: 2.20608282 	 time: 1.08
+local epoch 0 	 client: 12 	 mal: 0 	 loss: 2.09676194 	 time: 1.08
+local epoch 0 	 client: 13 	 mal: 0 	 loss: 2.28494406 	 time: 1.08
+local epoch 0 	 client: 14 	 mal: 0 	 loss: 2.13635945 	 time: 1.08
+local epoch 0 	 client: 15 	 mal: 0 	 loss: 2.28251266 	 time: 1.08
+local epoch 0 	 client: 16 	 mal: 0 	 loss: 2.20573878 	 time: 1.08
+local epoch 0 	 client: 17 	 mal: 0 	 loss: 2.16810322 	 time: 1.08
+local epoch 0 	 client: 18 	 mal: 0 	 loss: 2.15210915 	 time: 1.08
+local epoch 0 	 client: 19 	 mal: 0 	 loss: 2.15652895 	 time: 1.08
+2026-01-15 05:11:35,752 [MainThread  ] [INFO ]  ---------Test 100 ------------
+2026-01-15 05:11:44,407 [MainThread  ] [INFO ]  Clean ACC:              0.1000
+2026-01-15 05:11:44,407 [MainThread  ] [INFO ]  Attack Success Ratio:   0.0000
+2026-01-15 05:11:44,407 [MainThread  ] [INFO ]  Backdoor ACC:           0.1111
+2026-01-15 05:11:44,407 [MainThread  ] [INFO ]  ------------------------------
+2026-01-15 05:11:44,407 [MainThread  ] [INFO ]  Best results:
+2026-01-15 05:11:44,407 [MainThread  ] [INFO ]  Clean ACC:              0.1000
+2026-01-15 05:11:44,407 [MainThread  ] [INFO ]  Attack Success Ratio:   0.0000
+2026-01-15 05:11:44,407 [MainThread  ] [INFO ]  Backdoor ACC:           0.1111
+2026-01-15 05:11:44,408 [MainThread  ] [INFO ]  Training has finished!

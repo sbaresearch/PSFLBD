@@ -1,0 +1,1226 @@
+25
+mean|client_grad| 0.01667068339884281
+local epoch 0 	 client: 0 	 mal: 1 	 loss: 1.89016747 	 time: 1.80
+local epoch 1 	 client: 0 	 mal: 1 	 loss: 1.98837173 	 time: 1.32
+local epoch 0 	 client: 1 	 mal: 1 	 loss: 2.05041718 	 time: 1.32
+local epoch 1 	 client: 1 	 mal: 1 	 loss: 1.85566401 	 time: 1.31
+local epoch 0 	 client: 2 	 mal: 1 	 loss: 1.71508968 	 time: 1.31
+local epoch 1 	 client: 2 	 mal: 1 	 loss: 1.86084044 	 time: 1.32
+local epoch 0 	 client: 3 	 mal: 1 	 loss: 1.93325961 	 time: 1.32
+local epoch 1 	 client: 3 	 mal: 1 	 loss: 2.10848665 	 time: 1.32
+local epoch 0 	 client: 4 	 mal: 0 	 loss: 2.48618412 	 time: 1.33
+local epoch 1 	 client: 4 	 mal: 0 	 loss: 1.91758108 	 time: 1.33
+local epoch 0 	 client: 5 	 mal: 0 	 loss: 2.07541418 	 time: 1.33
+local epoch 1 	 client: 5 	 mal: 0 	 loss: 1.62354708 	 time: 1.33
+local epoch 0 	 client: 6 	 mal: 0 	 loss: 2.23622417 	 time: 1.33
+local epoch 1 	 client: 6 	 mal: 0 	 loss: 2.15331817 	 time: 1.33
+local epoch 0 	 client: 7 	 mal: 0 	 loss: 2.10600853 	 time: 1.33
+local epoch 1 	 client: 7 	 mal: 0 	 loss: 1.82860839 	 time: 1.33
+local epoch 0 	 client: 8 	 mal: 0 	 loss: 2.18350863 	 time: 1.33
+local epoch 1 	 client: 8 	 mal: 0 	 loss: 2.42630863 	 time: 1.34
+local epoch 0 	 client: 9 	 mal: 0 	 loss: 2.08125114 	 time: 1.34
+local epoch 1 	 client: 9 	 mal: 0 	 loss: 1.45436430 	 time: 1.34
+local epoch 0 	 client: 10 	 mal: 0 	 loss: 2.24489617 	 time: 1.33
+local epoch 1 	 client: 10 	 mal: 0 	 loss: 1.95522535 	 time: 1.34
+local epoch 0 	 client: 11 	 mal: 0 	 loss: 2.15728331 	 time: 1.33
+local epoch 1 	 client: 11 	 mal: 0 	 loss: 1.92109013 	 time: 1.34
+local epoch 0 	 client: 12 	 mal: 0 	 loss: 2.35216713 	 time: 1.37
+local epoch 1 	 client: 12 	 mal: 0 	 loss: 2.20317554 	 time: 1.35
+local epoch 0 	 client: 13 	 mal: 0 	 loss: 2.23475766 	 time: 1.35
+local epoch 1 	 client: 13 	 mal: 0 	 loss: 2.20564151 	 time: 1.35
+local epoch 0 	 client: 14 	 mal: 0 	 loss: 2.12235761 	 time: 1.35
+local epoch 1 	 client: 14 	 mal: 0 	 loss: 1.59534431 	 time: 1.36
+local epoch 0 	 client: 15 	 mal: 0 	 loss: 2.58670163 	 time: 1.34
+local epoch 1 	 client: 15 	 mal: 0 	 loss: 1.50039864 	 time: 1.35
+local epoch 0 	 client: 16 	 mal: 0 	 loss: 2.03142977 	 time: 1.34
+local epoch 1 	 client: 16 	 mal: 0 	 loss: 1.54420340 	 time: 1.37
+local epoch 0 	 client: 17 	 mal: 0 	 loss: 2.06127334 	 time: 1.37
+local epoch 1 	 client: 17 	 mal: 0 	 loss: 1.74211907 	 time: 1.42
+local epoch 0 	 client: 18 	 mal: 0 	 loss: 2.13672686 	 time: 1.38
+local epoch 1 	 client: 18 	 mal: 0 	 loss: 2.06006169 	 time: 1.39
+local epoch 0 	 client: 19 	 mal: 0 	 loss: 2.20192432 	 time: 1.44
+local epoch 1 	 client: 19 	 mal: 0 	 loss: 1.63103592 	 time: 1.49
+20 20
+torch.Size([149317])
+[DBG rnd=1] logits mean=0.0094, std=0.3209, maxlogit mean=0.4125
+[DBG rnd=1] probs max mean=0.1446, pred entropy mean=2.2631
+[DBG rnd=1] preds bincount=[8, 6, 6, 4, 9, 4, 2, 12, 0, 13]
+Clean ACC:              0.5939
+Attack Success Ratio:   0.1072
+Robustness ACC:           0.5406
+mean|client_grad| 0.01737520471215248
+local epoch 0 	 client: 0 	 mal: 1 	 loss: 1.95550168 	 time: 1.36
+local epoch 1 	 client: 0 	 mal: 1 	 loss: 1.02572238 	 time: 1.33
+local epoch 0 	 client: 1 	 mal: 1 	 loss: 1.56691456 	 time: 1.33
+local epoch 1 	 client: 1 	 mal: 1 	 loss: 1.43986654 	 time: 1.33
+local epoch 0 	 client: 2 	 mal: 1 	 loss: 1.31687152 	 time: 1.33
+local epoch 1 	 client: 2 	 mal: 1 	 loss: 1.34476674 	 time: 1.33
+local epoch 0 	 client: 3 	 mal: 1 	 loss: 1.70237386 	 time: 1.33
+local epoch 1 	 client: 3 	 mal: 1 	 loss: 1.51441813 	 time: 1.34
+local epoch 0 	 client: 4 	 mal: 0 	 loss: 1.06572139 	 time: 1.34
+local epoch 1 	 client: 4 	 mal: 0 	 loss: 1.07689619 	 time: 1.35
+local epoch 0 	 client: 5 	 mal: 0 	 loss: 1.60441220 	 time: 1.35
+local epoch 1 	 client: 5 	 mal: 0 	 loss: 0.89349073 	 time: 1.35
+local epoch 0 	 client: 6 	 mal: 0 	 loss: 1.45661676 	 time: 1.34
+local epoch 1 	 client: 6 	 mal: 0 	 loss: 0.84072310 	 time: 1.34
+local epoch 0 	 client: 7 	 mal: 0 	 loss: 1.49846196 	 time: 1.34
+local epoch 1 	 client: 7 	 mal: 0 	 loss: 0.86554092 	 time: 1.36
+local epoch 0 	 client: 8 	 mal: 0 	 loss: 1.15238225 	 time: 1.34
+local epoch 1 	 client: 8 	 mal: 0 	 loss: 0.75639015 	 time: 1.36
+local epoch 0 	 client: 9 	 mal: 0 	 loss: 1.44807041 	 time: 1.36
+local epoch 1 	 client: 9 	 mal: 0 	 loss: 0.76936948 	 time: 1.39
+local epoch 0 	 client: 10 	 mal: 0 	 loss: 1.05290926 	 time: 1.35
+local epoch 1 	 client: 10 	 mal: 0 	 loss: 0.78092271 	 time: 1.37
+local epoch 0 	 client: 11 	 mal: 0 	 loss: 1.54174900 	 time: 1.35
+local epoch 1 	 client: 11 	 mal: 0 	 loss: 0.75415272 	 time: 1.37
+local epoch 0 	 client: 12 	 mal: 0 	 loss: 1.62061632 	 time: 1.34
+local epoch 1 	 client: 12 	 mal: 0 	 loss: 1.27171946 	 time: 1.35
+local epoch 0 	 client: 13 	 mal: 0 	 loss: 1.08379126 	 time: 1.34
+local epoch 1 	 client: 13 	 mal: 0 	 loss: 0.88911712 	 time: 1.35
+local epoch 0 	 client: 14 	 mal: 0 	 loss: 0.89167607 	 time: 1.35
+local epoch 1 	 client: 14 	 mal: 0 	 loss: 1.12606168 	 time: 1.37
+local epoch 0 	 client: 15 	 mal: 0 	 loss: 1.43210506 	 time: 1.42
+local epoch 1 	 client: 15 	 mal: 0 	 loss: 0.89546216 	 time: 1.45
+local epoch 0 	 client: 16 	 mal: 0 	 loss: 1.21227467 	 time: 1.39
+local epoch 1 	 client: 16 	 mal: 0 	 loss: 0.85119897 	 time: 1.38
+local epoch 0 	 client: 17 	 mal: 0 	 loss: 1.25524294 	 time: 1.35
+local epoch 1 	 client: 17 	 mal: 0 	 loss: 0.75531697 	 time: 1.36
+local epoch 0 	 client: 18 	 mal: 0 	 loss: 1.55715907 	 time: 1.34
+local epoch 1 	 client: 18 	 mal: 0 	 loss: 1.21896482 	 time: 1.35
+local epoch 0 	 client: 19 	 mal: 0 	 loss: 1.15445268 	 time: 1.34
+local epoch 1 	 client: 19 	 mal: 0 	 loss: 1.00461864 	 time: 1.35
+20 20
+torch.Size([149317])
+[DBG rnd=2] logits mean=0.0608, std=0.8585, maxlogit mean=1.7148
+[DBG rnd=2] probs max mean=0.3679, pred entropy mean=1.8578
+[DBG rnd=2] preds bincount=[5, 11, 5, 9, 7, 1, 7, 8, 1, 10]
+Clean ACC:              0.7894
+Attack Success Ratio:   0.0333
+Robustness ACC:           0.7783
+mean|client_grad| 0.01725894957780838
+local epoch 0 	 client: 0 	 mal: 1 	 loss: 1.18188989 	 time: 1.35
+local epoch 1 	 client: 0 	 mal: 1 	 loss: 1.00196421 	 time: 1.33
+local epoch 0 	 client: 1 	 mal: 1 	 loss: 1.12439966 	 time: 1.33
+local epoch 1 	 client: 1 	 mal: 1 	 loss: 1.11221564 	 time: 1.34
+local epoch 0 	 client: 2 	 mal: 1 	 loss: 0.95789939 	 time: 1.35
+local epoch 1 	 client: 2 	 mal: 1 	 loss: 0.82319218 	 time: 1.35
+local epoch 0 	 client: 3 	 mal: 1 	 loss: 1.05333376 	 time: 1.34
+local epoch 1 	 client: 3 	 mal: 1 	 loss: 1.47870052 	 time: 1.34
+local epoch 0 	 client: 4 	 mal: 0 	 loss: 0.59223837 	 time: 1.34
+local epoch 1 	 client: 4 	 mal: 0 	 loss: 1.19917679 	 time: 1.35
+local epoch 0 	 client: 5 	 mal: 0 	 loss: 0.75141901 	 time: 1.34
+local epoch 1 	 client: 5 	 mal: 0 	 loss: 0.29825580 	 time: 1.36
+local epoch 0 	 client: 6 	 mal: 0 	 loss: 1.08656442 	 time: 1.34
+local epoch 1 	 client: 6 	 mal: 0 	 loss: 0.52522647 	 time: 1.37
+local epoch 0 	 client: 7 	 mal: 0 	 loss: 0.75314331 	 time: 1.34
+local epoch 1 	 client: 7 	 mal: 0 	 loss: 0.63893598 	 time: 1.37
+local epoch 0 	 client: 8 	 mal: 0 	 loss: 0.45061570 	 time: 1.34
+local epoch 1 	 client: 8 	 mal: 0 	 loss: 0.33986074 	 time: 1.35
+local epoch 0 	 client: 9 	 mal: 0 	 loss: 1.68160474 	 time: 1.34
+local epoch 1 	 client: 9 	 mal: 0 	 loss: 0.58222228 	 time: 1.35
+local epoch 0 	 client: 10 	 mal: 0 	 loss: 0.84626132 	 time: 1.34
+local epoch 1 	 client: 10 	 mal: 0 	 loss: 0.54707545 	 time: 1.36
+local epoch 0 	 client: 11 	 mal: 0 	 loss: 0.85549146 	 time: 1.35
+local epoch 1 	 client: 11 	 mal: 0 	 loss: 0.30075416 	 time: 1.36
+local epoch 0 	 client: 12 	 mal: 0 	 loss: 0.73611021 	 time: 1.35
+local epoch 1 	 client: 12 	 mal: 0 	 loss: 0.57443637 	 time: 1.36
+local epoch 0 	 client: 13 	 mal: 0 	 loss: 0.61085665 	 time: 1.45
+local epoch 1 	 client: 13 	 mal: 0 	 loss: 0.31450814 	 time: 1.45
+local epoch 0 	 client: 14 	 mal: 0 	 loss: 0.92127424 	 time: 1.41
+local epoch 1 	 client: 14 	 mal: 0 	 loss: 0.71514457 	 time: 1.40
+local epoch 0 	 client: 15 	 mal: 0 	 loss: 0.66373676 	 time: 1.37
+local epoch 1 	 client: 15 	 mal: 0 	 loss: 0.21333116 	 time: 1.39
+local epoch 0 	 client: 16 	 mal: 0 	 loss: 0.47089890 	 time: 1.36
+local epoch 1 	 client: 16 	 mal: 0 	 loss: 0.48380578 	 time: 1.37
+local epoch 0 	 client: 17 	 mal: 0 	 loss: 1.23432267 	 time: 1.34
+local epoch 1 	 client: 17 	 mal: 0 	 loss: 0.65033275 	 time: 1.35
+local epoch 0 	 client: 18 	 mal: 0 	 loss: 0.90860254 	 time: 1.34
+local epoch 1 	 client: 18 	 mal: 0 	 loss: 1.49720883 	 time: 1.34
+local epoch 0 	 client: 19 	 mal: 0 	 loss: 0.60093731 	 time: 1.35
+local epoch 1 	 client: 19 	 mal: 0 	 loss: 0.45287955 	 time: 1.34
+20 20
+torch.Size([149317])
+[DBG rnd=3] logits mean=0.0918, std=1.3094, maxlogit mean=2.8011
+[DBG rnd=3] probs max mean=0.5737, pred entropy mean=1.3625
+[DBG rnd=3] preds bincount=[5, 10, 7, 8, 9, 3, 6, 8, 1, 7]
+Clean ACC:              0.8705
+Attack Success Ratio:   0.0324
+Robustness ACC:           0.8637
+mean|client_grad| 0.01576511189341545
+local epoch 0 	 client: 0 	 mal: 1 	 loss: 1.03102612 	 time: 1.36
+local epoch 1 	 client: 0 	 mal: 1 	 loss: 0.86012650 	 time: 1.33
+local epoch 0 	 client: 1 	 mal: 1 	 loss: 0.76040262 	 time: 1.33
+local epoch 1 	 client: 1 	 mal: 1 	 loss: 0.90989131 	 time: 1.34
+local epoch 0 	 client: 2 	 mal: 1 	 loss: 1.08967400 	 time: 1.35
+local epoch 1 	 client: 2 	 mal: 1 	 loss: 0.76065874 	 time: 1.36
+local epoch 0 	 client: 3 	 mal: 1 	 loss: 0.86285204 	 time: 1.34
+local epoch 1 	 client: 3 	 mal: 1 	 loss: 0.87914622 	 time: 1.35
+local epoch 0 	 client: 4 	 mal: 0 	 loss: 0.74384505 	 time: 1.34
+local epoch 1 	 client: 4 	 mal: 0 	 loss: 0.23067735 	 time: 1.34
+local epoch 0 	 client: 5 	 mal: 0 	 loss: 0.33982921 	 time: 1.34
+local epoch 1 	 client: 5 	 mal: 0 	 loss: 0.43306732 	 time: 1.34
+local epoch 0 	 client: 6 	 mal: 0 	 loss: 0.45330742 	 time: 1.34
+local epoch 1 	 client: 6 	 mal: 0 	 loss: 0.34990093 	 time: 1.36
+local epoch 0 	 client: 7 	 mal: 0 	 loss: 0.39890140 	 time: 1.37
+local epoch 1 	 client: 7 	 mal: 0 	 loss: 0.48471516 	 time: 1.36
+local epoch 0 	 client: 8 	 mal: 0 	 loss: 0.95928067 	 time: 1.44
+local epoch 1 	 client: 8 	 mal: 0 	 loss: 0.26267189 	 time: 1.43
+local epoch 0 	 client: 9 	 mal: 0 	 loss: 0.29675865 	 time: 1.41
+local epoch 1 	 client: 9 	 mal: 0 	 loss: 0.61934042 	 time: 1.40
+local epoch 0 	 client: 10 	 mal: 0 	 loss: 0.33992779 	 time: 1.35
+local epoch 1 	 client: 10 	 mal: 0 	 loss: 0.44152284 	 time: 1.34
+local epoch 0 	 client: 11 	 mal: 0 	 loss: 0.32568055 	 time: 1.34
+local epoch 1 	 client: 11 	 mal: 0 	 loss: 0.16628306 	 time: 1.35
+local epoch 0 	 client: 12 	 mal: 0 	 loss: 0.40066627 	 time: 1.35
+local epoch 1 	 client: 12 	 mal: 0 	 loss: 1.56975543 	 time: 1.37
+local epoch 0 	 client: 13 	 mal: 0 	 loss: 0.45080984 	 time: 1.35
+local epoch 1 	 client: 13 	 mal: 0 	 loss: 0.26316395 	 time: 1.36
+local epoch 0 	 client: 14 	 mal: 0 	 loss: 0.63589209 	 time: 1.43
+local epoch 1 	 client: 14 	 mal: 0 	 loss: 0.54523367 	 time: 1.45
+local epoch 0 	 client: 15 	 mal: 0 	 loss: 0.29163760 	 time: 1.39
+local epoch 1 	 client: 15 	 mal: 0 	 loss: 0.45064306 	 time: 1.38
+local epoch 0 	 client: 16 	 mal: 0 	 loss: 0.54627669 	 time: 1.37
+local epoch 1 	 client: 16 	 mal: 0 	 loss: 0.44767278 	 time: 1.40
+local epoch 0 	 client: 17 	 mal: 0 	 loss: 0.52582282 	 time: 1.37
+local epoch 1 	 client: 17 	 mal: 0 	 loss: 0.30796617 	 time: 1.39
+local epoch 0 	 client: 18 	 mal: 0 	 loss: 0.27805036 	 time: 1.37
+local epoch 1 	 client: 18 	 mal: 0 	 loss: 0.31020212 	 time: 1.38
+local epoch 0 	 client: 19 	 mal: 0 	 loss: 0.38849959 	 time: 1.37
+local epoch 1 	 client: 19 	 mal: 0 	 loss: 0.38875669 	 time: 1.38
+20 20
+torch.Size([149317])
+[DBG rnd=4] logits mean=0.1150, std=1.6651, maxlogit mean=3.7112
+[DBG rnd=4] probs max mean=0.7163, pred entropy mean=0.9685
+[DBG rnd=4] preds bincount=[6, 10, 6, 6, 9, 5, 6, 8, 1, 7]
+Clean ACC:              0.9076
+Attack Success Ratio:   0.0178
+Robustness ACC:           0.9057
+mean|client_grad| 0.01814197562634945
+local epoch 0 	 client: 0 	 mal: 1 	 loss: 0.90286553 	 time: 1.34
+local epoch 1 	 client: 0 	 mal: 1 	 loss: 0.71440178 	 time: 1.33
+local epoch 0 	 client: 1 	 mal: 1 	 loss: 1.04879820 	 time: 1.34
+local epoch 1 	 client: 1 	 mal: 1 	 loss: 1.11994696 	 time: 1.35
+local epoch 0 	 client: 2 	 mal: 1 	 loss: 0.79284215 	 time: 1.34
+local epoch 1 	 client: 2 	 mal: 1 	 loss: 0.65774238 	 time: 1.36
+local epoch 0 	 client: 3 	 mal: 1 	 loss: 0.97060370 	 time: 1.35
+local epoch 1 	 client: 3 	 mal: 1 	 loss: 0.91795594 	 time: 1.35
+local epoch 0 	 client: 4 	 mal: 0 	 loss: 0.44698441 	 time: 1.34
+local epoch 1 	 client: 4 	 mal: 0 	 loss: 0.19848010 	 time: 1.35
+local epoch 0 	 client: 5 	 mal: 0 	 loss: 0.55100632 	 time: 1.35
+local epoch 1 	 client: 5 	 mal: 0 	 loss: 0.22960293 	 time: 1.36
+local epoch 0 	 client: 6 	 mal: 0 	 loss: 0.50198197 	 time: 1.36
+local epoch 1 	 client: 6 	 mal: 0 	 loss: 0.32566008 	 time: 1.39
+local epoch 0 	 client: 7 	 mal: 0 	 loss: 0.50510913 	 time: 1.35
+local epoch 1 	 client: 7 	 mal: 0 	 loss: 0.47492272 	 time: 1.36
+local epoch 0 	 client: 8 	 mal: 0 	 loss: 0.26127613 	 time: 1.33
+local epoch 1 	 client: 8 	 mal: 0 	 loss: 0.70902175 	 time: 1.35
+local epoch 0 	 client: 9 	 mal: 0 	 loss: 0.51634932 	 time: 1.35
+local epoch 1 	 client: 9 	 mal: 0 	 loss: 0.10956446 	 time: 1.37
+local epoch 0 	 client: 10 	 mal: 0 	 loss: 0.54469407 	 time: 1.35
+local epoch 1 	 client: 10 	 mal: 0 	 loss: 0.36319995 	 time: 1.37
+local epoch 0 	 client: 11 	 mal: 0 	 loss: 0.36329249 	 time: 1.35
+local epoch 1 	 client: 11 	 mal: 0 	 loss: 0.35822052 	 time: 1.37
+local epoch 0 	 client: 12 	 mal: 0 	 loss: 0.52347505 	 time: 1.38
+local epoch 1 	 client: 12 	 mal: 0 	 loss: 0.40488032 	 time: 1.40
+local epoch 0 	 client: 13 	 mal: 0 	 loss: 0.52058041 	 time: 1.38
+local epoch 1 	 client: 13 	 mal: 0 	 loss: 0.37020460 	 time: 1.38
+local epoch 0 	 client: 14 	 mal: 0 	 loss: 0.25187927 	 time: 1.37
+local epoch 1 	 client: 14 	 mal: 0 	 loss: 0.20890157 	 time: 1.36
+local epoch 0 	 client: 15 	 mal: 0 	 loss: 0.34707662 	 time: 1.37
+local epoch 1 	 client: 15 	 mal: 0 	 loss: 0.32586592 	 time: 1.39
+local epoch 0 	 client: 16 	 mal: 0 	 loss: 0.27457225 	 time: 1.35
+local epoch 1 	 client: 16 	 mal: 0 	 loss: 0.14562272 	 time: 1.36
+local epoch 0 	 client: 17 	 mal: 0 	 loss: 0.31557524 	 time: 1.35
+local epoch 1 	 client: 17 	 mal: 0 	 loss: 0.28772631 	 time: 1.36
+local epoch 0 	 client: 18 	 mal: 0 	 loss: 0.30413237 	 time: 1.34
+local epoch 1 	 client: 18 	 mal: 0 	 loss: 0.22749111 	 time: 1.34
+local epoch 0 	 client: 19 	 mal: 0 	 loss: 0.28552884 	 time: 1.34
+local epoch 1 	 client: 19 	 mal: 0 	 loss: 0.30510756 	 time: 1.36
+20 20
+torch.Size([149317])
+[DBG rnd=5] logits mean=0.1247, std=1.9590, maxlogit mean=4.4362
+[DBG rnd=5] probs max mean=0.8019, pred entropy mean=0.7074
+[DBG rnd=5] preds bincount=[6, 10, 6, 6, 9, 6, 6, 7, 1, 7]
+Clean ACC:              0.9264
+Attack Success Ratio:   0.0123
+Robustness ACC:           0.9252
+mean|client_grad| 0.027568409219384193
+local epoch 0 	 client: 0 	 mal: 1 	 loss: 0.93475354 	 time: 1.34
+local epoch 1 	 client: 0 	 mal: 1 	 loss: 0.76981103 	 time: 1.36
+local epoch 0 	 client: 1 	 mal: 1 	 loss: 0.75167972 	 time: 1.36
+local epoch 1 	 client: 1 	 mal: 1 	 loss: 0.95841199 	 time: 1.39
+local epoch 0 	 client: 2 	 mal: 1 	 loss: 0.86796761 	 time: 1.35
+local epoch 1 	 client: 2 	 mal: 1 	 loss: 0.78086084 	 time: 1.35
+local epoch 0 	 client: 3 	 mal: 1 	 loss: 0.74371636 	 time: 1.36
+local epoch 1 	 client: 3 	 mal: 1 	 loss: 0.83190936 	 time: 1.36
+local epoch 0 	 client: 4 	 mal: 0 	 loss: 0.42096597 	 time: 1.37
+local epoch 1 	 client: 4 	 mal: 0 	 loss: 0.25180539 	 time: 1.39
+local epoch 0 	 client: 5 	 mal: 0 	 loss: 0.30208483 	 time: 1.37
+local epoch 1 	 client: 5 	 mal: 0 	 loss: 0.32565612 	 time: 1.40
+local epoch 0 	 client: 6 	 mal: 0 	 loss: 0.27761707 	 time: 1.36
+local epoch 1 	 client: 6 	 mal: 0 	 loss: 0.07207349 	 time: 1.36
+local epoch 0 	 client: 7 	 mal: 0 	 loss: 0.19543712 	 time: 1.36
+local epoch 1 	 client: 7 	 mal: 0 	 loss: 0.18565814 	 time: 1.37
+local epoch 0 	 client: 8 	 mal: 0 	 loss: 0.26502895 	 time: 1.39
+local epoch 1 	 client: 8 	 mal: 0 	 loss: 0.37045762 	 time: 1.41
+local epoch 0 	 client: 9 	 mal: 0 	 loss: 0.42932144 	 time: 1.37
+local epoch 1 	 client: 9 	 mal: 0 	 loss: 0.14085528 	 time: 1.38
+local epoch 0 	 client: 10 	 mal: 0 	 loss: 0.49087632 	 time: 1.36
+local epoch 1 	 client: 10 	 mal: 0 	 loss: 0.11866937 	 time: 1.36
+local epoch 0 	 client: 11 	 mal: 0 	 loss: 0.67129976 	 time: 1.38
+local epoch 1 	 client: 11 	 mal: 0 	 loss: 0.44808128 	 time: 1.40
+local epoch 0 	 client: 12 	 mal: 0 	 loss: 0.21695235 	 time: 1.38
+local epoch 1 	 client: 12 	 mal: 0 	 loss: 0.43874636 	 time: 1.38
+local epoch 0 	 client: 13 	 mal: 0 	 loss: 0.26939300 	 time: 1.37
+local epoch 1 	 client: 13 	 mal: 0 	 loss: 0.30009204 	 time: 1.40
+local epoch 0 	 client: 14 	 mal: 0 	 loss: 0.32431754 	 time: 1.35
+local epoch 1 	 client: 14 	 mal: 0 	 loss: 0.18057673 	 time: 1.36
+local epoch 0 	 client: 15 	 mal: 0 	 loss: 0.54874873 	 time: 1.37
+local epoch 1 	 client: 15 	 mal: 0 	 loss: 0.32277039 	 time: 1.38
+local epoch 0 	 client: 16 	 mal: 0 	 loss: 0.34088764 	 time: 1.37
+local epoch 1 	 client: 16 	 mal: 0 	 loss: 0.14395951 	 time: 1.40
+local epoch 0 	 client: 17 	 mal: 0 	 loss: 0.25491831 	 time: 1.39
+local epoch 1 	 client: 17 	 mal: 0 	 loss: 0.12294678 	 time: 1.41
+local epoch 0 	 client: 18 	 mal: 0 	 loss: 0.28605181 	 time: 1.34
+local epoch 1 	 client: 18 	 mal: 0 	 loss: 0.20466404 	 time: 1.35
+local epoch 0 	 client: 19 	 mal: 0 	 loss: 0.40569454 	 time: 1.34
+local epoch 1 	 client: 19 	 mal: 0 	 loss: 0.32234761 	 time: 1.35
+20 20
+torch.Size([149317])
+[DBG rnd=6] logits mean=0.1310, std=2.2285, maxlogit mean=5.0231
+[DBG rnd=6] probs max mean=0.8531, pred entropy mean=0.5484
+[DBG rnd=6] preds bincount=[6, 10, 5, 5, 9, 7, 6, 7, 2, 7]
+Clean ACC:              0.9394
+Attack Success Ratio:   0.0087
+Robustness ACC:           0.9393
+mean|client_grad| 0.031537268310785294
+local epoch 0 	 client: 0 	 mal: 1 	 loss: 0.78074861 	 time: 1.34
+local epoch 1 	 client: 0 	 mal: 1 	 loss: 0.80057299 	 time: 1.33
+local epoch 0 	 client: 1 	 mal: 1 	 loss: 0.77904576 	 time: 1.33
+local epoch 1 	 client: 1 	 mal: 1 	 loss: 0.73558545 	 time: 1.34
+local epoch 0 	 client: 2 	 mal: 1 	 loss: 1.56095874 	 time: 1.34
+local epoch 1 	 client: 2 	 mal: 1 	 loss: 0.51548594 	 time: 1.34
+local epoch 0 	 client: 3 	 mal: 1 	 loss: 0.56817889 	 time: 1.35
+local epoch 1 	 client: 3 	 mal: 1 	 loss: 0.56037939 	 time: 1.35
+local epoch 0 	 client: 4 	 mal: 0 	 loss: 0.28368571 	 time: 1.34
+local epoch 1 	 client: 4 	 mal: 0 	 loss: 0.22848600 	 time: 1.35
+local epoch 0 	 client: 5 	 mal: 0 	 loss: 0.23885363 	 time: 1.34
+local epoch 1 	 client: 5 	 mal: 0 	 loss: 0.14063515 	 time: 1.36
+local epoch 0 	 client: 6 	 mal: 0 	 loss: 0.26303238 	 time: 1.34
+local epoch 1 	 client: 6 	 mal: 0 	 loss: 0.25642559 	 time: 1.36
+local epoch 0 	 client: 7 	 mal: 0 	 loss: 0.18327059 	 time: 1.35
+local epoch 1 	 client: 7 	 mal: 0 	 loss: 0.14507139 	 time: 1.37
+local epoch 0 	 client: 8 	 mal: 0 	 loss: 0.27511570 	 time: 1.34
+local epoch 1 	 client: 8 	 mal: 0 	 loss: 0.29722100 	 time: 1.36
+local epoch 0 	 client: 9 	 mal: 0 	 loss: 0.26075035 	 time: 1.36
+local epoch 1 	 client: 9 	 mal: 0 	 loss: 0.11956918 	 time: 1.39
+local epoch 0 	 client: 10 	 mal: 0 	 loss: 0.11045941 	 time: 1.38
+local epoch 1 	 client: 10 	 mal: 0 	 loss: 0.25490126 	 time: 1.38
+local epoch 0 	 client: 11 	 mal: 0 	 loss: 0.14283450 	 time: 1.35
+local epoch 1 	 client: 11 	 mal: 0 	 loss: 0.24843693 	 time: 1.35
+local epoch 0 	 client: 12 	 mal: 0 	 loss: 0.21594438 	 time: 1.34
+local epoch 1 	 client: 12 	 mal: 0 	 loss: 0.21671540 	 time: 1.35
+local epoch 0 	 client: 13 	 mal: 0 	 loss: 0.15220006 	 time: 1.34
+local epoch 1 	 client: 13 	 mal: 0 	 loss: 0.49058712 	 time: 1.35
+local epoch 0 	 client: 14 	 mal: 0 	 loss: 0.28402141 	 time: 1.34
+local epoch 1 	 client: 14 	 mal: 0 	 loss: 0.37410724 	 time: 1.37
+local epoch 0 	 client: 15 	 mal: 0 	 loss: 0.24766254 	 time: 1.35
+local epoch 1 	 client: 15 	 mal: 0 	 loss: 0.25639927 	 time: 1.38
+local epoch 0 	 client: 16 	 mal: 0 	 loss: 0.13362420 	 time: 1.34
+local epoch 1 	 client: 16 	 mal: 0 	 loss: 0.28666568 	 time: 1.36
+local epoch 0 	 client: 17 	 mal: 0 	 loss: 0.16647074 	 time: 1.35
+local epoch 1 	 client: 17 	 mal: 0 	 loss: 0.09898006 	 time: 1.39
+local epoch 0 	 client: 18 	 mal: 0 	 loss: 0.17195937 	 time: 1.40
+local epoch 1 	 client: 18 	 mal: 0 	 loss: 0.16052856 	 time: 1.42
+local epoch 0 	 client: 19 	 mal: 0 	 loss: 0.26933438 	 time: 1.43
+local epoch 1 	 client: 19 	 mal: 0 	 loss: 0.34115714 	 time: 1.44
+20 20
+torch.Size([149317])
+[DBG rnd=7] logits mean=0.1431, std=2.4272, maxlogit mean=5.5140
+[DBG rnd=7] probs max mean=0.8852, pred entropy mean=0.4441
+[DBG rnd=7] preds bincount=[6, 10, 5, 5, 9, 7, 6, 7, 2, 7]
+Clean ACC:              0.9441
+Attack Success Ratio:   0.0145
+Robustness ACC:           0.9401
+mean|client_grad| 0.038866136223077774
+local epoch 0 	 client: 0 	 mal: 1 	 loss: 0.70862246 	 time: 1.34
+local epoch 1 	 client: 0 	 mal: 1 	 loss: 0.47970638 	 time: 1.35
+local epoch 0 	 client: 1 	 mal: 1 	 loss: 0.78927487 	 time: 1.35
+local epoch 1 	 client: 1 	 mal: 1 	 loss: 0.65154940 	 time: 1.36
+local epoch 0 	 client: 2 	 mal: 1 	 loss: 0.73071873 	 time: 1.34
+local epoch 1 	 client: 2 	 mal: 1 	 loss: 0.69542563 	 time: 1.34
+local epoch 0 	 client: 3 	 mal: 1 	 loss: 0.67537707 	 time: 1.33
+local epoch 1 	 client: 3 	 mal: 1 	 loss: 1.08759308 	 time: 1.34
+local epoch 0 	 client: 4 	 mal: 0 	 loss: 0.14065453 	 time: 1.35
+local epoch 1 	 client: 4 	 mal: 0 	 loss: 0.18288621 	 time: 1.36
+local epoch 0 	 client: 5 	 mal: 0 	 loss: 0.40517586 	 time: 1.34
+local epoch 1 	 client: 5 	 mal: 0 	 loss: 0.39019781 	 time: 1.34
+local epoch 0 	 client: 6 	 mal: 0 	 loss: 0.18086718 	 time: 1.36
+local epoch 1 	 client: 6 	 mal: 0 	 loss: 0.30860120 	 time: 1.40
+local epoch 0 	 client: 7 	 mal: 0 	 loss: 0.17599310 	 time: 1.37
+local epoch 1 	 client: 7 	 mal: 0 	 loss: 0.09440736 	 time: 1.39
+local epoch 0 	 client: 8 	 mal: 0 	 loss: 0.13112523 	 time: 1.36
+local epoch 1 	 client: 8 	 mal: 0 	 loss: 0.05225495 	 time: 1.35
+local epoch 0 	 client: 9 	 mal: 0 	 loss: 0.08701728 	 time: 1.34
+local epoch 1 	 client: 9 	 mal: 0 	 loss: 0.15241912 	 time: 1.34
+local epoch 0 	 client: 10 	 mal: 0 	 loss: 0.17438675 	 time: 1.34
+local epoch 1 	 client: 10 	 mal: 0 	 loss: 0.46770775 	 time: 1.35
+local epoch 0 	 client: 11 	 mal: 0 	 loss: 0.02254682 	 time: 1.35
+local epoch 1 	 client: 11 	 mal: 0 	 loss: 0.17660563 	 time: 1.37
+local epoch 0 	 client: 12 	 mal: 0 	 loss: 0.30193225 	 time: 1.37
+local epoch 1 	 client: 12 	 mal: 0 	 loss: 0.25348622 	 time: 1.35
+local epoch 0 	 client: 13 	 mal: 0 	 loss: 0.33839563 	 time: 1.35
+local epoch 1 	 client: 13 	 mal: 0 	 loss: 0.37035415 	 time: 1.37
+local epoch 0 	 client: 14 	 mal: 0 	 loss: 0.31860846 	 time: 1.37
+local epoch 1 	 client: 14 	 mal: 0 	 loss: 0.13764548 	 time: 1.43
+local epoch 0 	 client: 15 	 mal: 0 	 loss: 0.13073367 	 time: 1.41
+local epoch 1 	 client: 15 	 mal: 0 	 loss: 0.25760102 	 time: 1.45
+local epoch 0 	 client: 16 	 mal: 0 	 loss: 0.21957038 	 time: 1.40
+local epoch 1 	 client: 16 	 mal: 0 	 loss: 0.12501281 	 time: 1.41
+local epoch 0 	 client: 17 	 mal: 0 	 loss: 0.23320194 	 time: 1.39
+local epoch 1 	 client: 17 	 mal: 0 	 loss: 0.17315850 	 time: 1.41
+local epoch 0 	 client: 18 	 mal: 0 	 loss: 0.22350584 	 time: 1.38
+local epoch 1 	 client: 18 	 mal: 0 	 loss: 0.31199050 	 time: 1.36
+local epoch 0 	 client: 19 	 mal: 0 	 loss: 0.18408529 	 time: 1.38
+local epoch 1 	 client: 19 	 mal: 0 	 loss: 0.10587958 	 time: 1.41
+20 20
+torch.Size([149317])
+[DBG rnd=8] logits mean=0.1535, std=2.5928, maxlogit mean=6.0409
+[DBG rnd=8] probs max mean=0.9148, pred entropy mean=0.3341
+[DBG rnd=8] preds bincount=[6, 10, 5, 5, 9, 7, 6, 7, 2, 7]
+Clean ACC:              0.9514
+Attack Success Ratio:   0.0089
+Robustness ACC:           0.9506
+mean|client_grad| 0.04568280279636383
+local epoch 0 	 client: 0 	 mal: 1 	 loss: 0.53633904 	 time: 1.35
+local epoch 1 	 client: 0 	 mal: 1 	 loss: 0.20361573 	 time: 1.34
+local epoch 0 	 client: 1 	 mal: 1 	 loss: 0.77415395 	 time: 1.34
+local epoch 1 	 client: 1 	 mal: 1 	 loss: 0.46687397 	 time: 1.34
+local epoch 0 	 client: 2 	 mal: 1 	 loss: 1.20409954 	 time: 1.35
+local epoch 1 	 client: 2 	 mal: 1 	 loss: 0.24047297 	 time: 1.36
+local epoch 0 	 client: 3 	 mal: 1 	 loss: 0.62510753 	 time: 1.38
+local epoch 1 	 client: 3 	 mal: 1 	 loss: 0.76885772 	 time: 1.39
+local epoch 0 	 client: 4 	 mal: 0 	 loss: 0.22290768 	 time: 1.35
+local epoch 1 	 client: 4 	 mal: 0 	 loss: 0.28209969 	 time: 1.36
+local epoch 0 	 client: 5 	 mal: 0 	 loss: 0.14657213 	 time: 1.36
+local epoch 1 	 client: 5 	 mal: 0 	 loss: 0.15784870 	 time: 1.39
+local epoch 0 	 client: 6 	 mal: 0 	 loss: 0.19783247 	 time: 1.36
+local epoch 1 	 client: 6 	 mal: 0 	 loss: 0.06532490 	 time: 1.39
+local epoch 0 	 client: 7 	 mal: 0 	 loss: 0.12825498 	 time: 1.35
+local epoch 1 	 client: 7 	 mal: 0 	 loss: 0.11711802 	 time: 1.35
+local epoch 0 	 client: 8 	 mal: 0 	 loss: 0.15897280 	 time: 1.36
+local epoch 1 	 client: 8 	 mal: 0 	 loss: 0.22605048 	 time: 1.38
+local epoch 0 	 client: 9 	 mal: 0 	 loss: 0.16310163 	 time: 1.35
+local epoch 1 	 client: 9 	 mal: 0 	 loss: 0.25827056 	 time: 1.38
+local epoch 0 	 client: 10 	 mal: 0 	 loss: 0.07412211 	 time: 1.36
+local epoch 1 	 client: 10 	 mal: 0 	 loss: 0.14755185 	 time: 1.36
+local epoch 0 	 client: 11 	 mal: 0 	 loss: 0.07118486 	 time: 1.36
+local epoch 1 	 client: 11 	 mal: 0 	 loss: 0.07458308 	 time: 1.37
+local epoch 0 	 client: 12 	 mal: 0 	 loss: 0.22993667 	 time: 1.36
+local epoch 1 	 client: 12 	 mal: 0 	 loss: 0.31469056 	 time: 1.38
+local epoch 0 	 client: 13 	 mal: 0 	 loss: 0.14648840 	 time: 1.34
+local epoch 1 	 client: 13 	 mal: 0 	 loss: 0.07591536 	 time: 1.35
+local epoch 0 	 client: 14 	 mal: 0 	 loss: 0.13300750 	 time: 1.34
+local epoch 1 	 client: 14 	 mal: 0 	 loss: 0.08635263 	 time: 1.34
+local epoch 0 	 client: 15 	 mal: 0 	 loss: 0.23837300 	 time: 1.34
+local epoch 1 	 client: 15 	 mal: 0 	 loss: 0.08406880 	 time: 1.35
+local epoch 0 	 client: 16 	 mal: 0 	 loss: 0.11882122 	 time: 1.36
+local epoch 1 	 client: 16 	 mal: 0 	 loss: 0.12022295 	 time: 1.38
+local epoch 0 	 client: 17 	 mal: 0 	 loss: 0.19769077 	 time: 1.38
+local epoch 1 	 client: 17 	 mal: 0 	 loss: 0.19082071 	 time: 1.40
+local epoch 0 	 client: 18 	 mal: 0 	 loss: 0.24574856 	 time: 1.38
+local epoch 1 	 client: 18 	 mal: 0 	 loss: 0.67493284 	 time: 1.39
+local epoch 0 	 client: 19 	 mal: 0 	 loss: 0.47777709 	 time: 1.37
+local epoch 1 	 client: 19 	 mal: 0 	 loss: 0.24779448 	 time: 1.37
+20 20
+torch.Size([149317])
+[DBG rnd=9] logits mean=0.1665, std=2.7372, maxlogit mean=6.4855
+[DBG rnd=9] probs max mean=0.9317, pred entropy mean=0.2709
+[DBG rnd=9] preds bincount=[6, 10, 5, 5, 10, 7, 5, 7, 2, 7]
+Clean ACC:              0.9538
+Attack Success Ratio:   0.0086
+Robustness ACC:           0.9523
+mean|client_grad| 0.046525515615940094
+local epoch 0 	 client: 0 	 mal: 1 	 loss: 0.38296461 	 time: 1.34
+local epoch 1 	 client: 0 	 mal: 1 	 loss: 0.15916139 	 time: 1.34
+local epoch 0 	 client: 1 	 mal: 1 	 loss: 0.65417892 	 time: 1.34
+local epoch 1 	 client: 1 	 mal: 1 	 loss: 0.64921951 	 time: 1.34
+local epoch 0 	 client: 2 	 mal: 1 	 loss: 0.32236099 	 time: 1.35
+local epoch 1 	 client: 2 	 mal: 1 	 loss: 0.13625729 	 time: 1.38
+local epoch 0 	 client: 3 	 mal: 1 	 loss: 0.76533455 	 time: 1.37
+local epoch 1 	 client: 3 	 mal: 1 	 loss: 0.16730231 	 time: 1.37
+local epoch 0 	 client: 4 	 mal: 0 	 loss: 0.15132195 	 time: 1.41
+local epoch 1 	 client: 4 	 mal: 0 	 loss: 0.16134354 	 time: 1.36
+local epoch 0 	 client: 5 	 mal: 0 	 loss: 0.36012882 	 time: 1.35
+local epoch 1 	 client: 5 	 mal: 0 	 loss: 0.11333264 	 time: 1.35
+local epoch 0 	 client: 6 	 mal: 0 	 loss: 0.13469340 	 time: 1.37
+local epoch 1 	 client: 6 	 mal: 0 	 loss: 0.31308430 	 time: 1.37
+local epoch 0 	 client: 7 	 mal: 0 	 loss: 0.22139125 	 time: 1.39
+local epoch 1 	 client: 7 	 mal: 0 	 loss: 0.09874210 	 time: 1.40
+local epoch 0 	 client: 8 	 mal: 0 	 loss: 0.20656954 	 time: 1.37
+local epoch 1 	 client: 8 	 mal: 0 	 loss: 0.07443509 	 time: 1.37
+local epoch 0 	 client: 9 	 mal: 0 	 loss: 0.09635419 	 time: 1.35
+local epoch 1 	 client: 9 	 mal: 0 	 loss: 0.11437086 	 time: 1.37
+local epoch 0 	 client: 10 	 mal: 0 	 loss: 0.13734220 	 time: 1.36
+local epoch 1 	 client: 10 	 mal: 0 	 loss: 0.27341366 	 time: 1.37
+local epoch 0 	 client: 11 	 mal: 0 	 loss: 0.05181595 	 time: 1.44
+local epoch 1 	 client: 11 	 mal: 0 	 loss: 1.08763731 	 time: 1.38
+local epoch 0 	 client: 12 	 mal: 0 	 loss: 0.19815400 	 time: 1.34
+local epoch 1 	 client: 12 	 mal: 0 	 loss: 0.19363286 	 time: 1.35
+local epoch 0 	 client: 13 	 mal: 0 	 loss: 0.27981701 	 time: 1.34
+local epoch 1 	 client: 13 	 mal: 0 	 loss: 0.17943430 	 time: 1.36
+local epoch 0 	 client: 14 	 mal: 0 	 loss: 0.22247629 	 time: 1.35
+local epoch 1 	 client: 14 	 mal: 0 	 loss: 0.28850254 	 time: 1.36
+local epoch 0 	 client: 15 	 mal: 0 	 loss: 0.15577690 	 time: 1.37
+local epoch 1 	 client: 15 	 mal: 0 	 loss: 0.16186461 	 time: 1.38
+local epoch 0 	 client: 16 	 mal: 0 	 loss: 0.12488115 	 time: 1.37
+local epoch 1 	 client: 16 	 mal: 0 	 loss: 0.17992322 	 time: 1.38
+local epoch 0 	 client: 17 	 mal: 0 	 loss: 0.29617274 	 time: 1.36
+local epoch 1 	 client: 17 	 mal: 0 	 loss: 0.07905968 	 time: 1.38
+local epoch 0 	 client: 18 	 mal: 0 	 loss: 0.28387365 	 time: 1.41
+local epoch 1 	 client: 18 	 mal: 0 	 loss: 0.16905200 	 time: 1.44
+local epoch 0 	 client: 19 	 mal: 0 	 loss: 0.13566689 	 time: 1.39
+local epoch 1 	 client: 19 	 mal: 0 	 loss: 0.18849553 	 time: 1.40
+20 20
+torch.Size([149317])
+[DBG rnd=10] logits mean=0.1748, std=2.8915, maxlogit mean=6.7923
+[DBG rnd=10] probs max mean=0.9393, pred entropy mean=0.2374
+[DBG rnd=10] preds bincount=[6, 10, 5, 5, 9, 7, 6, 7, 2, 7]
+Clean ACC:              0.9561
+Attack Success Ratio:   0.0149
+Robustness ACC:           0.9501
+mean|client_grad| 0.06825228035449982
+local epoch 0 	 client: 0 	 mal: 1 	 loss: 0.42933065 	 time: 1.35
+local epoch 1 	 client: 0 	 mal: 1 	 loss: 1.50708175 	 time: 1.33
+local epoch 0 	 client: 1 	 mal: 1 	 loss: 0.51218748 	 time: 1.33
+local epoch 1 	 client: 1 	 mal: 1 	 loss: 0.27876326 	 time: 1.34
+local epoch 0 	 client: 2 	 mal: 1 	 loss: 0.72803092 	 time: 1.34
+local epoch 1 	 client: 2 	 mal: 1 	 loss: 0.23211640 	 time: 1.36
+local epoch 0 	 client: 3 	 mal: 1 	 loss: 0.43348396 	 time: 1.36
+local epoch 1 	 client: 3 	 mal: 1 	 loss: 0.28457171 	 time: 1.39
+local epoch 0 	 client: 4 	 mal: 0 	 loss: 0.17401172 	 time: 1.39
+local epoch 1 	 client: 4 	 mal: 0 	 loss: 0.21605110 	 time: 1.38
+local epoch 0 	 client: 5 	 mal: 0 	 loss: 0.24223712 	 time: 1.34
+local epoch 1 	 client: 5 	 mal: 0 	 loss: 0.17996675 	 time: 1.35
+local epoch 0 	 client: 6 	 mal: 0 	 loss: 0.29529020 	 time: 1.34
+local epoch 1 	 client: 6 	 mal: 0 	 loss: 0.06061959 	 time: 1.35
+local epoch 0 	 client: 7 	 mal: 0 	 loss: 0.06390163 	 time: 1.34
+local epoch 1 	 client: 7 	 mal: 0 	 loss: 0.16919212 	 time: 1.34
+local epoch 0 	 client: 8 	 mal: 0 	 loss: 0.12354682 	 time: 1.36
+local epoch 1 	 client: 8 	 mal: 0 	 loss: 0.08375981 	 time: 1.39
+local epoch 0 	 client: 9 	 mal: 0 	 loss: 0.15309764 	 time: 1.37
+local epoch 1 	 client: 9 	 mal: 0 	 loss: 0.12903747 	 time: 1.40
+local epoch 0 	 client: 10 	 mal: 0 	 loss: 0.23863596 	 time: 1.37
+local epoch 1 	 client: 10 	 mal: 0 	 loss: 0.06131195 	 time: 1.38
+local epoch 0 	 client: 11 	 mal: 0 	 loss: 0.19242890 	 time: 1.37
+local epoch 1 	 client: 11 	 mal: 0 	 loss: 0.14565122 	 time: 1.39
+local epoch 0 	 client: 12 	 mal: 0 	 loss: 0.13025059 	 time: 1.41
+local epoch 1 	 client: 12 	 mal: 0 	 loss: 0.09849940 	 time: 1.42
+local epoch 0 	 client: 13 	 mal: 0 	 loss: 0.09392559 	 time: 1.38
+local epoch 1 	 client: 13 	 mal: 0 	 loss: 0.14254056 	 time: 1.37
+local epoch 0 	 client: 14 	 mal: 0 	 loss: 0.09031487 	 time: 1.36
+local epoch 1 	 client: 14 	 mal: 0 	 loss: 0.17065530 	 time: 1.37
+local epoch 0 	 client: 15 	 mal: 0 	 loss: 0.10709282 	 time: 1.36
+local epoch 1 	 client: 15 	 mal: 0 	 loss: 0.09723971 	 time: 1.38
+local epoch 0 	 client: 16 	 mal: 0 	 loss: 0.20917514 	 time: 1.37
+local epoch 1 	 client: 16 	 mal: 0 	 loss: 0.18582933 	 time: 1.37
+local epoch 0 	 client: 17 	 mal: 0 	 loss: 0.12905174 	 time: 1.36
+local epoch 1 	 client: 17 	 mal: 0 	 loss: 0.22054982 	 time: 1.36
+local epoch 0 	 client: 18 	 mal: 0 	 loss: 0.10790826 	 time: 1.41
+local epoch 1 	 client: 18 	 mal: 0 	 loss: 0.08598181 	 time: 1.44
+local epoch 0 	 client: 19 	 mal: 0 	 loss: 0.16995242 	 time: 1.40
+local epoch 1 	 client: 19 	 mal: 0 	 loss: 0.06762217 	 time: 1.40
+20 20
+torch.Size([149317])
+[DBG rnd=11] logits mean=0.1752, std=3.0888, maxlogit mean=7.2061
+[DBG rnd=11] probs max mean=0.9505, pred entropy mean=0.1984
+[DBG rnd=11] preds bincount=[6, 10, 5, 5, 10, 7, 5, 7, 2, 7]
+Clean ACC:              0.9613
+Attack Success Ratio:   0.0251
+Robustness ACC:           0.9446
+mean|client_grad| 0.04948350787162781
+local epoch 0 	 client: 0 	 mal: 1 	 loss: 0.82699823 	 time: 1.34
+local epoch 1 	 client: 0 	 mal: 1 	 loss: 0.13358545 	 time: 1.33
+local epoch 0 	 client: 1 	 mal: 1 	 loss: 0.76770663 	 time: 1.34
+local epoch 1 	 client: 1 	 mal: 1 	 loss: 0.24460591 	 time: 1.37
+local epoch 0 	 client: 2 	 mal: 1 	 loss: 0.80671966 	 time: 1.36
+local epoch 1 	 client: 2 	 mal: 1 	 loss: 0.13735832 	 time: 1.44
+local epoch 0 	 client: 3 	 mal: 1 	 loss: 0.33568877 	 time: 1.40
+local epoch 1 	 client: 3 	 mal: 1 	 loss: 0.04430682 	 time: 1.35
+local epoch 0 	 client: 4 	 mal: 0 	 loss: 0.08503326 	 time: 1.34
+local epoch 1 	 client: 4 	 mal: 0 	 loss: 0.13182208 	 time: 1.36
+local epoch 0 	 client: 5 	 mal: 0 	 loss: 0.09650794 	 time: 1.37
+local epoch 1 	 client: 5 	 mal: 0 	 loss: 0.07830070 	 time: 1.40
+local epoch 0 	 client: 6 	 mal: 0 	 loss: 0.14433439 	 time: 1.37
+local epoch 1 	 client: 6 	 mal: 0 	 loss: 0.10488164 	 time: 1.38
+local epoch 0 	 client: 7 	 mal: 0 	 loss: 0.18918189 	 time: 1.36
+local epoch 1 	 client: 7 	 mal: 0 	 loss: 0.15020861 	 time: 1.37
+local epoch 0 	 client: 8 	 mal: 0 	 loss: 0.19317695 	 time: 1.37
+local epoch 1 	 client: 8 	 mal: 0 	 loss: 0.12292476 	 time: 1.40
+local epoch 0 	 client: 9 	 mal: 0 	 loss: 0.14788188 	 time: 1.37
+local epoch 1 	 client: 9 	 mal: 0 	 loss: 0.03730811 	 time: 1.40
+local epoch 0 	 client: 10 	 mal: 0 	 loss: 0.04956735 	 time: 1.39
+local epoch 1 	 client: 10 	 mal: 0 	 loss: 0.19625470 	 time: 1.44
+local epoch 0 	 client: 11 	 mal: 0 	 loss: 0.14070825 	 time: 1.40
+local epoch 1 	 client: 11 	 mal: 0 	 loss: 0.13951515 	 time: 1.37
+local epoch 0 	 client: 12 	 mal: 0 	 loss: 0.16069931 	 time: 1.35
+local epoch 1 	 client: 12 	 mal: 0 	 loss: 0.11588012 	 time: 1.35
+local epoch 0 	 client: 13 	 mal: 0 	 loss: 0.17703456 	 time: 1.35
+local epoch 1 	 client: 13 	 mal: 0 	 loss: 0.17202696 	 time: 1.38
+local epoch 0 	 client: 14 	 mal: 0 	 loss: 0.09314606 	 time: 1.36
+local epoch 1 	 client: 14 	 mal: 0 	 loss: 0.13454224 	 time: 1.37
+local epoch 0 	 client: 15 	 mal: 0 	 loss: 0.14697270 	 time: 1.36
+local epoch 1 	 client: 15 	 mal: 0 	 loss: 0.03494063 	 time: 1.38
+local epoch 0 	 client: 16 	 mal: 0 	 loss: 0.14423689 	 time: 1.34
+local epoch 1 	 client: 16 	 mal: 0 	 loss: 0.09627674 	 time: 1.38
+local epoch 0 	 client: 17 	 mal: 0 	 loss: 0.17870912 	 time: 1.39
+local epoch 1 	 client: 17 	 mal: 0 	 loss: 0.03224571 	 time: 1.36
+local epoch 0 	 client: 18 	 mal: 0 	 loss: 0.11498477 	 time: 1.34
+local epoch 1 	 client: 18 	 mal: 0 	 loss: 0.06134551 	 time: 1.35
+local epoch 0 	 client: 19 	 mal: 0 	 loss: 0.14840439 	 time: 1.34
+local epoch 1 	 client: 19 	 mal: 0 	 loss: 0.08686899 	 time: 1.34
+20 20
+torch.Size([149317])
+[DBG rnd=12] logits mean=0.1945, std=3.2657, maxlogit mean=7.7183
+[DBG rnd=12] probs max mean=0.9600, pred entropy mean=0.1604
+[DBG rnd=12] preds bincount=[6, 10, 5, 5, 10, 7, 5, 7, 2, 7]
+Clean ACC:              0.9624
+Attack Success Ratio:   0.0262
+Robustness ACC:           0.9462
+mean|client_grad| 0.05810842290520668
+local epoch 0 	 client: 0 	 mal: 1 	 loss: 0.20652984 	 time: 1.34
+local epoch 1 	 client: 0 	 mal: 1 	 loss: 0.07753009 	 time: 1.34
+local epoch 0 	 client: 1 	 mal: 1 	 loss: 0.21424501 	 time: 1.36
+local epoch 1 	 client: 1 	 mal: 1 	 loss: 0.12662144 	 time: 1.37
+local epoch 0 	 client: 2 	 mal: 1 	 loss: 0.55733496 	 time: 1.37
+local epoch 1 	 client: 2 	 mal: 1 	 loss: 0.34063363 	 time: 1.37
+local epoch 0 	 client: 3 	 mal: 1 	 loss: 0.24172063 	 time: 1.37
+local epoch 1 	 client: 3 	 mal: 1 	 loss: 0.09278876 	 time: 1.38
+local epoch 0 	 client: 4 	 mal: 0 	 loss: 0.13672175 	 time: 1.37
+local epoch 1 	 client: 4 	 mal: 0 	 loss: 0.03280470 	 time: 1.37
+local epoch 0 	 client: 5 	 mal: 0 	 loss: 0.13087037 	 time: 1.36
+local epoch 1 	 client: 5 	 mal: 0 	 loss: 0.16479130 	 time: 1.38
+local epoch 0 	 client: 6 	 mal: 0 	 loss: 0.18624975 	 time: 1.36
+local epoch 1 	 client: 6 	 mal: 0 	 loss: 0.10604586 	 time: 1.34
+local epoch 0 	 client: 7 	 mal: 0 	 loss: 0.07344127 	 time: 1.34
+local epoch 1 	 client: 7 	 mal: 0 	 loss: 0.12103286 	 time: 1.34
+local epoch 0 	 client: 8 	 mal: 0 	 loss: 0.03729442 	 time: 1.36
+local epoch 1 	 client: 8 	 mal: 0 	 loss: 0.19094963 	 time: 1.37
+local epoch 0 	 client: 9 	 mal: 0 	 loss: 0.04246764 	 time: 1.38
+local epoch 1 	 client: 9 	 mal: 0 	 loss: 0.07447924 	 time: 1.40
+local epoch 0 	 client: 10 	 mal: 0 	 loss: 0.07734743 	 time: 1.42
+local epoch 1 	 client: 10 	 mal: 0 	 loss: 0.10209822 	 time: 1.42
+local epoch 0 	 client: 11 	 mal: 0 	 loss: 0.15085319 	 time: 1.39
+local epoch 1 	 client: 11 	 mal: 0 	 loss: 0.02193783 	 time: 1.42
+local epoch 0 	 client: 12 	 mal: 0 	 loss: 0.09098821 	 time: 1.37
+local epoch 1 	 client: 12 	 mal: 0 	 loss: 0.17302613 	 time: 1.39
+local epoch 0 	 client: 13 	 mal: 0 	 loss: 0.06563075 	 time: 1.37
+local epoch 1 	 client: 13 	 mal: 0 	 loss: 0.20130491 	 time: 1.39
+local epoch 0 	 client: 14 	 mal: 0 	 loss: 0.18417342 	 time: 1.35
+local epoch 1 	 client: 14 	 mal: 0 	 loss: 0.03906170 	 time: 1.36
+local epoch 0 	 client: 15 	 mal: 0 	 loss: 0.17658134 	 time: 1.34
+local epoch 1 	 client: 15 	 mal: 0 	 loss: 0.15155154 	 time: 1.35
+local epoch 0 	 client: 16 	 mal: 0 	 loss: 0.08613466 	 time: 1.34
+local epoch 1 	 client: 16 	 mal: 0 	 loss: 0.10905236 	 time: 1.34
+local epoch 0 	 client: 17 	 mal: 0 	 loss: 0.01707661 	 time: 1.35
+local epoch 1 	 client: 17 	 mal: 0 	 loss: 0.13758394 	 time: 1.37
+local epoch 0 	 client: 18 	 mal: 0 	 loss: 0.22140695 	 time: 1.37
+local epoch 1 	 client: 18 	 mal: 0 	 loss: 0.06538927 	 time: 1.36
+local epoch 0 	 client: 19 	 mal: 0 	 loss: 0.07227279 	 time: 1.35
+local epoch 1 	 client: 19 	 mal: 0 	 loss: 0.09900910 	 time: 1.36
+20 20
+torch.Size([149317])
+[DBG rnd=13] logits mean=0.1975, std=3.3923, maxlogit mean=8.0213
+[DBG rnd=13] probs max mean=0.9654, pred entropy mean=0.1404
+[DBG rnd=13] preds bincount=[6, 10, 5, 5, 10, 7, 5, 7, 2, 7]
+Clean ACC:              0.9645
+Attack Success Ratio:   0.0455
+Robustness ACC:           0.9319
+mean|client_grad| 0.07084017246961594
+local epoch 0 	 client: 0 	 mal: 1 	 loss: 0.06327503 	 time: 1.35
+local epoch 1 	 client: 0 	 mal: 1 	 loss: 0.08274381 	 time: 1.36
+local epoch 0 	 client: 1 	 mal: 1 	 loss: 0.18710303 	 time: 1.35
+local epoch 1 	 client: 1 	 mal: 1 	 loss: 0.11387131 	 time: 1.36
+local epoch 0 	 client: 2 	 mal: 1 	 loss: 0.24698514 	 time: 1.34
+local epoch 1 	 client: 2 	 mal: 1 	 loss: 0.08262472 	 time: 1.35
+local epoch 0 	 client: 3 	 mal: 1 	 loss: 0.37571609 	 time: 1.36
+local epoch 1 	 client: 3 	 mal: 1 	 loss: 0.11009885 	 time: 1.37
+local epoch 0 	 client: 4 	 mal: 0 	 loss: 0.05191758 	 time: 1.34
+local epoch 1 	 client: 4 	 mal: 0 	 loss: 0.14837973 	 time: 1.36
+local epoch 0 	 client: 5 	 mal: 0 	 loss: 0.04743889 	 time: 1.34
+local epoch 1 	 client: 5 	 mal: 0 	 loss: 0.13978207 	 time: 1.36
+local epoch 0 	 client: 6 	 mal: 0 	 loss: 0.30840898 	 time: 1.44
+local epoch 1 	 client: 6 	 mal: 0 	 loss: 0.14263937 	 time: 1.44
+local epoch 0 	 client: 7 	 mal: 0 	 loss: 0.05711798 	 time: 1.38
+local epoch 1 	 client: 7 	 mal: 0 	 loss: 0.10584374 	 time: 1.41
+local epoch 0 	 client: 8 	 mal: 0 	 loss: 0.20756535 	 time: 1.37
+local epoch 1 	 client: 8 	 mal: 0 	 loss: 0.20941034 	 time: 1.36
+local epoch 0 	 client: 9 	 mal: 0 	 loss: 0.02819618 	 time: 1.35
+local epoch 1 	 client: 9 	 mal: 0 	 loss: 0.19998696 	 time: 1.37
+local epoch 0 	 client: 10 	 mal: 0 	 loss: 0.10862512 	 time: 1.44
+local epoch 1 	 client: 10 	 mal: 0 	 loss: 0.10334393 	 time: 1.42
+local epoch 0 	 client: 11 	 mal: 0 	 loss: 0.10543541 	 time: 1.39
+local epoch 1 	 client: 11 	 mal: 0 	 loss: 0.07645366 	 time: 1.41
+local epoch 0 	 client: 12 	 mal: 0 	 loss: 0.24198674 	 time: 1.37
+local epoch 1 	 client: 12 	 mal: 0 	 loss: 0.06537662 	 time: 1.39
+local epoch 0 	 client: 13 	 mal: 0 	 loss: 0.12986772 	 time: 1.36
+local epoch 1 	 client: 13 	 mal: 0 	 loss: 0.15161923 	 time: 1.37
+local epoch 0 	 client: 14 	 mal: 0 	 loss: 0.29104954 	 time: 1.38
+local epoch 1 	 client: 14 	 mal: 0 	 loss: 0.12712054 	 time: 1.40
+local epoch 0 	 client: 15 	 mal: 0 	 loss: 0.22049284 	 time: 1.37
+local epoch 1 	 client: 15 	 mal: 0 	 loss: 0.11488216 	 time: 1.38
+local epoch 0 	 client: 16 	 mal: 0 	 loss: 0.04462875 	 time: 1.37
+local epoch 1 	 client: 16 	 mal: 0 	 loss: 0.08362326 	 time: 1.42
+local epoch 0 	 client: 17 	 mal: 0 	 loss: 0.03060415 	 time: 1.38
+local epoch 1 	 client: 17 	 mal: 0 	 loss: 0.03872785 	 time: 1.41
+local epoch 0 	 client: 18 	 mal: 0 	 loss: 0.19460525 	 time: 1.34
+local epoch 1 	 client: 18 	 mal: 0 	 loss: 0.05352807 	 time: 1.35
+local epoch 0 	 client: 19 	 mal: 0 	 loss: 0.15698884 	 time: 1.43
+local epoch 1 	 client: 19 	 mal: 0 	 loss: 0.04547715 	 time: 1.42
+20 20
+torch.Size([149317])
+[DBG rnd=14] logits mean=0.2079, std=3.4895, maxlogit mean=8.2950
+[DBG rnd=14] probs max mean=0.9681, pred entropy mean=0.1253
+[DBG rnd=14] preds bincount=[6, 10, 5, 5, 10, 7, 5, 7, 2, 7]
+Clean ACC:              0.9668
+Attack Success Ratio:   0.0493
+Robustness ACC:           0.9297
+mean|client_grad| 0.06867338716983795
+local epoch 0 	 client: 0 	 mal: 1 	 loss: 0.24525616 	 time: 1.34
+local epoch 1 	 client: 0 	 mal: 1 	 loss: 0.14619523 	 time: 1.33
+local epoch 0 	 client: 1 	 mal: 1 	 loss: 0.29411364 	 time: 1.35
+local epoch 1 	 client: 1 	 mal: 1 	 loss: 0.07642250 	 time: 1.36
+local epoch 0 	 client: 2 	 mal: 1 	 loss: 0.13648781 	 time: 1.34
+local epoch 1 	 client: 2 	 mal: 1 	 loss: 0.07632148 	 time: 1.34
+local epoch 0 	 client: 3 	 mal: 1 	 loss: 0.28260964 	 time: 1.36
+local epoch 1 	 client: 3 	 mal: 1 	 loss: 0.07140353 	 time: 1.35
+local epoch 0 	 client: 4 	 mal: 0 	 loss: 0.10206047 	 time: 1.35
+local epoch 1 	 client: 4 	 mal: 0 	 loss: 0.15770009 	 time: 1.36
+local epoch 0 	 client: 5 	 mal: 0 	 loss: 0.15338792 	 time: 1.35
+local epoch 1 	 client: 5 	 mal: 0 	 loss: 0.08322190 	 time: 1.34
+local epoch 0 	 client: 6 	 mal: 0 	 loss: 0.22886774 	 time: 1.34
+local epoch 1 	 client: 6 	 mal: 0 	 loss: 0.21044116 	 time: 1.34
+local epoch 0 	 client: 7 	 mal: 0 	 loss: 0.10042525 	 time: 1.35
+local epoch 1 	 client: 7 	 mal: 0 	 loss: 0.12381776 	 time: 1.35
+local epoch 0 	 client: 8 	 mal: 0 	 loss: 0.08790388 	 time: 1.36
+local epoch 1 	 client: 8 	 mal: 0 	 loss: 0.13672303 	 time: 1.37
+local epoch 0 	 client: 9 	 mal: 0 	 loss: 0.15846565 	 time: 1.34
+local epoch 1 	 client: 9 	 mal: 0 	 loss: 0.08426314 	 time: 1.35
+local epoch 0 	 client: 10 	 mal: 0 	 loss: 0.12326363 	 time: 1.36
+local epoch 1 	 client: 10 	 mal: 0 	 loss: 0.15952305 	 time: 1.38
+local epoch 0 	 client: 11 	 mal: 0 	 loss: 0.12072542 	 time: 1.44
+local epoch 1 	 client: 11 	 mal: 0 	 loss: 0.23018068 	 time: 1.43
+local epoch 0 	 client: 12 	 mal: 0 	 loss: 0.16812652 	 time: 1.40
+local epoch 1 	 client: 12 	 mal: 0 	 loss: 0.02569240 	 time: 1.41
+local epoch 0 	 client: 13 	 mal: 0 	 loss: 0.10460461 	 time: 1.41
+local epoch 1 	 client: 13 	 mal: 0 	 loss: 0.14602514 	 time: 1.44
+local epoch 0 	 client: 14 	 mal: 0 	 loss: 0.13595678 	 time: 1.39
+local epoch 1 	 client: 14 	 mal: 0 	 loss: 0.15583196 	 time: 1.38
+local epoch 0 	 client: 15 	 mal: 0 	 loss: 0.04314120 	 time: 1.44
+local epoch 1 	 client: 15 	 mal: 0 	 loss: 0.05271951 	 time: 1.38
+local epoch 0 	 client: 16 	 mal: 0 	 loss: 0.04816152 	 time: 1.37
+local epoch 1 	 client: 16 	 mal: 0 	 loss: 0.11920919 	 time: 1.37
+local epoch 0 	 client: 17 	 mal: 0 	 loss: 0.25510502 	 time: 1.37
+local epoch 1 	 client: 17 	 mal: 0 	 loss: 0.07074249 	 time: 1.39
+local epoch 0 	 client: 18 	 mal: 0 	 loss: 0.17375894 	 time: 1.38
+local epoch 1 	 client: 18 	 mal: 0 	 loss: 0.15686880 	 time: 1.37
+local epoch 0 	 client: 19 	 mal: 0 	 loss: 0.06805283 	 time: 1.36
+local epoch 1 	 client: 19 	 mal: 0 	 loss: 0.10785941 	 time: 1.37
+20 20
+torch.Size([149317])
+[DBG rnd=15] logits mean=0.2146, std=3.6166, maxlogit mean=8.6251
+[DBG rnd=15] probs max mean=0.9715, pred entropy mean=0.1147
+[DBG rnd=15] preds bincount=[6, 10, 5, 5, 10, 7, 5, 7, 2, 7]
+Clean ACC:              0.9683
+Attack Success Ratio:   0.0765
+Robustness ACC:           0.9066
+mean|client_grad| 0.08909152448177338
+local epoch 0 	 client: 0 	 mal: 1 	 loss: 0.08707051 	 time: 1.34
+local epoch 1 	 client: 0 	 mal: 1 	 loss: 0.21792637 	 time: 1.33
+local epoch 0 	 client: 1 	 mal: 1 	 loss: 0.11788679 	 time: 1.33
+local epoch 1 	 client: 1 	 mal: 1 	 loss: 0.24489993 	 time: 1.35
+local epoch 0 	 client: 2 	 mal: 1 	 loss: 0.63111240 	 time: 1.34
+local epoch 1 	 client: 2 	 mal: 1 	 loss: 0.16249985 	 time: 1.36
+local epoch 0 	 client: 3 	 mal: 1 	 loss: 0.06817085 	 time: 1.35
+local epoch 1 	 client: 3 	 mal: 1 	 loss: 0.14506097 	 time: 1.35
+local epoch 0 	 client: 4 	 mal: 0 	 loss: 0.21735185 	 time: 1.34
+local epoch 1 	 client: 4 	 mal: 0 	 loss: 0.07199963 	 time: 1.34
+local epoch 0 	 client: 5 	 mal: 0 	 loss: 0.12220393 	 time: 1.34
+local epoch 1 	 client: 5 	 mal: 0 	 loss: 0.03427137 	 time: 1.35
+local epoch 0 	 client: 6 	 mal: 0 	 loss: 0.22450787 	 time: 1.36
+local epoch 1 	 client: 6 	 mal: 0 	 loss: 0.02884204 	 time: 1.37
+local epoch 0 	 client: 7 	 mal: 0 	 loss: 0.11459226 	 time: 1.35
+local epoch 1 	 client: 7 	 mal: 0 	 loss: 0.08348319 	 time: 1.36
+local epoch 0 	 client: 8 	 mal: 0 	 loss: 0.21897946 	 time: 1.37
+local epoch 1 	 client: 8 	 mal: 0 	 loss: 0.15498424 	 time: 1.39
+local epoch 0 	 client: 9 	 mal: 0 	 loss: 0.17538282 	 time: 1.39
+local epoch 1 	 client: 9 	 mal: 0 	 loss: 0.06418563 	 time: 1.37
+local epoch 0 	 client: 10 	 mal: 0 	 loss: 0.11272480 	 time: 1.37
+local epoch 1 	 client: 10 	 mal: 0 	 loss: 0.11131663 	 time: 1.40
+local epoch 0 	 client: 11 	 mal: 0 	 loss: 0.14429919 	 time: 1.45
+local epoch 1 	 client: 11 	 mal: 0 	 loss: 0.03981475 	 time: 1.45
+local epoch 0 	 client: 12 	 mal: 0 	 loss: 0.18984695 	 time: 1.38
+local epoch 1 	 client: 12 	 mal: 0 	 loss: 0.18591836 	 time: 1.38
+local epoch 0 	 client: 13 	 mal: 0 	 loss: 0.11536583 	 time: 1.38
+local epoch 1 	 client: 13 	 mal: 0 	 loss: 0.11211415 	 time: 1.38
+local epoch 0 	 client: 14 	 mal: 0 	 loss: 0.07635353 	 time: 1.36
+local epoch 1 	 client: 14 	 mal: 0 	 loss: 0.06937841 	 time: 1.42
+local epoch 0 	 client: 15 	 mal: 0 	 loss: 0.11240010 	 time: 1.41
+local epoch 1 	 client: 15 	 mal: 0 	 loss: 0.25502458 	 time: 1.41
+local epoch 0 	 client: 16 	 mal: 0 	 loss: 0.05025597 	 time: 1.37
+local epoch 1 	 client: 16 	 mal: 0 	 loss: 0.02356371 	 time: 1.37
+local epoch 0 	 client: 17 	 mal: 0 	 loss: 0.11351130 	 time: 1.37
+local epoch 1 	 client: 17 	 mal: 0 	 loss: 0.06111233 	 time: 1.38
+local epoch 0 	 client: 18 	 mal: 0 	 loss: 0.16583639 	 time: 1.38
+local epoch 1 	 client: 18 	 mal: 0 	 loss: 0.10691919 	 time: 1.39
+local epoch 0 	 client: 19 	 mal: 0 	 loss: 0.04496782 	 time: 1.41
+local epoch 1 	 client: 19 	 mal: 0 	 loss: 0.07716574 	 time: 1.40
+20 20
+torch.Size([149317])
+[DBG rnd=16] logits mean=0.2188, std=3.7280, maxlogit mean=8.9240
+[DBG rnd=16] probs max mean=0.9752, pred entropy mean=0.0964
+[DBG rnd=16] preds bincount=[6, 10, 5, 5, 10, 7, 5, 7, 2, 7]
+Clean ACC:              0.9694
+Attack Success Ratio:   0.1234
+Robustness ACC:           0.8644
+mean|client_grad| 0.06996006518602371
+local epoch 0 	 client: 0 	 mal: 1 	 loss: 0.11403742 	 time: 1.35
+local epoch 1 	 client: 0 	 mal: 1 	 loss: 0.05306737 	 time: 1.33
+local epoch 0 	 client: 1 	 mal: 1 	 loss: 0.11540465 	 time: 1.33
+local epoch 1 	 client: 1 	 mal: 1 	 loss: 0.04796167 	 time: 1.37
+local epoch 0 	 client: 2 	 mal: 1 	 loss: 0.15396672 	 time: 1.35
+local epoch 1 	 client: 2 	 mal: 1 	 loss: 0.12382501 	 time: 1.36
+local epoch 0 	 client: 3 	 mal: 1 	 loss: 0.25889581 	 time: 1.36
+local epoch 1 	 client: 3 	 mal: 1 	 loss: 0.11552255 	 time: 1.38
+local epoch 0 	 client: 4 	 mal: 0 	 loss: 0.09842388 	 time: 1.36
+local epoch 1 	 client: 4 	 mal: 0 	 loss: 0.10273399 	 time: 1.38
+local epoch 0 	 client: 5 	 mal: 0 	 loss: 0.05951799 	 time: 1.36
+local epoch 1 	 client: 5 	 mal: 0 	 loss: 0.14631887 	 time: 1.39
+local epoch 0 	 client: 6 	 mal: 0 	 loss: 0.08819910 	 time: 1.38
+local epoch 1 	 client: 6 	 mal: 0 	 loss: 0.05201712 	 time: 1.38
+local epoch 0 	 client: 7 	 mal: 0 	 loss: 0.05011935 	 time: 1.35
+local epoch 1 	 client: 7 	 mal: 0 	 loss: 0.05384620 	 time: 1.36
+local epoch 0 	 client: 8 	 mal: 0 	 loss: 0.12106153 	 time: 1.35
+local epoch 1 	 client: 8 	 mal: 0 	 loss: 0.06587993 	 time: 1.37
+local epoch 0 	 client: 9 	 mal: 0 	 loss: 0.07681791 	 time: 1.37
+local epoch 1 	 client: 9 	 mal: 0 	 loss: 0.06771290 	 time: 1.39
+local epoch 0 	 client: 10 	 mal: 0 	 loss: 0.20222880 	 time: 1.38
+local epoch 1 	 client: 10 	 mal: 0 	 loss: 0.05264274 	 time: 1.39
+local epoch 0 	 client: 11 	 mal: 0 	 loss: 0.03801127 	 time: 1.38
+local epoch 1 	 client: 11 	 mal: 0 	 loss: 0.15240102 	 time: 1.38
+local epoch 0 	 client: 12 	 mal: 0 	 loss: 0.05478223 	 time: 1.42
+local epoch 1 	 client: 12 	 mal: 0 	 loss: 0.02304632 	 time: 1.40
+local epoch 0 	 client: 13 	 mal: 0 	 loss: 0.06599402 	 time: 1.37
+local epoch 1 	 client: 13 	 mal: 0 	 loss: 0.04960498 	 time: 1.40
+local epoch 0 	 client: 14 	 mal: 0 	 loss: 0.03958096 	 time: 1.39
+local epoch 1 	 client: 14 	 mal: 0 	 loss: 0.08835798 	 time: 1.39
+local epoch 0 	 client: 15 	 mal: 0 	 loss: 0.03820852 	 time: 1.37
+local epoch 1 	 client: 15 	 mal: 0 	 loss: 0.16194022 	 time: 1.39
+local epoch 0 	 client: 16 	 mal: 0 	 loss: 0.13398094 	 time: 1.37
+local epoch 1 	 client: 16 	 mal: 0 	 loss: 0.03612452 	 time: 1.36
+local epoch 0 	 client: 17 	 mal: 0 	 loss: 0.02962437 	 time: 1.35
+local epoch 1 	 client: 17 	 mal: 0 	 loss: 0.18731762 	 time: 1.35
+local epoch 0 	 client: 18 	 mal: 0 	 loss: 0.28361773 	 time: 1.34
+local epoch 1 	 client: 18 	 mal: 0 	 loss: 0.01405894 	 time: 1.35
+local epoch 0 	 client: 19 	 mal: 0 	 loss: 0.09234386 	 time: 1.36
+local epoch 1 	 client: 19 	 mal: 0 	 loss: 0.17660069 	 time: 1.35
+20 20
+torch.Size([149317])
+[DBG rnd=17] logits mean=0.2397, std=3.8211, maxlogit mean=9.1813
+[DBG rnd=17] probs max mean=0.9759, pred entropy mean=0.0909
+[DBG rnd=17] preds bincount=[6, 10, 5, 5, 10, 7, 5, 7, 2, 7]
+Clean ACC:              0.9712
+Attack Success Ratio:   0.2014
+Robustness ACC:           0.7907
+mean|client_grad| 0.05873064324259758
+local epoch 0 	 client: 0 	 mal: 1 	 loss: 0.13898887 	 time: 1.34
+local epoch 1 	 client: 0 	 mal: 1 	 loss: 0.02026221 	 time: 1.34
+local epoch 0 	 client: 1 	 mal: 1 	 loss: 0.11932976 	 time: 1.34
+local epoch 1 	 client: 1 	 mal: 1 	 loss: 0.03527293 	 time: 1.35
+local epoch 0 	 client: 2 	 mal: 1 	 loss: 0.14390641 	 time: 1.34
+local epoch 1 	 client: 2 	 mal: 1 	 loss: 0.16672368 	 time: 1.35
+local epoch 0 	 client: 3 	 mal: 1 	 loss: 0.16295716 	 time: 1.34
+local epoch 1 	 client: 3 	 mal: 1 	 loss: 0.08745933 	 time: 1.35
+local epoch 0 	 client: 4 	 mal: 0 	 loss: 0.09345800 	 time: 1.34
+local epoch 1 	 client: 4 	 mal: 0 	 loss: 0.06694517 	 time: 1.36
+local epoch 0 	 client: 5 	 mal: 0 	 loss: 0.09562872 	 time: 1.35
+local epoch 1 	 client: 5 	 mal: 0 	 loss: 0.07699382 	 time: 1.37
+local epoch 0 	 client: 6 	 mal: 0 	 loss: 0.13080773 	 time: 1.37
+local epoch 1 	 client: 6 	 mal: 0 	 loss: 0.06512858 	 time: 1.41
+local epoch 0 	 client: 7 	 mal: 0 	 loss: 0.06155818 	 time: 1.40
+local epoch 1 	 client: 7 	 mal: 0 	 loss: 0.09020283 	 time: 1.41
+local epoch 0 	 client: 8 	 mal: 0 	 loss: 0.06822625 	 time: 1.38
+local epoch 1 	 client: 8 	 mal: 0 	 loss: 0.08256561 	 time: 1.38
+local epoch 0 	 client: 9 	 mal: 0 	 loss: 0.07317773 	 time: 1.34
+local epoch 1 	 client: 9 	 mal: 0 	 loss: 0.09043144 	 time: 1.36
+local epoch 0 	 client: 10 	 mal: 0 	 loss: 0.07568462 	 time: 1.37
+local epoch 1 	 client: 10 	 mal: 0 	 loss: 0.01993673 	 time: 1.37
+local epoch 0 	 client: 11 	 mal: 0 	 loss: 0.18026619 	 time: 1.35
+local epoch 1 	 client: 11 	 mal: 0 	 loss: 0.10817081 	 time: 1.36
+local epoch 0 	 client: 12 	 mal: 0 	 loss: 0.06881196 	 time: 1.44
+local epoch 1 	 client: 12 	 mal: 0 	 loss: 0.01842733 	 time: 1.44
+local epoch 0 	 client: 13 	 mal: 0 	 loss: 0.07750738 	 time: 1.40
+local epoch 1 	 client: 13 	 mal: 0 	 loss: 0.06847086 	 time: 1.42
+local epoch 0 	 client: 14 	 mal: 0 	 loss: 0.16800719 	 time: 1.39
+local epoch 1 	 client: 14 	 mal: 0 	 loss: 0.05690329 	 time: 1.40
+local epoch 0 	 client: 15 	 mal: 0 	 loss: 0.16440713 	 time: 1.34
+local epoch 1 	 client: 15 	 mal: 0 	 loss: 0.10730375 	 time: 1.34
+local epoch 0 	 client: 16 	 mal: 0 	 loss: 0.10307322 	 time: 1.35
+local epoch 1 	 client: 16 	 mal: 0 	 loss: 0.04032411 	 time: 1.35
+local epoch 0 	 client: 17 	 mal: 0 	 loss: 0.02526280 	 time: 1.35
+local epoch 1 	 client: 17 	 mal: 0 	 loss: 0.07305124 	 time: 1.35
+local epoch 0 	 client: 18 	 mal: 0 	 loss: 0.01553301 	 time: 1.36
+local epoch 1 	 client: 18 	 mal: 0 	 loss: 0.01978620 	 time: 1.36
+local epoch 0 	 client: 19 	 mal: 0 	 loss: 0.13531236 	 time: 1.37
+local epoch 1 	 client: 19 	 mal: 0 	 loss: 0.09702205 	 time: 1.35
+20 20
+torch.Size([149317])
+[DBG rnd=18] logits mean=0.2370, std=3.8584, maxlogit mean=9.2750
+[DBG rnd=18] probs max mean=0.9779, pred entropy mean=0.0838
+[DBG rnd=18] preds bincount=[6, 10, 5, 5, 10, 7, 5, 7, 2, 7]
+Clean ACC:              0.9727
+Attack Success Ratio:   0.2308
+Robustness ACC:           0.7610
+mean|client_grad| 0.08375929296016693
+local epoch 0 	 client: 0 	 mal: 1 	 loss: 0.08745978 	 time: 1.35
+local epoch 1 	 client: 0 	 mal: 1 	 loss: 0.14817354 	 time: 1.34
+local epoch 0 	 client: 1 	 mal: 1 	 loss: 0.25253868 	 time: 1.34
+local epoch 1 	 client: 1 	 mal: 1 	 loss: 0.08040500 	 time: 1.35
+local epoch 0 	 client: 2 	 mal: 1 	 loss: 0.11107985 	 time: 1.36
+local epoch 1 	 client: 2 	 mal: 1 	 loss: 0.03768825 	 time: 1.35
+local epoch 0 	 client: 3 	 mal: 1 	 loss: 0.06406458 	 time: 1.34
+local epoch 1 	 client: 3 	 mal: 1 	 loss: 0.06063759 	 time: 1.34
+local epoch 0 	 client: 4 	 mal: 0 	 loss: 0.12584724 	 time: 1.34
+local epoch 1 	 client: 4 	 mal: 0 	 loss: 0.11156031 	 time: 1.35
+local epoch 0 	 client: 5 	 mal: 0 	 loss: 0.11709546 	 time: 1.35
+local epoch 1 	 client: 5 	 mal: 0 	 loss: 0.04449404 	 time: 1.35
+local epoch 0 	 client: 6 	 mal: 0 	 loss: 0.21765891 	 time: 1.34
+local epoch 1 	 client: 6 	 mal: 0 	 loss: 0.11879184 	 time: 1.35
+local epoch 0 	 client: 7 	 mal: 0 	 loss: 0.06890696 	 time: 1.34
+local epoch 1 	 client: 7 	 mal: 0 	 loss: 0.00801635 	 time: 1.37
+local epoch 0 	 client: 8 	 mal: 0 	 loss: 0.11833139 	 time: 1.34
+local epoch 1 	 client: 8 	 mal: 0 	 loss: 0.02416174 	 time: 1.37
+local epoch 0 	 client: 9 	 mal: 0 	 loss: 0.05743987 	 time: 1.34
+local epoch 1 	 client: 9 	 mal: 0 	 loss: 0.00535473 	 time: 1.35
+local epoch 0 	 client: 10 	 mal: 0 	 loss: 0.08603616 	 time: 1.35
+local epoch 1 	 client: 10 	 mal: 0 	 loss: 0.03327945 	 time: 1.37
+local epoch 0 	 client: 11 	 mal: 0 	 loss: 0.03436267 	 time: 1.35
+local epoch 1 	 client: 11 	 mal: 0 	 loss: 0.08702829 	 time: 1.36
+local epoch 0 	 client: 12 	 mal: 0 	 loss: 0.12737557 	 time: 1.37
+local epoch 1 	 client: 12 	 mal: 0 	 loss: 0.10607233 	 time: 1.39
+local epoch 0 	 client: 13 	 mal: 0 	 loss: 0.24543153 	 time: 1.35
+local epoch 1 	 client: 13 	 mal: 0 	 loss: 0.08345710 	 time: 1.38
+local epoch 0 	 client: 14 	 mal: 0 	 loss: 0.23584069 	 time: 1.34
+local epoch 1 	 client: 14 	 mal: 0 	 loss: 0.05613001 	 time: 1.35
+local epoch 0 	 client: 15 	 mal: 0 	 loss: 0.16797873 	 time: 1.35
+local epoch 1 	 client: 15 	 mal: 0 	 loss: 0.14429656 	 time: 1.36
+local epoch 0 	 client: 16 	 mal: 0 	 loss: 0.06842767 	 time: 1.34
+local epoch 1 	 client: 16 	 mal: 0 	 loss: 0.11846329 	 time: 1.35
+local epoch 0 	 client: 17 	 mal: 0 	 loss: 0.25201103 	 time: 1.35
+local epoch 1 	 client: 17 	 mal: 0 	 loss: 0.15666613 	 time: 1.39
+local epoch 0 	 client: 18 	 mal: 0 	 loss: 0.28726912 	 time: 1.44
+local epoch 1 	 client: 18 	 mal: 0 	 loss: 0.03068241 	 time: 1.45
+local epoch 0 	 client: 19 	 mal: 0 	 loss: 0.12377522 	 time: 1.40
+local epoch 1 	 client: 19 	 mal: 0 	 loss: 0.03071441 	 time: 1.45
+20 20
+torch.Size([149317])
+[DBG rnd=19] logits mean=0.2436, std=4.0520, maxlogit mean=9.7454
+[DBG rnd=19] probs max mean=0.9803, pred entropy mean=0.0729
+[DBG rnd=19] preds bincount=[6, 10, 5, 5, 10, 7, 5, 7, 2, 7]
+Clean ACC:              0.9732
+Attack Success Ratio:   0.3518
+Robustness ACC:           0.6442
+mean|client_grad| 0.13159237802028656
+local epoch 0 	 client: 0 	 mal: 1 	 loss: 0.08342794 	 time: 1.34
+local epoch 1 	 client: 0 	 mal: 1 	 loss: 0.02877343 	 time: 1.33
+local epoch 0 	 client: 1 	 mal: 1 	 loss: 0.14715394 	 time: 1.34
+local epoch 1 	 client: 1 	 mal: 1 	 loss: 0.09775754 	 time: 1.37
+local epoch 0 	 client: 2 	 mal: 1 	 loss: 0.11176065 	 time: 1.34
+local epoch 1 	 client: 2 	 mal: 1 	 loss: 0.11598577 	 time: 1.37
+local epoch 0 	 client: 3 	 mal: 1 	 loss: 0.17197125 	 time: 1.36
+local epoch 1 	 client: 3 	 mal: 1 	 loss: 0.07500625 	 time: 1.37
+local epoch 0 	 client: 4 	 mal: 0 	 loss: 0.25545079 	 time: 1.34
+local epoch 1 	 client: 4 	 mal: 0 	 loss: 0.01836976 	 time: 1.37
+local epoch 0 	 client: 5 	 mal: 0 	 loss: 0.14796498 	 time: 1.36
+local epoch 1 	 client: 5 	 mal: 0 	 loss: 0.02064584 	 time: 1.37
+local epoch 0 	 client: 6 	 mal: 0 	 loss: 0.11127318 	 time: 1.35
+local epoch 1 	 client: 6 	 mal: 0 	 loss: 0.07229358 	 time: 1.35
+local epoch 0 	 client: 7 	 mal: 0 	 loss: 0.10401214 	 time: 1.34
+local epoch 1 	 client: 7 	 mal: 0 	 loss: 0.01755511 	 time: 1.34
+local epoch 0 	 client: 8 	 mal: 0 	 loss: 0.08314260 	 time: 1.34
+local epoch 1 	 client: 8 	 mal: 0 	 loss: 0.11489833 	 time: 1.37
+local epoch 0 	 client: 9 	 mal: 0 	 loss: 0.06897190 	 time: 1.34
+local epoch 1 	 client: 9 	 mal: 0 	 loss: 0.03401852 	 time: 1.35
+local epoch 0 	 client: 10 	 mal: 0 	 loss: 0.11309335 	 time: 1.34
+local epoch 1 	 client: 10 	 mal: 0 	 loss: 0.02375664 	 time: 1.35
+local epoch 0 	 client: 11 	 mal: 0 	 loss: 0.22453743 	 time: 1.34
+local epoch 1 	 client: 11 	 mal: 0 	 loss: 0.07089189 	 time: 1.38
+local epoch 0 	 client: 12 	 mal: 0 	 loss: 0.07644729 	 time: 1.34
+local epoch 1 	 client: 12 	 mal: 0 	 loss: 0.08359288 	 time: 1.36
+local epoch 0 	 client: 13 	 mal: 0 	 loss: 0.08671484 	 time: 1.35
+local epoch 1 	 client: 13 	 mal: 0 	 loss: 0.06827905 	 time: 1.36
+local epoch 0 	 client: 14 	 mal: 0 	 loss: 0.10367194 	 time: 1.36
+local epoch 1 	 client: 14 	 mal: 0 	 loss: 0.06525667 	 time: 1.37
+local epoch 0 	 client: 15 	 mal: 0 	 loss: 0.04163244 	 time: 1.39
+local epoch 1 	 client: 15 	 mal: 0 	 loss: 0.01309356 	 time: 1.42
+local epoch 0 	 client: 16 	 mal: 0 	 loss: 0.03942567 	 time: 1.42
+local epoch 1 	 client: 16 	 mal: 0 	 loss: 0.02512288 	 time: 1.44
+local epoch 0 	 client: 17 	 mal: 0 	 loss: 0.08600706 	 time: 1.41
+local epoch 1 	 client: 17 	 mal: 0 	 loss: 0.05794843 	 time: 1.43
+local epoch 0 	 client: 18 	 mal: 0 	 loss: 0.05484775 	 time: 1.37
+local epoch 1 	 client: 18 	 mal: 0 	 loss: 0.06836347 	 time: 1.39
+local epoch 0 	 client: 19 	 mal: 0 	 loss: 0.02424060 	 time: 1.38
+local epoch 1 	 client: 19 	 mal: 0 	 loss: 0.02778823 	 time: 1.44
+20 20
+torch.Size([149317])
+[DBG rnd=20] logits mean=0.2423, std=4.1393, maxlogit mean=9.8668
+[DBG rnd=20] probs max mean=0.9818, pred entropy mean=0.0672
+[DBG rnd=20] preds bincount=[6, 10, 5, 5, 10, 7, 5, 7, 2, 7]
+Clean ACC:              0.9741
+Attack Success Ratio:   0.4443
+Robustness ACC:           0.5526
+mean|client_grad| 0.09896940737962723
+local epoch 0 	 client: 0 	 mal: 1 	 loss: 0.21123643 	 time: 1.44
+local epoch 1 	 client: 0 	 mal: 1 	 loss: 0.01839509 	 time: 1.49
+local epoch 0 	 client: 1 	 mal: 1 	 loss: 0.10347907 	 time: 1.48
+local epoch 1 	 client: 1 	 mal: 1 	 loss: 0.11139559 	 time: 1.50
+local epoch 0 	 client: 2 	 mal: 1 	 loss: 0.18534341 	 time: 1.45
+local epoch 1 	 client: 2 	 mal: 1 	 loss: 0.09921175 	 time: 1.50
+local epoch 0 	 client: 3 	 mal: 1 	 loss: 0.11494836 	 time: 1.47
+local epoch 1 	 client: 3 	 mal: 1 	 loss: 0.04571327 	 time: 1.50
+local epoch 0 	 client: 4 	 mal: 0 	 loss: 0.04582532 	 time: 1.47
+local epoch 1 	 client: 4 	 mal: 0 	 loss: 0.04947962 	 time: 1.35
+local epoch 0 	 client: 5 	 mal: 0 	 loss: 0.25270823 	 time: 1.39
+local epoch 1 	 client: 5 	 mal: 0 	 loss: 0.02665831 	 time: 1.41
+local epoch 0 	 client: 6 	 mal: 0 	 loss: 0.09408338 	 time: 1.39
+local epoch 1 	 client: 6 	 mal: 0 	 loss: 0.02041122 	 time: 1.40
+local epoch 0 	 client: 7 	 mal: 0 	 loss: 0.11401990 	 time: 1.34
+local epoch 1 	 client: 7 	 mal: 0 	 loss: 0.04437341 	 time: 1.35
+local epoch 0 	 client: 8 	 mal: 0 	 loss: 0.02112171 	 time: 1.41
+local epoch 1 	 client: 8 	 mal: 0 	 loss: 0.03506337 	 time: 1.40
+local epoch 0 	 client: 9 	 mal: 0 	 loss: 0.02584566 	 time: 1.37
+local epoch 1 	 client: 9 	 mal: 0 	 loss: 0.03298781 	 time: 1.37
+local epoch 0 	 client: 10 	 mal: 0 	 loss: 0.12452625 	 time: 1.34
+local epoch 1 	 client: 10 	 mal: 0 	 loss: 0.07964511 	 time: 1.36
+local epoch 0 	 client: 11 	 mal: 0 	 loss: 0.13443339 	 time: 1.41
+local epoch 1 	 client: 11 	 mal: 0 	 loss: 0.09055156 	 time: 1.41
+local epoch 0 	 client: 12 	 mal: 0 	 loss: 0.05249216 	 time: 1.34
+local epoch 1 	 client: 12 	 mal: 0 	 loss: 0.05192702 	 time: 1.35
+local epoch 0 	 client: 13 	 mal: 0 	 loss: 0.17081203 	 time: 1.34
+local epoch 1 	 client: 13 	 mal: 0 	 loss: 0.10274046 	 time: 1.37
+local epoch 0 	 client: 14 	 mal: 0 	 loss: 0.09366164 	 time: 1.36
+local epoch 1 	 client: 14 	 mal: 0 	 loss: 0.02912023 	 time: 1.36
+local epoch 0 	 client: 15 	 mal: 0 	 loss: 0.17523147 	 time: 1.37
+local epoch 1 	 client: 15 	 mal: 0 	 loss: 0.02222769 	 time: 1.38
+local epoch 0 	 client: 16 	 mal: 0 	 loss: 0.12033568 	 time: 1.38
+local epoch 1 	 client: 16 	 mal: 0 	 loss: 0.05456062 	 time: 1.40
+local epoch 0 	 client: 17 	 mal: 0 	 loss: 0.13875261 	 time: 1.38
+local epoch 1 	 client: 17 	 mal: 0 	 loss: 0.08588590 	 time: 1.40
+local epoch 0 	 client: 18 	 mal: 0 	 loss: 0.13401851 	 time: 1.36
+local epoch 1 	 client: 18 	 mal: 0 	 loss: 0.03074978 	 time: 1.37
+local epoch 0 	 client: 19 	 mal: 0 	 loss: 0.09071717 	 time: 1.35
+local epoch 1 	 client: 19 	 mal: 0 	 loss: 0.03791916 	 time: 1.36
+20 20
+torch.Size([149317])
+[DBG rnd=21] logits mean=0.2461, std=4.2314, maxlogit mean=10.1258
+[DBG rnd=21] probs max mean=0.9833, pred entropy mean=0.0609
+[DBG rnd=21] preds bincount=[6, 10, 5, 6, 10, 7, 5, 7, 1, 7]
+Clean ACC:              0.9751
+Attack Success Ratio:   0.5246
+Robustness ACC:           0.4734
+mean|client_grad| 0.09192509204149246
+local epoch 0 	 client: 0 	 mal: 1 	 loss: 0.13729849 	 time: 1.37
+local epoch 1 	 client: 0 	 mal: 1 	 loss: 0.05056400 	 time: 1.33
+local epoch 0 	 client: 1 	 mal: 1 	 loss: 0.12373897 	 time: 1.34
+local epoch 1 	 client: 1 	 mal: 1 	 loss: 0.05502208 	 time: 1.33
+local epoch 0 	 client: 2 	 mal: 1 	 loss: 0.09880538 	 time: 1.34
+local epoch 1 	 client: 2 	 mal: 1 	 loss: 0.11002401 	 time: 1.34
+local epoch 0 	 client: 3 	 mal: 1 	 loss: 0.09913939 	 time: 1.42
+local epoch 1 	 client: 3 	 mal: 1 	 loss: 0.07136101 	 time: 1.42
+local epoch 0 	 client: 4 	 mal: 0 	 loss: 0.02378663 	 time: 1.34
+local epoch 1 	 client: 4 	 mal: 0 	 loss: 0.05459551 	 time: 1.34
+local epoch 0 	 client: 5 	 mal: 0 	 loss: 0.10605053 	 time: 1.34
+local epoch 1 	 client: 5 	 mal: 0 	 loss: 0.04188940 	 time: 1.35
+local epoch 0 	 client: 6 	 mal: 0 	 loss: 0.12290180 	 time: 1.34
+local epoch 1 	 client: 6 	 mal: 0 	 loss: 0.06787044 	 time: 1.36
+local epoch 0 	 client: 7 	 mal: 0 	 loss: 0.02970740 	 time: 1.38
+local epoch 1 	 client: 7 	 mal: 0 	 loss: 0.11309033 	 time: 1.39
+local epoch 0 	 client: 8 	 mal: 0 	 loss: 0.08119892 	 time: 1.35
+local epoch 1 	 client: 8 	 mal: 0 	 loss: 0.06188247 	 time: 1.36
+local epoch 0 	 client: 9 	 mal: 0 	 loss: 0.10650438 	 time: 1.34
+local epoch 1 	 client: 9 	 mal: 0 	 loss: 0.09195215 	 time: 1.36
+local epoch 0 	 client: 10 	 mal: 0 	 loss: 0.13996597 	 time: 1.34
+local epoch 1 	 client: 10 	 mal: 0 	 loss: 0.06132154 	 time: 1.35
+local epoch 0 	 client: 11 	 mal: 0 	 loss: 0.05845043 	 time: 1.35
+local epoch 1 	 client: 11 	 mal: 0 	 loss: 0.03088822 	 time: 1.37
+local epoch 0 	 client: 12 	 mal: 0 	 loss: 0.17494163 	 time: 1.43
+local epoch 1 	 client: 12 	 mal: 0 	 loss: 0.02818453 	 time: 1.44
+local epoch 0 	 client: 13 	 mal: 0 	 loss: 0.12554450 	 time: 1.39
+local epoch 1 	 client: 13 	 mal: 0 	 loss: 0.04549919 	 time: 1.37
+local epoch 0 	 client: 14 	 mal: 0 	 loss: 0.14677951 	 time: 1.35
+local epoch 1 	 client: 14 	 mal: 0 	 loss: 0.02730850 	 time: 1.37
+local epoch 0 	 client: 15 	 mal: 0 	 loss: 0.08971906 	 time: 1.36
+local epoch 1 	 client: 15 	 mal: 0 	 loss: 0.19958912 	 time: 1.37
+local epoch 0 	 client: 16 	 mal: 0 	 loss: 0.25324830 	 time: 1.34
+local epoch 1 	 client: 16 	 mal: 0 	 loss: 0.12971699 	 time: 1.35
+local epoch 0 	 client: 17 	 mal: 0 	 loss: 0.02559393 	 time: 1.36
+local epoch 1 	 client: 17 	 mal: 0 	 loss: 0.06028358 	 time: 1.39
+local epoch 0 	 client: 18 	 mal: 0 	 loss: 0.09882912 	 time: 1.38
+local epoch 1 	 client: 18 	 mal: 0 	 loss: 0.01410027 	 time: 1.41
+local epoch 0 	 client: 19 	 mal: 0 	 loss: 0.10699194 	 time: 1.39
+local epoch 1 	 client: 19 	 mal: 0 	 loss: 0.09739956 	 time: 1.43
+20 20
+torch.Size([149317])
+[DBG rnd=22] logits mean=0.2507, std=4.2605, maxlogit mean=10.2680
+[DBG rnd=22] probs max mean=0.9834, pred entropy mean=0.0590
+[DBG rnd=22] preds bincount=[6, 10, 5, 6, 10, 7, 5, 7, 1, 7]
+Clean ACC:              0.9756
+Attack Success Ratio:   0.5710
+Robustness ACC:           0.4273
+mean|client_grad| 0.09780174493789673
+local epoch 0 	 client: 0 	 mal: 1 	 loss: 0.22351192 	 time: 1.35
+local epoch 1 	 client: 0 	 mal: 1 	 loss: 0.12134701 	 time: 1.33
+local epoch 0 	 client: 1 	 mal: 1 	 loss: 0.05262152 	 time: 1.33
+local epoch 1 	 client: 1 	 mal: 1 	 loss: 0.06011815 	 time: 1.33
+local epoch 0 	 client: 2 	 mal: 1 	 loss: 0.06417028 	 time: 1.33
+local epoch 1 	 client: 2 	 mal: 1 	 loss: 0.21529561 	 time: 1.34
+local epoch 0 	 client: 3 	 mal: 1 	 loss: 0.12877913 	 time: 1.34
+local epoch 1 	 client: 3 	 mal: 1 	 loss: 0.09246294 	 time: 1.35
+local epoch 0 	 client: 4 	 mal: 0 	 loss: 0.01625937 	 time: 1.38
+local epoch 1 	 client: 4 	 mal: 0 	 loss: 0.05578973 	 time: 1.35
+local epoch 0 	 client: 5 	 mal: 0 	 loss: 0.10406353 	 time: 1.35
+local epoch 1 	 client: 5 	 mal: 0 	 loss: 0.02512725 	 time: 1.34
+local epoch 0 	 client: 6 	 mal: 0 	 loss: 0.24498248 	 time: 1.34
+local epoch 1 	 client: 6 	 mal: 0 	 loss: 0.30548468 	 time: 1.34
+local epoch 0 	 client: 7 	 mal: 0 	 loss: 0.06419373 	 time: 1.34
+local epoch 1 	 client: 7 	 mal: 0 	 loss: 0.02141121 	 time: 1.35
+local epoch 0 	 client: 8 	 mal: 0 	 loss: 0.04692068 	 time: 1.34
+local epoch 1 	 client: 8 	 mal: 0 	 loss: 0.05666902 	 time: 1.36
+local epoch 0 	 client: 9 	 mal: 0 	 loss: 0.07788029 	 time: 1.34
+local epoch 1 	 client: 9 	 mal: 0 	 loss: 0.03248287 	 time: 1.37
+local epoch 0 	 client: 10 	 mal: 0 	 loss: 0.08446702 	 time: 1.37
+local epoch 1 	 client: 10 	 mal: 0 	 loss: 0.01974770 	 time: 1.40
+local epoch 0 	 client: 11 	 mal: 0 	 loss: 0.09487953 	 time: 1.45
+local epoch 1 	 client: 11 	 mal: 0 	 loss: 0.07084942 	 time: 1.44
+local epoch 0 	 client: 12 	 mal: 0 	 loss: 0.04374656 	 time: 1.38
+local epoch 1 	 client: 12 	 mal: 0 	 loss: 0.03975094 	 time: 1.37
+local epoch 0 	 client: 13 	 mal: 0 	 loss: 0.21457733 	 time: 1.35
+local epoch 1 	 client: 13 	 mal: 0 	 loss: 0.09578332 	 time: 1.37
+local epoch 0 	 client: 14 	 mal: 0 	 loss: 0.02483631 	 time: 1.35
+local epoch 1 	 client: 14 	 mal: 0 	 loss: 0.25901070 	 time: 1.37
+local epoch 0 	 client: 15 	 mal: 0 	 loss: 0.04511333 	 time: 1.34
+local epoch 1 	 client: 15 	 mal: 0 	 loss: 0.02479204 	 time: 1.36
+local epoch 0 	 client: 16 	 mal: 0 	 loss: 0.18754874 	 time: 1.37
+local epoch 1 	 client: 16 	 mal: 0 	 loss: 0.05971585 	 time: 1.40
+local epoch 0 	 client: 17 	 mal: 0 	 loss: 0.07827149 	 time: 1.37
+local epoch 1 	 client: 17 	 mal: 0 	 loss: 0.09010290 	 time: 1.37
+local epoch 0 	 client: 18 	 mal: 0 	 loss: 0.12832798 	 time: 1.35
+local epoch 1 	 client: 18 	 mal: 0 	 loss: 0.02811353 	 time: 1.37
+local epoch 0 	 client: 19 	 mal: 0 	 loss: 0.03369486 	 time: 1.34
+local epoch 1 	 client: 19 	 mal: 0 	 loss: 0.04228424 	 time: 1.35
+20 20
+torch.Size([149317])
+[DBG rnd=23] logits mean=0.2432, std=4.2604, maxlogit mean=10.2978
+[DBG rnd=23] probs max mean=0.9831, pred entropy mean=0.0579
+[DBG rnd=23] preds bincount=[6, 10, 5, 5, 10, 7, 5, 7, 2, 7]
+Clean ACC:              0.9760
+Attack Success Ratio:   0.6249
+Robustness ACC:           0.3739
+mean|client_grad| 0.11562895774841309
+local epoch 0 	 client: 0 	 mal: 1 	 loss: 0.18474652 	 time: 1.36
+local epoch 1 	 client: 0 	 mal: 1 	 loss: 0.06612546 	 time: 1.33
+local epoch 0 	 client: 1 	 mal: 1 	 loss: 0.21071126 	 time: 1.34
+local epoch 1 	 client: 1 	 mal: 1 	 loss: 0.03310633 	 time: 1.33
+local epoch 0 	 client: 2 	 mal: 1 	 loss: 0.09828603 	 time: 1.34
+local epoch 1 	 client: 2 	 mal: 1 	 loss: 0.05342852 	 time: 1.35
+local epoch 0 	 client: 3 	 mal: 1 	 loss: 0.12542827 	 time: 1.34
+local epoch 1 	 client: 3 	 mal: 1 	 loss: 0.00936427 	 time: 1.35
+local epoch 0 	 client: 4 	 mal: 0 	 loss: 0.04620148 	 time: 1.34
+local epoch 1 	 client: 4 	 mal: 0 	 loss: 0.04910013 	 time: 1.36
+local epoch 0 	 client: 5 	 mal: 0 	 loss: 0.02042360 	 time: 1.35
+local epoch 1 	 client: 5 	 mal: 0 	 loss: 0.03084628 	 time: 1.38
+local epoch 0 	 client: 6 	 mal: 0 	 loss: 0.03687070 	 time: 1.35
+local epoch 1 	 client: 6 	 mal: 0 	 loss: 0.01333909 	 time: 1.35
+local epoch 0 	 client: 7 	 mal: 0 	 loss: 0.01612480 	 time: 1.34
+local epoch 1 	 client: 7 	 mal: 0 	 loss: 0.10883742 	 time: 1.36
+local epoch 0 	 client: 8 	 mal: 0 	 loss: 0.04916251 	 time: 1.34
+local epoch 1 	 client: 8 	 mal: 0 	 loss: 0.19799067 	 time: 1.36
+local epoch 0 	 client: 9 	 mal: 0 	 loss: 0.01791121 	 time: 1.36
+local epoch 1 	 client: 9 	 mal: 0 	 loss: 0.02160848 	 time: 1.40
+local epoch 0 	 client: 10 	 mal: 0 	 loss: 0.01674777 	 time: 1.37
+local epoch 1 	 client: 10 	 mal: 0 	 loss: 0.04081531 	 time: 1.38
+local epoch 0 	 client: 11 	 mal: 0 	 loss: 0.06024246 	 time: 1.34
+local epoch 1 	 client: 11 	 mal: 0 	 loss: 0.04927655 	 time: 1.35
+local epoch 0 	 client: 12 	 mal: 0 	 loss: 0.09313659 	 time: 1.34
+local epoch 1 	 client: 12 	 mal: 0 	 loss: 0.03690266 	 time: 1.35
+local epoch 0 	 client: 13 	 mal: 0 	 loss: 0.13783622 	 time: 1.34
+local epoch 1 	 client: 13 	 mal: 0 	 loss: 0.03006687 	 time: 1.36
+local epoch 0 	 client: 14 	 mal: 0 	 loss: 0.03987831 	 time: 1.38
+local epoch 1 	 client: 14 	 mal: 0 	 loss: 0.05140354 	 time: 1.39
+local epoch 0 	 client: 15 	 mal: 0 	 loss: 0.09132952 	 time: 1.37
+local epoch 1 	 client: 15 	 mal: 0 	 loss: 0.01660395 	 time: 1.35
+local epoch 0 	 client: 16 	 mal: 0 	 loss: 0.08237070 	 time: 1.34
+local epoch 1 	 client: 16 	 mal: 0 	 loss: 0.03197843 	 time: 1.35
+local epoch 0 	 client: 17 	 mal: 0 	 loss: 0.04759408 	 time: 1.35
+local epoch 1 	 client: 17 	 mal: 0 	 loss: 0.08415572 	 time: 1.36
+local epoch 0 	 client: 18 	 mal: 0 	 loss: 0.04792359 	 time: 1.36
+local epoch 1 	 client: 18 	 mal: 0 	 loss: 0.00897936 	 time: 1.34
+local epoch 0 	 client: 19 	 mal: 0 	 loss: 0.10677470 	 time: 1.35
+local epoch 1 	 client: 19 	 mal: 0 	 loss: 0.02310703 	 time: 1.39
+20 20
+torch.Size([149317])
+[DBG rnd=24] logits mean=0.2542, std=4.3110, maxlogit mean=10.3403
+[DBG rnd=24] probs max mean=0.9862, pred entropy mean=0.0573
+[DBG rnd=24] preds bincount=[6, 10, 5, 6, 10, 7, 5, 7, 1, 7]
+Clean ACC:              0.9766
+Attack Success Ratio:   0.7475
+Robustness ACC:           0.2520
+mean|client_grad| 0.1267644464969635
+local epoch 0 	 client: 0 	 mal: 1 	 loss: 0.12960155 	 time: 1.36
+local epoch 1 	 client: 0 	 mal: 1 	 loss: 0.16797927 	 time: 1.33
+local epoch 0 	 client: 1 	 mal: 1 	 loss: 0.22414196 	 time: 1.33
+local epoch 1 	 client: 1 	 mal: 1 	 loss: 0.02673382 	 time: 1.33
+local epoch 0 	 client: 2 	 mal: 1 	 loss: 0.04220348 	 time: 1.34
+local epoch 1 	 client: 2 	 mal: 1 	 loss: 0.10026624 	 time: 1.34
+local epoch 0 	 client: 3 	 mal: 1 	 loss: 0.04779346 	 time: 1.34
+local epoch 1 	 client: 3 	 mal: 1 	 loss: 0.06712190 	 time: 1.37
+local epoch 0 	 client: 4 	 mal: 0 	 loss: 0.14731172 	 time: 1.35
+local epoch 1 	 client: 4 	 mal: 0 	 loss: 0.05632533 	 time: 1.38
+local epoch 0 	 client: 5 	 mal: 0 	 loss: 0.01615025 	 time: 1.35
+local epoch 1 	 client: 5 	 mal: 0 	 loss: 0.10657261 	 time: 1.37
+local epoch 0 	 client: 6 	 mal: 0 	 loss: 0.02840662 	 time: 1.34
+local epoch 1 	 client: 6 	 mal: 0 	 loss: 0.04104059 	 time: 1.36
+local epoch 0 	 client: 7 	 mal: 0 	 loss: 0.13938226 	 time: 1.34
+local epoch 1 	 client: 7 	 mal: 0 	 loss: 0.00846154 	 time: 1.35
+local epoch 0 	 client: 8 	 mal: 0 	 loss: 0.20878516 	 time: 1.34
+local epoch 1 	 client: 8 	 mal: 0 	 loss: 0.16503769 	 time: 1.35
+local epoch 0 	 client: 9 	 mal: 0 	 loss: 0.06930909 	 time: 1.34
+local epoch 1 	 client: 9 	 mal: 0 	 loss: 0.01458096 	 time: 1.34
+local epoch 0 	 client: 10 	 mal: 0 	 loss: 0.03603796 	 time: 1.34
+local epoch 1 	 client: 10 	 mal: 0 	 loss: 0.02850890 	 time: 1.35
+local epoch 0 	 client: 11 	 mal: 0 	 loss: 0.08234539 	 time: 1.34
+local epoch 1 	 client: 11 	 mal: 0 	 loss: 0.05747649 	 time: 1.35
+local epoch 0 	 client: 12 	 mal: 0 	 loss: 0.19090749 	 time: 1.34
+local epoch 1 	 client: 12 	 mal: 0 	 loss: 0.11544628 	 time: 1.36
+local epoch 0 	 client: 13 	 mal: 0 	 loss: 0.14701031 	 time: 1.35
+local epoch 1 	 client: 13 	 mal: 0 	 loss: 0.16000131 	 time: 1.37
+local epoch 0 	 client: 14 	 mal: 0 	 loss: 0.08382867 	 time: 1.37
+local epoch 1 	 client: 14 	 mal: 0 	 loss: 0.04867406 	 time: 1.37
+local epoch 0 	 client: 15 	 mal: 0 	 loss: 0.16074838 	 time: 1.44
+local epoch 1 	 client: 15 	 mal: 0 	 loss: 0.02477934 	 time: 1.46
+local epoch 0 	 client: 16 	 mal: 0 	 loss: 0.07082075 	 time: 1.45
+local epoch 1 	 client: 16 	 mal: 0 	 loss: 0.02969760 	 time: 1.44
+local epoch 0 	 client: 17 	 mal: 0 	 loss: 0.09222687 	 time: 1.41
+local epoch 1 	 client: 17 	 mal: 0 	 loss: 0.11614507 	 time: 1.42
+local epoch 0 	 client: 18 	 mal: 0 	 loss: 0.05684393 	 time: 1.37
+local epoch 1 	 client: 18 	 mal: 0 	 loss: 0.08669905 	 time: 1.40
+local epoch 0 	 client: 19 	 mal: 0 	 loss: 0.08582819 	 time: 1.36
+local epoch 1 	 client: 19 	 mal: 0 	 loss: 0.04812970 	 time: 1.36
+20 20
+torch.Size([149317])
+[DBG rnd=25] logits mean=0.2510, std=4.3937, maxlogit mean=10.4808
+[DBG rnd=25] probs max mean=0.9847, pred entropy mean=0.0547
+[DBG rnd=25] preds bincount=[6, 10, 5, 6, 10, 7, 5, 7, 1, 7]
+Clean ACC:              0.9770
+Attack Success Ratio:   0.8184
+Robustness ACC:           0.1811

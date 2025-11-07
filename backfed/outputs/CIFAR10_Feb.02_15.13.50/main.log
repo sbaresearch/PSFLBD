@@ -1,0 +1,43 @@
+[INFO] Date: 2026-02-02 | PyTorch 2.6.0+cu124
+[INFO] Total CPUs: 32, Total GPUs: 3 on troubadix.ifs.tuwien.ac.at.
+[INFO] Client CPUS: 1, Client GPUs: 0.5
+[INFO] Number of concurrent clients: 6
+[INFO] Set random seed to 123456
+[INFO] Malicious clients: []
+[INFO] Attack type: all2one, Target class: 2
+[ERROR] Error: [36mray::MainServer.run_experiment()[39m (pid=3354220, ip=128.131.169.146, actor_id=e6e047b299823472ac55625001000000, repr=<backfed.servers.main_server.MainServer object at 0x7f2487de4e20>)
+  File "/newstorage4/maleksic/fl-backdoors/backfed/backfed/servers/main_server.py", line 739, in run_experiment
+    server_metrics, client_fit_metrics, client_evaluation_metrics = self.run_one_round(round_number=self.current_round)
+  File "/newstorage4/maleksic/fl-backdoors/backfed/backfed/servers/main_server.py", line 672, in run_one_round
+    client_fit_metrics = self.fit_round(clients_mapping)
+  File "/newstorage4/maleksic/fl-backdoors/backfed/backfed/servers/main_server.py", line 538, in fit_round
+    client_packages = self.trainer.train(clients_mapping)
+  File "/newstorage4/maleksic/fl-backdoors/backfed/backfed/servers/main_server.py", line 1066, in _parallel_train
+    init_args, train_package = self.server.train_package(client_cls)
+  File "/newstorage4/maleksic/fl-backdoors/backfed/backfed/servers/main_server.py", line 871, in train_package
+    package["server_handle"] = ray.get_runtime_context().current_actor_handle
+AttributeError: 'RuntimeContext' object has no attribute 'current_actor_handle'
+Traceback (most recent call last):
+  File "/newstorage4/maleksic/fl-backdoors/backfed/main_sfl.py", line 40, in main
+    ray.get(server.run_experiment.remote())
+  File "/newstorage4/maleksic/BackFed/env/lib/python3.10/site-packages/ray/_private/auto_init_hook.py", line 21, in auto_init_wrapper
+    return fn(*args, **kwargs)
+  File "/newstorage4/maleksic/BackFed/env/lib/python3.10/site-packages/ray/_private/client_mode_hook.py", line 103, in wrapper
+    return func(*args, **kwargs)
+  File "/newstorage4/maleksic/BackFed/env/lib/python3.10/site-packages/ray/_private/worker.py", line 2667, in get
+    values, debugger_breakpoint = worker.get_objects(object_refs, timeout=timeout)
+  File "/newstorage4/maleksic/BackFed/env/lib/python3.10/site-packages/ray/_private/worker.py", line 864, in get_objects
+    raise value.as_instanceof_cause()
+ray.exceptions.RayTaskError(AttributeError): [36mray::MainServer.run_experiment()[39m (pid=3354220, ip=128.131.169.146, actor_id=e6e047b299823472ac55625001000000, repr=<backfed.servers.main_server.MainServer object at 0x7f2487de4e20>)
+  File "/newstorage4/maleksic/fl-backdoors/backfed/backfed/servers/main_server.py", line 739, in run_experiment
+    server_metrics, client_fit_metrics, client_evaluation_metrics = self.run_one_round(round_number=self.current_round)
+  File "/newstorage4/maleksic/fl-backdoors/backfed/backfed/servers/main_server.py", line 672, in run_one_round
+    client_fit_metrics = self.fit_round(clients_mapping)
+  File "/newstorage4/maleksic/fl-backdoors/backfed/backfed/servers/main_server.py", line 538, in fit_round
+    client_packages = self.trainer.train(clients_mapping)
+  File "/newstorage4/maleksic/fl-backdoors/backfed/backfed/servers/main_server.py", line 1066, in _parallel_train
+    init_args, train_package = self.server.train_package(client_cls)
+  File "/newstorage4/maleksic/fl-backdoors/backfed/backfed/servers/main_server.py", line 871, in train_package
+    package["server_handle"] = ray.get_runtime_context().current_actor_handle
+AttributeError: 'RuntimeContext' object has no attribute 'current_actor_handle'
+

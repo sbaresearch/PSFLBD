@@ -1,0 +1,41 @@
+2026-01-14 23:54:23,285 [MainThread  ] [INFO ]  Namespace(data='cifar10', num_agents=20, agent_frac=1.0, num_corrupt=2, rounds=100, local_ep=1, bs=64, client_lr=0.001, server_lr=0.001, target_class=2, poison_frac=0.5, pattern_type='plus', theta=8, theta_ld=10, snap=1, device='cuda:3', num_workers=0, dense_ratio=0.25, anneal_factor=0.0001, se_threshold=0.0001, non_iid=False, debug=False, beta=0.5, attack='badnet', aggr='avg', lr_decay=0.99, momentum=0.0, mask_init='ERK', wd=0.0001, same_mask=1, cease_poison=100000, exp_name_extra='', super_power=False, clean=False, sparsity=0.3, lambda_s=1.0, lambda_c=1.0, num_target=10, exp_name='iid_pr(0.5)')
+2026-01-14 23:54:26,619 [MainThread  ] [INFO ]  build client:0 mal:1 data_num:2500
+2026-01-14 23:54:26,788 [MainThread  ] [INFO ]  build client:1 mal:1 data_num:2500
+2026-01-14 23:54:26,794 [MainThread  ] [INFO ]  build client:2 mal:0 data_num:2500
+2026-01-14 23:54:26,799 [MainThread  ] [INFO ]  build client:3 mal:0 data_num:2500
+2026-01-14 23:54:26,804 [MainThread  ] [INFO ]  build client:4 mal:0 data_num:2500
+2026-01-14 23:54:26,809 [MainThread  ] [INFO ]  build client:5 mal:0 data_num:2500
+2026-01-14 23:54:26,814 [MainThread  ] [INFO ]  build client:6 mal:0 data_num:2500
+2026-01-14 23:54:26,819 [MainThread  ] [INFO ]  build client:7 mal:0 data_num:2500
+2026-01-14 23:54:26,825 [MainThread  ] [INFO ]  build client:8 mal:0 data_num:2500
+2026-01-14 23:54:26,830 [MainThread  ] [INFO ]  build client:9 mal:0 data_num:2500
+2026-01-14 23:54:26,835 [MainThread  ] [INFO ]  build client:10 mal:0 data_num:2500
+2026-01-14 23:54:26,840 [MainThread  ] [INFO ]  build client:11 mal:0 data_num:2500
+2026-01-14 23:54:26,845 [MainThread  ] [INFO ]  build client:12 mal:0 data_num:2500
+2026-01-14 23:54:26,850 [MainThread  ] [INFO ]  build client:13 mal:0 data_num:2500
+2026-01-14 23:54:26,856 [MainThread  ] [INFO ]  build client:14 mal:0 data_num:2500
+2026-01-14 23:54:26,861 [MainThread  ] [INFO ]  build client:15 mal:0 data_num:2500
+2026-01-14 23:54:26,866 [MainThread  ] [INFO ]  build client:16 mal:0 data_num:2500
+2026-01-14 23:54:26,871 [MainThread  ] [INFO ]  build client:17 mal:0 data_num:2500
+2026-01-14 23:54:26,877 [MainThread  ] [INFO ]  build client:18 mal:0 data_num:2500
+2026-01-14 23:54:26,882 [MainThread  ] [INFO ]  build client:19 mal:0 data_num:2500
+2026-01-14 23:55:26,871 [MainThread  ] [INFO ]  ---------Test 1 ------------
+2026-01-14 23:55:42,626 [MainThread  ] [INFO ]  Clean ACC:              0.1000
+2026-01-14 23:55:42,627 [MainThread  ] [INFO ]  Attack Success Ratio:   0.0000
+2026-01-14 23:55:42,627 [MainThread  ] [INFO ]  Backdoor ACC:           0.1111
+2026-01-14 23:55:42,627 [MainThread  ] [INFO ]  ------------------------------
+2026-01-14 23:56:40,530 [MainThread  ] [INFO ]  ---------Test 2 ------------
+2026-01-14 23:56:57,061 [MainThread  ] [INFO ]  Clean ACC:              0.1475
+2026-01-14 23:56:57,061 [MainThread  ] [INFO ]  Attack Success Ratio:   0.0754
+2026-01-14 23:56:57,061 [MainThread  ] [INFO ]  Backdoor ACC:           0.1414
+2026-01-14 23:56:57,061 [MainThread  ] [INFO ]  ------------------------------
+2026-01-14 23:57:31,097 [MainThread  ] [INFO ]  ---------Test 3 ------------
+2026-01-14 23:57:42,890 [MainThread  ] [INFO ]  Clean ACC:              0.1540
+2026-01-14 23:57:42,891 [MainThread  ] [INFO ]  Attack Success Ratio:   0.0208
+2026-01-14 23:57:42,891 [MainThread  ] [INFO ]  Backdoor ACC:           0.1652
+2026-01-14 23:57:42,891 [MainThread  ] [INFO ]  ------------------------------
+2026-01-14 23:58:13,849 [MainThread  ] [INFO ]  ---------Test 4 ------------
+2026-01-14 23:58:25,623 [MainThread  ] [INFO ]  Clean ACC:              0.1635
+2026-01-14 23:58:25,624 [MainThread  ] [INFO ]  Attack Success Ratio:   0.0051
+2026-01-14 23:58:25,624 [MainThread  ] [INFO ]  Backdoor ACC:           0.1744
+2026-01-14 23:58:25,624 [MainThread  ] [INFO ]  ------------------------------

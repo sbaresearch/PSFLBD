@@ -1,0 +1,547 @@
+[INFO] Date: 2026-03-11 | PyTorch 2.6.0+cu124
+[INFO] Total CPUs: 32, Total GPUs: 3 on troubadix.ifs.tuwien.ac.at.
+[INFO] Client CPUS: 1, Client GPUs: 0.5
+[INFO] Number of concurrent clients: 6
+[INFO] Set random seed to 123456
+[INFO] Malicious clients: [95, 41, 31, 7, 21, 79, 13, 61, 4, 0]
+[INFO] Attack type: all2one, Target class: 2
+[INFO] Sampling train dataset (50000 samples) for 100 partitions with Dirichlet distribution (alpha=0.9).
+[INFO] Cached client data indices to da6ca86b48243576.pkl
+[INFO] Loaded checkpoint from round 2000 with metrics: {'test_clean_loss': 0.2294671194076538, 'test_clean_acc': 0.9249}
+[INFO] Initializing client manager...
+[INFO] Loaded benign client class: BenignClient
+[INFO] Loaded malicious client class: MaliciousClient
+[INFO] ClientManager: Attack is enabled, initialize rounds selection with multi-shot poison scheme and random selection scheme
+[INFO] Initialized UnweightedFedAvg server with eta=0.5
+[INFO] Initialized AlignIns server with sparsity=0.3, lambda_s=1.0, lambda_c=1.0, eta=0.5
+[INFO] ============================== TRAINING ROUND: 2001 ==============================
+[INFO] ClientManager: Selected clients
+[INFO] 
+    <class 'backfed.clients.base_benign_client.BenignClient'>: [39, 1, 60, 3, 35, 15, 69, 53, 50, 92]
+[INFO] Clients training time: 21.40 seconds
+[INFO] AlignIns TDA: [-0.0153, -0.0128, -0.005, -0.0038, -0.0132, 0.0033, -0.0015, -0.0053, -0.0126, -0.0027]
+[INFO] AlignIns MPSA: [0.5022, 0.5048, 0.5069, 0.5179, 0.5067, 0.5014, 0.5086, 0.507, 0.5187, 0.5087]
+[INFO] AlignIns MZ-score of MPSA: [(1, 0.8621), (39, 0.3959), (35, 0.0041), (15, 1.9804), (60, 0.0514), (3, 1.0074), (53, 0.2923), (69, 0.0041), (92, 2.1343), (50, 0.3079)]
+[INFO] AlignIns MZ-score of TDA: [(1, 1.7254), (39, 1.3032), (35, 0.0274), (15, 0.2227), (60, 1.3809), (3, 1.4404), (53, 0.6265), (69, 0.0274), (92, 1.2755), (50, 0.4071)]
+[INFO] ═══ AlignInsServer detection results ═══
+[INFO] Predicted benign clients: [35, 53, 69, 50]
+[INFO] Predicted malicious clients: [1, 3, 39, 15, 92, 60]
+[INFO] Ground-truth malicious clients: []
+[INFO] 
+    TNR_clean: 40.00% (4/10)
+
+[INFO] ═══════════════════════════════════════════════
+[INFO] Server aggregate time: 0.72 seconds
+[INFO] Server fit time: 22.13 seconds
+[INFO] Clients evaluation time: 0.00 seconds
+[INFO] Server evaluation time: 2.59 seconds
+[INFO] Round 2001 completed in 24.74 seconds
+[INFO] ═══ Centralized Metrics ═══
+[INFO] 
+    test_clean_loss: 0.3162
+    test_clean_acc: 89.32% (8932/10000)
+    test_backdoor_loss: 8.7257
+    test_backdoor_acc: 1.13% (102/9000)
+
+[INFO] ═══ Client Fit Metrics ═══
+[INFO] 
+    train_clean_loss: 0.4037
+    train_clean_acc: 87.34%
+
+[INFO] ============================== POISONING ROUND: 2002 ==============================
+[INFO] ClientManager: Selected clients
+[INFO] 
+    <class 'backfed.clients.base_malicious_client.MaliciousClient'>: [79]
+    <class 'backfed.clients.base_benign_client.BenignClient'>: [35, 34, 81, 25, 12, 9, 99, 57, 73]
+[INFO] Clients training time: 24.99 seconds
+[INFO] AlignIns TDA: [-0.0146, -0.0082, -0.0123, -0.0036, 0.0036, -0.0056, -0.0112, -0.0126, -0.002, -0.0216]
+[INFO] AlignIns MPSA: [0.5056, 0.5206, 0.5165, 0.5117, 0.5078, 0.507, 0.5144, 0.517, 0.5081, 0.506]
+[INFO] AlignIns MZ-score of MPSA: [(35, 0.8503), (12, 2.1118), (81, 1.3014), (25, 0.3542), (34, 0.4168), (9, 0.5726), (99, 0.8791), (73, 1.3903), (57, 0.3542), (79, 0.7778)]
+[INFO] AlignIns MZ-score of TDA: [(35, 0.7199), (12, 0.2189), (81, 0.3818), (25, 0.8816), (34, 1.9475), (9, 0.5893), (99, 0.2189), (73, 0.4251), (57, 1.1279), (79, 1.7416)]
+[INFO] ═══ AlignInsServer detection results ═══
+[INFO] Predicted benign clients: [35, 25, 9, 99]
+[INFO] Predicted malicious clients: [34, 73, 12, 79, 81, 57]
+[INFO] Ground-truth malicious clients: [79]
+[INFO] 
+    TPR: 100.00% (1/1)
+    TNR: 44.44% (4/9)
+    DACC: 50.00% (5/10)
+
+[INFO] ═══════════════════════════════════════════════
+[INFO] Server aggregate time: 0.09 seconds
+[INFO] Server fit time: 25.09 seconds
+[INFO] Clients evaluation time: 0.00 seconds
+[INFO] Server evaluation time: 2.18 seconds
+[INFO] Round 2002 completed in 27.29 seconds
+[INFO] ═══ Centralized Metrics ═══
+[INFO] 
+    test_clean_loss: 0.2729
+    test_clean_acc: 91.26% (9126/10000)
+    test_backdoor_loss: 6.6762
+    test_backdoor_acc: 2.96% (266/9000)
+
+[INFO] ═══ Client Fit Metrics ═══
+[INFO] 
+    train_clean_loss: 0.4629
+    train_clean_acc: 85.29%
+    train_backdoor_loss: 0.1030
+    train_backdoor_acc: 96.86%
+
+[INFO] ============================== POISONING ROUND: 2003 ==============================
+[INFO] ClientManager: Selected clients
+[INFO] 
+    <class 'backfed.clients.base_malicious_client.MaliciousClient'>: [61]
+    <class 'backfed.clients.base_benign_client.BenignClient'>: [53, 57, 81, 98, 55, 88, 94, 45, 44]
+[INFO] Clients training time: 22.97 seconds
+[INFO] AlignIns TDA: [-0.0027, -0.0139, -0.0054, -0.0136, -0.0001, -0.0074, -0.0133, -0.0101, -0.009, -0.0193]
+[INFO] AlignIns MPSA: [0.4996, 0.5099, 0.5143, 0.5101, 0.5089, 0.5125, 0.5156, 0.508, 0.5034, 0.4966]
+[INFO] AlignIns MZ-score of MPSA: [(53, 1.6523), (55, 0.0814), (98, 0.8332), (81, 0.117), (57, 0.0814), (88, 0.5311), (94, 1.0521), (45, 0.2338), (44, 1.0229), (61, 2.1695)]
+[INFO] AlignIns MZ-score of TDA: [(53, 1.2368), (55, 0.7919), (98, 0.7509), (81, 0.7322), (57, 1.719), (88, 0.3974), (94, 0.6814), (45, 0.101), (44, 0.101), (61, 1.774)]
+[INFO] ═══ AlignInsServer detection results ═══
+[INFO] Predicted benign clients: [55, 98, 81, 88, 45]
+[INFO] Predicted malicious clients: [44, 53, 57, 61, 94]
+[INFO] Ground-truth malicious clients: [61]
+[INFO] 
+    TPR: 100.00% (1/1)
+    TNR: 55.56% (5/9)
+    DACC: 60.00% (6/10)
+
+[INFO] ═══════════════════════════════════════════════
+[INFO] Server aggregate time: 0.11 seconds
+[INFO] Server fit time: 23.08 seconds
+[INFO] Clients evaluation time: 0.00 seconds
+[INFO] Server evaluation time: 2.17 seconds
+[INFO] Round 2003 completed in 25.27 seconds
+[INFO] ═══ Centralized Metrics ═══
+[INFO] 
+    test_clean_loss: 0.2544
+    test_clean_acc: 91.71% (9171/10000)
+    test_backdoor_loss: 6.8474
+    test_backdoor_acc: 3.52% (317/9000)
+
+[INFO] ═══ Client Fit Metrics ═══
+[INFO] 
+    train_clean_loss: 0.3145
+    train_clean_acc: 89.78%
+    train_backdoor_loss: 0.1169
+    train_backdoor_acc: 97.07%
+
+[INFO] ============================== POISONING ROUND: 2004 ==============================
+[INFO] ClientManager: Selected clients
+[INFO] 
+    <class 'backfed.clients.base_malicious_client.MaliciousClient'>: [4, 21]
+    <class 'backfed.clients.base_benign_client.BenignClient'>: [25, 10, 19, 17, 69, 72, 60, 53]
+[INFO] Clients training time: 35.23 seconds
+[INFO] AlignIns TDA: [-0.0103, -0.0077, -0.0017, -0.0103, -0.0109, -0.0083, -0.0036, -0.007, -0.0171, -0.019]
+[INFO] AlignIns MPSA: [0.5141, 0.5015, 0.5065, 0.5038, 0.5138, 0.5091, 0.5065, 0.5125, 0.5389, 0.5355]
+[INFO] AlignIns MZ-score of MPSA: [(10, 0.2701), (17, 0.7636), (19, 0.35), (25, 0.574), (69, 0.245), (72, 0.1415), (53, 0.3552), (60, 0.1415), (21, 2.3082), (4, 2.032)]
+[INFO] AlignIns MZ-score of TDA: [(10, 0.1936), (17, 0.3104), (19, 1.5009), (25, 0.1987), (69, 0.3045), (72, 0.1936), (53, 1.126), (60, 0.4646), (21, 1.529), (4, 1.911)]
+[INFO] ═══ AlignInsServer detection results ═══
+[INFO] Predicted benign clients: [10, 17, 25, 69, 72, 60]
+[INFO] Predicted malicious clients: [21, 19, 4, 53]
+[INFO] Ground-truth malicious clients: [4, 21]
+[INFO] 
+    TPR: 100.00% (2/2)
+    TNR: 75.00% (6/8)
+    DACC: 80.00% (8/10)
+
+[INFO] ═══════════════════════════════════════════════
+[INFO] Server aggregate time: 0.10 seconds
+[INFO] Server fit time: 35.34 seconds
+[INFO] Clients evaluation time: 0.00 seconds
+[INFO] Server evaluation time: 2.19 seconds
+[INFO] Round 2004 completed in 37.55 seconds
+[INFO] ═══ Centralized Metrics ═══
+[INFO] 
+    test_clean_loss: 0.2409
+    test_clean_acc: 92.16% (9216/10000)
+    test_backdoor_loss: 6.7668
+    test_backdoor_acc: 3.79% (341/9000)
+
+[INFO] ═══ Client Fit Metrics ═══
+[INFO] 
+    train_clean_loss: 0.3864
+    train_clean_acc: 88.34%
+    train_backdoor_loss: 0.1102
+    train_backdoor_acc: 97.36%
+
+[INFO] ============================== POISONING ROUND: 2005 ==============================
+[INFO] ClientManager: Selected clients
+[INFO] 
+    <class 'backfed.clients.base_malicious_client.MaliciousClient'>: [95]
+    <class 'backfed.clients.base_benign_client.BenignClient'>: [49, 85, 76, 15, 98, 33, 10, 38, 64]
+[INFO] Clients training time: 43.56 seconds
+[INFO] AlignIns TDA: [-0.0107, -0.0037, -0.0039, -0.0139, -0.0062, -0.0105, -0.0108, -0.0154, -0.0137, -0.0204]
+[INFO] AlignIns MPSA: [0.5049, 0.5044, 0.5041, 0.5007, 0.5046, 0.5026, 0.4907, 0.5067, 0.5082, 0.5089]
+[INFO] AlignIns MZ-score of MPSA: [(85, 0.0927), (49, 0.0139), (76, 0.0693), (98, 0.7847), (15, 0.0139), (38, 0.3888), (33, 2.8197), (10, 0.45), (64, 0.77), (95, 0.9025)]
+[INFO] AlignIns MZ-score of TDA: [(85, 0.0138), (49, 1.4106), (76, 1.3673), (98, 0.6377), (15, 0.9097), (38, 0.0508), (33, 0.0138), (10, 0.9263), (64, 0.5919), (95, 1.9253)]
+[INFO] ═══ AlignInsServer detection results ═══
+[INFO] Predicted benign clients: [85, 98, 15, 38, 10, 64]
+[INFO] Predicted malicious clients: [49, 76, 95, 33]
+[INFO] Ground-truth malicious clients: [95]
+[INFO] 
+    TPR: 100.00% (1/1)
+    TNR: 66.67% (6/9)
+    DACC: 70.00% (7/10)
+
+[INFO] ═══════════════════════════════════════════════
+[INFO] Server aggregate time: 0.10 seconds
+[INFO] Server fit time: 43.66 seconds
+[INFO] Clients evaluation time: 0.00 seconds
+[INFO] Server evaluation time: 3.16 seconds
+[INFO] Round 2005 completed in 46.84 seconds
+[INFO] ═══ Centralized Metrics ═══
+[INFO] 
+    test_clean_loss: 0.2398
+    test_clean_acc: 92.26% (9226/10000)
+    test_backdoor_loss: 6.7883
+    test_backdoor_acc: 4.22% (380/9000)
+
+[INFO] ═══ Client Fit Metrics ═══
+[INFO] 
+    train_clean_loss: 0.2224
+    train_clean_acc: 92.96%
+    train_backdoor_loss: 0.1362
+    train_backdoor_acc: 95.76%
+
+[INFO] ============================== TRAINING ROUND: 2006 ==============================
+[INFO] ClientManager: Selected clients
+[INFO] 
+    <class 'backfed.clients.base_benign_client.BenignClient'>: [28, 43, 33, 73, 69, 17, 11, 48, 94, 4]
+[INFO] Clients training time: 2.55 seconds
+[INFO] AlignIns TDA: [-0.0045, -0.0115, -0.0094, -0.0086, -0.0112, -0.0083, -0.0089, -0.0148, -0.0011, -0.0065]
+[INFO] AlignIns MPSA: [0.4989, 0.5076, 0.5019, 0.5067, 0.4991, 0.5095, 0.5051, 0.4985, 0.5075, 0.5107]
+[INFO] AlignIns MZ-score of MPSA: [(43, 1.6125), (33, 0.3889), (28, 0.9103), (69, 0.1777), (73, 1.5529), (17, 0.823), (11, 0.1777), (94, 1.6883), (48, 0.3618), (4, 1.1113)]
+[INFO] AlignIns MZ-score of TDA: [(43, 1.163), (33, 0.7528), (28, 0.1779), (69, 0.0315), (73, 0.6794), (17, 0.109), (11, 0.0315), (94, 1.6705), (48, 2.1072), (4, 0.6292)]
+[INFO] ═══ AlignInsServer detection results ═══
+[INFO] Predicted benign clients: [33, 28, 69, 17, 11]
+[INFO] Predicted malicious clients: [4, 73, 43, 48, 94]
+[INFO] Ground-truth malicious clients: []
+[INFO] 
+    TNR_clean: 50.00% (5/10)
+
+[INFO] ═══════════════════════════════════════════════
+[INFO] Server aggregate time: 0.08 seconds
+[INFO] Server fit time: 2.64 seconds
+[INFO] Clients evaluation time: 0.00 seconds
+[INFO] Server evaluation time: 2.20 seconds
+[INFO] Round 2006 completed in 4.85 seconds
+[INFO] ═══ Centralized Metrics ═══
+[INFO] 
+    test_clean_loss: 0.2495
+    test_clean_acc: 91.67% (9167/10000)
+    test_backdoor_loss: 6.6518
+    test_backdoor_acc: 3.74% (337/9000)
+
+[INFO] ═══ Client Fit Metrics ═══
+[INFO] 
+    train_clean_loss: 0.3298
+    train_clean_acc: 89.54%
+
+[INFO] ============================== TRAINING ROUND: 2007 ==============================
+[INFO] ClientManager: Selected clients
+[INFO] 
+    <class 'backfed.clients.base_benign_client.BenignClient'>: [23, 50, 97, 49, 2, 18, 31, 86, 69, 21]
+[INFO] Clients training time: 2.77 seconds
+[INFO] AlignIns TDA: [-0.0078, -0.0062, -0.004, -0.0023, 0.0031, -0.01, -0.0086, -0.0099, 0.005, -0.0132]
+[INFO] AlignIns MPSA: [0.5054, 0.5058, 0.5071, 0.5094, 0.5156, 0.5096, 0.5062, 0.4908, 0.5061, 0.5146]
+[INFO] AlignIns MZ-score of MPSA: [(23, 0.2035), (97, 0.1278), (49, 0.0728), (18, 0.4286), (50, 1.3923), (31, 0.4557), (86, 0.0728), (69, 2.468), (2, 0.0832), (21, 1.2427)]
+[INFO] AlignIns MZ-score of TDA: [(23, 0.1466), (97, 0.1466), (49, 0.5368), (18, 0.8489), (50, 1.8117), (31, 0.5413), (86, 0.2913), (69, 0.5271), (2, 2.1484), (21, 1.1063)]
+[INFO] ═══ AlignInsServer detection results ═══
+[INFO] Predicted benign clients: [23, 97, 49, 18, 31, 86]
+[INFO] Predicted malicious clients: [21, 50, 2, 69]
+[INFO] Ground-truth malicious clients: []
+[INFO] 
+    TNR_clean: 60.00% (6/10)
+
+[INFO] ═══════════════════════════════════════════════
+[INFO] Server aggregate time: 0.10 seconds
+[INFO] Server fit time: 2.88 seconds
+[INFO] Clients evaluation time: 0.00 seconds
+[INFO] Server evaluation time: 2.18 seconds
+[INFO] Round 2007 completed in 5.07 seconds
+[INFO] ═══ Centralized Metrics ═══
+[INFO] 
+    test_clean_loss: 0.2614
+    test_clean_acc: 91.19% (9119/10000)
+    test_backdoor_loss: 6.9990
+    test_backdoor_acc: 3.13% (282/9000)
+
+[INFO] ═══ Client Fit Metrics ═══
+[INFO] 
+    train_clean_loss: 0.5392
+    train_clean_acc: 83.00%
+
+[INFO] ============================== POISONING ROUND: 2008 ==============================
+[INFO] ClientManager: Selected clients
+[INFO] 
+    <class 'backfed.clients.base_malicious_client.MaliciousClient'>: [79]
+    <class 'backfed.clients.base_benign_client.BenignClient'>: [75, 45, 1, 60, 6, 89, 37, 63, 43]
+[INFO] Clients training time: 21.93 seconds
+[INFO] AlignIns TDA: [-0.0018, -0.0113, -0.0009, -0.0037, -0.0065, -0.0135, -0.0131, -0.0131, -0.0062, -0.0207]
+[INFO] AlignIns MPSA: [0.4989, 0.5056, 0.5076, 0.5083, 0.5045, 0.5111, 0.5148, 0.5183, 0.5079, 0.4872]
+[INFO] AlignIns MZ-score of MPSA: [(75, 1.079), (1, 0.2647), (45, 0.0172), (6, 0.0625), (60, 0.4), (89, 0.4077), (37, 0.862), (43, 1.2844), (63, 0.0172), (79, 2.5122)]
+[INFO] AlignIns MZ-score of TDA: [(75, 1.1888), (1, 0.4032), (45, 1.3365), (6, 0.8589), (60, 0.4032), (89, 0.7778), (37, 0.7026), (43, 0.7044), (63, 0.4498), (79, 1.988)]
+[INFO] ═══ AlignInsServer detection results ═══
+[INFO] Predicted benign clients: [1, 6, 60, 89, 37, 63]
+[INFO] Predicted malicious clients: [43, 75, 45, 79]
+[INFO] Ground-truth malicious clients: [79]
+[INFO] 
+    TPR: 100.00% (1/1)
+    TNR: 66.67% (6/9)
+    DACC: 70.00% (7/10)
+
+[INFO] ═══════════════════════════════════════════════
+[INFO] Server aggregate time: 0.10 seconds
+[INFO] Server fit time: 22.04 seconds
+[INFO] Clients evaluation time: 0.00 seconds
+[INFO] Server evaluation time: 2.23 seconds
+[INFO] Round 2008 completed in 24.29 seconds
+[INFO] ═══ Centralized Metrics ═══
+[INFO] 
+    test_clean_loss: 0.2653
+    test_clean_acc: 91.24% (9124/10000)
+    test_backdoor_loss: 6.8504
+    test_backdoor_acc: 2.78% (250/9000)
+
+[INFO] ═══ Client Fit Metrics ═══
+[INFO] 
+    train_clean_loss: 0.3620
+    train_clean_acc: 88.65%
+    train_backdoor_loss: 0.0762
+    train_backdoor_acc: 98.29%
+
+[INFO] ============================== POISONING ROUND: 2009 ==============================
+[INFO] ClientManager: Selected clients
+[INFO] 
+    <class 'backfed.clients.base_malicious_client.MaliciousClient'>: [79, 95]
+    <class 'backfed.clients.base_benign_client.BenignClient'>: [43, 12, 10, 6, 42, 72, 90, 82]
+[INFO] Clients training time: 23.42 seconds
+[INFO] AlignIns TDA: [-0.0154, -0.0053, -0.0125, -0.0007, -0.0101, -0.0215, -0.0122, -0.0066, -0.0232, -0.0192]
+[INFO] AlignIns MPSA: [0.5045, 0.5079, 0.5106, 0.4952, 0.5036, 0.5022, 0.5099, 0.5081, 0.5356, 0.5232]
+[INFO] AlignIns MZ-score of MPSA: [(43, 0.3216), (12, 0.0101), (10, 0.2433), (6, 1.1731), (42, 0.3983), (72, 0.5286), (82, 0.1733), (90, 0.0101), (79, 2.5332), (95, 1.3948)]
+[INFO] AlignIns MZ-score of TDA: [(43, 0.4488), (12, 1.018), (10, 0.0209), (6, 1.6696), (42, 0.3268), (72, 1.3243), (82, 0.0209), (90, 0.8311), (79, 1.5706), (95, 0.9898)]
+[INFO] ═══ AlignInsServer detection results ═══
+[INFO] Predicted benign clients: [43, 10, 42, 82, 90]
+[INFO] Predicted malicious clients: [6, 72, 12, 79, 95]
+[INFO] Ground-truth malicious clients: [95, 79]
+[INFO] 
+    TPR: 100.00% (2/2)
+    TNR: 62.50% (5/8)
+    DACC: 70.00% (7/10)
+
+[INFO] ═══════════════════════════════════════════════
+[INFO] Server aggregate time: 0.09 seconds
+[INFO] Server fit time: 23.52 seconds
+[INFO] Clients evaluation time: 0.00 seconds
+[INFO] Server evaluation time: 2.16 seconds
+[INFO] Round 2009 completed in 25.69 seconds
+[INFO] ═══ Centralized Metrics ═══
+[INFO] 
+    test_clean_loss: 0.2508
+    test_clean_acc: 91.81% (9181/10000)
+    test_backdoor_loss: 7.2051
+    test_backdoor_acc: 1.49% (134/9000)
+
+[INFO] ═══ Client Fit Metrics ═══
+[INFO] 
+    train_clean_loss: 0.3086
+    train_clean_acc: 90.62%
+    train_backdoor_loss: 0.1129
+    train_backdoor_acc: 96.31%
+
+[INFO] ============================== TRAINING ROUND: 2010 ==============================
+[INFO] ClientManager: Selected clients
+[INFO] 
+    <class 'backfed.clients.base_benign_client.BenignClient'>: [62, 7, 73, 6, 80, 42, 81, 21, 32, 53]
+[INFO] Clients training time: 2.39 seconds
+[INFO] AlignIns TDA: [-0.0108, -0.0099, -0.0063, -0.0145, -0.0011, -0.0055, -0.0184, -0.0102, -0.0044, -0.0131]
+[INFO] AlignIns MPSA: [0.5164, 0.5025, 0.5127, 0.4991, 0.505, 0.5119, 0.5071, 0.518, 0.5092, 0.5004]
+[INFO] AlignIns MZ-score of MPSA: [(62, 1.3304), (42, 0.9145), (80, 0.7383), (7, 1.4598), (6, 0.5052), (73, 0.6024), (81, 0.1724), (21, 1.5806), (53, 0.1724), (32, 1.2424)]
+[INFO] AlignIns MZ-score of TDA: [(62, 0.1379), (42, 0.0277), (80, 0.7614), (7, 0.8966), (6, 1.8171), (73, 0.936), (81, 1.6981), (21, 0.0277), (53, 1.1596), (32, 0.6065)]
+[INFO] ═══ AlignInsServer detection results ═══
+[INFO] Predicted benign clients: [42, 80, 73]
+[INFO] Predicted malicious clients: [32, 6, 7, 81, 21, 53, 62]
+[INFO] Ground-truth malicious clients: []
+[INFO] 
+    TNR_clean: 30.00% (3/10)
+
+[INFO] ═══════════════════════════════════════════════
+[INFO] Server aggregate time: 0.11 seconds
+[INFO] Server fit time: 2.51 seconds
+[INFO] Clients evaluation time: 0.00 seconds
+[INFO] Server evaluation time: 2.13 seconds
+[INFO] Round 2010 completed in 4.64 seconds
+[INFO] ═══ Centralized Metrics ═══
+[INFO] 
+    test_clean_loss: 0.3183
+    test_clean_acc: 89.57% (8957/10000)
+    test_backdoor_loss: 6.9672
+    test_backdoor_acc: 2.80% (252/9000)
+
+[INFO] ═══ Client Fit Metrics ═══
+[INFO] 
+    train_clean_loss: 0.2710
+    train_clean_acc: 91.20%
+
+[INFO] ============================== POISONING ROUND: 2011 ==============================
+[INFO] ClientManager: Selected clients
+[INFO] 
+    <class 'backfed.clients.base_malicious_client.MaliciousClient'>: [41]
+    <class 'backfed.clients.base_benign_client.BenignClient'>: [98, 25, 97, 15, 6, 38, 32, 82, 60]
+[INFO] Clients training time: 21.20 seconds
+[INFO] AlignIns TDA: [-0.0101, -0.0165, -0.0036, -0.0042, -0.003, -0.0084, -0.0026, -0.009, -0.0072, -0.0243]
+[INFO] AlignIns MPSA: [0.5251, 0.509, 0.509, 0.5117, 0.5147, 0.5218, 0.5107, 0.5215, 0.5142, 0.5024]
+[INFO] AlignIns MZ-score of MPSA: [(97, 1.8266), (98, 0.5886), (6, 0.5945), (15, 0.1916), (25, 0.2658), (38, 1.3287), (32, 0.3441), (82, 1.2858), (60, 0.1916), (41, 1.592)]
+[INFO] AlignIns MZ-score of TDA: [(97, 0.3586), (98, 1.342), (6, 0.6429), (15, 0.5467), (25, 0.7384), (38, 0.0981), (32, 0.793), (82, 0.1834), (60, 0.0981), (41, 2.5336)]
+[INFO] ═══ AlignInsServer detection results ═══
+[INFO] Predicted benign clients: [6, 15, 25, 32, 60]
+[INFO] Predicted malicious clients: [97, 98, 38, 41, 82]
+[INFO] Ground-truth malicious clients: [41]
+[INFO] 
+    TPR: 100.00% (1/1)
+    TNR: 55.56% (5/9)
+    DACC: 60.00% (6/10)
+
+[INFO] ═══════════════════════════════════════════════
+[INFO] Server aggregate time: 0.10 seconds
+[INFO] Server fit time: 21.31 seconds
+[INFO] Clients evaluation time: 0.00 seconds
+[INFO] Server evaluation time: 2.17 seconds
+[INFO] Round 2011 completed in 23.49 seconds
+[INFO] ═══ Centralized Metrics ═══
+[INFO] 
+    test_clean_loss: 0.2963
+    test_clean_acc: 90.17% (9017/10000)
+    test_backdoor_loss: 7.2096
+    test_backdoor_acc: 3.50% (315/9000)
+
+[INFO] ═══ Client Fit Metrics ═══
+[INFO] 
+    train_clean_loss: 0.3120
+    train_clean_acc: 89.67%
+    train_backdoor_loss: 0.1175
+    train_backdoor_acc: 96.15%
+
+[INFO] ============================== POISONING ROUND: 2012 ==============================
+[INFO] ClientManager: Selected clients
+[INFO] 
+    <class 'backfed.clients.base_malicious_client.MaliciousClient'>: [61, 0]
+    <class 'backfed.clients.base_benign_client.BenignClient'>: [87, 47, 69, 85, 65, 66, 45, 96]
+[INFO] Clients training time: 21.58 seconds
+[INFO] AlignIns TDA: [-0.0154, -0.0132, -0.0017, -0.0142, -0.0038, -0.0102, -0.0038, -0.0025, -0.0183, -0.0189]
+[INFO] AlignIns MPSA: [0.511, 0.5124, 0.5073, 0.5157, 0.5039, 0.5033, 0.5045, 0.5164, 0.5457, 0.5438]
+[INFO] AlignIns MZ-score of MPSA: [(47, 0.0459), (87, 0.0459), (69, 0.3012), (85, 0.2671), (65, 0.5263), (66, 0.5685), (45, 0.4855), (96, 0.315), (61, 2.2857), (0, 2.1596)]
+[INFO] AlignIns MZ-score of TDA: [(47, 0.5787), (87, 0.2356), (69, 1.5661), (85, 0.4015), (65, 1.2409), (66, 0.2356), (45, 1.2308), (96, 1.4414), (61, 1.0431), (0, 1.1241)]
+[INFO] ═══ AlignInsServer detection results ═══
+[INFO] Predicted benign clients: [47, 87, 85, 66]
+[INFO] Predicted malicious clients: [96, 65, 0, 69, 45, 61]
+[INFO] Ground-truth malicious clients: [0, 61]
+[INFO] 
+    TPR: 100.00% (2/2)
+    TNR: 50.00% (4/8)
+    DACC: 60.00% (6/10)
+
+[INFO] ═══════════════════════════════════════════════
+[INFO] Server aggregate time: 0.09 seconds
+[INFO] Server fit time: 21.68 seconds
+[INFO] Clients evaluation time: 0.00 seconds
+[INFO] Server evaluation time: 2.19 seconds
+[INFO] Round 2012 completed in 23.89 seconds
+[INFO] ═══ Centralized Metrics ═══
+[INFO] 
+    test_clean_loss: 0.2706
+    test_clean_acc: 91.07% (9107/10000)
+    test_backdoor_loss: 7.1417
+    test_backdoor_acc: 3.24% (292/9000)
+
+[INFO] ═══ Client Fit Metrics ═══
+[INFO] 
+    train_clean_loss: 0.3448
+    train_clean_acc: 89.02%
+    train_backdoor_loss: 0.1562
+    train_backdoor_acc: 94.30%
+
+[INFO] ============================== POISONING ROUND: 2013 ==============================
+[INFO] ClientManager: Selected clients
+[INFO] 
+    <class 'backfed.clients.base_malicious_client.MaliciousClient'>: [4]
+    <class 'backfed.clients.base_benign_client.BenignClient'>: [90, 59, 62, 82, 89, 74, 50, 80, 20]
+[INFO] Clients training time: 34.95 seconds
+[INFO] AlignIns TDA: [-0.0105, -0.0122, -0.0132, -0.0028, 0.001, -0.0163, -0.0136, -0.0107, 0.0084, -0.0134]
+[INFO] AlignIns MPSA: [0.4994, 0.5011, 0.5055, 0.5144, 0.5066, 0.5103, 0.5035, 0.5114, 0.5103, 0.51]
+[INFO] AlignIns MZ-score of MPSA: [(62, 1.9326), (82, 1.5675), (89, 0.6031), (90, 1.3295), (59, 0.3609), (74, 0.4386), (20, 1.0375), (80, 0.681), (50, 0.4378), (4, 0.3609)]
+[INFO] AlignIns MZ-score of TDA: [(62, 0.1308), (82, 0.1026), (89, 0.2339), (90, 1.1515), (59, 1.6539), (74, 0.6523), (20, 0.2934), (80, 0.1026), (50, 2.6428), (4, 0.2566)]
+[INFO] ═══ AlignInsServer detection results ═══
+[INFO] Predicted benign clients: [89, 74, 80, 4]
+[INFO] Predicted malicious clients: [82, 50, 20, 90, 59, 62]
+[INFO] Ground-truth malicious clients: [4]
+[INFO] 
+    TPR: 0.00% (0/1)
+    TNR: 33.33% (3/9)
+    DACC: 30.00% (3/10)
+
+[INFO] ═══════════════════════════════════════════════
+[INFO] Server aggregate time: 0.09 seconds
+[INFO] Server fit time: 35.04 seconds
+[INFO] Clients evaluation time: 0.00 seconds
+[INFO] Server evaluation time: 2.25 seconds
+[INFO] Round 2013 completed in 37.31 seconds
+[INFO] ═══ Centralized Metrics ═══
+[INFO] 
+    test_clean_loss: 0.2728
+    test_clean_acc: 90.83% (9083/10000)
+    test_backdoor_loss: 4.4001
+    test_backdoor_acc: 13.57% (1221/9000)
+
+[INFO] ═══ Client Fit Metrics ═══
+[INFO] 
+    train_clean_loss: 0.3510
+    train_clean_acc: 88.53%
+    train_backdoor_loss: 0.1490
+    train_backdoor_acc: 95.73%
+
+[INFO] ============================== POISONING ROUND: 2014 ==============================
+[INFO] ClientManager: Selected clients
+[INFO] 
+    <class 'backfed.clients.base_malicious_client.MaliciousClient'>: [61]
+    <class 'backfed.clients.base_benign_client.BenignClient'>: [94, 49, 44, 46, 6, 29, 58, 60, 55]
+[INFO] Clients training time: 21.22 seconds
+[INFO] AlignIns TDA: [-0.0116, -0.0172, -0.0074, -0.0037, -0.0056, -0.0128, -0.0012, -0.0107, -0.0005, -0.0073]
+[INFO] AlignIns MPSA: [0.5225, 0.5167, 0.513, 0.5062, 0.5155, 0.5174, 0.5083, 0.5269, 0.5127, 0.4928]
+[INFO] AlignIns MZ-score of MPSA: [(46, 0.9248), (94, 0.2801), (44, 0.1396), (6, 0.8983), (49, 0.1396), (29, 0.3526), (58, 0.6657), (55, 1.4182), (60, 0.172), (61, 2.3971)]
+[INFO] AlignIns MZ-score of TDA: [(46, 0.8443), (94, 1.9398), (44, 0.0109), (6, 0.73), (49, 0.3457), (29, 1.0677), (58, 1.2259), (55, 0.6617), (60, 1.3648), (61, 0.0109)]
+[INFO] ═══ AlignInsServer detection results ═══
+[INFO] Predicted benign clients: [46, 44, 6, 49]
+[INFO] Predicted malicious clients: [61, 55, 58, 60, 29, 94]
+[INFO] Ground-truth malicious clients: [61]
+[INFO] 
+    TPR: 100.00% (1/1)
+    TNR: 44.44% (4/9)
+    DACC: 50.00% (5/10)
+
+[INFO] ═══════════════════════════════════════════════
+[INFO] Server aggregate time: 0.13 seconds
+[INFO] Server fit time: 21.35 seconds
+[INFO] Clients evaluation time: 0.00 seconds
+[INFO] Server evaluation time: 2.23 seconds
+[INFO] Round 2014 completed in 23.60 seconds
+[INFO] ═══ Centralized Metrics ═══
+[INFO] 
+    test_clean_loss: 0.2884
+    test_clean_acc: 90.51% (9051/10000)
+    test_backdoor_loss: 5.2222
+    test_backdoor_acc: 6.43% (579/9000)
+
+[INFO] ═══ Client Fit Metrics ═══
+[INFO] 
+    train_clean_loss: 0.3116
+    train_clean_acc: 89.94%
+    train_backdoor_loss: 0.0829
+    train_backdoor_acc: 97.36%
+
+[INFO] ============================== POISONING ROUND: 2015 ==============================
+[INFO] ClientManager: Selected clients
+[INFO] 
+    <class 'backfed.clients.base_malicious_client.MaliciousClient'>: [95]
+    <class 'backfed.clients.base_benign_client.BenignClient'>: [51, 98, 37, 16, 77, 96, 27, 3, 12]

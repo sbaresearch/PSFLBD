@@ -1,0 +1,777 @@
+2026-01-21 23:13:55,583 [MainThread  ] [INFO ]  Namespace(data='mnist', num_agents=20, agent_frac=1.0, num_corrupt=4, rounds=25, local_ep=1, bs=64, client_lr=0.01, server_lr=0.01, target_class=7, poison_frac=0.3, pattern_type='plus', theta=8, theta_ld=10, snap=1, device='cuda:4', num_workers=0, dense_ratio=0.25, anneal_factor=0.0001, se_threshold=0.0001, non_iid=False, debug=False, beta=0.5, attack='badnet', aggr='avg', aggr_server='alignins', lr_decay=0.99, momentum=0.9, mask_init='ERK', wd=0.0001, same_mask=1, cease_poison=100000, exp_name_extra='', super_power=False, clean=False, sparsity=0.3, lambda_s=1.0, lambda_c=1.0, split_point='layer3', num_target=10, exp_name='iid_pr(0.3)')
+25
+2026-01-21 23:13:57,477 [MainThread  ] [INFO ]  build client:0 mal:1 data_num:3006
+2026-01-21 23:13:57,524 [MainThread  ] [INFO ]  build client:1 mal:1 data_num:3005
+2026-01-21 23:13:57,572 [MainThread  ] [INFO ]  build client:2 mal:1 data_num:3003
+2026-01-21 23:13:57,620 [MainThread  ] [INFO ]  build client:3 mal:1 data_num:3002
+2026-01-21 23:13:57,627 [MainThread  ] [INFO ]  build client:4 mal:0 data_num:3002
+2026-01-21 23:13:57,634 [MainThread  ] [INFO ]  build client:5 mal:0 data_num:3001
+2026-01-21 23:13:57,641 [MainThread  ] [INFO ]  build client:6 mal:0 data_num:3001
+2026-01-21 23:13:57,647 [MainThread  ] [INFO ]  build client:7 mal:0 data_num:3001
+2026-01-21 23:13:57,654 [MainThread  ] [INFO ]  build client:8 mal:0 data_num:3001
+2026-01-21 23:13:57,660 [MainThread  ] [INFO ]  build client:9 mal:0 data_num:3000
+2026-01-21 23:13:57,667 [MainThread  ] [INFO ]  build client:10 mal:0 data_num:3000
+2026-01-21 23:13:57,673 [MainThread  ] [INFO ]  build client:11 mal:0 data_num:2998
+2026-01-21 23:13:57,680 [MainThread  ] [INFO ]  build client:12 mal:0 data_num:2998
+2026-01-21 23:13:57,686 [MainThread  ] [INFO ]  build client:13 mal:0 data_num:2998
+2026-01-21 23:13:57,693 [MainThread  ] [INFO ]  build client:14 mal:0 data_num:2998
+2026-01-21 23:13:57,699 [MainThread  ] [INFO ]  build client:15 mal:0 data_num:2998
+2026-01-21 23:13:57,705 [MainThread  ] [INFO ]  build client:16 mal:0 data_num:2998
+2026-01-21 23:13:57,712 [MainThread  ] [INFO ]  build client:17 mal:0 data_num:2998
+2026-01-21 23:13:57,718 [MainThread  ] [INFO ]  build client:18 mal:0 data_num:2996
+2026-01-21 23:13:57,724 [MainThread  ] [INFO ]  build client:19 mal:0 data_num:2996
+2026-01-21 23:13:57,724 [MainThread  ] [INFO ]  --------round 1 ------------
+mean|client_grad| 0.016910118982195854
+local epoch 0 	 client: 0 	 mal: 1 	 loss: 1.92723167 	 time: 2.41
+local epoch 0 	 client: 1 	 mal: 1 	 loss: 1.89230824 	 time: 1.41
+local epoch 0 	 client: 2 	 mal: 1 	 loss: 1.99973798 	 time: 1.35
+local epoch 0 	 client: 3 	 mal: 1 	 loss: 2.10587668 	 time: 1.35
+local epoch 0 	 client: 4 	 mal: 0 	 loss: 1.98711574 	 time: 1.35
+local epoch 0 	 client: 5 	 mal: 0 	 loss: 2.28389192 	 time: 1.35
+local epoch 0 	 client: 6 	 mal: 0 	 loss: 2.28706646 	 time: 1.35
+local epoch 0 	 client: 7 	 mal: 0 	 loss: 2.29165173 	 time: 1.35
+local epoch 0 	 client: 8 	 mal: 0 	 loss: 2.28743267 	 time: 1.35
+local epoch 0 	 client: 9 	 mal: 0 	 loss: 2.28442144 	 time: 1.35
+local epoch 0 	 client: 10 	 mal: 0 	 loss: 2.29344773 	 time: 1.36
+local epoch 0 	 client: 11 	 mal: 0 	 loss: 2.28671193 	 time: 1.36
+local epoch 0 	 client: 12 	 mal: 0 	 loss: 2.24176455 	 time: 1.36
+local epoch 0 	 client: 13 	 mal: 0 	 loss: 2.07823420 	 time: 1.38
+local epoch 0 	 client: 14 	 mal: 0 	 loss: 2.29592156 	 time: 1.36
+local epoch 0 	 client: 15 	 mal: 0 	 loss: 2.28377390 	 time: 1.36
+local epoch 0 	 client: 16 	 mal: 0 	 loss: 2.28318977 	 time: 1.45
+local epoch 0 	 client: 17 	 mal: 0 	 loss: 2.27676392 	 time: 1.39
+local epoch 0 	 client: 18 	 mal: 0 	 loss: 2.28715324 	 time: 1.38
+local epoch 0 	 client: 19 	 mal: 0 	 loss: 2.26492405 	 time: 1.37
+2026-01-21 23:14:29,667 [MainThread  ] [INFO ]  ---------Test 1 ------------
+[DBG rnd=1] logits mean=0.0327, std=0.7768, maxlogit mean=0.7449
+[DBG rnd=1] probs max mean=0.1684, pred entropy mean=2.1838
+[DBG rnd=1] preds bincount=[0, 0, 0, 0, 0, 4, 60, 0, 0, 0]
+2026-01-21 23:14:38,954 [MainThread  ] [INFO ]  Clean ACC:              0.0985
+2026-01-21 23:14:38,956 [MainThread  ] [INFO ]  Attack Success Ratio:   0.0000
+2026-01-21 23:14:38,956 [MainThread  ] [INFO ]  Robustness ACC:           0.1086
+2026-01-21 23:14:38,956 [MainThread  ] [INFO ]  ------------------------------
+2026-01-21 23:14:38,956 [MainThread  ] [INFO ]  --------round 2 ------------
+mean|client_grad| 0.01310401875525713
+local epoch 0 	 client: 0 	 mal: 1 	 loss: 1.72017348 	 time: 1.37
+local epoch 0 	 client: 1 	 mal: 1 	 loss: 1.69556558 	 time: 1.36
+local epoch 0 	 client: 2 	 mal: 1 	 loss: 1.58776164 	 time: 1.36
+local epoch 0 	 client: 3 	 mal: 1 	 loss: 1.90257633 	 time: 1.37
+local epoch 0 	 client: 4 	 mal: 0 	 loss: 2.28743124 	 time: 1.36
+local epoch 0 	 client: 5 	 mal: 0 	 loss: 1.81456876 	 time: 1.37
+local epoch 0 	 client: 6 	 mal: 0 	 loss: 2.02536392 	 time: 1.36
+local epoch 0 	 client: 7 	 mal: 0 	 loss: 2.28074145 	 time: 1.43
+local epoch 0 	 client: 8 	 mal: 0 	 loss: 1.15571630 	 time: 1.37
+local epoch 0 	 client: 9 	 mal: 0 	 loss: 1.89859986 	 time: 1.36
+local epoch 0 	 client: 10 	 mal: 0 	 loss: 2.37508607 	 time: 1.36
+local epoch 0 	 client: 11 	 mal: 0 	 loss: 1.83702087 	 time: 1.37
+local epoch 0 	 client: 12 	 mal: 0 	 loss: 2.21654391 	 time: 1.40
+local epoch 0 	 client: 13 	 mal: 0 	 loss: 2.43177819 	 time: 1.37
+local epoch 0 	 client: 14 	 mal: 0 	 loss: 2.29009533 	 time: 1.38
+local epoch 0 	 client: 15 	 mal: 0 	 loss: 2.14289379 	 time: 1.41
+local epoch 0 	 client: 16 	 mal: 0 	 loss: 1.69650745 	 time: 2.26
+local epoch 0 	 client: 17 	 mal: 0 	 loss: 1.51415193 	 time: 1.38
+local epoch 0 	 client: 18 	 mal: 0 	 loss: 1.89725327 	 time: 1.46
+local epoch 0 	 client: 19 	 mal: 0 	 loss: 1.52654850 	 time: 2.01
+2026-01-21 23:15:11,290 [MainThread  ] [INFO ]  ---------Test 2 ------------
+[DBG rnd=2] logits mean=0.0254, std=0.4700, maxlogit mean=0.7475
+[DBG rnd=2] probs max mean=0.1863, pred entropy mean=2.2107
+[DBG rnd=2] preds bincount=[0, 0, 0, 0, 64, 0, 0, 0, 0, 0]
+2026-01-21 23:15:19,883 [MainThread  ] [INFO ]  Clean ACC:              0.0982
+2026-01-21 23:15:19,883 [MainThread  ] [INFO ]  Attack Success Ratio:   0.0000
+2026-01-21 23:15:19,883 [MainThread  ] [INFO ]  Robustness ACC:           0.1095
+2026-01-21 23:15:19,883 [MainThread  ] [INFO ]  ------------------------------
+2026-01-21 23:15:19,884 [MainThread  ] [INFO ]  --------round 3 ------------
+mean|client_grad| 0.008087676018476486
+local epoch 0 	 client: 0 	 mal: 1 	 loss: 1.61837947 	 time: 1.37
+local epoch 0 	 client: 1 	 mal: 1 	 loss: 1.44222856 	 time: 1.36
+local epoch 0 	 client: 2 	 mal: 1 	 loss: 1.17900693 	 time: 1.36
+local epoch 0 	 client: 3 	 mal: 1 	 loss: 1.05716789 	 time: 1.36
+local epoch 0 	 client: 4 	 mal: 0 	 loss: 1.17447174 	 time: 1.36
+local epoch 0 	 client: 5 	 mal: 0 	 loss: 0.88355565 	 time: 1.36
+local epoch 0 	 client: 6 	 mal: 0 	 loss: 0.85600835 	 time: 1.36
+local epoch 0 	 client: 7 	 mal: 0 	 loss: 0.80378437 	 time: 1.36
+local epoch 0 	 client: 8 	 mal: 0 	 loss: 0.81404078 	 time: 1.42
+local epoch 0 	 client: 9 	 mal: 0 	 loss: 1.16922653 	 time: 1.37
+local epoch 0 	 client: 10 	 mal: 0 	 loss: 1.42725301 	 time: 1.40
+local epoch 0 	 client: 11 	 mal: 0 	 loss: 0.58919823 	 time: 1.91
+local epoch 0 	 client: 12 	 mal: 0 	 loss: 1.09700310 	 time: 1.63
+local epoch 0 	 client: 13 	 mal: 0 	 loss: 0.99038404 	 time: 1.37
+local epoch 0 	 client: 14 	 mal: 0 	 loss: 0.67648518 	 time: 1.36
+local epoch 0 	 client: 15 	 mal: 0 	 loss: 1.01778579 	 time: 1.43
+local epoch 0 	 client: 16 	 mal: 0 	 loss: 1.57755625 	 time: 1.39
+local epoch 0 	 client: 17 	 mal: 0 	 loss: 0.78117353 	 time: 1.45
+local epoch 0 	 client: 18 	 mal: 0 	 loss: 0.44125146 	 time: 1.39
+local epoch 0 	 client: 19 	 mal: 0 	 loss: 2.21928620 	 time: 1.36
+2026-01-21 23:15:51,492 [MainThread  ] [INFO ]  ---------Test 3 ------------
+[DBG rnd=3] logits mean=0.0290, std=0.4126, maxlogit mean=0.9121
+[DBG rnd=3] probs max mean=0.2254, pred entropy mean=2.1998
+[DBG rnd=3] preds bincount=[0, 63, 0, 0, 0, 0, 0, 0, 0, 1]
+2026-01-21 23:16:00,113 [MainThread  ] [INFO ]  Clean ACC:              0.1175
+2026-01-21 23:16:00,114 [MainThread  ] [INFO ]  Attack Success Ratio:   0.0000
+2026-01-21 23:16:00,114 [MainThread  ] [INFO ]  Robustness ACC:           0.1314
+2026-01-21 23:16:00,114 [MainThread  ] [INFO ]  ------------------------------
+2026-01-21 23:16:00,114 [MainThread  ] [INFO ]  --------round 4 ------------
+mean|client_grad| 0.00834380928426981
+local epoch 0 	 client: 0 	 mal: 1 	 loss: 0.61835277 	 time: 1.55
+local epoch 0 	 client: 1 	 mal: 1 	 loss: 0.72480065 	 time: 2.02
+local epoch 0 	 client: 2 	 mal: 1 	 loss: 0.55018324 	 time: 1.51
+local epoch 0 	 client: 3 	 mal: 1 	 loss: 0.41818631 	 time: 1.36
+local epoch 0 	 client: 4 	 mal: 0 	 loss: 1.08336210 	 time: 1.37
+local epoch 0 	 client: 5 	 mal: 0 	 loss: 0.57525307 	 time: 1.36
+local epoch 0 	 client: 6 	 mal: 0 	 loss: 0.67488664 	 time: 1.37
+local epoch 0 	 client: 7 	 mal: 0 	 loss: 1.23550177 	 time: 1.36
+local epoch 0 	 client: 8 	 mal: 0 	 loss: 0.55580550 	 time: 1.46
+local epoch 0 	 client: 9 	 mal: 0 	 loss: 0.66233158 	 time: 1.38
+local epoch 0 	 client: 10 	 mal: 0 	 loss: 0.55281740 	 time: 1.37
+local epoch 0 	 client: 11 	 mal: 0 	 loss: 0.60592800 	 time: 1.36
+local epoch 0 	 client: 12 	 mal: 0 	 loss: 1.13574243 	 time: 1.36
+local epoch 0 	 client: 13 	 mal: 0 	 loss: 0.60369015 	 time: 1.37
+local epoch 0 	 client: 14 	 mal: 0 	 loss: 0.49847212 	 time: 1.36
+local epoch 0 	 client: 15 	 mal: 0 	 loss: 0.74426222 	 time: 1.44
+local epoch 0 	 client: 16 	 mal: 0 	 loss: 0.63987261 	 time: 1.41
+local epoch 0 	 client: 17 	 mal: 0 	 loss: 2.26970196 	 time: 1.36
+local epoch 0 	 client: 18 	 mal: 0 	 loss: 0.83431500 	 time: 1.37
+local epoch 0 	 client: 19 	 mal: 0 	 loss: 0.59095174 	 time: 1.37
+2026-01-21 23:16:31,950 [MainThread  ] [INFO ]  ---------Test 4 ------------
+[DBG rnd=4] logits mean=0.0294, std=0.3277, maxlogit mean=0.5814
+[DBG rnd=4] probs max mean=0.1672, pred entropy mean=2.2483
+[DBG rnd=4] preds bincount=[5, 35, 0, 0, 0, 4, 0, 20, 0, 0]
+2026-01-21 23:16:41,031 [MainThread  ] [INFO ]  Clean ACC:              0.2711
+2026-01-21 23:16:41,031 [MainThread  ] [INFO ]  Attack Success Ratio:   0.2109
+2026-01-21 23:16:41,031 [MainThread  ] [INFO ]  Robustness ACC:           0.2136
+2026-01-21 23:16:41,031 [MainThread  ] [INFO ]  ------------------------------
+2026-01-21 23:16:41,031 [MainThread  ] [INFO ]  --------round 5 ------------
+mean|client_grad| 0.011658339761197567
+local epoch 0 	 client: 0 	 mal: 1 	 loss: 0.45998284 	 time: 1.37
+local epoch 0 	 client: 1 	 mal: 1 	 loss: 0.41541240 	 time: 1.36
+local epoch 0 	 client: 2 	 mal: 1 	 loss: 0.42765722 	 time: 1.37
+local epoch 0 	 client: 3 	 mal: 1 	 loss: 0.60330468 	 time: 1.36
+local epoch 0 	 client: 4 	 mal: 0 	 loss: 0.39268911 	 time: 1.41
+local epoch 0 	 client: 5 	 mal: 0 	 loss: 0.34758231 	 time: 1.36
+local epoch 0 	 client: 6 	 mal: 0 	 loss: 0.55367285 	 time: 1.36
+local epoch 0 	 client: 7 	 mal: 0 	 loss: 0.66891360 	 time: 1.44
+local epoch 0 	 client: 8 	 mal: 0 	 loss: 0.47080678 	 time: 1.38
+local epoch 0 	 client: 9 	 mal: 0 	 loss: 0.63215357 	 time: 1.37
+local epoch 0 	 client: 10 	 mal: 0 	 loss: 0.39145023 	 time: 1.36
+local epoch 0 	 client: 11 	 mal: 0 	 loss: 0.45377448 	 time: 1.46
+local epoch 0 	 client: 12 	 mal: 0 	 loss: 0.66049492 	 time: 1.37
+local epoch 0 	 client: 13 	 mal: 0 	 loss: 0.21530980 	 time: 1.38
+local epoch 0 	 client: 14 	 mal: 0 	 loss: 0.54428202 	 time: 1.36
+local epoch 0 	 client: 15 	 mal: 0 	 loss: 0.46186599 	 time: 1.45
+local epoch 0 	 client: 16 	 mal: 0 	 loss: 0.73863125 	 time: 1.39
+local epoch 0 	 client: 17 	 mal: 0 	 loss: 0.34256354 	 time: 1.37
+local epoch 0 	 client: 18 	 mal: 0 	 loss: 0.48129439 	 time: 1.36
+local epoch 0 	 client: 19 	 mal: 0 	 loss: 0.52717012 	 time: 1.39
+2026-01-21 23:17:11,936 [MainThread  ] [INFO ]  ---------Test 5 ------------
+[DBG rnd=5] logits mean=0.0123, std=0.5464, maxlogit mean=1.2275
+[DBG rnd=5] probs max mean=0.3002, pred entropy mean=2.0769
+[DBG rnd=5] preds bincount=[1, 62, 0, 0, 1, 0, 0, 0, 0, 0]
+2026-01-21 23:17:21,089 [MainThread  ] [INFO ]  Clean ACC:              0.1519
+2026-01-21 23:17:21,090 [MainThread  ] [INFO ]  Attack Success Ratio:   0.0001
+2026-01-21 23:17:21,090 [MainThread  ] [INFO ]  Robustness ACC:           0.1675
+2026-01-21 23:17:21,090 [MainThread  ] [INFO ]  ------------------------------
+2026-01-21 23:17:21,090 [MainThread  ] [INFO ]  --------round 6 ------------
+mean|client_grad| 0.022229289636015892
+local epoch 0 	 client: 0 	 mal: 1 	 loss: 0.61254555 	 time: 1.37
+local epoch 0 	 client: 1 	 mal: 1 	 loss: 0.40058345 	 time: 1.36
+local epoch 0 	 client: 2 	 mal: 1 	 loss: 0.24019304 	 time: 1.36
+local epoch 0 	 client: 3 	 mal: 1 	 loss: 0.64608395 	 time: 1.40
+local epoch 0 	 client: 4 	 mal: 0 	 loss: 0.50389308 	 time: 1.37
+local epoch 0 	 client: 5 	 mal: 0 	 loss: 0.79234022 	 time: 1.36
+local epoch 0 	 client: 6 	 mal: 0 	 loss: 0.48180580 	 time: 1.36
+local epoch 0 	 client: 7 	 mal: 0 	 loss: 0.42303488 	 time: 1.36
+local epoch 0 	 client: 8 	 mal: 0 	 loss: 0.26508278 	 time: 1.41
+local epoch 0 	 client: 9 	 mal: 0 	 loss: 0.75145245 	 time: 1.37
+local epoch 0 	 client: 10 	 mal: 0 	 loss: 0.46488351 	 time: 1.44
+local epoch 0 	 client: 11 	 mal: 0 	 loss: 0.55396289 	 time: 1.39
+local epoch 0 	 client: 12 	 mal: 0 	 loss: 0.58501172 	 time: 1.94
+local epoch 0 	 client: 13 	 mal: 0 	 loss: 0.42054605 	 time: 1.99
+local epoch 0 	 client: 14 	 mal: 0 	 loss: 0.40861154 	 time: 1.77
+local epoch 0 	 client: 15 	 mal: 0 	 loss: 0.42108917 	 time: 1.35
+local epoch 0 	 client: 16 	 mal: 0 	 loss: 0.42909250 	 time: 1.36
+local epoch 0 	 client: 17 	 mal: 0 	 loss: 0.60331696 	 time: 1.37
+local epoch 0 	 client: 18 	 mal: 0 	 loss: 0.34728777 	 time: 1.37
+local epoch 0 	 client: 19 	 mal: 0 	 loss: 0.38532841 	 time: 1.45
+2026-01-21 23:17:53,558 [MainThread  ] [INFO ]  ---------Test 6 ------------
+[DBG rnd=6] logits mean=0.0275, std=0.4259, maxlogit mean=0.7052
+[DBG rnd=6] probs max mean=0.1881, pred entropy mean=2.2126
+[DBG rnd=6] preds bincount=[10, 23, 0, 7, 7, 8, 7, 0, 0, 2]
+2026-01-21 23:18:02,185 [MainThread  ] [INFO ]  Clean ACC:              0.5438
+2026-01-21 23:18:02,185 [MainThread  ] [INFO ]  Attack Success Ratio:   0.0000
+2026-01-21 23:18:02,185 [MainThread  ] [INFO ]  Robustness ACC:           0.6006
+2026-01-21 23:18:02,185 [MainThread  ] [INFO ]  ------------------------------
+2026-01-21 23:18:02,185 [MainThread  ] [INFO ]  --------round 7 ------------
+mean|client_grad| 0.02085038460791111
+local epoch 0 	 client: 0 	 mal: 1 	 loss: 0.24940504 	 time: 1.37
+local epoch 0 	 client: 1 	 mal: 1 	 loss: 0.57761163 	 time: 1.46
+local epoch 0 	 client: 2 	 mal: 1 	 loss: 0.32088706 	 time: 1.46
+local epoch 0 	 client: 3 	 mal: 1 	 loss: 0.17538665 	 time: 1.39
+local epoch 0 	 client: 4 	 mal: 0 	 loss: 0.33937401 	 time: 1.36
+local epoch 0 	 client: 5 	 mal: 0 	 loss: 0.36783352 	 time: 1.36
+local epoch 0 	 client: 6 	 mal: 0 	 loss: 0.88864249 	 time: 1.36
+local epoch 0 	 client: 7 	 mal: 0 	 loss: 0.30556074 	 time: 1.35
+local epoch 0 	 client: 8 	 mal: 0 	 loss: 0.19475320 	 time: 1.36
+local epoch 0 	 client: 9 	 mal: 0 	 loss: 0.31834316 	 time: 1.51
+local epoch 0 	 client: 10 	 mal: 0 	 loss: 0.59519720 	 time: 2.00
+local epoch 0 	 client: 11 	 mal: 0 	 loss: 0.20295373 	 time: 1.41
+local epoch 0 	 client: 12 	 mal: 0 	 loss: 0.17252214 	 time: 1.36
+local epoch 0 	 client: 13 	 mal: 0 	 loss: 0.22869395 	 time: 1.41
+local epoch 0 	 client: 14 	 mal: 0 	 loss: 0.23111814 	 time: 1.36
+local epoch 0 	 client: 15 	 mal: 0 	 loss: 0.31389564 	 time: 1.45
+local epoch 0 	 client: 16 	 mal: 0 	 loss: 0.66303664 	 time: 1.37
+local epoch 0 	 client: 17 	 mal: 0 	 loss: 0.29064259 	 time: 1.39
+local epoch 0 	 client: 18 	 mal: 0 	 loss: 0.51924247 	 time: 1.36
+local epoch 0 	 client: 19 	 mal: 0 	 loss: 0.29378653 	 time: 1.43
+2026-01-21 23:18:34,103 [MainThread  ] [INFO ]  ---------Test 7 ------------
+[DBG rnd=7] logits mean=0.0192, std=0.6140, maxlogit mean=1.0365
+[DBG rnd=7] probs max mean=0.2416, pred entropy mean=2.1133
+[DBG rnd=7] preds bincount=[6, 13, 6, 2, 1, 6, 1, 24, 0, 5]
+2026-01-21 23:18:42,769 [MainThread  ] [INFO ]  Clean ACC:              0.5339
+2026-01-21 23:18:42,769 [MainThread  ] [INFO ]  Attack Success Ratio:   0.3693
+2026-01-21 23:18:42,769 [MainThread  ] [INFO ]  Robustness ACC:           0.4495
+2026-01-21 23:18:42,769 [MainThread  ] [INFO ]  ------------------------------
+2026-01-21 23:18:42,769 [MainThread  ] [INFO ]  --------round 8 ------------
+mean|client_grad| 0.012854182161390781
+local epoch 0 	 client: 0 	 mal: 1 	 loss: 0.52764082 	 time: 1.84
+local epoch 0 	 client: 1 	 mal: 1 	 loss: 0.42264873 	 time: 2.00
+local epoch 0 	 client: 2 	 mal: 1 	 loss: 0.28011745 	 time: 1.36
+local epoch 0 	 client: 3 	 mal: 1 	 loss: 0.32957664 	 time: 1.37
+local epoch 0 	 client: 4 	 mal: 0 	 loss: 0.15747766 	 time: 1.36
+local epoch 0 	 client: 5 	 mal: 0 	 loss: 0.29910308 	 time: 1.42
+local epoch 0 	 client: 6 	 mal: 0 	 loss: 0.28851122 	 time: 1.37
+local epoch 0 	 client: 7 	 mal: 0 	 loss: 0.19882992 	 time: 1.41
+local epoch 0 	 client: 8 	 mal: 0 	 loss: 0.57702160 	 time: 1.37
+local epoch 0 	 client: 9 	 mal: 0 	 loss: 0.67083430 	 time: 1.36
+local epoch 0 	 client: 10 	 mal: 0 	 loss: 0.54673618 	 time: 1.36
+local epoch 0 	 client: 11 	 mal: 0 	 loss: 0.18689653 	 time: 1.36
+local epoch 0 	 client: 12 	 mal: 0 	 loss: 0.31738934 	 time: 1.45
+local epoch 0 	 client: 13 	 mal: 0 	 loss: 0.09608740 	 time: 1.37
+local epoch 0 	 client: 14 	 mal: 0 	 loss: 0.44165456 	 time: 1.36
+local epoch 0 	 client: 15 	 mal: 0 	 loss: 0.10348851 	 time: 1.36
+local epoch 0 	 client: 16 	 mal: 0 	 loss: 0.29864037 	 time: 1.44
+local epoch 0 	 client: 17 	 mal: 0 	 loss: 0.35292688 	 time: 1.39
+local epoch 0 	 client: 18 	 mal: 0 	 loss: 0.28736669 	 time: 1.38
+local epoch 0 	 client: 19 	 mal: 0 	 loss: 0.26855403 	 time: 1.37
+2026-01-21 23:19:14,703 [MainThread  ] [INFO ]  ---------Test 8 ------------
+[DBG rnd=8] logits mean=0.0170, std=0.5821, maxlogit mean=1.1452
+[DBG rnd=8] probs max mean=0.2759, pred entropy mean=2.0807
+[DBG rnd=8] preds bincount=[7, 16, 3, 2, 11, 4, 9, 8, 0, 4]
+2026-01-21 23:19:24,383 [MainThread  ] [INFO ]  Clean ACC:              0.7127
+2026-01-21 23:19:24,384 [MainThread  ] [INFO ]  Attack Success Ratio:   0.0291
+2026-01-21 23:19:24,384 [MainThread  ] [INFO ]  Robustness ACC:           0.6991
+2026-01-21 23:19:24,384 [MainThread  ] [INFO ]  ------------------------------
+2026-01-21 23:19:24,384 [MainThread  ] [INFO ]  --------round 9 ------------
+mean|client_grad| 0.017586108297109604
+local epoch 0 	 client: 0 	 mal: 1 	 loss: 0.16746105 	 time: 1.37
+local epoch 0 	 client: 1 	 mal: 1 	 loss: 0.16003297 	 time: 1.36
+local epoch 0 	 client: 2 	 mal: 1 	 loss: 0.28530005 	 time: 1.37
+local epoch 0 	 client: 3 	 mal: 1 	 loss: 0.21097255 	 time: 1.36
+local epoch 0 	 client: 4 	 mal: 0 	 loss: 0.36047459 	 time: 1.36
+local epoch 0 	 client: 5 	 mal: 0 	 loss: 0.27421355 	 time: 1.37
+local epoch 0 	 client: 6 	 mal: 0 	 loss: 0.53448772 	 time: 1.42
+local epoch 0 	 client: 7 	 mal: 0 	 loss: 0.30883697 	 time: 1.36
+local epoch 0 	 client: 8 	 mal: 0 	 loss: 0.13971752 	 time: 1.41
+local epoch 0 	 client: 9 	 mal: 0 	 loss: 0.33889398 	 time: 1.36
+local epoch 0 	 client: 10 	 mal: 0 	 loss: 0.22014841 	 time: 1.43
+local epoch 0 	 client: 11 	 mal: 0 	 loss: 0.22870594 	 time: 1.37
+local epoch 0 	 client: 12 	 mal: 0 	 loss: 0.45579770 	 time: 1.36
+local epoch 0 	 client: 13 	 mal: 0 	 loss: 0.24081478 	 time: 1.36
+local epoch 0 	 client: 14 	 mal: 0 	 loss: 0.54569876 	 time: 1.36
+local epoch 0 	 client: 15 	 mal: 0 	 loss: 0.23043944 	 time: 1.40
+local epoch 0 	 client: 16 	 mal: 0 	 loss: 0.32517576 	 time: 1.36
+local epoch 0 	 client: 17 	 mal: 0 	 loss: 0.20055602 	 time: 1.39
+local epoch 0 	 client: 18 	 mal: 0 	 loss: 0.30670986 	 time: 2.03
+local epoch 0 	 client: 19 	 mal: 0 	 loss: 0.31621820 	 time: 1.69
+2026-01-21 23:19:56,045 [MainThread  ] [INFO ]  ---------Test 9 ------------
+[DBG rnd=9] logits mean=0.0149, std=0.6956, maxlogit mean=1.3571
+[DBG rnd=9] probs max mean=0.3158, pred entropy mean=1.9950
+[DBG rnd=9] preds bincount=[7, 15, 4, 2, 6, 7, 5, 9, 1, 8]
+2026-01-21 23:20:05,537 [MainThread  ] [INFO ]  Clean ACC:              0.7833
+2026-01-21 23:20:05,537 [MainThread  ] [INFO ]  Attack Success Ratio:   0.0500
+2026-01-21 23:20:05,537 [MainThread  ] [INFO ]  Robustness ACC:           0.7627
+2026-01-21 23:20:05,537 [MainThread  ] [INFO ]  ------------------------------
+2026-01-21 23:20:05,537 [MainThread  ] [INFO ]  --------round 10 ------------
+mean|client_grad| 0.01687644049525261
+local epoch 0 	 client: 0 	 mal: 1 	 loss: 0.31664747 	 time: 1.36
+local epoch 0 	 client: 1 	 mal: 1 	 loss: 0.20087121 	 time: 1.60
+local epoch 0 	 client: 2 	 mal: 1 	 loss: 0.21310174 	 time: 1.80
+local epoch 0 	 client: 3 	 mal: 1 	 loss: 0.13411102 	 time: 1.36
+local epoch 0 	 client: 4 	 mal: 0 	 loss: 0.29863441 	 time: 1.47
+local epoch 0 	 client: 5 	 mal: 0 	 loss: 0.46149570 	 time: 2.00
+local epoch 0 	 client: 6 	 mal: 0 	 loss: 0.26019514 	 time: 1.46
+local epoch 0 	 client: 7 	 mal: 0 	 loss: 0.16288009 	 time: 1.37
+local epoch 0 	 client: 8 	 mal: 0 	 loss: 0.28007513 	 time: 1.93
+local epoch 0 	 client: 9 	 mal: 0 	 loss: 0.38370058 	 time: 2.15
+local epoch 0 	 client: 10 	 mal: 0 	 loss: 0.33448598 	 time: 1.36
+local epoch 0 	 client: 11 	 mal: 0 	 loss: 0.40449241 	 time: 1.37
+local epoch 0 	 client: 12 	 mal: 0 	 loss: 0.23159200 	 time: 1.36
+local epoch 0 	 client: 13 	 mal: 0 	 loss: 0.16441776 	 time: 1.37
+local epoch 0 	 client: 14 	 mal: 0 	 loss: 0.28772837 	 time: 1.36
+local epoch 0 	 client: 15 	 mal: 0 	 loss: 0.31766269 	 time: 1.36
+local epoch 0 	 client: 16 	 mal: 0 	 loss: 0.21362232 	 time: 1.42
+local epoch 0 	 client: 17 	 mal: 0 	 loss: 0.14434320 	 time: 1.38
+local epoch 0 	 client: 18 	 mal: 0 	 loss: 0.11624019 	 time: 1.39
+local epoch 0 	 client: 19 	 mal: 0 	 loss: 0.12001915 	 time: 1.36
+2026-01-21 23:20:39,245 [MainThread  ] [INFO ]  ---------Test 10 ------------
+[DBG rnd=10] logits mean=0.0322, std=0.7964, maxlogit mean=1.5846
+[DBG rnd=10] probs max mean=0.3589, pred entropy mean=1.9012
+[DBG rnd=10] preds bincount=[8, 13, 4, 5, 8, 4, 6, 8, 1, 7]
+2026-01-21 23:20:47,905 [MainThread  ] [INFO ]  Clean ACC:              0.8086
+2026-01-21 23:20:47,905 [MainThread  ] [INFO ]  Attack Success Ratio:   0.0368
+2026-01-21 23:20:47,905 [MainThread  ] [INFO ]  Robustness ACC:           0.7941
+2026-01-21 23:20:47,905 [MainThread  ] [INFO ]  ------------------------------
+2026-01-21 23:20:47,905 [MainThread  ] [INFO ]  --------round 11 ------------
+mean|client_grad| 0.01739436201751232
+local epoch 0 	 client: 0 	 mal: 1 	 loss: 0.24268319 	 time: 1.36
+local epoch 0 	 client: 1 	 mal: 1 	 loss: 0.31590089 	 time: 1.72
+local epoch 0 	 client: 2 	 mal: 1 	 loss: 0.33932784 	 time: 2.00
+local epoch 0 	 client: 3 	 mal: 1 	 loss: 0.32931000 	 time: 1.43
+local epoch 0 	 client: 4 	 mal: 0 	 loss: 0.31823429 	 time: 1.46
+local epoch 0 	 client: 5 	 mal: 0 	 loss: 0.40406799 	 time: 1.44
+local epoch 0 	 client: 6 	 mal: 0 	 loss: 0.26548827 	 time: 1.39
+local epoch 0 	 client: 7 	 mal: 0 	 loss: 0.15313096 	 time: 1.36
+local epoch 0 	 client: 8 	 mal: 0 	 loss: 0.22036995 	 time: 1.36
+local epoch 0 	 client: 9 	 mal: 0 	 loss: 0.16055314 	 time: 1.36
+local epoch 0 	 client: 10 	 mal: 0 	 loss: 0.56815910 	 time: 1.36
+local epoch 0 	 client: 11 	 mal: 0 	 loss: 0.28717729 	 time: 1.36
+local epoch 0 	 client: 12 	 mal: 0 	 loss: 0.10778206 	 time: 1.36
+local epoch 0 	 client: 13 	 mal: 0 	 loss: 0.36409247 	 time: 1.41
+local epoch 0 	 client: 14 	 mal: 0 	 loss: 0.28165489 	 time: 1.36
+local epoch 0 	 client: 15 	 mal: 0 	 loss: 0.13813694 	 time: 1.36
+local epoch 0 	 client: 16 	 mal: 0 	 loss: 0.35438192 	 time: 1.36
+local epoch 0 	 client: 17 	 mal: 0 	 loss: 0.34209314 	 time: 1.36
+local epoch 0 	 client: 18 	 mal: 0 	 loss: 0.18081473 	 time: 1.63
+local epoch 0 	 client: 19 	 mal: 0 	 loss: 0.55993438 	 time: 2.06
+2026-01-21 23:21:21,001 [MainThread  ] [INFO ]  ---------Test 11 ------------
+[DBG rnd=11] logits mean=0.0271, std=0.9512, maxlogit mean=1.8983
+[DBG rnd=11] probs max mean=0.4190, pred entropy mean=1.7528
+[DBG rnd=11] preds bincount=[6, 14, 3, 4, 12, 6, 7, 7, 1, 4]
+2026-01-21 23:21:29,614 [MainThread  ] [INFO ]  Clean ACC:              0.8152
+2026-01-21 23:21:29,615 [MainThread  ] [INFO ]  Attack Success Ratio:   0.0302
+2026-01-21 23:21:29,615 [MainThread  ] [INFO ]  Robustness ACC:           0.8055
+2026-01-21 23:21:29,615 [MainThread  ] [INFO ]  ------------------------------
+2026-01-21 23:21:29,615 [MainThread  ] [INFO ]  --------round 12 ------------
+mean|client_grad| 0.017281370237469673
+local epoch 0 	 client: 0 	 mal: 1 	 loss: 0.34006870 	 time: 1.37
+local epoch 0 	 client: 1 	 mal: 1 	 loss: 0.29290798 	 time: 1.36
+local epoch 0 	 client: 2 	 mal: 1 	 loss: 0.48860958 	 time: 1.36
+local epoch 0 	 client: 3 	 mal: 1 	 loss: 0.46113676 	 time: 1.36
+local epoch 0 	 client: 4 	 mal: 0 	 loss: 0.13764971 	 time: 1.36
+local epoch 0 	 client: 5 	 mal: 0 	 loss: 0.38562095 	 time: 1.36
+local epoch 0 	 client: 6 	 mal: 0 	 loss: 0.19823384 	 time: 1.36
+local epoch 0 	 client: 7 	 mal: 0 	 loss: 0.31470993 	 time: 1.37
+local epoch 0 	 client: 8 	 mal: 0 	 loss: 0.25513312 	 time: 1.37
+local epoch 0 	 client: 9 	 mal: 0 	 loss: 0.28470507 	 time: 1.37
+local epoch 0 	 client: 10 	 mal: 0 	 loss: 0.52403396 	 time: 1.36
+local epoch 0 	 client: 11 	 mal: 0 	 loss: 0.42418942 	 time: 1.36
+local epoch 0 	 client: 12 	 mal: 0 	 loss: 0.12916355 	 time: 1.36
+local epoch 0 	 client: 13 	 mal: 0 	 loss: 0.25774747 	 time: 1.37
+local epoch 0 	 client: 14 	 mal: 0 	 loss: 0.09770858 	 time: 1.42
+local epoch 0 	 client: 15 	 mal: 0 	 loss: 0.26425156 	 time: 1.37
+local epoch 0 	 client: 16 	 mal: 0 	 loss: 0.45207155 	 time: 1.37
+local epoch 0 	 client: 17 	 mal: 0 	 loss: 0.17409596 	 time: 1.37
+local epoch 0 	 client: 18 	 mal: 0 	 loss: 0.29687467 	 time: 1.36
+local epoch 0 	 client: 19 	 mal: 0 	 loss: 0.18130513 	 time: 1.42
+2026-01-21 23:22:00,137 [MainThread  ] [INFO ]  ---------Test 12 ------------
+[DBG rnd=12] logits mean=0.0337, std=1.0282, maxlogit mean=2.0827
+[DBG rnd=12] probs max mean=0.4537, pred entropy mean=1.6663
+[DBG rnd=12] preds bincount=[6, 15, 3, 4, 11, 5, 6, 7, 2, 5]
+2026-01-21 23:22:09,264 [MainThread  ] [INFO ]  Clean ACC:              0.8441
+2026-01-21 23:22:09,264 [MainThread  ] [INFO ]  Attack Success Ratio:   0.0242
+2026-01-21 23:22:09,264 [MainThread  ] [INFO ]  Robustness ACC:           0.8373
+2026-01-21 23:22:09,264 [MainThread  ] [INFO ]  ------------------------------
+2026-01-21 23:22:09,264 [MainThread  ] [INFO ]  --------round 13 ------------
+mean|client_grad| 0.015884099528193474
+local epoch 0 	 client: 0 	 mal: 1 	 loss: 0.29846007 	 time: 1.37
+local epoch 0 	 client: 1 	 mal: 1 	 loss: 0.27542651 	 time: 1.36
+local epoch 0 	 client: 2 	 mal: 1 	 loss: 0.20044592 	 time: 1.36
+local epoch 0 	 client: 3 	 mal: 1 	 loss: 0.11261997 	 time: 1.36
+local epoch 0 	 client: 4 	 mal: 0 	 loss: 0.20696159 	 time: 1.35
+local epoch 0 	 client: 5 	 mal: 0 	 loss: 0.20205374 	 time: 1.36
+local epoch 0 	 client: 6 	 mal: 0 	 loss: 0.48492745 	 time: 1.36
+local epoch 0 	 client: 7 	 mal: 0 	 loss: 0.09994642 	 time: 1.37
+local epoch 0 	 client: 8 	 mal: 0 	 loss: 0.35685837 	 time: 1.36
+local epoch 0 	 client: 9 	 mal: 0 	 loss: 0.30269754 	 time: 1.36
+local epoch 0 	 client: 10 	 mal: 0 	 loss: 0.16384721 	 time: 1.36
+local epoch 0 	 client: 11 	 mal: 0 	 loss: 0.30673605 	 time: 1.36
+local epoch 0 	 client: 12 	 mal: 0 	 loss: 0.26997456 	 time: 1.86
+local epoch 0 	 client: 13 	 mal: 0 	 loss: 0.16057749 	 time: 1.75
+local epoch 0 	 client: 14 	 mal: 0 	 loss: 0.34526849 	 time: 1.43
+local epoch 0 	 client: 15 	 mal: 0 	 loss: 0.31382692 	 time: 1.37
+local epoch 0 	 client: 16 	 mal: 0 	 loss: 0.30433959 	 time: 1.36
+local epoch 0 	 client: 17 	 mal: 0 	 loss: 0.31331569 	 time: 1.46
+local epoch 0 	 client: 18 	 mal: 0 	 loss: 0.29143453 	 time: 1.37
+local epoch 0 	 client: 19 	 mal: 0 	 loss: 0.20945564 	 time: 1.36
+2026-01-21 23:22:40,867 [MainThread  ] [INFO ]  ---------Test 13 ------------
+[DBG rnd=13] logits mean=0.0336, std=1.1390, maxlogit mean=2.3609
+[DBG rnd=13] probs max mean=0.5023, pred entropy mean=1.5376
+[DBG rnd=13] preds bincount=[6, 16, 2, 4, 9, 6, 6, 7, 1, 7]
+2026-01-21 23:22:49,520 [MainThread  ] [INFO ]  Clean ACC:              0.8312
+2026-01-21 23:22:49,520 [MainThread  ] [INFO ]  Attack Success Ratio:   0.0145
+2026-01-21 23:22:49,520 [MainThread  ] [INFO ]  Robustness ACC:           0.8287
+2026-01-21 23:22:49,520 [MainThread  ] [INFO ]  ------------------------------
+2026-01-21 23:22:49,520 [MainThread  ] [INFO ]  --------round 14 ------------
+mean|client_grad| 0.018297484144568443
+local epoch 0 	 client: 0 	 mal: 1 	 loss: 0.14181928 	 time: 1.37
+local epoch 0 	 client: 1 	 mal: 1 	 loss: 0.20518476 	 time: 1.36
+local epoch 0 	 client: 2 	 mal: 1 	 loss: 0.21362258 	 time: 1.36
+local epoch 0 	 client: 3 	 mal: 1 	 loss: 0.28813115 	 time: 1.35
+local epoch 0 	 client: 4 	 mal: 0 	 loss: 0.12597695 	 time: 1.35
+local epoch 0 	 client: 5 	 mal: 0 	 loss: 0.13022763 	 time: 1.36
+local epoch 0 	 client: 6 	 mal: 0 	 loss: 0.09075086 	 time: 1.36
+local epoch 0 	 client: 7 	 mal: 0 	 loss: 0.28558549 	 time: 1.36
+local epoch 0 	 client: 8 	 mal: 0 	 loss: 0.13178189 	 time: 1.36
+local epoch 0 	 client: 9 	 mal: 0 	 loss: 0.08580651 	 time: 1.38
+local epoch 0 	 client: 10 	 mal: 0 	 loss: 0.17586632 	 time: 1.96
+local epoch 0 	 client: 11 	 mal: 0 	 loss: 0.05940805 	 time: 1.61
+local epoch 0 	 client: 12 	 mal: 0 	 loss: 0.34275806 	 time: 1.36
+local epoch 0 	 client: 13 	 mal: 0 	 loss: 0.13461299 	 time: 2.14
+local epoch 0 	 client: 14 	 mal: 0 	 loss: 0.13852483 	 time: 1.66
+local epoch 0 	 client: 15 	 mal: 0 	 loss: 0.45471883 	 time: 1.36
+local epoch 0 	 client: 16 	 mal: 0 	 loss: 0.16115810 	 time: 1.36
+local epoch 0 	 client: 17 	 mal: 0 	 loss: 0.15343167 	 time: 1.43
+local epoch 0 	 client: 18 	 mal: 0 	 loss: 0.16116783 	 time: 1.36
+local epoch 0 	 client: 19 	 mal: 0 	 loss: 0.23139197 	 time: 1.36
+2026-01-21 23:23:21,975 [MainThread  ] [INFO ]  ---------Test 14 ------------
+[DBG rnd=14] logits mean=0.0370, std=1.1411, maxlogit mean=2.3434
+[DBG rnd=14] probs max mean=0.5034, pred entropy mean=1.5636
+[DBG rnd=14] preds bincount=[6, 10, 5, 6, 10, 7, 6, 7, 1, 6]
+2026-01-21 23:23:30,598 [MainThread  ] [INFO ]  Clean ACC:              0.8901
+2026-01-21 23:23:30,599 [MainThread  ] [INFO ]  Attack Success Ratio:   0.0077
+2026-01-21 23:23:30,599 [MainThread  ] [INFO ]  Robustness ACC:           0.8919
+2026-01-21 23:23:30,599 [MainThread  ] [INFO ]  ------------------------------
+2026-01-21 23:23:30,599 [MainThread  ] [INFO ]  --------round 15 ------------
+mean|client_grad| 0.015021453611552715
+local epoch 0 	 client: 0 	 mal: 1 	 loss: 0.15878709 	 time: 1.37
+local epoch 0 	 client: 1 	 mal: 1 	 loss: 0.09628118 	 time: 1.39
+local epoch 0 	 client: 2 	 mal: 1 	 loss: 0.18133779 	 time: 2.05
+local epoch 0 	 client: 3 	 mal: 1 	 loss: 0.13325343 	 time: 1.81
+local epoch 0 	 client: 4 	 mal: 0 	 loss: 0.34683406 	 time: 1.36
+local epoch 0 	 client: 5 	 mal: 0 	 loss: 0.17634535 	 time: 1.36
+local epoch 0 	 client: 6 	 mal: 0 	 loss: 0.12253331 	 time: 1.36
+local epoch 0 	 client: 7 	 mal: 0 	 loss: 0.16046324 	 time: 1.36
+local epoch 0 	 client: 8 	 mal: 0 	 loss: 0.05886242 	 time: 1.36
+local epoch 0 	 client: 9 	 mal: 0 	 loss: 0.37345201 	 time: 1.36
+local epoch 0 	 client: 10 	 mal: 0 	 loss: 0.15033858 	 time: 1.37
+local epoch 0 	 client: 11 	 mal: 0 	 loss: 0.17556781 	 time: 1.36
+local epoch 0 	 client: 12 	 mal: 0 	 loss: 0.24806944 	 time: 1.36
+local epoch 0 	 client: 13 	 mal: 0 	 loss: 0.23764217 	 time: 1.37
+local epoch 0 	 client: 14 	 mal: 0 	 loss: 0.28222197 	 time: 1.42
+local epoch 0 	 client: 15 	 mal: 0 	 loss: 0.17820577 	 time: 1.36
+local epoch 0 	 client: 16 	 mal: 0 	 loss: 0.29610044 	 time: 1.43
+local epoch 0 	 client: 17 	 mal: 0 	 loss: 0.25457031 	 time: 1.63
+local epoch 0 	 client: 18 	 mal: 0 	 loss: 0.16774730 	 time: 1.90
+local epoch 0 	 client: 19 	 mal: 0 	 loss: 0.34879601 	 time: 1.36
+2026-01-21 23:24:03,292 [MainThread  ] [INFO ]  ---------Test 15 ------------
+[DBG rnd=15] logits mean=0.0398, std=1.2282, maxlogit mean=2.5635
+[DBG rnd=15] probs max mean=0.5387, pred entropy mean=1.4620
+[DBG rnd=15] preds bincount=[6, 12, 2, 6, 9, 7, 7, 7, 1, 7]
+2026-01-21 23:24:11,948 [MainThread  ] [INFO ]  Clean ACC:              0.8840
+2026-01-21 23:24:11,948 [MainThread  ] [INFO ]  Attack Success Ratio:   0.0031
+2026-01-21 23:24:11,948 [MainThread  ] [INFO ]  Robustness ACC:           0.8914
+2026-01-21 23:24:11,948 [MainThread  ] [INFO ]  ------------------------------
+2026-01-21 23:24:11,948 [MainThread  ] [INFO ]  --------round 16 ------------
+mean|client_grad| 0.02527783252298832
+local epoch 0 	 client: 0 	 mal: 1 	 loss: 0.23896755 	 time: 1.37
+local epoch 0 	 client: 1 	 mal: 1 	 loss: 0.26425171 	 time: 1.35
+local epoch 0 	 client: 2 	 mal: 1 	 loss: 0.16699299 	 time: 1.36
+local epoch 0 	 client: 3 	 mal: 1 	 loss: 0.06538957 	 time: 1.35
+local epoch 0 	 client: 4 	 mal: 0 	 loss: 0.17754807 	 time: 1.36
+local epoch 0 	 client: 5 	 mal: 0 	 loss: 0.29601738 	 time: 1.35
+local epoch 0 	 client: 6 	 mal: 0 	 loss: 0.25691095 	 time: 1.36
+local epoch 0 	 client: 7 	 mal: 0 	 loss: 0.16614342 	 time: 1.82
+local epoch 0 	 client: 8 	 mal: 0 	 loss: 0.17998007 	 time: 2.06
+local epoch 0 	 client: 9 	 mal: 0 	 loss: 0.28169399 	 time: 1.36
+local epoch 0 	 client: 10 	 mal: 0 	 loss: 0.25137120 	 time: 1.36
+local epoch 0 	 client: 11 	 mal: 0 	 loss: 0.18331428 	 time: 1.36
+local epoch 0 	 client: 12 	 mal: 0 	 loss: 0.10545642 	 time: 1.36
+local epoch 0 	 client: 13 	 mal: 0 	 loss: 0.19999015 	 time: 1.37
+local epoch 0 	 client: 14 	 mal: 0 	 loss: 0.24673268 	 time: 1.37
+local epoch 0 	 client: 15 	 mal: 0 	 loss: 0.03877379 	 time: 1.36
+local epoch 0 	 client: 16 	 mal: 0 	 loss: 0.15961097 	 time: 1.42
+local epoch 0 	 client: 17 	 mal: 0 	 loss: 0.14435363 	 time: 1.37
+local epoch 0 	 client: 18 	 mal: 0 	 loss: 0.17805444 	 time: 1.36
+local epoch 0 	 client: 19 	 mal: 0 	 loss: 0.06045739 	 time: 1.35
+2026-01-21 23:24:43,587 [MainThread  ] [INFO ]  ---------Test 16 ------------
+[DBG rnd=16] logits mean=0.0325, std=1.3023, maxlogit mean=2.7850
+[DBG rnd=16] probs max mean=0.5873, pred entropy mean=1.3358
+[DBG rnd=16] preds bincount=[6, 10, 4, 6, 9, 7, 7, 7, 1, 7]
+2026-01-21 23:24:52,993 [MainThread  ] [INFO ]  Clean ACC:              0.8914
+2026-01-21 23:24:52,993 [MainThread  ] [INFO ]  Attack Success Ratio:   0.0058
+2026-01-21 23:24:52,993 [MainThread  ] [INFO ]  Robustness ACC:           0.8936
+2026-01-21 23:24:52,993 [MainThread  ] [INFO ]  ------------------------------
+2026-01-21 23:24:52,993 [MainThread  ] [INFO ]  --------round 17 ------------
+mean|client_grad| 0.024736791849136353
+local epoch 0 	 client: 0 	 mal: 1 	 loss: 0.35834628 	 time: 1.37
+local epoch 0 	 client: 1 	 mal: 1 	 loss: 0.11711576 	 time: 1.36
+local epoch 0 	 client: 2 	 mal: 1 	 loss: 0.14874235 	 time: 1.36
+local epoch 0 	 client: 3 	 mal: 1 	 loss: 0.19644962 	 time: 1.36
+local epoch 0 	 client: 4 	 mal: 0 	 loss: 0.19535561 	 time: 1.36
+local epoch 0 	 client: 5 	 mal: 0 	 loss: 0.10560545 	 time: 1.36
+local epoch 0 	 client: 6 	 mal: 0 	 loss: 0.11599362 	 time: 1.36
+local epoch 0 	 client: 7 	 mal: 0 	 loss: 0.05412078 	 time: 1.36
+local epoch 0 	 client: 8 	 mal: 0 	 loss: 0.17565952 	 time: 1.36
+local epoch 0 	 client: 9 	 mal: 0 	 loss: 0.01789832 	 time: 1.36
+local epoch 0 	 client: 10 	 mal: 0 	 loss: 0.25438139 	 time: 1.36
+local epoch 0 	 client: 11 	 mal: 0 	 loss: 0.16936813 	 time: 1.36
+local epoch 0 	 client: 12 	 mal: 0 	 loss: 0.30595067 	 time: 1.75
+local epoch 0 	 client: 13 	 mal: 0 	 loss: 0.04951818 	 time: 1.91
+local epoch 0 	 client: 14 	 mal: 0 	 loss: 0.24273635 	 time: 1.37
+local epoch 0 	 client: 15 	 mal: 0 	 loss: 0.08389950 	 time: 1.36
+local epoch 0 	 client: 16 	 mal: 0 	 loss: 0.10184737 	 time: 1.88
+local epoch 0 	 client: 17 	 mal: 0 	 loss: 0.12708916 	 time: 1.97
+local epoch 0 	 client: 18 	 mal: 0 	 loss: 0.11472702 	 time: 1.36
+local epoch 0 	 client: 19 	 mal: 0 	 loss: 0.31091514 	 time: 1.36
+2026-01-21 23:25:25,685 [MainThread  ] [INFO ]  ---------Test 17 ------------
+[DBG rnd=17] logits mean=0.0229, std=1.3725, maxlogit mean=2.9649
+[DBG rnd=17] probs max mean=0.6197, pred entropy mean=1.2487
+[DBG rnd=17] preds bincount=[6, 10, 5, 6, 9, 7, 6, 7, 1, 7]
+2026-01-21 23:25:34,310 [MainThread  ] [INFO ]  Clean ACC:              0.8985
+2026-01-21 23:25:34,310 [MainThread  ] [INFO ]  Attack Success Ratio:   0.0085
+2026-01-21 23:25:34,310 [MainThread  ] [INFO ]  Robustness ACC:           0.8943
+2026-01-21 23:25:34,310 [MainThread  ] [INFO ]  ------------------------------
+2026-01-21 23:25:34,310 [MainThread  ] [INFO ]  --------round 18 ------------
+mean|client_grad| 0.01771477609872818
+local epoch 0 	 client: 0 	 mal: 1 	 loss: 0.26663089 	 time: 1.37
+local epoch 0 	 client: 1 	 mal: 1 	 loss: 0.23996979 	 time: 1.36
+local epoch 0 	 client: 2 	 mal: 1 	 loss: 0.20747876 	 time: 1.36
+local epoch 0 	 client: 3 	 mal: 1 	 loss: 0.08955287 	 time: 1.36
+local epoch 0 	 client: 4 	 mal: 0 	 loss: 0.09990564 	 time: 1.36
+local epoch 0 	 client: 5 	 mal: 0 	 loss: 0.11087985 	 time: 1.36
+local epoch 0 	 client: 6 	 mal: 0 	 loss: 0.26264730 	 time: 1.36
+local epoch 0 	 client: 7 	 mal: 0 	 loss: 0.16979694 	 time: 1.37
+local epoch 0 	 client: 8 	 mal: 0 	 loss: 0.14827748 	 time: 1.37
+local epoch 0 	 client: 9 	 mal: 0 	 loss: 0.24606080 	 time: 1.37
+local epoch 0 	 client: 10 	 mal: 0 	 loss: 0.13396487 	 time: 1.39
+local epoch 0 	 client: 11 	 mal: 0 	 loss: 0.22403517 	 time: 2.14
+local epoch 0 	 client: 12 	 mal: 0 	 loss: 0.10702518 	 time: 1.78
+local epoch 0 	 client: 13 	 mal: 0 	 loss: 0.13625669 	 time: 1.35
+local epoch 0 	 client: 14 	 mal: 0 	 loss: 0.11379240 	 time: 1.54
+local epoch 0 	 client: 15 	 mal: 0 	 loss: 0.10009556 	 time: 1.72
+local epoch 0 	 client: 16 	 mal: 0 	 loss: 0.08062681 	 time: 1.48
+local epoch 0 	 client: 17 	 mal: 0 	 loss: 0.10520069 	 time: 1.38
+local epoch 0 	 client: 18 	 mal: 0 	 loss: 0.32729152 	 time: 2.12
+local epoch 0 	 client: 19 	 mal: 0 	 loss: 0.32004336 	 time: 1.44
+2026-01-21 23:26:07,645 [MainThread  ] [INFO ]  ---------Test 18 ------------
+[DBG rnd=18] logits mean=0.0262, std=1.4247, maxlogit mean=3.0715
+[DBG rnd=18] probs max mean=0.6356, pred entropy mean=1.2122
+[DBG rnd=18] preds bincount=[6, 11, 3, 6, 9, 7, 7, 7, 1, 7]
+2026-01-21 23:26:17,835 [MainThread  ] [INFO ]  Clean ACC:              0.9130
+2026-01-21 23:26:17,835 [MainThread  ] [INFO ]  Attack Success Ratio:   0.0040
+2026-01-21 23:26:17,835 [MainThread  ] [INFO ]  Robustness ACC:           0.9166
+2026-01-21 23:26:17,835 [MainThread  ] [INFO ]  ------------------------------
+2026-01-21 23:26:17,836 [MainThread  ] [INFO ]  --------round 19 ------------
+mean|client_grad| 0.019482940435409546
+local epoch 0 	 client: 0 	 mal: 1 	 loss: 0.45676968 	 time: 1.37
+local epoch 0 	 client: 1 	 mal: 1 	 loss: 0.14731327 	 time: 1.39
+local epoch 0 	 client: 2 	 mal: 1 	 loss: 0.13805416 	 time: 2.06
+local epoch 0 	 client: 3 	 mal: 1 	 loss: 0.30739504 	 time: 1.44
+local epoch 0 	 client: 4 	 mal: 0 	 loss: 0.25190273 	 time: 1.39
+local epoch 0 	 client: 5 	 mal: 0 	 loss: 0.20998996 	 time: 2.16
+local epoch 0 	 client: 6 	 mal: 0 	 loss: 0.24448663 	 time: 1.58
+local epoch 0 	 client: 7 	 mal: 0 	 loss: 0.16670308 	 time: 1.36
+local epoch 0 	 client: 8 	 mal: 0 	 loss: 0.14431918 	 time: 1.98
+local epoch 0 	 client: 9 	 mal: 0 	 loss: 0.04867178 	 time: 1.41
+local epoch 0 	 client: 10 	 mal: 0 	 loss: 0.12060487 	 time: 1.40
+local epoch 0 	 client: 11 	 mal: 0 	 loss: 0.16257685 	 time: 1.56
+local epoch 0 	 client: 12 	 mal: 0 	 loss: 0.09942407 	 time: 1.94
+local epoch 0 	 client: 13 	 mal: 0 	 loss: 0.14062716 	 time: 1.57
+local epoch 0 	 client: 14 	 mal: 0 	 loss: 0.21039334 	 time: 1.43
+local epoch 0 	 client: 15 	 mal: 0 	 loss: 0.12436790 	 time: 2.25
+local epoch 0 	 client: 16 	 mal: 0 	 loss: 0.16207805 	 time: 1.81
+local epoch 0 	 client: 17 	 mal: 0 	 loss: 0.13751863 	 time: 1.37
+local epoch 0 	 client: 18 	 mal: 0 	 loss: 0.18025874 	 time: 1.66
+local epoch 0 	 client: 19 	 mal: 0 	 loss: 0.09362405 	 time: 1.83
+2026-01-21 23:26:54,628 [MainThread  ] [INFO ]  ---------Test 19 ------------
+[DBG rnd=19] logits mean=0.0250, std=1.4800, maxlogit mean=3.2140
+[DBG rnd=19] probs max mean=0.6644, pred entropy mean=1.1457
+[DBG rnd=19] preds bincount=[6, 10, 4, 6, 9, 7, 7, 7, 1, 7]
+2026-01-21 23:27:04,136 [MainThread  ] [INFO ]  Clean ACC:              0.9251
+2026-01-21 23:27:04,136 [MainThread  ] [INFO ]  Attack Success Ratio:   0.0042
+2026-01-21 23:27:04,136 [MainThread  ] [INFO ]  Robustness ACC:           0.9292
+2026-01-21 23:27:04,136 [MainThread  ] [INFO ]  ------------------------------
+2026-01-21 23:27:04,136 [MainThread  ] [INFO ]  --------round 20 ------------
+mean|client_grad| 0.029916392639279366
+local epoch 0 	 client: 0 	 mal: 1 	 loss: 0.11562233 	 time: 1.48
+local epoch 0 	 client: 1 	 mal: 1 	 loss: 0.17433371 	 time: 1.84
+local epoch 0 	 client: 2 	 mal: 1 	 loss: 0.10230529 	 time: 1.45
+local epoch 0 	 client: 3 	 mal: 1 	 loss: 0.18351598 	 time: 1.36
+local epoch 0 	 client: 4 	 mal: 0 	 loss: 0.17772126 	 time: 2.04
+local epoch 0 	 client: 5 	 mal: 0 	 loss: 0.15765852 	 time: 1.47
+local epoch 0 	 client: 6 	 mal: 0 	 loss: 0.28690454 	 time: 1.36
+local epoch 0 	 client: 7 	 mal: 0 	 loss: 0.22691640 	 time: 1.94
+local epoch 0 	 client: 8 	 mal: 0 	 loss: 0.36898834 	 time: 1.43
+local epoch 0 	 client: 9 	 mal: 0 	 loss: 0.16162972 	 time: 1.40
+local epoch 0 	 client: 10 	 mal: 0 	 loss: 0.15050708 	 time: 2.10
+local epoch 0 	 client: 11 	 mal: 0 	 loss: 0.11643808 	 time: 1.36
+local epoch 0 	 client: 12 	 mal: 0 	 loss: 0.05424416 	 time: 1.39
+local epoch 0 	 client: 13 	 mal: 0 	 loss: 0.19910526 	 time: 2.19
+local epoch 0 	 client: 14 	 mal: 0 	 loss: 0.13894826 	 time: 1.81
+local epoch 0 	 client: 15 	 mal: 0 	 loss: 0.08488883 	 time: 1.36
+local epoch 0 	 client: 16 	 mal: 0 	 loss: 0.14625260 	 time: 1.78
+local epoch 0 	 client: 17 	 mal: 0 	 loss: 0.16421959 	 time: 1.61
+local epoch 0 	 client: 18 	 mal: 0 	 loss: 0.31158242 	 time: 1.35
+local epoch 0 	 client: 19 	 mal: 0 	 loss: 0.03483658 	 time: 1.38
+2026-01-21 23:27:39,942 [MainThread  ] [INFO ]  ---------Test 20 ------------
+[DBG rnd=20] logits mean=0.0263, std=1.5608, maxlogit mean=3.4224
+[DBG rnd=20] probs max mean=0.6953, pred entropy mean=1.0551
+[DBG rnd=20] preds bincount=[6, 10, 4, 6, 9, 7, 7, 7, 1, 7]
+2026-01-21 23:27:49,803 [MainThread  ] [INFO ]  Clean ACC:              0.9293
+2026-01-21 23:27:49,803 [MainThread  ] [INFO ]  Attack Success Ratio:   0.0037
+2026-01-21 23:27:49,803 [MainThread  ] [INFO ]  Robustness ACC:           0.9326
+2026-01-21 23:27:49,803 [MainThread  ] [INFO ]  ------------------------------
+2026-01-21 23:27:49,803 [MainThread  ] [INFO ]  --------round 21 ------------
+mean|client_grad| 0.018916592001914978
+local epoch 0 	 client: 0 	 mal: 1 	 loss: 0.05167498 	 time: 1.72
+local epoch 0 	 client: 1 	 mal: 1 	 loss: 0.12357852 	 time: 1.96
+local epoch 0 	 client: 2 	 mal: 1 	 loss: 0.15727647 	 time: 1.57
+local epoch 0 	 client: 3 	 mal: 1 	 loss: 0.09786209 	 time: 1.36
+local epoch 0 	 client: 4 	 mal: 0 	 loss: 0.18049709 	 time: 1.96
+local epoch 0 	 client: 5 	 mal: 0 	 loss: 0.26431939 	 time: 1.77
+local epoch 0 	 client: 6 	 mal: 0 	 loss: 0.20994703 	 time: 1.36
+local epoch 0 	 client: 7 	 mal: 0 	 loss: 0.07129605 	 time: 1.84
+local epoch 0 	 client: 8 	 mal: 0 	 loss: 0.33091012 	 time: 1.94
+local epoch 0 	 client: 9 	 mal: 0 	 loss: 0.14330003 	 time: 1.36
+local epoch 0 	 client: 10 	 mal: 0 	 loss: 0.18477453 	 time: 1.40
+local epoch 0 	 client: 11 	 mal: 0 	 loss: 0.25814658 	 time: 1.93
+local epoch 0 	 client: 12 	 mal: 0 	 loss: 0.15995580 	 time: 1.37
+local epoch 0 	 client: 13 	 mal: 0 	 loss: 0.14112090 	 time: 1.40
+local epoch 0 	 client: 14 	 mal: 0 	 loss: 0.27386850 	 time: 2.32
+local epoch 0 	 client: 15 	 mal: 0 	 loss: 0.08358506 	 time: 1.40
+local epoch 0 	 client: 16 	 mal: 0 	 loss: 0.17734969 	 time: 1.43
+local epoch 0 	 client: 17 	 mal: 0 	 loss: 0.08121128 	 time: 1.83
+local epoch 0 	 client: 18 	 mal: 0 	 loss: 0.07885480 	 time: 1.36
+local epoch 0 	 client: 19 	 mal: 0 	 loss: 0.17366894 	 time: 1.36
+2026-01-21 23:28:26,090 [MainThread  ] [INFO ]  ---------Test 21 ------------
+[DBG rnd=21] logits mean=0.0299, std=1.6378, maxlogit mean=3.6167
+[DBG rnd=21] probs max mean=0.7252, pred entropy mean=0.9783
+[DBG rnd=21] preds bincount=[6, 10, 5, 6, 9, 7, 6, 7, 1, 7]
+2026-01-21 23:28:36,148 [MainThread  ] [INFO ]  Clean ACC:              0.9338
+2026-01-21 23:28:36,148 [MainThread  ] [INFO ]  Attack Success Ratio:   0.0045
+2026-01-21 23:28:36,148 [MainThread  ] [INFO ]  Robustness ACC:           0.9371
+2026-01-21 23:28:36,148 [MainThread  ] [INFO ]  ------------------------------
+2026-01-21 23:28:36,148 [MainThread  ] [INFO ]  --------round 22 ------------
+mean|client_grad| 0.02102135680615902
+local epoch 0 	 client: 0 	 mal: 1 	 loss: 0.10902086 	 time: 1.37
+local epoch 0 	 client: 1 	 mal: 1 	 loss: 0.13581927 	 time: 2.09
+local epoch 0 	 client: 2 	 mal: 1 	 loss: 0.10619543 	 time: 1.74
+local epoch 0 	 client: 3 	 mal: 1 	 loss: 0.15278688 	 time: 1.36
+local epoch 0 	 client: 4 	 mal: 0 	 loss: 0.39369082 	 time: 1.64
+local epoch 0 	 client: 5 	 mal: 0 	 loss: 0.19400138 	 time: 2.01
+local epoch 0 	 client: 6 	 mal: 0 	 loss: 0.17164753 	 time: 1.36
+local epoch 0 	 client: 7 	 mal: 0 	 loss: 0.13607681 	 time: 1.40
+local epoch 0 	 client: 8 	 mal: 0 	 loss: 0.14009902 	 time: 2.15
+local epoch 0 	 client: 9 	 mal: 0 	 loss: 0.22479728 	 time: 1.36
+local epoch 0 	 client: 10 	 mal: 0 	 loss: 0.26979554 	 time: 1.36
+local epoch 0 	 client: 11 	 mal: 0 	 loss: 0.14416103 	 time: 2.19
+local epoch 0 	 client: 12 	 mal: 0 	 loss: 0.05312661 	 time: 1.36
+local epoch 0 	 client: 13 	 mal: 0 	 loss: 0.14531565 	 time: 1.39
+local epoch 0 	 client: 14 	 mal: 0 	 loss: 0.19597130 	 time: 2.23
+local epoch 0 	 client: 15 	 mal: 0 	 loss: 0.20200700 	 time: 1.75
+local epoch 0 	 client: 16 	 mal: 0 	 loss: 0.19073586 	 time: 1.36
+local epoch 0 	 client: 17 	 mal: 0 	 loss: 0.17358385 	 time: 1.98
+local epoch 0 	 client: 18 	 mal: 0 	 loss: 0.34468168 	 time: 1.67
+local epoch 0 	 client: 19 	 mal: 0 	 loss: 0.13070898 	 time: 1.43
+2026-01-21 23:29:12,966 [MainThread  ] [INFO ]  ---------Test 22 ------------
+[DBG rnd=22] logits mean=0.0313, std=1.7037, maxlogit mean=3.7330
+[DBG rnd=22] probs max mean=0.7319, pred entropy mean=0.9410
+[DBG rnd=22] preds bincount=[6, 10, 4, 6, 9, 7, 7, 7, 1, 7]
+2026-01-21 23:29:22,679 [MainThread  ] [INFO ]  Clean ACC:              0.9287
+2026-01-21 23:29:22,679 [MainThread  ] [INFO ]  Attack Success Ratio:   0.0036
+2026-01-21 23:29:22,679 [MainThread  ] [INFO ]  Robustness ACC:           0.9354
+2026-01-21 23:29:22,679 [MainThread  ] [INFO ]  ------------------------------
+2026-01-21 23:29:22,679 [MainThread  ] [INFO ]  --------round 23 ------------
+mean|client_grad| 0.03210167959332466
+local epoch 0 	 client: 0 	 mal: 1 	 loss: 0.06987173 	 time: 1.92
+local epoch 0 	 client: 1 	 mal: 1 	 loss: 0.17172769 	 time: 1.43
+local epoch 0 	 client: 2 	 mal: 1 	 loss: 0.23511876 	 time: 1.37
+local epoch 0 	 client: 3 	 mal: 1 	 loss: 0.13456334 	 time: 2.02
+local epoch 0 	 client: 4 	 mal: 0 	 loss: 0.07625603 	 time: 1.36
+local epoch 0 	 client: 5 	 mal: 0 	 loss: 0.13193499 	 time: 1.36
+local epoch 0 	 client: 6 	 mal: 0 	 loss: 0.06072976 	 time: 2.23
+local epoch 0 	 client: 7 	 mal: 0 	 loss: 0.27928299 	 time: 1.36
+local epoch 0 	 client: 8 	 mal: 0 	 loss: 0.11214460 	 time: 1.36
+local epoch 0 	 client: 9 	 mal: 0 	 loss: 0.05631486 	 time: 1.82
+local epoch 0 	 client: 10 	 mal: 0 	 loss: 0.17652680 	 time: 1.73
+local epoch 0 	 client: 11 	 mal: 0 	 loss: 0.14755656 	 time: 1.36
+local epoch 0 	 client: 12 	 mal: 0 	 loss: 0.17658865 	 time: 1.95
+local epoch 0 	 client: 13 	 mal: 0 	 loss: 0.22266847 	 time: 1.70
+local epoch 0 	 client: 14 	 mal: 0 	 loss: 0.08534425 	 time: 1.36
+local epoch 0 	 client: 15 	 mal: 0 	 loss: 0.13765217 	 time: 1.40
+local epoch 0 	 client: 16 	 mal: 0 	 loss: 0.29625702 	 time: 2.03
+local epoch 0 	 client: 17 	 mal: 0 	 loss: 0.18291451 	 time: 1.64
+local epoch 0 	 client: 18 	 mal: 0 	 loss: 0.09805007 	 time: 1.36
+local epoch 0 	 client: 19 	 mal: 0 	 loss: 0.08144950 	 time: 1.93
+2026-01-21 23:29:58,800 [MainThread  ] [INFO ]  ---------Test 23 ------------
+[DBG rnd=23] logits mean=0.0281, std=1.7295, maxlogit mean=3.8629
+[DBG rnd=23] probs max mean=0.7572, pred entropy mean=0.8723
+[DBG rnd=23] preds bincount=[6, 10, 5, 6, 9, 7, 6, 7, 1, 7]
+2026-01-21 23:30:08,551 [MainThread  ] [INFO ]  Clean ACC:              0.9387
+2026-01-21 23:30:08,551 [MainThread  ] [INFO ]  Attack Success Ratio:   0.0036
+2026-01-21 23:30:08,551 [MainThread  ] [INFO ]  Robustness ACC:           0.9416
+2026-01-21 23:30:08,551 [MainThread  ] [INFO ]  ------------------------------
+2026-01-21 23:30:08,551 [MainThread  ] [INFO ]  --------round 24 ------------
+mean|client_grad| 0.030271023511886597
+local epoch 0 	 client: 0 	 mal: 1 	 loss: 0.23263948 	 time: 1.69
+local epoch 0 	 client: 1 	 mal: 1 	 loss: 0.11708734 	 time: 1.63
+local epoch 0 	 client: 2 	 mal: 1 	 loss: 0.37359685 	 time: 1.35
+local epoch 0 	 client: 3 	 mal: 1 	 loss: 0.20868433 	 time: 1.37
+local epoch 0 	 client: 4 	 mal: 0 	 loss: 0.25679263 	 time: 1.89
+local epoch 0 	 client: 5 	 mal: 0 	 loss: 0.17089656 	 time: 1.89
+local epoch 0 	 client: 6 	 mal: 0 	 loss: 0.12922779 	 time: 1.36
+local epoch 0 	 client: 7 	 mal: 0 	 loss: 0.10347146 	 time: 1.92
+local epoch 0 	 client: 8 	 mal: 0 	 loss: 0.12920536 	 time: 1.71
+local epoch 0 	 client: 9 	 mal: 0 	 loss: 0.04109834 	 time: 1.48
+local epoch 0 	 client: 10 	 mal: 0 	 loss: 0.06274382 	 time: 1.44
+local epoch 0 	 client: 11 	 mal: 0 	 loss: 0.23637933 	 time: 2.10
+local epoch 0 	 client: 12 	 mal: 0 	 loss: 0.15011081 	 time: 1.73
+local epoch 0 	 client: 13 	 mal: 0 	 loss: 0.05617743 	 time: 1.36
+local epoch 0 	 client: 14 	 mal: 0 	 loss: 0.14639109 	 time: 1.84
+local epoch 0 	 client: 15 	 mal: 0 	 loss: 0.23460601 	 time: 1.77
+local epoch 0 	 client: 16 	 mal: 0 	 loss: 0.12815902 	 time: 1.36
+local epoch 0 	 client: 17 	 mal: 0 	 loss: 0.14689665 	 time: 1.40
+local epoch 0 	 client: 18 	 mal: 0 	 loss: 0.06075911 	 time: 1.92
+local epoch 0 	 client: 19 	 mal: 0 	 loss: 0.11212910 	 time: 1.36
+2026-01-21 23:30:44,665 [MainThread  ] [INFO ]  ---------Test 24 ------------
+[DBG rnd=24] logits mean=0.0326, std=1.8327, maxlogit mean=4.0796
+[DBG rnd=24] probs max mean=0.7784, pred entropy mean=0.8088
+[DBG rnd=24] preds bincount=[6, 10, 5, 6, 9, 7, 6, 7, 1, 7]
+2026-01-21 23:30:54,312 [MainThread  ] [INFO ]  Clean ACC:              0.9423
+2026-01-21 23:30:54,313 [MainThread  ] [INFO ]  Attack Success Ratio:   0.0040
+2026-01-21 23:30:54,313 [MainThread  ] [INFO ]  Robustness ACC:           0.9446
+2026-01-21 23:30:54,313 [MainThread  ] [INFO ]  ------------------------------
+2026-01-21 23:30:54,313 [MainThread  ] [INFO ]  --------round 25 ------------
+mean|client_grad| 0.025888187810778618
+local epoch 0 	 client: 0 	 mal: 1 	 loss: 0.16101727 	 time: 1.51
+local epoch 0 	 client: 1 	 mal: 1 	 loss: 0.04021726 	 time: 1.35
+local epoch 0 	 client: 2 	 mal: 1 	 loss: 0.12915911 	 time: 2.04
+local epoch 0 	 client: 3 	 mal: 1 	 loss: 0.28238574 	 time: 2.16
+local epoch 0 	 client: 4 	 mal: 0 	 loss: 0.19598572 	 time: 1.36
+local epoch 0 	 client: 5 	 mal: 0 	 loss: 0.17645964 	 time: 1.51
+local epoch 0 	 client: 6 	 mal: 0 	 loss: 0.14023057 	 time: 1.95
+local epoch 0 	 client: 7 	 mal: 0 	 loss: 0.20955664 	 time: 1.45
+local epoch 0 	 client: 8 	 mal: 0 	 loss: 0.19755678 	 time: 1.36
+local epoch 0 	 client: 9 	 mal: 0 	 loss: 0.19708557 	 time: 1.91
+local epoch 0 	 client: 10 	 mal: 0 	 loss: 0.14771850 	 time: 2.10
+local epoch 0 	 client: 11 	 mal: 0 	 loss: 0.07988753 	 time: 1.37
+local epoch 0 	 client: 12 	 mal: 0 	 loss: 0.29453465 	 time: 1.40
+local epoch 0 	 client: 13 	 mal: 0 	 loss: 0.07774341 	 time: 2.06
+local epoch 0 	 client: 14 	 mal: 0 	 loss: 0.14001697 	 time: 1.98
+local epoch 0 	 client: 15 	 mal: 0 	 loss: 0.19175240 	 time: 1.36
+local epoch 0 	 client: 16 	 mal: 0 	 loss: 0.20394596 	 time: 1.88
+local epoch 0 	 client: 17 	 mal: 0 	 loss: 0.11158440 	 time: 1.87
+local epoch 0 	 client: 18 	 mal: 0 	 loss: 0.11547331 	 time: 1.44
+local epoch 0 	 client: 19 	 mal: 0 	 loss: 0.21835801 	 time: 1.40
+2026-01-21 23:31:31,471 [MainThread  ] [INFO ]  ---------Test 25 ------------
+[DBG rnd=25] logits mean=0.0361, std=1.8841, maxlogit mean=4.2272
+[DBG rnd=25] probs max mean=0.8002, pred entropy mean=0.7510
+[DBG rnd=25] preds bincount=[6, 10, 5, 6, 9, 7, 6, 7, 1, 7]
+2026-01-21 23:31:41,370 [MainThread  ] [INFO ]  Clean ACC:              0.9503
+2026-01-21 23:31:41,371 [MainThread  ] [INFO ]  Attack Success Ratio:   0.0042
+2026-01-21 23:31:41,371 [MainThread  ] [INFO ]  Robustness ACC:           0.9513
+2026-01-21 23:31:41,371 [MainThread  ] [INFO ]  ------------------------------
+2026-01-21 23:31:41,371 [MainThread  ] [INFO ]  Best results:
+2026-01-21 23:31:41,371 [MainThread  ] [INFO ]  Clean ACC:              0.9503
+2026-01-21 23:31:41,371 [MainThread  ] [INFO ]  Attack Success Ratio:   0.0042
+2026-01-21 23:31:41,371 [MainThread  ] [INFO ]  Robustness ACC:           0.9513
+2026-01-21 23:31:41,371 [MainThread  ] [INFO ]  Training has finished!

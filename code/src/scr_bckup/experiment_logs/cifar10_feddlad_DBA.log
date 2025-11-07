@@ -1,0 +1,44 @@
+Files already downloaded and verified
+Files already downloaded and verified
+100
+mean|client_grad| 0.03189358115196228
+local epoch 0 	 client: 0 	 mal: 1 	 loss: 2.15924811 	 time: 1.87
+local epoch 1 	 client: 0 	 mal: 1 	 loss: 1.96637201 	 time: 1.42
+local epoch 0 	 client: 1 	 mal: 1 	 loss: 1.98118198 	 time: 1.42
+local epoch 1 	 client: 1 	 mal: 1 	 loss: 1.94144225 	 time: 1.41
+local epoch 0 	 client: 2 	 mal: 1 	 loss: 2.14842415 	 time: 1.44
+local epoch 1 	 client: 2 	 mal: 1 	 loss: 1.89222324 	 time: 1.44
+local epoch 0 	 client: 3 	 mal: 1 	 loss: 2.13366842 	 time: 1.43
+local epoch 1 	 client: 3 	 mal: 1 	 loss: 2.10520601 	 time: 1.47
+local epoch 0 	 client: 4 	 mal: 0 	 loss: 2.26348305 	 time: 1.64
+local epoch 1 	 client: 4 	 mal: 0 	 loss: 2.18340659 	 time: 1.47
+local epoch 0 	 client: 5 	 mal: 0 	 loss: 2.26872611 	 time: 1.44
+local epoch 1 	 client: 5 	 mal: 0 	 loss: 2.21417475 	 time: 1.49
+local epoch 0 	 client: 6 	 mal: 0 	 loss: 2.26107669 	 time: 1.48
+local epoch 1 	 client: 6 	 mal: 0 	 loss: 2.17533970 	 time: 1.47
+local epoch 0 	 client: 7 	 mal: 0 	 loss: 2.23115468 	 time: 1.47
+local epoch 1 	 client: 7 	 mal: 0 	 loss: 2.10566092 	 time: 1.47
+local epoch 0 	 client: 8 	 mal: 0 	 loss: 2.21431804 	 time: 1.48
+local epoch 1 	 client: 8 	 mal: 0 	 loss: 2.16956568 	 time: 1.49
+local epoch 0 	 client: 9 	 mal: 0 	 loss: 2.25351191 	 time: 1.47
+local epoch 1 	 client: 9 	 mal: 0 	 loss: 2.05839276 	 time: 1.46
+local epoch 0 	 client: 10 	 mal: 0 	 loss: 2.27698469 	 time: 1.53
+local epoch 1 	 client: 10 	 mal: 0 	 loss: 2.15335393 	 time: 1.54
+local epoch 0 	 client: 11 	 mal: 0 	 loss: 2.24977326 	 time: 1.49
+local epoch 1 	 client: 11 	 mal: 0 	 loss: 2.22539425 	 time: 1.49
+local epoch 0 	 client: 12 	 mal: 0 	 loss: 2.24744511 	 time: 1.44
+local epoch 1 	 client: 12 	 mal: 0 	 loss: 2.18077326 	 time: 1.44
+local epoch 0 	 client: 13 	 mal: 0 	 loss: 2.28359985 	 time: 1.50
+local epoch 1 	 client: 13 	 mal: 0 	 loss: 2.19149995 	 time: 1.51
+local epoch 0 	 client: 14 	 mal: 0 	 loss: 2.18450785 	 time: 1.53
+local epoch 1 	 client: 14 	 mal: 0 	 loss: 2.21532083 	 time: 1.55
+local epoch 0 	 client: 15 	 mal: 0 	 loss: 2.29602456 	 time: 1.49
+local epoch 1 	 client: 15 	 mal: 0 	 loss: 2.03363776 	 time: 1.48
+local epoch 0 	 client: 16 	 mal: 0 	 loss: 2.25722480 	 time: 1.49
+local epoch 1 	 client: 16 	 mal: 0 	 loss: 2.06295156 	 time: 1.47
+local epoch 0 	 client: 17 	 mal: 0 	 loss: 2.24484086 	 time: 1.45
+local epoch 1 	 client: 17 	 mal: 0 	 loss: 2.12331057 	 time: 1.45
+local epoch 0 	 client: 18 	 mal: 0 	 loss: 2.28007197 	 time: 1.53
+local epoch 1 	 client: 18 	 mal: 0 	 loss: 2.27697158 	 time: 1.54
+local epoch 0 	 client: 19 	 mal: 0 	 loss: 2.28081441 	 time: 1.48
+local epoch 1 	 client: 19 	 mal: 0 	 loss: 2.26550436 	 time: 1.47

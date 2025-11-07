@@ -1,0 +1,26 @@
+2026-01-20 13:30:35,587 [MainThread  ] [INFO ]  Namespace(data='mnist', num_agents=20, agent_frac=1.0, num_corrupt=4, rounds=25, local_ep=1, bs=64, client_lr=0.1, server_lr=1, target_class=7, poison_frac=0.3, pattern_type='plus', theta=8, theta_ld=10, snap=1, device='cuda:2', num_workers=0, dense_ratio=0.25, anneal_factor=0.0001, se_threshold=0.0001, non_iid=False, debug=False, beta=0.5, attack='badnet', aggr='alignins', lr_decay=0.99, momentum=0.0, mask_init='ERK', wd=0.0001, same_mask=1, cease_poison=100000, exp_name_extra='', super_power=False, clean=False, sparsity=0.3, lambda_s=1.0, lambda_c=1.0, num_target=10, exp_name='iid_pr(0.3)')
+2026-01-20 13:30:37,212 [MainThread  ] [INFO ]  build client:0 mal:1 data_num:3006
+2026-01-20 13:30:37,259 [MainThread  ] [INFO ]  build client:1 mal:1 data_num:3005
+2026-01-20 13:30:37,308 [MainThread  ] [INFO ]  build client:2 mal:1 data_num:3003
+2026-01-20 13:30:37,368 [MainThread  ] [INFO ]  build client:3 mal:1 data_num:3002
+2026-01-20 13:30:37,375 [MainThread  ] [INFO ]  build client:4 mal:0 data_num:3002
+2026-01-20 13:30:37,381 [MainThread  ] [INFO ]  build client:5 mal:0 data_num:3001
+2026-01-20 13:30:37,546 [MainThread  ] [INFO ]  build client:6 mal:0 data_num:3001
+2026-01-20 13:30:37,552 [MainThread  ] [INFO ]  build client:7 mal:0 data_num:3001
+2026-01-20 13:30:37,559 [MainThread  ] [INFO ]  build client:8 mal:0 data_num:3001
+2026-01-20 13:30:37,565 [MainThread  ] [INFO ]  build client:9 mal:0 data_num:3000
+2026-01-20 13:30:37,573 [MainThread  ] [INFO ]  build client:10 mal:0 data_num:3000
+2026-01-20 13:30:37,579 [MainThread  ] [INFO ]  build client:11 mal:0 data_num:2998
+2026-01-20 13:30:37,586 [MainThread  ] [INFO ]  build client:12 mal:0 data_num:2998
+2026-01-20 13:30:37,592 [MainThread  ] [INFO ]  build client:13 mal:0 data_num:2998
+2026-01-20 13:30:37,599 [MainThread  ] [INFO ]  build client:14 mal:0 data_num:2998
+2026-01-20 13:30:37,632 [MainThread  ] [INFO ]  build client:15 mal:0 data_num:2998
+2026-01-20 13:30:37,644 [MainThread  ] [INFO ]  build client:16 mal:0 data_num:2998
+2026-01-20 13:30:37,660 [MainThread  ] [INFO ]  build client:17 mal:0 data_num:2998
+2026-01-20 13:30:37,676 [MainThread  ] [INFO ]  build client:18 mal:0 data_num:2996
+2026-01-20 13:30:37,683 [MainThread  ] [INFO ]  build client:19 mal:0 data_num:2996
+2026-01-20 13:30:37,715 [MainThread  ] [INFO ]  --------round 1 ------------
+2026-01-20 13:31:28,366 [MainThread  ] [INFO ]  TDA: [-0.0206, -0.0192, -0.0185, -0.0198, -0.0166, -0.0179, -0.0176, -0.0174, -0.0157, -0.0199, -0.0183, -0.0162, -0.0176, -0.0163, -0.0172, -0.0174, -0.0195, -0.0156, -0.0163, -0.0154]
+2026-01-20 13:31:28,368 [MainThread  ] [INFO ]  MPSA: [0.6428, 0.6623, 0.6579, 0.6664, 0.6756, 0.6457, 0.6663, 0.666, 0.6685, 0.6742, 0.6617, 0.68, 0.6654, 0.6622, 0.6686, 0.6644, 0.6571, 0.6422, 0.6675, 0.6456]
+2026-01-20 13:31:28,369 [MainThread  ] [INFO ]  MZ-score of MPSA: [2.1191, 0.2527, 0.6775, 0.1359, 1.0243, 1.8418, 0.1288, 0.1051, 0.341, 0.884, 0.3054, 1.4394, 0.047, 0.2583, 0.3533, 0.047, 0.7476, 2.1786, 0.2477, 1.851]
+2026-01-20 13:31:28,369 [MainThread  ] [INFO ]  MZ-score of TDA: [2.0418, 1.1267, 0.7012, 1.5434, 0.5853, 0.2962, 0.0477, 0.0817, 1.1762, 1.6087, 0.5168, 0.854, 0.0527, 0.8, 0.1609, 0.0477, 1.345, 1.2199, 0.813, 1.3736]

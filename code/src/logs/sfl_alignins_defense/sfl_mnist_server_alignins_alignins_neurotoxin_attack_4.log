@@ -1,0 +1,977 @@
+2026-01-19 17:07:51,272 [MainThread  ] [INFO ]  Namespace(data='mnist', num_agents=20, agent_frac=1.0, num_corrupt=4, rounds=25, local_ep=1, bs=64, client_lr=0.01, server_lr=0.01, target_class=7, poison_frac=0.3, pattern_type='plus', theta=8, theta_ld=10, snap=1, device='cuda:2', num_workers=0, dense_ratio=0.25, anneal_factor=0.0001, se_threshold=0.0001, non_iid=False, debug=False, beta=0.5, attack='neurotoxin', aggr='alignins', aggr_server='alignins', lr_decay=0.99, momentum=0.9, mask_init='ERK', wd=0.0001, same_mask=1, cease_poison=100000, exp_name_extra='', super_power=False, clean=False, sparsity=0.3, lambda_s=1.0, lambda_c=1.0, num_target=10, exp_name='iid_pr(0.3)')
+25
+2026-01-19 17:07:53,450 [MainThread  ] [INFO ]  build client:0 mal:1 data_num:3006
+2026-01-19 17:07:53,500 [MainThread  ] [INFO ]  build client:1 mal:1 data_num:3005
+2026-01-19 17:07:53,550 [MainThread  ] [INFO ]  build client:2 mal:1 data_num:3003
+2026-01-19 17:07:53,601 [MainThread  ] [INFO ]  build client:3 mal:1 data_num:3002
+2026-01-19 17:07:53,607 [MainThread  ] [INFO ]  build client:4 mal:0 data_num:3002
+2026-01-19 17:07:53,614 [MainThread  ] [INFO ]  build client:5 mal:0 data_num:3001
+2026-01-19 17:07:53,620 [MainThread  ] [INFO ]  build client:6 mal:0 data_num:3001
+2026-01-19 17:07:53,627 [MainThread  ] [INFO ]  build client:7 mal:0 data_num:3001
+2026-01-19 17:07:53,633 [MainThread  ] [INFO ]  build client:8 mal:0 data_num:3001
+2026-01-19 17:07:53,640 [MainThread  ] [INFO ]  build client:9 mal:0 data_num:3000
+2026-01-19 17:07:53,646 [MainThread  ] [INFO ]  build client:10 mal:0 data_num:3000
+2026-01-19 17:07:53,653 [MainThread  ] [INFO ]  build client:11 mal:0 data_num:2998
+2026-01-19 17:07:53,660 [MainThread  ] [INFO ]  build client:12 mal:0 data_num:2998
+2026-01-19 17:07:53,666 [MainThread  ] [INFO ]  build client:13 mal:0 data_num:2998
+2026-01-19 17:07:53,673 [MainThread  ] [INFO ]  build client:14 mal:0 data_num:2998
+2026-01-19 17:07:53,679 [MainThread  ] [INFO ]  build client:15 mal:0 data_num:2998
+2026-01-19 17:07:53,686 [MainThread  ] [INFO ]  build client:16 mal:0 data_num:2998
+2026-01-19 17:07:53,692 [MainThread  ] [INFO ]  build client:17 mal:0 data_num:2998
+2026-01-19 17:07:53,699 [MainThread  ] [INFO ]  build client:18 mal:0 data_num:2996
+2026-01-19 17:07:53,705 [MainThread  ] [INFO ]  build client:19 mal:0 data_num:2996
+2026-01-19 17:07:53,705 [MainThread  ] [INFO ]  --------round 1 ------------
+mean|client_grad| 0.016910118982195854
+local epoch 0 	 client: 0 	 mal: 1 	 loss: 1.93034196 	 time: 1.82
+local epoch 0 	 client: 1 	 mal: 1 	 loss: 1.89465177 	 time: 1.35
+local epoch 0 	 client: 2 	 mal: 1 	 loss: 1.99884439 	 time: 1.35
+local epoch 0 	 client: 3 	 mal: 1 	 loss: 2.10539412 	 time: 1.35
+local epoch 0 	 client: 4 	 mal: 0 	 loss: 1.98538649 	 time: 1.36
+local epoch 0 	 client: 5 	 mal: 0 	 loss: 2.28371906 	 time: 1.35
+local epoch 0 	 client: 6 	 mal: 0 	 loss: 2.28711057 	 time: 1.35
+local epoch 0 	 client: 7 	 mal: 0 	 loss: 2.29169583 	 time: 1.35
+local epoch 0 	 client: 8 	 mal: 0 	 loss: 2.28743792 	 time: 1.36
+local epoch 0 	 client: 9 	 mal: 0 	 loss: 2.28233457 	 time: 1.36
+local epoch 0 	 client: 10 	 mal: 0 	 loss: 2.29259610 	 time: 1.36
+local epoch 0 	 client: 11 	 mal: 0 	 loss: 2.28628254 	 time: 1.36
+local epoch 0 	 client: 12 	 mal: 0 	 loss: 2.24660110 	 time: 1.36
+local epoch 0 	 client: 13 	 mal: 0 	 loss: 2.06866527 	 time: 1.36
+local epoch 0 	 client: 14 	 mal: 0 	 loss: 2.29572749 	 time: 1.36
+local epoch 0 	 client: 15 	 mal: 0 	 loss: 2.28176165 	 time: 1.36
+local epoch 0 	 client: 16 	 mal: 0 	 loss: 2.28250313 	 time: 1.36
+local epoch 0 	 client: 17 	 mal: 0 	 loss: 2.27847385 	 time: 1.37
+local epoch 0 	 client: 18 	 mal: 0 	 loss: 2.28606272 	 time: 1.37
+local epoch 0 	 client: 19 	 mal: 0 	 loss: 2.26384211 	 time: 1.38
+2026-01-19 17:08:23,556 [MainThread  ] [INFO ]  TDA: [-0.0478, -0.0505, -0.045, -0.0474, -0.0512, -0.0584, -0.0578, -0.0625, -0.058, -0.0618, -0.0588, -0.0614, -0.06, -0.0406, -0.0652, -0.0579, -0.0598, -0.0601, -0.0568, -0.0627]
+2026-01-19 17:08:23,557 [MainThread  ] [INFO ]  MPSA: [0.9529, 0.9569, 0.9389, 0.9506, 0.7981, 0.9933, 0.9829, 0.9905, 0.9896, 0.9895, 0.9886, 0.9893, 0.9578, 0.8045, 0.9903, 0.9712, 0.9928, 0.9605, 0.9659, 0.9657]
+2026-01-19 17:08:23,557 [MainThread  ] [INFO ]  MZ-score of MPSA: [0.2892, 0.2155, 0.5471, 0.3311, 3.141, 0.4558, 0.2633, 0.4043, 0.3862, 0.3846, 0.3694, 0.3813, 0.1991, 3.0233, 0.4006, 0.0489, 0.4459, 0.1485, 0.0489, 0.0535]
+2026-01-19 17:08:23,558 [MainThread  ] [INFO ]  MZ-score of TDA: [1.5808, 1.1652, 2.0182, 1.6493, 1.0682, 0.0277, 0.0528, 0.6501, 0.0277, 0.5536, 0.0882, 0.4957, 0.2762, 2.688, 1.0692, 0.0505, 0.2393, 0.2954, 0.2139, 0.6833]
+2026-01-19 17:08:23,571 [MainThread  ] [INFO ]  benign update index:   [4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19]
+2026-01-19 17:08:23,571 [MainThread  ] [INFO ]  selected update index: [5, 6, 7, 8, 9, 10, 11, 12, 15, 16, 17, 18, 19]
+2026-01-19 17:08:23,571 [MainThread  ] [INFO ]  FPR:       0.0000
+2026-01-19 17:08:23,571 [MainThread  ] [INFO ]  TPR:       0.8125
+2026-01-19 17:08:23,852 [MainThread  ] [INFO ]  ---------Test 1 ------------
+[DBG rnd=1] logits mean=0.0034, std=0.1673, maxlogit mean=0.4489
+[DBG rnd=1] probs max mean=0.1537, pred entropy mean=2.2858
+[DBG rnd=1] preds bincount=[0, 0, 0, 0, 0, 0, 0, 64, 0, 0]
+2026-01-19 17:08:32,633 [MainThread  ] [INFO ]  Clean ACC:              0.1028
+2026-01-19 17:08:32,635 [MainThread  ] [INFO ]  Attack Success Ratio:   1.0000
+2026-01-19 17:08:32,635 [MainThread  ] [INFO ]  Robustness ACC:           0.0000
+2026-01-19 17:08:32,635 [MainThread  ] [INFO ]  ------------------------------
+2026-01-19 17:08:32,635 [MainThread  ] [INFO ]  --------round 2 ------------
+mean|client_grad| 0.0038018652703613043
+local epoch 0 	 client: 0 	 mal: 1 	 loss: 1.83734965 	 time: 2.03
+local epoch 0 	 client: 1 	 mal: 1 	 loss: 1.74712121 	 time: 2.01
+local epoch 0 	 client: 2 	 mal: 1 	 loss: 1.82935297 	 time: 2.01
+local epoch 0 	 client: 3 	 mal: 1 	 loss: 1.96418989 	 time: 2.05
+local epoch 0 	 client: 4 	 mal: 0 	 loss: 1.85495901 	 time: 1.38
+local epoch 0 	 client: 5 	 mal: 0 	 loss: 1.90609813 	 time: 1.37
+local epoch 0 	 client: 6 	 mal: 0 	 loss: 1.87751460 	 time: 1.38
+local epoch 0 	 client: 7 	 mal: 0 	 loss: 2.41652775 	 time: 1.36
+local epoch 0 	 client: 8 	 mal: 0 	 loss: 2.32431746 	 time: 1.37
+local epoch 0 	 client: 9 	 mal: 0 	 loss: 2.28395581 	 time: 1.38
+local epoch 0 	 client: 10 	 mal: 0 	 loss: 2.34489179 	 time: 1.39
+local epoch 0 	 client: 11 	 mal: 0 	 loss: 2.19736028 	 time: 1.38
+local epoch 0 	 client: 12 	 mal: 0 	 loss: 2.34785533 	 time: 1.38
+local epoch 0 	 client: 13 	 mal: 0 	 loss: 2.32857251 	 time: 1.37
+local epoch 0 	 client: 14 	 mal: 0 	 loss: 2.21999717 	 time: 1.39
+local epoch 0 	 client: 15 	 mal: 0 	 loss: 1.64765775 	 time: 1.37
+local epoch 0 	 client: 16 	 mal: 0 	 loss: 2.22614455 	 time: 1.38
+local epoch 0 	 client: 17 	 mal: 0 	 loss: 1.63404465 	 time: 1.37
+local epoch 0 	 client: 18 	 mal: 0 	 loss: 2.18469024 	 time: 1.43
+local epoch 0 	 client: 19 	 mal: 0 	 loss: 2.23104119 	 time: 1.42
+2026-01-19 17:09:04,585 [MainThread  ] [INFO ]  TDA: [-0.059, -0.0624, -0.0583, -0.0628, 0.0182, 0.0171, 0.0242, -0.0309, -0.0292, -0.0277, -0.0263, 0.0045, -0.0135, -0.0161, 0.0062, 0.0195, -0.0196, 0.0248, -0.008, 0.0109]
+2026-01-19 17:09:04,585 [MainThread  ] [INFO ]  MPSA: [0.6305, 0.6465, 0.6384, 0.6514, 0.918, 0.9103, 0.8993, 0.8161, 0.8679, 0.8665, 0.8879, 0.9578, 0.8713, 0.8655, 0.937, 0.8907, 0.8997, 0.8665, 0.9581, 0.9623]
+2026-01-19 17:09:04,586 [MainThread  ] [INFO ]  MZ-score of MPSA: [2.2934, 2.146, 2.22, 2.1004, 0.3528, 0.2821, 0.1806, 0.5848, 0.1079, 0.1206, 0.0762, 0.7192, 0.0762, 0.1299, 0.5279, 0.1021, 0.1851, 0.1204, 0.7223, 0.7609]
+2026-01-19 17:09:04,586 [MainThread  ] [INFO ]  MZ-score of TDA: [1.51, 1.6287, 1.4865, 1.6426, 1.1277, 1.0928, 1.333, 0.5507, 0.4906, 0.4405, 0.3938, 0.6612, 0.0441, 0.0441, 0.7191, 1.1732, 0.1644, 1.3552, 0.2337, 0.8799]
+2026-01-19 17:09:04,587 [MainThread  ] [INFO ]  benign update index:   [4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19]
+2026-01-19 17:09:04,587 [MainThread  ] [INFO ]  selected update index: [7, 8, 9, 10, 11, 12, 13, 14, 16, 18, 19]
+2026-01-19 17:09:04,587 [MainThread  ] [INFO ]  FPR:       0.0000
+2026-01-19 17:09:04,587 [MainThread  ] [INFO ]  TPR:       0.6875
+2026-01-19 17:09:04,783 [MainThread  ] [INFO ]  ---------Test 2 ------------
+[DBG rnd=2] logits mean=0.0155, std=0.2567, maxlogit mean=0.2206
+[DBG rnd=2] probs max mean=0.1193, pred entropy mean=2.2771
+[DBG rnd=2] preds bincount=[0, 0, 0, 3, 30, 2, 23, 0, 0, 6]
+2026-01-19 17:09:13,493 [MainThread  ] [INFO ]  Clean ACC:              0.2360
+2026-01-19 17:09:13,493 [MainThread  ] [INFO ]  Attack Success Ratio:   0.0014
+2026-01-19 17:09:13,493 [MainThread  ] [INFO ]  Robustness ACC:           0.2477
+2026-01-19 17:09:13,493 [MainThread  ] [INFO ]  ------------------------------
+2026-01-19 17:09:13,493 [MainThread  ] [INFO ]  --------round 3 ------------
+mean|client_grad| 0.0029874970205128193
+local epoch 0 	 client: 0 	 mal: 1 	 loss: 1.61762846 	 time: 2.01
+local epoch 0 	 client: 1 	 mal: 1 	 loss: 1.70814538 	 time: 2.01
+local epoch 0 	 client: 2 	 mal: 1 	 loss: 1.35593295 	 time: 2.01
+local epoch 0 	 client: 3 	 mal: 1 	 loss: 1.82433081 	 time: 2.02
+local epoch 0 	 client: 4 	 mal: 0 	 loss: 1.45066059 	 time: 1.36
+local epoch 0 	 client: 5 	 mal: 0 	 loss: 1.24992728 	 time: 1.37
+local epoch 0 	 client: 6 	 mal: 0 	 loss: 0.90163565 	 time: 1.37
+local epoch 0 	 client: 7 	 mal: 0 	 loss: 0.98116034 	 time: 1.37
+local epoch 0 	 client: 8 	 mal: 0 	 loss: 1.42158997 	 time: 1.37
+local epoch 0 	 client: 9 	 mal: 0 	 loss: 1.47638834 	 time: 1.38
+local epoch 0 	 client: 10 	 mal: 0 	 loss: 1.29936051 	 time: 1.37
+local epoch 0 	 client: 11 	 mal: 0 	 loss: 1.15881801 	 time: 1.38
+local epoch 0 	 client: 12 	 mal: 0 	 loss: 1.01899946 	 time: 1.37
+local epoch 0 	 client: 13 	 mal: 0 	 loss: 1.81995690 	 time: 1.38
+local epoch 0 	 client: 14 	 mal: 0 	 loss: 1.73882699 	 time: 1.37
+local epoch 0 	 client: 15 	 mal: 0 	 loss: 1.99671376 	 time: 1.38
+local epoch 0 	 client: 16 	 mal: 0 	 loss: 1.05976856 	 time: 1.39
+local epoch 0 	 client: 17 	 mal: 0 	 loss: 1.68280303 	 time: 1.37
+local epoch 0 	 client: 18 	 mal: 0 	 loss: 0.56275088 	 time: 1.41
+local epoch 0 	 client: 19 	 mal: 0 	 loss: 1.54916704 	 time: 1.38
+2026-01-19 17:09:45,287 [MainThread  ] [INFO ]  TDA: [-0.0281, -0.0278, -0.029, -0.0325, 0.0204, 0.0187, 0.0166, 0.019, 0.0094, 0.0197, 0.0126, 0.0232, 0.0177, 0.0031, -0.0062, 0.0193, 0.018, 0.0058, 0.0225, 0.0099]
+2026-01-19 17:09:45,288 [MainThread  ] [INFO ]  MPSA: [0.6309, 0.6343, 0.6291, 0.6326, 0.9814, 0.9844, 0.9806, 0.9807, 0.9796, 0.9847, 0.9485, 0.9803, 0.9807, 0.958, 0.9427, 0.9783, 0.983, 0.9592, 0.9852, 0.9827]
+2026-01-19 17:09:45,288 [MainThread  ] [INFO ]  MZ-score of MPSA: [2.5367, 2.5122, 2.5501, 2.5247, 0.0106, 0.032, 0.0045, 0.0053, 0.0027, 0.0343, 0.2284, 0.0027, 0.0053, 0.1592, 0.2704, 0.0121, 0.022, 0.1505, 0.0385, 0.0204]
+2026-01-19 17:09:45,289 [MainThread  ] [INFO ]  MZ-score of TDA: [2.2664, 2.248, 2.3164, 2.5005, 0.3085, 0.215, 0.1039, 0.2336, 0.2746, 0.2705, 0.1039, 0.4571, 0.1644, 0.6082, 1.1058, 0.2468, 0.1824, 0.4647, 0.4175, 0.251]
+2026-01-19 17:09:45,289 [MainThread  ] [INFO ]  benign update index:   [4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19]
+2026-01-19 17:09:45,289 [MainThread  ] [INFO ]  selected update index: [4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 15, 16, 17, 18, 19]
+2026-01-19 17:09:45,289 [MainThread  ] [INFO ]  FPR:       0.0000
+2026-01-19 17:09:45,289 [MainThread  ] [INFO ]  TPR:       0.9375
+2026-01-19 17:09:45,488 [MainThread  ] [INFO ]  ---------Test 3 ------------
+[DBG rnd=3] logits mean=0.0512, std=0.7081, maxlogit mean=1.3942
+[DBG rnd=3] probs max mean=0.3094, pred entropy mean=2.0022
+[DBG rnd=3] preds bincount=[5, 25, 2, 5, 9, 0, 4, 7, 0, 7]
+2026-01-19 17:09:54,195 [MainThread  ] [INFO ]  Clean ACC:              0.5915
+2026-01-19 17:09:54,195 [MainThread  ] [INFO ]  Attack Success Ratio:   0.0261
+2026-01-19 17:09:54,195 [MainThread  ] [INFO ]  Robustness ACC:           0.5662
+2026-01-19 17:09:54,195 [MainThread  ] [INFO ]  ------------------------------
+2026-01-19 17:09:54,195 [MainThread  ] [INFO ]  --------round 4 ------------
+mean|client_grad| 0.022817499935626984
+local epoch 0 	 client: 0 	 mal: 1 	 loss: 0.56466645 	 time: 2.01
+local epoch 0 	 client: 1 	 mal: 1 	 loss: 0.73293412 	 time: 2.01
+local epoch 0 	 client: 2 	 mal: 1 	 loss: 0.74478799 	 time: 2.01
+local epoch 0 	 client: 3 	 mal: 1 	 loss: 0.54667079 	 time: 2.01
+local epoch 0 	 client: 4 	 mal: 0 	 loss: 0.73822999 	 time: 1.36
+local epoch 0 	 client: 5 	 mal: 0 	 loss: 0.60060275 	 time: 1.36
+local epoch 0 	 client: 6 	 mal: 0 	 loss: 0.61325037 	 time: 1.39
+local epoch 0 	 client: 7 	 mal: 0 	 loss: 0.96027410 	 time: 1.36
+local epoch 0 	 client: 8 	 mal: 0 	 loss: 0.71782106 	 time: 1.37
+local epoch 0 	 client: 9 	 mal: 0 	 loss: 0.79826862 	 time: 1.37
+local epoch 0 	 client: 10 	 mal: 0 	 loss: 0.71460062 	 time: 1.37
+local epoch 0 	 client: 11 	 mal: 0 	 loss: 0.48453182 	 time: 1.38
+local epoch 0 	 client: 12 	 mal: 0 	 loss: 0.62121439 	 time: 1.37
+local epoch 0 	 client: 13 	 mal: 0 	 loss: 0.60522193 	 time: 1.36
+local epoch 0 	 client: 14 	 mal: 0 	 loss: 0.36202261 	 time: 1.37
+local epoch 0 	 client: 15 	 mal: 0 	 loss: 1.00676799 	 time: 1.38
+local epoch 0 	 client: 16 	 mal: 0 	 loss: 0.72841024 	 time: 1.38
+local epoch 0 	 client: 17 	 mal: 0 	 loss: 0.40916878 	 time: 1.38
+local epoch 0 	 client: 18 	 mal: 0 	 loss: 0.62438118 	 time: 1.37
+local epoch 0 	 client: 19 	 mal: 0 	 loss: 0.41655153 	 time: 1.38
+2026-01-19 17:10:25,924 [MainThread  ] [INFO ]  TDA: [-0.0112, -0.0132, -0.0138, -0.0135, -0.0291, 0.0014, -0.0095, -0.0181, -0.0034, -0.0111, 0.0034, 0.0048, -0.0105, -0.0083, 0.0023, -0.0147, -0.0115, -0.0068, -0.0121, 0.0073]
+2026-01-19 17:10:25,924 [MainThread  ] [INFO ]  MPSA: [0.638, 0.6521, 0.6521, 0.6379, 0.811, 0.9646, 0.9218, 0.9148, 0.9702, 0.9686, 0.975, 0.9635, 0.9739, 0.9781, 0.9802, 0.8472, 0.9705, 0.9803, 0.9723, 0.9762]
+2026-01-19 17:10:25,925 [MainThread  ] [INFO ]  MZ-score of MPSA: [2.5489, 2.4393, 2.4393, 2.5498, 1.207, 0.0157, 0.3476, 0.4015, 0.0281, 0.0157, 0.0655, 0.024, 0.0571, 0.0893, 0.1052, 0.9261, 0.0304, 0.1062, 0.0442, 0.0744]
+2026-01-19 17:10:25,925 [MainThread  ] [INFO ]  MZ-score of TDA: [0.0506, 0.2759, 0.3495, 0.3168, 2.1293, 1.411, 0.1508, 0.8558, 0.852, 0.034, 1.6494, 1.8032, 0.034, 0.2894, 1.5143, 0.4614, 0.0893, 0.4606, 0.1592, 2.1026]
+2026-01-19 17:10:25,926 [MainThread  ] [INFO ]  benign update index:   [4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19]
+2026-01-19 17:10:25,926 [MainThread  ] [INFO ]  selected update index: [6, 7, 8, 9, 12, 13, 15, 16, 17, 18]
+2026-01-19 17:10:25,926 [MainThread  ] [INFO ]  FPR:       0.0000
+2026-01-19 17:10:25,926 [MainThread  ] [INFO ]  TPR:       0.6250
+2026-01-19 17:10:26,181 [MainThread  ] [INFO ]  ---------Test 4 ------------
+[DBG rnd=4] logits mean=0.0423, std=1.1650, maxlogit mean=2.3836
+[DBG rnd=4] probs max mean=0.5123, pred entropy mean=1.5661
+[DBG rnd=4] preds bincount=[6, 10, 5, 7, 11, 4, 6, 8, 0, 7]
+2026-01-19 17:10:36,210 [MainThread  ] [INFO ]  Clean ACC:              0.8571
+2026-01-19 17:10:36,211 [MainThread  ] [INFO ]  Attack Success Ratio:   0.0310
+2026-01-19 17:10:36,211 [MainThread  ] [INFO ]  Robustness ACC:           0.8479
+2026-01-19 17:10:36,211 [MainThread  ] [INFO ]  ------------------------------
+2026-01-19 17:10:36,211 [MainThread  ] [INFO ]  --------round 5 ------------
+mean|client_grad| 0.011922173202037811
+local epoch 0 	 client: 0 	 mal: 1 	 loss: 0.60557228 	 time: 2.14
+local epoch 0 	 client: 1 	 mal: 1 	 loss: 0.35555688 	 time: 2.13
+local epoch 0 	 client: 2 	 mal: 1 	 loss: 0.62399232 	 time: 2.14
+local epoch 0 	 client: 3 	 mal: 1 	 loss: 0.75474465 	 time: 2.13
+local epoch 0 	 client: 4 	 mal: 0 	 loss: 0.41891444 	 time: 1.36
+local epoch 0 	 client: 5 	 mal: 0 	 loss: 0.17925602 	 time: 1.36
+local epoch 0 	 client: 6 	 mal: 0 	 loss: 0.41007245 	 time: 1.36
+local epoch 0 	 client: 7 	 mal: 0 	 loss: 0.48364100 	 time: 1.36
+local epoch 0 	 client: 8 	 mal: 0 	 loss: 0.25692883 	 time: 1.36
+local epoch 0 	 client: 9 	 mal: 0 	 loss: 0.32557645 	 time: 1.36
+local epoch 0 	 client: 10 	 mal: 0 	 loss: 0.29048997 	 time: 1.36
+local epoch 0 	 client: 11 	 mal: 0 	 loss: 0.39088145 	 time: 1.36
+local epoch 0 	 client: 12 	 mal: 0 	 loss: 0.50281996 	 time: 1.36
+local epoch 0 	 client: 13 	 mal: 0 	 loss: 0.21743906 	 time: 1.37
+local epoch 0 	 client: 14 	 mal: 0 	 loss: 0.32888862 	 time: 1.37
+local epoch 0 	 client: 15 	 mal: 0 	 loss: 0.34295142 	 time: 1.37
+local epoch 0 	 client: 16 	 mal: 0 	 loss: 0.32939517 	 time: 1.38
+local epoch 0 	 client: 17 	 mal: 0 	 loss: 0.36408344 	 time: 1.37
+local epoch 0 	 client: 18 	 mal: 0 	 loss: 0.23704351 	 time: 1.37
+local epoch 0 	 client: 19 	 mal: 0 	 loss: 0.29720083 	 time: 1.38
+2026-01-19 17:11:08,439 [MainThread  ] [INFO ]  TDA: [-0.0169, -0.0143, -0.018, -0.0167, -0.0009, -0.0009, -0.0026, -0.004, 0.0006, 0.0084, 0.0004, 0.0071, 0.0081, 0.0038, 0.0044, 0.0083, 0.0076, 0.0046, 0.0029, 0.0038]
+2026-01-19 17:11:08,439 [MainThread  ] [INFO ]  MPSA: [0.6591, 0.6486, 0.6586, 0.6622, 0.9753, 0.9684, 0.9705, 0.8712, 0.9823, 0.9835, 0.9825, 0.9816, 0.9833, 0.98, 0.9899, 0.9825, 0.9779, 0.9824, 0.9821, 0.9831]
+2026-01-19 17:11:08,440 [MainThread  ] [INFO ]  MZ-score of MPSA: [2.4965, 2.5784, 2.5005, 2.4728, 0.0428, 0.0962, 0.0799, 0.8507, 0.0113, 0.0208, 0.0135, 0.0062, 0.0191, 0.0062, 0.0709, 0.0133, 0.0222, 0.0123, 0.0099, 0.0177]
+2026-01-19 17:11:08,440 [MainThread  ] [INFO ]  MZ-score of TDA: [2.1531, 1.8577, 2.2795, 2.1269, 0.3064, 0.3069, 0.5001, 0.6612, 0.1284, 0.7672, 0.1599, 0.6129, 0.7364, 0.2413, 0.3119, 0.7609, 0.6786, 0.3325, 0.1284, 0.2369]
+2026-01-19 17:11:08,441 [MainThread  ] [INFO ]  benign update index:   [4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19]
+2026-01-19 17:11:08,441 [MainThread  ] [INFO ]  selected update index: [4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19]
+2026-01-19 17:11:08,441 [MainThread  ] [INFO ]  FPR:       0.0000
+2026-01-19 17:11:08,441 [MainThread  ] [INFO ]  TPR:       1.0000
+2026-01-19 17:11:08,672 [MainThread  ] [INFO ]  ---------Test 5 ------------
+[DBG rnd=5] logits mean=0.0648, std=1.7852, maxlogit mean=4.0328
+[DBG rnd=5] probs max mean=0.7597, pred entropy mean=0.8431
+[DBG rnd=5] preds bincount=[6, 10, 6, 5, 9, 6, 6, 8, 1, 7]
+2026-01-19 17:11:18,511 [MainThread  ] [INFO ]  Clean ACC:              0.9092
+2026-01-19 17:11:18,511 [MainThread  ] [INFO ]  Attack Success Ratio:   0.0178
+2026-01-19 17:11:18,511 [MainThread  ] [INFO ]  Robustness ACC:           0.9067
+2026-01-19 17:11:18,511 [MainThread  ] [INFO ]  ------------------------------
+2026-01-19 17:11:18,511 [MainThread  ] [INFO ]  --------round 6 ------------
+mean|client_grad| 0.02995353937149048
+local epoch 0 	 client: 0 	 mal: 1 	 loss: 0.59245563 	 time: 2.14
+local epoch 0 	 client: 1 	 mal: 1 	 loss: 0.43291193 	 time: 2.14
+local epoch 0 	 client: 2 	 mal: 1 	 loss: 0.21302192 	 time: 2.14
+local epoch 0 	 client: 3 	 mal: 1 	 loss: 0.43712705 	 time: 2.14
+local epoch 0 	 client: 4 	 mal: 0 	 loss: 0.20258270 	 time: 1.36
+local epoch 0 	 client: 5 	 mal: 0 	 loss: 0.28850165 	 time: 1.36
+local epoch 0 	 client: 6 	 mal: 0 	 loss: 0.11508834 	 time: 1.36
+local epoch 0 	 client: 7 	 mal: 0 	 loss: 0.17639986 	 time: 1.36
+local epoch 0 	 client: 8 	 mal: 0 	 loss: 0.18415134 	 time: 1.37
+local epoch 0 	 client: 9 	 mal: 0 	 loss: 0.45618212 	 time: 1.37
+local epoch 0 	 client: 10 	 mal: 0 	 loss: 0.30403462 	 time: 1.37
+local epoch 0 	 client: 11 	 mal: 0 	 loss: 0.21527146 	 time: 1.38
+local epoch 0 	 client: 12 	 mal: 0 	 loss: 0.23725568 	 time: 1.38
+local epoch 0 	 client: 13 	 mal: 0 	 loss: 0.23561592 	 time: 1.38
+local epoch 0 	 client: 14 	 mal: 0 	 loss: 0.34175417 	 time: 1.37
+local epoch 0 	 client: 15 	 mal: 0 	 loss: 0.20075394 	 time: 1.38
+local epoch 0 	 client: 16 	 mal: 0 	 loss: 0.31428340 	 time: 1.37
+local epoch 0 	 client: 17 	 mal: 0 	 loss: 0.29927325 	 time: 1.38
+local epoch 0 	 client: 18 	 mal: 0 	 loss: 0.24013789 	 time: 1.41
+local epoch 0 	 client: 19 	 mal: 0 	 loss: 0.26557514 	 time: 1.39
+2026-01-19 17:11:50,866 [MainThread  ] [INFO ]  TDA: [-0.0226, -0.0163, -0.0152, -0.0154, 0.0024, 0.0032, -0.0003, 0.0004, 0.0066, 0.0057, -0.0023, 0.0044, 0.0014, 0.003, 0.0039, 0.0019, -0.0045, 0.0017, -0.0024, -0.003]
+2026-01-19 17:11:50,866 [MainThread  ] [INFO ]  MPSA: [0.6478, 0.6372, 0.6338, 0.6276, 0.9753, 0.9762, 0.9759, 0.9724, 0.9771, 0.9774, 0.9552, 0.9691, 0.9555, 0.9742, 0.972, 0.9753, 0.9719, 0.971, 0.9452, 0.971]
+2026-01-19 17:11:50,867 [MainThread  ] [INFO ]  MZ-score of MPSA: [2.4243, 2.5036, 2.529, 2.5755, 0.0289, 0.0351, 0.0334, 0.0069, 0.0418, 0.0446, 0.1216, 0.0176, 0.1196, 0.0207, 0.0038, 0.0288, 0.0033, 0.0035, 0.1971, 0.0033]
+2026-01-19 17:11:50,867 [MainThread  ] [INFO ]  MZ-score of TDA: [2.8972, 2.1211, 1.9811, 2.0046, 0.1881, 0.2882, 0.1437, 0.0666, 0.7073, 0.5861, 0.3937, 0.4305, 0.0666, 0.2538, 0.3743, 0.1251, 0.6674, 0.0944, 0.4135, 0.4795]
+2026-01-19 17:11:50,868 [MainThread  ] [INFO ]  benign update index:   [4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19]
+2026-01-19 17:11:50,868 [MainThread  ] [INFO ]  selected update index: [4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19]
+2026-01-19 17:11:50,868 [MainThread  ] [INFO ]  FPR:       0.0000
+2026-01-19 17:11:50,868 [MainThread  ] [INFO ]  TPR:       1.0000
+2026-01-19 17:11:51,098 [MainThread  ] [INFO ]  ---------Test 6 ------------
+[DBG rnd=6] logits mean=0.0842, std=2.0802, maxlogit mean=4.8231
+[DBG rnd=6] probs max mean=0.8360, pred entropy mean=0.5921
+[DBG rnd=6] preds bincount=[6, 10, 5, 5, 10, 7, 5, 8, 1, 7]
+2026-01-19 17:12:00,912 [MainThread  ] [INFO ]  Clean ACC:              0.9401
+2026-01-19 17:12:00,912 [MainThread  ] [INFO ]  Attack Success Ratio:   0.0088
+2026-01-19 17:12:00,912 [MainThread  ] [INFO ]  Robustness ACC:           0.9403
+2026-01-19 17:12:00,912 [MainThread  ] [INFO ]  ------------------------------
+2026-01-19 17:12:00,912 [MainThread  ] [INFO ]  --------round 7 ------------
+mean|client_grad| 0.033618248999118805
+local epoch 0 	 client: 0 	 mal: 1 	 loss: 0.43737772 	 time: 2.14
+local epoch 0 	 client: 1 	 mal: 1 	 loss: 0.45386213 	 time: 2.14
+local epoch 0 	 client: 2 	 mal: 1 	 loss: 0.32222015 	 time: 2.14
+local epoch 0 	 client: 3 	 mal: 1 	 loss: 0.32188362 	 time: 2.10
+local epoch 0 	 client: 4 	 mal: 0 	 loss: 0.16040245 	 time: 1.36
+local epoch 0 	 client: 5 	 mal: 0 	 loss: 0.39548627 	 time: 1.36
+local epoch 0 	 client: 6 	 mal: 0 	 loss: 0.21993479 	 time: 1.36
+local epoch 0 	 client: 7 	 mal: 0 	 loss: 0.22875443 	 time: 1.37
+local epoch 0 	 client: 8 	 mal: 0 	 loss: 0.13173415 	 time: 1.36
+local epoch 0 	 client: 9 	 mal: 0 	 loss: 0.16926228 	 time: 1.36
+local epoch 0 	 client: 10 	 mal: 0 	 loss: 0.46981204 	 time: 1.36
+local epoch 0 	 client: 11 	 mal: 0 	 loss: 0.12019218 	 time: 1.37
+local epoch 0 	 client: 12 	 mal: 0 	 loss: 0.12871884 	 time: 1.37
+local epoch 0 	 client: 13 	 mal: 0 	 loss: 0.19775864 	 time: 1.38
+local epoch 0 	 client: 14 	 mal: 0 	 loss: 0.17233175 	 time: 1.37
+local epoch 0 	 client: 15 	 mal: 0 	 loss: 0.24756029 	 time: 1.37
+local epoch 0 	 client: 16 	 mal: 0 	 loss: 0.48390287 	 time: 1.37
+local epoch 0 	 client: 17 	 mal: 0 	 loss: 0.10279050 	 time: 1.36
+local epoch 0 	 client: 18 	 mal: 0 	 loss: 0.34596035 	 time: 1.37
+local epoch 0 	 client: 19 	 mal: 0 	 loss: 0.20534016 	 time: 1.38
+2026-01-19 17:12:33,100 [MainThread  ] [INFO ]  TDA: [-0.0211, -0.0154, -0.02, -0.0143, -0.0052, -0.0012, -0.0041, -0.0049, -0.0051, 0.0006, -0.0038, -0.0016, 0.0015, -0.0015, 0.0023, -0.0052, -0.0037, 0.0029, -0.0037, 0.0053]
+2026-01-19 17:12:33,100 [MainThread  ] [INFO ]  MPSA: [0.6524, 0.6405, 0.6461, 0.6278, 0.9607, 0.9641, 0.9539, 0.9581, 0.9267, 0.9544, 0.9584, 0.9547, 0.9649, 0.9598, 0.9631, 0.94, 0.9546, 0.9502, 0.9561, 0.9645]
+2026-01-19 17:12:33,100 [MainThread  ] [INFO ]  MZ-score of MPSA: [2.403, 2.4972, 2.4534, 2.5988, 0.0481, 0.0754, 0.0059, 0.0275, 0.2222, 0.002, 0.0296, 0.0007, 0.0811, 0.0406, 0.0671, 0.1166, 0.0007, 0.0355, 0.0114, 0.0783]
+2026-01-19 17:12:33,101 [MainThread  ] [INFO ]  MZ-score of TDA: [2.434, 1.6344, 2.2771, 1.4874, 0.2046, 0.3535, 0.0532, 0.1662, 0.1979, 0.604, 0.0028, 0.3024, 0.7369, 0.3085, 0.8418, 0.2028, 0.0074, 0.9279, 0.0028, 1.2693]
+2026-01-19 17:12:33,101 [MainThread  ] [INFO ]  benign update index:   [4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19]
+2026-01-19 17:12:33,101 [MainThread  ] [INFO ]  selected update index: [4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18]
+2026-01-19 17:12:33,101 [MainThread  ] [INFO ]  FPR:       0.0000
+2026-01-19 17:12:33,101 [MainThread  ] [INFO ]  TPR:       0.9375
+2026-01-19 17:12:33,300 [MainThread  ] [INFO ]  ---------Test 7 ------------
+[DBG rnd=7] logits mean=0.0718, std=2.3365, maxlogit mean=5.4275
+[DBG rnd=7] probs max mean=0.8875, pred entropy mean=0.4284
+[DBG rnd=7] preds bincount=[6, 10, 5, 5, 10, 8, 5, 7, 1, 7]
+2026-01-19 17:12:42,051 [MainThread  ] [INFO ]  Clean ACC:              0.9565
+2026-01-19 17:12:42,051 [MainThread  ] [INFO ]  Attack Success Ratio:   0.0064
+2026-01-19 17:12:42,051 [MainThread  ] [INFO ]  Robustness ACC:           0.9563
+2026-01-19 17:12:42,051 [MainThread  ] [INFO ]  ------------------------------
+2026-01-19 17:12:42,051 [MainThread  ] [INFO ]  --------round 8 ------------
+mean|client_grad| 0.043332867324352264
+local epoch 0 	 client: 0 	 mal: 1 	 loss: 0.40006512 	 time: 2.01
+local epoch 0 	 client: 1 	 mal: 1 	 loss: 0.55200458 	 time: 2.00
+local epoch 0 	 client: 2 	 mal: 1 	 loss: 0.31039438 	 time: 2.01
+local epoch 0 	 client: 3 	 mal: 1 	 loss: 0.28840360 	 time: 2.01
+local epoch 0 	 client: 4 	 mal: 0 	 loss: 0.13591696 	 time: 1.36
+local epoch 0 	 client: 5 	 mal: 0 	 loss: 0.24408548 	 time: 1.36
+local epoch 0 	 client: 6 	 mal: 0 	 loss: 0.32354078 	 time: 1.37
+local epoch 0 	 client: 7 	 mal: 0 	 loss: 0.11529553 	 time: 1.37
+local epoch 0 	 client: 8 	 mal: 0 	 loss: 0.23631085 	 time: 1.38
+local epoch 0 	 client: 9 	 mal: 0 	 loss: 0.24086840 	 time: 1.38
+local epoch 0 	 client: 10 	 mal: 0 	 loss: 0.41989926 	 time: 1.37
+local epoch 0 	 client: 11 	 mal: 0 	 loss: 0.18535995 	 time: 1.37
+local epoch 0 	 client: 12 	 mal: 0 	 loss: 0.20484738 	 time: 1.37
+local epoch 0 	 client: 13 	 mal: 0 	 loss: 0.04670313 	 time: 1.39
+local epoch 0 	 client: 14 	 mal: 0 	 loss: 0.37089601 	 time: 1.38
+local epoch 0 	 client: 15 	 mal: 0 	 loss: 0.09344894 	 time: 1.38
+local epoch 0 	 client: 16 	 mal: 0 	 loss: 0.17896999 	 time: 1.38
+local epoch 0 	 client: 17 	 mal: 0 	 loss: 0.22294712 	 time: 1.41
+local epoch 0 	 client: 18 	 mal: 0 	 loss: 0.19472525 	 time: 1.39
+local epoch 0 	 client: 19 	 mal: 0 	 loss: 0.11833215 	 time: 1.38
+2026-01-19 17:13:13,827 [MainThread  ] [INFO ]  TDA: [-0.0159, -0.0189, -0.0193, -0.0225, -0.0051, -0.0036, -0.0049, -0.0039, -0.0052, 0.0003, -0.0127, -0.0045, 0.0031, -0.0007, -0.0067, 0.0006, 0.0003, -0.0103, 0.0014, -0.0002]
+2026-01-19 17:13:13,828 [MainThread  ] [INFO ]  MPSA: [0.6347, 0.6359, 0.6268, 0.6292, 0.9335, 0.9572, 0.9464, 0.9554, 0.9483, 0.9386, 0.92, 0.936, 0.9403, 0.9454, 0.9492, 0.9402, 0.9431, 0.9353, 0.95, 0.9385]
+2026-01-19 17:13:13,828 [MainThread  ] [INFO ]  MZ-score of MPSA: [2.4464, 2.437, 2.5098, 2.491, 0.0478, 0.1433, 0.0562, 0.1281, 0.0716, 0.0062, 0.156, 0.027, 0.0074, 0.0481, 0.0786, 0.0062, 0.0297, 0.0325, 0.0854, 0.0073]
+2026-01-19 17:13:13,828 [MainThread  ] [INFO ]  MZ-score of TDA: [1.4974, 1.905, 1.9536, 2.3844, 0.0532, 0.1544, 0.0236, 0.1033, 0.0703, 0.6662, 1.0766, 0.0236, 1.0485, 0.5432, 0.2693, 0.7125, 0.679, 0.744, 0.8253, 0.6111]
+2026-01-19 17:13:13,829 [MainThread  ] [INFO ]  benign update index:   [4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19]
+2026-01-19 17:13:13,829 [MainThread  ] [INFO ]  selected update index: [4, 5, 6, 7, 8, 9, 11, 13, 14, 15, 16, 17, 18, 19]
+2026-01-19 17:13:13,829 [MainThread  ] [INFO ]  FPR:       0.0000
+2026-01-19 17:13:13,829 [MainThread  ] [INFO ]  TPR:       0.8750
+2026-01-19 17:13:14,024 [MainThread  ] [INFO ]  ---------Test 8 ------------
+[DBG rnd=8] logits mean=0.0699, std=2.5881, maxlogit mean=6.0657
+[DBG rnd=8] probs max mean=0.9163, pred entropy mean=0.3270
+[DBG rnd=8] preds bincount=[6, 10, 5, 6, 10, 7, 5, 7, 1, 7]
+2026-01-19 17:13:22,740 [MainThread  ] [INFO ]  Clean ACC:              0.9629
+2026-01-19 17:13:22,740 [MainThread  ] [INFO ]  Attack Success Ratio:   0.0035
+2026-01-19 17:13:22,740 [MainThread  ] [INFO ]  Robustness ACC:           0.9647
+2026-01-19 17:13:22,740 [MainThread  ] [INFO ]  ------------------------------
+2026-01-19 17:13:22,740 [MainThread  ] [INFO ]  --------round 9 ------------
+mean|client_grad| 0.04776882752776146
+local epoch 0 	 client: 0 	 mal: 1 	 loss: 0.30272192 	 time: 2.02
+local epoch 0 	 client: 1 	 mal: 1 	 loss: 0.16610448 	 time: 2.01
+local epoch 0 	 client: 2 	 mal: 1 	 loss: 0.33662581 	 time: 2.01
+local epoch 0 	 client: 3 	 mal: 1 	 loss: 0.32388070 	 time: 2.01
+local epoch 0 	 client: 4 	 mal: 0 	 loss: 0.17134637 	 time: 1.36
+local epoch 0 	 client: 5 	 mal: 0 	 loss: 0.13793759 	 time: 1.36
+local epoch 0 	 client: 6 	 mal: 0 	 loss: 0.44622600 	 time: 1.38
+local epoch 0 	 client: 7 	 mal: 0 	 loss: 0.09172992 	 time: 1.37
+local epoch 0 	 client: 8 	 mal: 0 	 loss: 0.07496999 	 time: 1.38
+local epoch 0 	 client: 9 	 mal: 0 	 loss: 0.17689405 	 time: 1.37
+local epoch 0 	 client: 10 	 mal: 0 	 loss: 0.08649899 	 time: 1.37
+local epoch 0 	 client: 11 	 mal: 0 	 loss: 0.04674575 	 time: 1.38
+local epoch 0 	 client: 12 	 mal: 0 	 loss: 0.20973800 	 time: 1.38
+local epoch 0 	 client: 13 	 mal: 0 	 loss: 0.25942931 	 time: 1.38
+local epoch 0 	 client: 14 	 mal: 0 	 loss: 0.54052120 	 time: 1.37
+local epoch 0 	 client: 15 	 mal: 0 	 loss: 0.15766765 	 time: 1.37
+local epoch 0 	 client: 16 	 mal: 0 	 loss: 0.19307280 	 time: 1.36
+local epoch 0 	 client: 17 	 mal: 0 	 loss: 0.15783441 	 time: 1.37
+local epoch 0 	 client: 18 	 mal: 0 	 loss: 0.18126993 	 time: 1.38
+local epoch 0 	 client: 19 	 mal: 0 	 loss: 0.18848319 	 time: 1.42
+2026-01-19 17:13:54,518 [MainThread  ] [INFO ]  TDA: [-0.0176, -0.0134, -0.0204, -0.0253, -0.0041, -0.0032, -0.0034, -0.0035, -0.0051, -0.0056, -0.0073, 0.0076, -0.0091, -0.0042, -0.0057, 0.0021, -0.0048, -0.0071, -0.0035, -0.0067]
+2026-01-19 17:13:54,518 [MainThread  ] [INFO ]  MPSA: [0.6475, 0.6438, 0.6294, 0.6386, 0.9476, 0.9306, 0.9408, 0.931, 0.9371, 0.9391, 0.915, 0.9519, 0.9313, 0.9427, 0.9387, 0.9182, 0.9259, 0.925, 0.9154, 0.9346]
+2026-01-19 17:13:54,518 [MainThread  ] [INFO ]  MZ-score of MPSA: [2.4085, 2.4402, 2.5626, 2.4839, 0.1428, 0.0016, 0.0855, 0.0016, 0.0538, 0.0707, 0.1343, 0.1798, 0.0047, 0.1016, 0.0673, 0.1069, 0.0413, 0.0494, 0.131, 0.0322]
+2026-01-19 17:13:54,519 [MainThread  ] [INFO ]  MZ-score of TDA: [1.6868, 1.1093, 2.0737, 2.7567, 0.1761, 0.3044, 0.2657, 0.2505, 0.0336, 0.0336, 0.2645, 1.794, 0.519, 0.1616, 0.0488, 1.032, 0.0709, 0.2424, 0.2523, 0.1856]
+2026-01-19 17:13:54,519 [MainThread  ] [INFO ]  benign update index:   [4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19]
+2026-01-19 17:13:54,519 [MainThread  ] [INFO ]  selected update index: [4, 5, 6, 7, 8, 9, 10, 12, 13, 14, 16, 17, 18, 19]
+2026-01-19 17:13:54,519 [MainThread  ] [INFO ]  FPR:       0.0000
+2026-01-19 17:13:54,519 [MainThread  ] [INFO ]  TPR:       0.8750
+2026-01-19 17:13:54,718 [MainThread  ] [INFO ]  ---------Test 9 ------------
+[DBG rnd=9] logits mean=0.0896, std=2.9612, maxlogit mean=7.0134
+[DBG rnd=9] probs max mean=0.9408, pred entropy mean=0.2285
+[DBG rnd=9] preds bincount=[6, 10, 5, 6, 10, 7, 5, 7, 1, 7]
+2026-01-19 17:14:03,425 [MainThread  ] [INFO ]  Clean ACC:              0.9651
+2026-01-19 17:14:03,425 [MainThread  ] [INFO ]  Attack Success Ratio:   0.0046
+2026-01-19 17:14:03,425 [MainThread  ] [INFO ]  Robustness ACC:           0.9658
+2026-01-19 17:14:03,425 [MainThread  ] [INFO ]  ------------------------------
+2026-01-19 17:14:03,425 [MainThread  ] [INFO ]  --------round 10 ------------
+mean|client_grad| 0.057915057986974716
+local epoch 0 	 client: 0 	 mal: 1 	 loss: 0.17165750 	 time: 2.01
+local epoch 0 	 client: 1 	 mal: 1 	 loss: 0.35531953 	 time: 2.02
+local epoch 0 	 client: 2 	 mal: 1 	 loss: 0.19781607 	 time: 2.02
+local epoch 0 	 client: 3 	 mal: 1 	 loss: 0.21286662 	 time: 2.01
+local epoch 0 	 client: 4 	 mal: 0 	 loss: 0.13856114 	 time: 1.36
+local epoch 0 	 client: 5 	 mal: 0 	 loss: 0.09972159 	 time: 1.37
+local epoch 0 	 client: 6 	 mal: 0 	 loss: 0.06726830 	 time: 1.37
+local epoch 0 	 client: 7 	 mal: 0 	 loss: 0.08593781 	 time: 1.37
+local epoch 0 	 client: 8 	 mal: 0 	 loss: 0.12525348 	 time: 1.47
+local epoch 0 	 client: 9 	 mal: 0 	 loss: 0.27718315 	 time: 1.45
+local epoch 0 	 client: 10 	 mal: 0 	 loss: 0.12868823 	 time: 1.46
+local epoch 0 	 client: 11 	 mal: 0 	 loss: 0.03155791 	 time: 1.49
+local epoch 0 	 client: 12 	 mal: 0 	 loss: 0.03745609 	 time: 1.48
+local epoch 0 	 client: 13 	 mal: 0 	 loss: 0.11111088 	 time: 1.39
+local epoch 0 	 client: 14 	 mal: 0 	 loss: 0.24415140 	 time: 1.37
+local epoch 0 	 client: 15 	 mal: 0 	 loss: 0.09849961 	 time: 1.43
+local epoch 0 	 client: 16 	 mal: 0 	 loss: 0.08564026 	 time: 1.45
+local epoch 0 	 client: 17 	 mal: 0 	 loss: 0.04585256 	 time: 1.52
+local epoch 0 	 client: 18 	 mal: 0 	 loss: 0.09383062 	 time: 1.45
+local epoch 0 	 client: 19 	 mal: 0 	 loss: 0.13814586 	 time: 1.38
+2026-01-19 17:14:35,531 [MainThread  ] [INFO ]  TDA: [-0.0148, -0.0219, -0.0196, -0.0171, -0.0032, -0.0036, -0.0068, 0.0019, -0.0068, -0.0023, -0.0067, -0.0003, -0.0143, -0.0116, -0.0106, -0.0125, -0.0066, -0.0039, -0.0014, -0.0132]
+2026-01-19 17:14:35,531 [MainThread  ] [INFO ]  MPSA: [0.6435, 0.6416, 0.6353, 0.6346, 0.9082, 0.909, 0.9002, 0.9502, 0.9166, 0.9269, 0.867, 0.9177, 0.9262, 0.9027, 0.9026, 0.9059, 0.9159, 0.9127, 0.932, 0.9235]
+2026-01-19 17:14:35,532 [MainThread  ] [INFO ]  MZ-score of MPSA: [2.3875, 2.4042, 2.4609, 2.4677, 0.0034, 0.0034, 0.0758, 0.3745, 0.0726, 0.1653, 0.3745, 0.082, 0.1586, 0.0527, 0.0539, 0.0243, 0.0661, 0.037, 0.2105, 0.1339]
+2026-01-19 17:14:35,532 [MainThread  ] [INFO ]  MZ-score of TDA: [1.2228, 2.3215, 1.9621, 1.5745, 0.552, 0.4829, 0.0052, 1.3396, 0.0052, 0.6931, 0.0088, 0.9905, 1.1576, 0.7347, 0.5758, 0.869, 0.035, 0.4408, 0.8317, 0.9746]
+2026-01-19 17:14:35,532 [MainThread  ] [INFO ]  benign update index:   [4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19]
+2026-01-19 17:14:35,532 [MainThread  ] [INFO ]  selected update index: [4, 5, 6, 8, 9, 10, 11, 13, 14, 15, 16, 17, 18, 19]
+2026-01-19 17:14:35,533 [MainThread  ] [INFO ]  FPR:       0.0000
+2026-01-19 17:14:35,533 [MainThread  ] [INFO ]  TPR:       0.8750
+2026-01-19 17:14:35,740 [MainThread  ] [INFO ]  ---------Test 10 ------------
+[DBG rnd=10] logits mean=0.1030, std=3.1901, maxlogit mean=7.5853
+[DBG rnd=10] probs max mean=0.9564, pred entropy mean=0.1812
+[DBG rnd=10] preds bincount=[6, 10, 5, 6, 10, 7, 5, 7, 1, 7]
+2026-01-19 17:14:44,483 [MainThread  ] [INFO ]  Clean ACC:              0.9709
+2026-01-19 17:14:44,483 [MainThread  ] [INFO ]  Attack Success Ratio:   0.0043
+2026-01-19 17:14:44,483 [MainThread  ] [INFO ]  Robustness ACC:           0.9716
+2026-01-19 17:14:44,483 [MainThread  ] [INFO ]  ------------------------------
+2026-01-19 17:14:44,483 [MainThread  ] [INFO ]  --------round 11 ------------
+mean|client_grad| 0.04364313185214996
+local epoch 0 	 client: 0 	 mal: 1 	 loss: 0.19798835 	 time: 2.01
+local epoch 0 	 client: 1 	 mal: 1 	 loss: 0.20685403 	 time: 2.01
+local epoch 0 	 client: 2 	 mal: 1 	 loss: 0.35446703 	 time: 2.01
+local epoch 0 	 client: 3 	 mal: 1 	 loss: 0.41460538 	 time: 2.01
+local epoch 0 	 client: 4 	 mal: 0 	 loss: 0.26941389 	 time: 1.45
+local epoch 0 	 client: 5 	 mal: 0 	 loss: 0.14095616 	 time: 1.50
+local epoch 0 	 client: 6 	 mal: 0 	 loss: 0.18747996 	 time: 1.51
+local epoch 0 	 client: 7 	 mal: 0 	 loss: 0.02513603 	 time: 1.50
+local epoch 0 	 client: 8 	 mal: 0 	 loss: 0.05262191 	 time: 1.47
+local epoch 0 	 client: 9 	 mal: 0 	 loss: 0.07581599 	 time: 1.46
+local epoch 0 	 client: 10 	 mal: 0 	 loss: 0.19626603 	 time: 1.48
+local epoch 0 	 client: 11 	 mal: 0 	 loss: 0.10787462 	 time: 1.49
+local epoch 0 	 client: 12 	 mal: 0 	 loss: 0.04874040 	 time: 1.49
+local epoch 0 	 client: 13 	 mal: 0 	 loss: 0.10450441 	 time: 1.50
+local epoch 0 	 client: 14 	 mal: 0 	 loss: 0.16827101 	 time: 1.49
+local epoch 0 	 client: 15 	 mal: 0 	 loss: 0.07490195 	 time: 1.48
+local epoch 0 	 client: 16 	 mal: 0 	 loss: 0.14293228 	 time: 1.48
+local epoch 0 	 client: 17 	 mal: 0 	 loss: 0.10312051 	 time: 1.48
+local epoch 0 	 client: 18 	 mal: 0 	 loss: 0.20524086 	 time: 1.50
+local epoch 0 	 client: 19 	 mal: 0 	 loss: 0.47083423 	 time: 1.50
+2026-01-19 17:15:17,032 [MainThread  ] [INFO ]  TDA: [-0.0171, -0.0185, -0.0317, -0.0286, -0.0168, -0.0183, -0.0125, -0.006, -0.0158, -0.0096, -0.0123, -0.0101, -0.0217, -0.0082, -0.014, -0.0092, -0.0068, -0.0051, -0.0115, -0.0046]
+2026-01-19 17:15:17,032 [MainThread  ] [INFO ]  MPSA: [0.6575, 0.6559, 0.6521, 0.635, 0.8938, 0.9044, 0.8683, 0.9154, 0.8954, 0.8704, 0.8891, 0.8728, 0.8782, 0.9185, 0.9171, 0.9069, 0.8845, 0.9111, 0.8853, 0.9012]
+2026-01-19 17:15:17,033 [MainThread  ] [INFO ]  MZ-score of MPSA: [2.3218, 2.3374, 2.376, 2.5495, 0.0668, 0.1735, 0.1911, 0.285, 0.0833, 0.1699, 0.0187, 0.146, 0.0914, 0.3161, 0.3024, 0.199, 0.0269, 0.2419, 0.0187, 0.1419]
+2026-01-19 17:15:17,033 [MainThread  ] [INFO ]  MZ-score of TDA: [0.6542, 0.8549, 2.6842, 2.258, 0.6133, 0.8249, 0.0083, 0.8893, 0.4732, 0.3931, 0.0083, 0.3201, 1.2912, 0.5823, 0.2289, 0.4517, 0.7857, 1.0158, 0.1305, 1.084]
+2026-01-19 17:15:17,033 [MainThread  ] [INFO ]  benign update index:   [4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19]
+2026-01-19 17:15:17,034 [MainThread  ] [INFO ]  selected update index: [4, 5, 6, 7, 8, 9, 10, 11, 13, 14, 15, 16, 18]
+2026-01-19 17:15:17,034 [MainThread  ] [INFO ]  FPR:       0.0000
+2026-01-19 17:15:17,034 [MainThread  ] [INFO ]  TPR:       0.8125
+2026-01-19 17:15:17,244 [MainThread  ] [INFO ]  ---------Test 11 ------------
+[DBG rnd=11] logits mean=0.0919, std=3.2565, maxlogit mean=7.7319
+[DBG rnd=11] probs max mean=0.9616, pred entropy mean=0.1595
+[DBG rnd=11] preds bincount=[6, 10, 5, 6, 10, 7, 5, 7, 1, 7]
+2026-01-19 17:15:25,976 [MainThread  ] [INFO ]  Clean ACC:              0.9755
+2026-01-19 17:15:25,977 [MainThread  ] [INFO ]  Attack Success Ratio:   0.0036
+2026-01-19 17:15:25,977 [MainThread  ] [INFO ]  Robustness ACC:           0.9757
+2026-01-19 17:15:25,977 [MainThread  ] [INFO ]  ------------------------------
+2026-01-19 17:15:25,977 [MainThread  ] [INFO ]  --------round 12 ------------
+mean|client_grad| 0.060936007648706436
+local epoch 0 	 client: 0 	 mal: 1 	 loss: 0.45169815 	 time: 2.01
+local epoch 0 	 client: 1 	 mal: 1 	 loss: 0.24996135 	 time: 2.01
+local epoch 0 	 client: 2 	 mal: 1 	 loss: 0.35628149 	 time: 2.01
+local epoch 0 	 client: 3 	 mal: 1 	 loss: 0.15719387 	 time: 2.01
+local epoch 0 	 client: 4 	 mal: 0 	 loss: 0.07060444 	 time: 1.45
+local epoch 0 	 client: 5 	 mal: 0 	 loss: 0.26131657 	 time: 1.48
+local epoch 0 	 client: 6 	 mal: 0 	 loss: 0.12553817 	 time: 1.48
+local epoch 0 	 client: 7 	 mal: 0 	 loss: 0.09876516 	 time: 1.50
+local epoch 0 	 client: 8 	 mal: 0 	 loss: 0.14639421 	 time: 1.49
+local epoch 0 	 client: 9 	 mal: 0 	 loss: 0.07711779 	 time: 1.47
+local epoch 0 	 client: 10 	 mal: 0 	 loss: 0.26351377 	 time: 1.47
+local epoch 0 	 client: 11 	 mal: 0 	 loss: 0.11309627 	 time: 1.47
+local epoch 0 	 client: 12 	 mal: 0 	 loss: 0.08347654 	 time: 1.49
+local epoch 0 	 client: 13 	 mal: 0 	 loss: 0.13329177 	 time: 1.46
+local epoch 0 	 client: 14 	 mal: 0 	 loss: 0.04100125 	 time: 1.46
+local epoch 0 	 client: 15 	 mal: 0 	 loss: 0.10159005 	 time: 1.47
+local epoch 0 	 client: 16 	 mal: 0 	 loss: 0.08015546 	 time: 1.45
+local epoch 0 	 client: 17 	 mal: 0 	 loss: 0.11995860 	 time: 1.48
+local epoch 0 	 client: 18 	 mal: 0 	 loss: 0.23919129 	 time: 1.47
+local epoch 0 	 client: 19 	 mal: 0 	 loss: 0.06164590 	 time: 1.48
+2026-01-19 17:15:58,447 [MainThread  ] [INFO ]  TDA: [-0.017, -0.0131, -0.0158, -0.0111, -0.0116, -0.0088, -0.006, -0.01, -0.0171, -0.0128, -0.0103, -0.0022, -0.0135, -0.0167, -0.016, -0.0075, -0.0044, -0.0101, -0.0185, -0.0135]
+2026-01-19 17:15:58,448 [MainThread  ] [INFO ]  MPSA: [0.6463, 0.6316, 0.6241, 0.6271, 0.9009, 0.8733, 0.8854, 0.8772, 0.8821, 0.8788, 0.8483, 0.8737, 0.9043, 0.8943, 0.8734, 0.8972, 0.8925, 0.8717, 0.8663, 0.9011]
+2026-01-19 17:15:58,448 [MainThread  ] [INFO ]  MZ-score of MPSA: [2.268, 2.4138, 2.4883, 2.4582, 0.2516, 0.0218, 0.0982, 0.0173, 0.0655, 0.0326, 0.2688, 0.0173, 0.2856, 0.1859, 0.0204, 0.2151, 0.1687, 0.0375, 0.0907, 0.2535]
+2026-01-19 17:15:58,448 [MainThread  ] [INFO ]  MZ-score of TDA: [1.1024, 0.2143, 0.8205, 0.2477, 0.1372, 0.7843, 1.4036, 0.5029, 1.1182, 0.1372, 0.4187, 2.2748, 0.3022, 1.0392, 0.8771, 1.0631, 1.7818, 0.4722, 1.4549, 0.3007]
+2026-01-19 17:15:58,449 [MainThread  ] [INFO ]  benign update index:   [4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19]
+2026-01-19 17:15:58,449 [MainThread  ] [INFO ]  selected update index: [4, 5, 7, 9, 10, 12, 14, 17, 19]
+2026-01-19 17:15:58,449 [MainThread  ] [INFO ]  FPR:       0.0000
+2026-01-19 17:15:58,449 [MainThread  ] [INFO ]  TPR:       0.5625
+2026-01-19 17:15:58,663 [MainThread  ] [INFO ]  ---------Test 12 ------------
+[DBG rnd=12] logits mean=0.1143, std=3.5572, maxlogit mean=8.4490
+[DBG rnd=12] probs max mean=0.9731, pred entropy mean=0.1209
+[DBG rnd=12] preds bincount=[6, 10, 5, 6, 10, 7, 5, 7, 1, 7]
+2026-01-19 17:16:07,402 [MainThread  ] [INFO ]  Clean ACC:              0.9767
+2026-01-19 17:16:07,402 [MainThread  ] [INFO ]  Attack Success Ratio:   0.0046
+2026-01-19 17:16:07,402 [MainThread  ] [INFO ]  Robustness ACC:           0.9761
+2026-01-19 17:16:07,402 [MainThread  ] [INFO ]  ------------------------------
+2026-01-19 17:16:07,402 [MainThread  ] [INFO ]  --------round 13 ------------
+mean|client_grad| 0.07857169210910797
+local epoch 0 	 client: 0 	 mal: 1 	 loss: 0.34894964 	 time: 2.02
+local epoch 0 	 client: 1 	 mal: 1 	 loss: 0.13772473 	 time: 2.01
+local epoch 0 	 client: 2 	 mal: 1 	 loss: 0.15987907 	 time: 2.01
+local epoch 0 	 client: 3 	 mal: 1 	 loss: 0.27763709 	 time: 2.01
+local epoch 0 	 client: 4 	 mal: 0 	 loss: 0.12249159 	 time: 1.36
+local epoch 0 	 client: 5 	 mal: 0 	 loss: 0.03092176 	 time: 1.36
+local epoch 0 	 client: 6 	 mal: 0 	 loss: 0.21583927 	 time: 1.36
+local epoch 0 	 client: 7 	 mal: 0 	 loss: 0.08730353 	 time: 1.37
+local epoch 0 	 client: 8 	 mal: 0 	 loss: 0.09793331 	 time: 1.37
+local epoch 0 	 client: 9 	 mal: 0 	 loss: 0.17232691 	 time: 1.36
+local epoch 0 	 client: 10 	 mal: 0 	 loss: 0.17792979 	 time: 1.37
+local epoch 0 	 client: 11 	 mal: 0 	 loss: 0.11496575 	 time: 1.38
+local epoch 0 	 client: 12 	 mal: 0 	 loss: 0.12908137 	 time: 1.36
+local epoch 0 	 client: 13 	 mal: 0 	 loss: 0.06654237 	 time: 1.37
+local epoch 0 	 client: 14 	 mal: 0 	 loss: 0.25062957 	 time: 1.37
+local epoch 0 	 client: 15 	 mal: 0 	 loss: 0.22221740 	 time: 1.41
+local epoch 0 	 client: 16 	 mal: 0 	 loss: 0.05023511 	 time: 1.37
+local epoch 0 	 client: 17 	 mal: 0 	 loss: 0.10796242 	 time: 1.38
+local epoch 0 	 client: 18 	 mal: 0 	 loss: 0.18389367 	 time: 1.38
+local epoch 0 	 client: 19 	 mal: 0 	 loss: 0.19860055 	 time: 1.41
+2026-01-19 17:16:39,157 [MainThread  ] [INFO ]  TDA: [-0.0203, -0.0153, -0.0209, -0.0203, -0.0069, -0.0125, -0.0154, -0.0144, -0.0175, -0.0185, -0.0148, -0.0084, -0.0191, -0.0138, -0.0091, -0.0101, -0.0109, -0.0116, -0.0139, -0.0211]
+2026-01-19 17:16:39,157 [MainThread  ] [INFO ]  MPSA: [0.6626, 0.6431, 0.6471, 0.6453, 0.8832, 0.8798, 0.8833, 0.8763, 0.8795, 0.8814, 0.8661, 0.8819, 0.882, 0.8786, 0.9093, 0.8846, 0.8582, 0.8757, 0.8881, 0.8755]
+2026-01-19 17:16:39,158 [MainThread  ] [INFO ]  MZ-score of MPSA: [2.3319, 2.5427, 2.4996, 2.5191, 0.0446, 0.0085, 0.0461, 0.0295, 0.0049, 0.0256, 0.1392, 0.0307, 0.0314, 0.0049, 0.3256, 0.06, 0.225, 0.0362, 0.0973, 0.0384]
+2026-01-19 17:16:39,158 [MainThread  ] [INFO ]  MZ-score of TDA: [1.3183, 0.1633, 1.4654, 1.3331, 1.7867, 0.4926, 0.176, 0.0485, 0.678, 0.9156, 0.0485, 1.4473, 1.0516, 0.1958, 1.2869, 1.0542, 0.8593, 0.6919, 0.1636, 1.5207]
+2026-01-19 17:16:39,158 [MainThread  ] [INFO ]  benign update index:   [4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19]
+2026-01-19 17:16:39,158 [MainThread  ] [INFO ]  selected update index: [5, 6, 7, 8, 9, 10, 13, 16, 17, 18]
+2026-01-19 17:16:39,158 [MainThread  ] [INFO ]  FPR:       0.0000
+2026-01-19 17:16:39,159 [MainThread  ] [INFO ]  TPR:       0.6250
+2026-01-19 17:16:39,365 [MainThread  ] [INFO ]  ---------Test 13 ------------
+[DBG rnd=13] logits mean=0.1205, std=3.6509, maxlogit mean=8.8252
+[DBG rnd=13] probs max mean=0.9750, pred entropy mean=0.1072
+[DBG rnd=13] preds bincount=[6, 10, 5, 6, 10, 7, 5, 7, 1, 7]
+2026-01-19 17:16:48,073 [MainThread  ] [INFO ]  Clean ACC:              0.9785
+2026-01-19 17:16:48,073 [MainThread  ] [INFO ]  Attack Success Ratio:   0.0036
+2026-01-19 17:16:48,073 [MainThread  ] [INFO ]  Robustness ACC:           0.9783
+2026-01-19 17:16:48,073 [MainThread  ] [INFO ]  ------------------------------
+2026-01-19 17:16:48,073 [MainThread  ] [INFO ]  --------round 14 ------------
+mean|client_grad| 0.05611724406480789
+local epoch 0 	 client: 0 	 mal: 1 	 loss: 0.24269626 	 time: 2.02
+local epoch 0 	 client: 1 	 mal: 1 	 loss: 0.36485320 	 time: 2.01
+local epoch 0 	 client: 2 	 mal: 1 	 loss: 0.44971082 	 time: 2.01
+local epoch 0 	 client: 3 	 mal: 1 	 loss: 0.43812630 	 time: 2.01
+local epoch 0 	 client: 4 	 mal: 0 	 loss: 0.03804925 	 time: 1.36
+local epoch 0 	 client: 5 	 mal: 0 	 loss: 0.05883721 	 time: 1.36
+local epoch 0 	 client: 6 	 mal: 0 	 loss: 0.05761100 	 time: 1.37
+local epoch 0 	 client: 7 	 mal: 0 	 loss: 0.19329353 	 time: 1.37
+local epoch 0 	 client: 8 	 mal: 0 	 loss: 0.08735516 	 time: 1.37
+local epoch 0 	 client: 9 	 mal: 0 	 loss: 0.03838598 	 time: 1.38
+local epoch 0 	 client: 10 	 mal: 0 	 loss: 0.05989060 	 time: 1.37
+local epoch 0 	 client: 11 	 mal: 0 	 loss: 0.07702324 	 time: 1.37
+local epoch 0 	 client: 12 	 mal: 0 	 loss: 0.17825416 	 time: 1.37
+local epoch 0 	 client: 13 	 mal: 0 	 loss: 0.09805004 	 time: 1.48
+local epoch 0 	 client: 14 	 mal: 0 	 loss: 0.19361264 	 time: 1.44
+local epoch 0 	 client: 15 	 mal: 0 	 loss: 0.05204690 	 time: 1.37
+local epoch 0 	 client: 16 	 mal: 0 	 loss: 0.14340065 	 time: 1.37
+local epoch 0 	 client: 17 	 mal: 0 	 loss: 0.06068398 	 time: 1.37
+local epoch 0 	 client: 18 	 mal: 0 	 loss: 0.03641436 	 time: 1.37
+local epoch 0 	 client: 19 	 mal: 0 	 loss: 0.16981930 	 time: 1.38
+2026-01-19 17:17:20,111 [MainThread  ] [INFO ]  TDA: [-0.0243, -0.0272, -0.0342, -0.0308, -0.017, -0.0265, -0.0161, -0.0132, -0.0161, -0.0091, -0.019, -0.0102, -0.0154, -0.0177, -0.0079, -0.0266, -0.0144, -0.0165, -0.0099, -0.0133]
+2026-01-19 17:17:20,111 [MainThread  ] [INFO ]  MPSA: [0.6546, 0.6556, 0.6566, 0.6461, 0.8534, 0.8461, 0.8543, 0.8413, 0.8786, 0.8902, 0.8641, 0.8389, 0.8751, 0.8513, 0.8865, 0.8708, 0.8917, 0.857, 0.8699, 0.8758]
+2026-01-19 17:17:20,112 [MainThread  ] [INFO ]  MZ-score of MPSA: [2.3341, 2.3221, 2.311, 2.4331, 0.0259, 0.1104, 0.0153, 0.1664, 0.2669, 0.4011, 0.0982, 0.1941, 0.2255, 0.0503, 0.3584, 0.1762, 0.4185, 0.0153, 0.1651, 0.2335]
+2026-01-19 17:17:20,112 [MainThread  ] [INFO ]  MZ-score of TDA: [1.0837, 1.4816, 2.4291, 1.9715, 0.0919, 1.3837, 0.0273, 0.4234, 0.0368, 0.9879, 0.3563, 0.835, 0.1293, 0.1813, 1.1523, 1.3925, 0.2673, 0.0273, 0.8748, 0.4078]
+2026-01-19 17:17:20,113 [MainThread  ] [INFO ]  benign update index:   [4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19]
+2026-01-19 17:17:20,113 [MainThread  ] [INFO ]  selected update index: [4, 6, 7, 8, 9, 10, 11, 12, 13, 16, 17, 18, 19]
+2026-01-19 17:17:20,113 [MainThread  ] [INFO ]  FPR:       0.0000
+2026-01-19 17:17:20,113 [MainThread  ] [INFO ]  TPR:       0.8125
+2026-01-19 17:17:20,320 [MainThread  ] [INFO ]  ---------Test 14 ------------
+[DBG rnd=14] logits mean=0.1052, std=3.7208, maxlogit mean=8.9527
+[DBG rnd=14] probs max mean=0.9783, pred entropy mean=0.0907
+[DBG rnd=14] preds bincount=[6, 10, 5, 6, 10, 7, 5, 7, 1, 7]
+2026-01-19 17:17:29,024 [MainThread  ] [INFO ]  Clean ACC:              0.9782
+2026-01-19 17:17:29,024 [MainThread  ] [INFO ]  Attack Success Ratio:   0.0029
+2026-01-19 17:17:29,024 [MainThread  ] [INFO ]  Robustness ACC:           0.9780
+2026-01-19 17:17:29,024 [MainThread  ] [INFO ]  ------------------------------
+2026-01-19 17:17:29,024 [MainThread  ] [INFO ]  --------round 15 ------------
+mean|client_grad| 0.03707612678408623
+local epoch 0 	 client: 0 	 mal: 1 	 loss: 0.27669281 	 time: 2.01
+local epoch 0 	 client: 1 	 mal: 1 	 loss: 0.21118262 	 time: 2.02
+local epoch 0 	 client: 2 	 mal: 1 	 loss: 0.26425985 	 time: 2.02
+local epoch 0 	 client: 3 	 mal: 1 	 loss: 0.29038286 	 time: 2.01
+local epoch 0 	 client: 4 	 mal: 0 	 loss: 0.07909378 	 time: 1.36
+local epoch 0 	 client: 5 	 mal: 0 	 loss: 0.14128742 	 time: 1.36
+local epoch 0 	 client: 6 	 mal: 0 	 loss: 0.15527999 	 time: 1.37
+local epoch 0 	 client: 7 	 mal: 0 	 loss: 0.16362841 	 time: 1.37
+local epoch 0 	 client: 8 	 mal: 0 	 loss: 0.06886713 	 time: 1.38
+local epoch 0 	 client: 9 	 mal: 0 	 loss: 0.18964610 	 time: 1.37
+local epoch 0 	 client: 10 	 mal: 0 	 loss: 0.01774972 	 time: 1.38
+local epoch 0 	 client: 11 	 mal: 0 	 loss: 0.05557752 	 time: 1.37
+local epoch 0 	 client: 12 	 mal: 0 	 loss: 0.15140148 	 time: 1.48
+local epoch 0 	 client: 13 	 mal: 0 	 loss: 0.18269305 	 time: 1.45
+local epoch 0 	 client: 14 	 mal: 0 	 loss: 0.12639906 	 time: 1.38
+local epoch 0 	 client: 15 	 mal: 0 	 loss: 0.11986101 	 time: 1.37
+local epoch 0 	 client: 16 	 mal: 0 	 loss: 0.11283246 	 time: 1.37
+local epoch 0 	 client: 17 	 mal: 0 	 loss: 0.06323709 	 time: 1.37
+local epoch 0 	 client: 18 	 mal: 0 	 loss: 0.13618103 	 time: 1.37
+local epoch 0 	 client: 19 	 mal: 0 	 loss: 0.13111374 	 time: 1.37
+2026-01-19 17:18:00,905 [MainThread  ] [INFO ]  TDA: [-0.036, -0.0289, -0.0306, -0.0369, -0.0219, -0.0213, -0.0199, -0.014, -0.0194, -0.0152, -0.0173, -0.0127, -0.0139, -0.0286, -0.0173, -0.0226, -0.0239, -0.0196, -0.0212, -0.0162]
+2026-01-19 17:18:00,905 [MainThread  ] [INFO ]  MPSA: [0.6653, 0.6496, 0.6528, 0.6493, 0.844, 0.8214, 0.8506, 0.8724, 0.8846, 0.8517, 0.8319, 0.8302, 0.8582, 0.8221, 0.8646, 0.8545, 0.8164, 0.8562, 0.8581, 0.813]
+2026-01-19 17:18:00,906 [MainThread  ] [INFO ]  MZ-score of MPSA: [2.1919, 2.3912, 2.351, 2.3955, 0.0768, 0.2092, 0.161, 0.438, 0.5928, 0.1749, 0.0768, 0.0975, 0.2574, 0.201, 0.3388, 0.2109, 0.2736, 0.2325, 0.2569, 0.3164]
+2026-01-19 17:18:00,906 [MainThread  ] [INFO ]  MZ-score of TDA: [2.2472, 1.2147, 1.4615, 2.3799, 0.1919, 0.1057, 0.0891, 0.9446, 0.1727, 0.7811, 0.4655, 1.1407, 0.9719, 1.1694, 0.4709, 0.3001, 0.4929, 0.1448, 0.0891, 0.6383]
+2026-01-19 17:18:00,907 [MainThread  ] [INFO ]  benign update index:   [4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19]
+2026-01-19 17:18:00,907 [MainThread  ] [INFO ]  selected update index: [4, 5, 6, 7, 8, 9, 10, 12, 14, 15, 16, 17, 18, 19]
+2026-01-19 17:18:00,907 [MainThread  ] [INFO ]  FPR:       0.0000
+2026-01-19 17:18:00,907 [MainThread  ] [INFO ]  TPR:       0.8750
+2026-01-19 17:18:01,108 [MainThread  ] [INFO ]  ---------Test 15 ------------
+[DBG rnd=15] logits mean=0.1057, std=3.7706, maxlogit mean=9.1206
+[DBG rnd=15] probs max mean=0.9783, pred entropy mean=0.0865
+[DBG rnd=15] preds bincount=[6, 10, 5, 6, 10, 7, 5, 7, 1, 7]
+2026-01-19 17:18:09,818 [MainThread  ] [INFO ]  Clean ACC:              0.9794
+2026-01-19 17:18:09,818 [MainThread  ] [INFO ]  Attack Success Ratio:   0.0037
+2026-01-19 17:18:09,818 [MainThread  ] [INFO ]  Robustness ACC:           0.9793
+2026-01-19 17:18:09,818 [MainThread  ] [INFO ]  ------------------------------
+2026-01-19 17:18:09,818 [MainThread  ] [INFO ]  --------round 16 ------------
+mean|client_grad| 0.0824211835861206
+local epoch 0 	 client: 0 	 mal: 1 	 loss: 0.21669289 	 time: 2.02
+local epoch 0 	 client: 1 	 mal: 1 	 loss: 0.47995859 	 time: 2.01
+local epoch 0 	 client: 2 	 mal: 1 	 loss: 0.39901802 	 time: 2.01
+local epoch 0 	 client: 3 	 mal: 1 	 loss: 0.21416360 	 time: 2.01
+local epoch 0 	 client: 4 	 mal: 0 	 loss: 0.15427512 	 time: 1.36
+local epoch 0 	 client: 5 	 mal: 0 	 loss: 0.23830235 	 time: 1.36
+local epoch 0 	 client: 6 	 mal: 0 	 loss: 0.11479666 	 time: 1.36
+local epoch 0 	 client: 7 	 mal: 0 	 loss: 0.09323656 	 time: 1.37
+local epoch 0 	 client: 8 	 mal: 0 	 loss: 0.09327574 	 time: 1.36
+local epoch 0 	 client: 9 	 mal: 0 	 loss: 0.19889319 	 time: 1.36
+local epoch 0 	 client: 10 	 mal: 0 	 loss: 0.05482947 	 time: 1.36
+local epoch 0 	 client: 11 	 mal: 0 	 loss: 0.10277906 	 time: 1.39
+local epoch 0 	 client: 12 	 mal: 0 	 loss: 0.03386224 	 time: 1.37
+local epoch 0 	 client: 13 	 mal: 0 	 loss: 0.02815180 	 time: 1.36
+local epoch 0 	 client: 14 	 mal: 0 	 loss: 0.30999205 	 time: 1.37
+local epoch 0 	 client: 15 	 mal: 0 	 loss: 0.02458007 	 time: 1.38
+local epoch 0 	 client: 16 	 mal: 0 	 loss: 0.07080660 	 time: 1.37
+local epoch 0 	 client: 17 	 mal: 0 	 loss: 0.04505692 	 time: 1.37
+local epoch 0 	 client: 18 	 mal: 0 	 loss: 0.10927664 	 time: 1.39
+local epoch 0 	 client: 19 	 mal: 0 	 loss: 0.04434536 	 time: 1.39
+2026-01-19 17:18:41,570 [MainThread  ] [INFO ]  TDA: [-0.0201, -0.032, -0.0275, -0.0287, -0.0126, -0.0151, -0.0133, -0.0201, -0.0179, -0.0247, -0.0198, -0.0156, -0.017, -0.0154, -0.0168, -0.0182, -0.0122, -0.0152, -0.0195, -0.0163]
+2026-01-19 17:18:41,571 [MainThread  ] [INFO ]  MPSA: [0.6482, 0.6451, 0.6484, 0.6424, 0.8431, 0.8707, 0.8223, 0.8507, 0.8717, 0.8212, 0.8461, 0.8379, 0.8305, 0.8617, 0.8663, 0.8332, 0.8637, 0.8546, 0.837, 0.8468]
+2026-01-19 17:18:41,571 [MainThread  ] [INFO ]  MZ-score of MPSA: [2.3516, 2.3887, 2.3483, 2.422, 0.0318, 0.3692, 0.2218, 0.1254, 0.3818, 0.236, 0.0687, 0.0318, 0.1222, 0.2595, 0.316, 0.0891, 0.2843, 0.1729, 0.0422, 0.0771]
+2026-01-19 17:18:41,572 [MainThread  ] [INFO ]  MZ-score of TDA: [0.4928, 2.7391, 1.8964, 2.121, 0.9231, 0.4468, 0.7874, 0.4994, 0.0868, 1.352, 0.4414, 0.354, 0.0868, 0.3921, 0.1237, 0.1377, 0.9877, 0.4259, 0.3737, 0.2157]
+2026-01-19 17:18:41,572 [MainThread  ] [INFO ]  benign update index:   [4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19]
+2026-01-19 17:18:41,572 [MainThread  ] [INFO ]  selected update index: [4, 5, 6, 7, 8, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19]
+2026-01-19 17:18:41,572 [MainThread  ] [INFO ]  FPR:       0.0000
+2026-01-19 17:18:41,572 [MainThread  ] [INFO ]  TPR:       0.9375
+2026-01-19 17:18:41,773 [MainThread  ] [INFO ]  ---------Test 16 ------------
+[DBG rnd=16] logits mean=0.1090, std=3.9578, maxlogit mean=9.6151
+[DBG rnd=16] probs max mean=0.9839, pred entropy mean=0.0707
+[DBG rnd=16] preds bincount=[6, 10, 5, 6, 10, 7, 5, 7, 1, 7]
+2026-01-19 17:18:50,492 [MainThread  ] [INFO ]  Clean ACC:              0.9819
+2026-01-19 17:18:50,492 [MainThread  ] [INFO ]  Attack Success Ratio:   0.0028
+2026-01-19 17:18:50,492 [MainThread  ] [INFO ]  Robustness ACC:           0.9826
+2026-01-19 17:18:50,492 [MainThread  ] [INFO ]  ------------------------------
+2026-01-19 17:18:50,492 [MainThread  ] [INFO ]  --------round 17 ------------
+mean|client_grad| 0.0792352482676506
+local epoch 0 	 client: 0 	 mal: 1 	 loss: 0.39997894 	 time: 2.01
+local epoch 0 	 client: 1 	 mal: 1 	 loss: 0.27204835 	 time: 2.01
+local epoch 0 	 client: 2 	 mal: 1 	 loss: 0.19243953 	 time: 2.01
+local epoch 0 	 client: 3 	 mal: 1 	 loss: 0.17836687 	 time: 2.01
+local epoch 0 	 client: 4 	 mal: 0 	 loss: 0.20904662 	 time: 1.37
+local epoch 0 	 client: 5 	 mal: 0 	 loss: 0.08411027 	 time: 1.37
+local epoch 0 	 client: 6 	 mal: 0 	 loss: 0.02480263 	 time: 1.37
+local epoch 0 	 client: 7 	 mal: 0 	 loss: 0.03695161 	 time: 1.38
+local epoch 0 	 client: 8 	 mal: 0 	 loss: 0.10430636 	 time: 1.36
+local epoch 0 	 client: 9 	 mal: 0 	 loss: 0.04988017 	 time: 1.37
+local epoch 0 	 client: 10 	 mal: 0 	 loss: 0.12091106 	 time: 1.37
+local epoch 0 	 client: 11 	 mal: 0 	 loss: 0.13224678 	 time: 1.37
+local epoch 0 	 client: 12 	 mal: 0 	 loss: 0.24510697 	 time: 1.37
+local epoch 0 	 client: 13 	 mal: 0 	 loss: 0.08625089 	 time: 1.42
+local epoch 0 	 client: 14 	 mal: 0 	 loss: 0.12328020 	 time: 1.37
+local epoch 0 	 client: 15 	 mal: 0 	 loss: 0.01990779 	 time: 1.37
+local epoch 0 	 client: 16 	 mal: 0 	 loss: 0.02538346 	 time: 1.37
+local epoch 0 	 client: 17 	 mal: 0 	 loss: 0.05591773 	 time: 1.37
+local epoch 0 	 client: 18 	 mal: 0 	 loss: 0.03101796 	 time: 1.38
+local epoch 0 	 client: 19 	 mal: 0 	 loss: 0.05195209 	 time: 1.37
+2026-01-19 17:19:22,204 [MainThread  ] [INFO ]  TDA: [-0.0425, -0.0294, -0.0272, -0.0211, -0.0225, -0.0255, -0.0204, -0.0058, -0.0233, -0.0206, -0.0227, -0.0115, -0.0249, -0.0369, -0.0223, -0.016, -0.0178, -0.0172, -0.0117, -0.024]
+2026-01-19 17:19:22,205 [MainThread  ] [INFO ]  MPSA: [0.6637, 0.6694, 0.6662, 0.6609, 0.8434, 0.8404, 0.835, 0.8349, 0.8373, 0.8528, 0.8141, 0.8252, 0.8284, 0.7967, 0.8066, 0.8277, 0.8028, 0.8354, 0.8335, 0.8466]
+2026-01-19 17:19:22,205 [MainThread  ] [INFO ]  MZ-score of MPSA: [2.4536, 2.3686, 2.4159, 2.4952, 0.2291, 0.1845, 0.1038, 0.1021, 0.1381, 0.3697, 0.2081, 0.0415, 0.0052, 0.4681, 0.3201, 0.0052, 0.3767, 0.1098, 0.0818, 0.2778]
+2026-01-19 17:19:22,205 [MainThread  ] [INFO ]  MZ-score of TDA: [2.4834, 0.8605, 0.5868, 0.1669, 0.0075, 0.3855, 0.2525, 2.0467, 0.1109, 0.2214, 0.0421, 1.342, 0.3049, 1.7938, 0.0075, 0.7948, 0.568, 0.6392, 1.3254, 0.2032]
+2026-01-19 17:19:22,206 [MainThread  ] [INFO ]  benign update index:   [4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19]
+2026-01-19 17:19:22,206 [MainThread  ] [INFO ]  selected update index: [4, 5, 6, 8, 9, 10, 12, 14, 15, 16, 17, 19]
+2026-01-19 17:19:22,206 [MainThread  ] [INFO ]  FPR:       0.0000
+2026-01-19 17:19:22,206 [MainThread  ] [INFO ]  TPR:       0.7500
+2026-01-19 17:19:22,405 [MainThread  ] [INFO ]  ---------Test 17 ------------
+[DBG rnd=17] logits mean=0.1345, std=4.0972, maxlogit mean=9.9563
+[DBG rnd=17] probs max mean=0.9869, pred entropy mean=0.0627
+[DBG rnd=17] preds bincount=[6, 10, 5, 6, 10, 7, 5, 7, 1, 7]
+2026-01-19 17:19:31,097 [MainThread  ] [INFO ]  Clean ACC:              0.9818
+2026-01-19 17:19:31,097 [MainThread  ] [INFO ]  Attack Success Ratio:   0.0035
+2026-01-19 17:19:31,097 [MainThread  ] [INFO ]  Robustness ACC:           0.9816
+2026-01-19 17:19:31,097 [MainThread  ] [INFO ]  ------------------------------
+2026-01-19 17:19:31,097 [MainThread  ] [INFO ]  --------round 18 ------------
+mean|client_grad| 0.060913052409887314
+local epoch 0 	 client: 0 	 mal: 1 	 loss: 0.32266581 	 time: 2.01
+local epoch 0 	 client: 1 	 mal: 1 	 loss: 0.17936231 	 time: 2.01
+local epoch 0 	 client: 2 	 mal: 1 	 loss: 0.51839429 	 time: 2.01
+local epoch 0 	 client: 3 	 mal: 1 	 loss: 0.26595899 	 time: 2.01
+local epoch 0 	 client: 4 	 mal: 0 	 loss: 0.04351744 	 time: 1.36
+local epoch 0 	 client: 5 	 mal: 0 	 loss: 0.02804534 	 time: 1.37
+local epoch 0 	 client: 6 	 mal: 0 	 loss: 0.20508943 	 time: 1.37
+local epoch 0 	 client: 7 	 mal: 0 	 loss: 0.09767112 	 time: 1.48
+local epoch 0 	 client: 8 	 mal: 0 	 loss: 0.03344866 	 time: 1.45
+local epoch 0 	 client: 9 	 mal: 0 	 loss: 0.00688715 	 time: 1.38
+local epoch 0 	 client: 10 	 mal: 0 	 loss: 0.07330412 	 time: 1.36
+local epoch 0 	 client: 11 	 mal: 0 	 loss: 0.19807933 	 time: 1.37
+local epoch 0 	 client: 12 	 mal: 0 	 loss: 0.13661550 	 time: 1.37
+local epoch 0 	 client: 13 	 mal: 0 	 loss: 0.04528105 	 time: 1.37
+local epoch 0 	 client: 14 	 mal: 0 	 loss: 0.01407798 	 time: 1.38
+local epoch 0 	 client: 15 	 mal: 0 	 loss: 0.07990331 	 time: 1.38
+local epoch 0 	 client: 16 	 mal: 0 	 loss: 0.01611483 	 time: 1.37
+local epoch 0 	 client: 17 	 mal: 0 	 loss: 0.06819371 	 time: 1.48
+local epoch 0 	 client: 18 	 mal: 0 	 loss: 0.14360642 	 time: 1.47
+local epoch 0 	 client: 19 	 mal: 0 	 loss: 0.13844506 	 time: 1.39
+2026-01-19 17:20:03,221 [MainThread  ] [INFO ]  TDA: [-0.0184, -0.0196, -0.0315, -0.0278, -0.0164, -0.0136, -0.0264, -0.011, -0.0147, -0.0192, -0.0232, -0.0275, -0.0195, -0.0213, -0.0152, -0.0254, -0.0185, -0.0282, -0.0277, -0.016]
+2026-01-19 17:20:03,221 [MainThread  ] [INFO ]  MPSA: [0.6505, 0.6422, 0.6414, 0.6469, 0.8115, 0.8524, 0.7492, 0.8285, 0.8465, 0.8534, 0.7898, 0.7936, 0.8366, 0.8438, 0.8111, 0.8341, 0.8283, 0.8025, 0.8173, 0.8079]
+2026-01-19 17:20:03,222 [MainThread  ] [INFO ]  MZ-score of MPSA: [2.1875, 2.2999, 2.3105, 2.2358, 0.0029, 0.5589, 0.845, 0.2346, 0.4787, 0.5726, 0.2923, 0.241, 0.3442, 0.4426, 0.0029, 0.3102, 0.2309, 0.1189, 0.0824, 0.0466]
+2026-01-19 17:20:03,222 [MainThread  ] [INFO ]  MZ-score of TDA: [0.1991, 0.0138, 2.0971, 1.4591, 0.5589, 1.0464, 1.1984, 1.5133, 0.8639, 0.0606, 0.6335, 1.396, 0.0138, 0.3038, 0.7684, 1.0273, 0.1918, 1.5279, 1.4365, 0.6336]
+2026-01-19 17:20:03,222 [MainThread  ] [INFO ]  benign update index:   [4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19]
+2026-01-19 17:20:03,222 [MainThread  ] [INFO ]  selected update index: [4, 8, 9, 10, 12, 13, 14, 16, 19]
+2026-01-19 17:20:03,222 [MainThread  ] [INFO ]  FPR:       0.0000
+2026-01-19 17:20:03,222 [MainThread  ] [INFO ]  TPR:       0.5625
+2026-01-19 17:20:03,421 [MainThread  ] [INFO ]  ---------Test 18 ------------
+[DBG rnd=18] logits mean=0.1232, std=4.1057, maxlogit mean=10.0817
+[DBG rnd=18] probs max mean=0.9845, pred entropy mean=0.0644
+[DBG rnd=18] preds bincount=[6, 10, 5, 6, 10, 7, 5, 7, 1, 7]
+2026-01-19 17:20:12,109 [MainThread  ] [INFO ]  Clean ACC:              0.9834
+2026-01-19 17:20:12,109 [MainThread  ] [INFO ]  Attack Success Ratio:   0.0027
+2026-01-19 17:20:12,109 [MainThread  ] [INFO ]  Robustness ACC:           0.9837
+2026-01-19 17:20:12,109 [MainThread  ] [INFO ]  ------------------------------
+2026-01-19 17:20:12,109 [MainThread  ] [INFO ]  --------round 19 ------------
+mean|client_grad| 0.06930650770664215
+local epoch 0 	 client: 0 	 mal: 1 	 loss: 0.36342743 	 time: 2.01
+local epoch 0 	 client: 1 	 mal: 1 	 loss: 0.35627970 	 time: 2.01
+local epoch 0 	 client: 2 	 mal: 1 	 loss: 0.39910722 	 time: 2.01
+local epoch 0 	 client: 3 	 mal: 1 	 loss: 0.25345394 	 time: 2.01
+local epoch 0 	 client: 4 	 mal: 0 	 loss: 0.11446895 	 time: 1.35
+local epoch 0 	 client: 5 	 mal: 0 	 loss: 0.05465719 	 time: 1.36
+local epoch 0 	 client: 6 	 mal: 0 	 loss: 0.05596174 	 time: 1.35
+local epoch 0 	 client: 7 	 mal: 0 	 loss: 0.10900493 	 time: 1.36
+local epoch 0 	 client: 8 	 mal: 0 	 loss: 0.07884403 	 time: 1.36
+local epoch 0 	 client: 9 	 mal: 0 	 loss: 0.04473792 	 time: 1.36
+local epoch 0 	 client: 10 	 mal: 0 	 loss: 0.14214957 	 time: 1.36
+local epoch 0 	 client: 11 	 mal: 0 	 loss: 0.06930062 	 time: 1.36
+local epoch 0 	 client: 12 	 mal: 0 	 loss: 0.09129673 	 time: 1.37
+local epoch 0 	 client: 13 	 mal: 0 	 loss: 0.03187316 	 time: 1.37
+local epoch 0 	 client: 14 	 mal: 0 	 loss: 0.12601991 	 time: 1.37
+local epoch 0 	 client: 15 	 mal: 0 	 loss: 0.02956730 	 time: 1.37
+local epoch 0 	 client: 16 	 mal: 0 	 loss: 0.12666810 	 time: 1.36
+local epoch 0 	 client: 17 	 mal: 0 	 loss: 0.02923167 	 time: 1.40
+local epoch 0 	 client: 18 	 mal: 0 	 loss: 0.16336030 	 time: 1.37
+local epoch 0 	 client: 19 	 mal: 0 	 loss: 0.06503920 	 time: 1.36
+2026-01-19 17:20:43,781 [MainThread  ] [INFO ]  TDA: [-0.0336, -0.036, -0.0408, -0.023, -0.0245, -0.0214, -0.0213, -0.0182, -0.0135, -0.0133, -0.0158, -0.0271, -0.0305, -0.0228, -0.0188, -0.0168, -0.0231, -0.0268, -0.0208, -0.0222]
+2026-01-19 17:20:43,781 [MainThread  ] [INFO ]  MPSA: [0.6745, 0.6635, 0.6628, 0.6651, 0.7979, 0.8111, 0.8115, 0.8105, 0.816, 0.8665, 0.8064, 0.7981, 0.8192, 0.8219, 0.8238, 0.8273, 0.8305, 0.8088, 0.8479, 0.8279]
+2026-01-19 17:20:43,782 [MainThread  ] [INFO ]  MZ-score of MPSA: [2.1555, 2.3278, 2.3398, 2.3025, 0.2101, 0.0033, 0.0033, 0.0121, 0.0751, 0.8703, 0.0768, 0.2073, 0.125, 0.1679, 0.1982, 0.252, 0.3037, 0.0389, 0.577, 0.2622]
+2026-01-19 17:20:43,782 [MainThread  ] [INFO ]  MZ-score of TDA: [1.5653, 1.9007, 2.5785, 0.0732, 0.2807, 0.1563, 0.1746, 0.6127, 1.2639, 1.2911, 0.9388, 0.6461, 1.1287, 0.0385, 0.5293, 0.7982, 0.0859, 0.6002, 0.2383, 0.0385]
+2026-01-19 17:20:43,783 [MainThread  ] [INFO ]  benign update index:   [4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19]
+2026-01-19 17:20:43,783 [MainThread  ] [INFO ]  selected update index: [4, 5, 6, 7, 10, 11, 13, 14, 15, 16, 17, 18, 19]
+2026-01-19 17:20:43,783 [MainThread  ] [INFO ]  FPR:       0.0000
+2026-01-19 17:20:43,783 [MainThread  ] [INFO ]  TPR:       0.8125
+2026-01-19 17:20:43,983 [MainThread  ] [INFO ]  ---------Test 19 ------------
+[DBG rnd=19] logits mean=0.1197, std=4.1318, maxlogit mean=10.0838
+[DBG rnd=19] probs max mean=0.9842, pred entropy mean=0.0636
+[DBG rnd=19] preds bincount=[6, 10, 5, 6, 10, 7, 5, 7, 1, 7]
+2026-01-19 17:20:52,723 [MainThread  ] [INFO ]  Clean ACC:              0.9831
+2026-01-19 17:20:52,723 [MainThread  ] [INFO ]  Attack Success Ratio:   0.0017
+2026-01-19 17:20:52,723 [MainThread  ] [INFO ]  Robustness ACC:           0.9843
+2026-01-19 17:20:52,723 [MainThread  ] [INFO ]  ------------------------------
+2026-01-19 17:20:52,724 [MainThread  ] [INFO ]  --------round 20 ------------
+mean|client_grad| 0.09855452924966812
+local epoch 0 	 client: 0 	 mal: 1 	 loss: 0.54579288 	 time: 2.01
+local epoch 0 	 client: 1 	 mal: 1 	 loss: 0.08877607 	 time: 2.01
+local epoch 0 	 client: 2 	 mal: 1 	 loss: 0.30724370 	 time: 2.01
+local epoch 0 	 client: 3 	 mal: 1 	 loss: 0.64054108 	 time: 2.01
+local epoch 0 	 client: 4 	 mal: 0 	 loss: 0.05075436 	 time: 1.36
+local epoch 0 	 client: 5 	 mal: 0 	 loss: 0.03321999 	 time: 1.36
+local epoch 0 	 client: 6 	 mal: 0 	 loss: 0.07777049 	 time: 1.37
+local epoch 0 	 client: 7 	 mal: 0 	 loss: 0.16305704 	 time: 1.37
+local epoch 0 	 client: 8 	 mal: 0 	 loss: 0.06964557 	 time: 1.37
+local epoch 0 	 client: 9 	 mal: 0 	 loss: 0.08595454 	 time: 1.37
+local epoch 0 	 client: 10 	 mal: 0 	 loss: 0.10819324 	 time: 1.38
+local epoch 0 	 client: 11 	 mal: 0 	 loss: 0.03749436 	 time: 1.38
+local epoch 0 	 client: 12 	 mal: 0 	 loss: 0.05943866 	 time: 1.39
+local epoch 0 	 client: 13 	 mal: 0 	 loss: 0.08759094 	 time: 1.39
+local epoch 0 	 client: 14 	 mal: 0 	 loss: 0.09207770 	 time: 1.39
+local epoch 0 	 client: 15 	 mal: 0 	 loss: 0.03967237 	 time: 1.38
+local epoch 0 	 client: 16 	 mal: 0 	 loss: 0.05929490 	 time: 1.37
+local epoch 0 	 client: 17 	 mal: 0 	 loss: 0.05812916 	 time: 1.37
+local epoch 0 	 client: 18 	 mal: 0 	 loss: 0.05378979 	 time: 1.38
+local epoch 0 	 client: 19 	 mal: 0 	 loss: 0.01426602 	 time: 1.37
+2026-01-19 17:21:24,496 [MainThread  ] [INFO ]  TDA: [-0.0454, -0.025, -0.0368, -0.0459, -0.0229, -0.0299, -0.0293, -0.0155, -0.0122, -0.0212, -0.015, -0.0194, -0.0305, -0.0244, -0.0121, -0.0214, -0.0134, -0.0106, -0.028, -0.0185]
+2026-01-19 17:21:24,496 [MainThread  ] [INFO ]  MPSA: [0.6556, 0.6387, 0.6575, 0.6483, 0.8269, 0.7727, 0.777, 0.8092, 0.8093, 0.8207, 0.7944, 0.787, 0.7882, 0.8294, 0.8327, 0.8385, 0.8357, 0.8092, 0.792, 0.7842]
+2026-01-19 17:21:24,496 [MainThread  ] [INFO ]  MZ-score of MPSA: [2.0975, 2.3552, 2.0693, 2.2098, 0.5136, 0.3121, 0.2478, 0.2433, 0.245, 0.4186, 0.0187, 0.0943, 0.0769, 0.5517, 0.6014, 0.6899, 0.6473, 0.243, 0.0187, 0.1368]
+2026-01-19 17:21:24,497 [MainThread  ] [INFO ]  MZ-score of TDA: [2.3181, 0.2873, 1.4601, 2.3687, 0.0761, 0.7709, 0.7161, 0.6566, 0.9855, 0.0918, 0.7073, 0.2691, 0.8368, 0.2245, 1.0017, 0.0761, 0.8731, 1.1454, 0.5853, 0.3631]
+2026-01-19 17:21:24,497 [MainThread  ] [INFO ]  benign update index:   [4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19]
+2026-01-19 17:21:24,497 [MainThread  ] [INFO ]  selected update index: [4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 15, 16, 18, 19]
+2026-01-19 17:21:24,497 [MainThread  ] [INFO ]  FPR:       0.0000
+2026-01-19 17:21:24,497 [MainThread  ] [INFO ]  TPR:       0.8750
+2026-01-19 17:21:24,698 [MainThread  ] [INFO ]  ---------Test 20 ------------
+[DBG rnd=20] logits mean=0.1230, std=4.3416, maxlogit mean=10.5756
+[DBG rnd=20] probs max mean=0.9876, pred entropy mean=0.0524
+[DBG rnd=20] preds bincount=[6, 10, 5, 6, 10, 7, 5, 7, 1, 7]
+2026-01-19 17:21:33,404 [MainThread  ] [INFO ]  Clean ACC:              0.9848
+2026-01-19 17:21:33,404 [MainThread  ] [INFO ]  Attack Success Ratio:   0.0020
+2026-01-19 17:21:33,404 [MainThread  ] [INFO ]  Robustness ACC:           0.9848
+2026-01-19 17:21:33,404 [MainThread  ] [INFO ]  ------------------------------
+2026-01-19 17:21:33,404 [MainThread  ] [INFO ]  --------round 21 ------------
+mean|client_grad| 0.07078886777162552
+local epoch 0 	 client: 0 	 mal: 1 	 loss: 0.17211947 	 time: 2.01
+local epoch 0 	 client: 1 	 mal: 1 	 loss: 0.25426939 	 time: 2.01
+local epoch 0 	 client: 2 	 mal: 1 	 loss: 0.12089793 	 time: 2.01
+local epoch 0 	 client: 3 	 mal: 1 	 loss: 0.40618694 	 time: 2.01
+local epoch 0 	 client: 4 	 mal: 0 	 loss: 0.18755646 	 time: 1.36
+local epoch 0 	 client: 5 	 mal: 0 	 loss: 0.13705809 	 time: 1.36
+local epoch 0 	 client: 6 	 mal: 0 	 loss: 0.09442499 	 time: 1.48
+local epoch 0 	 client: 7 	 mal: 0 	 loss: 0.07172424 	 time: 1.45
+local epoch 0 	 client: 8 	 mal: 0 	 loss: 0.10492254 	 time: 1.38
+local epoch 0 	 client: 9 	 mal: 0 	 loss: 0.15494439 	 time: 1.36
+local epoch 0 	 client: 10 	 mal: 0 	 loss: 0.30783963 	 time: 1.36
+local epoch 0 	 client: 11 	 mal: 0 	 loss: 0.17038989 	 time: 1.37
+local epoch 0 	 client: 12 	 mal: 0 	 loss: 0.04866904 	 time: 1.42
+local epoch 0 	 client: 13 	 mal: 0 	 loss: 0.02911811 	 time: 1.39
+local epoch 0 	 client: 14 	 mal: 0 	 loss: 0.10226201 	 time: 1.36
+local epoch 0 	 client: 15 	 mal: 0 	 loss: 0.13076796 	 time: 1.47
+local epoch 0 	 client: 16 	 mal: 0 	 loss: 0.04000398 	 time: 1.45
+local epoch 0 	 client: 17 	 mal: 0 	 loss: 0.03409824 	 time: 1.37
+local epoch 0 	 client: 18 	 mal: 0 	 loss: 0.07529052 	 time: 1.36
+local epoch 0 	 client: 19 	 mal: 0 	 loss: 0.09054510 	 time: 1.37
+2026-01-19 17:22:05,508 [MainThread  ] [INFO ]  TDA: [-0.0337, -0.0384, -0.0255, -0.0346, -0.0272, -0.0292, -0.0134, -0.0172, -0.0207, -0.022, -0.0154, -0.0247, -0.014, -0.0283, -0.022, -0.0299, -0.0225, -0.026, -0.0303, -0.0373]
+2026-01-19 17:22:05,508 [MainThread  ] [INFO ]  MPSA: [0.6753, 0.668, 0.6574, 0.6717, 0.7806, 0.7538, 0.8128, 0.8245, 0.8141, 0.8033, 0.778, 0.7736, 0.8276, 0.7929, 0.8227, 0.7806, 0.7981, 0.7353, 0.7959, 0.7673]
+2026-01-19 17:22:05,509 [MainThread  ] [INFO ]  MZ-score of MPSA: [1.9357, 2.0706, 2.2639, 2.0025, 0.0002, 0.4929, 0.5918, 0.8063, 0.6147, 0.4174, 0.049, 0.1294, 0.8633, 0.2254, 0.7727, 0.0002, 0.3218, 0.8338, 0.2808, 0.2451]
+2026-01-19 17:22:05,509 [MainThread  ] [INFO ]  MZ-score of TDA: [1.1075, 1.762, 0.0375, 1.228, 0.1953, 0.4768, 1.7222, 1.1936, 0.7028, 0.5294, 1.4472, 0.1428, 1.6422, 0.3468, 0.5278, 0.573, 0.4536, 0.0375, 0.6282, 1.6118]
+2026-01-19 17:22:05,510 [MainThread  ] [INFO ]  benign update index:   [4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19]
+2026-01-19 17:22:05,510 [MainThread  ] [INFO ]  selected update index: [4, 5, 8, 9, 11, 13, 14, 15, 16, 17, 18]
+2026-01-19 17:22:05,510 [MainThread  ] [INFO ]  FPR:       0.0000
+2026-01-19 17:22:05,510 [MainThread  ] [INFO ]  TPR:       0.6875
+2026-01-19 17:22:05,711 [MainThread  ] [INFO ]  ---------Test 21 ------------
+[DBG rnd=21] logits mean=0.1273, std=4.4160, maxlogit mean=10.8283
+[DBG rnd=21] probs max mean=0.9892, pred entropy mean=0.0479
+[DBG rnd=21] preds bincount=[6, 10, 5, 6, 10, 7, 5, 7, 1, 7]
+2026-01-19 17:22:14,416 [MainThread  ] [INFO ]  Clean ACC:              0.9842
+2026-01-19 17:22:14,416 [MainThread  ] [INFO ]  Attack Success Ratio:   0.0022
+2026-01-19 17:22:14,416 [MainThread  ] [INFO ]  Robustness ACC:           0.9845
+2026-01-19 17:22:14,416 [MainThread  ] [INFO ]  ------------------------------
+2026-01-19 17:22:14,416 [MainThread  ] [INFO ]  --------round 22 ------------
+mean|client_grad| 0.07576396316289902
+local epoch 0 	 client: 0 	 mal: 1 	 loss: 0.23225512 	 time: 2.01
+local epoch 0 	 client: 1 	 mal: 1 	 loss: 0.34776726 	 time: 2.00
+local epoch 0 	 client: 2 	 mal: 1 	 loss: 0.20867941 	 time: 2.01
+local epoch 0 	 client: 3 	 mal: 1 	 loss: 0.30521730 	 time: 2.01
+local epoch 0 	 client: 4 	 mal: 0 	 loss: 0.14338247 	 time: 1.36
+local epoch 0 	 client: 5 	 mal: 0 	 loss: 0.14447559 	 time: 1.36
+local epoch 0 	 client: 6 	 mal: 0 	 loss: 0.04897612 	 time: 1.36
+local epoch 0 	 client: 7 	 mal: 0 	 loss: 0.04770321 	 time: 1.36
+local epoch 0 	 client: 8 	 mal: 0 	 loss: 0.08949538 	 time: 1.37
+local epoch 0 	 client: 9 	 mal: 0 	 loss: 0.04083245 	 time: 1.38
+local epoch 0 	 client: 10 	 mal: 0 	 loss: 0.13706778 	 time: 1.37
+local epoch 0 	 client: 11 	 mal: 0 	 loss: 0.05785800 	 time: 1.37
+local epoch 0 	 client: 12 	 mal: 0 	 loss: 0.00255117 	 time: 1.38
+local epoch 0 	 client: 13 	 mal: 0 	 loss: 0.05661517 	 time: 1.38
+local epoch 0 	 client: 14 	 mal: 0 	 loss: 0.20423135 	 time: 1.37
+local epoch 0 	 client: 15 	 mal: 0 	 loss: 0.10144618 	 time: 1.37
+local epoch 0 	 client: 16 	 mal: 0 	 loss: 0.11332922 	 time: 1.36
+local epoch 0 	 client: 17 	 mal: 0 	 loss: 0.17951414 	 time: 1.37
+local epoch 0 	 client: 18 	 mal: 0 	 loss: 0.15570989 	 time: 1.38
+local epoch 0 	 client: 19 	 mal: 0 	 loss: 0.11044664 	 time: 1.41
+2026-01-19 17:22:46,186 [MainThread  ] [INFO ]  TDA: [-0.0334, -0.0355, -0.0348, -0.0318, -0.0232, -0.0294, -0.0172, -0.0237, -0.0327, -0.0227, -0.0284, -0.0205, -0.0203, -0.0265, -0.021, -0.0306, -0.0305, -0.0263, -0.0377, -0.0343]
+2026-01-19 17:22:46,186 [MainThread  ] [INFO ]  MPSA: [0.6662, 0.661, 0.668, 0.6609, 0.8025, 0.7343, 0.7611, 0.7688, 0.7712, 0.8108, 0.7764, 0.7556, 0.7417, 0.7615, 0.7768, 0.7513, 0.7657, 0.7436, 0.7792, 0.7882]
+2026-01-19 17:22:46,187 [MainThread  ] [INFO ]  MZ-score of MPSA: [2.092, 2.205, 2.0523, 2.2074, 0.9067, 0.5944, 0.0047, 0.1662, 0.2183, 1.0903, 0.3332, 0.124, 0.4309, 0.0047, 0.3415, 0.2188, 0.0965, 0.3896, 0.3936, 0.5929]
+2026-01-19 17:22:46,187 [MainThread  ] [INFO ]  MZ-score of TDA: [0.7852, 1.1399, 1.0124, 0.5078, 0.9869, 0.0833, 2.0242, 0.891, 0.6515, 1.0679, 0.0833, 1.4409, 1.4753, 0.4097, 1.3676, 0.3015, 0.2781, 0.4472, 1.5124, 0.9269]
+2026-01-19 17:22:46,188 [MainThread  ] [INFO ]  benign update index:   [4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19]
+2026-01-19 17:22:46,188 [MainThread  ] [INFO ]  selected update index: [4, 5, 7, 8, 10, 13, 15, 16, 17, 19]
+2026-01-19 17:22:46,188 [MainThread  ] [INFO ]  FPR:       0.0000
+2026-01-19 17:22:46,188 [MainThread  ] [INFO ]  TPR:       0.6250
+2026-01-19 17:22:46,388 [MainThread  ] [INFO ]  ---------Test 22 ------------
+[DBG rnd=22] logits mean=0.1191, std=4.3648, maxlogit mean=10.7155
+[DBG rnd=22] probs max mean=0.9868, pred entropy mean=0.0508
+[DBG rnd=22] preds bincount=[6, 10, 5, 6, 10, 7, 5, 7, 1, 7]
+2026-01-19 17:22:55,064 [MainThread  ] [INFO ]  Clean ACC:              0.9844
+2026-01-19 17:22:55,064 [MainThread  ] [INFO ]  Attack Success Ratio:   0.0019
+2026-01-19 17:22:55,064 [MainThread  ] [INFO ]  Robustness ACC:           0.9850
+2026-01-19 17:22:55,064 [MainThread  ] [INFO ]  ------------------------------
+2026-01-19 17:22:55,064 [MainThread  ] [INFO ]  --------round 23 ------------
+mean|client_grad| 0.09692756086587906
+local epoch 0 	 client: 0 	 mal: 1 	 loss: 0.42080888 	 time: 2.01
+local epoch 0 	 client: 1 	 mal: 1 	 loss: 0.47429630 	 time: 2.00
+local epoch 0 	 client: 2 	 mal: 1 	 loss: 0.38858235 	 time: 2.01
+local epoch 0 	 client: 3 	 mal: 1 	 loss: 0.37228635 	 time: 2.00
+local epoch 0 	 client: 4 	 mal: 0 	 loss: 0.00878089 	 time: 1.36
+local epoch 0 	 client: 5 	 mal: 0 	 loss: 0.05904962 	 time: 1.36
+local epoch 0 	 client: 6 	 mal: 0 	 loss: 0.05193632 	 time: 1.36
+local epoch 0 	 client: 7 	 mal: 0 	 loss: 0.10764140 	 time: 1.36
+local epoch 0 	 client: 8 	 mal: 0 	 loss: 0.01163442 	 time: 1.37
+local epoch 0 	 client: 9 	 mal: 0 	 loss: 0.03924965 	 time: 1.38
+local epoch 0 	 client: 10 	 mal: 0 	 loss: 0.01557895 	 time: 1.36
+local epoch 0 	 client: 11 	 mal: 0 	 loss: 0.05522959 	 time: 1.36
+local epoch 0 	 client: 12 	 mal: 0 	 loss: 0.06185071 	 time: 1.37
+local epoch 0 	 client: 13 	 mal: 0 	 loss: 0.12890272 	 time: 1.36
+local epoch 0 	 client: 14 	 mal: 0 	 loss: 0.01851064 	 time: 1.36
+local epoch 0 	 client: 15 	 mal: 0 	 loss: 0.15439306 	 time: 1.38
+local epoch 0 	 client: 16 	 mal: 0 	 loss: 0.12731183 	 time: 1.39
+local epoch 0 	 client: 17 	 mal: 0 	 loss: 0.09089941 	 time: 1.39
+local epoch 0 	 client: 18 	 mal: 0 	 loss: 0.04269503 	 time: 1.38
+local epoch 0 	 client: 19 	 mal: 0 	 loss: 0.07611185 	 time: 1.37
+2026-01-19 17:23:26,808 [MainThread  ] [INFO ]  TDA: [-0.04, -0.0391, -0.0417, -0.0414, -0.024, -0.0269, -0.017, -0.0165, -0.0295, -0.0234, -0.0181, -0.0277, -0.0247, -0.0281, -0.0206, -0.022, -0.0118, -0.025, -0.0282, -0.0178]
+2026-01-19 17:23:26,808 [MainThread  ] [INFO ]  MPSA: [0.666, 0.6587, 0.6485, 0.6575, 0.7667, 0.7917, 0.7979, 0.7936, 0.7212, 0.7869, 0.757, 0.7727, 0.7853, 0.7816, 0.7829, 0.765, 0.774, 0.7093, 0.7713, 0.7472]
+2026-01-19 17:23:26,808 [MainThread  ] [INFO ]  MZ-score of MPSA: [2.0763, 2.2229, 2.4276, 2.2477, 0.0468, 0.457, 0.5825, 0.4961, 0.9626, 0.3603, 0.2411, 0.0751, 0.3279, 0.2537, 0.2793, 0.0819, 0.1012, 1.2023, 0.0468, 0.4399]
+2026-01-19 17:23:26,808 [MainThread  ] [INFO ]  MZ-score of TDA: [1.7888, 1.6751, 1.9864, 1.9529, 0.1043, 0.2416, 0.9326, 0.9869, 0.5447, 0.1707, 0.8014, 0.3393, 0.0157, 0.3828, 0.5072, 0.3353, 1.5368, 0.0157, 0.391, 0.8291]
+2026-01-19 17:23:26,809 [MainThread  ] [INFO ]  benign update index:   [4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19]
+2026-01-19 17:23:26,809 [MainThread  ] [INFO ]  selected update index: [4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 18, 19]
+2026-01-19 17:23:26,809 [MainThread  ] [INFO ]  FPR:       0.0000
+2026-01-19 17:23:26,809 [MainThread  ] [INFO ]  TPR:       0.8750
+2026-01-19 17:23:27,009 [MainThread  ] [INFO ]  ---------Test 23 ------------
+[DBG rnd=23] logits mean=0.1180, std=4.4857, maxlogit mean=11.0555
+[DBG rnd=23] probs max mean=0.9894, pred entropy mean=0.0451
+[DBG rnd=23] preds bincount=[6, 10, 5, 6, 10, 7, 5, 7, 1, 7]
+2026-01-19 17:23:35,700 [MainThread  ] [INFO ]  Clean ACC:              0.9849
+2026-01-19 17:23:35,700 [MainThread  ] [INFO ]  Attack Success Ratio:   0.0025
+2026-01-19 17:23:35,700 [MainThread  ] [INFO ]  Robustness ACC:           0.9852
+2026-01-19 17:23:35,700 [MainThread  ] [INFO ]  ------------------------------
+2026-01-19 17:23:35,700 [MainThread  ] [INFO ]  --------round 24 ------------
+mean|client_grad| 0.09667130559682846
+local epoch 0 	 client: 0 	 mal: 1 	 loss: 0.56170219 	 time: 2.01
+local epoch 0 	 client: 1 	 mal: 1 	 loss: 0.33538407 	 time: 2.01
+local epoch 0 	 client: 2 	 mal: 1 	 loss: 0.69020307 	 time: 2.01
+local epoch 0 	 client: 3 	 mal: 1 	 loss: 0.39176571 	 time: 2.01
+local epoch 0 	 client: 4 	 mal: 0 	 loss: 0.07720815 	 time: 1.36
+local epoch 0 	 client: 5 	 mal: 0 	 loss: 0.04058803 	 time: 1.37
+local epoch 0 	 client: 6 	 mal: 0 	 loss: 0.02974419 	 time: 1.36
+local epoch 0 	 client: 7 	 mal: 0 	 loss: 0.07602042 	 time: 1.37
+local epoch 0 	 client: 8 	 mal: 0 	 loss: 0.00924525 	 time: 1.37
+local epoch 0 	 client: 9 	 mal: 0 	 loss: 0.08001303 	 time: 1.37
+local epoch 0 	 client: 10 	 mal: 0 	 loss: 0.01910952 	 time: 1.37
+local epoch 0 	 client: 11 	 mal: 0 	 loss: 0.07735072 	 time: 1.37
+local epoch 0 	 client: 12 	 mal: 0 	 loss: 0.08157770 	 time: 1.37
+local epoch 0 	 client: 13 	 mal: 0 	 loss: 0.03044509 	 time: 1.37
+local epoch 0 	 client: 14 	 mal: 0 	 loss: 0.05970774 	 time: 1.38
+local epoch 0 	 client: 15 	 mal: 0 	 loss: 0.11285169 	 time: 1.38
+local epoch 0 	 client: 16 	 mal: 0 	 loss: 0.07825121 	 time: 1.38
+local epoch 0 	 client: 17 	 mal: 0 	 loss: 0.05122779 	 time: 1.39
+local epoch 0 	 client: 18 	 mal: 0 	 loss: 0.10275886 	 time: 1.38
+local epoch 0 	 client: 19 	 mal: 0 	 loss: 0.01066983 	 time: 1.39
+2026-01-19 17:24:07,448 [MainThread  ] [INFO ]  TDA: [-0.041, -0.0373, -0.0483, -0.0344, -0.0214, -0.0236, -0.0203, -0.0268, -0.0167, -0.0195, -0.0219, -0.0252, -0.0393, -0.0347, -0.0226, -0.0201, -0.0251, -0.0344, -0.027, -0.0285]
+2026-01-19 17:24:07,448 [MainThread  ] [INFO ]  MPSA: [0.6816, 0.6678, 0.6777, 0.6597, 0.7598, 0.8031, 0.7666, 0.7293, 0.8181, 0.8106, 0.8141, 0.7723, 0.7802, 0.7836, 0.7869, 0.7912, 0.8176, 0.7514, 0.7895, 0.7813]
+2026-01-19 17:24:07,449 [MainThread  ] [INFO ]  MZ-score of MPSA: [1.97, 2.2447, 2.0476, 2.4067, 0.4163, 0.4447, 0.2805, 1.0234, 0.7425, 0.5929, 0.6635, 0.1673, 0.0115, 0.0568, 0.1234, 0.2072, 0.7322, 0.5831, 0.1735, 0.0115]
+2026-01-19 17:24:07,449 [MainThread  ] [INFO ]  MZ-score of TDA: [1.8024, 1.3586, 2.6748, 1.0073, 0.5521, 0.2842, 0.6807, 0.094, 1.1161, 0.7803, 0.4927, 0.094, 1.5955, 1.0521, 0.401, 0.7098, 0.1019, 1.0134, 0.1244, 0.304]
+2026-01-19 17:24:07,449 [MainThread  ] [INFO ]  benign update index:   [4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19]
+2026-01-19 17:24:07,449 [MainThread  ] [INFO ]  selected update index: [4, 5, 6, 9, 10, 11, 14, 15, 16, 18, 19]
+2026-01-19 17:24:07,450 [MainThread  ] [INFO ]  FPR:       0.0000
+2026-01-19 17:24:07,450 [MainThread  ] [INFO ]  TPR:       0.6875
+2026-01-19 17:24:07,655 [MainThread  ] [INFO ]  ---------Test 24 ------------
+[DBG rnd=24] logits mean=0.1304, std=4.6375, maxlogit mean=11.4325
+[DBG rnd=24] probs max mean=0.9902, pred entropy mean=0.0396
+[DBG rnd=24] preds bincount=[6, 10, 5, 6, 10, 7, 5, 7, 1, 7]
+2026-01-19 17:24:16,383 [MainThread  ] [INFO ]  Clean ACC:              0.9860
+2026-01-19 17:24:16,383 [MainThread  ] [INFO ]  Attack Success Ratio:   0.0021
+2026-01-19 17:24:16,383 [MainThread  ] [INFO ]  Robustness ACC:           0.9856
+2026-01-19 17:24:16,383 [MainThread  ] [INFO ]  ------------------------------
+2026-01-19 17:24:16,383 [MainThread  ] [INFO ]  --------round 25 ------------
+mean|client_grad| 0.08074550330638885
+local epoch 0 	 client: 0 	 mal: 1 	 loss: 0.46390608 	 time: 2.03
+local epoch 0 	 client: 1 	 mal: 1 	 loss: 0.46546045 	 time: 2.02
+local epoch 0 	 client: 2 	 mal: 1 	 loss: 0.36232412 	 time: 2.02
+local epoch 0 	 client: 3 	 mal: 1 	 loss: 0.50155145 	 time: 2.02
+local epoch 0 	 client: 4 	 mal: 0 	 loss: 0.05963274 	 time: 1.36
+local epoch 0 	 client: 5 	 mal: 0 	 loss: 0.12471338 	 time: 1.36
+local epoch 0 	 client: 6 	 mal: 0 	 loss: 0.07192343 	 time: 1.37
+local epoch 0 	 client: 7 	 mal: 0 	 loss: 0.13470930 	 time: 1.37
+local epoch 0 	 client: 8 	 mal: 0 	 loss: 0.08557673 	 time: 1.39
+local epoch 0 	 client: 9 	 mal: 0 	 loss: 0.07362159 	 time: 1.37
+local epoch 0 	 client: 10 	 mal: 0 	 loss: 0.00213009 	 time: 1.38
+local epoch 0 	 client: 11 	 mal: 0 	 loss: 0.00372634 	 time: 1.39
+local epoch 0 	 client: 12 	 mal: 0 	 loss: 0.16856442 	 time: 1.39
+local epoch 0 	 client: 13 	 mal: 0 	 loss: 0.01656915 	 time: 1.38
+local epoch 0 	 client: 14 	 mal: 0 	 loss: 0.01171468 	 time: 1.38
+local epoch 0 	 client: 15 	 mal: 0 	 loss: 0.21223386 	 time: 1.39
+local epoch 0 	 client: 16 	 mal: 0 	 loss: 0.08492095 	 time: 1.38
+local epoch 0 	 client: 17 	 mal: 0 	 loss: 0.07876360 	 time: 1.37
+local epoch 0 	 client: 18 	 mal: 0 	 loss: 0.07581739 	 time: 1.38
+local epoch 0 	 client: 19 	 mal: 0 	 loss: 0.09582665 	 time: 1.42
+2026-01-19 17:24:48,253 [MainThread  ] [INFO ]  TDA: [-0.0487, -0.0483, -0.046, -0.0429, -0.0203, -0.0363, -0.0222, -0.0143, -0.0141, -0.0146, -0.0178, -0.0192, -0.0199, -0.0378, -0.0239, -0.0255, -0.012, -0.0217, -0.0227, -0.0305]
+2026-01-19 17:24:48,254 [MainThread  ] [INFO ]  MPSA: [0.6564, 0.6554, 0.6471, 0.6513, 0.7757, 0.7062, 0.7922, 0.8015, 0.7846, 0.7654, 0.773, 0.7667, 0.783, 0.7478, 0.7974, 0.7845, 0.8303, 0.7657, 0.7803, 0.7653]
+2026-01-19 17:24:48,254 [MainThread  ] [INFO ]  MZ-score of MPSA: [2.0775, 2.0955, 2.2475, 2.1711, 0.1081, 1.1652, 0.4098, 0.5806, 0.2704, 0.0807, 0.0578, 0.0578, 0.2406, 0.4036, 0.5046, 0.2688, 1.1075, 0.0754, 0.1919, 0.0836]
+2026-01-19 17:24:48,254 [MainThread  ] [INFO ]  MZ-score of TDA: [2.2269, 2.1936, 1.9907, 1.7312, 0.1858, 1.1699, 0.0212, 0.6879, 0.7094, 0.6686, 0.3959, 0.2791, 0.2158, 1.3027, 0.1222, 0.2616, 0.887, 0.0661, 0.0212, 0.6833]
+2026-01-19 17:24:48,255 [MainThread  ] [INFO ]  benign update index:   [4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19]
+2026-01-19 17:24:48,255 [MainThread  ] [INFO ]  selected update index: [4, 6, 7, 8, 9, 10, 11, 12, 14, 15, 17, 18, 19]
+2026-01-19 17:24:48,255 [MainThread  ] [INFO ]  FPR:       0.0000
+2026-01-19 17:24:48,255 [MainThread  ] [INFO ]  TPR:       0.8125
+2026-01-19 17:24:48,455 [MainThread  ] [INFO ]  ---------Test 25 ------------
+[DBG rnd=25] logits mean=0.1410, std=4.8183, maxlogit mean=11.8940
+[DBG rnd=25] probs max mean=0.9910, pred entropy mean=0.0348
+[DBG rnd=25] preds bincount=[6, 10, 5, 6, 10, 7, 5, 7, 1, 7]
+2026-01-19 17:24:57,143 [MainThread  ] [INFO ]  Clean ACC:              0.9861
+2026-01-19 17:24:57,143 [MainThread  ] [INFO ]  Attack Success Ratio:   0.0020
+2026-01-19 17:24:57,143 [MainThread  ] [INFO ]  Robustness ACC:           0.9857
+2026-01-19 17:24:57,143 [MainThread  ] [INFO ]  ------------------------------
+2026-01-19 17:24:57,143 [MainThread  ] [INFO ]  Best results:
+2026-01-19 17:24:57,143 [MainThread  ] [INFO ]  Clean ACC:              0.9861
+2026-01-19 17:24:57,143 [MainThread  ] [INFO ]  Attack Success Ratio:   0.0020
+2026-01-19 17:24:57,143 [MainThread  ] [INFO ]  Robustness ACC:           0.9857
+2026-01-19 17:24:57,143 [MainThread  ] [INFO ]  Training has finished!

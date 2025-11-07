@@ -1,0 +1,325 @@
+20:04:49 INFO build client:0 mal:1 data_num:3000
+20:04:49 INFO build client:1 mal:1 data_num:3000
+20:04:50 INFO build client:2 mal:1 data_num:3000
+20:04:50 INFO build client:3 mal:1 data_num:3000
+20:04:50 INFO build client:4 mal:0 data_num:3000
+20:04:50 INFO build client:5 mal:0 data_num:3000
+20:04:50 INFO build client:6 mal:0 data_num:3000
+20:04:50 INFO build client:7 mal:0 data_num:3000
+20:04:50 INFO build client:8 mal:0 data_num:3000
+20:04:50 INFO build client:9 mal:0 data_num:3000
+20:04:50 INFO build client:10 mal:0 data_num:3000
+20:04:50 INFO build client:11 mal:0 data_num:3000
+20:04:50 INFO build client:12 mal:0 data_num:3000
+20:04:50 INFO build client:13 mal:0 data_num:3000
+20:04:50 INFO build client:14 mal:0 data_num:3000
+20:04:50 INFO build client:15 mal:0 data_num:3000
+20:04:50 INFO build client:16 mal:0 data_num:3000
+20:04:50 INFO build client:17 mal:0 data_num:3000
+20:04:50 INFO build client:18 mal:0 data_num:3000
+20:04:50 INFO build client:19 mal:0 data_num:3000
+20:04:50 INFO --------round 1 ------------
+20:05:48 INFO ---------Test 1 ------------
+20:05:57 INFO Clean ACC:              0.6391
+20:05:57 INFO Attack Success Ratio:   0.1009
+20:05:57 INFO Robustness ACC:           0.5968
+20:05:57 INFO ------------------------------
+20:05:57 INFO --------round 2 ------------
+20:06:56 INFO ---------Test 2 ------------
+20:07:05 INFO Clean ACC:              0.7213
+20:07:05 INFO Attack Success Ratio:   0.0318
+20:07:05 INFO Robustness ACC:           0.6769
+20:07:05 INFO ------------------------------
+20:07:05 INFO --------round 3 ------------
+20:08:04 INFO ---------Test 3 ------------
+20:08:13 INFO Clean ACC:              0.7408
+20:08:13 INFO Attack Success Ratio:   0.0284
+20:08:13 INFO Robustness ACC:           0.6979
+20:08:13 INFO ------------------------------
+20:08:13 INFO --------round 4 ------------
+20:09:12 INFO ---------Test 4 ------------
+20:09:22 INFO Clean ACC:              0.7650
+20:09:22 INFO Attack Success Ratio:   0.0289
+20:09:22 INFO Robustness ACC:           0.7057
+20:09:22 INFO ------------------------------
+20:09:22 INFO --------round 5 ------------
+20:10:20 INFO ---------Test 5 ------------
+20:10:29 INFO Clean ACC:              0.7780
+20:10:29 INFO Attack Success Ratio:   0.0270
+20:10:29 INFO Robustness ACC:           0.7224
+20:10:29 INFO ------------------------------
+20:10:29 INFO --------round 6 ------------
+20:11:28 INFO ---------Test 6 ------------
+20:11:37 INFO Clean ACC:              0.7863
+20:11:37 INFO Attack Success Ratio:   0.0437
+20:11:37 INFO Robustness ACC:           0.7346
+20:11:37 INFO ------------------------------
+20:11:37 INFO --------round 7 ------------
+20:12:35 INFO ---------Test 7 ------------
+20:12:44 INFO Clean ACC:              0.7995
+20:12:44 INFO Attack Success Ratio:   0.0423
+20:12:44 INFO Robustness ACC:           0.7354
+20:12:44 INFO ------------------------------
+20:12:44 INFO --------round 8 ------------
+20:13:42 INFO ---------Test 8 ------------
+20:13:51 INFO Clean ACC:              0.8062
+20:13:51 INFO Attack Success Ratio:   0.0793
+20:13:51 INFO Robustness ACC:           0.7131
+20:13:51 INFO ------------------------------
+20:13:51 INFO --------round 9 ------------
+20:14:50 INFO ---------Test 9 ------------
+20:14:59 INFO Clean ACC:              0.8160
+20:14:59 INFO Attack Success Ratio:   0.1327
+20:14:59 INFO Robustness ACC:           0.6750
+20:14:59 INFO ------------------------------
+20:14:59 INFO --------round 10 ------------
+20:15:57 INFO ---------Test 10 ------------
+20:16:06 INFO Clean ACC:              0.8200
+20:16:06 INFO Attack Success Ratio:   0.1563
+20:16:06 INFO Robustness ACC:           0.6343
+20:16:06 INFO ------------------------------
+20:16:06 INFO --------round 11 ------------
+20:17:04 INFO ---------Test 11 ------------
+20:17:13 INFO Clean ACC:              0.8279
+20:17:13 INFO Attack Success Ratio:   0.2278
+20:17:13 INFO Robustness ACC:           0.6007
+20:17:13 INFO ------------------------------
+20:17:13 INFO --------round 12 ------------
+20:18:12 INFO ---------Test 12 ------------
+20:18:20 INFO Clean ACC:              0.8314
+20:18:20 INFO Attack Success Ratio:   0.2278
+20:18:20 INFO Robustness ACC:           0.6049
+20:18:20 INFO ------------------------------
+20:18:20 INFO --------round 13 ------------
+20:19:19 INFO ---------Test 13 ------------
+20:19:27 INFO Clean ACC:              0.8348
+20:19:27 INFO Attack Success Ratio:   0.2799
+20:19:27 INFO Robustness ACC:           0.5571
+20:19:27 INFO ------------------------------
+20:19:27 INFO --------round 14 ------------
+20:20:26 INFO ---------Test 14 ------------
+20:20:36 INFO Clean ACC:              0.8373
+20:20:36 INFO Attack Success Ratio:   0.3433
+20:20:36 INFO Robustness ACC:           0.5280
+20:20:36 INFO ------------------------------
+20:20:36 INFO --------round 15 ------------
+20:21:35 INFO ---------Test 15 ------------
+20:21:44 INFO Clean ACC:              0.8391
+20:21:44 INFO Attack Success Ratio:   0.4436
+20:21:44 INFO Robustness ACC:           0.4573
+20:21:44 INFO ------------------------------
+20:21:44 INFO --------round 16 ------------
+20:22:43 INFO ---------Test 16 ------------
+20:22:52 INFO Clean ACC:              0.8428
+20:22:52 INFO Attack Success Ratio:   0.4954
+20:22:52 INFO Robustness ACC:           0.4158
+20:22:52 INFO ------------------------------
+20:22:52 INFO --------round 17 ------------
+20:23:50 INFO ---------Test 17 ------------
+20:23:59 INFO Clean ACC:              0.8483
+20:23:59 INFO Attack Success Ratio:   0.5683
+20:23:59 INFO Robustness ACC:           0.3567
+20:23:59 INFO ------------------------------
+20:23:59 INFO --------round 18 ------------
+20:24:57 INFO ---------Test 18 ------------
+20:25:06 INFO Clean ACC:              0.8480
+20:25:06 INFO Attack Success Ratio:   0.5769
+20:25:06 INFO Robustness ACC:           0.3518
+20:25:06 INFO ------------------------------
+20:25:06 INFO --------round 19 ------------
+20:26:05 INFO ---------Test 19 ------------
+20:26:15 INFO Clean ACC:              0.8487
+20:26:15 INFO Attack Success Ratio:   0.6818
+20:26:15 INFO Robustness ACC:           0.2712
+20:26:15 INFO ------------------------------
+20:26:15 INFO --------round 20 ------------
+20:27:14 INFO ---------Test 20 ------------
+20:27:22 INFO Clean ACC:              0.8537
+20:27:22 INFO Attack Success Ratio:   0.7326
+20:27:22 INFO Robustness ACC:           0.2288
+20:27:22 INFO ------------------------------
+20:27:22 INFO --------round 21 ------------
+20:28:21 INFO ---------Test 21 ------------
+20:28:29 INFO Clean ACC:              0.8561
+20:28:29 INFO Attack Success Ratio:   0.7388
+20:28:29 INFO Robustness ACC:           0.2244
+20:28:29 INFO ------------------------------
+20:28:29 INFO --------round 22 ------------
+20:29:28 INFO ---------Test 22 ------------
+20:29:37 INFO Clean ACC:              0.8590
+20:29:37 INFO Attack Success Ratio:   0.7799
+20:29:37 INFO Robustness ACC:           0.1919
+20:29:37 INFO ------------------------------
+20:29:37 INFO --------round 23 ------------
+20:30:35 INFO ---------Test 23 ------------
+20:30:44 INFO Clean ACC:              0.8599
+20:30:44 INFO Attack Success Ratio:   0.8237
+20:30:44 INFO Robustness ACC:           0.1534
+20:30:44 INFO ------------------------------
+20:30:44 INFO --------round 24 ------------
+20:31:42 INFO ---------Test 24 ------------
+20:31:53 INFO Clean ACC:              0.8609
+20:31:53 INFO Attack Success Ratio:   0.8303
+20:31:53 INFO Robustness ACC:           0.1483
+20:31:53 INFO ------------------------------
+20:31:53 INFO --------round 25 ------------
+20:32:51 INFO ---------Test 25 ------------
+20:33:00 INFO Clean ACC:              0.8632
+20:33:00 INFO Attack Success Ratio:   0.8390
+20:33:00 INFO Robustness ACC:           0.1409
+20:33:00 INFO ------------------------------
+20:33:00 INFO --------round 26 ------------
+20:33:59 INFO ---------Test 26 ------------
+20:34:09 INFO Clean ACC:              0.8635
+20:34:09 INFO Attack Success Ratio:   0.8636
+20:34:09 INFO Robustness ACC:           0.1211
+20:34:09 INFO ------------------------------
+20:34:09 INFO --------round 27 ------------
+20:35:07 INFO ---------Test 27 ------------
+20:35:17 INFO Clean ACC:              0.8652
+20:35:17 INFO Attack Success Ratio:   0.8671
+20:35:17 INFO Robustness ACC:           0.1187
+20:35:17 INFO ------------------------------
+20:35:17 INFO --------round 28 ------------
+20:36:16 INFO ---------Test 28 ------------
+20:36:25 INFO Clean ACC:              0.8663
+20:36:25 INFO Attack Success Ratio:   0.8842
+20:36:25 INFO Robustness ACC:           0.1032
+20:36:25 INFO ------------------------------
+20:36:25 INFO --------round 29 ------------
+20:37:23 INFO ---------Test 29 ------------
+20:37:32 INFO Clean ACC:              0.8700
+20:37:32 INFO Attack Success Ratio:   0.8931
+20:37:32 INFO Robustness ACC:           0.0951
+20:37:32 INFO ------------------------------
+20:37:32 INFO --------round 30 ------------
+20:38:30 INFO ---------Test 30 ------------
+20:38:39 INFO Clean ACC:              0.8691
+20:38:39 INFO Attack Success Ratio:   0.8979
+20:38:39 INFO Robustness ACC:           0.0906
+20:38:39 INFO ------------------------------
+20:38:39 INFO --------round 31 ------------
+20:39:37 INFO ---------Test 31 ------------
+20:39:46 INFO Clean ACC:              0.8712
+20:39:46 INFO Attack Success Ratio:   0.9052
+20:39:46 INFO Robustness ACC:           0.0849
+20:39:46 INFO ------------------------------
+20:39:46 INFO --------round 32 ------------
+20:40:45 INFO ---------Test 32 ------------
+20:40:54 INFO Clean ACC:              0.8714
+20:40:54 INFO Attack Success Ratio:   0.9058
+20:40:54 INFO Robustness ACC:           0.0848
+20:40:54 INFO ------------------------------
+20:40:54 INFO --------round 33 ------------
+20:41:52 INFO ---------Test 33 ------------
+20:42:01 INFO Clean ACC:              0.8715
+20:42:01 INFO Attack Success Ratio:   0.9140
+20:42:01 INFO Robustness ACC:           0.0766
+20:42:01 INFO ------------------------------
+20:42:01 INFO --------round 34 ------------
+20:42:59 INFO ---------Test 34 ------------
+20:43:08 INFO Clean ACC:              0.8738
+20:43:08 INFO Attack Success Ratio:   0.9153
+20:43:08 INFO Robustness ACC:           0.0767
+20:43:08 INFO ------------------------------
+20:43:08 INFO --------round 35 ------------
+20:44:07 INFO ---------Test 35 ------------
+20:44:15 INFO Clean ACC:              0.8746
+20:44:15 INFO Attack Success Ratio:   0.9132
+20:44:15 INFO Robustness ACC:           0.0780
+20:44:15 INFO ------------------------------
+20:44:15 INFO --------round 36 ------------
+20:45:14 INFO ---------Test 36 ------------
+20:45:23 INFO Clean ACC:              0.8737
+20:45:23 INFO Attack Success Ratio:   0.9254
+20:45:23 INFO Robustness ACC:           0.0676
+20:45:23 INFO ------------------------------
+20:45:23 INFO --------round 37 ------------
+20:46:21 INFO ---------Test 37 ------------
+20:46:30 INFO Clean ACC:              0.8722
+20:46:30 INFO Attack Success Ratio:   0.9286
+20:46:30 INFO Robustness ACC:           0.0648
+20:46:30 INFO ------------------------------
+20:46:30 INFO --------round 38 ------------
+20:47:29 INFO ---------Test 38 ------------
+20:47:38 INFO Clean ACC:              0.8766
+20:47:38 INFO Attack Success Ratio:   0.9242
+20:47:38 INFO Robustness ACC:           0.0684
+20:47:38 INFO ------------------------------
+20:47:38 INFO --------round 39 ------------
+20:48:37 INFO ---------Test 39 ------------
+20:48:46 INFO Clean ACC:              0.8756
+20:48:46 INFO Attack Success Ratio:   0.9299
+20:48:46 INFO Robustness ACC:           0.0634
+20:48:46 INFO ------------------------------
+20:48:46 INFO --------round 40 ------------
+20:49:44 INFO ---------Test 40 ------------
+20:49:53 INFO Clean ACC:              0.8753
+20:49:53 INFO Attack Success Ratio:   0.9333
+20:49:53 INFO Robustness ACC:           0.0604
+20:49:53 INFO ------------------------------
+20:49:53 INFO --------round 41 ------------
+20:50:52 INFO ---------Test 41 ------------
+20:51:00 INFO Clean ACC:              0.8771
+20:51:00 INFO Attack Success Ratio:   0.9371
+20:51:00 INFO Robustness ACC:           0.0569
+20:51:00 INFO ------------------------------
+20:51:00 INFO --------round 42 ------------
+20:52:00 INFO ---------Test 42 ------------
+20:52:10 INFO Clean ACC:              0.8777
+20:52:10 INFO Attack Success Ratio:   0.9393
+20:52:10 INFO Robustness ACC:           0.0552
+20:52:10 INFO ------------------------------
+20:52:10 INFO --------round 43 ------------
+20:53:09 INFO ---------Test 43 ------------
+20:53:18 INFO Clean ACC:              0.8797
+20:53:18 INFO Attack Success Ratio:   0.9440
+20:53:18 INFO Robustness ACC:           0.0508
+20:53:18 INFO ------------------------------
+20:53:18 INFO --------round 44 ------------
+20:54:17 INFO ---------Test 44 ------------
+20:54:25 INFO Clean ACC:              0.8758
+20:54:25 INFO Attack Success Ratio:   0.9431
+20:54:25 INFO Robustness ACC:           0.0518
+20:54:25 INFO ------------------------------
+20:54:25 INFO --------round 45 ------------
+20:55:24 INFO ---------Test 45 ------------
+20:55:34 INFO Clean ACC:              0.8808
+20:55:34 INFO Attack Success Ratio:   0.9456
+20:55:34 INFO Robustness ACC:           0.0494
+20:55:34 INFO ------------------------------
+20:55:34 INFO --------round 46 ------------
+20:56:33 INFO ---------Test 46 ------------
+20:56:42 INFO Clean ACC:              0.8800
+20:56:42 INFO Attack Success Ratio:   0.9468
+20:56:42 INFO Robustness ACC:           0.0483
+20:56:42 INFO ------------------------------
+20:56:42 INFO --------round 47 ------------
+20:57:40 INFO ---------Test 47 ------------
+20:57:49 INFO Clean ACC:              0.8810
+20:57:49 INFO Attack Success Ratio:   0.9433
+20:57:49 INFO Robustness ACC:           0.0513
+20:57:49 INFO ------------------------------
+20:57:49 INFO --------round 48 ------------
+20:58:48 INFO ---------Test 48 ------------
+20:58:57 INFO Clean ACC:              0.8815
+20:58:57 INFO Attack Success Ratio:   0.9448
+20:58:57 INFO Robustness ACC:           0.0507
+20:58:57 INFO ------------------------------
+20:58:57 INFO --------round 49 ------------
+20:59:55 INFO ---------Test 49 ------------
+21:00:04 INFO Clean ACC:              0.8814
+21:00:04 INFO Attack Success Ratio:   0.9548
+21:00:04 INFO Robustness ACC:           0.0416
+21:00:04 INFO ------------------------------
+21:00:04 INFO --------round 50 ------------
+21:01:03 INFO ---------Test 50 ------------
+21:01:11 INFO Clean ACC:              0.8801
+21:01:11 INFO Attack Success Ratio:   0.9493
+21:01:11 INFO Robustness ACC:           0.0466
+21:01:11 INFO ------------------------------
+21:01:11 INFO Best results:
+21:01:11 INFO Clean ACC:              0.8815
+21:01:11 INFO Attack Success Ratio:   0.9448
+21:01:11 INFO Robustness ACC:           0.0507
+21:01:11 INFO Training has finished!

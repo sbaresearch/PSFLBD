@@ -1,0 +1,47 @@
+[INFO] Date: 2026-02-02 | PyTorch 2.6.0+cu124
+[INFO] Total CPUs: 32, Total GPUs: 3 on troubadix.ifs.tuwien.ac.at.
+[INFO] Client CPUS: 1, Client GPUs: 0.5
+[INFO] Number of concurrent clients: 6
+[INFO] Set random seed to 123456
+[INFO] Malicious clients: []
+[INFO] Attack type: all2one, Target class: 2
+[ERROR] Error: The actor died because of an error raised in its creation task, [36mray::MainServer.__init__()[39m (pid=3345780, ip=128.131.169.146, actor_id=0ae520e544f8a562612f68e301000000, repr=<backfed.servers.main_server.MainServer object at 0x7f7b2211cfa0>)
+  File "/newstorage4/maleksic/fl-backdoors/backfed/backfed/servers/main_server.py", line 98, in __init__
+    self.fed_server = FedServer.remote(client_template, self.fed_aggregator)
+  File "/newstorage4/maleksic/BackFed/env/lib/python3.10/site-packages/ray/actor.py", line 715, in remote
+    return self._remote(args=args, kwargs=kwargs, **self._default_options)
+  File "/newstorage4/maleksic/BackFed/env/lib/python3.10/site-packages/ray/actor.py", line 1160, in _remote
+    actor_id = worker.core_worker.create_actor(
+  File "/newstorage4/maleksic/BackFed/env/lib/python3.10/site-packages/ray/cloudpickle/cloudpickle.py", line 1479, in dumps
+    cp.dump(obj)
+  File "/newstorage4/maleksic/BackFed/env/lib/python3.10/site-packages/ray/cloudpickle/cloudpickle.py", line 1245, in dump
+    return super().dump(obj)
+  File "/newstorage4/maleksic/BackFed/env/lib/python3.10/site-packages/ray/cloudpickle/cloudpickle.py", line 931, in _file_reduce
+    raise pickle.PicklingError(
+_pickle.PicklingError: Cannot pickle files that are not opened for reading: w
+Traceback (most recent call last):
+  File "/newstorage4/maleksic/fl-backdoors/backfed/main_sfl.py", line 40, in main
+    ray.get(server.run_experiment.remote())
+  File "/newstorage4/maleksic/BackFed/env/lib/python3.10/site-packages/ray/_private/auto_init_hook.py", line 21, in auto_init_wrapper
+    return fn(*args, **kwargs)
+  File "/newstorage4/maleksic/BackFed/env/lib/python3.10/site-packages/ray/_private/client_mode_hook.py", line 103, in wrapper
+    return func(*args, **kwargs)
+  File "/newstorage4/maleksic/BackFed/env/lib/python3.10/site-packages/ray/_private/worker.py", line 2667, in get
+    values, debugger_breakpoint = worker.get_objects(object_refs, timeout=timeout)
+  File "/newstorage4/maleksic/BackFed/env/lib/python3.10/site-packages/ray/_private/worker.py", line 866, in get_objects
+    raise value
+ray.exceptions.RayActorError: The actor died because of an error raised in its creation task, [36mray::MainServer.__init__()[39m (pid=3345780, ip=128.131.169.146, actor_id=0ae520e544f8a562612f68e301000000, repr=<backfed.servers.main_server.MainServer object at 0x7f7b2211cfa0>)
+  File "/newstorage4/maleksic/fl-backdoors/backfed/backfed/servers/main_server.py", line 98, in __init__
+    self.fed_server = FedServer.remote(client_template, self.fed_aggregator)
+  File "/newstorage4/maleksic/BackFed/env/lib/python3.10/site-packages/ray/actor.py", line 715, in remote
+    return self._remote(args=args, kwargs=kwargs, **self._default_options)
+  File "/newstorage4/maleksic/BackFed/env/lib/python3.10/site-packages/ray/actor.py", line 1160, in _remote
+    actor_id = worker.core_worker.create_actor(
+  File "/newstorage4/maleksic/BackFed/env/lib/python3.10/site-packages/ray/cloudpickle/cloudpickle.py", line 1479, in dumps
+    cp.dump(obj)
+  File "/newstorage4/maleksic/BackFed/env/lib/python3.10/site-packages/ray/cloudpickle/cloudpickle.py", line 1245, in dump
+    return super().dump(obj)
+  File "/newstorage4/maleksic/BackFed/env/lib/python3.10/site-packages/ray/cloudpickle/cloudpickle.py", line 931, in _file_reduce
+    raise pickle.PicklingError(
+_pickle.PicklingError: Cannot pickle files that are not opened for reading: w
+

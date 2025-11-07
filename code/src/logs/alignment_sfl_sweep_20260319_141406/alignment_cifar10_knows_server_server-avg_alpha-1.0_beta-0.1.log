@@ -1,0 +1,3130 @@
+wandb: Currently logged in as: aleksic-milicica (aleksic-milicica-tu-wien). Use `wandb login --relogin` to force relogin
+wandb: - Waiting for wandb.init()...wandb: \ Waiting for wandb.init()...wandb: wandb version 0.25.1 is available!  To upgrade, please run:
+wandb:  $ pip install wandb --upgrade
+wandb: Tracking run with wandb version 0.16.3
+wandb: Run data is saved locally in /newstorage4/maleksic/fl-backdoors/code/src/src_more/wandb/run-20260320_043309-0jr4m6bs
+wandb: Run `wandb offline` to turn off syncing.
+wandb: Syncing run cifar10_alignment_avg_avg_baseline
+wandb: ⭐️ View project at https://wandb.ai/aleksic-milicica-tu-wien/split-fed-backdoor-3
+wandb: 🚀 View run at https://wandb.ai/aleksic-milicica-tu-wien/split-fed-backdoor-3/runs/0jr4m6bs
+Files already downloaded and verified
+Files already downloaded and verified
+100
+local epoch 0 	 client: 0 	 mal: 1 	 loss: 0.99995261 	 time: 17.82
+local epoch 0 	 client: 1 	 mal: 1 	 loss: 1.00000000 	 time: 16.28
+local epoch 0 	 client: 2 	 mal: 0 	 loss: 2.30974674 	 time: 1.47
+local epoch 0 	 client: 3 	 mal: 0 	 loss: 2.23801708 	 time: 1.45
+local epoch 0 	 client: 4 	 mal: 0 	 loss: 2.25537658 	 time: 1.46
+local epoch 0 	 client: 5 	 mal: 0 	 loss: 2.18363070 	 time: 1.46
+local epoch 0 	 client: 6 	 mal: 0 	 loss: 2.25774336 	 time: 1.46
+local epoch 0 	 client: 7 	 mal: 0 	 loss: 2.22112560 	 time: 1.46
+local epoch 0 	 client: 8 	 mal: 0 	 loss: 2.22593212 	 time: 1.45
+local epoch 0 	 client: 9 	 mal: 0 	 loss: 2.25737524 	 time: 1.46
+local epoch 0 	 client: 10 	 mal: 0 	 loss: 2.27078867 	 time: 1.45
+local epoch 0 	 client: 11 	 mal: 0 	 loss: 2.29304743 	 time: 1.45
+local epoch 0 	 client: 12 	 mal: 0 	 loss: 2.27709627 	 time: 1.45
+local epoch 0 	 client: 13 	 mal: 0 	 loss: 2.27748489 	 time: 1.45
+local epoch 0 	 client: 14 	 mal: 0 	 loss: 2.26912022 	 time: 1.45
+local epoch 0 	 client: 15 	 mal: 0 	 loss: 2.25515652 	 time: 1.45
+local epoch 0 	 client: 16 	 mal: 0 	 loss: 2.24813557 	 time: 1.45
+local epoch 0 	 client: 17 	 mal: 0 	 loss: 2.26701450 	 time: 1.45
+local epoch 0 	 client: 18 	 mal: 0 	 loss: 2.26475811 	 time: 1.45
+local epoch 0 	 client: 19 	 mal: 0 	 loss: 2.29756999 	 time: 1.45
+
+[GRADIENT DEBUG Rnd 1]
+Avg Malicious Delta Norm: 8.073555
+Avg Honest Delta Norm:    0.245439
+Power Ratio (Mal/Hon):    32.8943
+[DBG rnd=1] logits mean=0.0061, std=0.4059, maxlogit mean=1.0704
+[DBG rnd=1] probs max mean=0.2659, pred entropy mean=2.1735
+[DBG rnd=1] preds bincount=[0, 0, 0, 0, 0, 0, 0, 64, 0, 0]
+Clean ACC:              0.1000
+Attack Success Ratio:   1.0000
+Robustness ACC:           0.0000
+local epoch 0 	 client: 0 	 mal: 1 	 loss: 0.03079698 	 time: 16.36
+local epoch 0 	 client: 1 	 mal: 1 	 loss: 0.03713368 	 time: 16.54
+local epoch 0 	 client: 2 	 mal: 0 	 loss: 2.20803618 	 time: 1.42
+local epoch 0 	 client: 3 	 mal: 0 	 loss: 2.12129164 	 time: 1.42
+local epoch 0 	 client: 4 	 mal: 0 	 loss: 2.18673539 	 time: 1.42
+local epoch 0 	 client: 5 	 mal: 0 	 loss: 2.13303638 	 time: 1.43
+local epoch 0 	 client: 6 	 mal: 0 	 loss: 2.21566582 	 time: 1.43
+local epoch 0 	 client: 7 	 mal: 0 	 loss: 2.17375660 	 time: 1.43
+local epoch 0 	 client: 8 	 mal: 0 	 loss: 2.06558561 	 time: 1.43
+local epoch 0 	 client: 9 	 mal: 0 	 loss: 2.18098927 	 time: 1.43
+local epoch 0 	 client: 10 	 mal: 0 	 loss: 2.19328570 	 time: 1.43
+local epoch 0 	 client: 11 	 mal: 0 	 loss: 2.17386389 	 time: 1.43
+local epoch 0 	 client: 12 	 mal: 0 	 loss: 2.25494123 	 time: 1.45
+local epoch 0 	 client: 13 	 mal: 0 	 loss: 2.36023211 	 time: 1.43
+local epoch 0 	 client: 14 	 mal: 0 	 loss: 2.13231993 	 time: 1.44
+local epoch 0 	 client: 15 	 mal: 0 	 loss: 2.17627764 	 time: 1.43
+local epoch 0 	 client: 16 	 mal: 0 	 loss: 2.02986550 	 time: 1.43
+local epoch 0 	 client: 17 	 mal: 0 	 loss: 2.20398974 	 time: 1.43
+local epoch 0 	 client: 18 	 mal: 0 	 loss: 2.28946328 	 time: 1.47
+local epoch 0 	 client: 19 	 mal: 0 	 loss: 2.13223886 	 time: 1.43
+
+[GRADIENT DEBUG Rnd 2]
+Avg Malicious Delta Norm: 0.283947
+Avg Honest Delta Norm:    0.120768
+Power Ratio (Mal/Hon):    2.3512
+[DBG rnd=2] logits mean=0.0186, std=0.3377, maxlogit mean=0.4691
+[DBG rnd=2] probs max mean=0.1506, pred entropy mean=2.2555
+[DBG rnd=2] preds bincount=[10, 0, 0, 0, 0, 0, 4, 42, 7, 1]
+Clean ACC:              0.1839
+Attack Success Ratio:   0.6891
+Robustness ACC:           0.1052
+local epoch 0 	 client: 0 	 mal: 1 	 loss: 1.00000000 	 time: 16.34
+local epoch 0 	 client: 1 	 mal: 1 	 loss: 1.00000000 	 time: 16.34
+local epoch 0 	 client: 2 	 mal: 0 	 loss: 2.24300718 	 time: 1.46
+local epoch 0 	 client: 3 	 mal: 0 	 loss: 2.39258647 	 time: 1.45
+local epoch 0 	 client: 4 	 mal: 0 	 loss: 2.16080713 	 time: 1.45
+local epoch 0 	 client: 5 	 mal: 0 	 loss: 2.28651214 	 time: 1.46
+local epoch 0 	 client: 6 	 mal: 0 	 loss: 2.27349806 	 time: 1.46
+local epoch 0 	 client: 7 	 mal: 0 	 loss: 2.15508199 	 time: 1.45
+local epoch 0 	 client: 8 	 mal: 0 	 loss: 2.04072142 	 time: 1.46
+local epoch 0 	 client: 9 	 mal: 0 	 loss: 2.13634801 	 time: 1.45
+local epoch 0 	 client: 10 	 mal: 0 	 loss: 2.34816384 	 time: 1.45
+local epoch 0 	 client: 11 	 mal: 0 	 loss: 2.18278694 	 time: 1.51
+local epoch 0 	 client: 12 	 mal: 0 	 loss: 2.20908189 	 time: 1.46
+local epoch 0 	 client: 13 	 mal: 0 	 loss: 2.29053426 	 time: 1.46
+local epoch 0 	 client: 14 	 mal: 0 	 loss: 2.11612940 	 time: 1.45
+local epoch 0 	 client: 15 	 mal: 0 	 loss: 2.09701824 	 time: 1.45
+local epoch 0 	 client: 16 	 mal: 0 	 loss: 2.09997630 	 time: 1.45
+local epoch 0 	 client: 17 	 mal: 0 	 loss: 2.08932400 	 time: 1.45
+local epoch 0 	 client: 18 	 mal: 0 	 loss: 2.16364145 	 time: 1.43
+local epoch 0 	 client: 19 	 mal: 0 	 loss: 2.04796124 	 time: 1.44
+
+[GRADIENT DEBUG Rnd 3]
+Avg Malicious Delta Norm: 5.916834
+Avg Honest Delta Norm:    0.133249
+Power Ratio (Mal/Hon):    44.4043
+[DBG rnd=3] logits mean=0.0069, std=0.8273, maxlogit mean=1.5332
+[DBG rnd=3] probs max mean=0.3496, pred entropy mean=1.9703
+[DBG rnd=3] preds bincount=[2, 0, 0, 0, 0, 0, 0, 62, 0, 0]
+Clean ACC:              0.1405
+Attack Success Ratio:   0.9393
+Robustness ACC:           0.0366
+local epoch 0 	 client: 0 	 mal: 1 	 loss: 0.04612919 	 time: 16.52
+local epoch 0 	 client: 1 	 mal: 1 	 loss: 0.10675428 	 time: 16.36
+local epoch 0 	 client: 2 	 mal: 0 	 loss: 2.03720760 	 time: 1.55
+local epoch 0 	 client: 3 	 mal: 0 	 loss: 2.14509583 	 time: 1.54
+local epoch 0 	 client: 4 	 mal: 0 	 loss: 2.06941819 	 time: 1.54
+local epoch 0 	 client: 5 	 mal: 0 	 loss: 2.06435657 	 time: 1.54
+local epoch 0 	 client: 6 	 mal: 0 	 loss: 2.25346613 	 time: 1.54
+local epoch 0 	 client: 7 	 mal: 0 	 loss: 2.06226802 	 time: 1.53
+local epoch 0 	 client: 8 	 mal: 0 	 loss: 2.08178663 	 time: 1.53
+local epoch 0 	 client: 9 	 mal: 0 	 loss: 2.28378987 	 time: 1.54
+local epoch 0 	 client: 10 	 mal: 0 	 loss: 2.27544475 	 time: 1.53
+local epoch 0 	 client: 11 	 mal: 0 	 loss: 2.11205649 	 time: 1.54
+local epoch 0 	 client: 12 	 mal: 0 	 loss: 2.11359191 	 time: 1.53
+local epoch 0 	 client: 13 	 mal: 0 	 loss: 2.13980556 	 time: 1.53
+local epoch 0 	 client: 14 	 mal: 0 	 loss: 2.04848695 	 time: 1.54
+local epoch 0 	 client: 15 	 mal: 0 	 loss: 2.07948709 	 time: 1.53
+local epoch 0 	 client: 16 	 mal: 0 	 loss: 2.07064486 	 time: 1.53
+local epoch 0 	 client: 17 	 mal: 0 	 loss: 2.14545226 	 time: 1.55
+local epoch 0 	 client: 18 	 mal: 0 	 loss: 2.06525564 	 time: 1.53
+local epoch 0 	 client: 19 	 mal: 0 	 loss: 2.20462203 	 time: 1.44
+
+[GRADIENT DEBUG Rnd 4]
+Avg Malicious Delta Norm: 0.437264
+Avg Honest Delta Norm:    0.126391
+Power Ratio (Mal/Hon):    3.4596
+[DBG rnd=4] logits mean=0.0430, std=0.5449, maxlogit mean=0.6108
+[DBG rnd=4] probs max mean=0.1591, pred entropy mean=2.2083
+[DBG rnd=4] preds bincount=[2, 5, 0, 1, 5, 8, 3, 21, 9, 10]
+Clean ACC:              0.2480
+Attack Success Ratio:   0.4828
+Robustness ACC:           0.1828
+local epoch 0 	 client: 0 	 mal: 1 	 loss: 1.00000000 	 time: 16.37
+local epoch 0 	 client: 1 	 mal: 1 	 loss: 1.00000000 	 time: 16.50
+local epoch 0 	 client: 2 	 mal: 0 	 loss: 2.21426988 	 time: 1.46
+local epoch 0 	 client: 3 	 mal: 0 	 loss: 2.21086550 	 time: 1.45
+local epoch 0 	 client: 4 	 mal: 0 	 loss: 2.07900119 	 time: 1.45
+local epoch 0 	 client: 5 	 mal: 0 	 loss: 2.05390763 	 time: 1.45
+local epoch 0 	 client: 6 	 mal: 0 	 loss: 2.00611305 	 time: 1.45
+local epoch 0 	 client: 7 	 mal: 0 	 loss: 2.17753434 	 time: 1.46
+local epoch 0 	 client: 8 	 mal: 0 	 loss: 2.11603165 	 time: 1.46
+local epoch 0 	 client: 9 	 mal: 0 	 loss: 2.22293997 	 time: 1.46
+local epoch 0 	 client: 10 	 mal: 0 	 loss: 2.14078975 	 time: 1.47
+local epoch 0 	 client: 11 	 mal: 0 	 loss: 2.05592966 	 time: 1.46
+local epoch 0 	 client: 12 	 mal: 0 	 loss: 2.07090926 	 time: 1.46
+local epoch 0 	 client: 13 	 mal: 0 	 loss: 2.16181135 	 time: 1.43
+local epoch 0 	 client: 14 	 mal: 0 	 loss: 2.16114593 	 time: 1.43
+local epoch 0 	 client: 15 	 mal: 0 	 loss: 2.02918339 	 time: 1.43
+local epoch 0 	 client: 16 	 mal: 0 	 loss: 2.11149120 	 time: 1.44
+local epoch 0 	 client: 17 	 mal: 0 	 loss: 2.05978441 	 time: 1.44
+local epoch 0 	 client: 18 	 mal: 0 	 loss: 2.14188790 	 time: 1.43
+local epoch 0 	 client: 19 	 mal: 0 	 loss: 2.09972644 	 time: 1.43
+
+[GRADIENT DEBUG Rnd 5]
+Avg Malicious Delta Norm: 11.533998
+Avg Honest Delta Norm:    0.126717
+Power Ratio (Mal/Hon):    91.0220
+[DBG rnd=5] logits mean=0.0591, std=0.5775, maxlogit mean=0.7015
+[DBG rnd=5] probs max mean=0.1698, pred entropy mean=2.1964
+[DBG rnd=5] preds bincount=[3, 2, 0, 0, 0, 13, 20, 3, 2, 21]
+Clean ACC:              0.2658
+Attack Success Ratio:   0.0992
+Robustness ACC:           0.2650
+local epoch 0 	 client: 0 	 mal: 1 	 loss: 1.00000000 	 time: 16.34
+local epoch 0 	 client: 1 	 mal: 1 	 loss: 1.00000000 	 time: 16.35
+local epoch 0 	 client: 2 	 mal: 0 	 loss: 2.06199527 	 time: 1.42
+local epoch 0 	 client: 3 	 mal: 0 	 loss: 1.99992883 	 time: 1.42
+local epoch 0 	 client: 4 	 mal: 0 	 loss: 2.06020594 	 time: 1.42
+local epoch 0 	 client: 5 	 mal: 0 	 loss: 2.06718326 	 time: 1.42
+local epoch 0 	 client: 6 	 mal: 0 	 loss: 2.18032837 	 time: 1.42
+local epoch 0 	 client: 7 	 mal: 0 	 loss: 2.13884616 	 time: 1.42
+local epoch 0 	 client: 8 	 mal: 0 	 loss: 1.96915054 	 time: 1.42
+local epoch 0 	 client: 9 	 mal: 0 	 loss: 2.16844869 	 time: 1.42
+local epoch 0 	 client: 10 	 mal: 0 	 loss: 2.10882115 	 time: 1.43
+local epoch 0 	 client: 11 	 mal: 0 	 loss: 2.19263077 	 time: 1.43
+local epoch 0 	 client: 12 	 mal: 0 	 loss: 2.11452794 	 time: 1.43
+local epoch 0 	 client: 13 	 mal: 0 	 loss: 2.10711503 	 time: 1.44
+local epoch 0 	 client: 14 	 mal: 0 	 loss: 2.07296824 	 time: 1.46
+local epoch 0 	 client: 15 	 mal: 0 	 loss: 2.13272786 	 time: 1.47
+local epoch 0 	 client: 16 	 mal: 0 	 loss: 2.05585289 	 time: 1.45
+local epoch 0 	 client: 17 	 mal: 0 	 loss: 2.35564947 	 time: 1.46
+local epoch 0 	 client: 18 	 mal: 0 	 loss: 2.11083746 	 time: 1.47
+local epoch 0 	 client: 19 	 mal: 0 	 loss: 2.14846134 	 time: 1.43
+
+[GRADIENT DEBUG Rnd 6]
+Avg Malicious Delta Norm: 11.979704
+Avg Honest Delta Norm:    0.123899
+Power Ratio (Mal/Hon):    96.6889
+[DBG rnd=6] logits mean=0.0720, std=0.6300, maxlogit mean=0.7722
+[DBG rnd=6] probs max mean=0.1767, pred entropy mean=2.1823
+[DBG rnd=6] preds bincount=[1, 1, 0, 2, 2, 8, 24, 5, 2, 19]
+Clean ACC:              0.2571
+Attack Success Ratio:   0.1287
+Robustness ACC:           0.2430
+local epoch 0 	 client: 0 	 mal: 1 	 loss: 0.01645943 	 time: 16.51
+local epoch 0 	 client: 1 	 mal: 1 	 loss: 0.07445229 	 time: 16.36
+local epoch 0 	 client: 2 	 mal: 0 	 loss: 2.39792919 	 time: 1.41
+local epoch 0 	 client: 3 	 mal: 0 	 loss: 2.09892941 	 time: 1.42
+local epoch 0 	 client: 4 	 mal: 0 	 loss: 2.01837420 	 time: 1.42
+local epoch 0 	 client: 5 	 mal: 0 	 loss: 2.07413936 	 time: 1.43
+local epoch 0 	 client: 6 	 mal: 0 	 loss: 2.05594683 	 time: 1.43
+local epoch 0 	 client: 7 	 mal: 0 	 loss: 1.91990626 	 time: 1.43
+local epoch 0 	 client: 8 	 mal: 0 	 loss: 2.21389532 	 time: 1.44
+local epoch 0 	 client: 9 	 mal: 0 	 loss: 2.01022553 	 time: 1.43
+local epoch 0 	 client: 10 	 mal: 0 	 loss: 2.23929262 	 time: 1.43
+local epoch 0 	 client: 11 	 mal: 0 	 loss: 2.06811237 	 time: 1.43
+local epoch 0 	 client: 12 	 mal: 0 	 loss: 2.08887410 	 time: 1.43
+local epoch 0 	 client: 13 	 mal: 0 	 loss: 2.09772396 	 time: 1.44
+local epoch 0 	 client: 14 	 mal: 0 	 loss: 2.00727606 	 time: 1.43
+local epoch 0 	 client: 15 	 mal: 0 	 loss: 2.15099287 	 time: 1.43
+local epoch 0 	 client: 16 	 mal: 0 	 loss: 2.03358388 	 time: 1.43
+local epoch 0 	 client: 17 	 mal: 0 	 loss: 2.12361693 	 time: 1.43
+local epoch 0 	 client: 18 	 mal: 0 	 loss: 2.05849743 	 time: 1.46
+local epoch 0 	 client: 19 	 mal: 0 	 loss: 2.04669523 	 time: 1.44
+
+[GRADIENT DEBUG Rnd 7]
+Avg Malicious Delta Norm: 4.509668
+Avg Honest Delta Norm:    0.124301
+Power Ratio (Mal/Hon):    36.2801
+[DBG rnd=7] logits mean=0.0806, std=0.6573, maxlogit mean=0.8856
+[DBG rnd=7] probs max mean=0.1930, pred entropy mean=2.1636
+[DBG rnd=7] preds bincount=[1, 0, 0, 0, 0, 9, 23, 12, 2, 17]
+Clean ACC:              0.2512
+Attack Success Ratio:   0.2383
+Robustness ACC:           0.2167
+local epoch 0 	 client: 0 	 mal: 1 	 loss: 1.00000000 	 time: 16.35
+local epoch 0 	 client: 1 	 mal: 1 	 loss: 1.00000000 	 time: 16.35
+local epoch 0 	 client: 2 	 mal: 0 	 loss: 1.93331277 	 time: 1.42
+local epoch 0 	 client: 3 	 mal: 0 	 loss: 2.00630379 	 time: 1.42
+local epoch 0 	 client: 4 	 mal: 0 	 loss: 2.19584537 	 time: 1.42
+local epoch 0 	 client: 5 	 mal: 0 	 loss: 2.05509591 	 time: 1.41
+local epoch 0 	 client: 6 	 mal: 0 	 loss: 2.09988451 	 time: 1.42
+local epoch 0 	 client: 7 	 mal: 0 	 loss: 2.06811428 	 time: 1.42
+local epoch 0 	 client: 8 	 mal: 0 	 loss: 1.99086010 	 time: 1.42
+local epoch 0 	 client: 9 	 mal: 0 	 loss: 2.02960491 	 time: 1.42
+local epoch 0 	 client: 10 	 mal: 0 	 loss: 2.46496391 	 time: 1.42
+local epoch 0 	 client: 11 	 mal: 0 	 loss: 2.08125710 	 time: 1.43
+local epoch 0 	 client: 12 	 mal: 0 	 loss: 2.04011559 	 time: 1.43
+local epoch 0 	 client: 13 	 mal: 0 	 loss: 2.20770812 	 time: 1.44
+local epoch 0 	 client: 14 	 mal: 0 	 loss: 2.00283837 	 time: 1.43
+local epoch 0 	 client: 15 	 mal: 0 	 loss: 2.10141683 	 time: 1.43
+local epoch 0 	 client: 16 	 mal: 0 	 loss: 2.14169621 	 time: 1.43
+local epoch 0 	 client: 17 	 mal: 0 	 loss: 1.97511709 	 time: 1.43
+local epoch 0 	 client: 18 	 mal: 0 	 loss: 2.03633833 	 time: 1.43
+local epoch 0 	 client: 19 	 mal: 0 	 loss: 1.90572751 	 time: 1.42
+
+[GRADIENT DEBUG Rnd 8]
+Avg Malicious Delta Norm: 6.332159
+Avg Honest Delta Norm:    0.124951
+Power Ratio (Mal/Hon):    50.6771
+[DBG rnd=8] logits mean=0.0975, std=1.5694, maxlogit mean=3.0053
+[DBG rnd=8] probs max mean=0.6139, pred entropy mean=1.3647
+[DBG rnd=8] preds bincount=[0, 0, 0, 0, 0, 0, 0, 64, 0, 0]
+Clean ACC:              0.1000
+Attack Success Ratio:   1.0000
+Robustness ACC:           0.0000
+local epoch 0 	 client: 0 	 mal: 1 	 loss: 0.03504743 	 time: 16.53
+local epoch 0 	 client: 1 	 mal: 1 	 loss: 0.06971073 	 time: 16.38
+local epoch 0 	 client: 2 	 mal: 0 	 loss: 2.00086689 	 time: 1.42
+local epoch 0 	 client: 3 	 mal: 0 	 loss: 2.13292527 	 time: 1.42
+local epoch 0 	 client: 4 	 mal: 0 	 loss: 2.05848122 	 time: 1.43
+local epoch 0 	 client: 5 	 mal: 0 	 loss: 2.13437104 	 time: 1.43
+local epoch 0 	 client: 6 	 mal: 0 	 loss: 1.94032919 	 time: 1.43
+local epoch 0 	 client: 7 	 mal: 0 	 loss: 1.96359837 	 time: 1.43
+local epoch 0 	 client: 8 	 mal: 0 	 loss: 2.05486298 	 time: 1.43
+local epoch 0 	 client: 9 	 mal: 0 	 loss: 2.01438260 	 time: 1.43
+local epoch 0 	 client: 10 	 mal: 0 	 loss: 2.09069228 	 time: 1.43
+local epoch 0 	 client: 11 	 mal: 0 	 loss: 2.01940346 	 time: 1.43
+local epoch 0 	 client: 12 	 mal: 0 	 loss: 2.21542072 	 time: 1.53
+local epoch 0 	 client: 13 	 mal: 0 	 loss: 2.12466049 	 time: 1.52
+local epoch 0 	 client: 14 	 mal: 0 	 loss: 2.06512380 	 time: 1.44
+local epoch 0 	 client: 15 	 mal: 0 	 loss: 2.03329659 	 time: 1.42
+local epoch 0 	 client: 16 	 mal: 0 	 loss: 2.03625679 	 time: 1.43
+local epoch 0 	 client: 17 	 mal: 0 	 loss: 2.20169473 	 time: 1.44
+local epoch 0 	 client: 18 	 mal: 0 	 loss: 2.04210782 	 time: 1.43
+local epoch 0 	 client: 19 	 mal: 0 	 loss: 1.98797214 	 time: 1.43
+
+[GRADIENT DEBUG Rnd 9]
+Avg Malicious Delta Norm: 0.267816
+Avg Honest Delta Norm:    0.136597
+Power Ratio (Mal/Hon):    1.9606
+[DBG rnd=9] logits mean=0.0664, std=0.7065, maxlogit mean=0.8608
+[DBG rnd=9] probs max mean=0.1859, pred entropy mean=2.1527
+[DBG rnd=9] preds bincount=[1, 1, 0, 5, 0, 7, 26, 16, 3, 5]
+Clean ACC:              0.2288
+Attack Success Ratio:   0.3282
+Robustness ACC:           0.1869
+local epoch 0 	 client: 0 	 mal: 1 	 loss: 1.00000000 	 time: 16.35
+local epoch 0 	 client: 1 	 mal: 1 	 loss: 1.00000000 	 time: 16.50
+local epoch 0 	 client: 2 	 mal: 0 	 loss: 2.14782763 	 time: 1.42
+local epoch 0 	 client: 3 	 mal: 0 	 loss: 2.10416412 	 time: 1.42
+local epoch 0 	 client: 4 	 mal: 0 	 loss: 1.93027437 	 time: 1.42
+local epoch 0 	 client: 5 	 mal: 0 	 loss: 2.08057857 	 time: 1.42
+local epoch 0 	 client: 6 	 mal: 0 	 loss: 2.04095268 	 time: 1.42
+local epoch 0 	 client: 7 	 mal: 0 	 loss: 1.94676042 	 time: 1.42
+local epoch 0 	 client: 8 	 mal: 0 	 loss: 2.01934004 	 time: 1.42
+local epoch 0 	 client: 9 	 mal: 0 	 loss: 2.03334236 	 time: 1.42
+local epoch 0 	 client: 10 	 mal: 0 	 loss: 1.98128104 	 time: 1.42
+local epoch 0 	 client: 11 	 mal: 0 	 loss: 2.07385516 	 time: 1.42
+local epoch 0 	 client: 12 	 mal: 0 	 loss: 2.04796195 	 time: 1.52
+local epoch 0 	 client: 13 	 mal: 0 	 loss: 1.95760489 	 time: 1.47
+local epoch 0 	 client: 14 	 mal: 0 	 loss: 1.97109652 	 time: 1.43
+local epoch 0 	 client: 15 	 mal: 0 	 loss: 1.94804275 	 time: 1.43
+local epoch 0 	 client: 16 	 mal: 0 	 loss: 2.00656676 	 time: 1.43
+local epoch 0 	 client: 17 	 mal: 0 	 loss: 2.04342508 	 time: 1.43
+local epoch 0 	 client: 18 	 mal: 0 	 loss: 1.96308827 	 time: 1.45
+local epoch 0 	 client: 19 	 mal: 0 	 loss: 1.99852896 	 time: 1.43
+
+[GRADIENT DEBUG Rnd 10]
+Avg Malicious Delta Norm: 7.772398
+Avg Honest Delta Norm:    0.116656
+Power Ratio (Mal/Hon):    66.6266
+[DBG rnd=10] logits mean=49.7900, std=17648.0820, maxlogit mean=38024.2500
+[DBG rnd=10] probs max mean=1.0000, pred entropy mean=0.0000
+[DBG rnd=10] preds bincount=[0, 0, 0, 0, 0, 0, 0, 64, 0, 0]
+Clean ACC:              0.1000
+Attack Success Ratio:   1.0000
+Robustness ACC:           0.0000
+local epoch 0 	 client: 0 	 mal: 1 	 loss: 1.00000000 	 time: 16.35
+local epoch 0 	 client: 1 	 mal: 1 	 loss: 1.00000000 	 time: 16.35
+local epoch 0 	 client: 2 	 mal: 0 	 loss: nan 	 time: 1.42
+local epoch 0 	 client: 3 	 mal: 0 	 loss: nan 	 time: 1.42
+local epoch 0 	 client: 4 	 mal: 0 	 loss: nan 	 time: 1.41
+local epoch 0 	 client: 5 	 mal: 0 	 loss: nan 	 time: 1.42
+local epoch 0 	 client: 6 	 mal: 0 	 loss: nan 	 time: 1.42
+local epoch 0 	 client: 7 	 mal: 0 	 loss: nan 	 time: 1.42
+local epoch 0 	 client: 8 	 mal: 0 	 loss: nan 	 time: 1.42
+local epoch 0 	 client: 9 	 mal: 0 	 loss: nan 	 time: 1.42
+local epoch 0 	 client: 10 	 mal: 0 	 loss: nan 	 time: 1.42
+local epoch 0 	 client: 11 	 mal: 0 	 loss: nan 	 time: 1.42
+local epoch 0 	 client: 12 	 mal: 0 	 loss: nan 	 time: 1.42
+local epoch 0 	 client: 13 	 mal: 0 	 loss: nan 	 time: 1.42
+local epoch 0 	 client: 14 	 mal: 0 	 loss: nan 	 time: 1.42
+local epoch 0 	 client: 15 	 mal: 0 	 loss: nan 	 time: 1.41
+local epoch 0 	 client: 16 	 mal: 0 	 loss: nan 	 time: 1.42
+local epoch 0 	 client: 17 	 mal: 0 	 loss: nan 	 time: 1.41
+local epoch 0 	 client: 18 	 mal: 0 	 loss: nan 	 time: 1.42
+local epoch 0 	 client: 19 	 mal: 0 	 loss: nan 	 time: 1.42
+
+[GRADIENT DEBUG Rnd 11]
+Avg Malicious Delta Norm: 0.001021
+Avg Honest Delta Norm:    nan
+Power Ratio (Mal/Hon):    nan
+[DBG rnd=11] logits mean=nan, std=nan, maxlogit mean=nan
+[DBG rnd=11] probs max mean=nan, pred entropy mean=nan
+[DBG rnd=11] preds bincount=[64, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+Clean ACC:              0.1000
+Attack Success Ratio:   0.0000
+Robustness ACC:           0.1111
+local epoch 0 	 client: 0 	 mal: 1 	 loss: nan 	 time: 16.36
+local epoch 0 	 client: 1 	 mal: 1 	 loss: nan 	 time: 16.51
+local epoch 0 	 client: 2 	 mal: 0 	 loss: nan 	 time: 1.41
+local epoch 0 	 client: 3 	 mal: 0 	 loss: nan 	 time: 1.42
+local epoch 0 	 client: 4 	 mal: 0 	 loss: nan 	 time: 1.42
+local epoch 0 	 client: 5 	 mal: 0 	 loss: nan 	 time: 1.42
+local epoch 0 	 client: 6 	 mal: 0 	 loss: nan 	 time: 1.42
+local epoch 0 	 client: 7 	 mal: 0 	 loss: nan 	 time: 1.41
+local epoch 0 	 client: 8 	 mal: 0 	 loss: nan 	 time: 1.42
+local epoch 0 	 client: 9 	 mal: 0 	 loss: nan 	 time: 1.42
+local epoch 0 	 client: 10 	 mal: 0 	 loss: nan 	 time: 1.41
+local epoch 0 	 client: 11 	 mal: 0 	 loss: nan 	 time: 1.42
+local epoch 0 	 client: 12 	 mal: 0 	 loss: nan 	 time: 1.41
+local epoch 0 	 client: 13 	 mal: 0 	 loss: nan 	 time: 1.42
+local epoch 0 	 client: 14 	 mal: 0 	 loss: nan 	 time: 1.42
+local epoch 0 	 client: 15 	 mal: 0 	 loss: nan 	 time: 1.41
+local epoch 0 	 client: 16 	 mal: 0 	 loss: nan 	 time: 1.42
+local epoch 0 	 client: 17 	 mal: 0 	 loss: nan 	 time: 1.42
+local epoch 0 	 client: 18 	 mal: 0 	 loss: nan 	 time: 1.41
+local epoch 0 	 client: 19 	 mal: 0 	 loss: nan 	 time: 1.42
+
+[GRADIENT DEBUG Rnd 12]
+Avg Malicious Delta Norm: nan
+Avg Honest Delta Norm:    nan
+Power Ratio (Mal/Hon):    nan
+[DBG rnd=12] logits mean=nan, std=nan, maxlogit mean=nan
+[DBG rnd=12] probs max mean=nan, pred entropy mean=nan
+[DBG rnd=12] preds bincount=[64, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+Clean ACC:              0.1000
+Attack Success Ratio:   0.0000
+Robustness ACC:           0.1111
+local epoch 0 	 client: 0 	 mal: 1 	 loss: nan 	 time: 16.30
+local epoch 0 	 client: 1 	 mal: 1 	 loss: nan 	 time: 16.30
+local epoch 0 	 client: 2 	 mal: 0 	 loss: nan 	 time: 1.41
+local epoch 0 	 client: 3 	 mal: 0 	 loss: nan 	 time: 1.41
+local epoch 0 	 client: 4 	 mal: 0 	 loss: nan 	 time: 1.41
+local epoch 0 	 client: 5 	 mal: 0 	 loss: nan 	 time: 1.41
+local epoch 0 	 client: 6 	 mal: 0 	 loss: nan 	 time: 1.41
+local epoch 0 	 client: 7 	 mal: 0 	 loss: nan 	 time: 1.41
+local epoch 0 	 client: 8 	 mal: 0 	 loss: nan 	 time: 1.41
+local epoch 0 	 client: 9 	 mal: 0 	 loss: nan 	 time: 1.41
+local epoch 0 	 client: 10 	 mal: 0 	 loss: nan 	 time: 1.41
+local epoch 0 	 client: 11 	 mal: 0 	 loss: nan 	 time: 1.41
+local epoch 0 	 client: 12 	 mal: 0 	 loss: nan 	 time: 1.41
+local epoch 0 	 client: 13 	 mal: 0 	 loss: nan 	 time: 1.42
+local epoch 0 	 client: 14 	 mal: 0 	 loss: nan 	 time: 1.41
+local epoch 0 	 client: 15 	 mal: 0 	 loss: nan 	 time: 1.41
+local epoch 0 	 client: 16 	 mal: 0 	 loss: nan 	 time: 1.41
+local epoch 0 	 client: 17 	 mal: 0 	 loss: nan 	 time: 1.41
+local epoch 0 	 client: 18 	 mal: 0 	 loss: nan 	 time: 1.42
+local epoch 0 	 client: 19 	 mal: 0 	 loss: nan 	 time: 1.41
+
+[GRADIENT DEBUG Rnd 13]
+Avg Malicious Delta Norm: nan
+Avg Honest Delta Norm:    nan
+Power Ratio (Mal/Hon):    nan
+[DBG rnd=13] logits mean=nan, std=nan, maxlogit mean=nan
+[DBG rnd=13] probs max mean=nan, pred entropy mean=nan
+[DBG rnd=13] preds bincount=[64, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+Clean ACC:              0.1000
+Attack Success Ratio:   0.0000
+Robustness ACC:           0.1111
+local epoch 0 	 client: 0 	 mal: 1 	 loss: nan 	 time: 16.47
+local epoch 0 	 client: 1 	 mal: 1 	 loss: nan 	 time: 16.30
+local epoch 0 	 client: 2 	 mal: 0 	 loss: nan 	 time: 1.41
+local epoch 0 	 client: 3 	 mal: 0 	 loss: nan 	 time: 1.41
+local epoch 0 	 client: 4 	 mal: 0 	 loss: nan 	 time: 1.41
+local epoch 0 	 client: 5 	 mal: 0 	 loss: nan 	 time: 1.41
+local epoch 0 	 client: 6 	 mal: 0 	 loss: nan 	 time: 1.41
+local epoch 0 	 client: 7 	 mal: 0 	 loss: nan 	 time: 1.41
+local epoch 0 	 client: 8 	 mal: 0 	 loss: nan 	 time: 1.41
+local epoch 0 	 client: 9 	 mal: 0 	 loss: nan 	 time: 1.41
+local epoch 0 	 client: 10 	 mal: 0 	 loss: nan 	 time: 1.41
+local epoch 0 	 client: 11 	 mal: 0 	 loss: nan 	 time: 1.41
+local epoch 0 	 client: 12 	 mal: 0 	 loss: nan 	 time: 1.41
+local epoch 0 	 client: 13 	 mal: 0 	 loss: nan 	 time: 1.41
+local epoch 0 	 client: 14 	 mal: 0 	 loss: nan 	 time: 1.41
+local epoch 0 	 client: 15 	 mal: 0 	 loss: nan 	 time: 1.41
+local epoch 0 	 client: 16 	 mal: 0 	 loss: nan 	 time: 1.41
+local epoch 0 	 client: 17 	 mal: 0 	 loss: nan 	 time: 1.41
+local epoch 0 	 client: 18 	 mal: 0 	 loss: nan 	 time: 1.41
+local epoch 0 	 client: 19 	 mal: 0 	 loss: nan 	 time: 1.42
+
+[GRADIENT DEBUG Rnd 14]
+Avg Malicious Delta Norm: nan
+Avg Honest Delta Norm:    nan
+Power Ratio (Mal/Hon):    nan
+[DBG rnd=14] logits mean=nan, std=nan, maxlogit mean=nan
+[DBG rnd=14] probs max mean=nan, pred entropy mean=nan
+[DBG rnd=14] preds bincount=[64, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+Clean ACC:              0.1000
+Attack Success Ratio:   0.0000
+Robustness ACC:           0.1111
+local epoch 0 	 client: 0 	 mal: 1 	 loss: nan 	 time: 16.32
+local epoch 0 	 client: 1 	 mal: 1 	 loss: nan 	 time: 16.47
+local epoch 0 	 client: 2 	 mal: 0 	 loss: nan 	 time: 1.41
+local epoch 0 	 client: 3 	 mal: 0 	 loss: nan 	 time: 1.41
+local epoch 0 	 client: 4 	 mal: 0 	 loss: nan 	 time: 1.41
+local epoch 0 	 client: 5 	 mal: 0 	 loss: nan 	 time: 1.41
+local epoch 0 	 client: 6 	 mal: 0 	 loss: nan 	 time: 1.41
+local epoch 0 	 client: 7 	 mal: 0 	 loss: nan 	 time: 1.41
+local epoch 0 	 client: 8 	 mal: 0 	 loss: nan 	 time: 1.41
+local epoch 0 	 client: 9 	 mal: 0 	 loss: nan 	 time: 1.41
+local epoch 0 	 client: 10 	 mal: 0 	 loss: nan 	 time: 1.41
+local epoch 0 	 client: 11 	 mal: 0 	 loss: nan 	 time: 1.41
+local epoch 0 	 client: 12 	 mal: 0 	 loss: nan 	 time: 1.41
+local epoch 0 	 client: 13 	 mal: 0 	 loss: nan 	 time: 1.41
+local epoch 0 	 client: 14 	 mal: 0 	 loss: nan 	 time: 1.41
+local epoch 0 	 client: 15 	 mal: 0 	 loss: nan 	 time: 1.41
+local epoch 0 	 client: 16 	 mal: 0 	 loss: nan 	 time: 1.41
+local epoch 0 	 client: 17 	 mal: 0 	 loss: nan 	 time: 1.41
+local epoch 0 	 client: 18 	 mal: 0 	 loss: nan 	 time: 1.41
+local epoch 0 	 client: 19 	 mal: 0 	 loss: nan 	 time: 1.41
+
+[GRADIENT DEBUG Rnd 15]
+Avg Malicious Delta Norm: nan
+Avg Honest Delta Norm:    nan
+Power Ratio (Mal/Hon):    nan
+[DBG rnd=15] logits mean=nan, std=nan, maxlogit mean=nan
+[DBG rnd=15] probs max mean=nan, pred entropy mean=nan
+[DBG rnd=15] preds bincount=[64, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+Clean ACC:              0.1000
+Attack Success Ratio:   0.0000
+Robustness ACC:           0.1111
+local epoch 0 	 client: 0 	 mal: 1 	 loss: nan 	 time: 16.33
+local epoch 0 	 client: 1 	 mal: 1 	 loss: nan 	 time: 16.33
+local epoch 0 	 client: 2 	 mal: 0 	 loss: nan 	 time: 1.41
+local epoch 0 	 client: 3 	 mal: 0 	 loss: nan 	 time: 1.41
+local epoch 0 	 client: 4 	 mal: 0 	 loss: nan 	 time: 1.41
+local epoch 0 	 client: 5 	 mal: 0 	 loss: nan 	 time: 1.41
+local epoch 0 	 client: 6 	 mal: 0 	 loss: nan 	 time: 1.41
+local epoch 0 	 client: 7 	 mal: 0 	 loss: nan 	 time: 1.41
+local epoch 0 	 client: 8 	 mal: 0 	 loss: nan 	 time: 1.41
+local epoch 0 	 client: 9 	 mal: 0 	 loss: nan 	 time: 1.41
+local epoch 0 	 client: 10 	 mal: 0 	 loss: nan 	 time: 1.41
+local epoch 0 	 client: 11 	 mal: 0 	 loss: nan 	 time: 1.41
+local epoch 0 	 client: 12 	 mal: 0 	 loss: nan 	 time: 1.41
+local epoch 0 	 client: 13 	 mal: 0 	 loss: nan 	 time: 1.41
+local epoch 0 	 client: 14 	 mal: 0 	 loss: nan 	 time: 1.41
+local epoch 0 	 client: 15 	 mal: 0 	 loss: nan 	 time: 1.41
+local epoch 0 	 client: 16 	 mal: 0 	 loss: nan 	 time: 1.41
+local epoch 0 	 client: 17 	 mal: 0 	 loss: nan 	 time: 1.41
+local epoch 0 	 client: 18 	 mal: 0 	 loss: nan 	 time: 1.41
+local epoch 0 	 client: 19 	 mal: 0 	 loss: nan 	 time: 1.41
+
+[GRADIENT DEBUG Rnd 16]
+Avg Malicious Delta Norm: nan
+Avg Honest Delta Norm:    nan
+Power Ratio (Mal/Hon):    nan
+[DBG rnd=16] logits mean=nan, std=nan, maxlogit mean=nan
+[DBG rnd=16] probs max mean=nan, pred entropy mean=nan
+[DBG rnd=16] preds bincount=[64, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+Clean ACC:              0.1000
+Attack Success Ratio:   0.0000
+Robustness ACC:           0.1111
+local epoch 0 	 client: 0 	 mal: 1 	 loss: nan 	 time: 16.45
+local epoch 0 	 client: 1 	 mal: 1 	 loss: nan 	 time: 16.30
+local epoch 0 	 client: 2 	 mal: 0 	 loss: nan 	 time: 1.41
+local epoch 0 	 client: 3 	 mal: 0 	 loss: nan 	 time: 1.41
+local epoch 0 	 client: 4 	 mal: 0 	 loss: nan 	 time: 1.41
+local epoch 0 	 client: 5 	 mal: 0 	 loss: nan 	 time: 1.41
+local epoch 0 	 client: 6 	 mal: 0 	 loss: nan 	 time: 1.41
+local epoch 0 	 client: 7 	 mal: 0 	 loss: nan 	 time: 1.41
+local epoch 0 	 client: 8 	 mal: 0 	 loss: nan 	 time: 1.41
+local epoch 0 	 client: 9 	 mal: 0 	 loss: nan 	 time: 1.41
+local epoch 0 	 client: 10 	 mal: 0 	 loss: nan 	 time: 1.41
+local epoch 0 	 client: 11 	 mal: 0 	 loss: nan 	 time: 1.41
+local epoch 0 	 client: 12 	 mal: 0 	 loss: nan 	 time: 1.41
+local epoch 0 	 client: 13 	 mal: 0 	 loss: nan 	 time: 1.41
+local epoch 0 	 client: 14 	 mal: 0 	 loss: nan 	 time: 1.41
+local epoch 0 	 client: 15 	 mal: 0 	 loss: nan 	 time: 1.41
+local epoch 0 	 client: 16 	 mal: 0 	 loss: nan 	 time: 1.41
+local epoch 0 	 client: 17 	 mal: 0 	 loss: nan 	 time: 1.41
+local epoch 0 	 client: 18 	 mal: 0 	 loss: nan 	 time: 1.41
+local epoch 0 	 client: 19 	 mal: 0 	 loss: nan 	 time: 1.41
+
+[GRADIENT DEBUG Rnd 17]
+Avg Malicious Delta Norm: nan
+Avg Honest Delta Norm:    nan
+Power Ratio (Mal/Hon):    nan
+[DBG rnd=17] logits mean=nan, std=nan, maxlogit mean=nan
+[DBG rnd=17] probs max mean=nan, pred entropy mean=nan
+[DBG rnd=17] preds bincount=[64, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+Clean ACC:              0.1000
+Attack Success Ratio:   0.0000
+Robustness ACC:           0.1111
+local epoch 0 	 client: 0 	 mal: 1 	 loss: nan 	 time: 16.33
+local epoch 0 	 client: 1 	 mal: 1 	 loss: nan 	 time: 16.33
+local epoch 0 	 client: 2 	 mal: 0 	 loss: nan 	 time: 1.41
+local epoch 0 	 client: 3 	 mal: 0 	 loss: nan 	 time: 1.41
+local epoch 0 	 client: 4 	 mal: 0 	 loss: nan 	 time: 1.41
+local epoch 0 	 client: 5 	 mal: 0 	 loss: nan 	 time: 1.41
+local epoch 0 	 client: 6 	 mal: 0 	 loss: nan 	 time: 1.41
+local epoch 0 	 client: 7 	 mal: 0 	 loss: nan 	 time: 1.41
+local epoch 0 	 client: 8 	 mal: 0 	 loss: nan 	 time: 1.41
+local epoch 0 	 client: 9 	 mal: 0 	 loss: nan 	 time: 1.41
+local epoch 0 	 client: 10 	 mal: 0 	 loss: nan 	 time: 1.41
+local epoch 0 	 client: 11 	 mal: 0 	 loss: nan 	 time: 1.41
+local epoch 0 	 client: 12 	 mal: 0 	 loss: nan 	 time: 1.41
+local epoch 0 	 client: 13 	 mal: 0 	 loss: nan 	 time: 1.41
+local epoch 0 	 client: 14 	 mal: 0 	 loss: nan 	 time: 1.41
+local epoch 0 	 client: 15 	 mal: 0 	 loss: nan 	 time: 1.41
+local epoch 0 	 client: 16 	 mal: 0 	 loss: nan 	 time: 1.41
+local epoch 0 	 client: 17 	 mal: 0 	 loss: nan 	 time: 1.41
+local epoch 0 	 client: 18 	 mal: 0 	 loss: nan 	 time: 1.41
+local epoch 0 	 client: 19 	 mal: 0 	 loss: nan 	 time: 1.41
+
+[GRADIENT DEBUG Rnd 18]
+Avg Malicious Delta Norm: nan
+Avg Honest Delta Norm:    nan
+Power Ratio (Mal/Hon):    nan
+[DBG rnd=18] logits mean=nan, std=nan, maxlogit mean=nan
+[DBG rnd=18] probs max mean=nan, pred entropy mean=nan
+[DBG rnd=18] preds bincount=[64, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+Clean ACC:              0.1000
+Attack Success Ratio:   0.0000
+Robustness ACC:           0.1111
+local epoch 0 	 client: 0 	 mal: 1 	 loss: nan 	 time: 16.50
+local epoch 0 	 client: 1 	 mal: 1 	 loss: nan 	 time: 16.33
+local epoch 0 	 client: 2 	 mal: 0 	 loss: nan 	 time: 1.41
+local epoch 0 	 client: 3 	 mal: 0 	 loss: nan 	 time: 1.41
+local epoch 0 	 client: 4 	 mal: 0 	 loss: nan 	 time: 1.41
+local epoch 0 	 client: 5 	 mal: 0 	 loss: nan 	 time: 1.41
+local epoch 0 	 client: 6 	 mal: 0 	 loss: nan 	 time: 1.41
+local epoch 0 	 client: 7 	 mal: 0 	 loss: nan 	 time: 1.41
+local epoch 0 	 client: 8 	 mal: 0 	 loss: nan 	 time: 1.41
+local epoch 0 	 client: 9 	 mal: 0 	 loss: nan 	 time: 1.41
+local epoch 0 	 client: 10 	 mal: 0 	 loss: nan 	 time: 1.41
+local epoch 0 	 client: 11 	 mal: 0 	 loss: nan 	 time: 1.41
+local epoch 0 	 client: 12 	 mal: 0 	 loss: nan 	 time: 1.41
+local epoch 0 	 client: 13 	 mal: 0 	 loss: nan 	 time: 1.41
+local epoch 0 	 client: 14 	 mal: 0 	 loss: nan 	 time: 1.41
+local epoch 0 	 client: 15 	 mal: 0 	 loss: nan 	 time: 1.41
+local epoch 0 	 client: 16 	 mal: 0 	 loss: nan 	 time: 1.41
+local epoch 0 	 client: 17 	 mal: 0 	 loss: nan 	 time: 1.41
+local epoch 0 	 client: 18 	 mal: 0 	 loss: nan 	 time: 1.41
+local epoch 0 	 client: 19 	 mal: 0 	 loss: nan 	 time: 1.41
+
+[GRADIENT DEBUG Rnd 19]
+Avg Malicious Delta Norm: nan
+Avg Honest Delta Norm:    nan
+Power Ratio (Mal/Hon):    nan
+[DBG rnd=19] logits mean=nan, std=nan, maxlogit mean=nan
+[DBG rnd=19] probs max mean=nan, pred entropy mean=nan
+[DBG rnd=19] preds bincount=[64, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+Clean ACC:              0.1000
+Attack Success Ratio:   0.0000
+Robustness ACC:           0.1111
+local epoch 0 	 client: 0 	 mal: 1 	 loss: nan 	 time: 16.31
+local epoch 0 	 client: 1 	 mal: 1 	 loss: nan 	 time: 16.43
+local epoch 0 	 client: 2 	 mal: 0 	 loss: nan 	 time: 1.41
+local epoch 0 	 client: 3 	 mal: 0 	 loss: nan 	 time: 1.41
+local epoch 0 	 client: 4 	 mal: 0 	 loss: nan 	 time: 1.41
+local epoch 0 	 client: 5 	 mal: 0 	 loss: nan 	 time: 1.41
+local epoch 0 	 client: 6 	 mal: 0 	 loss: nan 	 time: 1.41
+local epoch 0 	 client: 7 	 mal: 0 	 loss: nan 	 time: 1.41
+local epoch 0 	 client: 8 	 mal: 0 	 loss: nan 	 time: 1.41
+local epoch 0 	 client: 9 	 mal: 0 	 loss: nan 	 time: 1.41
+local epoch 0 	 client: 10 	 mal: 0 	 loss: nan 	 time: 1.41
+local epoch 0 	 client: 11 	 mal: 0 	 loss: nan 	 time: 1.41
+local epoch 0 	 client: 12 	 mal: 0 	 loss: nan 	 time: 1.41
+local epoch 0 	 client: 13 	 mal: 0 	 loss: nan 	 time: 1.41
+local epoch 0 	 client: 14 	 mal: 0 	 loss: nan 	 time: 1.41
+local epoch 0 	 client: 15 	 mal: 0 	 loss: nan 	 time: 1.41
+local epoch 0 	 client: 16 	 mal: 0 	 loss: nan 	 time: 1.41
+local epoch 0 	 client: 17 	 mal: 0 	 loss: nan 	 time: 1.41
+local epoch 0 	 client: 18 	 mal: 0 	 loss: nan 	 time: 1.41
+local epoch 0 	 client: 19 	 mal: 0 	 loss: nan 	 time: 1.41
+
+[GRADIENT DEBUG Rnd 20]
+Avg Malicious Delta Norm: nan
+Avg Honest Delta Norm:    nan
+Power Ratio (Mal/Hon):    nan
+[DBG rnd=20] logits mean=nan, std=nan, maxlogit mean=nan
+[DBG rnd=20] probs max mean=nan, pred entropy mean=nan
+[DBG rnd=20] preds bincount=[64, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+Clean ACC:              0.1000
+Attack Success Ratio:   0.0000
+Robustness ACC:           0.1111
+local epoch 0 	 client: 0 	 mal: 1 	 loss: nan 	 time: 16.34
+local epoch 0 	 client: 1 	 mal: 1 	 loss: nan 	 time: 16.34
+local epoch 0 	 client: 2 	 mal: 0 	 loss: nan 	 time: 1.41
+local epoch 0 	 client: 3 	 mal: 0 	 loss: nan 	 time: 1.41
+local epoch 0 	 client: 4 	 mal: 0 	 loss: nan 	 time: 1.41
+local epoch 0 	 client: 5 	 mal: 0 	 loss: nan 	 time: 1.41
+local epoch 0 	 client: 6 	 mal: 0 	 loss: nan 	 time: 1.41
+local epoch 0 	 client: 7 	 mal: 0 	 loss: nan 	 time: 1.41
+local epoch 0 	 client: 8 	 mal: 0 	 loss: nan 	 time: 1.41
+local epoch 0 	 client: 9 	 mal: 0 	 loss: nan 	 time: 1.41
+local epoch 0 	 client: 10 	 mal: 0 	 loss: nan 	 time: 1.41
+local epoch 0 	 client: 11 	 mal: 0 	 loss: nan 	 time: 1.41
+local epoch 0 	 client: 12 	 mal: 0 	 loss: nan 	 time: 1.41
+local epoch 0 	 client: 13 	 mal: 0 	 loss: nan 	 time: 1.41
+local epoch 0 	 client: 14 	 mal: 0 	 loss: nan 	 time: 1.41
+local epoch 0 	 client: 15 	 mal: 0 	 loss: nan 	 time: 1.41
+local epoch 0 	 client: 16 	 mal: 0 	 loss: nan 	 time: 1.41
+local epoch 0 	 client: 17 	 mal: 0 	 loss: nan 	 time: 1.41
+local epoch 0 	 client: 18 	 mal: 0 	 loss: nan 	 time: 1.41
+local epoch 0 	 client: 19 	 mal: 0 	 loss: nan 	 time: 1.41
+
+[GRADIENT DEBUG Rnd 21]
+Avg Malicious Delta Norm: nan
+Avg Honest Delta Norm:    nan
+Power Ratio (Mal/Hon):    nan
+[DBG rnd=21] logits mean=nan, std=nan, maxlogit mean=nan
+[DBG rnd=21] probs max mean=nan, pred entropy mean=nan
+[DBG rnd=21] preds bincount=[64, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+Clean ACC:              0.1000
+Attack Success Ratio:   0.0000
+Robustness ACC:           0.1111
+local epoch 0 	 client: 0 	 mal: 1 	 loss: nan 	 time: 16.50
+local epoch 0 	 client: 1 	 mal: 1 	 loss: nan 	 time: 16.33
+local epoch 0 	 client: 2 	 mal: 0 	 loss: nan 	 time: 1.41
+local epoch 0 	 client: 3 	 mal: 0 	 loss: nan 	 time: 1.41
+local epoch 0 	 client: 4 	 mal: 0 	 loss: nan 	 time: 1.41
+local epoch 0 	 client: 5 	 mal: 0 	 loss: nan 	 time: 1.41
+local epoch 0 	 client: 6 	 mal: 0 	 loss: nan 	 time: 1.41
+local epoch 0 	 client: 7 	 mal: 0 	 loss: nan 	 time: 1.41
+local epoch 0 	 client: 8 	 mal: 0 	 loss: nan 	 time: 1.41
+local epoch 0 	 client: 9 	 mal: 0 	 loss: nan 	 time: 1.41
+local epoch 0 	 client: 10 	 mal: 0 	 loss: nan 	 time: 1.41
+local epoch 0 	 client: 11 	 mal: 0 	 loss: nan 	 time: 1.41
+local epoch 0 	 client: 12 	 mal: 0 	 loss: nan 	 time: 1.41
+local epoch 0 	 client: 13 	 mal: 0 	 loss: nan 	 time: 1.41
+local epoch 0 	 client: 14 	 mal: 0 	 loss: nan 	 time: 1.41
+local epoch 0 	 client: 15 	 mal: 0 	 loss: nan 	 time: 1.41
+local epoch 0 	 client: 16 	 mal: 0 	 loss: nan 	 time: 1.41
+local epoch 0 	 client: 17 	 mal: 0 	 loss: nan 	 time: 1.41
+local epoch 0 	 client: 18 	 mal: 0 	 loss: nan 	 time: 1.41
+local epoch 0 	 client: 19 	 mal: 0 	 loss: nan 	 time: 1.41
+
+[GRADIENT DEBUG Rnd 22]
+Avg Malicious Delta Norm: nan
+Avg Honest Delta Norm:    nan
+Power Ratio (Mal/Hon):    nan
+[DBG rnd=22] logits mean=nan, std=nan, maxlogit mean=nan
+[DBG rnd=22] probs max mean=nan, pred entropy mean=nan
+[DBG rnd=22] preds bincount=[64, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+Clean ACC:              0.1000
+Attack Success Ratio:   0.0000
+Robustness ACC:           0.1111
+local epoch 0 	 client: 0 	 mal: 1 	 loss: nan 	 time: 16.35
+local epoch 0 	 client: 1 	 mal: 1 	 loss: nan 	 time: 16.35
+local epoch 0 	 client: 2 	 mal: 0 	 loss: nan 	 time: 1.41
+local epoch 0 	 client: 3 	 mal: 0 	 loss: nan 	 time: 1.41
+local epoch 0 	 client: 4 	 mal: 0 	 loss: nan 	 time: 1.41
+local epoch 0 	 client: 5 	 mal: 0 	 loss: nan 	 time: 1.41
+local epoch 0 	 client: 6 	 mal: 0 	 loss: nan 	 time: 1.41
+local epoch 0 	 client: 7 	 mal: 0 	 loss: nan 	 time: 1.41
+local epoch 0 	 client: 8 	 mal: 0 	 loss: nan 	 time: 1.41
+local epoch 0 	 client: 9 	 mal: 0 	 loss: nan 	 time: 1.41
+local epoch 0 	 client: 10 	 mal: 0 	 loss: nan 	 time: 1.41
+local epoch 0 	 client: 11 	 mal: 0 	 loss: nan 	 time: 1.41
+local epoch 0 	 client: 12 	 mal: 0 	 loss: nan 	 time: 1.41
+local epoch 0 	 client: 13 	 mal: 0 	 loss: nan 	 time: 1.41
+local epoch 0 	 client: 14 	 mal: 0 	 loss: nan 	 time: 1.41
+local epoch 0 	 client: 15 	 mal: 0 	 loss: nan 	 time: 1.41
+local epoch 0 	 client: 16 	 mal: 0 	 loss: nan 	 time: 1.41
+local epoch 0 	 client: 17 	 mal: 0 	 loss: nan 	 time: 1.41
+local epoch 0 	 client: 18 	 mal: 0 	 loss: nan 	 time: 1.41
+local epoch 0 	 client: 19 	 mal: 0 	 loss: nan 	 time: 1.41
+
+[GRADIENT DEBUG Rnd 23]
+Avg Malicious Delta Norm: nan
+Avg Honest Delta Norm:    nan
+Power Ratio (Mal/Hon):    nan
+[DBG rnd=23] logits mean=nan, std=nan, maxlogit mean=nan
+[DBG rnd=23] probs max mean=nan, pred entropy mean=nan
+[DBG rnd=23] preds bincount=[64, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+Clean ACC:              0.1000
+Attack Success Ratio:   0.0000
+Robustness ACC:           0.1111
+local epoch 0 	 client: 0 	 mal: 1 	 loss: nan 	 time: 16.50
+local epoch 0 	 client: 1 	 mal: 1 	 loss: nan 	 time: 16.33
+local epoch 0 	 client: 2 	 mal: 0 	 loss: nan 	 time: 1.41
+local epoch 0 	 client: 3 	 mal: 0 	 loss: nan 	 time: 1.41
+local epoch 0 	 client: 4 	 mal: 0 	 loss: nan 	 time: 1.41
+local epoch 0 	 client: 5 	 mal: 0 	 loss: nan 	 time: 1.41
+local epoch 0 	 client: 6 	 mal: 0 	 loss: nan 	 time: 1.41
+local epoch 0 	 client: 7 	 mal: 0 	 loss: nan 	 time: 1.41
+local epoch 0 	 client: 8 	 mal: 0 	 loss: nan 	 time: 1.41
+local epoch 0 	 client: 9 	 mal: 0 	 loss: nan 	 time: 1.41
+local epoch 0 	 client: 10 	 mal: 0 	 loss: nan 	 time: 1.41
+local epoch 0 	 client: 11 	 mal: 0 	 loss: nan 	 time: 1.41
+local epoch 0 	 client: 12 	 mal: 0 	 loss: nan 	 time: 1.41
+local epoch 0 	 client: 13 	 mal: 0 	 loss: nan 	 time: 1.41
+local epoch 0 	 client: 14 	 mal: 0 	 loss: nan 	 time: 1.41
+local epoch 0 	 client: 15 	 mal: 0 	 loss: nan 	 time: 1.41
+local epoch 0 	 client: 16 	 mal: 0 	 loss: nan 	 time: 1.41
+local epoch 0 	 client: 17 	 mal: 0 	 loss: nan 	 time: 1.41
+local epoch 0 	 client: 18 	 mal: 0 	 loss: nan 	 time: 1.41
+local epoch 0 	 client: 19 	 mal: 0 	 loss: nan 	 time: 1.41
+
+[GRADIENT DEBUG Rnd 24]
+Avg Malicious Delta Norm: nan
+Avg Honest Delta Norm:    nan
+Power Ratio (Mal/Hon):    nan
+[DBG rnd=24] logits mean=nan, std=nan, maxlogit mean=nan
+[DBG rnd=24] probs max mean=nan, pred entropy mean=nan
+[DBG rnd=24] preds bincount=[64, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+Clean ACC:              0.1000
+Attack Success Ratio:   0.0000
+Robustness ACC:           0.1111
+local epoch 0 	 client: 0 	 mal: 1 	 loss: nan 	 time: 16.30
+local epoch 0 	 client: 1 	 mal: 1 	 loss: nan 	 time: 16.46
+local epoch 0 	 client: 2 	 mal: 0 	 loss: nan 	 time: 1.41
+local epoch 0 	 client: 3 	 mal: 0 	 loss: nan 	 time: 1.41
+local epoch 0 	 client: 4 	 mal: 0 	 loss: nan 	 time: 1.41
+local epoch 0 	 client: 5 	 mal: 0 	 loss: nan 	 time: 1.41
+local epoch 0 	 client: 6 	 mal: 0 	 loss: nan 	 time: 1.41
+local epoch 0 	 client: 7 	 mal: 0 	 loss: nan 	 time: 1.41
+local epoch 0 	 client: 8 	 mal: 0 	 loss: nan 	 time: 1.41
+local epoch 0 	 client: 9 	 mal: 0 	 loss: nan 	 time: 1.41
+local epoch 0 	 client: 10 	 mal: 0 	 loss: nan 	 time: 1.41
+local epoch 0 	 client: 11 	 mal: 0 	 loss: nan 	 time: 1.41
+local epoch 0 	 client: 12 	 mal: 0 	 loss: nan 	 time: 1.41
+local epoch 0 	 client: 13 	 mal: 0 	 loss: nan 	 time: 1.41
+local epoch 0 	 client: 14 	 mal: 0 	 loss: nan 	 time: 1.41
+local epoch 0 	 client: 15 	 mal: 0 	 loss: nan 	 time: 1.41
+local epoch 0 	 client: 16 	 mal: 0 	 loss: nan 	 time: 1.41
+local epoch 0 	 client: 17 	 mal: 0 	 loss: nan 	 time: 1.41
+local epoch 0 	 client: 18 	 mal: 0 	 loss: nan 	 time: 1.41
+local epoch 0 	 client: 19 	 mal: 0 	 loss: nan 	 time: 1.41
+
+[GRADIENT DEBUG Rnd 25]
+Avg Malicious Delta Norm: nan
+Avg Honest Delta Norm:    nan
+Power Ratio (Mal/Hon):    nan
+[DBG rnd=25] logits mean=nan, std=nan, maxlogit mean=nan
+[DBG rnd=25] probs max mean=nan, pred entropy mean=nan
+[DBG rnd=25] preds bincount=[64, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+Clean ACC:              0.1000
+Attack Success Ratio:   0.0000
+Robustness ACC:           0.1111
+local epoch 0 	 client: 0 	 mal: 1 	 loss: nan 	 time: 16.33
+local epoch 0 	 client: 1 	 mal: 1 	 loss: nan 	 time: 16.32
+local epoch 0 	 client: 2 	 mal: 0 	 loss: nan 	 time: 1.41
+local epoch 0 	 client: 3 	 mal: 0 	 loss: nan 	 time: 1.41
+local epoch 0 	 client: 4 	 mal: 0 	 loss: nan 	 time: 1.41
+local epoch 0 	 client: 5 	 mal: 0 	 loss: nan 	 time: 1.41
+local epoch 0 	 client: 6 	 mal: 0 	 loss: nan 	 time: 1.41
+local epoch 0 	 client: 7 	 mal: 0 	 loss: nan 	 time: 1.41
+local epoch 0 	 client: 8 	 mal: 0 	 loss: nan 	 time: 1.41
+local epoch 0 	 client: 9 	 mal: 0 	 loss: nan 	 time: 1.41
+local epoch 0 	 client: 10 	 mal: 0 	 loss: nan 	 time: 1.41
+local epoch 0 	 client: 11 	 mal: 0 	 loss: nan 	 time: 1.41
+local epoch 0 	 client: 12 	 mal: 0 	 loss: nan 	 time: 1.41
+local epoch 0 	 client: 13 	 mal: 0 	 loss: nan 	 time: 1.41
+local epoch 0 	 client: 14 	 mal: 0 	 loss: nan 	 time: 1.41
+local epoch 0 	 client: 15 	 mal: 0 	 loss: nan 	 time: 1.41
+local epoch 0 	 client: 16 	 mal: 0 	 loss: nan 	 time: 1.41
+local epoch 0 	 client: 17 	 mal: 0 	 loss: nan 	 time: 1.41
+local epoch 0 	 client: 18 	 mal: 0 	 loss: nan 	 time: 1.41
+local epoch 0 	 client: 19 	 mal: 0 	 loss: nan 	 time: 1.41
+
+[GRADIENT DEBUG Rnd 26]
+Avg Malicious Delta Norm: nan
+Avg Honest Delta Norm:    nan
+Power Ratio (Mal/Hon):    nan
+[DBG rnd=26] logits mean=nan, std=nan, maxlogit mean=nan
+[DBG rnd=26] probs max mean=nan, pred entropy mean=nan
+[DBG rnd=26] preds bincount=[64, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+Clean ACC:              0.1000
+Attack Success Ratio:   0.0000
+Robustness ACC:           0.1111
+local epoch 0 	 client: 0 	 mal: 1 	 loss: nan 	 time: 16.34
+local epoch 0 	 client: 1 	 mal: 1 	 loss: nan 	 time: 16.51
+local epoch 0 	 client: 2 	 mal: 0 	 loss: nan 	 time: 1.41
+local epoch 0 	 client: 3 	 mal: 0 	 loss: nan 	 time: 1.41
+local epoch 0 	 client: 4 	 mal: 0 	 loss: nan 	 time: 1.41
+local epoch 0 	 client: 5 	 mal: 0 	 loss: nan 	 time: 1.41
+local epoch 0 	 client: 6 	 mal: 0 	 loss: nan 	 time: 1.41
+local epoch 0 	 client: 7 	 mal: 0 	 loss: nan 	 time: 1.41
+local epoch 0 	 client: 8 	 mal: 0 	 loss: nan 	 time: 1.41
+local epoch 0 	 client: 9 	 mal: 0 	 loss: nan 	 time: 1.41
+local epoch 0 	 client: 10 	 mal: 0 	 loss: nan 	 time: 1.41
+local epoch 0 	 client: 11 	 mal: 0 	 loss: nan 	 time: 1.41
+local epoch 0 	 client: 12 	 mal: 0 	 loss: nan 	 time: 1.41
+local epoch 0 	 client: 13 	 mal: 0 	 loss: nan 	 time: 1.41
+local epoch 0 	 client: 14 	 mal: 0 	 loss: nan 	 time: 1.41
+local epoch 0 	 client: 15 	 mal: 0 	 loss: nan 	 time: 1.41
+local epoch 0 	 client: 16 	 mal: 0 	 loss: nan 	 time: 1.41
+local epoch 0 	 client: 17 	 mal: 0 	 loss: nan 	 time: 1.41
+local epoch 0 	 client: 18 	 mal: 0 	 loss: nan 	 time: 1.41
+local epoch 0 	 client: 19 	 mal: 0 	 loss: nan 	 time: 1.41
+
+[GRADIENT DEBUG Rnd 27]
+Avg Malicious Delta Norm: nan
+Avg Honest Delta Norm:    nan
+Power Ratio (Mal/Hon):    nan
+[DBG rnd=27] logits mean=nan, std=nan, maxlogit mean=nan
+[DBG rnd=27] probs max mean=nan, pred entropy mean=nan
+[DBG rnd=27] preds bincount=[64, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+Clean ACC:              0.1000
+Attack Success Ratio:   0.0000
+Robustness ACC:           0.1111
+local epoch 0 	 client: 0 	 mal: 1 	 loss: nan 	 time: 16.34
+local epoch 0 	 client: 1 	 mal: 1 	 loss: nan 	 time: 16.32
+local epoch 0 	 client: 2 	 mal: 0 	 loss: nan 	 time: 1.41
+local epoch 0 	 client: 3 	 mal: 0 	 loss: nan 	 time: 1.41
+local epoch 0 	 client: 4 	 mal: 0 	 loss: nan 	 time: 1.41
+local epoch 0 	 client: 5 	 mal: 0 	 loss: nan 	 time: 1.41
+local epoch 0 	 client: 6 	 mal: 0 	 loss: nan 	 time: 1.41
+local epoch 0 	 client: 7 	 mal: 0 	 loss: nan 	 time: 1.41
+local epoch 0 	 client: 8 	 mal: 0 	 loss: nan 	 time: 1.41
+local epoch 0 	 client: 9 	 mal: 0 	 loss: nan 	 time: 1.41
+local epoch 0 	 client: 10 	 mal: 0 	 loss: nan 	 time: 1.41
+local epoch 0 	 client: 11 	 mal: 0 	 loss: nan 	 time: 1.41
+local epoch 0 	 client: 12 	 mal: 0 	 loss: nan 	 time: 1.41
+local epoch 0 	 client: 13 	 mal: 0 	 loss: nan 	 time: 1.41
+local epoch 0 	 client: 14 	 mal: 0 	 loss: nan 	 time: 1.41
+local epoch 0 	 client: 15 	 mal: 0 	 loss: nan 	 time: 1.41
+local epoch 0 	 client: 16 	 mal: 0 	 loss: nan 	 time: 1.41
+local epoch 0 	 client: 17 	 mal: 0 	 loss: nan 	 time: 1.41
+local epoch 0 	 client: 18 	 mal: 0 	 loss: nan 	 time: 1.41
+local epoch 0 	 client: 19 	 mal: 0 	 loss: nan 	 time: 1.41
+
+[GRADIENT DEBUG Rnd 28]
+Avg Malicious Delta Norm: nan
+Avg Honest Delta Norm:    nan
+Power Ratio (Mal/Hon):    nan
+[DBG rnd=28] logits mean=nan, std=nan, maxlogit mean=nan
+[DBG rnd=28] probs max mean=nan, pred entropy mean=nan
+[DBG rnd=28] preds bincount=[64, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+Clean ACC:              0.1000
+Attack Success Ratio:   0.0000
+Robustness ACC:           0.1111
+local epoch 0 	 client: 0 	 mal: 1 	 loss: nan 	 time: 16.48
+local epoch 0 	 client: 1 	 mal: 1 	 loss: nan 	 time: 16.32
+local epoch 0 	 client: 2 	 mal: 0 	 loss: nan 	 time: 1.41
+local epoch 0 	 client: 3 	 mal: 0 	 loss: nan 	 time: 1.41
+local epoch 0 	 client: 4 	 mal: 0 	 loss: nan 	 time: 1.41
+local epoch 0 	 client: 5 	 mal: 0 	 loss: nan 	 time: 1.41
+local epoch 0 	 client: 6 	 mal: 0 	 loss: nan 	 time: 1.41
+local epoch 0 	 client: 7 	 mal: 0 	 loss: nan 	 time: 1.41
+local epoch 0 	 client: 8 	 mal: 0 	 loss: nan 	 time: 1.41
+local epoch 0 	 client: 9 	 mal: 0 	 loss: nan 	 time: 1.41
+local epoch 0 	 client: 10 	 mal: 0 	 loss: nan 	 time: 1.41
+local epoch 0 	 client: 11 	 mal: 0 	 loss: nan 	 time: 1.41
+local epoch 0 	 client: 12 	 mal: 0 	 loss: nan 	 time: 1.41
+local epoch 0 	 client: 13 	 mal: 0 	 loss: nan 	 time: 1.41
+local epoch 0 	 client: 14 	 mal: 0 	 loss: nan 	 time: 1.41
+local epoch 0 	 client: 15 	 mal: 0 	 loss: nan 	 time: 1.41
+local epoch 0 	 client: 16 	 mal: 0 	 loss: nan 	 time: 1.41
+local epoch 0 	 client: 17 	 mal: 0 	 loss: nan 	 time: 1.41
+local epoch 0 	 client: 18 	 mal: 0 	 loss: nan 	 time: 1.41
+local epoch 0 	 client: 19 	 mal: 0 	 loss: nan 	 time: 1.41
+
+[GRADIENT DEBUG Rnd 29]
+Avg Malicious Delta Norm: nan
+Avg Honest Delta Norm:    nan
+Power Ratio (Mal/Hon):    nan
+[DBG rnd=29] logits mean=nan, std=nan, maxlogit mean=nan
+[DBG rnd=29] probs max mean=nan, pred entropy mean=nan
+[DBG rnd=29] preds bincount=[64, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+Clean ACC:              0.1000
+Attack Success Ratio:   0.0000
+Robustness ACC:           0.1111
+local epoch 0 	 client: 0 	 mal: 1 	 loss: nan 	 time: 16.32
+local epoch 0 	 client: 1 	 mal: 1 	 loss: nan 	 time: 16.49
+local epoch 0 	 client: 2 	 mal: 0 	 loss: nan 	 time: 1.41
+local epoch 0 	 client: 3 	 mal: 0 	 loss: nan 	 time: 1.41
+local epoch 0 	 client: 4 	 mal: 0 	 loss: nan 	 time: 1.41
+local epoch 0 	 client: 5 	 mal: 0 	 loss: nan 	 time: 1.41
+local epoch 0 	 client: 6 	 mal: 0 	 loss: nan 	 time: 1.41
+local epoch 0 	 client: 7 	 mal: 0 	 loss: nan 	 time: 1.41
+local epoch 0 	 client: 8 	 mal: 0 	 loss: nan 	 time: 1.41
+local epoch 0 	 client: 9 	 mal: 0 	 loss: nan 	 time: 1.41
+local epoch 0 	 client: 10 	 mal: 0 	 loss: nan 	 time: 1.41
+local epoch 0 	 client: 11 	 mal: 0 	 loss: nan 	 time: 1.41
+local epoch 0 	 client: 12 	 mal: 0 	 loss: nan 	 time: 1.41
+local epoch 0 	 client: 13 	 mal: 0 	 loss: nan 	 time: 1.41
+local epoch 0 	 client: 14 	 mal: 0 	 loss: nan 	 time: 1.41
+local epoch 0 	 client: 15 	 mal: 0 	 loss: nan 	 time: 1.41
+local epoch 0 	 client: 16 	 mal: 0 	 loss: nan 	 time: 1.41
+local epoch 0 	 client: 17 	 mal: 0 	 loss: nan 	 time: 1.41
+local epoch 0 	 client: 18 	 mal: 0 	 loss: nan 	 time: 1.41
+local epoch 0 	 client: 19 	 mal: 0 	 loss: nan 	 time: 1.41
+
+[GRADIENT DEBUG Rnd 30]
+Avg Malicious Delta Norm: nan
+Avg Honest Delta Norm:    nan
+Power Ratio (Mal/Hon):    nan
+[DBG rnd=30] logits mean=nan, std=nan, maxlogit mean=nan
+[DBG rnd=30] probs max mean=nan, pred entropy mean=nan
+[DBG rnd=30] preds bincount=[64, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+Clean ACC:              0.1000
+Attack Success Ratio:   0.0000
+Robustness ACC:           0.1111
+local epoch 0 	 client: 0 	 mal: 1 	 loss: nan 	 time: 16.32
+local epoch 0 	 client: 1 	 mal: 1 	 loss: nan 	 time: 16.33
+local epoch 0 	 client: 2 	 mal: 0 	 loss: nan 	 time: 1.41
+local epoch 0 	 client: 3 	 mal: 0 	 loss: nan 	 time: 1.41
+local epoch 0 	 client: 4 	 mal: 0 	 loss: nan 	 time: 1.41
+local epoch 0 	 client: 5 	 mal: 0 	 loss: nan 	 time: 1.41
+local epoch 0 	 client: 6 	 mal: 0 	 loss: nan 	 time: 1.41
+local epoch 0 	 client: 7 	 mal: 0 	 loss: nan 	 time: 1.41
+local epoch 0 	 client: 8 	 mal: 0 	 loss: nan 	 time: 1.41
+local epoch 0 	 client: 9 	 mal: 0 	 loss: nan 	 time: 1.41
+local epoch 0 	 client: 10 	 mal: 0 	 loss: nan 	 time: 1.41
+local epoch 0 	 client: 11 	 mal: 0 	 loss: nan 	 time: 1.41
+local epoch 0 	 client: 12 	 mal: 0 	 loss: nan 	 time: 1.41
+local epoch 0 	 client: 13 	 mal: 0 	 loss: nan 	 time: 1.42
+local epoch 0 	 client: 14 	 mal: 0 	 loss: nan 	 time: 1.41
+local epoch 0 	 client: 15 	 mal: 0 	 loss: nan 	 time: 1.41
+local epoch 0 	 client: 16 	 mal: 0 	 loss: nan 	 time: 1.42
+local epoch 0 	 client: 17 	 mal: 0 	 loss: nan 	 time: 1.41
+local epoch 0 	 client: 18 	 mal: 0 	 loss: nan 	 time: 1.41
+local epoch 0 	 client: 19 	 mal: 0 	 loss: nan 	 time: 1.41
+
+[GRADIENT DEBUG Rnd 31]
+Avg Malicious Delta Norm: nan
+Avg Honest Delta Norm:    nan
+Power Ratio (Mal/Hon):    nan
+[DBG rnd=31] logits mean=nan, std=nan, maxlogit mean=nan
+[DBG rnd=31] probs max mean=nan, pred entropy mean=nan
+[DBG rnd=31] preds bincount=[64, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+Clean ACC:              0.1000
+Attack Success Ratio:   0.0000
+Robustness ACC:           0.1111
+local epoch 0 	 client: 0 	 mal: 1 	 loss: nan 	 time: 16.32
+local epoch 0 	 client: 1 	 mal: 1 	 loss: nan 	 time: 16.49
+local epoch 0 	 client: 2 	 mal: 0 	 loss: nan 	 time: 1.47
+local epoch 0 	 client: 3 	 mal: 0 	 loss: nan 	 time: 1.47
+local epoch 0 	 client: 4 	 mal: 0 	 loss: nan 	 time: 1.48
+local epoch 0 	 client: 5 	 mal: 0 	 loss: nan 	 time: 1.47
+local epoch 0 	 client: 6 	 mal: 0 	 loss: nan 	 time: 1.48
+local epoch 0 	 client: 7 	 mal: 0 	 loss: nan 	 time: 1.48
+local epoch 0 	 client: 8 	 mal: 0 	 loss: nan 	 time: 1.46
+local epoch 0 	 client: 9 	 mal: 0 	 loss: nan 	 time: 1.44
+local epoch 0 	 client: 10 	 mal: 0 	 loss: nan 	 time: 1.45
+local epoch 0 	 client: 11 	 mal: 0 	 loss: nan 	 time: 1.45
+local epoch 0 	 client: 12 	 mal: 0 	 loss: nan 	 time: 1.45
+local epoch 0 	 client: 13 	 mal: 0 	 loss: nan 	 time: 1.44
+local epoch 0 	 client: 14 	 mal: 0 	 loss: nan 	 time: 1.45
+local epoch 0 	 client: 15 	 mal: 0 	 loss: nan 	 time: 1.45
+local epoch 0 	 client: 16 	 mal: 0 	 loss: nan 	 time: 1.45
+local epoch 0 	 client: 17 	 mal: 0 	 loss: nan 	 time: 1.44
+local epoch 0 	 client: 18 	 mal: 0 	 loss: nan 	 time: 1.45
+local epoch 0 	 client: 19 	 mal: 0 	 loss: nan 	 time: 1.45
+
+[GRADIENT DEBUG Rnd 32]
+Avg Malicious Delta Norm: nan
+Avg Honest Delta Norm:    nan
+Power Ratio (Mal/Hon):    nan
+[DBG rnd=32] logits mean=nan, std=nan, maxlogit mean=nan
+[DBG rnd=32] probs max mean=nan, pred entropy mean=nan
+[DBG rnd=32] preds bincount=[64, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+Clean ACC:              0.1000
+Attack Success Ratio:   0.0000
+Robustness ACC:           0.1111
+local epoch 0 	 client: 0 	 mal: 1 	 loss: nan 	 time: 16.30
+local epoch 0 	 client: 1 	 mal: 1 	 loss: nan 	 time: 16.31
+local epoch 0 	 client: 2 	 mal: 0 	 loss: nan 	 time: 1.47
+local epoch 0 	 client: 3 	 mal: 0 	 loss: nan 	 time: 1.49
+local epoch 0 	 client: 4 	 mal: 0 	 loss: nan 	 time: 1.45
+local epoch 0 	 client: 5 	 mal: 0 	 loss: nan 	 time: 1.42
+local epoch 0 	 client: 6 	 mal: 0 	 loss: nan 	 time: 1.41
+local epoch 0 	 client: 7 	 mal: 0 	 loss: nan 	 time: 1.41
+local epoch 0 	 client: 8 	 mal: 0 	 loss: nan 	 time: 1.41
+local epoch 0 	 client: 9 	 mal: 0 	 loss: nan 	 time: 1.41
+local epoch 0 	 client: 10 	 mal: 0 	 loss: nan 	 time: 1.41
+local epoch 0 	 client: 11 	 mal: 0 	 loss: nan 	 time: 1.43
+local epoch 0 	 client: 12 	 mal: 0 	 loss: nan 	 time: 1.45
+local epoch 0 	 client: 13 	 mal: 0 	 loss: nan 	 time: 1.45
+local epoch 0 	 client: 14 	 mal: 0 	 loss: nan 	 time: 1.45
+local epoch 0 	 client: 15 	 mal: 0 	 loss: nan 	 time: 1.46
+local epoch 0 	 client: 16 	 mal: 0 	 loss: nan 	 time: 1.45
+local epoch 0 	 client: 17 	 mal: 0 	 loss: nan 	 time: 1.45
+local epoch 0 	 client: 18 	 mal: 0 	 loss: nan 	 time: 1.45
+local epoch 0 	 client: 19 	 mal: 0 	 loss: nan 	 time: 1.45
+
+[GRADIENT DEBUG Rnd 33]
+Avg Malicious Delta Norm: nan
+Avg Honest Delta Norm:    nan
+Power Ratio (Mal/Hon):    nan
+[DBG rnd=33] logits mean=nan, std=nan, maxlogit mean=nan
+[DBG rnd=33] probs max mean=nan, pred entropy mean=nan
+[DBG rnd=33] preds bincount=[64, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+Clean ACC:              0.1000
+Attack Success Ratio:   0.0000
+Robustness ACC:           0.1111
+local epoch 0 	 client: 0 	 mal: 1 	 loss: nan 	 time: 16.47
+local epoch 0 	 client: 1 	 mal: 1 	 loss: nan 	 time: 16.31
+local epoch 0 	 client: 2 	 mal: 0 	 loss: nan 	 time: 1.47
+local epoch 0 	 client: 3 	 mal: 0 	 loss: nan 	 time: 1.44
+local epoch 0 	 client: 4 	 mal: 0 	 loss: nan 	 time: 1.45
+local epoch 0 	 client: 5 	 mal: 0 	 loss: nan 	 time: 1.45
+local epoch 0 	 client: 6 	 mal: 0 	 loss: nan 	 time: 1.46
+local epoch 0 	 client: 7 	 mal: 0 	 loss: nan 	 time: 1.45
+local epoch 0 	 client: 8 	 mal: 0 	 loss: nan 	 time: 1.45
+local epoch 0 	 client: 9 	 mal: 0 	 loss: nan 	 time: 1.45
+local epoch 0 	 client: 10 	 mal: 0 	 loss: nan 	 time: 1.46
+local epoch 0 	 client: 11 	 mal: 0 	 loss: nan 	 time: 1.45
+local epoch 0 	 client: 12 	 mal: 0 	 loss: nan 	 time: 1.45
+local epoch 0 	 client: 13 	 mal: 0 	 loss: nan 	 time: 1.45
+local epoch 0 	 client: 14 	 mal: 0 	 loss: nan 	 time: 1.45
+local epoch 0 	 client: 15 	 mal: 0 	 loss: nan 	 time: 1.44
+local epoch 0 	 client: 16 	 mal: 0 	 loss: nan 	 time: 1.46
+local epoch 0 	 client: 17 	 mal: 0 	 loss: nan 	 time: 1.45
+local epoch 0 	 client: 18 	 mal: 0 	 loss: nan 	 time: 1.45
+local epoch 0 	 client: 19 	 mal: 0 	 loss: nan 	 time: 1.44
+
+[GRADIENT DEBUG Rnd 34]
+Avg Malicious Delta Norm: nan
+Avg Honest Delta Norm:    nan
+Power Ratio (Mal/Hon):    nan
+[DBG rnd=34] logits mean=nan, std=nan, maxlogit mean=nan
+[DBG rnd=34] probs max mean=nan, pred entropy mean=nan
+[DBG rnd=34] preds bincount=[64, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+Clean ACC:              0.1000
+Attack Success Ratio:   0.0000
+Robustness ACC:           0.1111
+local epoch 0 	 client: 0 	 mal: 1 	 loss: nan 	 time: 16.31
+local epoch 0 	 client: 1 	 mal: 1 	 loss: nan 	 time: 16.46
+local epoch 0 	 client: 2 	 mal: 0 	 loss: nan 	 time: 1.44
+local epoch 0 	 client: 3 	 mal: 0 	 loss: nan 	 time: 1.41
+local epoch 0 	 client: 4 	 mal: 0 	 loss: nan 	 time: 1.41
+local epoch 0 	 client: 5 	 mal: 0 	 loss: nan 	 time: 1.41
+local epoch 0 	 client: 6 	 mal: 0 	 loss: nan 	 time: 1.41
+local epoch 0 	 client: 7 	 mal: 0 	 loss: nan 	 time: 1.41
+local epoch 0 	 client: 8 	 mal: 0 	 loss: nan 	 time: 1.42
+local epoch 0 	 client: 9 	 mal: 0 	 loss: nan 	 time: 1.45
+local epoch 0 	 client: 10 	 mal: 0 	 loss: nan 	 time: 1.45
+local epoch 0 	 client: 11 	 mal: 0 	 loss: nan 	 time: 1.44
+local epoch 0 	 client: 12 	 mal: 0 	 loss: nan 	 time: 1.44
+local epoch 0 	 client: 13 	 mal: 0 	 loss: nan 	 time: 1.45
+local epoch 0 	 client: 14 	 mal: 0 	 loss: nan 	 time: 1.40
+local epoch 0 	 client: 15 	 mal: 0 	 loss: nan 	 time: 1.41
+local epoch 0 	 client: 16 	 mal: 0 	 loss: nan 	 time: 1.41
+local epoch 0 	 client: 17 	 mal: 0 	 loss: nan 	 time: 1.41
+local epoch 0 	 client: 18 	 mal: 0 	 loss: nan 	 time: 1.41
+local epoch 0 	 client: 19 	 mal: 0 	 loss: nan 	 time: 1.41
+
+[GRADIENT DEBUG Rnd 35]
+Avg Malicious Delta Norm: nan
+Avg Honest Delta Norm:    nan
+Power Ratio (Mal/Hon):    nan
+[DBG rnd=35] logits mean=nan, std=nan, maxlogit mean=nan
+[DBG rnd=35] probs max mean=nan, pred entropy mean=nan
+[DBG rnd=35] preds bincount=[64, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+Clean ACC:              0.1000
+Attack Success Ratio:   0.0000
+Robustness ACC:           0.1111
+local epoch 0 	 client: 0 	 mal: 1 	 loss: nan 	 time: 16.32
+local epoch 0 	 client: 1 	 mal: 1 	 loss: nan 	 time: 16.31
+local epoch 0 	 client: 2 	 mal: 0 	 loss: nan 	 time: 1.46
+local epoch 0 	 client: 3 	 mal: 0 	 loss: nan 	 time: 1.44
+local epoch 0 	 client: 4 	 mal: 0 	 loss: nan 	 time: 1.45
+local epoch 0 	 client: 5 	 mal: 0 	 loss: nan 	 time: 1.40
+local epoch 0 	 client: 6 	 mal: 0 	 loss: nan 	 time: 1.41
+local epoch 0 	 client: 7 	 mal: 0 	 loss: nan 	 time: 1.41
+local epoch 0 	 client: 8 	 mal: 0 	 loss: nan 	 time: 1.41
+local epoch 0 	 client: 9 	 mal: 0 	 loss: nan 	 time: 1.41
+local epoch 0 	 client: 10 	 mal: 0 	 loss: nan 	 time: 1.41
+local epoch 0 	 client: 11 	 mal: 0 	 loss: nan 	 time: 1.41
+local epoch 0 	 client: 12 	 mal: 0 	 loss: nan 	 time: 1.41
+local epoch 0 	 client: 13 	 mal: 0 	 loss: nan 	 time: 1.41
+local epoch 0 	 client: 14 	 mal: 0 	 loss: nan 	 time: 1.41
+local epoch 0 	 client: 15 	 mal: 0 	 loss: nan 	 time: 1.41
+local epoch 0 	 client: 16 	 mal: 0 	 loss: nan 	 time: 1.41
+local epoch 0 	 client: 17 	 mal: 0 	 loss: nan 	 time: 1.41
+local epoch 0 	 client: 18 	 mal: 0 	 loss: nan 	 time: 1.41
+local epoch 0 	 client: 19 	 mal: 0 	 loss: nan 	 time: 1.41
+
+[GRADIENT DEBUG Rnd 36]
+Avg Malicious Delta Norm: nan
+Avg Honest Delta Norm:    nan
+Power Ratio (Mal/Hon):    nan
+[DBG rnd=36] logits mean=nan, std=nan, maxlogit mean=nan
+[DBG rnd=36] probs max mean=nan, pred entropy mean=nan
+[DBG rnd=36] preds bincount=[64, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+Clean ACC:              0.1000
+Attack Success Ratio:   0.0000
+Robustness ACC:           0.1111
+local epoch 0 	 client: 0 	 mal: 1 	 loss: nan 	 time: 16.32
+local epoch 0 	 client: 1 	 mal: 1 	 loss: nan 	 time: 16.49
+local epoch 0 	 client: 2 	 mal: 0 	 loss: nan 	 time: 1.41
+local epoch 0 	 client: 3 	 mal: 0 	 loss: nan 	 time: 1.41
+local epoch 0 	 client: 4 	 mal: 0 	 loss: nan 	 time: 1.41
+local epoch 0 	 client: 5 	 mal: 0 	 loss: nan 	 time: 1.41
+local epoch 0 	 client: 6 	 mal: 0 	 loss: nan 	 time: 1.41
+local epoch 0 	 client: 7 	 mal: 0 	 loss: nan 	 time: 1.41
+local epoch 0 	 client: 8 	 mal: 0 	 loss: nan 	 time: 1.41
+local epoch 0 	 client: 9 	 mal: 0 	 loss: nan 	 time: 1.41
+local epoch 0 	 client: 10 	 mal: 0 	 loss: nan 	 time: 1.41
+local epoch 0 	 client: 11 	 mal: 0 	 loss: nan 	 time: 1.42
+local epoch 0 	 client: 12 	 mal: 0 	 loss: nan 	 time: 1.43
+local epoch 0 	 client: 13 	 mal: 0 	 loss: nan 	 time: 1.41
+local epoch 0 	 client: 14 	 mal: 0 	 loss: nan 	 time: 1.41
+local epoch 0 	 client: 15 	 mal: 0 	 loss: nan 	 time: 1.41
+local epoch 0 	 client: 16 	 mal: 0 	 loss: nan 	 time: 1.41
+local epoch 0 	 client: 17 	 mal: 0 	 loss: nan 	 time: 1.41
+local epoch 0 	 client: 18 	 mal: 0 	 loss: nan 	 time: 1.41
+local epoch 0 	 client: 19 	 mal: 0 	 loss: nan 	 time: 1.41
+
+[GRADIENT DEBUG Rnd 37]
+Avg Malicious Delta Norm: nan
+Avg Honest Delta Norm:    nan
+Power Ratio (Mal/Hon):    nan
+[DBG rnd=37] logits mean=nan, std=nan, maxlogit mean=nan
+[DBG rnd=37] probs max mean=nan, pred entropy mean=nan
+[DBG rnd=37] preds bincount=[64, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+Clean ACC:              0.1000
+Attack Success Ratio:   0.0000
+Robustness ACC:           0.1111
+local epoch 0 	 client: 0 	 mal: 1 	 loss: nan 	 time: 16.35
+local epoch 0 	 client: 1 	 mal: 1 	 loss: nan 	 time: 16.34
+local epoch 0 	 client: 2 	 mal: 0 	 loss: nan 	 time: 1.41
+local epoch 0 	 client: 3 	 mal: 0 	 loss: nan 	 time: 1.41
+local epoch 0 	 client: 4 	 mal: 0 	 loss: nan 	 time: 1.41
+local epoch 0 	 client: 5 	 mal: 0 	 loss: nan 	 time: 1.41
+local epoch 0 	 client: 6 	 mal: 0 	 loss: nan 	 time: 1.41
+local epoch 0 	 client: 7 	 mal: 0 	 loss: nan 	 time: 1.41
+local epoch 0 	 client: 8 	 mal: 0 	 loss: nan 	 time: 1.41
+local epoch 0 	 client: 9 	 mal: 0 	 loss: nan 	 time: 1.41
+local epoch 0 	 client: 10 	 mal: 0 	 loss: nan 	 time: 1.41
+local epoch 0 	 client: 11 	 mal: 0 	 loss: nan 	 time: 1.41
+local epoch 0 	 client: 12 	 mal: 0 	 loss: nan 	 time: 1.41
+local epoch 0 	 client: 13 	 mal: 0 	 loss: nan 	 time: 1.42
+local epoch 0 	 client: 14 	 mal: 0 	 loss: nan 	 time: 1.41
+local epoch 0 	 client: 15 	 mal: 0 	 loss: nan 	 time: 1.41
+local epoch 0 	 client: 16 	 mal: 0 	 loss: nan 	 time: 1.47
+local epoch 0 	 client: 17 	 mal: 0 	 loss: nan 	 time: 1.41
+local epoch 0 	 client: 18 	 mal: 0 	 loss: nan 	 time: 1.41
+local epoch 0 	 client: 19 	 mal: 0 	 loss: nan 	 time: 1.41
+
+[GRADIENT DEBUG Rnd 38]
+Avg Malicious Delta Norm: nan
+Avg Honest Delta Norm:    nan
+Power Ratio (Mal/Hon):    nan
+[DBG rnd=38] logits mean=nan, std=nan, maxlogit mean=nan
+[DBG rnd=38] probs max mean=nan, pred entropy mean=nan
+[DBG rnd=38] preds bincount=[64, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+Clean ACC:              0.1000
+Attack Success Ratio:   0.0000
+Robustness ACC:           0.1111
+local epoch 0 	 client: 0 	 mal: 1 	 loss: nan 	 time: 16.47
+local epoch 0 	 client: 1 	 mal: 1 	 loss: nan 	 time: 16.32
+local epoch 0 	 client: 2 	 mal: 0 	 loss: nan 	 time: 1.41
+local epoch 0 	 client: 3 	 mal: 0 	 loss: nan 	 time: 1.41
+local epoch 0 	 client: 4 	 mal: 0 	 loss: nan 	 time: 1.41
+local epoch 0 	 client: 5 	 mal: 0 	 loss: nan 	 time: 1.41
+local epoch 0 	 client: 6 	 mal: 0 	 loss: nan 	 time: 1.41
+local epoch 0 	 client: 7 	 mal: 0 	 loss: nan 	 time: 1.41
+local epoch 0 	 client: 8 	 mal: 0 	 loss: nan 	 time: 1.41
+local epoch 0 	 client: 9 	 mal: 0 	 loss: nan 	 time: 1.41
+local epoch 0 	 client: 10 	 mal: 0 	 loss: nan 	 time: 1.41
+local epoch 0 	 client: 11 	 mal: 0 	 loss: nan 	 time: 1.41
+local epoch 0 	 client: 12 	 mal: 0 	 loss: nan 	 time: 1.41
+local epoch 0 	 client: 13 	 mal: 0 	 loss: nan 	 time: 1.41
+local epoch 0 	 client: 14 	 mal: 0 	 loss: nan 	 time: 1.41
+local epoch 0 	 client: 15 	 mal: 0 	 loss: nan 	 time: 1.41
+local epoch 0 	 client: 16 	 mal: 0 	 loss: nan 	 time: 1.41
+local epoch 0 	 client: 17 	 mal: 0 	 loss: nan 	 time: 1.41
+local epoch 0 	 client: 18 	 mal: 0 	 loss: nan 	 time: 1.41
+local epoch 0 	 client: 19 	 mal: 0 	 loss: nan 	 time: 1.41
+
+[GRADIENT DEBUG Rnd 39]
+Avg Malicious Delta Norm: nan
+Avg Honest Delta Norm:    nan
+Power Ratio (Mal/Hon):    nan
+[DBG rnd=39] logits mean=nan, std=nan, maxlogit mean=nan
+[DBG rnd=39] probs max mean=nan, pred entropy mean=nan
+[DBG rnd=39] preds bincount=[64, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+Clean ACC:              0.1000
+Attack Success Ratio:   0.0000
+Robustness ACC:           0.1111
+local epoch 0 	 client: 0 	 mal: 1 	 loss: nan 	 time: 16.32
+local epoch 0 	 client: 1 	 mal: 1 	 loss: nan 	 time: 16.47
+local epoch 0 	 client: 2 	 mal: 0 	 loss: nan 	 time: 1.41
+local epoch 0 	 client: 3 	 mal: 0 	 loss: nan 	 time: 1.41
+local epoch 0 	 client: 4 	 mal: 0 	 loss: nan 	 time: 1.41
+local epoch 0 	 client: 5 	 mal: 0 	 loss: nan 	 time: 1.41
+local epoch 0 	 client: 6 	 mal: 0 	 loss: nan 	 time: 1.41
+local epoch 0 	 client: 7 	 mal: 0 	 loss: nan 	 time: 1.41
+local epoch 0 	 client: 8 	 mal: 0 	 loss: nan 	 time: 1.41
+local epoch 0 	 client: 9 	 mal: 0 	 loss: nan 	 time: 1.41
+local epoch 0 	 client: 10 	 mal: 0 	 loss: nan 	 time: 1.41
+local epoch 0 	 client: 11 	 mal: 0 	 loss: nan 	 time: 1.41
+local epoch 0 	 client: 12 	 mal: 0 	 loss: nan 	 time: 1.41
+local epoch 0 	 client: 13 	 mal: 0 	 loss: nan 	 time: 1.41
+local epoch 0 	 client: 14 	 mal: 0 	 loss: nan 	 time: 1.41
+local epoch 0 	 client: 15 	 mal: 0 	 loss: nan 	 time: 1.41
+local epoch 0 	 client: 16 	 mal: 0 	 loss: nan 	 time: 1.41
+local epoch 0 	 client: 17 	 mal: 0 	 loss: nan 	 time: 1.41
+local epoch 0 	 client: 18 	 mal: 0 	 loss: nan 	 time: 1.41
+local epoch 0 	 client: 19 	 mal: 0 	 loss: nan 	 time: 1.41
+
+[GRADIENT DEBUG Rnd 40]
+Avg Malicious Delta Norm: nan
+Avg Honest Delta Norm:    nan
+Power Ratio (Mal/Hon):    nan
+[DBG rnd=40] logits mean=nan, std=nan, maxlogit mean=nan
+[DBG rnd=40] probs max mean=nan, pred entropy mean=nan
+[DBG rnd=40] preds bincount=[64, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+Clean ACC:              0.1000
+Attack Success Ratio:   0.0000
+Robustness ACC:           0.1111
+local epoch 0 	 client: 0 	 mal: 1 	 loss: nan 	 time: 16.33
+local epoch 0 	 client: 1 	 mal: 1 	 loss: nan 	 time: 16.33
+local epoch 0 	 client: 2 	 mal: 0 	 loss: nan 	 time: 1.41
+local epoch 0 	 client: 3 	 mal: 0 	 loss: nan 	 time: 1.41
+local epoch 0 	 client: 4 	 mal: 0 	 loss: nan 	 time: 1.41
+local epoch 0 	 client: 5 	 mal: 0 	 loss: nan 	 time: 1.41
+local epoch 0 	 client: 6 	 mal: 0 	 loss: nan 	 time: 1.41
+local epoch 0 	 client: 7 	 mal: 0 	 loss: nan 	 time: 1.41
+local epoch 0 	 client: 8 	 mal: 0 	 loss: nan 	 time: 1.41
+local epoch 0 	 client: 9 	 mal: 0 	 loss: nan 	 time: 1.41
+local epoch 0 	 client: 10 	 mal: 0 	 loss: nan 	 time: 1.41
+local epoch 0 	 client: 11 	 mal: 0 	 loss: nan 	 time: 1.41
+local epoch 0 	 client: 12 	 mal: 0 	 loss: nan 	 time: 1.41
+local epoch 0 	 client: 13 	 mal: 0 	 loss: nan 	 time: 1.41
+local epoch 0 	 client: 14 	 mal: 0 	 loss: nan 	 time: 1.41
+local epoch 0 	 client: 15 	 mal: 0 	 loss: nan 	 time: 1.41
+local epoch 0 	 client: 16 	 mal: 0 	 loss: nan 	 time: 1.41
+local epoch 0 	 client: 17 	 mal: 0 	 loss: nan 	 time: 1.41
+local epoch 0 	 client: 18 	 mal: 0 	 loss: nan 	 time: 1.41
+local epoch 0 	 client: 19 	 mal: 0 	 loss: nan 	 time: 1.41
+
+[GRADIENT DEBUG Rnd 41]
+Avg Malicious Delta Norm: nan
+Avg Honest Delta Norm:    nan
+Power Ratio (Mal/Hon):    nan
+[DBG rnd=41] logits mean=nan, std=nan, maxlogit mean=nan
+[DBG rnd=41] probs max mean=nan, pred entropy mean=nan
+[DBG rnd=41] preds bincount=[64, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+Clean ACC:              0.1000
+Attack Success Ratio:   0.0000
+Robustness ACC:           0.1111
+local epoch 0 	 client: 0 	 mal: 1 	 loss: nan 	 time: 16.34
+local epoch 0 	 client: 1 	 mal: 1 	 loss: nan 	 time: 16.49
+local epoch 0 	 client: 2 	 mal: 0 	 loss: nan 	 time: 1.41
+local epoch 0 	 client: 3 	 mal: 0 	 loss: nan 	 time: 1.41
+local epoch 0 	 client: 4 	 mal: 0 	 loss: nan 	 time: 1.41
+local epoch 0 	 client: 5 	 mal: 0 	 loss: nan 	 time: 1.41
+local epoch 0 	 client: 6 	 mal: 0 	 loss: nan 	 time: 1.41
+local epoch 0 	 client: 7 	 mal: 0 	 loss: nan 	 time: 1.41
+local epoch 0 	 client: 8 	 mal: 0 	 loss: nan 	 time: 1.41
+local epoch 0 	 client: 9 	 mal: 0 	 loss: nan 	 time: 1.41
+local epoch 0 	 client: 10 	 mal: 0 	 loss: nan 	 time: 1.41
+local epoch 0 	 client: 11 	 mal: 0 	 loss: nan 	 time: 1.41
+local epoch 0 	 client: 12 	 mal: 0 	 loss: nan 	 time: 1.41
+local epoch 0 	 client: 13 	 mal: 0 	 loss: nan 	 time: 1.41
+local epoch 0 	 client: 14 	 mal: 0 	 loss: nan 	 time: 1.41
+local epoch 0 	 client: 15 	 mal: 0 	 loss: nan 	 time: 1.41
+local epoch 0 	 client: 16 	 mal: 0 	 loss: nan 	 time: 1.41
+local epoch 0 	 client: 17 	 mal: 0 	 loss: nan 	 time: 1.41
+local epoch 0 	 client: 18 	 mal: 0 	 loss: nan 	 time: 1.41
+local epoch 0 	 client: 19 	 mal: 0 	 loss: nan 	 time: 1.41
+
+[GRADIENT DEBUG Rnd 42]
+Avg Malicious Delta Norm: nan
+Avg Honest Delta Norm:    nan
+Power Ratio (Mal/Hon):    nan
+[DBG rnd=42] logits mean=nan, std=nan, maxlogit mean=nan
+[DBG rnd=42] probs max mean=nan, pred entropy mean=nan
+[DBG rnd=42] preds bincount=[64, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+Clean ACC:              0.1000
+Attack Success Ratio:   0.0000
+Robustness ACC:           0.1111
+local epoch 0 	 client: 0 	 mal: 1 	 loss: nan 	 time: 16.33
+local epoch 0 	 client: 1 	 mal: 1 	 loss: nan 	 time: 16.34
+local epoch 0 	 client: 2 	 mal: 0 	 loss: nan 	 time: 1.41
+local epoch 0 	 client: 3 	 mal: 0 	 loss: nan 	 time: 1.41
+local epoch 0 	 client: 4 	 mal: 0 	 loss: nan 	 time: 1.41
+local epoch 0 	 client: 5 	 mal: 0 	 loss: nan 	 time: 1.41
+local epoch 0 	 client: 6 	 mal: 0 	 loss: nan 	 time: 1.41
+local epoch 0 	 client: 7 	 mal: 0 	 loss: nan 	 time: 1.41
+local epoch 0 	 client: 8 	 mal: 0 	 loss: nan 	 time: 1.41
+local epoch 0 	 client: 9 	 mal: 0 	 loss: nan 	 time: 1.41
+local epoch 0 	 client: 10 	 mal: 0 	 loss: nan 	 time: 1.41
+local epoch 0 	 client: 11 	 mal: 0 	 loss: nan 	 time: 1.41
+local epoch 0 	 client: 12 	 mal: 0 	 loss: nan 	 time: 1.41
+local epoch 0 	 client: 13 	 mal: 0 	 loss: nan 	 time: 1.41
+local epoch 0 	 client: 14 	 mal: 0 	 loss: nan 	 time: 1.41
+local epoch 0 	 client: 15 	 mal: 0 	 loss: nan 	 time: 1.41
+local epoch 0 	 client: 16 	 mal: 0 	 loss: nan 	 time: 1.41
+local epoch 0 	 client: 17 	 mal: 0 	 loss: nan 	 time: 1.41
+local epoch 0 	 client: 18 	 mal: 0 	 loss: nan 	 time: 1.41
+local epoch 0 	 client: 19 	 mal: 0 	 loss: nan 	 time: 1.41
+
+[GRADIENT DEBUG Rnd 43]
+Avg Malicious Delta Norm: nan
+Avg Honest Delta Norm:    nan
+Power Ratio (Mal/Hon):    nan
+[DBG rnd=43] logits mean=nan, std=nan, maxlogit mean=nan
+[DBG rnd=43] probs max mean=nan, pred entropy mean=nan
+[DBG rnd=43] preds bincount=[64, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+Clean ACC:              0.1000
+Attack Success Ratio:   0.0000
+Robustness ACC:           0.1111
+local epoch 0 	 client: 0 	 mal: 1 	 loss: nan 	 time: 16.49
+local epoch 0 	 client: 1 	 mal: 1 	 loss: nan 	 time: 16.33
+local epoch 0 	 client: 2 	 mal: 0 	 loss: nan 	 time: 1.41
+local epoch 0 	 client: 3 	 mal: 0 	 loss: nan 	 time: 1.41
+local epoch 0 	 client: 4 	 mal: 0 	 loss: nan 	 time: 1.41
+local epoch 0 	 client: 5 	 mal: 0 	 loss: nan 	 time: 1.41
+local epoch 0 	 client: 6 	 mal: 0 	 loss: nan 	 time: 1.41
+local epoch 0 	 client: 7 	 mal: 0 	 loss: nan 	 time: 1.41
+local epoch 0 	 client: 8 	 mal: 0 	 loss: nan 	 time: 1.41
+local epoch 0 	 client: 9 	 mal: 0 	 loss: nan 	 time: 1.41
+local epoch 0 	 client: 10 	 mal: 0 	 loss: nan 	 time: 1.41
+local epoch 0 	 client: 11 	 mal: 0 	 loss: nan 	 time: 1.41
+local epoch 0 	 client: 12 	 mal: 0 	 loss: nan 	 time: 1.41
+local epoch 0 	 client: 13 	 mal: 0 	 loss: nan 	 time: 1.41
+local epoch 0 	 client: 14 	 mal: 0 	 loss: nan 	 time: 1.41
+local epoch 0 	 client: 15 	 mal: 0 	 loss: nan 	 time: 1.41
+local epoch 0 	 client: 16 	 mal: 0 	 loss: nan 	 time: 1.41
+local epoch 0 	 client: 17 	 mal: 0 	 loss: nan 	 time: 1.41
+local epoch 0 	 client: 18 	 mal: 0 	 loss: nan 	 time: 1.41
+local epoch 0 	 client: 19 	 mal: 0 	 loss: nan 	 time: 1.41
+
+[GRADIENT DEBUG Rnd 44]
+Avg Malicious Delta Norm: nan
+Avg Honest Delta Norm:    nan
+Power Ratio (Mal/Hon):    nan
+[DBG rnd=44] logits mean=nan, std=nan, maxlogit mean=nan
+[DBG rnd=44] probs max mean=nan, pred entropy mean=nan
+[DBG rnd=44] preds bincount=[64, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+Clean ACC:              0.1000
+Attack Success Ratio:   0.0000
+Robustness ACC:           0.1111
+local epoch 0 	 client: 0 	 mal: 1 	 loss: nan 	 time: 16.34
+local epoch 0 	 client: 1 	 mal: 1 	 loss: nan 	 time: 16.49
+local epoch 0 	 client: 2 	 mal: 0 	 loss: nan 	 time: 1.41
+local epoch 0 	 client: 3 	 mal: 0 	 loss: nan 	 time: 1.41
+local epoch 0 	 client: 4 	 mal: 0 	 loss: nan 	 time: 1.41
+local epoch 0 	 client: 5 	 mal: 0 	 loss: nan 	 time: 1.41
+local epoch 0 	 client: 6 	 mal: 0 	 loss: nan 	 time: 1.41
+local epoch 0 	 client: 7 	 mal: 0 	 loss: nan 	 time: 1.41
+local epoch 0 	 client: 8 	 mal: 0 	 loss: nan 	 time: 1.41
+local epoch 0 	 client: 9 	 mal: 0 	 loss: nan 	 time: 1.41
+local epoch 0 	 client: 10 	 mal: 0 	 loss: nan 	 time: 1.41
+local epoch 0 	 client: 11 	 mal: 0 	 loss: nan 	 time: 1.41
+local epoch 0 	 client: 12 	 mal: 0 	 loss: nan 	 time: 1.41
+local epoch 0 	 client: 13 	 mal: 0 	 loss: nan 	 time: 1.41
+local epoch 0 	 client: 14 	 mal: 0 	 loss: nan 	 time: 1.41
+local epoch 0 	 client: 15 	 mal: 0 	 loss: nan 	 time: 1.41
+local epoch 0 	 client: 16 	 mal: 0 	 loss: nan 	 time: 1.41
+local epoch 0 	 client: 17 	 mal: 0 	 loss: nan 	 time: 1.41
+local epoch 0 	 client: 18 	 mal: 0 	 loss: nan 	 time: 1.41
+local epoch 0 	 client: 19 	 mal: 0 	 loss: nan 	 time: 1.41
+
+[GRADIENT DEBUG Rnd 45]
+Avg Malicious Delta Norm: nan
+Avg Honest Delta Norm:    nan
+Power Ratio (Mal/Hon):    nan
+[DBG rnd=45] logits mean=nan, std=nan, maxlogit mean=nan
+[DBG rnd=45] probs max mean=nan, pred entropy mean=nan
+[DBG rnd=45] preds bincount=[64, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+Clean ACC:              0.1000
+Attack Success Ratio:   0.0000
+Robustness ACC:           0.1111
+local epoch 0 	 client: 0 	 mal: 1 	 loss: nan 	 time: 16.33
+local epoch 0 	 client: 1 	 mal: 1 	 loss: nan 	 time: 16.32
+local epoch 0 	 client: 2 	 mal: 0 	 loss: nan 	 time: 1.41
+local epoch 0 	 client: 3 	 mal: 0 	 loss: nan 	 time: 1.41
+local epoch 0 	 client: 4 	 mal: 0 	 loss: nan 	 time: 1.41
+local epoch 0 	 client: 5 	 mal: 0 	 loss: nan 	 time: 1.41
+local epoch 0 	 client: 6 	 mal: 0 	 loss: nan 	 time: 1.41
+local epoch 0 	 client: 7 	 mal: 0 	 loss: nan 	 time: 1.41
+local epoch 0 	 client: 8 	 mal: 0 	 loss: nan 	 time: 1.41
+local epoch 0 	 client: 9 	 mal: 0 	 loss: nan 	 time: 1.41
+local epoch 0 	 client: 10 	 mal: 0 	 loss: nan 	 time: 1.41
+local epoch 0 	 client: 11 	 mal: 0 	 loss: nan 	 time: 1.41
+local epoch 0 	 client: 12 	 mal: 0 	 loss: nan 	 time: 1.41
+local epoch 0 	 client: 13 	 mal: 0 	 loss: nan 	 time: 1.41
+local epoch 0 	 client: 14 	 mal: 0 	 loss: nan 	 time: 1.41
+local epoch 0 	 client: 15 	 mal: 0 	 loss: nan 	 time: 1.41
+local epoch 0 	 client: 16 	 mal: 0 	 loss: nan 	 time: 1.41
+local epoch 0 	 client: 17 	 mal: 0 	 loss: nan 	 time: 1.41
+local epoch 0 	 client: 18 	 mal: 0 	 loss: nan 	 time: 1.41
+local epoch 0 	 client: 19 	 mal: 0 	 loss: nan 	 time: 1.41
+
+[GRADIENT DEBUG Rnd 46]
+Avg Malicious Delta Norm: nan
+Avg Honest Delta Norm:    nan
+Power Ratio (Mal/Hon):    nan
+[DBG rnd=46] logits mean=nan, std=nan, maxlogit mean=nan
+[DBG rnd=46] probs max mean=nan, pred entropy mean=nan
+[DBG rnd=46] preds bincount=[64, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+Clean ACC:              0.1000
+Attack Success Ratio:   0.0000
+Robustness ACC:           0.1111
+local epoch 0 	 client: 0 	 mal: 1 	 loss: nan 	 time: 16.33
+local epoch 0 	 client: 1 	 mal: 1 	 loss: nan 	 time: 16.47
+local epoch 0 	 client: 2 	 mal: 0 	 loss: nan 	 time: 1.41
+local epoch 0 	 client: 3 	 mal: 0 	 loss: nan 	 time: 1.41
+local epoch 0 	 client: 4 	 mal: 0 	 loss: nan 	 time: 1.41
+local epoch 0 	 client: 5 	 mal: 0 	 loss: nan 	 time: 1.41
+local epoch 0 	 client: 6 	 mal: 0 	 loss: nan 	 time: 1.41
+local epoch 0 	 client: 7 	 mal: 0 	 loss: nan 	 time: 1.41
+local epoch 0 	 client: 8 	 mal: 0 	 loss: nan 	 time: 1.41
+local epoch 0 	 client: 9 	 mal: 0 	 loss: nan 	 time: 1.41
+local epoch 0 	 client: 10 	 mal: 0 	 loss: nan 	 time: 1.41
+local epoch 0 	 client: 11 	 mal: 0 	 loss: nan 	 time: 1.41
+local epoch 0 	 client: 12 	 mal: 0 	 loss: nan 	 time: 1.41
+local epoch 0 	 client: 13 	 mal: 0 	 loss: nan 	 time: 1.41
+local epoch 0 	 client: 14 	 mal: 0 	 loss: nan 	 time: 1.41
+local epoch 0 	 client: 15 	 mal: 0 	 loss: nan 	 time: 1.41
+local epoch 0 	 client: 16 	 mal: 0 	 loss: nan 	 time: 1.41
+local epoch 0 	 client: 17 	 mal: 0 	 loss: nan 	 time: 1.41
+local epoch 0 	 client: 18 	 mal: 0 	 loss: nan 	 time: 1.41
+local epoch 0 	 client: 19 	 mal: 0 	 loss: nan 	 time: 1.41
+
+[GRADIENT DEBUG Rnd 47]
+Avg Malicious Delta Norm: nan
+Avg Honest Delta Norm:    nan
+Power Ratio (Mal/Hon):    nan
+[DBG rnd=47] logits mean=nan, std=nan, maxlogit mean=nan
+[DBG rnd=47] probs max mean=nan, pred entropy mean=nan
+[DBG rnd=47] preds bincount=[64, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+Clean ACC:              0.1000
+Attack Success Ratio:   0.0000
+Robustness ACC:           0.1111
+local epoch 0 	 client: 0 	 mal: 1 	 loss: nan 	 time: 16.37
+local epoch 0 	 client: 1 	 mal: 1 	 loss: nan 	 time: 16.31
+local epoch 0 	 client: 2 	 mal: 0 	 loss: nan 	 time: 1.41
+local epoch 0 	 client: 3 	 mal: 0 	 loss: nan 	 time: 1.41
+local epoch 0 	 client: 4 	 mal: 0 	 loss: nan 	 time: 1.41
+local epoch 0 	 client: 5 	 mal: 0 	 loss: nan 	 time: 1.41
+local epoch 0 	 client: 6 	 mal: 0 	 loss: nan 	 time: 1.41
+local epoch 0 	 client: 7 	 mal: 0 	 loss: nan 	 time: 1.41
+local epoch 0 	 client: 8 	 mal: 0 	 loss: nan 	 time: 1.41
+local epoch 0 	 client: 9 	 mal: 0 	 loss: nan 	 time: 1.41
+local epoch 0 	 client: 10 	 mal: 0 	 loss: nan 	 time: 1.41
+local epoch 0 	 client: 11 	 mal: 0 	 loss: nan 	 time: 1.41
+local epoch 0 	 client: 12 	 mal: 0 	 loss: nan 	 time: 1.41
+local epoch 0 	 client: 13 	 mal: 0 	 loss: nan 	 time: 1.41
+local epoch 0 	 client: 14 	 mal: 0 	 loss: nan 	 time: 1.41
+local epoch 0 	 client: 15 	 mal: 0 	 loss: nan 	 time: 1.41
+local epoch 0 	 client: 16 	 mal: 0 	 loss: nan 	 time: 1.41
+local epoch 0 	 client: 17 	 mal: 0 	 loss: nan 	 time: 1.41
+local epoch 0 	 client: 18 	 mal: 0 	 loss: nan 	 time: 1.41
+local epoch 0 	 client: 19 	 mal: 0 	 loss: nan 	 time: 1.41
+
+[GRADIENT DEBUG Rnd 48]
+Avg Malicious Delta Norm: nan
+Avg Honest Delta Norm:    nan
+Power Ratio (Mal/Hon):    nan
+[DBG rnd=48] logits mean=nan, std=nan, maxlogit mean=nan
+[DBG rnd=48] probs max mean=nan, pred entropy mean=nan
+[DBG rnd=48] preds bincount=[64, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+Clean ACC:              0.1000
+Attack Success Ratio:   0.0000
+Robustness ACC:           0.1111
+local epoch 0 	 client: 0 	 mal: 1 	 loss: nan 	 time: 16.48
+local epoch 0 	 client: 1 	 mal: 1 	 loss: nan 	 time: 16.34
+local epoch 0 	 client: 2 	 mal: 0 	 loss: nan 	 time: 1.41
+local epoch 0 	 client: 3 	 mal: 0 	 loss: nan 	 time: 1.41
+local epoch 0 	 client: 4 	 mal: 0 	 loss: nan 	 time: 1.41
+local epoch 0 	 client: 5 	 mal: 0 	 loss: nan 	 time: 1.41
+local epoch 0 	 client: 6 	 mal: 0 	 loss: nan 	 time: 1.41
+local epoch 0 	 client: 7 	 mal: 0 	 loss: nan 	 time: 1.41
+local epoch 0 	 client: 8 	 mal: 0 	 loss: nan 	 time: 1.41
+local epoch 0 	 client: 9 	 mal: 0 	 loss: nan 	 time: 1.41
+local epoch 0 	 client: 10 	 mal: 0 	 loss: nan 	 time: 1.41
+local epoch 0 	 client: 11 	 mal: 0 	 loss: nan 	 time: 1.41
+local epoch 0 	 client: 12 	 mal: 0 	 loss: nan 	 time: 1.41
+local epoch 0 	 client: 13 	 mal: 0 	 loss: nan 	 time: 1.41
+local epoch 0 	 client: 14 	 mal: 0 	 loss: nan 	 time: 1.41
+local epoch 0 	 client: 15 	 mal: 0 	 loss: nan 	 time: 1.41
+local epoch 0 	 client: 16 	 mal: 0 	 loss: nan 	 time: 1.41
+local epoch 0 	 client: 17 	 mal: 0 	 loss: nan 	 time: 1.41
+local epoch 0 	 client: 18 	 mal: 0 	 loss: nan 	 time: 1.41
+local epoch 0 	 client: 19 	 mal: 0 	 loss: nan 	 time: 1.41
+
+[GRADIENT DEBUG Rnd 49]
+Avg Malicious Delta Norm: nan
+Avg Honest Delta Norm:    nan
+Power Ratio (Mal/Hon):    nan
+[DBG rnd=49] logits mean=nan, std=nan, maxlogit mean=nan
+[DBG rnd=49] probs max mean=nan, pred entropy mean=nan
+[DBG rnd=49] preds bincount=[64, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+Clean ACC:              0.1000
+Attack Success Ratio:   0.0000
+Robustness ACC:           0.1111
+local epoch 0 	 client: 0 	 mal: 1 	 loss: nan 	 time: 16.32
+local epoch 0 	 client: 1 	 mal: 1 	 loss: nan 	 time: 16.50
+local epoch 0 	 client: 2 	 mal: 0 	 loss: nan 	 time: 1.41
+local epoch 0 	 client: 3 	 mal: 0 	 loss: nan 	 time: 1.41
+local epoch 0 	 client: 4 	 mal: 0 	 loss: nan 	 time: 1.41
+local epoch 0 	 client: 5 	 mal: 0 	 loss: nan 	 time: 1.41
+local epoch 0 	 client: 6 	 mal: 0 	 loss: nan 	 time: 1.41
+local epoch 0 	 client: 7 	 mal: 0 	 loss: nan 	 time: 1.41
+local epoch 0 	 client: 8 	 mal: 0 	 loss: nan 	 time: 1.41
+local epoch 0 	 client: 9 	 mal: 0 	 loss: nan 	 time: 1.41
+local epoch 0 	 client: 10 	 mal: 0 	 loss: nan 	 time: 1.41
+local epoch 0 	 client: 11 	 mal: 0 	 loss: nan 	 time: 1.41
+local epoch 0 	 client: 12 	 mal: 0 	 loss: nan 	 time: 1.41
+local epoch 0 	 client: 13 	 mal: 0 	 loss: nan 	 time: 1.41
+local epoch 0 	 client: 14 	 mal: 0 	 loss: nan 	 time: 1.41
+local epoch 0 	 client: 15 	 mal: 0 	 loss: nan 	 time: 1.41
+local epoch 0 	 client: 16 	 mal: 0 	 loss: nan 	 time: 1.41
+local epoch 0 	 client: 17 	 mal: 0 	 loss: nan 	 time: 1.41
+local epoch 0 	 client: 18 	 mal: 0 	 loss: nan 	 time: 1.41
+local epoch 0 	 client: 19 	 mal: 0 	 loss: nan 	 time: 1.41
+
+[GRADIENT DEBUG Rnd 50]
+Avg Malicious Delta Norm: nan
+Avg Honest Delta Norm:    nan
+Power Ratio (Mal/Hon):    nan
+[DBG rnd=50] logits mean=nan, std=nan, maxlogit mean=nan
+[DBG rnd=50] probs max mean=nan, pred entropy mean=nan
+[DBG rnd=50] preds bincount=[64, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+Clean ACC:              0.1000
+Attack Success Ratio:   0.0000
+Robustness ACC:           0.1111
+local epoch 0 	 client: 0 	 mal: 1 	 loss: nan 	 time: 16.33
+local epoch 0 	 client: 1 	 mal: 1 	 loss: nan 	 time: 16.32
+local epoch 0 	 client: 2 	 mal: 0 	 loss: nan 	 time: 1.41
+local epoch 0 	 client: 3 	 mal: 0 	 loss: nan 	 time: 1.41
+local epoch 0 	 client: 4 	 mal: 0 	 loss: nan 	 time: 1.41
+local epoch 0 	 client: 5 	 mal: 0 	 loss: nan 	 time: 1.41
+local epoch 0 	 client: 6 	 mal: 0 	 loss: nan 	 time: 1.41
+local epoch 0 	 client: 7 	 mal: 0 	 loss: nan 	 time: 1.41
+local epoch 0 	 client: 8 	 mal: 0 	 loss: nan 	 time: 1.41
+local epoch 0 	 client: 9 	 mal: 0 	 loss: nan 	 time: 1.41
+local epoch 0 	 client: 10 	 mal: 0 	 loss: nan 	 time: 1.41
+local epoch 0 	 client: 11 	 mal: 0 	 loss: nan 	 time: 1.41
+local epoch 0 	 client: 12 	 mal: 0 	 loss: nan 	 time: 1.41
+local epoch 0 	 client: 13 	 mal: 0 	 loss: nan 	 time: 1.41
+local epoch 0 	 client: 14 	 mal: 0 	 loss: nan 	 time: 1.41
+local epoch 0 	 client: 15 	 mal: 0 	 loss: nan 	 time: 1.41
+local epoch 0 	 client: 16 	 mal: 0 	 loss: nan 	 time: 1.41
+local epoch 0 	 client: 17 	 mal: 0 	 loss: nan 	 time: 1.41
+local epoch 0 	 client: 18 	 mal: 0 	 loss: nan 	 time: 1.41
+local epoch 0 	 client: 19 	 mal: 0 	 loss: nan 	 time: 1.41
+
+[GRADIENT DEBUG Rnd 51]
+Avg Malicious Delta Norm: nan
+Avg Honest Delta Norm:    nan
+Power Ratio (Mal/Hon):    nan
+[DBG rnd=51] logits mean=nan, std=nan, maxlogit mean=nan
+[DBG rnd=51] probs max mean=nan, pred entropy mean=nan
+[DBG rnd=51] preds bincount=[64, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+Clean ACC:              0.1000
+Attack Success Ratio:   0.0000
+Robustness ACC:           0.1111
+local epoch 0 	 client: 0 	 mal: 1 	 loss: nan 	 time: 16.50
+local epoch 0 	 client: 1 	 mal: 1 	 loss: nan 	 time: 16.33
+local epoch 0 	 client: 2 	 mal: 0 	 loss: nan 	 time: 1.41
+local epoch 0 	 client: 3 	 mal: 0 	 loss: nan 	 time: 1.41
+local epoch 0 	 client: 4 	 mal: 0 	 loss: nan 	 time: 1.41
+local epoch 0 	 client: 5 	 mal: 0 	 loss: nan 	 time: 1.41
+local epoch 0 	 client: 6 	 mal: 0 	 loss: nan 	 time: 1.41
+local epoch 0 	 client: 7 	 mal: 0 	 loss: nan 	 time: 1.41
+local epoch 0 	 client: 8 	 mal: 0 	 loss: nan 	 time: 1.41
+local epoch 0 	 client: 9 	 mal: 0 	 loss: nan 	 time: 1.41
+local epoch 0 	 client: 10 	 mal: 0 	 loss: nan 	 time: 1.41
+local epoch 0 	 client: 11 	 mal: 0 	 loss: nan 	 time: 1.41
+local epoch 0 	 client: 12 	 mal: 0 	 loss: nan 	 time: 1.41
+local epoch 0 	 client: 13 	 mal: 0 	 loss: nan 	 time: 1.41
+local epoch 0 	 client: 14 	 mal: 0 	 loss: nan 	 time: 1.41
+local epoch 0 	 client: 15 	 mal: 0 	 loss: nan 	 time: 1.41
+local epoch 0 	 client: 16 	 mal: 0 	 loss: nan 	 time: 1.41
+local epoch 0 	 client: 17 	 mal: 0 	 loss: nan 	 time: 1.41
+local epoch 0 	 client: 18 	 mal: 0 	 loss: nan 	 time: 1.41
+local epoch 0 	 client: 19 	 mal: 0 	 loss: nan 	 time: 1.41
+
+[GRADIENT DEBUG Rnd 52]
+Avg Malicious Delta Norm: nan
+Avg Honest Delta Norm:    nan
+Power Ratio (Mal/Hon):    nan
+[DBG rnd=52] logits mean=nan, std=nan, maxlogit mean=nan
+[DBG rnd=52] probs max mean=nan, pred entropy mean=nan
+[DBG rnd=52] preds bincount=[64, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+Clean ACC:              0.1000
+Attack Success Ratio:   0.0000
+Robustness ACC:           0.1111
+local epoch 0 	 client: 0 	 mal: 1 	 loss: nan 	 time: 16.32
+local epoch 0 	 client: 1 	 mal: 1 	 loss: nan 	 time: 16.32
+local epoch 0 	 client: 2 	 mal: 0 	 loss: nan 	 time: 1.41
+local epoch 0 	 client: 3 	 mal: 0 	 loss: nan 	 time: 1.41
+local epoch 0 	 client: 4 	 mal: 0 	 loss: nan 	 time: 1.41
+local epoch 0 	 client: 5 	 mal: 0 	 loss: nan 	 time: 1.41
+local epoch 0 	 client: 6 	 mal: 0 	 loss: nan 	 time: 1.41
+local epoch 0 	 client: 7 	 mal: 0 	 loss: nan 	 time: 1.41
+local epoch 0 	 client: 8 	 mal: 0 	 loss: nan 	 time: 1.41
+local epoch 0 	 client: 9 	 mal: 0 	 loss: nan 	 time: 1.41
+local epoch 0 	 client: 10 	 mal: 0 	 loss: nan 	 time: 1.41
+local epoch 0 	 client: 11 	 mal: 0 	 loss: nan 	 time: 1.41
+local epoch 0 	 client: 12 	 mal: 0 	 loss: nan 	 time: 1.41
+local epoch 0 	 client: 13 	 mal: 0 	 loss: nan 	 time: 1.41
+local epoch 0 	 client: 14 	 mal: 0 	 loss: nan 	 time: 1.41
+local epoch 0 	 client: 15 	 mal: 0 	 loss: nan 	 time: 1.41
+local epoch 0 	 client: 16 	 mal: 0 	 loss: nan 	 time: 1.41
+local epoch 0 	 client: 17 	 mal: 0 	 loss: nan 	 time: 1.41
+local epoch 0 	 client: 18 	 mal: 0 	 loss: nan 	 time: 1.41
+local epoch 0 	 client: 19 	 mal: 0 	 loss: nan 	 time: 1.41
+
+[GRADIENT DEBUG Rnd 53]
+Avg Malicious Delta Norm: nan
+Avg Honest Delta Norm:    nan
+Power Ratio (Mal/Hon):    nan
+[DBG rnd=53] logits mean=nan, std=nan, maxlogit mean=nan
+[DBG rnd=53] probs max mean=nan, pred entropy mean=nan
+[DBG rnd=53] preds bincount=[64, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+Clean ACC:              0.1000
+Attack Success Ratio:   0.0000
+Robustness ACC:           0.1111
+local epoch 0 	 client: 0 	 mal: 1 	 loss: nan 	 time: 16.49
+local epoch 0 	 client: 1 	 mal: 1 	 loss: nan 	 time: 16.34
+local epoch 0 	 client: 2 	 mal: 0 	 loss: nan 	 time: 1.41
+local epoch 0 	 client: 3 	 mal: 0 	 loss: nan 	 time: 1.41
+local epoch 0 	 client: 4 	 mal: 0 	 loss: nan 	 time: 1.41
+local epoch 0 	 client: 5 	 mal: 0 	 loss: nan 	 time: 1.41
+local epoch 0 	 client: 6 	 mal: 0 	 loss: nan 	 time: 1.41
+local epoch 0 	 client: 7 	 mal: 0 	 loss: nan 	 time: 1.41
+local epoch 0 	 client: 8 	 mal: 0 	 loss: nan 	 time: 1.41
+local epoch 0 	 client: 9 	 mal: 0 	 loss: nan 	 time: 1.41
+local epoch 0 	 client: 10 	 mal: 0 	 loss: nan 	 time: 1.41
+local epoch 0 	 client: 11 	 mal: 0 	 loss: nan 	 time: 1.41
+local epoch 0 	 client: 12 	 mal: 0 	 loss: nan 	 time: 1.41
+local epoch 0 	 client: 13 	 mal: 0 	 loss: nan 	 time: 1.41
+local epoch 0 	 client: 14 	 mal: 0 	 loss: nan 	 time: 1.41
+local epoch 0 	 client: 15 	 mal: 0 	 loss: nan 	 time: 1.41
+local epoch 0 	 client: 16 	 mal: 0 	 loss: nan 	 time: 1.41
+local epoch 0 	 client: 17 	 mal: 0 	 loss: nan 	 time: 1.41
+local epoch 0 	 client: 18 	 mal: 0 	 loss: nan 	 time: 1.41
+local epoch 0 	 client: 19 	 mal: 0 	 loss: nan 	 time: 1.41
+
+[GRADIENT DEBUG Rnd 54]
+Avg Malicious Delta Norm: nan
+Avg Honest Delta Norm:    nan
+Power Ratio (Mal/Hon):    nan
+[DBG rnd=54] logits mean=nan, std=nan, maxlogit mean=nan
+[DBG rnd=54] probs max mean=nan, pred entropy mean=nan
+[DBG rnd=54] preds bincount=[64, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+Clean ACC:              0.1000
+Attack Success Ratio:   0.0000
+Robustness ACC:           0.1111
+local epoch 0 	 client: 0 	 mal: 1 	 loss: nan 	 time: 16.31
+local epoch 0 	 client: 1 	 mal: 1 	 loss: nan 	 time: 16.47
+local epoch 0 	 client: 2 	 mal: 0 	 loss: nan 	 time: 1.47
+local epoch 0 	 client: 3 	 mal: 0 	 loss: nan 	 time: 1.45
+local epoch 0 	 client: 4 	 mal: 0 	 loss: nan 	 time: 1.42
+local epoch 0 	 client: 5 	 mal: 0 	 loss: nan 	 time: 1.44
+local epoch 0 	 client: 6 	 mal: 0 	 loss: nan 	 time: 1.45
+local epoch 0 	 client: 7 	 mal: 0 	 loss: nan 	 time: 1.45
+local epoch 0 	 client: 8 	 mal: 0 	 loss: nan 	 time: 1.44
+local epoch 0 	 client: 9 	 mal: 0 	 loss: nan 	 time: 1.45
+local epoch 0 	 client: 10 	 mal: 0 	 loss: nan 	 time: 1.45
+local epoch 0 	 client: 11 	 mal: 0 	 loss: nan 	 time: 1.45
+local epoch 0 	 client: 12 	 mal: 0 	 loss: nan 	 time: 1.45
+local epoch 0 	 client: 13 	 mal: 0 	 loss: nan 	 time: 1.45
+local epoch 0 	 client: 14 	 mal: 0 	 loss: nan 	 time: 1.45
+local epoch 0 	 client: 15 	 mal: 0 	 loss: nan 	 time: 1.45
+local epoch 0 	 client: 16 	 mal: 0 	 loss: nan 	 time: 1.45
+local epoch 0 	 client: 17 	 mal: 0 	 loss: nan 	 time: 1.44
+local epoch 0 	 client: 18 	 mal: 0 	 loss: nan 	 time: 1.45
+local epoch 0 	 client: 19 	 mal: 0 	 loss: nan 	 time: 1.45
+
+[GRADIENT DEBUG Rnd 55]
+Avg Malicious Delta Norm: nan
+Avg Honest Delta Norm:    nan
+Power Ratio (Mal/Hon):    nan
+[DBG rnd=55] logits mean=nan, std=nan, maxlogit mean=nan
+[DBG rnd=55] probs max mean=nan, pred entropy mean=nan
+[DBG rnd=55] preds bincount=[64, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+Clean ACC:              0.1000
+Attack Success Ratio:   0.0000
+Robustness ACC:           0.1111
+local epoch 0 	 client: 0 	 mal: 1 	 loss: nan 	 time: 16.33
+local epoch 0 	 client: 1 	 mal: 1 	 loss: nan 	 time: 16.30
+local epoch 0 	 client: 2 	 mal: 0 	 loss: nan 	 time: 1.48
+local epoch 0 	 client: 3 	 mal: 0 	 loss: nan 	 time: 1.45
+local epoch 0 	 client: 4 	 mal: 0 	 loss: nan 	 time: 1.44
+local epoch 0 	 client: 5 	 mal: 0 	 loss: nan 	 time: 1.45
+local epoch 0 	 client: 6 	 mal: 0 	 loss: nan 	 time: 1.45
+local epoch 0 	 client: 7 	 mal: 0 	 loss: nan 	 time: 1.44
+local epoch 0 	 client: 8 	 mal: 0 	 loss: nan 	 time: 1.45
+local epoch 0 	 client: 9 	 mal: 0 	 loss: nan 	 time: 1.45
+local epoch 0 	 client: 10 	 mal: 0 	 loss: nan 	 time: 1.45
+local epoch 0 	 client: 11 	 mal: 0 	 loss: nan 	 time: 1.44
+local epoch 0 	 client: 12 	 mal: 0 	 loss: nan 	 time: 1.44
+local epoch 0 	 client: 13 	 mal: 0 	 loss: nan 	 time: 1.41
+local epoch 0 	 client: 14 	 mal: 0 	 loss: nan 	 time: 1.41
+local epoch 0 	 client: 15 	 mal: 0 	 loss: nan 	 time: 1.41
+local epoch 0 	 client: 16 	 mal: 0 	 loss: nan 	 time: 1.41
+local epoch 0 	 client: 17 	 mal: 0 	 loss: nan 	 time: 1.41
+local epoch 0 	 client: 18 	 mal: 0 	 loss: nan 	 time: 1.41
+local epoch 0 	 client: 19 	 mal: 0 	 loss: nan 	 time: 1.41
+
+[GRADIENT DEBUG Rnd 56]
+Avg Malicious Delta Norm: nan
+Avg Honest Delta Norm:    nan
+Power Ratio (Mal/Hon):    nan
+[DBG rnd=56] logits mean=nan, std=nan, maxlogit mean=nan
+[DBG rnd=56] probs max mean=nan, pred entropy mean=nan
+[DBG rnd=56] preds bincount=[64, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+Clean ACC:              0.1000
+Attack Success Ratio:   0.0000
+Robustness ACC:           0.1111
+local epoch 0 	 client: 0 	 mal: 1 	 loss: nan 	 time: 16.50
+local epoch 0 	 client: 1 	 mal: 1 	 loss: nan 	 time: 16.33
+local epoch 0 	 client: 2 	 mal: 0 	 loss: nan 	 time: 1.41
+local epoch 0 	 client: 3 	 mal: 0 	 loss: nan 	 time: 1.41
+local epoch 0 	 client: 4 	 mal: 0 	 loss: nan 	 time: 1.41
+local epoch 0 	 client: 5 	 mal: 0 	 loss: nan 	 time: 1.41
+local epoch 0 	 client: 6 	 mal: 0 	 loss: nan 	 time: 1.41
+local epoch 0 	 client: 7 	 mal: 0 	 loss: nan 	 time: 1.41
+local epoch 0 	 client: 8 	 mal: 0 	 loss: nan 	 time: 1.41
+local epoch 0 	 client: 9 	 mal: 0 	 loss: nan 	 time: 1.41
+local epoch 0 	 client: 10 	 mal: 0 	 loss: nan 	 time: 1.41
+local epoch 0 	 client: 11 	 mal: 0 	 loss: nan 	 time: 1.41
+local epoch 0 	 client: 12 	 mal: 0 	 loss: nan 	 time: 1.41
+local epoch 0 	 client: 13 	 mal: 0 	 loss: nan 	 time: 1.41
+local epoch 0 	 client: 14 	 mal: 0 	 loss: nan 	 time: 1.41
+local epoch 0 	 client: 15 	 mal: 0 	 loss: nan 	 time: 1.41
+local epoch 0 	 client: 16 	 mal: 0 	 loss: nan 	 time: 1.41
+local epoch 0 	 client: 17 	 mal: 0 	 loss: nan 	 time: 1.41
+local epoch 0 	 client: 18 	 mal: 0 	 loss: nan 	 time: 1.41
+local epoch 0 	 client: 19 	 mal: 0 	 loss: nan 	 time: 1.41
+
+[GRADIENT DEBUG Rnd 57]
+Avg Malicious Delta Norm: nan
+Avg Honest Delta Norm:    nan
+Power Ratio (Mal/Hon):    nan
+[DBG rnd=57] logits mean=nan, std=nan, maxlogit mean=nan
+[DBG rnd=57] probs max mean=nan, pred entropy mean=nan
+[DBG rnd=57] preds bincount=[64, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+Clean ACC:              0.1000
+Attack Success Ratio:   0.0000
+Robustness ACC:           0.1111
+local epoch 0 	 client: 0 	 mal: 1 	 loss: nan 	 time: 16.31
+local epoch 0 	 client: 1 	 mal: 1 	 loss: nan 	 time: 16.32
+local epoch 0 	 client: 2 	 mal: 0 	 loss: nan 	 time: 1.41
+local epoch 0 	 client: 3 	 mal: 0 	 loss: nan 	 time: 1.41
+local epoch 0 	 client: 4 	 mal: 0 	 loss: nan 	 time: 1.41
+local epoch 0 	 client: 5 	 mal: 0 	 loss: nan 	 time: 1.41
+local epoch 0 	 client: 6 	 mal: 0 	 loss: nan 	 time: 1.41
+local epoch 0 	 client: 7 	 mal: 0 	 loss: nan 	 time: 1.41
+local epoch 0 	 client: 8 	 mal: 0 	 loss: nan 	 time: 1.41
+local epoch 0 	 client: 9 	 mal: 0 	 loss: nan 	 time: 1.41
+local epoch 0 	 client: 10 	 mal: 0 	 loss: nan 	 time: 1.41
+local epoch 0 	 client: 11 	 mal: 0 	 loss: nan 	 time: 1.41
+local epoch 0 	 client: 12 	 mal: 0 	 loss: nan 	 time: 1.41
+local epoch 0 	 client: 13 	 mal: 0 	 loss: nan 	 time: 1.41
+local epoch 0 	 client: 14 	 mal: 0 	 loss: nan 	 time: 1.41
+local epoch 0 	 client: 15 	 mal: 0 	 loss: nan 	 time: 1.45
+local epoch 0 	 client: 16 	 mal: 0 	 loss: nan 	 time: 1.45
+local epoch 0 	 client: 17 	 mal: 0 	 loss: nan 	 time: 1.45
+local epoch 0 	 client: 18 	 mal: 0 	 loss: nan 	 time: 1.46
+local epoch 0 	 client: 19 	 mal: 0 	 loss: nan 	 time: 1.46
+
+[GRADIENT DEBUG Rnd 58]
+Avg Malicious Delta Norm: nan
+Avg Honest Delta Norm:    nan
+Power Ratio (Mal/Hon):    nan
+[DBG rnd=58] logits mean=nan, std=nan, maxlogit mean=nan
+[DBG rnd=58] probs max mean=nan, pred entropy mean=nan
+[DBG rnd=58] preds bincount=[64, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+Clean ACC:              0.1000
+Attack Success Ratio:   0.0000
+Robustness ACC:           0.1111
+local epoch 0 	 client: 0 	 mal: 1 	 loss: nan 	 time: 16.49
+local epoch 0 	 client: 1 	 mal: 1 	 loss: nan 	 time: 16.32
+local epoch 0 	 client: 2 	 mal: 0 	 loss: nan 	 time: 1.41
+local epoch 0 	 client: 3 	 mal: 0 	 loss: nan 	 time: 1.42
+local epoch 0 	 client: 4 	 mal: 0 	 loss: nan 	 time: 1.41
+local epoch 0 	 client: 5 	 mal: 0 	 loss: nan 	 time: 1.41
+local epoch 0 	 client: 6 	 mal: 0 	 loss: nan 	 time: 1.41
+local epoch 0 	 client: 7 	 mal: 0 	 loss: nan 	 time: 1.41
+local epoch 0 	 client: 8 	 mal: 0 	 loss: nan 	 time: 1.41
+local epoch 0 	 client: 9 	 mal: 0 	 loss: nan 	 time: 1.41
+local epoch 0 	 client: 10 	 mal: 0 	 loss: nan 	 time: 1.41
+local epoch 0 	 client: 11 	 mal: 0 	 loss: nan 	 time: 1.41
+local epoch 0 	 client: 12 	 mal: 0 	 loss: nan 	 time: 1.41
+local epoch 0 	 client: 13 	 mal: 0 	 loss: nan 	 time: 1.41
+local epoch 0 	 client: 14 	 mal: 0 	 loss: nan 	 time: 1.41
+local epoch 0 	 client: 15 	 mal: 0 	 loss: nan 	 time: 1.41
+local epoch 0 	 client: 16 	 mal: 0 	 loss: nan 	 time: 1.41
+local epoch 0 	 client: 17 	 mal: 0 	 loss: nan 	 time: 1.41
+local epoch 0 	 client: 18 	 mal: 0 	 loss: nan 	 time: 1.41
+local epoch 0 	 client: 19 	 mal: 0 	 loss: nan 	 time: 1.41
+
+[GRADIENT DEBUG Rnd 59]
+Avg Malicious Delta Norm: nan
+Avg Honest Delta Norm:    nan
+Power Ratio (Mal/Hon):    nan
+[DBG rnd=59] logits mean=nan, std=nan, maxlogit mean=nan
+[DBG rnd=59] probs max mean=nan, pred entropy mean=nan
+[DBG rnd=59] preds bincount=[64, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+Clean ACC:              0.1000
+Attack Success Ratio:   0.0000
+Robustness ACC:           0.1111
+local epoch 0 	 client: 0 	 mal: 1 	 loss: nan 	 time: 16.31
+local epoch 0 	 client: 1 	 mal: 1 	 loss: nan 	 time: 16.47
+local epoch 0 	 client: 2 	 mal: 0 	 loss: nan 	 time: 1.41
+local epoch 0 	 client: 3 	 mal: 0 	 loss: nan 	 time: 1.41
+local epoch 0 	 client: 4 	 mal: 0 	 loss: nan 	 time: 1.41
+local epoch 0 	 client: 5 	 mal: 0 	 loss: nan 	 time: 1.41
+local epoch 0 	 client: 6 	 mal: 0 	 loss: nan 	 time: 1.41
+local epoch 0 	 client: 7 	 mal: 0 	 loss: nan 	 time: 1.41
+local epoch 0 	 client: 8 	 mal: 0 	 loss: nan 	 time: 1.41
+local epoch 0 	 client: 9 	 mal: 0 	 loss: nan 	 time: 1.45
+local epoch 0 	 client: 10 	 mal: 0 	 loss: nan 	 time: 1.45
+local epoch 0 	 client: 11 	 mal: 0 	 loss: nan 	 time: 1.43
+local epoch 0 	 client: 12 	 mal: 0 	 loss: nan 	 time: 1.41
+local epoch 0 	 client: 13 	 mal: 0 	 loss: nan 	 time: 1.41
+local epoch 0 	 client: 14 	 mal: 0 	 loss: nan 	 time: 1.41
+local epoch 0 	 client: 15 	 mal: 0 	 loss: nan 	 time: 1.41
+local epoch 0 	 client: 16 	 mal: 0 	 loss: nan 	 time: 1.41
+local epoch 0 	 client: 17 	 mal: 0 	 loss: nan 	 time: 1.41
+local epoch 0 	 client: 18 	 mal: 0 	 loss: nan 	 time: 1.44
+local epoch 0 	 client: 19 	 mal: 0 	 loss: nan 	 time: 1.45
+
+[GRADIENT DEBUG Rnd 60]
+Avg Malicious Delta Norm: nan
+Avg Honest Delta Norm:    nan
+Power Ratio (Mal/Hon):    nan
+[DBG rnd=60] logits mean=nan, std=nan, maxlogit mean=nan
+[DBG rnd=60] probs max mean=nan, pred entropy mean=nan
+[DBG rnd=60] preds bincount=[64, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+Clean ACC:              0.1000
+Attack Success Ratio:   0.0000
+Robustness ACC:           0.1111
+local epoch 0 	 client: 0 	 mal: 1 	 loss: nan 	 time: 16.30
+local epoch 0 	 client: 1 	 mal: 1 	 loss: nan 	 time: 16.30
+local epoch 0 	 client: 2 	 mal: 0 	 loss: nan 	 time: 1.47
+local epoch 0 	 client: 3 	 mal: 0 	 loss: nan 	 time: 1.45
+local epoch 0 	 client: 4 	 mal: 0 	 loss: nan 	 time: 1.45
+local epoch 0 	 client: 5 	 mal: 0 	 loss: nan 	 time: 1.45
+local epoch 0 	 client: 6 	 mal: 0 	 loss: nan 	 time: 1.45
+local epoch 0 	 client: 7 	 mal: 0 	 loss: nan 	 time: 1.45
+local epoch 0 	 client: 8 	 mal: 0 	 loss: nan 	 time: 1.45
+local epoch 0 	 client: 9 	 mal: 0 	 loss: nan 	 time: 1.44
+local epoch 0 	 client: 10 	 mal: 0 	 loss: nan 	 time: 1.46
+local epoch 0 	 client: 11 	 mal: 0 	 loss: nan 	 time: 1.45
+local epoch 0 	 client: 12 	 mal: 0 	 loss: nan 	 time: 1.45
+local epoch 0 	 client: 13 	 mal: 0 	 loss: nan 	 time: 1.46
+local epoch 0 	 client: 14 	 mal: 0 	 loss: nan 	 time: 1.46
+local epoch 0 	 client: 15 	 mal: 0 	 loss: nan 	 time: 1.46
+local epoch 0 	 client: 16 	 mal: 0 	 loss: nan 	 time: 1.46
+local epoch 0 	 client: 17 	 mal: 0 	 loss: nan 	 time: 1.45
+local epoch 0 	 client: 18 	 mal: 0 	 loss: nan 	 time: 1.45
+local epoch 0 	 client: 19 	 mal: 0 	 loss: nan 	 time: 1.45
+
+[GRADIENT DEBUG Rnd 61]
+Avg Malicious Delta Norm: nan
+Avg Honest Delta Norm:    nan
+Power Ratio (Mal/Hon):    nan
+[DBG rnd=61] logits mean=nan, std=nan, maxlogit mean=nan
+[DBG rnd=61] probs max mean=nan, pred entropy mean=nan
+[DBG rnd=61] preds bincount=[64, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+Clean ACC:              0.1000
+Attack Success Ratio:   0.0000
+Robustness ACC:           0.1111
+local epoch 0 	 client: 0 	 mal: 1 	 loss: nan 	 time: 16.31
+local epoch 0 	 client: 1 	 mal: 1 	 loss: nan 	 time: 16.48
+local epoch 0 	 client: 2 	 mal: 0 	 loss: nan 	 time: 1.47
+local epoch 0 	 client: 3 	 mal: 0 	 loss: nan 	 time: 1.45
+local epoch 0 	 client: 4 	 mal: 0 	 loss: nan 	 time: 1.45
+local epoch 0 	 client: 5 	 mal: 0 	 loss: nan 	 time: 1.44
+local epoch 0 	 client: 6 	 mal: 0 	 loss: nan 	 time: 1.45
+local epoch 0 	 client: 7 	 mal: 0 	 loss: nan 	 time: 1.46
+local epoch 0 	 client: 8 	 mal: 0 	 loss: nan 	 time: 1.45
+local epoch 0 	 client: 9 	 mal: 0 	 loss: nan 	 time: 1.45
+local epoch 0 	 client: 10 	 mal: 0 	 loss: nan 	 time: 1.45
+local epoch 0 	 client: 11 	 mal: 0 	 loss: nan 	 time: 1.45
+local epoch 0 	 client: 12 	 mal: 0 	 loss: nan 	 time: 1.45
+local epoch 0 	 client: 13 	 mal: 0 	 loss: nan 	 time: 1.45
+local epoch 0 	 client: 14 	 mal: 0 	 loss: nan 	 time: 1.45
+local epoch 0 	 client: 15 	 mal: 0 	 loss: nan 	 time: 1.45
+local epoch 0 	 client: 16 	 mal: 0 	 loss: nan 	 time: 1.45
+local epoch 0 	 client: 17 	 mal: 0 	 loss: nan 	 time: 1.45
+local epoch 0 	 client: 18 	 mal: 0 	 loss: nan 	 time: 1.45
+local epoch 0 	 client: 19 	 mal: 0 	 loss: nan 	 time: 1.45
+
+[GRADIENT DEBUG Rnd 62]
+Avg Malicious Delta Norm: nan
+Avg Honest Delta Norm:    nan
+Power Ratio (Mal/Hon):    nan
+[DBG rnd=62] logits mean=nan, std=nan, maxlogit mean=nan
+[DBG rnd=62] probs max mean=nan, pred entropy mean=nan
+[DBG rnd=62] preds bincount=[64, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+Clean ACC:              0.1000
+Attack Success Ratio:   0.0000
+Robustness ACC:           0.1111
+local epoch 0 	 client: 0 	 mal: 1 	 loss: nan 	 time: 16.32
+local epoch 0 	 client: 1 	 mal: 1 	 loss: nan 	 time: 16.34
+local epoch 0 	 client: 2 	 mal: 0 	 loss: nan 	 time: 1.47
+local epoch 0 	 client: 3 	 mal: 0 	 loss: nan 	 time: 1.45
+local epoch 0 	 client: 4 	 mal: 0 	 loss: nan 	 time: 1.45
+local epoch 0 	 client: 5 	 mal: 0 	 loss: nan 	 time: 1.45
+local epoch 0 	 client: 6 	 mal: 0 	 loss: nan 	 time: 1.45
+local epoch 0 	 client: 7 	 mal: 0 	 loss: nan 	 time: 1.45
+local epoch 0 	 client: 8 	 mal: 0 	 loss: nan 	 time: 1.45
+local epoch 0 	 client: 9 	 mal: 0 	 loss: nan 	 time: 1.45
+local epoch 0 	 client: 10 	 mal: 0 	 loss: nan 	 time: 1.45
+local epoch 0 	 client: 11 	 mal: 0 	 loss: nan 	 time: 1.45
+local epoch 0 	 client: 12 	 mal: 0 	 loss: nan 	 time: 1.45
+local epoch 0 	 client: 13 	 mal: 0 	 loss: nan 	 time: 1.45
+local epoch 0 	 client: 14 	 mal: 0 	 loss: nan 	 time: 1.45
+local epoch 0 	 client: 15 	 mal: 0 	 loss: nan 	 time: 1.45
+local epoch 0 	 client: 16 	 mal: 0 	 loss: nan 	 time: 1.44
+local epoch 0 	 client: 17 	 mal: 0 	 loss: nan 	 time: 1.45
+local epoch 0 	 client: 18 	 mal: 0 	 loss: nan 	 time: 1.45
+local epoch 0 	 client: 19 	 mal: 0 	 loss: nan 	 time: 1.45
+
+[GRADIENT DEBUG Rnd 63]
+Avg Malicious Delta Norm: nan
+Avg Honest Delta Norm:    nan
+Power Ratio (Mal/Hon):    nan
+[DBG rnd=63] logits mean=nan, std=nan, maxlogit mean=nan
+[DBG rnd=63] probs max mean=nan, pred entropy mean=nan
+[DBG rnd=63] preds bincount=[64, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+Clean ACC:              0.1000
+Attack Success Ratio:   0.0000
+Robustness ACC:           0.1111
+local epoch 0 	 client: 0 	 mal: 1 	 loss: nan 	 time: 16.46
+local epoch 0 	 client: 1 	 mal: 1 	 loss: nan 	 time: 16.31
+local epoch 0 	 client: 2 	 mal: 0 	 loss: nan 	 time: 1.47
+local epoch 0 	 client: 3 	 mal: 0 	 loss: nan 	 time: 1.45
+local epoch 0 	 client: 4 	 mal: 0 	 loss: nan 	 time: 1.45
+local epoch 0 	 client: 5 	 mal: 0 	 loss: nan 	 time: 1.45
+local epoch 0 	 client: 6 	 mal: 0 	 loss: nan 	 time: 1.46
+local epoch 0 	 client: 7 	 mal: 0 	 loss: nan 	 time: 1.45
+local epoch 0 	 client: 8 	 mal: 0 	 loss: nan 	 time: 1.45
+local epoch 0 	 client: 9 	 mal: 0 	 loss: nan 	 time: 1.45
+local epoch 0 	 client: 10 	 mal: 0 	 loss: nan 	 time: 1.45
+local epoch 0 	 client: 11 	 mal: 0 	 loss: nan 	 time: 1.45
+local epoch 0 	 client: 12 	 mal: 0 	 loss: nan 	 time: 1.45
+local epoch 0 	 client: 13 	 mal: 0 	 loss: nan 	 time: 1.46
+local epoch 0 	 client: 14 	 mal: 0 	 loss: nan 	 time: 1.46
+local epoch 0 	 client: 15 	 mal: 0 	 loss: nan 	 time: 1.45
+local epoch 0 	 client: 16 	 mal: 0 	 loss: nan 	 time: 1.45
+local epoch 0 	 client: 17 	 mal: 0 	 loss: nan 	 time: 1.45
+local epoch 0 	 client: 18 	 mal: 0 	 loss: nan 	 time: 1.45
+local epoch 0 	 client: 19 	 mal: 0 	 loss: nan 	 time: 1.45
+
+[GRADIENT DEBUG Rnd 64]
+Avg Malicious Delta Norm: nan
+Avg Honest Delta Norm:    nan
+Power Ratio (Mal/Hon):    nan
+[DBG rnd=64] logits mean=nan, std=nan, maxlogit mean=nan
+[DBG rnd=64] probs max mean=nan, pred entropy mean=nan
+[DBG rnd=64] preds bincount=[64, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+Clean ACC:              0.1000
+Attack Success Ratio:   0.0000
+Robustness ACC:           0.1111
+local epoch 0 	 client: 0 	 mal: 1 	 loss: nan 	 time: 16.32
+local epoch 0 	 client: 1 	 mal: 1 	 loss: nan 	 time: 16.49
+local epoch 0 	 client: 2 	 mal: 0 	 loss: nan 	 time: 1.47
+local epoch 0 	 client: 3 	 mal: 0 	 loss: nan 	 time: 1.44
+local epoch 0 	 client: 4 	 mal: 0 	 loss: nan 	 time: 1.45
+local epoch 0 	 client: 5 	 mal: 0 	 loss: nan 	 time: 1.45
+local epoch 0 	 client: 6 	 mal: 0 	 loss: nan 	 time: 1.45
+local epoch 0 	 client: 7 	 mal: 0 	 loss: nan 	 time: 1.45
+local epoch 0 	 client: 8 	 mal: 0 	 loss: nan 	 time: 1.45
+local epoch 0 	 client: 9 	 mal: 0 	 loss: nan 	 time: 1.45
+local epoch 0 	 client: 10 	 mal: 0 	 loss: nan 	 time: 1.45
+local epoch 0 	 client: 11 	 mal: 0 	 loss: nan 	 time: 1.45
+local epoch 0 	 client: 12 	 mal: 0 	 loss: nan 	 time: 1.45
+local epoch 0 	 client: 13 	 mal: 0 	 loss: nan 	 time: 1.45
+local epoch 0 	 client: 14 	 mal: 0 	 loss: nan 	 time: 1.45
+local epoch 0 	 client: 15 	 mal: 0 	 loss: nan 	 time: 1.45
+local epoch 0 	 client: 16 	 mal: 0 	 loss: nan 	 time: 1.44
+local epoch 0 	 client: 17 	 mal: 0 	 loss: nan 	 time: 1.45
+local epoch 0 	 client: 18 	 mal: 0 	 loss: nan 	 time: 1.45
+local epoch 0 	 client: 19 	 mal: 0 	 loss: nan 	 time: 1.45
+
+[GRADIENT DEBUG Rnd 65]
+Avg Malicious Delta Norm: nan
+Avg Honest Delta Norm:    nan
+Power Ratio (Mal/Hon):    nan
+[DBG rnd=65] logits mean=nan, std=nan, maxlogit mean=nan
+[DBG rnd=65] probs max mean=nan, pred entropy mean=nan
+[DBG rnd=65] preds bincount=[64, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+Clean ACC:              0.1000
+Attack Success Ratio:   0.0000
+Robustness ACC:           0.1111
+local epoch 0 	 client: 0 	 mal: 1 	 loss: nan 	 time: 16.32
+local epoch 0 	 client: 1 	 mal: 1 	 loss: nan 	 time: 16.32
+local epoch 0 	 client: 2 	 mal: 0 	 loss: nan 	 time: 1.54
+local epoch 0 	 client: 3 	 mal: 0 	 loss: nan 	 time: 1.50
+local epoch 0 	 client: 4 	 mal: 0 	 loss: nan 	 time: 1.50
+local epoch 0 	 client: 5 	 mal: 0 	 loss: nan 	 time: 1.50
+local epoch 0 	 client: 6 	 mal: 0 	 loss: nan 	 time: 1.51
+local epoch 0 	 client: 7 	 mal: 0 	 loss: nan 	 time: 1.49
+local epoch 0 	 client: 8 	 mal: 0 	 loss: nan 	 time: 1.48
+local epoch 0 	 client: 9 	 mal: 0 	 loss: nan 	 time: 1.45
+local epoch 0 	 client: 10 	 mal: 0 	 loss: nan 	 time: 1.45
+local epoch 0 	 client: 11 	 mal: 0 	 loss: nan 	 time: 1.45
+local epoch 0 	 client: 12 	 mal: 0 	 loss: nan 	 time: 1.45
+local epoch 0 	 client: 13 	 mal: 0 	 loss: nan 	 time: 1.45
+local epoch 0 	 client: 14 	 mal: 0 	 loss: nan 	 time: 1.45
+local epoch 0 	 client: 15 	 mal: 0 	 loss: nan 	 time: 1.45
+local epoch 0 	 client: 16 	 mal: 0 	 loss: nan 	 time: 1.45
+local epoch 0 	 client: 17 	 mal: 0 	 loss: nan 	 time: 1.45
+local epoch 0 	 client: 18 	 mal: 0 	 loss: nan 	 time: 1.44
+local epoch 0 	 client: 19 	 mal: 0 	 loss: nan 	 time: 1.45
+
+[GRADIENT DEBUG Rnd 66]
+Avg Malicious Delta Norm: nan
+Avg Honest Delta Norm:    nan
+Power Ratio (Mal/Hon):    nan
+[DBG rnd=66] logits mean=nan, std=nan, maxlogit mean=nan
+[DBG rnd=66] probs max mean=nan, pred entropy mean=nan
+[DBG rnd=66] preds bincount=[64, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+Clean ACC:              0.1000
+Attack Success Ratio:   0.0000
+Robustness ACC:           0.1111
+local epoch 0 	 client: 0 	 mal: 1 	 loss: nan 	 time: 16.49
+local epoch 0 	 client: 1 	 mal: 1 	 loss: nan 	 time: 16.32
+local epoch 0 	 client: 2 	 mal: 0 	 loss: nan 	 time: 1.48
+local epoch 0 	 client: 3 	 mal: 0 	 loss: nan 	 time: 1.45
+local epoch 0 	 client: 4 	 mal: 0 	 loss: nan 	 time: 1.45
+local epoch 0 	 client: 5 	 mal: 0 	 loss: nan 	 time: 1.45
+local epoch 0 	 client: 6 	 mal: 0 	 loss: nan 	 time: 1.45
+local epoch 0 	 client: 7 	 mal: 0 	 loss: nan 	 time: 1.45
+local epoch 0 	 client: 8 	 mal: 0 	 loss: nan 	 time: 1.45
+local epoch 0 	 client: 9 	 mal: 0 	 loss: nan 	 time: 1.46
+local epoch 0 	 client: 10 	 mal: 0 	 loss: nan 	 time: 1.45
+local epoch 0 	 client: 11 	 mal: 0 	 loss: nan 	 time: 1.45
+local epoch 0 	 client: 12 	 mal: 0 	 loss: nan 	 time: 1.45
+local epoch 0 	 client: 13 	 mal: 0 	 loss: nan 	 time: 1.46
+local epoch 0 	 client: 14 	 mal: 0 	 loss: nan 	 time: 1.46
+local epoch 0 	 client: 15 	 mal: 0 	 loss: nan 	 time: 1.45
+local epoch 0 	 client: 16 	 mal: 0 	 loss: nan 	 time: 1.46
+local epoch 0 	 client: 17 	 mal: 0 	 loss: nan 	 time: 1.46
+local epoch 0 	 client: 18 	 mal: 0 	 loss: nan 	 time: 1.45
+local epoch 0 	 client: 19 	 mal: 0 	 loss: nan 	 time: 1.46
+
+[GRADIENT DEBUG Rnd 67]
+Avg Malicious Delta Norm: nan
+Avg Honest Delta Norm:    nan
+Power Ratio (Mal/Hon):    nan
+[DBG rnd=67] logits mean=nan, std=nan, maxlogit mean=nan
+[DBG rnd=67] probs max mean=nan, pred entropy mean=nan
+[DBG rnd=67] preds bincount=[64, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+Clean ACC:              0.1000
+Attack Success Ratio:   0.0000
+Robustness ACC:           0.1111
+local epoch 0 	 client: 0 	 mal: 1 	 loss: nan 	 time: 16.32
+local epoch 0 	 client: 1 	 mal: 1 	 loss: nan 	 time: 16.32
+local epoch 0 	 client: 2 	 mal: 0 	 loss: nan 	 time: 1.47
+local epoch 0 	 client: 3 	 mal: 0 	 loss: nan 	 time: 1.45
+local epoch 0 	 client: 4 	 mal: 0 	 loss: nan 	 time: 1.43
+local epoch 0 	 client: 5 	 mal: 0 	 loss: nan 	 time: 1.41
+local epoch 0 	 client: 6 	 mal: 0 	 loss: nan 	 time: 1.41
+local epoch 0 	 client: 7 	 mal: 0 	 loss: nan 	 time: 1.44
+local epoch 0 	 client: 8 	 mal: 0 	 loss: nan 	 time: 1.45
+local epoch 0 	 client: 9 	 mal: 0 	 loss: nan 	 time: 1.45
+local epoch 0 	 client: 10 	 mal: 0 	 loss: nan 	 time: 1.45
+local epoch 0 	 client: 11 	 mal: 0 	 loss: nan 	 time: 1.45
+local epoch 0 	 client: 12 	 mal: 0 	 loss: nan 	 time: 1.45
+local epoch 0 	 client: 13 	 mal: 0 	 loss: nan 	 time: 1.43
+local epoch 0 	 client: 14 	 mal: 0 	 loss: nan 	 time: 1.41
+local epoch 0 	 client: 15 	 mal: 0 	 loss: nan 	 time: 1.41
+local epoch 0 	 client: 16 	 mal: 0 	 loss: nan 	 time: 1.41
+local epoch 0 	 client: 17 	 mal: 0 	 loss: nan 	 time: 1.41
+local epoch 0 	 client: 18 	 mal: 0 	 loss: nan 	 time: 1.41
+local epoch 0 	 client: 19 	 mal: 0 	 loss: nan 	 time: 1.41
+
+[GRADIENT DEBUG Rnd 68]
+Avg Malicious Delta Norm: nan
+Avg Honest Delta Norm:    nan
+Power Ratio (Mal/Hon):    nan
+[DBG rnd=68] logits mean=nan, std=nan, maxlogit mean=nan
+[DBG rnd=68] probs max mean=nan, pred entropy mean=nan
+[DBG rnd=68] preds bincount=[64, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+Clean ACC:              0.1000
+Attack Success Ratio:   0.0000
+Robustness ACC:           0.1111
+local epoch 0 	 client: 0 	 mal: 1 	 loss: nan 	 time: 16.47
+local epoch 0 	 client: 1 	 mal: 1 	 loss: nan 	 time: 16.32
+local epoch 0 	 client: 2 	 mal: 0 	 loss: nan 	 time: 1.41
+local epoch 0 	 client: 3 	 mal: 0 	 loss: nan 	 time: 1.41
+local epoch 0 	 client: 4 	 mal: 0 	 loss: nan 	 time: 1.41
+local epoch 0 	 client: 5 	 mal: 0 	 loss: nan 	 time: 1.41
+local epoch 0 	 client: 6 	 mal: 0 	 loss: nan 	 time: 1.41
+local epoch 0 	 client: 7 	 mal: 0 	 loss: nan 	 time: 1.41
+local epoch 0 	 client: 8 	 mal: 0 	 loss: nan 	 time: 1.41
+local epoch 0 	 client: 9 	 mal: 0 	 loss: nan 	 time: 1.41
+local epoch 0 	 client: 10 	 mal: 0 	 loss: nan 	 time: 1.41
+local epoch 0 	 client: 11 	 mal: 0 	 loss: nan 	 time: 1.41
+local epoch 0 	 client: 12 	 mal: 0 	 loss: nan 	 time: 1.43
+local epoch 0 	 client: 13 	 mal: 0 	 loss: nan 	 time: 1.46
+local epoch 0 	 client: 14 	 mal: 0 	 loss: nan 	 time: 1.46
+local epoch 0 	 client: 15 	 mal: 0 	 loss: nan 	 time: 1.45
+local epoch 0 	 client: 16 	 mal: 0 	 loss: nan 	 time: 1.45
+local epoch 0 	 client: 17 	 mal: 0 	 loss: nan 	 time: 1.46
+local epoch 0 	 client: 18 	 mal: 0 	 loss: nan 	 time: 1.45
+local epoch 0 	 client: 19 	 mal: 0 	 loss: nan 	 time: 1.45
+
+[GRADIENT DEBUG Rnd 69]
+Avg Malicious Delta Norm: nan
+Avg Honest Delta Norm:    nan
+Power Ratio (Mal/Hon):    nan
+[DBG rnd=69] logits mean=nan, std=nan, maxlogit mean=nan
+[DBG rnd=69] probs max mean=nan, pred entropy mean=nan
+[DBG rnd=69] preds bincount=[64, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+Clean ACC:              0.1000
+Attack Success Ratio:   0.0000
+Robustness ACC:           0.1111
+local epoch 0 	 client: 0 	 mal: 1 	 loss: nan 	 time: 16.33
+local epoch 0 	 client: 1 	 mal: 1 	 loss: nan 	 time: 16.48
+local epoch 0 	 client: 2 	 mal: 0 	 loss: nan 	 time: 1.47
+local epoch 0 	 client: 3 	 mal: 0 	 loss: nan 	 time: 1.45
+local epoch 0 	 client: 4 	 mal: 0 	 loss: nan 	 time: 1.45
+local epoch 0 	 client: 5 	 mal: 0 	 loss: nan 	 time: 1.45
+local epoch 0 	 client: 6 	 mal: 0 	 loss: nan 	 time: 1.45
+local epoch 0 	 client: 7 	 mal: 0 	 loss: nan 	 time: 1.45
+local epoch 0 	 client: 8 	 mal: 0 	 loss: nan 	 time: 1.45
+local epoch 0 	 client: 9 	 mal: 0 	 loss: nan 	 time: 1.45
+local epoch 0 	 client: 10 	 mal: 0 	 loss: nan 	 time: 1.45
+local epoch 0 	 client: 11 	 mal: 0 	 loss: nan 	 time: 1.45
+local epoch 0 	 client: 12 	 mal: 0 	 loss: nan 	 time: 1.45
+local epoch 0 	 client: 13 	 mal: 0 	 loss: nan 	 time: 1.45
+local epoch 0 	 client: 14 	 mal: 0 	 loss: nan 	 time: 1.45
+local epoch 0 	 client: 15 	 mal: 0 	 loss: nan 	 time: 1.45
+local epoch 0 	 client: 16 	 mal: 0 	 loss: nan 	 time: 1.45
+local epoch 0 	 client: 17 	 mal: 0 	 loss: nan 	 time: 1.45
+local epoch 0 	 client: 18 	 mal: 0 	 loss: nan 	 time: 1.41
+local epoch 0 	 client: 19 	 mal: 0 	 loss: nan 	 time: 1.41
+
+[GRADIENT DEBUG Rnd 70]
+Avg Malicious Delta Norm: nan
+Avg Honest Delta Norm:    nan
+Power Ratio (Mal/Hon):    nan
+[DBG rnd=70] logits mean=nan, std=nan, maxlogit mean=nan
+[DBG rnd=70] probs max mean=nan, pred entropy mean=nan
+[DBG rnd=70] preds bincount=[64, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+Clean ACC:              0.1000
+Attack Success Ratio:   0.0000
+Robustness ACC:           0.1111
+local epoch 0 	 client: 0 	 mal: 1 	 loss: nan 	 time: 16.36
+local epoch 0 	 client: 1 	 mal: 1 	 loss: nan 	 time: 16.33
+local epoch 0 	 client: 2 	 mal: 0 	 loss: nan 	 time: 1.41
+local epoch 0 	 client: 3 	 mal: 0 	 loss: nan 	 time: 1.41
+local epoch 0 	 client: 4 	 mal: 0 	 loss: nan 	 time: 1.41
+local epoch 0 	 client: 5 	 mal: 0 	 loss: nan 	 time: 1.41
+local epoch 0 	 client: 6 	 mal: 0 	 loss: nan 	 time: 1.41
+local epoch 0 	 client: 7 	 mal: 0 	 loss: nan 	 time: 1.41
+local epoch 0 	 client: 8 	 mal: 0 	 loss: nan 	 time: 1.41
+local epoch 0 	 client: 9 	 mal: 0 	 loss: nan 	 time: 1.41
+local epoch 0 	 client: 10 	 mal: 0 	 loss: nan 	 time: 1.41
+local epoch 0 	 client: 11 	 mal: 0 	 loss: nan 	 time: 1.41
+local epoch 0 	 client: 12 	 mal: 0 	 loss: nan 	 time: 1.41
+local epoch 0 	 client: 13 	 mal: 0 	 loss: nan 	 time: 1.41
+local epoch 0 	 client: 14 	 mal: 0 	 loss: nan 	 time: 1.41
+local epoch 0 	 client: 15 	 mal: 0 	 loss: nan 	 time: 1.41
+local epoch 0 	 client: 16 	 mal: 0 	 loss: nan 	 time: 1.41
+local epoch 0 	 client: 17 	 mal: 0 	 loss: nan 	 time: 1.41
+local epoch 0 	 client: 18 	 mal: 0 	 loss: nan 	 time: 1.41
+local epoch 0 	 client: 19 	 mal: 0 	 loss: nan 	 time: 1.41
+
+[GRADIENT DEBUG Rnd 71]
+Avg Malicious Delta Norm: nan
+Avg Honest Delta Norm:    nan
+Power Ratio (Mal/Hon):    nan
+[DBG rnd=71] logits mean=nan, std=nan, maxlogit mean=nan
+[DBG rnd=71] probs max mean=nan, pred entropy mean=nan
+[DBG rnd=71] preds bincount=[64, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+Clean ACC:              0.1000
+Attack Success Ratio:   0.0000
+Robustness ACC:           0.1111
+local epoch 0 	 client: 0 	 mal: 1 	 loss: nan 	 time: 16.50
+local epoch 0 	 client: 1 	 mal: 1 	 loss: nan 	 time: 16.34
+local epoch 0 	 client: 2 	 mal: 0 	 loss: nan 	 time: 1.41
+local epoch 0 	 client: 3 	 mal: 0 	 loss: nan 	 time: 1.41
+local epoch 0 	 client: 4 	 mal: 0 	 loss: nan 	 time: 1.41
+local epoch 0 	 client: 5 	 mal: 0 	 loss: nan 	 time: 1.41
+local epoch 0 	 client: 6 	 mal: 0 	 loss: nan 	 time: 1.41
+local epoch 0 	 client: 7 	 mal: 0 	 loss: nan 	 time: 1.41
+local epoch 0 	 client: 8 	 mal: 0 	 loss: nan 	 time: 1.41
+local epoch 0 	 client: 9 	 mal: 0 	 loss: nan 	 time: 1.41
+local epoch 0 	 client: 10 	 mal: 0 	 loss: nan 	 time: 1.41
+local epoch 0 	 client: 11 	 mal: 0 	 loss: nan 	 time: 1.41
+local epoch 0 	 client: 12 	 mal: 0 	 loss: nan 	 time: 1.41
+local epoch 0 	 client: 13 	 mal: 0 	 loss: nan 	 time: 1.41
+local epoch 0 	 client: 14 	 mal: 0 	 loss: nan 	 time: 1.41
+local epoch 0 	 client: 15 	 mal: 0 	 loss: nan 	 time: 1.41
+local epoch 0 	 client: 16 	 mal: 0 	 loss: nan 	 time: 1.41
+local epoch 0 	 client: 17 	 mal: 0 	 loss: nan 	 time: 1.41
+local epoch 0 	 client: 18 	 mal: 0 	 loss: nan 	 time: 1.41
+local epoch 0 	 client: 19 	 mal: 0 	 loss: nan 	 time: 1.41
+
+[GRADIENT DEBUG Rnd 72]
+Avg Malicious Delta Norm: nan
+Avg Honest Delta Norm:    nan
+Power Ratio (Mal/Hon):    nan
+[DBG rnd=72] logits mean=nan, std=nan, maxlogit mean=nan
+[DBG rnd=72] probs max mean=nan, pred entropy mean=nan
+[DBG rnd=72] preds bincount=[64, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+Clean ACC:              0.1000
+Attack Success Ratio:   0.0000
+Robustness ACC:           0.1111
+local epoch 0 	 client: 0 	 mal: 1 	 loss: nan 	 time: 16.33
+local epoch 0 	 client: 1 	 mal: 1 	 loss: nan 	 time: 16.33
+local epoch 0 	 client: 2 	 mal: 0 	 loss: nan 	 time: 1.41
+local epoch 0 	 client: 3 	 mal: 0 	 loss: nan 	 time: 1.41
+local epoch 0 	 client: 4 	 mal: 0 	 loss: nan 	 time: 1.41
+local epoch 0 	 client: 5 	 mal: 0 	 loss: nan 	 time: 1.41
+local epoch 0 	 client: 6 	 mal: 0 	 loss: nan 	 time: 1.41
+local epoch 0 	 client: 7 	 mal: 0 	 loss: nan 	 time: 1.41
+local epoch 0 	 client: 8 	 mal: 0 	 loss: nan 	 time: 1.41
+local epoch 0 	 client: 9 	 mal: 0 	 loss: nan 	 time: 1.41
+local epoch 0 	 client: 10 	 mal: 0 	 loss: nan 	 time: 1.41
+local epoch 0 	 client: 11 	 mal: 0 	 loss: nan 	 time: 1.41
+local epoch 0 	 client: 12 	 mal: 0 	 loss: nan 	 time: 1.41
+local epoch 0 	 client: 13 	 mal: 0 	 loss: nan 	 time: 1.41
+local epoch 0 	 client: 14 	 mal: 0 	 loss: nan 	 time: 1.41
+local epoch 0 	 client: 15 	 mal: 0 	 loss: nan 	 time: 1.41
+local epoch 0 	 client: 16 	 mal: 0 	 loss: nan 	 time: 1.41
+local epoch 0 	 client: 17 	 mal: 0 	 loss: nan 	 time: 1.41
+local epoch 0 	 client: 18 	 mal: 0 	 loss: nan 	 time: 1.41
+local epoch 0 	 client: 19 	 mal: 0 	 loss: nan 	 time: 1.41
+
+[GRADIENT DEBUG Rnd 73]
+Avg Malicious Delta Norm: nan
+Avg Honest Delta Norm:    nan
+Power Ratio (Mal/Hon):    nan
+[DBG rnd=73] logits mean=nan, std=nan, maxlogit mean=nan
+[DBG rnd=73] probs max mean=nan, pred entropy mean=nan
+[DBG rnd=73] preds bincount=[64, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+Clean ACC:              0.1000
+Attack Success Ratio:   0.0000
+Robustness ACC:           0.1111
+local epoch 0 	 client: 0 	 mal: 1 	 loss: nan 	 time: 16.49
+local epoch 0 	 client: 1 	 mal: 1 	 loss: nan 	 time: 16.34
+local epoch 0 	 client: 2 	 mal: 0 	 loss: nan 	 time: 1.41
+local epoch 0 	 client: 3 	 mal: 0 	 loss: nan 	 time: 1.41
+local epoch 0 	 client: 4 	 mal: 0 	 loss: nan 	 time: 1.41
+local epoch 0 	 client: 5 	 mal: 0 	 loss: nan 	 time: 1.41
+local epoch 0 	 client: 6 	 mal: 0 	 loss: nan 	 time: 1.41
+local epoch 0 	 client: 7 	 mal: 0 	 loss: nan 	 time: 1.41
+local epoch 0 	 client: 8 	 mal: 0 	 loss: nan 	 time: 1.41
+local epoch 0 	 client: 9 	 mal: 0 	 loss: nan 	 time: 1.41
+local epoch 0 	 client: 10 	 mal: 0 	 loss: nan 	 time: 1.41
+local epoch 0 	 client: 11 	 mal: 0 	 loss: nan 	 time: 1.41
+local epoch 0 	 client: 12 	 mal: 0 	 loss: nan 	 time: 1.41
+local epoch 0 	 client: 13 	 mal: 0 	 loss: nan 	 time: 1.41
+local epoch 0 	 client: 14 	 mal: 0 	 loss: nan 	 time: 1.41
+local epoch 0 	 client: 15 	 mal: 0 	 loss: nan 	 time: 1.41
+local epoch 0 	 client: 16 	 mal: 0 	 loss: nan 	 time: 1.41
+local epoch 0 	 client: 17 	 mal: 0 	 loss: nan 	 time: 1.41
+local epoch 0 	 client: 18 	 mal: 0 	 loss: nan 	 time: 1.41
+local epoch 0 	 client: 19 	 mal: 0 	 loss: nan 	 time: 1.41
+
+[GRADIENT DEBUG Rnd 74]
+Avg Malicious Delta Norm: nan
+Avg Honest Delta Norm:    nan
+Power Ratio (Mal/Hon):    nan
+[DBG rnd=74] logits mean=nan, std=nan, maxlogit mean=nan
+[DBG rnd=74] probs max mean=nan, pred entropy mean=nan
+[DBG rnd=74] preds bincount=[64, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+Clean ACC:              0.1000
+Attack Success Ratio:   0.0000
+Robustness ACC:           0.1111
+local epoch 0 	 client: 0 	 mal: 1 	 loss: nan 	 time: 16.32
+local epoch 0 	 client: 1 	 mal: 1 	 loss: nan 	 time: 16.49
+local epoch 0 	 client: 2 	 mal: 0 	 loss: nan 	 time: 1.41
+local epoch 0 	 client: 3 	 mal: 0 	 loss: nan 	 time: 1.41
+local epoch 0 	 client: 4 	 mal: 0 	 loss: nan 	 time: 1.41
+local epoch 0 	 client: 5 	 mal: 0 	 loss: nan 	 time: 1.41
+local epoch 0 	 client: 6 	 mal: 0 	 loss: nan 	 time: 1.41
+local epoch 0 	 client: 7 	 mal: 0 	 loss: nan 	 time: 1.41
+local epoch 0 	 client: 8 	 mal: 0 	 loss: nan 	 time: 1.41
+local epoch 0 	 client: 9 	 mal: 0 	 loss: nan 	 time: 1.41
+local epoch 0 	 client: 10 	 mal: 0 	 loss: nan 	 time: 1.41
+local epoch 0 	 client: 11 	 mal: 0 	 loss: nan 	 time: 1.41
+local epoch 0 	 client: 12 	 mal: 0 	 loss: nan 	 time: 1.41
+local epoch 0 	 client: 13 	 mal: 0 	 loss: nan 	 time: 1.41
+local epoch 0 	 client: 14 	 mal: 0 	 loss: nan 	 time: 1.41
+local epoch 0 	 client: 15 	 mal: 0 	 loss: nan 	 time: 1.41
+local epoch 0 	 client: 16 	 mal: 0 	 loss: nan 	 time: 1.41
+local epoch 0 	 client: 17 	 mal: 0 	 loss: nan 	 time: 1.41
+local epoch 0 	 client: 18 	 mal: 0 	 loss: nan 	 time: 1.41
+local epoch 0 	 client: 19 	 mal: 0 	 loss: nan 	 time: 1.44
+
+[GRADIENT DEBUG Rnd 75]
+Avg Malicious Delta Norm: nan
+Avg Honest Delta Norm:    nan
+Power Ratio (Mal/Hon):    nan
+[DBG rnd=75] logits mean=nan, std=nan, maxlogit mean=nan
+[DBG rnd=75] probs max mean=nan, pred entropy mean=nan
+[DBG rnd=75] preds bincount=[64, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+Clean ACC:              0.1000
+Attack Success Ratio:   0.0000
+Robustness ACC:           0.1111
+local epoch 0 	 client: 0 	 mal: 1 	 loss: nan 	 time: 16.32
+local epoch 0 	 client: 1 	 mal: 1 	 loss: nan 	 time: 16.32
+local epoch 0 	 client: 2 	 mal: 0 	 loss: nan 	 time: 1.41
+local epoch 0 	 client: 3 	 mal: 0 	 loss: nan 	 time: 1.41
+local epoch 0 	 client: 4 	 mal: 0 	 loss: nan 	 time: 1.41
+local epoch 0 	 client: 5 	 mal: 0 	 loss: nan 	 time: 1.41
+local epoch 0 	 client: 6 	 mal: 0 	 loss: nan 	 time: 1.41
+local epoch 0 	 client: 7 	 mal: 0 	 loss: nan 	 time: 1.41
+local epoch 0 	 client: 8 	 mal: 0 	 loss: nan 	 time: 1.41
+local epoch 0 	 client: 9 	 mal: 0 	 loss: nan 	 time: 1.41
+local epoch 0 	 client: 10 	 mal: 0 	 loss: nan 	 time: 1.41
+local epoch 0 	 client: 11 	 mal: 0 	 loss: nan 	 time: 1.41
+local epoch 0 	 client: 12 	 mal: 0 	 loss: nan 	 time: 1.41
+local epoch 0 	 client: 13 	 mal: 0 	 loss: nan 	 time: 1.41
+local epoch 0 	 client: 14 	 mal: 0 	 loss: nan 	 time: 1.41
+local epoch 0 	 client: 15 	 mal: 0 	 loss: nan 	 time: 1.41
+local epoch 0 	 client: 16 	 mal: 0 	 loss: nan 	 time: 1.41
+local epoch 0 	 client: 17 	 mal: 0 	 loss: nan 	 time: 1.41
+local epoch 0 	 client: 18 	 mal: 0 	 loss: nan 	 time: 1.41
+local epoch 0 	 client: 19 	 mal: 0 	 loss: nan 	 time: 1.41
+
+[GRADIENT DEBUG Rnd 76]
+Avg Malicious Delta Norm: nan
+Avg Honest Delta Norm:    nan
+Power Ratio (Mal/Hon):    nan
+[DBG rnd=76] logits mean=nan, std=nan, maxlogit mean=nan
+[DBG rnd=76] probs max mean=nan, pred entropy mean=nan
+[DBG rnd=76] preds bincount=[64, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+Clean ACC:              0.1000
+Attack Success Ratio:   0.0000
+Robustness ACC:           0.1111
+local epoch 0 	 client: 0 	 mal: 1 	 loss: nan 	 time: 16.33
+local epoch 0 	 client: 1 	 mal: 1 	 loss: nan 	 time: 16.47
+local epoch 0 	 client: 2 	 mal: 0 	 loss: nan 	 time: 1.41
+local epoch 0 	 client: 3 	 mal: 0 	 loss: nan 	 time: 1.41
+local epoch 0 	 client: 4 	 mal: 0 	 loss: nan 	 time: 1.41
+local epoch 0 	 client: 5 	 mal: 0 	 loss: nan 	 time: 1.41
+local epoch 0 	 client: 6 	 mal: 0 	 loss: nan 	 time: 1.41
+local epoch 0 	 client: 7 	 mal: 0 	 loss: nan 	 time: 1.41
+local epoch 0 	 client: 8 	 mal: 0 	 loss: nan 	 time: 1.41
+local epoch 0 	 client: 9 	 mal: 0 	 loss: nan 	 time: 1.41
+local epoch 0 	 client: 10 	 mal: 0 	 loss: nan 	 time: 1.41
+local epoch 0 	 client: 11 	 mal: 0 	 loss: nan 	 time: 1.41
+local epoch 0 	 client: 12 	 mal: 0 	 loss: nan 	 time: 1.41
+local epoch 0 	 client: 13 	 mal: 0 	 loss: nan 	 time: 1.41
+local epoch 0 	 client: 14 	 mal: 0 	 loss: nan 	 time: 1.41
+local epoch 0 	 client: 15 	 mal: 0 	 loss: nan 	 time: 1.41
+local epoch 0 	 client: 16 	 mal: 0 	 loss: nan 	 time: 1.41
+local epoch 0 	 client: 17 	 mal: 0 	 loss: nan 	 time: 1.41
+local epoch 0 	 client: 18 	 mal: 0 	 loss: nan 	 time: 1.41
+local epoch 0 	 client: 19 	 mal: 0 	 loss: nan 	 time: 1.41
+
+[GRADIENT DEBUG Rnd 77]
+Avg Malicious Delta Norm: nan
+Avg Honest Delta Norm:    nan
+Power Ratio (Mal/Hon):    nan
+[DBG rnd=77] logits mean=nan, std=nan, maxlogit mean=nan
+[DBG rnd=77] probs max mean=nan, pred entropy mean=nan
+[DBG rnd=77] preds bincount=[64, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+Clean ACC:              0.1000
+Attack Success Ratio:   0.0000
+Robustness ACC:           0.1111
+local epoch 0 	 client: 0 	 mal: 1 	 loss: nan 	 time: 16.33
+local epoch 0 	 client: 1 	 mal: 1 	 loss: nan 	 time: 16.32
+local epoch 0 	 client: 2 	 mal: 0 	 loss: nan 	 time: 1.41
+local epoch 0 	 client: 3 	 mal: 0 	 loss: nan 	 time: 1.41
+local epoch 0 	 client: 4 	 mal: 0 	 loss: nan 	 time: 1.41
+local epoch 0 	 client: 5 	 mal: 0 	 loss: nan 	 time: 1.41
+local epoch 0 	 client: 6 	 mal: 0 	 loss: nan 	 time: 1.41
+local epoch 0 	 client: 7 	 mal: 0 	 loss: nan 	 time: 1.41
+local epoch 0 	 client: 8 	 mal: 0 	 loss: nan 	 time: 1.41
+local epoch 0 	 client: 9 	 mal: 0 	 loss: nan 	 time: 1.41
+local epoch 0 	 client: 10 	 mal: 0 	 loss: nan 	 time: 1.41
+local epoch 0 	 client: 11 	 mal: 0 	 loss: nan 	 time: 1.41
+local epoch 0 	 client: 12 	 mal: 0 	 loss: nan 	 time: 1.41
+local epoch 0 	 client: 13 	 mal: 0 	 loss: nan 	 time: 1.41
+local epoch 0 	 client: 14 	 mal: 0 	 loss: nan 	 time: 1.41
+local epoch 0 	 client: 15 	 mal: 0 	 loss: nan 	 time: 1.41
+local epoch 0 	 client: 16 	 mal: 0 	 loss: nan 	 time: 1.41
+local epoch 0 	 client: 17 	 mal: 0 	 loss: nan 	 time: 1.41
+local epoch 0 	 client: 18 	 mal: 0 	 loss: nan 	 time: 1.41
+local epoch 0 	 client: 19 	 mal: 0 	 loss: nan 	 time: 1.41
+
+[GRADIENT DEBUG Rnd 78]
+Avg Malicious Delta Norm: nan
+Avg Honest Delta Norm:    nan
+Power Ratio (Mal/Hon):    nan
+[DBG rnd=78] logits mean=nan, std=nan, maxlogit mean=nan
+[DBG rnd=78] probs max mean=nan, pred entropy mean=nan
+[DBG rnd=78] preds bincount=[64, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+Clean ACC:              0.1000
+Attack Success Ratio:   0.0000
+Robustness ACC:           0.1111
+local epoch 0 	 client: 0 	 mal: 1 	 loss: nan 	 time: 16.47
+local epoch 0 	 client: 1 	 mal: 1 	 loss: nan 	 time: 16.33
+local epoch 0 	 client: 2 	 mal: 0 	 loss: nan 	 time: 1.41
+local epoch 0 	 client: 3 	 mal: 0 	 loss: nan 	 time: 1.41
+local epoch 0 	 client: 4 	 mal: 0 	 loss: nan 	 time: 1.41
+local epoch 0 	 client: 5 	 mal: 0 	 loss: nan 	 time: 1.41
+local epoch 0 	 client: 6 	 mal: 0 	 loss: nan 	 time: 1.41
+local epoch 0 	 client: 7 	 mal: 0 	 loss: nan 	 time: 1.41
+local epoch 0 	 client: 8 	 mal: 0 	 loss: nan 	 time: 1.41
+local epoch 0 	 client: 9 	 mal: 0 	 loss: nan 	 time: 1.41
+local epoch 0 	 client: 10 	 mal: 0 	 loss: nan 	 time: 1.41
+local epoch 0 	 client: 11 	 mal: 0 	 loss: nan 	 time: 1.41
+local epoch 0 	 client: 12 	 mal: 0 	 loss: nan 	 time: 1.41
+local epoch 0 	 client: 13 	 mal: 0 	 loss: nan 	 time: 1.41
+local epoch 0 	 client: 14 	 mal: 0 	 loss: nan 	 time: 1.41
+local epoch 0 	 client: 15 	 mal: 0 	 loss: nan 	 time: 1.41
+local epoch 0 	 client: 16 	 mal: 0 	 loss: nan 	 time: 1.41
+local epoch 0 	 client: 17 	 mal: 0 	 loss: nan 	 time: 1.41
+local epoch 0 	 client: 18 	 mal: 0 	 loss: nan 	 time: 1.41
+local epoch 0 	 client: 19 	 mal: 0 	 loss: nan 	 time: 1.41
+
+[GRADIENT DEBUG Rnd 79]
+Avg Malicious Delta Norm: nan
+Avg Honest Delta Norm:    nan
+Power Ratio (Mal/Hon):    nan
+[DBG rnd=79] logits mean=nan, std=nan, maxlogit mean=nan
+[DBG rnd=79] probs max mean=nan, pred entropy mean=nan
+[DBG rnd=79] preds bincount=[64, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+Clean ACC:              0.1000
+Attack Success Ratio:   0.0000
+Robustness ACC:           0.1111
+local epoch 0 	 client: 0 	 mal: 1 	 loss: nan 	 time: 16.32
+local epoch 0 	 client: 1 	 mal: 1 	 loss: nan 	 time: 16.50
+local epoch 0 	 client: 2 	 mal: 0 	 loss: nan 	 time: 1.42
+local epoch 0 	 client: 3 	 mal: 0 	 loss: nan 	 time: 1.41
+local epoch 0 	 client: 4 	 mal: 0 	 loss: nan 	 time: 1.41
+local epoch 0 	 client: 5 	 mal: 0 	 loss: nan 	 time: 1.41
+local epoch 0 	 client: 6 	 mal: 0 	 loss: nan 	 time: 1.41
+local epoch 0 	 client: 7 	 mal: 0 	 loss: nan 	 time: 1.41
+local epoch 0 	 client: 8 	 mal: 0 	 loss: nan 	 time: 1.41
+local epoch 0 	 client: 9 	 mal: 0 	 loss: nan 	 time: 1.41
+local epoch 0 	 client: 10 	 mal: 0 	 loss: nan 	 time: 1.41
+local epoch 0 	 client: 11 	 mal: 0 	 loss: nan 	 time: 1.41
+local epoch 0 	 client: 12 	 mal: 0 	 loss: nan 	 time: 1.41
+local epoch 0 	 client: 13 	 mal: 0 	 loss: nan 	 time: 1.41
+local epoch 0 	 client: 14 	 mal: 0 	 loss: nan 	 time: 1.41
+local epoch 0 	 client: 15 	 mal: 0 	 loss: nan 	 time: 1.41
+local epoch 0 	 client: 16 	 mal: 0 	 loss: nan 	 time: 1.41
+local epoch 0 	 client: 17 	 mal: 0 	 loss: nan 	 time: 1.41
+local epoch 0 	 client: 18 	 mal: 0 	 loss: nan 	 time: 1.41
+local epoch 0 	 client: 19 	 mal: 0 	 loss: nan 	 time: 1.41
+
+[GRADIENT DEBUG Rnd 80]
+Avg Malicious Delta Norm: nan
+Avg Honest Delta Norm:    nan
+Power Ratio (Mal/Hon):    nan
+[DBG rnd=80] logits mean=nan, std=nan, maxlogit mean=nan
+[DBG rnd=80] probs max mean=nan, pred entropy mean=nan
+[DBG rnd=80] preds bincount=[64, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+Clean ACC:              0.1000
+Attack Success Ratio:   0.0000
+Robustness ACC:           0.1111
+local epoch 0 	 client: 0 	 mal: 1 	 loss: nan 	 time: 16.32
+local epoch 0 	 client: 1 	 mal: 1 	 loss: nan 	 time: 16.33
+local epoch 0 	 client: 2 	 mal: 0 	 loss: nan 	 time: 1.41
+local epoch 0 	 client: 3 	 mal: 0 	 loss: nan 	 time: 1.41
+local epoch 0 	 client: 4 	 mal: 0 	 loss: nan 	 time: 1.41
+local epoch 0 	 client: 5 	 mal: 0 	 loss: nan 	 time: 1.41
+local epoch 0 	 client: 6 	 mal: 0 	 loss: nan 	 time: 1.41
+local epoch 0 	 client: 7 	 mal: 0 	 loss: nan 	 time: 1.41
+local epoch 0 	 client: 8 	 mal: 0 	 loss: nan 	 time: 1.41
+local epoch 0 	 client: 9 	 mal: 0 	 loss: nan 	 time: 1.41
+local epoch 0 	 client: 10 	 mal: 0 	 loss: nan 	 time: 1.41
+local epoch 0 	 client: 11 	 mal: 0 	 loss: nan 	 time: 1.41
+local epoch 0 	 client: 12 	 mal: 0 	 loss: nan 	 time: 1.41
+local epoch 0 	 client: 13 	 mal: 0 	 loss: nan 	 time: 1.41
+local epoch 0 	 client: 14 	 mal: 0 	 loss: nan 	 time: 1.41
+local epoch 0 	 client: 15 	 mal: 0 	 loss: nan 	 time: 1.41
+local epoch 0 	 client: 16 	 mal: 0 	 loss: nan 	 time: 1.41
+local epoch 0 	 client: 17 	 mal: 0 	 loss: nan 	 time: 1.41
+local epoch 0 	 client: 18 	 mal: 0 	 loss: nan 	 time: 1.41
+local epoch 0 	 client: 19 	 mal: 0 	 loss: nan 	 time: 1.41
+
+[GRADIENT DEBUG Rnd 81]
+Avg Malicious Delta Norm: nan
+Avg Honest Delta Norm:    nan
+Power Ratio (Mal/Hon):    nan
+[DBG rnd=81] logits mean=nan, std=nan, maxlogit mean=nan
+[DBG rnd=81] probs max mean=nan, pred entropy mean=nan
+[DBG rnd=81] preds bincount=[64, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+Clean ACC:              0.1000
+Attack Success Ratio:   0.0000
+Robustness ACC:           0.1111
+local epoch 0 	 client: 0 	 mal: 1 	 loss: nan 	 time: 16.32
+local epoch 0 	 client: 1 	 mal: 1 	 loss: nan 	 time: 16.48
+local epoch 0 	 client: 2 	 mal: 0 	 loss: nan 	 time: 1.41
+local epoch 0 	 client: 3 	 mal: 0 	 loss: nan 	 time: 1.41
+local epoch 0 	 client: 4 	 mal: 0 	 loss: nan 	 time: 1.41
+local epoch 0 	 client: 5 	 mal: 0 	 loss: nan 	 time: 1.41
+local epoch 0 	 client: 6 	 mal: 0 	 loss: nan 	 time: 1.41
+local epoch 0 	 client: 7 	 mal: 0 	 loss: nan 	 time: 1.41
+local epoch 0 	 client: 8 	 mal: 0 	 loss: nan 	 time: 1.41
+local epoch 0 	 client: 9 	 mal: 0 	 loss: nan 	 time: 1.41
+local epoch 0 	 client: 10 	 mal: 0 	 loss: nan 	 time: 1.41
+local epoch 0 	 client: 11 	 mal: 0 	 loss: nan 	 time: 1.41
+local epoch 0 	 client: 12 	 mal: 0 	 loss: nan 	 time: 1.41
+local epoch 0 	 client: 13 	 mal: 0 	 loss: nan 	 time: 1.41
+local epoch 0 	 client: 14 	 mal: 0 	 loss: nan 	 time: 1.41
+local epoch 0 	 client: 15 	 mal: 0 	 loss: nan 	 time: 1.41
+local epoch 0 	 client: 16 	 mal: 0 	 loss: nan 	 time: 1.41
+local epoch 0 	 client: 17 	 mal: 0 	 loss: nan 	 time: 1.41
+local epoch 0 	 client: 18 	 mal: 0 	 loss: nan 	 time: 1.41
+local epoch 0 	 client: 19 	 mal: 0 	 loss: nan 	 time: 1.41
+
+[GRADIENT DEBUG Rnd 82]
+Avg Malicious Delta Norm: nan
+Avg Honest Delta Norm:    nan
+Power Ratio (Mal/Hon):    nan
+[DBG rnd=82] logits mean=nan, std=nan, maxlogit mean=nan
+[DBG rnd=82] probs max mean=nan, pred entropy mean=nan
+[DBG rnd=82] preds bincount=[64, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+Clean ACC:              0.1000
+Attack Success Ratio:   0.0000
+Robustness ACC:           0.1111
+local epoch 0 	 client: 0 	 mal: 1 	 loss: nan 	 time: 16.34
+local epoch 0 	 client: 1 	 mal: 1 	 loss: nan 	 time: 16.32
+local epoch 0 	 client: 2 	 mal: 0 	 loss: nan 	 time: 1.41
+local epoch 0 	 client: 3 	 mal: 0 	 loss: nan 	 time: 1.41
+local epoch 0 	 client: 4 	 mal: 0 	 loss: nan 	 time: 1.41
+local epoch 0 	 client: 5 	 mal: 0 	 loss: nan 	 time: 1.41
+local epoch 0 	 client: 6 	 mal: 0 	 loss: nan 	 time: 1.41
+local epoch 0 	 client: 7 	 mal: 0 	 loss: nan 	 time: 1.41
+local epoch 0 	 client: 8 	 mal: 0 	 loss: nan 	 time: 1.41
+local epoch 0 	 client: 9 	 mal: 0 	 loss: nan 	 time: 1.41
+local epoch 0 	 client: 10 	 mal: 0 	 loss: nan 	 time: 1.41
+local epoch 0 	 client: 11 	 mal: 0 	 loss: nan 	 time: 1.41
+local epoch 0 	 client: 12 	 mal: 0 	 loss: nan 	 time: 1.41
+local epoch 0 	 client: 13 	 mal: 0 	 loss: nan 	 time: 1.41
+local epoch 0 	 client: 14 	 mal: 0 	 loss: nan 	 time: 1.41
+local epoch 0 	 client: 15 	 mal: 0 	 loss: nan 	 time: 1.41
+local epoch 0 	 client: 16 	 mal: 0 	 loss: nan 	 time: 1.41
+local epoch 0 	 client: 17 	 mal: 0 	 loss: nan 	 time: 1.41
+local epoch 0 	 client: 18 	 mal: 0 	 loss: nan 	 time: 1.41
+local epoch 0 	 client: 19 	 mal: 0 	 loss: nan 	 time: 1.41
+
+[GRADIENT DEBUG Rnd 83]
+Avg Malicious Delta Norm: nan
+Avg Honest Delta Norm:    nan
+Power Ratio (Mal/Hon):    nan
+[DBG rnd=83] logits mean=nan, std=nan, maxlogit mean=nan
+[DBG rnd=83] probs max mean=nan, pred entropy mean=nan
+[DBG rnd=83] preds bincount=[64, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+Clean ACC:              0.1000
+Attack Success Ratio:   0.0000
+Robustness ACC:           0.1111
+local epoch 0 	 client: 0 	 mal: 1 	 loss: nan 	 time: 16.48
+local epoch 0 	 client: 1 	 mal: 1 	 loss: nan 	 time: 16.33
+local epoch 0 	 client: 2 	 mal: 0 	 loss: nan 	 time: 1.41
+local epoch 0 	 client: 3 	 mal: 0 	 loss: nan 	 time: 1.41
+local epoch 0 	 client: 4 	 mal: 0 	 loss: nan 	 time: 1.41
+local epoch 0 	 client: 5 	 mal: 0 	 loss: nan 	 time: 1.41
+local epoch 0 	 client: 6 	 mal: 0 	 loss: nan 	 time: 1.41
+local epoch 0 	 client: 7 	 mal: 0 	 loss: nan 	 time: 1.41
+local epoch 0 	 client: 8 	 mal: 0 	 loss: nan 	 time: 1.41
+local epoch 0 	 client: 9 	 mal: 0 	 loss: nan 	 time: 1.41
+local epoch 0 	 client: 10 	 mal: 0 	 loss: nan 	 time: 1.41
+local epoch 0 	 client: 11 	 mal: 0 	 loss: nan 	 time: 1.41
+local epoch 0 	 client: 12 	 mal: 0 	 loss: nan 	 time: 1.41
+local epoch 0 	 client: 13 	 mal: 0 	 loss: nan 	 time: 1.41
+local epoch 0 	 client: 14 	 mal: 0 	 loss: nan 	 time: 1.41
+local epoch 0 	 client: 15 	 mal: 0 	 loss: nan 	 time: 1.41
+local epoch 0 	 client: 16 	 mal: 0 	 loss: nan 	 time: 1.41
+local epoch 0 	 client: 17 	 mal: 0 	 loss: nan 	 time: 1.41
+local epoch 0 	 client: 18 	 mal: 0 	 loss: nan 	 time: 1.41
+local epoch 0 	 client: 19 	 mal: 0 	 loss: nan 	 time: 1.41
+
+[GRADIENT DEBUG Rnd 84]
+Avg Malicious Delta Norm: nan
+Avg Honest Delta Norm:    nan
+Power Ratio (Mal/Hon):    nan
+[DBG rnd=84] logits mean=nan, std=nan, maxlogit mean=nan
+[DBG rnd=84] probs max mean=nan, pred entropy mean=nan
+[DBG rnd=84] preds bincount=[64, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+Clean ACC:              0.1000
+Attack Success Ratio:   0.0000
+Robustness ACC:           0.1111
+local epoch 0 	 client: 0 	 mal: 1 	 loss: nan 	 time: 16.36
+local epoch 0 	 client: 1 	 mal: 1 	 loss: nan 	 time: 16.50
+local epoch 0 	 client: 2 	 mal: 0 	 loss: nan 	 time: 1.41
+local epoch 0 	 client: 3 	 mal: 0 	 loss: nan 	 time: 1.41
+local epoch 0 	 client: 4 	 mal: 0 	 loss: nan 	 time: 1.41
+local epoch 0 	 client: 5 	 mal: 0 	 loss: nan 	 time: 1.41
+local epoch 0 	 client: 6 	 mal: 0 	 loss: nan 	 time: 1.41
+local epoch 0 	 client: 7 	 mal: 0 	 loss: nan 	 time: 1.41
+local epoch 0 	 client: 8 	 mal: 0 	 loss: nan 	 time: 1.41
+local epoch 0 	 client: 9 	 mal: 0 	 loss: nan 	 time: 1.41
+local epoch 0 	 client: 10 	 mal: 0 	 loss: nan 	 time: 1.41
+local epoch 0 	 client: 11 	 mal: 0 	 loss: nan 	 time: 1.41
+local epoch 0 	 client: 12 	 mal: 0 	 loss: nan 	 time: 1.41
+local epoch 0 	 client: 13 	 mal: 0 	 loss: nan 	 time: 1.41
+local epoch 0 	 client: 14 	 mal: 0 	 loss: nan 	 time: 1.41
+local epoch 0 	 client: 15 	 mal: 0 	 loss: nan 	 time: 1.41
+local epoch 0 	 client: 16 	 mal: 0 	 loss: nan 	 time: 1.41
+local epoch 0 	 client: 17 	 mal: 0 	 loss: nan 	 time: 1.41
+local epoch 0 	 client: 18 	 mal: 0 	 loss: nan 	 time: 1.41
+local epoch 0 	 client: 19 	 mal: 0 	 loss: nan 	 time: 1.41
+
+[GRADIENT DEBUG Rnd 85]
+Avg Malicious Delta Norm: nan
+Avg Honest Delta Norm:    nan
+Power Ratio (Mal/Hon):    nan
+[DBG rnd=85] logits mean=nan, std=nan, maxlogit mean=nan
+[DBG rnd=85] probs max mean=nan, pred entropy mean=nan
+[DBG rnd=85] preds bincount=[64, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+Clean ACC:              0.1000
+Attack Success Ratio:   0.0000
+Robustness ACC:           0.1111
+local epoch 0 	 client: 0 	 mal: 1 	 loss: nan 	 time: 16.33
+local epoch 0 	 client: 1 	 mal: 1 	 loss: nan 	 time: 16.33
+local epoch 0 	 client: 2 	 mal: 0 	 loss: nan 	 time: 1.41
+local epoch 0 	 client: 3 	 mal: 0 	 loss: nan 	 time: 1.41
+local epoch 0 	 client: 4 	 mal: 0 	 loss: nan 	 time: 1.41
+local epoch 0 	 client: 5 	 mal: 0 	 loss: nan 	 time: 1.41
+local epoch 0 	 client: 6 	 mal: 0 	 loss: nan 	 time: 1.41
+local epoch 0 	 client: 7 	 mal: 0 	 loss: nan 	 time: 1.41
+local epoch 0 	 client: 8 	 mal: 0 	 loss: nan 	 time: 1.41
+local epoch 0 	 client: 9 	 mal: 0 	 loss: nan 	 time: 1.41
+local epoch 0 	 client: 10 	 mal: 0 	 loss: nan 	 time: 1.41
+local epoch 0 	 client: 11 	 mal: 0 	 loss: nan 	 time: 1.41
+local epoch 0 	 client: 12 	 mal: 0 	 loss: nan 	 time: 1.41
+local epoch 0 	 client: 13 	 mal: 0 	 loss: nan 	 time: 1.41
+local epoch 0 	 client: 14 	 mal: 0 	 loss: nan 	 time: 1.41
+local epoch 0 	 client: 15 	 mal: 0 	 loss: nan 	 time: 1.41
+local epoch 0 	 client: 16 	 mal: 0 	 loss: nan 	 time: 1.41
+local epoch 0 	 client: 17 	 mal: 0 	 loss: nan 	 time: 1.41
+local epoch 0 	 client: 18 	 mal: 0 	 loss: nan 	 time: 1.41
+local epoch 0 	 client: 19 	 mal: 0 	 loss: nan 	 time: 1.41
+
+[GRADIENT DEBUG Rnd 86]
+Avg Malicious Delta Norm: nan
+Avg Honest Delta Norm:    nan
+Power Ratio (Mal/Hon):    nan
+[DBG rnd=86] logits mean=nan, std=nan, maxlogit mean=nan
+[DBG rnd=86] probs max mean=nan, pred entropy mean=nan
+[DBG rnd=86] preds bincount=[64, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+Clean ACC:              0.1000
+Attack Success Ratio:   0.0000
+Robustness ACC:           0.1111
+local epoch 0 	 client: 0 	 mal: 1 	 loss: nan 	 time: 16.33
+local epoch 0 	 client: 1 	 mal: 1 	 loss: nan 	 time: 16.46
+local epoch 0 	 client: 2 	 mal: 0 	 loss: nan 	 time: 1.41
+local epoch 0 	 client: 3 	 mal: 0 	 loss: nan 	 time: 1.41
+local epoch 0 	 client: 4 	 mal: 0 	 loss: nan 	 time: 1.41
+local epoch 0 	 client: 5 	 mal: 0 	 loss: nan 	 time: 1.41
+local epoch 0 	 client: 6 	 mal: 0 	 loss: nan 	 time: 1.41
+local epoch 0 	 client: 7 	 mal: 0 	 loss: nan 	 time: 1.41
+local epoch 0 	 client: 8 	 mal: 0 	 loss: nan 	 time: 1.41
+local epoch 0 	 client: 9 	 mal: 0 	 loss: nan 	 time: 1.41
+local epoch 0 	 client: 10 	 mal: 0 	 loss: nan 	 time: 1.41
+local epoch 0 	 client: 11 	 mal: 0 	 loss: nan 	 time: 1.41
+local epoch 0 	 client: 12 	 mal: 0 	 loss: nan 	 time: 1.41
+local epoch 0 	 client: 13 	 mal: 0 	 loss: nan 	 time: 1.41
+local epoch 0 	 client: 14 	 mal: 0 	 loss: nan 	 time: 1.41
+local epoch 0 	 client: 15 	 mal: 0 	 loss: nan 	 time: 1.41
+local epoch 0 	 client: 16 	 mal: 0 	 loss: nan 	 time: 1.41
+local epoch 0 	 client: 17 	 mal: 0 	 loss: nan 	 time: 1.41
+local epoch 0 	 client: 18 	 mal: 0 	 loss: nan 	 time: 1.41
+local epoch 0 	 client: 19 	 mal: 0 	 loss: nan 	 time: 1.41
+
+[GRADIENT DEBUG Rnd 87]
+Avg Malicious Delta Norm: nan
+Avg Honest Delta Norm:    nan
+Power Ratio (Mal/Hon):    nan
+[DBG rnd=87] logits mean=nan, std=nan, maxlogit mean=nan
+[DBG rnd=87] probs max mean=nan, pred entropy mean=nan
+[DBG rnd=87] preds bincount=[64, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+Clean ACC:              0.1000
+Attack Success Ratio:   0.0000
+Robustness ACC:           0.1111
+local epoch 0 	 client: 0 	 mal: 1 	 loss: nan 	 time: 16.31
+local epoch 0 	 client: 1 	 mal: 1 	 loss: nan 	 time: 16.31
+local epoch 0 	 client: 2 	 mal: 0 	 loss: nan 	 time: 1.41
+local epoch 0 	 client: 3 	 mal: 0 	 loss: nan 	 time: 1.41
+local epoch 0 	 client: 4 	 mal: 0 	 loss: nan 	 time: 1.41
+local epoch 0 	 client: 5 	 mal: 0 	 loss: nan 	 time: 1.41
+local epoch 0 	 client: 6 	 mal: 0 	 loss: nan 	 time: 1.41
+local epoch 0 	 client: 7 	 mal: 0 	 loss: nan 	 time: 1.41
+local epoch 0 	 client: 8 	 mal: 0 	 loss: nan 	 time: 1.41
+local epoch 0 	 client: 9 	 mal: 0 	 loss: nan 	 time: 1.41
+local epoch 0 	 client: 10 	 mal: 0 	 loss: nan 	 time: 1.41
+local epoch 0 	 client: 11 	 mal: 0 	 loss: nan 	 time: 1.41
+local epoch 0 	 client: 12 	 mal: 0 	 loss: nan 	 time: 1.41
+local epoch 0 	 client: 13 	 mal: 0 	 loss: nan 	 time: 1.41
+local epoch 0 	 client: 14 	 mal: 0 	 loss: nan 	 time: 1.41
+local epoch 0 	 client: 15 	 mal: 0 	 loss: nan 	 time: 1.41
+local epoch 0 	 client: 16 	 mal: 0 	 loss: nan 	 time: 1.41
+local epoch 0 	 client: 17 	 mal: 0 	 loss: nan 	 time: 1.41
+local epoch 0 	 client: 18 	 mal: 0 	 loss: nan 	 time: 1.41
+local epoch 0 	 client: 19 	 mal: 0 	 loss: nan 	 time: 1.41
+
+[GRADIENT DEBUG Rnd 88]
+Avg Malicious Delta Norm: nan
+Avg Honest Delta Norm:    nan
+Power Ratio (Mal/Hon):    nan
+[DBG rnd=88] logits mean=nan, std=nan, maxlogit mean=nan
+[DBG rnd=88] probs max mean=nan, pred entropy mean=nan
+[DBG rnd=88] preds bincount=[64, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+Clean ACC:              0.1000
+Attack Success Ratio:   0.0000
+Robustness ACC:           0.1111
+local epoch 0 	 client: 0 	 mal: 1 	 loss: nan 	 time: 16.49
+local epoch 0 	 client: 1 	 mal: 1 	 loss: nan 	 time: 16.33
+local epoch 0 	 client: 2 	 mal: 0 	 loss: nan 	 time: 1.41
+local epoch 0 	 client: 3 	 mal: 0 	 loss: nan 	 time: 1.41
+local epoch 0 	 client: 4 	 mal: 0 	 loss: nan 	 time: 1.41
+local epoch 0 	 client: 5 	 mal: 0 	 loss: nan 	 time: 1.41
+local epoch 0 	 client: 6 	 mal: 0 	 loss: nan 	 time: 1.41
+local epoch 0 	 client: 7 	 mal: 0 	 loss: nan 	 time: 1.41
+local epoch 0 	 client: 8 	 mal: 0 	 loss: nan 	 time: 1.41
+local epoch 0 	 client: 9 	 mal: 0 	 loss: nan 	 time: 1.41
+local epoch 0 	 client: 10 	 mal: 0 	 loss: nan 	 time: 1.41
+local epoch 0 	 client: 11 	 mal: 0 	 loss: nan 	 time: 1.41
+local epoch 0 	 client: 12 	 mal: 0 	 loss: nan 	 time: 1.41
+local epoch 0 	 client: 13 	 mal: 0 	 loss: nan 	 time: 1.41
+local epoch 0 	 client: 14 	 mal: 0 	 loss: nan 	 time: 1.41
+local epoch 0 	 client: 15 	 mal: 0 	 loss: nan 	 time: 1.41
+local epoch 0 	 client: 16 	 mal: 0 	 loss: nan 	 time: 1.41
+local epoch 0 	 client: 17 	 mal: 0 	 loss: nan 	 time: 1.41
+local epoch 0 	 client: 18 	 mal: 0 	 loss: nan 	 time: 1.41
+local epoch 0 	 client: 19 	 mal: 0 	 loss: nan 	 time: 1.41
+
+[GRADIENT DEBUG Rnd 89]
+Avg Malicious Delta Norm: nan
+Avg Honest Delta Norm:    nan
+Power Ratio (Mal/Hon):    nan
+[DBG rnd=89] logits mean=nan, std=nan, maxlogit mean=nan
+[DBG rnd=89] probs max mean=nan, pred entropy mean=nan
+[DBG rnd=89] preds bincount=[64, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+Clean ACC:              0.1000
+Attack Success Ratio:   0.0000
+Robustness ACC:           0.1111
+local epoch 0 	 client: 0 	 mal: 1 	 loss: nan 	 time: 16.33
+local epoch 0 	 client: 1 	 mal: 1 	 loss: nan 	 time: 16.47
+local epoch 0 	 client: 2 	 mal: 0 	 loss: nan 	 time: 1.41
+local epoch 0 	 client: 3 	 mal: 0 	 loss: nan 	 time: 1.41
+local epoch 0 	 client: 4 	 mal: 0 	 loss: nan 	 time: 1.41
+local epoch 0 	 client: 5 	 mal: 0 	 loss: nan 	 time: 1.41
+local epoch 0 	 client: 6 	 mal: 0 	 loss: nan 	 time: 1.41
+local epoch 0 	 client: 7 	 mal: 0 	 loss: nan 	 time: 1.41
+local epoch 0 	 client: 8 	 mal: 0 	 loss: nan 	 time: 1.41
+local epoch 0 	 client: 9 	 mal: 0 	 loss: nan 	 time: 1.41
+local epoch 0 	 client: 10 	 mal: 0 	 loss: nan 	 time: 1.41
+local epoch 0 	 client: 11 	 mal: 0 	 loss: nan 	 time: 1.41
+local epoch 0 	 client: 12 	 mal: 0 	 loss: nan 	 time: 1.41
+local epoch 0 	 client: 13 	 mal: 0 	 loss: nan 	 time: 1.41
+local epoch 0 	 client: 14 	 mal: 0 	 loss: nan 	 time: 1.41
+local epoch 0 	 client: 15 	 mal: 0 	 loss: nan 	 time: 1.41
+local epoch 0 	 client: 16 	 mal: 0 	 loss: nan 	 time: 1.41
+local epoch 0 	 client: 17 	 mal: 0 	 loss: nan 	 time: 1.41
+local epoch 0 	 client: 18 	 mal: 0 	 loss: nan 	 time: 1.41
+local epoch 0 	 client: 19 	 mal: 0 	 loss: nan 	 time: 1.41
+
+[GRADIENT DEBUG Rnd 90]
+Avg Malicious Delta Norm: nan
+Avg Honest Delta Norm:    nan
+Power Ratio (Mal/Hon):    nan
+[DBG rnd=90] logits mean=nan, std=nan, maxlogit mean=nan
+[DBG rnd=90] probs max mean=nan, pred entropy mean=nan
+[DBG rnd=90] preds bincount=[64, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+Clean ACC:              0.1000
+Attack Success Ratio:   0.0000
+Robustness ACC:           0.1111
+local epoch 0 	 client: 0 	 mal: 1 	 loss: nan 	 time: 16.34
+local epoch 0 	 client: 1 	 mal: 1 	 loss: nan 	 time: 16.33
+local epoch 0 	 client: 2 	 mal: 0 	 loss: nan 	 time: 1.41
+local epoch 0 	 client: 3 	 mal: 0 	 loss: nan 	 time: 1.41
+local epoch 0 	 client: 4 	 mal: 0 	 loss: nan 	 time: 1.41
+local epoch 0 	 client: 5 	 mal: 0 	 loss: nan 	 time: 1.41
+local epoch 0 	 client: 6 	 mal: 0 	 loss: nan 	 time: 1.41
+local epoch 0 	 client: 7 	 mal: 0 	 loss: nan 	 time: 1.41
+local epoch 0 	 client: 8 	 mal: 0 	 loss: nan 	 time: 1.41
+local epoch 0 	 client: 9 	 mal: 0 	 loss: nan 	 time: 1.41
+local epoch 0 	 client: 10 	 mal: 0 	 loss: nan 	 time: 1.41
+local epoch 0 	 client: 11 	 mal: 0 	 loss: nan 	 time: 1.41
+local epoch 0 	 client: 12 	 mal: 0 	 loss: nan 	 time: 1.41
+local epoch 0 	 client: 13 	 mal: 0 	 loss: nan 	 time: 1.41
+local epoch 0 	 client: 14 	 mal: 0 	 loss: nan 	 time: 1.41
+local epoch 0 	 client: 15 	 mal: 0 	 loss: nan 	 time: 1.41
+local epoch 0 	 client: 16 	 mal: 0 	 loss: nan 	 time: 1.41
+local epoch 0 	 client: 17 	 mal: 0 	 loss: nan 	 time: 1.41
+local epoch 0 	 client: 18 	 mal: 0 	 loss: nan 	 time: 1.41
+local epoch 0 	 client: 19 	 mal: 0 	 loss: nan 	 time: 1.41
+
+[GRADIENT DEBUG Rnd 91]
+Avg Malicious Delta Norm: nan
+Avg Honest Delta Norm:    nan
+Power Ratio (Mal/Hon):    nan
+[DBG rnd=91] logits mean=nan, std=nan, maxlogit mean=nan
+[DBG rnd=91] probs max mean=nan, pred entropy mean=nan
+[DBG rnd=91] preds bincount=[64, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+Clean ACC:              0.1000
+Attack Success Ratio:   0.0000
+Robustness ACC:           0.1111
+local epoch 0 	 client: 0 	 mal: 1 	 loss: nan 	 time: 16.50
+local epoch 0 	 client: 1 	 mal: 1 	 loss: nan 	 time: 16.34
+local epoch 0 	 client: 2 	 mal: 0 	 loss: nan 	 time: 1.41
+local epoch 0 	 client: 3 	 mal: 0 	 loss: nan 	 time: 1.41
+local epoch 0 	 client: 4 	 mal: 0 	 loss: nan 	 time: 1.41
+local epoch 0 	 client: 5 	 mal: 0 	 loss: nan 	 time: 1.41
+local epoch 0 	 client: 6 	 mal: 0 	 loss: nan 	 time: 1.41
+local epoch 0 	 client: 7 	 mal: 0 	 loss: nan 	 time: 1.41
+local epoch 0 	 client: 8 	 mal: 0 	 loss: nan 	 time: 1.41
+local epoch 0 	 client: 9 	 mal: 0 	 loss: nan 	 time: 1.41
+local epoch 0 	 client: 10 	 mal: 0 	 loss: nan 	 time: 1.41
+local epoch 0 	 client: 11 	 mal: 0 	 loss: nan 	 time: 1.41
+local epoch 0 	 client: 12 	 mal: 0 	 loss: nan 	 time: 1.41
+local epoch 0 	 client: 13 	 mal: 0 	 loss: nan 	 time: 1.41
+local epoch 0 	 client: 14 	 mal: 0 	 loss: nan 	 time: 1.41
+local epoch 0 	 client: 15 	 mal: 0 	 loss: nan 	 time: 1.41
+local epoch 0 	 client: 16 	 mal: 0 	 loss: nan 	 time: 1.41
+local epoch 0 	 client: 17 	 mal: 0 	 loss: nan 	 time: 1.41
+local epoch 0 	 client: 18 	 mal: 0 	 loss: nan 	 time: 1.41
+local epoch 0 	 client: 19 	 mal: 0 	 loss: nan 	 time: 1.41
+
+[GRADIENT DEBUG Rnd 92]
+Avg Malicious Delta Norm: nan
+Avg Honest Delta Norm:    nan
+Power Ratio (Mal/Hon):    nan
+[DBG rnd=92] logits mean=nan, std=nan, maxlogit mean=nan
+[DBG rnd=92] probs max mean=nan, pred entropy mean=nan
+[DBG rnd=92] preds bincount=[64, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+Clean ACC:              0.1000
+Attack Success Ratio:   0.0000
+Robustness ACC:           0.1111
+local epoch 0 	 client: 0 	 mal: 1 	 loss: nan 	 time: 16.33
+local epoch 0 	 client: 1 	 mal: 1 	 loss: nan 	 time: 16.34
+local epoch 0 	 client: 2 	 mal: 0 	 loss: nan 	 time: 1.41
+local epoch 0 	 client: 3 	 mal: 0 	 loss: nan 	 time: 1.41
+local epoch 0 	 client: 4 	 mal: 0 	 loss: nan 	 time: 1.41
+local epoch 0 	 client: 5 	 mal: 0 	 loss: nan 	 time: 1.41
+local epoch 0 	 client: 6 	 mal: 0 	 loss: nan 	 time: 1.41
+local epoch 0 	 client: 7 	 mal: 0 	 loss: nan 	 time: 1.41
+local epoch 0 	 client: 8 	 mal: 0 	 loss: nan 	 time: 1.41
+local epoch 0 	 client: 9 	 mal: 0 	 loss: nan 	 time: 1.41
+local epoch 0 	 client: 10 	 mal: 0 	 loss: nan 	 time: 1.41
+local epoch 0 	 client: 11 	 mal: 0 	 loss: nan 	 time: 1.41
+local epoch 0 	 client: 12 	 mal: 0 	 loss: nan 	 time: 1.41
+local epoch 0 	 client: 13 	 mal: 0 	 loss: nan 	 time: 1.41
+local epoch 0 	 client: 14 	 mal: 0 	 loss: nan 	 time: 1.41
+local epoch 0 	 client: 15 	 mal: 0 	 loss: nan 	 time: 1.41
+local epoch 0 	 client: 16 	 mal: 0 	 loss: nan 	 time: 1.41
+local epoch 0 	 client: 17 	 mal: 0 	 loss: nan 	 time: 1.41
+local epoch 0 	 client: 18 	 mal: 0 	 loss: nan 	 time: 1.41
+local epoch 0 	 client: 19 	 mal: 0 	 loss: nan 	 time: 1.41
+
+[GRADIENT DEBUG Rnd 93]
+Avg Malicious Delta Norm: nan
+Avg Honest Delta Norm:    nan
+Power Ratio (Mal/Hon):    nan
+[DBG rnd=93] logits mean=nan, std=nan, maxlogit mean=nan
+[DBG rnd=93] probs max mean=nan, pred entropy mean=nan
+[DBG rnd=93] preds bincount=[64, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+Clean ACC:              0.1000
+Attack Success Ratio:   0.0000
+Robustness ACC:           0.1111
+local epoch 0 	 client: 0 	 mal: 1 	 loss: nan 	 time: 16.50
+local epoch 0 	 client: 1 	 mal: 1 	 loss: nan 	 time: 16.33
+local epoch 0 	 client: 2 	 mal: 0 	 loss: nan 	 time: 1.41
+local epoch 0 	 client: 3 	 mal: 0 	 loss: nan 	 time: 1.41
+local epoch 0 	 client: 4 	 mal: 0 	 loss: nan 	 time: 1.41
+local epoch 0 	 client: 5 	 mal: 0 	 loss: nan 	 time: 1.41
+local epoch 0 	 client: 6 	 mal: 0 	 loss: nan 	 time: 1.41
+local epoch 0 	 client: 7 	 mal: 0 	 loss: nan 	 time: 1.41
+local epoch 0 	 client: 8 	 mal: 0 	 loss: nan 	 time: 1.41
+local epoch 0 	 client: 9 	 mal: 0 	 loss: nan 	 time: 1.41
+local epoch 0 	 client: 10 	 mal: 0 	 loss: nan 	 time: 1.41
+local epoch 0 	 client: 11 	 mal: 0 	 loss: nan 	 time: 1.41
+local epoch 0 	 client: 12 	 mal: 0 	 loss: nan 	 time: 1.41
+local epoch 0 	 client: 13 	 mal: 0 	 loss: nan 	 time: 1.41
+local epoch 0 	 client: 14 	 mal: 0 	 loss: nan 	 time: 1.41
+local epoch 0 	 client: 15 	 mal: 0 	 loss: nan 	 time: 1.41
+local epoch 0 	 client: 16 	 mal: 0 	 loss: nan 	 time: 1.42
+local epoch 0 	 client: 17 	 mal: 0 	 loss: nan 	 time: 1.45
+local epoch 0 	 client: 18 	 mal: 0 	 loss: nan 	 time: 1.45
+local epoch 0 	 client: 19 	 mal: 0 	 loss: nan 	 time: 1.45
+
+[GRADIENT DEBUG Rnd 94]
+Avg Malicious Delta Norm: nan
+Avg Honest Delta Norm:    nan
+Power Ratio (Mal/Hon):    nan
+[DBG rnd=94] logits mean=nan, std=nan, maxlogit mean=nan
+[DBG rnd=94] probs max mean=nan, pred entropy mean=nan
+[DBG rnd=94] preds bincount=[64, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+Clean ACC:              0.1000
+Attack Success Ratio:   0.0000
+Robustness ACC:           0.1111
+local epoch 0 	 client: 0 	 mal: 1 	 loss: nan 	 time: 16.32
+local epoch 0 	 client: 1 	 mal: 1 	 loss: nan 	 time: 16.48
+local epoch 0 	 client: 2 	 mal: 0 	 loss: nan 	 time: 1.47
+local epoch 0 	 client: 3 	 mal: 0 	 loss: nan 	 time: 1.45
+local epoch 0 	 client: 4 	 mal: 0 	 loss: nan 	 time: 1.44
+local epoch 0 	 client: 5 	 mal: 0 	 loss: nan 	 time: 1.45
+local epoch 0 	 client: 6 	 mal: 0 	 loss: nan 	 time: 1.48
+local epoch 0 	 client: 7 	 mal: 0 	 loss: nan 	 time: 1.41
+local epoch 0 	 client: 8 	 mal: 0 	 loss: nan 	 time: 1.45
+local epoch 0 	 client: 9 	 mal: 0 	 loss: nan 	 time: 1.45
+local epoch 0 	 client: 10 	 mal: 0 	 loss: nan 	 time: 1.45
+local epoch 0 	 client: 11 	 mal: 0 	 loss: nan 	 time: 1.45
+local epoch 0 	 client: 12 	 mal: 0 	 loss: nan 	 time: 1.45
+local epoch 0 	 client: 13 	 mal: 0 	 loss: nan 	 time: 1.45
+local epoch 0 	 client: 14 	 mal: 0 	 loss: nan 	 time: 1.45
+local epoch 0 	 client: 15 	 mal: 0 	 loss: nan 	 time: 1.45
+local epoch 0 	 client: 16 	 mal: 0 	 loss: nan 	 time: 1.45
+local epoch 0 	 client: 17 	 mal: 0 	 loss: nan 	 time: 1.45
+local epoch 0 	 client: 18 	 mal: 0 	 loss: nan 	 time: 1.45
+local epoch 0 	 client: 19 	 mal: 0 	 loss: nan 	 time: 1.41
+
+[GRADIENT DEBUG Rnd 95]
+Avg Malicious Delta Norm: nan
+Avg Honest Delta Norm:    nan
+Power Ratio (Mal/Hon):    nan
+[DBG rnd=95] logits mean=nan, std=nan, maxlogit mean=nan
+[DBG rnd=95] probs max mean=nan, pred entropy mean=nan
+[DBG rnd=95] preds bincount=[64, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+Clean ACC:              0.1000
+Attack Success Ratio:   0.0000
+Robustness ACC:           0.1111
+local epoch 0 	 client: 0 	 mal: 1 	 loss: nan 	 time: 16.33
+local epoch 0 	 client: 1 	 mal: 1 	 loss: nan 	 time: 16.34
+local epoch 0 	 client: 2 	 mal: 0 	 loss: nan 	 time: 1.41
+local epoch 0 	 client: 3 	 mal: 0 	 loss: nan 	 time: 1.41
+local epoch 0 	 client: 4 	 mal: 0 	 loss: nan 	 time: 1.41
+local epoch 0 	 client: 5 	 mal: 0 	 loss: nan 	 time: 1.41
+local epoch 0 	 client: 6 	 mal: 0 	 loss: nan 	 time: 1.41
+local epoch 0 	 client: 7 	 mal: 0 	 loss: nan 	 time: 1.41
+local epoch 0 	 client: 8 	 mal: 0 	 loss: nan 	 time: 1.41
+local epoch 0 	 client: 9 	 mal: 0 	 loss: nan 	 time: 1.41
+local epoch 0 	 client: 10 	 mal: 0 	 loss: nan 	 time: 1.41
+local epoch 0 	 client: 11 	 mal: 0 	 loss: nan 	 time: 1.41
+local epoch 0 	 client: 12 	 mal: 0 	 loss: nan 	 time: 1.41
+local epoch 0 	 client: 13 	 mal: 0 	 loss: nan 	 time: 1.41
+local epoch 0 	 client: 14 	 mal: 0 	 loss: nan 	 time: 1.41
+local epoch 0 	 client: 15 	 mal: 0 	 loss: nan 	 time: 1.41
+local epoch 0 	 client: 16 	 mal: 0 	 loss: nan 	 time: 1.41
+local epoch 0 	 client: 17 	 mal: 0 	 loss: nan 	 time: 1.41
+local epoch 0 	 client: 18 	 mal: 0 	 loss: nan 	 time: 1.41
+local epoch 0 	 client: 19 	 mal: 0 	 loss: nan 	 time: 1.41
+
+[GRADIENT DEBUG Rnd 96]
+Avg Malicious Delta Norm: nan
+Avg Honest Delta Norm:    nan
+Power Ratio (Mal/Hon):    nan
+[DBG rnd=96] logits mean=nan, std=nan, maxlogit mean=nan
+[DBG rnd=96] probs max mean=nan, pred entropy mean=nan
+[DBG rnd=96] preds bincount=[64, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+Clean ACC:              0.1000
+Attack Success Ratio:   0.0000
+Robustness ACC:           0.1111
+local epoch 0 	 client: 0 	 mal: 1 	 loss: nan 	 time: 16.48
+local epoch 0 	 client: 1 	 mal: 1 	 loss: nan 	 time: 16.32
+local epoch 0 	 client: 2 	 mal: 0 	 loss: nan 	 time: 1.41
+local epoch 0 	 client: 3 	 mal: 0 	 loss: nan 	 time: 1.41
+wandb: - 0.006 MB of 0.006 MB uploadedwandb: \ 0.006 MB of 0.006 MB uploadedwandb: | 0.006 MB of 0.164 MB uploadedwandb: / 0.008 MB of 0.164 MB uploadedwandb: - 0.008 MB of 0.164 MB uploadedwandb: \ 0.164 MB of 0.164 MB uploadedwandb:                                                                                
+wandb: 
+wandb: Run history:
+wandb:            asr ██▂█▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁
+wandb:      clean_acc ▁▃█▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁
+wandb: robustness acc ▁▂█▁▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄
+wandb:          round ▁▁▁▁▂▂▂▂▂▃▃▃▃▃▃▄▄▄▄▄▅▅▅▅▅▅▆▆▆▆▆▇▇▇▇▇▇███
+wandb: 
+wandb: Run summary:
+wandb:            asr 0.0
+wandb:      clean_acc 0.1
+wandb: robustness acc 0.11111
+wandb:          round 100
+wandb: 
+wandb: 🚀 View run cifar10_alignment_avg_avg_baseline at: https://wandb.ai/aleksic-milicica-tu-wien/split-fed-backdoor-3/runs/0jr4m6bs
+wandb: ️⚡ View job at https://wandb.ai/aleksic-milicica-tu-wien/split-fed-backdoor-3/jobs/QXJ0aWZhY3RDb2xsZWN0aW9uOjk0NTY0MTM5Mg==/version_details/v1
+wandb: Synced 5 W&B file(s), 0 media file(s), 0 artifact file(s) and 0 other file(s)
+wandb: Find logs at: ./wandb/run-20260320_043309-0jr4m6bs/logs
+local epoch 0 	 client: 4 	 mal: 0 	 loss: nan 	 time: 1.41
+local epoch 0 	 client: 5 	 mal: 0 	 loss: nan 	 time: 1.41
+local epoch 0 	 client: 6 	 mal: 0 	 loss: nan 	 time: 1.41
+local epoch 0 	 client: 7 	 mal: 0 	 loss: nan 	 time: 1.41
+local epoch 0 	 client: 8 	 mal: 0 	 loss: nan 	 time: 1.41
+local epoch 0 	 client: 9 	 mal: 0 	 loss: nan 	 time: 1.41
+local epoch 0 	 client: 10 	 mal: 0 	 loss: nan 	 time: 1.41
+local epoch 0 	 client: 11 	 mal: 0 	 loss: nan 	 time: 1.41
+local epoch 0 	 client: 12 	 mal: 0 	 loss: nan 	 time: 1.41
+local epoch 0 	 client: 13 	 mal: 0 	 loss: nan 	 time: 1.41
+local epoch 0 	 client: 14 	 mal: 0 	 loss: nan 	 time: 1.41
+local epoch 0 	 client: 15 	 mal: 0 	 loss: nan 	 time: 1.41
+local epoch 0 	 client: 16 	 mal: 0 	 loss: nan 	 time: 1.41
+local epoch 0 	 client: 17 	 mal: 0 	 loss: nan 	 time: 1.41
+local epoch 0 	 client: 18 	 mal: 0 	 loss: nan 	 time: 1.41
+local epoch 0 	 client: 19 	 mal: 0 	 loss: nan 	 time: 1.41
+
+[GRADIENT DEBUG Rnd 97]
+Avg Malicious Delta Norm: nan
+Avg Honest Delta Norm:    nan
+Power Ratio (Mal/Hon):    nan
+[DBG rnd=97] logits mean=nan, std=nan, maxlogit mean=nan
+[DBG rnd=97] probs max mean=nan, pred entropy mean=nan
+[DBG rnd=97] preds bincount=[64, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+Clean ACC:              0.1000
+Attack Success Ratio:   0.0000
+Robustness ACC:           0.1111
+local epoch 0 	 client: 0 	 mal: 1 	 loss: nan 	 time: 16.33
+local epoch 0 	 client: 1 	 mal: 1 	 loss: nan 	 time: 16.34
+local epoch 0 	 client: 2 	 mal: 0 	 loss: nan 	 time: 1.41
+local epoch 0 	 client: 3 	 mal: 0 	 loss: nan 	 time: 1.41
+local epoch 0 	 client: 4 	 mal: 0 	 loss: nan 	 time: 1.41
+local epoch 0 	 client: 5 	 mal: 0 	 loss: nan 	 time: 1.41
+local epoch 0 	 client: 6 	 mal: 0 	 loss: nan 	 time: 1.41
+local epoch 0 	 client: 7 	 mal: 0 	 loss: nan 	 time: 1.41
+local epoch 0 	 client: 8 	 mal: 0 	 loss: nan 	 time: 1.41
+local epoch 0 	 client: 9 	 mal: 0 	 loss: nan 	 time: 1.41
+local epoch 0 	 client: 10 	 mal: 0 	 loss: nan 	 time: 1.41
+local epoch 0 	 client: 11 	 mal: 0 	 loss: nan 	 time: 1.41
+local epoch 0 	 client: 12 	 mal: 0 	 loss: nan 	 time: 1.41
+local epoch 0 	 client: 13 	 mal: 0 	 loss: nan 	 time: 1.41
+local epoch 0 	 client: 14 	 mal: 0 	 loss: nan 	 time: 1.41
+local epoch 0 	 client: 15 	 mal: 0 	 loss: nan 	 time: 1.41
+local epoch 0 	 client: 16 	 mal: 0 	 loss: nan 	 time: 1.41
+local epoch 0 	 client: 17 	 mal: 0 	 loss: nan 	 time: 1.41
+local epoch 0 	 client: 18 	 mal: 0 	 loss: nan 	 time: 1.41
+local epoch 0 	 client: 19 	 mal: 0 	 loss: nan 	 time: 1.41
+
+[GRADIENT DEBUG Rnd 98]
+Avg Malicious Delta Norm: nan
+Avg Honest Delta Norm:    nan
+Power Ratio (Mal/Hon):    nan
+[DBG rnd=98] logits mean=nan, std=nan, maxlogit mean=nan
+[DBG rnd=98] probs max mean=nan, pred entropy mean=nan
+[DBG rnd=98] preds bincount=[64, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+Clean ACC:              0.1000
+Attack Success Ratio:   0.0000
+Robustness ACC:           0.1111
+local epoch 0 	 client: 0 	 mal: 1 	 loss: nan 	 time: 16.50
+local epoch 0 	 client: 1 	 mal: 1 	 loss: nan 	 time: 16.31
+local epoch 0 	 client: 2 	 mal: 0 	 loss: nan 	 time: 1.47
+local epoch 0 	 client: 3 	 mal: 0 	 loss: nan 	 time: 1.45
+local epoch 0 	 client: 4 	 mal: 0 	 loss: nan 	 time: 1.45
+local epoch 0 	 client: 5 	 mal: 0 	 loss: nan 	 time: 1.45
+local epoch 0 	 client: 6 	 mal: 0 	 loss: nan 	 time: 1.45
+local epoch 0 	 client: 7 	 mal: 0 	 loss: nan 	 time: 1.45
+local epoch 0 	 client: 8 	 mal: 0 	 loss: nan 	 time: 1.44
+local epoch 0 	 client: 9 	 mal: 0 	 loss: nan 	 time: 1.41
+local epoch 0 	 client: 10 	 mal: 0 	 loss: nan 	 time: 1.41
+local epoch 0 	 client: 11 	 mal: 0 	 loss: nan 	 time: 1.41
+local epoch 0 	 client: 12 	 mal: 0 	 loss: nan 	 time: 1.41
+local epoch 0 	 client: 13 	 mal: 0 	 loss: nan 	 time: 1.41
+local epoch 0 	 client: 14 	 mal: 0 	 loss: nan 	 time: 1.41
+local epoch 0 	 client: 15 	 mal: 0 	 loss: nan 	 time: 1.41
+local epoch 0 	 client: 16 	 mal: 0 	 loss: nan 	 time: 1.41
+local epoch 0 	 client: 17 	 mal: 0 	 loss: nan 	 time: 1.41
+local epoch 0 	 client: 18 	 mal: 0 	 loss: nan 	 time: 1.41
+local epoch 0 	 client: 19 	 mal: 0 	 loss: nan 	 time: 1.41
+
+[GRADIENT DEBUG Rnd 99]
+Avg Malicious Delta Norm: nan
+Avg Honest Delta Norm:    nan
+Power Ratio (Mal/Hon):    nan
+[DBG rnd=99] logits mean=nan, std=nan, maxlogit mean=nan
+[DBG rnd=99] probs max mean=nan, pred entropy mean=nan
+[DBG rnd=99] preds bincount=[64, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+Clean ACC:              0.1000
+Attack Success Ratio:   0.0000
+Robustness ACC:           0.1111
+local epoch 0 	 client: 0 	 mal: 1 	 loss: nan 	 time: 16.34
+local epoch 0 	 client: 1 	 mal: 1 	 loss: nan 	 time: 16.49
+local epoch 0 	 client: 2 	 mal: 0 	 loss: nan 	 time: 1.41
+local epoch 0 	 client: 3 	 mal: 0 	 loss: nan 	 time: 1.41
+local epoch 0 	 client: 4 	 mal: 0 	 loss: nan 	 time: 1.41
+local epoch 0 	 client: 5 	 mal: 0 	 loss: nan 	 time: 1.41
+local epoch 0 	 client: 6 	 mal: 0 	 loss: nan 	 time: 1.41
+local epoch 0 	 client: 7 	 mal: 0 	 loss: nan 	 time: 1.41
+local epoch 0 	 client: 8 	 mal: 0 	 loss: nan 	 time: 1.41
+local epoch 0 	 client: 9 	 mal: 0 	 loss: nan 	 time: 1.41
+local epoch 0 	 client: 10 	 mal: 0 	 loss: nan 	 time: 1.41
+local epoch 0 	 client: 11 	 mal: 0 	 loss: nan 	 time: 1.41
+local epoch 0 	 client: 12 	 mal: 0 	 loss: nan 	 time: 1.41
+local epoch 0 	 client: 13 	 mal: 0 	 loss: nan 	 time: 1.41
+local epoch 0 	 client: 14 	 mal: 0 	 loss: nan 	 time: 1.41
+local epoch 0 	 client: 15 	 mal: 0 	 loss: nan 	 time: 1.41
+local epoch 0 	 client: 16 	 mal: 0 	 loss: nan 	 time: 1.41
+local epoch 0 	 client: 17 	 mal: 0 	 loss: nan 	 time: 1.41
+local epoch 0 	 client: 18 	 mal: 0 	 loss: nan 	 time: 1.41
+local epoch 0 	 client: 19 	 mal: 0 	 loss: nan 	 time: 1.41
+
+[GRADIENT DEBUG Rnd 100]
+Avg Malicious Delta Norm: nan
+Avg Honest Delta Norm:    nan
+Power Ratio (Mal/Hon):    nan
+[DBG rnd=100] logits mean=nan, std=nan, maxlogit mean=nan
+[DBG rnd=100] probs max mean=nan, pred entropy mean=nan
+[DBG rnd=100] preds bincount=[64, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+Clean ACC:              0.1000
+Attack Success Ratio:   0.0000
+Robustness ACC:           0.1111

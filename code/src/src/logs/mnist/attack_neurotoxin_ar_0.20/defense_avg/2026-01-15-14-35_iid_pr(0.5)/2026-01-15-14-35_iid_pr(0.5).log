@@ -1,0 +1,62 @@
+2026-01-15 14:35:13,450 [MainThread  ] [INFO ]  Namespace(data='mnist', num_agents=20, agent_frac=1.0, num_corrupt=4, rounds=25, local_ep=1, bs=64, client_lr=0.01, server_lr=0.01, target_class=7, poison_frac=0.5, pattern_type='plus', theta=8, theta_ld=10, snap=1, device='cuda:3', num_workers=0, dense_ratio=0.25, anneal_factor=0.0001, se_threshold=0.0001, non_iid=False, debug=False, beta=0.5, attack='neurotoxin', aggr='avg', lr_decay=0.99, momentum=0.9, mask_init='ERK', wd=0.0001, same_mask=1, cease_poison=100000, exp_name_extra='', super_power=False, clean=False, sparsity=0.3, lambda_s=1.0, lambda_c=1.0, num_target=10, exp_name='iid_pr(0.5)')
+2026-01-15 14:35:15,605 [MainThread  ] [INFO ]  build client:0 mal:1 data_num:3006
+2026-01-15 14:35:15,675 [MainThread  ] [INFO ]  build client:1 mal:1 data_num:3005
+2026-01-15 14:35:15,745 [MainThread  ] [INFO ]  build client:2 mal:1 data_num:3003
+2026-01-15 14:35:15,817 [MainThread  ] [INFO ]  build client:3 mal:1 data_num:3002
+2026-01-15 14:35:15,824 [MainThread  ] [INFO ]  build client:4 mal:0 data_num:3002
+2026-01-15 14:35:15,830 [MainThread  ] [INFO ]  build client:5 mal:0 data_num:3001
+2026-01-15 14:35:15,837 [MainThread  ] [INFO ]  build client:6 mal:0 data_num:3001
+2026-01-15 14:35:15,843 [MainThread  ] [INFO ]  build client:7 mal:0 data_num:3001
+2026-01-15 14:35:15,850 [MainThread  ] [INFO ]  build client:8 mal:0 data_num:3001
+2026-01-15 14:35:15,856 [MainThread  ] [INFO ]  build client:9 mal:0 data_num:3000
+2026-01-15 14:35:15,863 [MainThread  ] [INFO ]  build client:10 mal:0 data_num:3000
+2026-01-15 14:35:15,874 [MainThread  ] [INFO ]  build client:11 mal:0 data_num:2998
+2026-01-15 14:35:15,890 [MainThread  ] [INFO ]  build client:12 mal:0 data_num:2998
+2026-01-15 14:35:15,905 [MainThread  ] [INFO ]  build client:13 mal:0 data_num:2998
+2026-01-15 14:35:15,921 [MainThread  ] [INFO ]  build client:14 mal:0 data_num:2998
+2026-01-15 14:35:15,938 [MainThread  ] [INFO ]  build client:15 mal:0 data_num:2998
+2026-01-15 14:35:15,952 [MainThread  ] [INFO ]  build client:16 mal:0 data_num:2998
+2026-01-15 14:35:15,958 [MainThread  ] [INFO ]  build client:17 mal:0 data_num:2998
+2026-01-15 14:35:15,964 [MainThread  ] [INFO ]  build client:18 mal:0 data_num:2996
+2026-01-15 14:35:15,971 [MainThread  ] [INFO ]  build client:19 mal:0 data_num:2996
+2026-01-15 14:35:15,971 [MainThread  ] [INFO ]  --------round 1 ------------
+2026-01-15 14:35:16,562 [MainThread  ] [INFO ]  Namespace(data='mnist', num_agents=20, agent_frac=1.0, num_corrupt=4, rounds=25, local_ep=1, bs=64, client_lr=0.01, server_lr=0.01, target_class=7, poison_frac=0.5, pattern_type='plus', theta=8, theta_ld=10, snap=1, device='cuda:3', num_workers=0, dense_ratio=0.25, anneal_factor=0.0001, se_threshold=0.0001, non_iid=False, debug=False, beta=0.5, attack='neurotoxin', aggr='avg', lr_decay=0.99, momentum=0.9, mask_init='ERK', wd=0.0001, same_mask=1, cease_poison=100000, exp_name_extra='', super_power=False, clean=False, sparsity=0.3, lambda_s=1.0, lambda_c=1.0, num_target=10, exp_name='iid_pr(0.5)')
+2026-01-15 14:35:21,792 [MainThread  ] [INFO ]  build client:0 mal:1 data_num:3006
+2026-01-15 14:35:21,868 [MainThread  ] [INFO ]  build client:1 mal:1 data_num:3005
+2026-01-15 14:35:21,944 [MainThread  ] [INFO ]  build client:2 mal:1 data_num:3003
+2026-01-15 14:35:22,016 [MainThread  ] [INFO ]  build client:3 mal:1 data_num:3002
+2026-01-15 14:35:22,023 [MainThread  ] [INFO ]  build client:4 mal:0 data_num:3002
+2026-01-15 14:35:22,029 [MainThread  ] [INFO ]  build client:5 mal:0 data_num:3001
+2026-01-15 14:35:22,036 [MainThread  ] [INFO ]  build client:6 mal:0 data_num:3001
+2026-01-15 14:35:22,042 [MainThread  ] [INFO ]  build client:7 mal:0 data_num:3001
+2026-01-15 14:35:22,048 [MainThread  ] [INFO ]  build client:8 mal:0 data_num:3001
+2026-01-15 14:35:22,054 [MainThread  ] [INFO ]  build client:9 mal:0 data_num:3000
+2026-01-15 14:35:22,061 [MainThread  ] [INFO ]  build client:10 mal:0 data_num:3000
+2026-01-15 14:35:22,067 [MainThread  ] [INFO ]  build client:11 mal:0 data_num:2998
+2026-01-15 14:35:22,073 [MainThread  ] [INFO ]  build client:12 mal:0 data_num:2998
+2026-01-15 14:35:22,080 [MainThread  ] [INFO ]  build client:13 mal:0 data_num:2998
+2026-01-15 14:35:22,086 [MainThread  ] [INFO ]  build client:14 mal:0 data_num:2998
+2026-01-15 14:35:22,092 [MainThread  ] [INFO ]  build client:15 mal:0 data_num:2998
+2026-01-15 14:35:22,098 [MainThread  ] [INFO ]  build client:16 mal:0 data_num:2998
+2026-01-15 14:35:22,104 [MainThread  ] [INFO ]  build client:17 mal:0 data_num:2998
+2026-01-15 14:35:22,111 [MainThread  ] [INFO ]  build client:18 mal:0 data_num:2996
+2026-01-15 14:35:22,117 [MainThread  ] [INFO ]  build client:19 mal:0 data_num:2996
+2026-01-15 14:35:22,117 [MainThread  ] [INFO ]  --------round 1 ------------
+2026-01-15 14:35:59,937 [MainThread  ] [INFO ]  ---------Test 1 ------------
+2026-01-15 14:36:08,723 [MainThread  ] [INFO ]  Clean ACC:              0.1028
+2026-01-15 14:36:08,723 [MainThread  ] [INFO ]  Attack Success Ratio:   1.0000
+2026-01-15 14:36:08,723 [MainThread  ] [INFO ]  Robustness ACC:           0.0000
+2026-01-15 14:36:08,723 [MainThread  ] [INFO ]  ------------------------------
+2026-01-15 14:36:08,723 [MainThread  ] [INFO ]  --------round 2 ------------
+2026-01-15 14:36:41,383 [MainThread  ] [INFO ]  ---------Test 2 ------------
+2026-01-15 14:36:50,046 [MainThread  ] [INFO ]  Clean ACC:              0.1028
+2026-01-15 14:36:50,046 [MainThread  ] [INFO ]  Attack Success Ratio:   1.0000
+2026-01-15 14:36:50,046 [MainThread  ] [INFO ]  Robustness ACC:           0.0000
+2026-01-15 14:36:50,046 [MainThread  ] [INFO ]  ------------------------------
+2026-01-15 14:36:50,046 [MainThread  ] [INFO ]  --------round 3 ------------
+2026-01-15 14:37:21,898 [MainThread  ] [INFO ]  ---------Test 3 ------------
+2026-01-15 14:37:30,516 [MainThread  ] [INFO ]  Clean ACC:              0.4675
+2026-01-15 14:37:30,516 [MainThread  ] [INFO ]  Attack Success Ratio:   0.2684
+2026-01-15 14:37:30,516 [MainThread  ] [INFO ]  Robustness ACC:           0.3824
+2026-01-15 14:37:30,516 [MainThread  ] [INFO ]  ------------------------------
+2026-01-15 14:37:30,516 [MainThread  ] [INFO ]  --------round 4 ------------

@@ -1,0 +1,68 @@
+Traceback (most recent call last):
+  File "/newstorage4/maleksic/fl-backdoors/code/src/src_more/sfl.py", line 220, in <module>
+    wandb.init(
+  File "/newstorage4/maleksic/fl-backdoors/env/lib/python3.10/site-packages/wandb/sdk/wandb_init.py", line 1195, in init
+    raise e
+  File "/newstorage4/maleksic/fl-backdoors/env/lib/python3.10/site-packages/wandb/sdk/wandb_init.py", line 1172, in init
+    wi.setup(kwargs)
+  File "/newstorage4/maleksic/fl-backdoors/env/lib/python3.10/site-packages/wandb/sdk/wandb_init.py", line 189, in setup
+    self._wl = wandb_setup.setup(settings=setup_settings)
+  File "/newstorage4/maleksic/fl-backdoors/env/lib/python3.10/site-packages/wandb/sdk/wandb_setup.py", line 327, in setup
+    ret = _setup(settings=settings)
+  File "/newstorage4/maleksic/fl-backdoors/env/lib/python3.10/site-packages/wandb/sdk/wandb_setup.py", line 320, in _setup
+    wl = _WandbSetup(settings=settings)
+  File "/newstorage4/maleksic/fl-backdoors/env/lib/python3.10/site-packages/wandb/sdk/wandb_setup.py", line 303, in __init__
+    _WandbSetup._instance = _WandbSetup__WandbSetup(settings=settings, pid=pid)
+  File "/newstorage4/maleksic/fl-backdoors/env/lib/python3.10/site-packages/wandb/sdk/wandb_setup.py", line 114, in __init__
+    self._setup()
+  File "/newstorage4/maleksic/fl-backdoors/env/lib/python3.10/site-packages/wandb/sdk/wandb_setup.py", line 250, in _setup
+    self._setup_manager()
+  File "/newstorage4/maleksic/fl-backdoors/env/lib/python3.10/site-packages/wandb/sdk/wandb_setup.py", line 277, in _setup_manager
+    self._manager = wandb_manager._Manager(settings=self._settings)
+  File "/newstorage4/maleksic/fl-backdoors/env/lib/python3.10/site-packages/wandb/sdk/wandb_manager.py", line 139, in __init__
+    self._service.start()
+  File "/newstorage4/maleksic/fl-backdoors/env/lib/python3.10/site-packages/wandb/sdk/service/service.py", line 245, in start
+    self._launch_server()
+  File "/newstorage4/maleksic/fl-backdoors/env/lib/python3.10/site-packages/wandb/sdk/service/service.py", line 239, in _launch_server
+    _sentry.reraise(e)
+  File "/newstorage4/maleksic/fl-backdoors/env/lib/python3.10/site-packages/wandb/analytics/sentry.py", line 154, in reraise
+    raise exc.with_traceback(sys.exc_info()[2])
+  File "/newstorage4/maleksic/fl-backdoors/env/lib/python3.10/site-packages/wandb/sdk/service/service.py", line 237, in _launch_server
+    self._wait_for_ports(fname, proc=internal_proc)
+  File "/newstorage4/maleksic/fl-backdoors/env/lib/python3.10/site-packages/wandb/sdk/service/service.py", line 132, in _wait_for_ports
+    raise ServiceStartTimeoutError(
+wandb.sdk.service.service.ServiceStartTimeoutError: Timed out waiting for wandb service to start after 30.0 seconds. Try increasing the timeout with the `_service_wait` setting.
+Traceback (most recent call last):
+  File "/usr/lib/python3.10/runpy.py", line 196, in _run_module_as_main
+    return _run_code(code, main_globals, None,
+  File "/usr/lib/python3.10/runpy.py", line 86, in _run_code
+    exec(code, run_globals)
+  File "/newstorage4/maleksic/fl-backdoors/env/lib/python3.10/site-packages/wandb/__main__.py", line 3, in <module>
+    cli.cli(prog_name="python -m wandb")
+  File "/newstorage4/maleksic/fl-backdoors/env/lib/python3.10/site-packages/click/core.py", line 1157, in __call__
+    return self.main(*args, **kwargs)
+  File "/newstorage4/maleksic/fl-backdoors/env/lib/python3.10/site-packages/click/core.py", line 1078, in main
+    rv = self.invoke(ctx)
+  File "/newstorage4/maleksic/fl-backdoors/env/lib/python3.10/site-packages/click/core.py", line 1688, in invoke
+    return _process_result(sub_ctx.command.invoke(sub_ctx))
+  File "/newstorage4/maleksic/fl-backdoors/env/lib/python3.10/site-packages/click/core.py", line 1434, in invoke
+    return ctx.invoke(self.callback, **ctx.params)
+  File "/newstorage4/maleksic/fl-backdoors/env/lib/python3.10/site-packages/click/core.py", line 783, in invoke
+    return __callback(*args, **kwargs)
+  File "/newstorage4/maleksic/fl-backdoors/env/lib/python3.10/site-packages/wandb/cli/cli.py", line 105, in wrapper
+    return func(*args, **kwargs)
+  File "/newstorage4/maleksic/fl-backdoors/env/lib/python3.10/site-packages/wandb/cli/cli.py", line 289, in service
+    server.serve()
+  File "/newstorage4/maleksic/fl-backdoors/env/lib/python3.10/site-packages/wandb/sdk/service/server.py", line 114, in serve
+    self._inform_used_ports(sock_port=sock_port)
+  File "/newstorage4/maleksic/fl-backdoors/env/lib/python3.10/site-packages/wandb/sdk/service/server.py", line 52, in _inform_used_ports
+    pf.write(self._port_fname)
+  File "/newstorage4/maleksic/fl-backdoors/env/lib/python3.10/site-packages/wandb/sdk/service/port_file.py", line 21, in write
+    f = tempfile.NamedTemporaryFile(prefix=bname, dir=dname, mode="w", delete=False)
+  File "/usr/lib/python3.10/tempfile.py", line 714, in NamedTemporaryFile
+    file = _io.open(dir, mode, buffering=buffering,
+  File "/usr/lib/python3.10/tempfile.py", line 711, in opener
+    fd, name = _mkstemp_inner(dir, prefix, suffix, flags, output_type)
+  File "/usr/lib/python3.10/tempfile.py", line 395, in _mkstemp_inner
+    fd = _os.open(file, flags, 0o600)
+FileNotFoundError: [Errno 2] No such file or directory: '/tmp/tmpcrsk6rmi/port-948662.txtnhu38caq'

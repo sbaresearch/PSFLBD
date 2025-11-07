@@ -1,0 +1,176 @@
+2026-01-19 16:18:29,227 [MainThread  ] [INFO ]  Namespace(data='mnist', num_agents=20, agent_frac=1.0, num_corrupt=4, rounds=25, local_ep=1, bs=64, client_lr=0.01, server_lr=0.01, target_class=7, poison_frac=0.3, pattern_type='plus', theta=8, theta_ld=10, snap=1, device='cuda:2', num_workers=0, dense_ratio=0.25, anneal_factor=0.0001, se_threshold=0.0001, non_iid=False, debug=False, beta=0.5, attack='badnet', aggr='avg', aggr_server='alignins', lr_decay=0.99, momentum=0.9, mask_init='ERK', wd=0.0001, same_mask=1, cease_poison=100000, exp_name_extra='', super_power=False, clean=False, sparsity=0.3, lambda_s=1.0, lambda_c=1.0, num_target=10, exp_name='iid_pr(0.3)')
+2026-01-19 16:18:31,375 [MainThread  ] [INFO ]  build client:0 mal:1 data_num:3006
+2026-01-19 16:18:31,425 [MainThread  ] [INFO ]  build client:1 mal:1 data_num:3005
+2026-01-19 16:18:31,474 [MainThread  ] [INFO ]  build client:2 mal:1 data_num:3003
+2026-01-19 16:18:31,524 [MainThread  ] [INFO ]  build client:3 mal:1 data_num:3002
+2026-01-19 16:18:31,531 [MainThread  ] [INFO ]  build client:4 mal:0 data_num:3002
+2026-01-19 16:18:31,537 [MainThread  ] [INFO ]  build client:5 mal:0 data_num:3001
+2026-01-19 16:18:31,543 [MainThread  ] [INFO ]  build client:6 mal:0 data_num:3001
+2026-01-19 16:18:31,549 [MainThread  ] [INFO ]  build client:7 mal:0 data_num:3001
+2026-01-19 16:18:31,556 [MainThread  ] [INFO ]  build client:8 mal:0 data_num:3001
+2026-01-19 16:18:31,562 [MainThread  ] [INFO ]  build client:9 mal:0 data_num:3000
+2026-01-19 16:18:31,568 [MainThread  ] [INFO ]  build client:10 mal:0 data_num:3000
+2026-01-19 16:18:31,574 [MainThread  ] [INFO ]  build client:11 mal:0 data_num:2998
+2026-01-19 16:18:31,581 [MainThread  ] [INFO ]  build client:12 mal:0 data_num:2998
+2026-01-19 16:18:31,587 [MainThread  ] [INFO ]  build client:13 mal:0 data_num:2998
+2026-01-19 16:18:31,593 [MainThread  ] [INFO ]  build client:14 mal:0 data_num:2998
+2026-01-19 16:18:31,600 [MainThread  ] [INFO ]  build client:15 mal:0 data_num:2998
+2026-01-19 16:18:31,606 [MainThread  ] [INFO ]  build client:16 mal:0 data_num:2998
+2026-01-19 16:18:31,612 [MainThread  ] [INFO ]  build client:17 mal:0 data_num:2998
+2026-01-19 16:18:31,618 [MainThread  ] [INFO ]  build client:18 mal:0 data_num:2996
+2026-01-19 16:18:31,625 [MainThread  ] [INFO ]  build client:19 mal:0 data_num:2996
+2026-01-19 16:18:31,625 [MainThread  ] [INFO ]  --------round 1 ------------
+2026-01-19 16:19:01,741 [MainThread  ] [INFO ]  ---------Test 1 ------------
+2026-01-19 16:19:10,539 [MainThread  ] [INFO ]  Clean ACC:              0.1028
+2026-01-19 16:19:10,539 [MainThread  ] [INFO ]  Attack Success Ratio:   1.0000
+2026-01-19 16:19:10,539 [MainThread  ] [INFO ]  Robustness ACC:           0.0000
+2026-01-19 16:19:10,539 [MainThread  ] [INFO ]  ------------------------------
+2026-01-19 16:19:10,539 [MainThread  ] [INFO ]  --------round 2 ------------
+2026-01-19 16:19:40,400 [MainThread  ] [INFO ]  ---------Test 2 ------------
+2026-01-19 16:19:49,177 [MainThread  ] [INFO ]  Clean ACC:              0.2844
+2026-01-19 16:19:49,177 [MainThread  ] [INFO ]  Attack Success Ratio:   0.0085
+2026-01-19 16:19:49,177 [MainThread  ] [INFO ]  Robustness ACC:           0.2851
+2026-01-19 16:19:49,177 [MainThread  ] [INFO ]  ------------------------------
+2026-01-19 16:19:49,177 [MainThread  ] [INFO ]  --------round 3 ------------
+2026-01-19 16:20:19,008 [MainThread  ] [INFO ]  ---------Test 3 ------------
+2026-01-19 16:20:27,741 [MainThread  ] [INFO ]  Clean ACC:              0.6143
+2026-01-19 16:20:27,742 [MainThread  ] [INFO ]  Attack Success Ratio:   0.0301
+2026-01-19 16:20:27,742 [MainThread  ] [INFO ]  Robustness ACC:           0.5884
+2026-01-19 16:20:27,742 [MainThread  ] [INFO ]  ------------------------------
+2026-01-19 16:20:27,742 [MainThread  ] [INFO ]  --------round 4 ------------
+2026-01-19 16:20:57,718 [MainThread  ] [INFO ]  ---------Test 4 ------------
+2026-01-19 16:21:07,600 [MainThread  ] [INFO ]  Clean ACC:              0.8305
+2026-01-19 16:21:07,600 [MainThread  ] [INFO ]  Attack Success Ratio:   0.0386
+2026-01-19 16:21:07,601 [MainThread  ] [INFO ]  Robustness ACC:           0.8174
+2026-01-19 16:21:07,601 [MainThread  ] [INFO ]  ------------------------------
+2026-01-19 16:21:07,601 [MainThread  ] [INFO ]  --------round 5 ------------
+2026-01-19 16:21:37,461 [MainThread  ] [INFO ]  ---------Test 5 ------------
+2026-01-19 16:21:47,302 [MainThread  ] [INFO ]  Clean ACC:              0.9154
+2026-01-19 16:21:47,302 [MainThread  ] [INFO ]  Attack Success Ratio:   0.0169
+2026-01-19 16:21:47,302 [MainThread  ] [INFO ]  Robustness ACC:           0.9115
+2026-01-19 16:21:47,302 [MainThread  ] [INFO ]  ------------------------------
+2026-01-19 16:21:47,302 [MainThread  ] [INFO ]  --------round 6 ------------
+2026-01-19 16:22:17,207 [MainThread  ] [INFO ]  ---------Test 6 ------------
+2026-01-19 16:22:25,921 [MainThread  ] [INFO ]  Clean ACC:              0.9436
+2026-01-19 16:22:25,921 [MainThread  ] [INFO ]  Attack Success Ratio:   0.0086
+2026-01-19 16:22:25,921 [MainThread  ] [INFO ]  Robustness ACC:           0.9440
+2026-01-19 16:22:25,922 [MainThread  ] [INFO ]  ------------------------------
+2026-01-19 16:22:25,922 [MainThread  ] [INFO ]  --------round 7 ------------
+2026-01-19 16:22:55,688 [MainThread  ] [INFO ]  ---------Test 7 ------------
+2026-01-19 16:23:04,444 [MainThread  ] [INFO ]  Clean ACC:              0.9572
+2026-01-19 16:23:04,444 [MainThread  ] [INFO ]  Attack Success Ratio:   0.0060
+2026-01-19 16:23:04,444 [MainThread  ] [INFO ]  Robustness ACC:           0.9568
+2026-01-19 16:23:04,444 [MainThread  ] [INFO ]  ------------------------------
+2026-01-19 16:23:04,444 [MainThread  ] [INFO ]  --------round 8 ------------
+2026-01-19 16:23:34,207 [MainThread  ] [INFO ]  ---------Test 8 ------------
+2026-01-19 16:23:42,925 [MainThread  ] [INFO ]  Clean ACC:              0.9629
+2026-01-19 16:23:42,926 [MainThread  ] [INFO ]  Attack Success Ratio:   0.0041
+2026-01-19 16:23:42,926 [MainThread  ] [INFO ]  Robustness ACC:           0.9633
+2026-01-19 16:23:42,926 [MainThread  ] [INFO ]  ------------------------------
+2026-01-19 16:23:42,926 [MainThread  ] [INFO ]  --------round 9 ------------
+2026-01-19 16:24:12,610 [MainThread  ] [INFO ]  ---------Test 9 ------------
+2026-01-19 16:24:21,316 [MainThread  ] [INFO ]  Clean ACC:              0.9663
+2026-01-19 16:24:21,317 [MainThread  ] [INFO ]  Attack Success Ratio:   0.0040
+2026-01-19 16:24:21,317 [MainThread  ] [INFO ]  Robustness ACC:           0.9669
+2026-01-19 16:24:21,317 [MainThread  ] [INFO ]  ------------------------------
+2026-01-19 16:24:21,317 [MainThread  ] [INFO ]  --------round 10 ------------
+2026-01-19 16:24:51,085 [MainThread  ] [INFO ]  ---------Test 10 ------------
+2026-01-19 16:24:59,892 [MainThread  ] [INFO ]  Clean ACC:              0.9717
+2026-01-19 16:24:59,892 [MainThread  ] [INFO ]  Attack Success Ratio:   0.0040
+2026-01-19 16:24:59,892 [MainThread  ] [INFO ]  Robustness ACC:           0.9727
+2026-01-19 16:24:59,892 [MainThread  ] [INFO ]  ------------------------------
+2026-01-19 16:24:59,892 [MainThread  ] [INFO ]  --------round 11 ------------
+2026-01-19 16:25:29,608 [MainThread  ] [INFO ]  ---------Test 11 ------------
+2026-01-19 16:25:38,341 [MainThread  ] [INFO ]  Clean ACC:              0.9752
+2026-01-19 16:25:38,342 [MainThread  ] [INFO ]  Attack Success Ratio:   0.0040
+2026-01-19 16:25:38,342 [MainThread  ] [INFO ]  Robustness ACC:           0.9751
+2026-01-19 16:25:38,342 [MainThread  ] [INFO ]  ------------------------------
+2026-01-19 16:25:38,342 [MainThread  ] [INFO ]  --------round 12 ------------
+2026-01-19 16:26:08,531 [MainThread  ] [INFO ]  ---------Test 12 ------------
+2026-01-19 16:26:17,283 [MainThread  ] [INFO ]  Clean ACC:              0.9771
+2026-01-19 16:26:17,284 [MainThread  ] [INFO ]  Attack Success Ratio:   0.0041
+2026-01-19 16:26:17,284 [MainThread  ] [INFO ]  Robustness ACC:           0.9767
+2026-01-19 16:26:17,284 [MainThread  ] [INFO ]  ------------------------------
+2026-01-19 16:26:17,284 [MainThread  ] [INFO ]  --------round 13 ------------
+2026-01-19 16:26:47,751 [MainThread  ] [INFO ]  ---------Test 13 ------------
+2026-01-19 16:26:56,472 [MainThread  ] [INFO ]  Clean ACC:              0.9778
+2026-01-19 16:26:56,473 [MainThread  ] [INFO ]  Attack Success Ratio:   0.0041
+2026-01-19 16:26:56,473 [MainThread  ] [INFO ]  Robustness ACC:           0.9772
+2026-01-19 16:26:56,473 [MainThread  ] [INFO ]  ------------------------------
+2026-01-19 16:26:56,473 [MainThread  ] [INFO ]  --------round 14 ------------
+2026-01-19 16:27:26,291 [MainThread  ] [INFO ]  ---------Test 14 ------------
+2026-01-19 16:27:34,986 [MainThread  ] [INFO ]  Clean ACC:              0.9770
+2026-01-19 16:27:34,986 [MainThread  ] [INFO ]  Attack Success Ratio:   0.0027
+2026-01-19 16:27:34,986 [MainThread  ] [INFO ]  Robustness ACC:           0.9775
+2026-01-19 16:27:34,986 [MainThread  ] [INFO ]  ------------------------------
+2026-01-19 16:27:34,986 [MainThread  ] [INFO ]  --------round 15 ------------
+2026-01-19 16:28:04,771 [MainThread  ] [INFO ]  ---------Test 15 ------------
+2026-01-19 16:28:13,483 [MainThread  ] [INFO ]  Clean ACC:              0.9789
+2026-01-19 16:28:13,484 [MainThread  ] [INFO ]  Attack Success Ratio:   0.0030
+2026-01-19 16:28:13,484 [MainThread  ] [INFO ]  Robustness ACC:           0.9794
+2026-01-19 16:28:13,484 [MainThread  ] [INFO ]  ------------------------------
+2026-01-19 16:28:13,484 [MainThread  ] [INFO ]  --------round 16 ------------
+2026-01-19 16:28:43,379 [MainThread  ] [INFO ]  ---------Test 16 ------------
+2026-01-19 16:28:52,115 [MainThread  ] [INFO ]  Clean ACC:              0.9819
+2026-01-19 16:28:52,115 [MainThread  ] [INFO ]  Attack Success Ratio:   0.0029
+2026-01-19 16:28:52,115 [MainThread  ] [INFO ]  Robustness ACC:           0.9818
+2026-01-19 16:28:52,115 [MainThread  ] [INFO ]  ------------------------------
+2026-01-19 16:28:52,115 [MainThread  ] [INFO ]  --------round 17 ------------
+2026-01-19 16:29:21,829 [MainThread  ] [INFO ]  ---------Test 17 ------------
+2026-01-19 16:29:30,611 [MainThread  ] [INFO ]  Clean ACC:              0.9815
+2026-01-19 16:29:30,611 [MainThread  ] [INFO ]  Attack Success Ratio:   0.0032
+2026-01-19 16:29:30,611 [MainThread  ] [INFO ]  Robustness ACC:           0.9815
+2026-01-19 16:29:30,611 [MainThread  ] [INFO ]  ------------------------------
+2026-01-19 16:29:30,611 [MainThread  ] [INFO ]  --------round 18 ------------
+2026-01-19 16:30:00,493 [MainThread  ] [INFO ]  ---------Test 18 ------------
+2026-01-19 16:30:09,206 [MainThread  ] [INFO ]  Clean ACC:              0.9822
+2026-01-19 16:30:09,207 [MainThread  ] [INFO ]  Attack Success Ratio:   0.0036
+2026-01-19 16:30:09,207 [MainThread  ] [INFO ]  Robustness ACC:           0.9817
+2026-01-19 16:30:09,207 [MainThread  ] [INFO ]  ------------------------------
+2026-01-19 16:30:09,207 [MainThread  ] [INFO ]  --------round 19 ------------
+2026-01-19 16:30:38,874 [MainThread  ] [INFO ]  ---------Test 19 ------------
+2026-01-19 16:30:47,638 [MainThread  ] [INFO ]  Clean ACC:              0.9830
+2026-01-19 16:30:47,638 [MainThread  ] [INFO ]  Attack Success Ratio:   0.0019
+2026-01-19 16:30:47,638 [MainThread  ] [INFO ]  Robustness ACC:           0.9836
+2026-01-19 16:30:47,638 [MainThread  ] [INFO ]  ------------------------------
+2026-01-19 16:30:47,638 [MainThread  ] [INFO ]  --------round 20 ------------
+2026-01-19 16:31:17,396 [MainThread  ] [INFO ]  ---------Test 20 ------------
+2026-01-19 16:31:26,121 [MainThread  ] [INFO ]  Clean ACC:              0.9844
+2026-01-19 16:31:26,122 [MainThread  ] [INFO ]  Attack Success Ratio:   0.0022
+2026-01-19 16:31:26,122 [MainThread  ] [INFO ]  Robustness ACC:           0.9841
+2026-01-19 16:31:26,122 [MainThread  ] [INFO ]  ------------------------------
+2026-01-19 16:31:26,122 [MainThread  ] [INFO ]  --------round 21 ------------
+2026-01-19 16:31:55,879 [MainThread  ] [INFO ]  ---------Test 21 ------------
+2026-01-19 16:32:04,603 [MainThread  ] [INFO ]  Clean ACC:              0.9833
+2026-01-19 16:32:04,603 [MainThread  ] [INFO ]  Attack Success Ratio:   0.0023
+2026-01-19 16:32:04,604 [MainThread  ] [INFO ]  Robustness ACC:           0.9836
+2026-01-19 16:32:04,604 [MainThread  ] [INFO ]  ------------------------------
+2026-01-19 16:32:04,604 [MainThread  ] [INFO ]  --------round 22 ------------
+2026-01-19 16:32:34,662 [MainThread  ] [INFO ]  ---------Test 22 ------------
+2026-01-19 16:32:43,383 [MainThread  ] [INFO ]  Clean ACC:              0.9844
+2026-01-19 16:32:43,384 [MainThread  ] [INFO ]  Attack Success Ratio:   0.0020
+2026-01-19 16:32:43,384 [MainThread  ] [INFO ]  Robustness ACC:           0.9852
+2026-01-19 16:32:43,384 [MainThread  ] [INFO ]  ------------------------------
+2026-01-19 16:32:43,384 [MainThread  ] [INFO ]  --------round 23 ------------
+2026-01-19 16:33:13,017 [MainThread  ] [INFO ]  ---------Test 23 ------------
+2026-01-19 16:33:21,715 [MainThread  ] [INFO ]  Clean ACC:              0.9847
+2026-01-19 16:33:21,715 [MainThread  ] [INFO ]  Attack Success Ratio:   0.0022
+2026-01-19 16:33:21,715 [MainThread  ] [INFO ]  Robustness ACC:           0.9844
+2026-01-19 16:33:21,715 [MainThread  ] [INFO ]  ------------------------------
+2026-01-19 16:33:21,715 [MainThread  ] [INFO ]  --------round 24 ------------
+2026-01-19 16:33:51,564 [MainThread  ] [INFO ]  ---------Test 24 ------------
+2026-01-19 16:34:00,323 [MainThread  ] [INFO ]  Clean ACC:              0.9856
+2026-01-19 16:34:00,323 [MainThread  ] [INFO ]  Attack Success Ratio:   0.0023
+2026-01-19 16:34:00,323 [MainThread  ] [INFO ]  Robustness ACC:           0.9851
+2026-01-19 16:34:00,323 [MainThread  ] [INFO ]  ------------------------------
+2026-01-19 16:34:00,323 [MainThread  ] [INFO ]  --------round 25 ------------
+2026-01-19 16:34:30,221 [MainThread  ] [INFO ]  ---------Test 25 ------------
+2026-01-19 16:34:38,927 [MainThread  ] [INFO ]  Clean ACC:              0.9851
+2026-01-19 16:34:38,928 [MainThread  ] [INFO ]  Attack Success Ratio:   0.0021
+2026-01-19 16:34:38,928 [MainThread  ] [INFO ]  Robustness ACC:           0.9858
+2026-01-19 16:34:38,928 [MainThread  ] [INFO ]  ------------------------------
+2026-01-19 16:34:38,928 [MainThread  ] [INFO ]  Best results:
+2026-01-19 16:34:38,928 [MainThread  ] [INFO ]  Clean ACC:              0.9856
+2026-01-19 16:34:38,928 [MainThread  ] [INFO ]  Attack Success Ratio:   0.0023
+2026-01-19 16:34:38,928 [MainThread  ] [INFO ]  Robustness ACC:           0.9851
+2026-01-19 16:34:38,928 [MainThread  ] [INFO ]  Training has finished!

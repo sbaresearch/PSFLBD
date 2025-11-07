@@ -1,0 +1,22 @@
+2026-01-21 14:20:36,047 [MainThread  ] [INFO ]  Namespace(data='cifar10', num_agents=20, agent_frac=1.0, num_corrupt=4, rounds=100, local_ep=2, bs=64, client_lr=0.1, server_lr=1, target_class=7, poison_frac=0.3, pattern_type='plus', theta=8, theta_ld=10, snap=1, device=device(type='cuda', index=0), num_workers=0, dense_ratio=0.25, anneal_factor=0.0001, se_threshold=0.0001, non_iid=False, debug=False, beta=0.5, attack='a3fl', aggr='alignins', lr_decay=0.99, momentum=0.0, mask_init='ERK', wd=0.0001, same_mask=1, cease_poison=100000, exp_name_extra='', super_power=False, clean=False, sparsity=0.3, lambda_s=1.0, lambda_c=1.0, inner_lr=0.01, lambda_a3fl=0.5, trigger_size=3, num_target=10, exp_name='iid_pr(0.3)')
+2026-01-21 14:20:38,908 [MainThread  ] [INFO ]  build client:0 mal:1 data_num:2500
+2026-01-21 14:20:39,002 [MainThread  ] [INFO ]  build client:1 mal:1 data_num:2500
+2026-01-21 14:20:39,095 [MainThread  ] [INFO ]  build client:2 mal:1 data_num:2500
+2026-01-21 14:20:39,246 [MainThread  ] [INFO ]  build client:3 mal:1 data_num:2500
+2026-01-21 14:20:39,252 [MainThread  ] [INFO ]  build client:4 mal:0 data_num:2500
+2026-01-21 14:20:39,258 [MainThread  ] [INFO ]  build client:5 mal:0 data_num:2500
+2026-01-21 14:20:39,263 [MainThread  ] [INFO ]  build client:6 mal:0 data_num:2500
+2026-01-21 14:20:39,269 [MainThread  ] [INFO ]  build client:7 mal:0 data_num:2500
+2026-01-21 14:20:39,274 [MainThread  ] [INFO ]  build client:8 mal:0 data_num:2500
+2026-01-21 14:20:39,413 [MainThread  ] [INFO ]  build client:9 mal:0 data_num:2500
+2026-01-21 14:20:39,418 [MainThread  ] [INFO ]  build client:10 mal:0 data_num:2500
+2026-01-21 14:20:39,424 [MainThread  ] [INFO ]  build client:11 mal:0 data_num:2500
+2026-01-21 14:20:39,430 [MainThread  ] [INFO ]  build client:12 mal:0 data_num:2500
+2026-01-21 14:20:39,435 [MainThread  ] [INFO ]  build client:13 mal:0 data_num:2500
+2026-01-21 14:20:39,441 [MainThread  ] [INFO ]  build client:14 mal:0 data_num:2500
+2026-01-21 14:20:39,447 [MainThread  ] [INFO ]  build client:15 mal:0 data_num:2500
+2026-01-21 14:20:39,452 [MainThread  ] [INFO ]  build client:16 mal:0 data_num:2500
+2026-01-21 14:20:39,458 [MainThread  ] [INFO ]  build client:17 mal:0 data_num:2500
+2026-01-21 14:20:39,464 [MainThread  ] [INFO ]  build client:18 mal:0 data_num:2500
+2026-01-21 14:20:39,470 [MainThread  ] [INFO ]  build client:19 mal:0 data_num:2500
+2026-01-21 14:20:39,470 [MainThread  ] [INFO ]  --------round 1 ------------

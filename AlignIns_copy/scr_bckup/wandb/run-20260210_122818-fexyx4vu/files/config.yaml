@@ -1,0 +1,157 @@
+wandb_version: 1
+
+data:
+  desc: null
+  value: mnist
+num_agents:
+  desc: null
+  value: 20
+agent_frac:
+  desc: null
+  value: 1.0
+num_corrupt:
+  desc: null
+  value: 4
+rounds:
+  desc: null
+  value: 25
+local_ep:
+  desc: null
+  value: 2
+bs:
+  desc: null
+  value: 64
+client_lr:
+  desc: null
+  value: 0.01
+server_lr:
+  desc: null
+  value: 0.01
+target_class:
+  desc: null
+  value: 7
+poison_frac:
+  desc: null
+  value: 0.5
+pattern_type:
+  desc: null
+  value: plus
+theta:
+  desc: null
+  value: 8
+theta_ld:
+  desc: null
+  value: 10
+snap:
+  desc: null
+  value: 1
+device:
+  desc: null
+  value: cuda:3
+num_workers:
+  desc: null
+  value: 0
+dense_ratio:
+  desc: null
+  value: 0.25
+anneal_factor:
+  desc: null
+  value: 0.0001
+se_threshold:
+  desc: null
+  value: 0.0001
+non_iid:
+  desc: null
+  value: false
+debug:
+  desc: null
+  value: false
+beta:
+  desc: null
+  value: 0.5
+attack:
+  desc: null
+  value: badnet
+aggr:
+  desc: null
+  value: alignins
+aggr_server:
+  desc: null
+  value: alignins
+lr_decay:
+  desc: null
+  value: 0.99
+momentum:
+  desc: null
+  value: 0.0
+mask_init:
+  desc: null
+  value: ERK
+wd:
+  desc: null
+  value: 0.0001
+same_mask:
+  desc: null
+  value: 1
+cease_poison:
+  desc: null
+  value: 100000
+exp_name_extra:
+  desc: null
+  value: bench_alignins
+super_power:
+  desc: null
+  value: false
+clean:
+  desc: null
+  value: false
+sparsity:
+  desc: null
+  value: 0.3
+lambda_s:
+  desc: null
+  value: 1.0
+lambda_c:
+  desc: null
+  value: 1.0
+split_point:
+  desc: null
+  value: layer1
+num_target:
+  desc: null
+  value: 10
+log_dir:
+  desc: null
+  value: outputs/mnist_badnet_alignins_alignins
+_wandb:
+  desc: null
+  value:
+    python_version: 3.10.12
+    cli_version: 0.16.3
+    framework: torch
+    is_jupyter_run: false
+    is_kaggle_kernel: false
+    start_time: 1770726498.224005
+    t:
+      1:
+      - 1
+      - 5
+      - 41
+      - 53
+      - 55
+      2:
+      - 1
+      - 5
+      - 41
+      - 53
+      - 55
+      3:
+      - 2
+      - 13
+      - 16
+      - 23
+      4: 3.10.12
+      5: 0.16.3
+      8:
+      - 5
+      13: linux-x86_64

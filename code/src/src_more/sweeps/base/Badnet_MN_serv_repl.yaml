@@ -1,0 +1,28 @@
+program: sfl.py
+
+method: grid
+
+parameters:
+  attack:
+    value: badnet
+
+  attack_mode:
+    value: replacement
+
+  data:
+    value: mnist
+
+  num_agents:
+    value: 20
+
+  num_corrupt:
+    value: 4
+
+  target_class:
+    value: 7
+
+  poison_frac:
+    value: 0.5
+
+  aggr_server:
+    values: [mkrum, foolsgold, alignins, mmetric, feddlad]

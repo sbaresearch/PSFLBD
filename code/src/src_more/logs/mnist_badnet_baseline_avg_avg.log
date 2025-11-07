@@ -1,0 +1,328 @@
+wandb: Currently logged in as: aleksic-milicica (aleksic-milicica-tu-wien). Use `wandb login --relogin` to force relogin
+wandb: wandb version 0.25.1 is available!  To upgrade, please run:
+wandb:  $ pip install wandb --upgrade
+wandb: Tracking run with wandb version 0.16.3
+wandb: Run data is saved locally in /newstorage4/maleksic/fl-backdoors/code/src/src_more/wandb/run-20260401_121538-hxadotuw
+wandb: Run `wandb offline` to turn off syncing.
+wandb: Syncing run mnist_badnet_avg_avg_baseline
+wandb: ⭐️ View project at https://wandb.ai/aleksic-milicica-tu-wien/split-fed-backdoor-3
+wandb: 🚀 View run at https://wandb.ai/aleksic-milicica-tu-wien/split-fed-backdoor-3/runs/hxadotuw
+25
+mean|client_grad| 0.019981050863862038
+local epoch 0 	 client: 0 	 mal: 0 	 loss: 0.72027671 	 time: 8.84
+local epoch 0 	 client: 1 	 mal: 0 	 loss: 0.80237097 	 time: 5.26
+local epoch 0 	 client: 2 	 mal: 0 	 loss: 0.81768316 	 time: 5.29
+local epoch 0 	 client: 3 	 mal: 0 	 loss: 0.85101932 	 time: 5.16
+local epoch 0 	 client: 4 	 mal: 0 	 loss: 0.81828421 	 time: 5.41
+[DBG rnd=1] logits mean=0.0616, std=0.8584, maxlogit mean=1.6507
+[DBG rnd=1] probs max mean=0.3489, pred entropy mean=1.8931
+[DBG rnd=1] preds bincount=[6, 10, 6, 10, 8, 5, 3, 8, 0, 8]
+Clean ACC:              0.7353
+Attack Success Ratio:   0.0314
+Robustness ACC:           0.7148
+mean|client_grad| 0.02805730700492859
+local epoch 0 	 client: 0 	 mal: 0 	 loss: 0.21941189 	 time: 5.39
+local epoch 0 	 client: 1 	 mal: 0 	 loss: 0.41067278 	 time: 5.07
+local epoch 0 	 client: 2 	 mal: 0 	 loss: 0.24717180 	 time: 5.61
+local epoch 0 	 client: 3 	 mal: 0 	 loss: 0.31856516 	 time: 5.16
+local epoch 0 	 client: 4 	 mal: 0 	 loss: 0.23885684 	 time: 5.29
+[DBG rnd=2] logits mean=0.0684, std=1.3028, maxlogit mean=2.8356
+[DBG rnd=2] probs max mean=0.5964, pred entropy mean=1.3394
+[DBG rnd=2] preds bincount=[6, 10, 5, 5, 10, 6, 7, 7, 2, 6]
+Clean ACC:              0.9089
+Attack Success Ratio:   0.0039
+Robustness ACC:           0.9155
+mean|client_grad| 0.028394212946295738
+local epoch 0 	 client: 0 	 mal: 0 	 loss: 0.49927062 	 time: 5.25
+local epoch 0 	 client: 1 	 mal: 0 	 loss: 0.19486026 	 time: 5.39
+local epoch 0 	 client: 2 	 mal: 0 	 loss: 0.30983493 	 time: 5.42
+local epoch 0 	 client: 3 	 mal: 0 	 loss: 0.21741125 	 time: 5.28
+local epoch 0 	 client: 4 	 mal: 0 	 loss: 0.55491364 	 time: 5.31
+[DBG rnd=3] logits mean=0.1133, std=1.8044, maxlogit mean=4.1351
+[DBG rnd=3] probs max mean=0.7904, pred entropy mean=0.7769
+[DBG rnd=3] preds bincount=[6, 10, 5, 6, 9, 7, 6, 7, 1, 7]
+Clean ACC:              0.9428
+Attack Success Ratio:   0.0046
+Robustness ACC:           0.9454
+mean|client_grad| 0.016505824401974678
+local epoch 0 	 client: 0 	 mal: 0 	 loss: 0.10398632 	 time: 4.94
+local epoch 0 	 client: 1 	 mal: 0 	 loss: 0.09629519 	 time: 4.27
+local epoch 0 	 client: 2 	 mal: 0 	 loss: 0.13830179 	 time: 5.54
+local epoch 0 	 client: 3 	 mal: 0 	 loss: 0.18416955 	 time: 5.69
+local epoch 0 	 client: 4 	 mal: 0 	 loss: 0.12788968 	 time: 5.42
+[DBG rnd=4] logits mean=0.1565, std=2.2433, maxlogit mean=5.2843
+[DBG rnd=4] probs max mean=0.8833, pred entropy mean=0.4588
+[DBG rnd=4] preds bincount=[6, 10, 5, 6, 9, 7, 6, 7, 1, 7]
+Clean ACC:              0.9529
+Attack Success Ratio:   0.0039
+Robustness ACC:           0.9568
+mean|client_grad| 0.009477566927671432
+local epoch 0 	 client: 0 	 mal: 0 	 loss: 0.08076365 	 time: 5.21
+local epoch 0 	 client: 1 	 mal: 0 	 loss: 0.14491872 	 time: 5.37
+local epoch 0 	 client: 2 	 mal: 0 	 loss: 0.24323459 	 time: 5.47
+local epoch 0 	 client: 3 	 mal: 0 	 loss: 0.11313755 	 time: 5.21
+local epoch 0 	 client: 4 	 mal: 0 	 loss: 0.19125101 	 time: 5.37
+[DBG rnd=5] logits mean=0.1832, std=2.5612, maxlogit mean=5.9688
+[DBG rnd=5] probs max mean=0.9122, pred entropy mean=0.3443
+[DBG rnd=5] preds bincount=[6, 10, 5, 5, 9, 7, 6, 7, 2, 7]
+Clean ACC:              0.9615
+Attack Success Ratio:   0.0051
+Robustness ACC:           0.9607
+mean|client_grad| 0.007922559976577759
+local epoch 0 	 client: 0 	 mal: 0 	 loss: 0.14199883 	 time: 5.47
+local epoch 0 	 client: 1 	 mal: 0 	 loss: 0.13057198 	 time: 5.36
+local epoch 0 	 client: 2 	 mal: 0 	 loss: 0.15146385 	 time: 5.34
+local epoch 0 	 client: 3 	 mal: 0 	 loss: 0.18682858 	 time: 4.96
+local epoch 0 	 client: 4 	 mal: 0 	 loss: 0.03063778 	 time: 5.16
+[DBG rnd=6] logits mean=0.1954, std=2.8079, maxlogit mean=6.7327
+[DBG rnd=6] probs max mean=0.9460, pred entropy mean=0.2267
+[DBG rnd=6] preds bincount=[6, 10, 5, 5, 10, 7, 5, 7, 2, 7]
+Clean ACC:              0.9645
+Attack Success Ratio:   0.0041
+Robustness ACC:           0.9649
+mean|client_grad| 0.004847029689699411
+local epoch 0 	 client: 0 	 mal: 0 	 loss: 0.10803263 	 time: 5.18
+local epoch 0 	 client: 1 	 mal: 0 	 loss: 0.17524640 	 time: 5.12
+local epoch 0 	 client: 2 	 mal: 0 	 loss: 0.27330101 	 time: 4.90
+local epoch 0 	 client: 3 	 mal: 0 	 loss: 0.16828050 	 time: 5.44
+local epoch 0 	 client: 4 	 mal: 0 	 loss: 0.14424257 	 time: 5.45
+[DBG rnd=7] logits mean=0.2117, std=3.0004, maxlogit mean=7.1520
+[DBG rnd=7] probs max mean=0.9527, pred entropy mean=0.2004
+[DBG rnd=7] preds bincount=[6, 10, 5, 5, 10, 7, 5, 7, 2, 7]
+Clean ACC:              0.9707
+Attack Success Ratio:   0.0028
+Robustness ACC:           0.9704
+mean|client_grad| 0.010238037444651127
+local epoch 0 	 client: 0 	 mal: 0 	 loss: 0.00621267 	 time: 4.62
+local epoch 0 	 client: 1 	 mal: 0 	 loss: 0.09449840 	 time: 5.32
+local epoch 0 	 client: 2 	 mal: 0 	 loss: 0.09051757 	 time: 5.33
+local epoch 0 	 client: 3 	 mal: 0 	 loss: 0.09957004 	 time: 5.28
+local epoch 0 	 client: 4 	 mal: 0 	 loss: 0.18988527 	 time: 4.73
+[DBG rnd=8] logits mean=0.2336, std=3.2592, maxlogit mean=7.8463
+[DBG rnd=8] probs max mean=0.9666, pred entropy mean=0.1457
+[DBG rnd=8] preds bincount=[6, 10, 5, 5, 10, 7, 5, 7, 2, 7]
+Clean ACC:              0.9714
+Attack Success Ratio:   0.0032
+Robustness ACC:           0.9724
+mean|client_grad| 0.0064198351465165615
+local epoch 0 	 client: 0 	 mal: 0 	 loss: 0.20674294 	 time: 5.35
+local epoch 0 	 client: 1 	 mal: 0 	 loss: 0.11207367 	 time: 5.40
+local epoch 0 	 client: 2 	 mal: 0 	 loss: 0.02253270 	 time: 5.37
+local epoch 0 	 client: 3 	 mal: 0 	 loss: 0.24535790 	 time: 5.75
+local epoch 0 	 client: 4 	 mal: 0 	 loss: 0.12235244 	 time: 5.61
+[DBG rnd=9] logits mean=0.2402, std=3.3389, maxlogit mean=8.0925
+[DBG rnd=9] probs max mean=0.9655, pred entropy mean=0.1327
+[DBG rnd=9] preds bincount=[6, 10, 5, 6, 10, 7, 5, 7, 1, 7]
+Clean ACC:              0.9754
+Attack Success Ratio:   0.0022
+Robustness ACC:           0.9763
+mean|client_grad| 0.004591274540871382
+local epoch 0 	 client: 0 	 mal: 0 	 loss: 0.16654135 	 time: 5.20
+local epoch 0 	 client: 1 	 mal: 0 	 loss: 0.13882501 	 time: 5.89
+local epoch 0 	 client: 2 	 mal: 0 	 loss: 0.01151461 	 time: 5.30
+local epoch 0 	 client: 3 	 mal: 0 	 loss: 0.20853430 	 time: 5.30
+local epoch 0 	 client: 4 	 mal: 0 	 loss: 0.10784747 	 time: 5.33
+[DBG rnd=10] logits mean=0.2486, std=3.6074, maxlogit mean=8.6642
+[DBG rnd=10] probs max mean=0.9738, pred entropy mean=0.1083
+[DBG rnd=10] preds bincount=[6, 10, 5, 6, 10, 7, 5, 7, 1, 7]
+Clean ACC:              0.9759
+Attack Success Ratio:   0.0039
+Robustness ACC:           0.9748
+mean|client_grad| 0.00532028591260314
+local epoch 0 	 client: 0 	 mal: 0 	 loss: 0.08285290 	 time: 5.93
+local epoch 0 	 client: 1 	 mal: 0 	 loss: 0.07648663 	 time: 5.23
+local epoch 0 	 client: 2 	 mal: 0 	 loss: 0.27392080 	 time: 5.29
+local epoch 0 	 client: 3 	 mal: 0 	 loss: 0.16918513 	 time: 5.33
+local epoch 0 	 client: 4 	 mal: 0 	 loss: 0.07712924 	 time: 5.41
+[DBG rnd=11] logits mean=0.2836, std=3.7286, maxlogit mean=9.0363
+[DBG rnd=11] probs max mean=0.9748, pred entropy mean=0.0938
+[DBG rnd=11] preds bincount=[6, 10, 5, 6, 10, 7, 5, 7, 1, 7]
+Clean ACC:              0.9774
+Attack Success Ratio:   0.0038
+Robustness ACC:           0.9778
+mean|client_grad| 0.004219064489006996
+local epoch 0 	 client: 0 	 mal: 0 	 loss: 0.03138661 	 time: 5.41
+local epoch 0 	 client: 1 	 mal: 0 	 loss: 0.16054264 	 time: 5.38
+local epoch 0 	 client: 2 	 mal: 0 	 loss: 0.03870440 	 time: 5.37
+local epoch 0 	 client: 3 	 mal: 0 	 loss: 0.08859462 	 time: 5.39
+local epoch 0 	 client: 4 	 mal: 0 	 loss: 0.08167776 	 time: 5.87
+[DBG rnd=12] logits mean=0.2551, std=3.8472, maxlogit mean=9.3827
+[DBG rnd=12] probs max mean=0.9815, pred entropy mean=0.0743
+[DBG rnd=12] preds bincount=[6, 10, 5, 6, 10, 7, 5, 7, 1, 7]
+Clean ACC:              0.9783
+Attack Success Ratio:   0.0026
+Robustness ACC:           0.9789
+mean|client_grad| 0.0046256654895842075
+local epoch 0 	 client: 0 	 mal: 0 	 loss: 0.13126239 	 time: 5.24
+local epoch 0 	 client: 1 	 mal: 0 	 loss: 0.17397003 	 time: 5.29
+local epoch 0 	 client: 2 	 mal: 0 	 loss: 0.11825564 	 time: 5.56
+local epoch 0 	 client: 3 	 mal: 0 	 loss: 0.15726444 	 time: 5.12
+local epoch 0 	 client: 4 	 mal: 0 	 loss: 0.07185409 	 time: 5.65
+[DBG rnd=13] logits mean=0.2646, std=3.8556, maxlogit mean=9.3905
+[DBG rnd=13] probs max mean=0.9850, pred entropy mean=0.0705
+[DBG rnd=13] preds bincount=[6, 10, 5, 6, 10, 7, 5, 7, 1, 7]
+Clean ACC:              0.9809
+Attack Success Ratio:   0.0027
+Robustness ACC:           0.9808
+mean|client_grad| 0.0024031002540141344
+local epoch 0 	 client: 0 	 mal: 0 	 loss: 0.03376421 	 time: 4.62
+local epoch 0 	 client: 1 	 mal: 0 	 loss: 0.09872263 	 time: 5.18
+local epoch 0 	 client: 2 	 mal: 0 	 loss: 0.14215003 	 time: 5.53
+local epoch 0 	 client: 3 	 mal: 0 	 loss: 0.01827313 	 time: 5.34
+local epoch 0 	 client: 4 	 mal: 0 	 loss: 0.01740009 	 time: 4.69
+[DBG rnd=14] logits mean=0.2605, std=4.0998, maxlogit mean=9.8925
+[DBG rnd=14] probs max mean=0.9843, pred entropy mean=0.0643
+[DBG rnd=14] preds bincount=[6, 10, 5, 6, 10, 7, 5, 7, 1, 7]
+Clean ACC:              0.9816
+Attack Success Ratio:   0.0035
+Robustness ACC:           0.9804
+mean|client_grad| 0.004134100396186113
+local epoch 0 	 client: 0 	 mal: 0 	 loss: 0.17112438 	 time: 4.14
+local epoch 0 	 client: 1 	 mal: 0 	 loss: 0.06553648 	 time: 4.96
+local epoch 0 	 client: 2 	 mal: 0 	 loss: 0.02034551 	 time: 5.23
+local epoch 0 	 client: 3 	 mal: 0 	 loss: 0.06897719 	 time: 5.27
+local epoch 0 	 client: 4 	 mal: 0 	 loss: 0.10135993 	 time: 5.37
+[DBG rnd=15] logits mean=0.2930, std=4.2038, maxlogit mean=10.2124
+[DBG rnd=15] probs max mean=0.9888, pred entropy mean=0.0496
+[DBG rnd=15] preds bincount=[6, 10, 5, 6, 10, 7, 5, 7, 1, 7]
+Clean ACC:              0.9813
+Attack Success Ratio:   0.0027
+Robustness ACC:           0.9814
+mean|client_grad| 0.005467299837619066
+local epoch 0 	 client: 0 	 mal: 0 	 loss: 0.06536435 	 time: 5.42
+local epoch 0 	 client: 1 	 mal: 0 	 loss: 0.01808986 	 time: 5.12
+local epoch 0 	 client: 2 	 mal: 0 	 loss: 0.01801234 	 time: 5.14
+local epoch 0 	 client: 3 	 mal: 0 	 loss: 0.12444043 	 time: 4.56
+local epoch 0 	 client: 4 	 mal: 0 	 loss: 0.11629441 	 time: 4.86
+[DBG rnd=16] logits mean=0.2566, std=4.2827, maxlogit mean=10.3660
+[DBG rnd=16] probs max mean=0.9899, pred entropy mean=0.0472
+[DBG rnd=16] preds bincount=[6, 10, 5, 6, 10, 7, 5, 7, 1, 7]
+Clean ACC:              0.9823
+Attack Success Ratio:   0.0022
+Robustness ACC:           0.9824
+mean|client_grad| 0.00721353804692626
+local epoch 0 	 client: 0 	 mal: 0 	 loss: 0.01078670 	 time: 5.42
+local epoch 0 	 client: 1 	 mal: 0 	 loss: 0.00375881 	 time: 5.20
+local epoch 0 	 client: 2 	 mal: 0 	 loss: 0.01526381 	 time: 4.09
+local epoch 0 	 client: 3 	 mal: 0 	 loss: 0.00982641 	 time: 5.06
+local epoch 0 	 client: 4 	 mal: 0 	 loss: 0.09562400 	 time: 5.21
+[DBG rnd=17] logits mean=0.2663, std=4.5463, maxlogit mean=10.8455
+[DBG rnd=17] probs max mean=0.9873, pred entropy mean=0.0433
+[DBG rnd=17] preds bincount=[6, 10, 5, 6, 10, 7, 5, 7, 1, 7]
+Clean ACC:              0.9823
+Attack Success Ratio:   0.0018
+Robustness ACC:           0.9833
+mean|client_grad| 0.001429169555194676
+local epoch 0 	 client: 0 	 mal: 0 	 loss: 0.27627310 	 time: 5.06
+local epoch 0 	 client: 1 	 mal: 0 	 loss: 0.09626403 	 time: 5.18
+local epoch 0 	 client: 2 	 mal: 0 	 loss: 0.13282469 	 time: 5.09
+local epoch 0 	 client: 3 	 mal: 0 	 loss: 0.00600441 	 time: 4.33
+local epoch 0 	 client: 4 	 mal: 0 	 loss: 0.01464545 	 time: 5.13
+[DBG rnd=18] logits mean=0.3163, std=4.5649, maxlogit mean=11.0868
+[DBG rnd=18] probs max mean=0.9836, pred entropy mean=0.0505
+[DBG rnd=18] preds bincount=[6, 10, 5, 5, 10, 7, 5, 7, 2, 7]
+Clean ACC:              0.9809
+Attack Success Ratio:   0.0029
+Robustness ACC:           0.9807
+mean|client_grad| 0.003398413071408868
+local epoch 0 	 client: 0 	 mal: 0 	 loss: 0.01086369 	 time: 5.08
+local epoch 0 	 client: 1 	 mal: 0 	 loss: 0.02861792 	 time: 5.10
+local epoch 0 	 client: 2 	 mal: 0 	 loss: 0.09708602 	 time: 4.59
+local epoch 0 	 client: 3 	 mal: 0 	 loss: 0.12284751 	 time: 4.18
+local epoch 0 	 client: 4 	 mal: 0 	 loss: 0.08661351 	 time: 4.96
+[DBG rnd=19] logits mean=0.2808, std=4.7103, maxlogit mean=11.4437
+[DBG rnd=19] probs max mean=0.9907, pred entropy mean=0.0331
+[DBG rnd=19] preds bincount=[6, 10, 5, 6, 10, 7, 5, 7, 1, 7]
+Clean ACC:              0.9840
+Attack Success Ratio:   0.0026
+Robustness ACC:           0.9838
+mean|client_grad| 0.0035768772941082716
+local epoch 0 	 client: 0 	 mal: 0 	 loss: 0.01367195 	 time: 5.13
+local epoch 0 	 client: 1 	 mal: 0 	 loss: 0.05628456 	 time: 4.26
+local epoch 0 	 client: 2 	 mal: 0 	 loss: 0.03476206 	 time: 5.00
+local epoch 0 	 client: 3 	 mal: 0 	 loss: 0.01965145 	 time: 5.04
+local epoch 0 	 client: 4 	 mal: 0 	 loss: 0.01975959 	 time: 5.16
+[DBG rnd=20] logits mean=0.3213, std=4.7006, maxlogit mean=11.4943
+[DBG rnd=20] probs max mean=0.9877, pred entropy mean=0.0366
+[DBG rnd=20] preds bincount=[6, 10, 5, 6, 10, 7, 5, 7, 1, 7]
+Clean ACC:              0.9837
+Attack Success Ratio:   0.0021
+Robustness ACC:           0.9841
+mean|client_grad| 0.0006441802834160626
+local epoch 0 	 client: 0 	 mal: 0 	 loss: 0.05460858 	 time: 5.12
+local epoch 0 	 client: 1 	 mal: 0 	 loss: 0.10549610 	 time: 4.09
+local epoch 0 	 client: 2 	 mal: 0 	 loss: 0.03203838 	 time: 4.20
+local epoch 0 	 client: 3 	 mal: 0 	 loss: 0.11424896 	 time: 4.29
+local epoch 0 	 client: 4 	 mal: 0 	 loss: 0.01614422 	 time: 5.28
+[DBG rnd=21] logits mean=0.3022, std=4.7799, maxlogit mean=11.6144
+[DBG rnd=21] probs max mean=0.9883, pred entropy mean=0.0361
+[DBG rnd=21] preds bincount=[6, 10, 5, 5, 10, 7, 5, 7, 2, 7]
+Clean ACC:              0.9832
+Attack Success Ratio:   0.0019
+Robustness ACC:           0.9832
+mean|client_grad| 0.004853199236094952
+local epoch 0 	 client: 0 	 mal: 0 	 loss: 0.00852996 	 time: 5.61
+local epoch 0 	 client: 1 	 mal: 0 	 loss: 0.06022019 	 time: 4.69
+local epoch 0 	 client: 2 	 mal: 0 	 loss: 0.02996300 	 time: 4.86
+local epoch 0 	 client: 3 	 mal: 0 	 loss: 0.08124577 	 time: 5.44
+local epoch 0 	 client: 4 	 mal: 0 	 loss: 0.08549497 	 time: 5.28
+[DBG rnd=22] logits mean=0.2873, std=4.9828, maxlogit mean=11.8650
+[DBG rnd=22] probs max mean=0.9902, pred entropy mean=0.0279
+[DBG rnd=22] preds bincount=[6, 10, 5, 6, 10, 7, 5, 7, 1, 7]
+Clean ACC:              0.9845
+Attack Success Ratio:   0.0020
+Robustness ACC:           0.9840
+mean|client_grad| 0.004957921802997589
+local epoch 0 	 client: 0 	 mal: 0 	 loss: 0.13535683 	 time: 4.33
+local epoch 0 	 client: 1 	 mal: 0 	 loss: 0.03254639 	 time: 5.95
+local epoch 0 	 client: 2 	 mal: 0 	 loss: 0.03918654 	 time: 5.86
+local epoch 0 	 client: 3 	 mal: 0 	 loss: 0.00579579 	 time: 5.28
+local epoch 0 	 client: 4 	 mal: 0 	 loss: 0.03544405 	 time: 5.23
+[DBG rnd=23] logits mean=0.3326, std=4.9782, maxlogit mean=12.1701
+[DBG rnd=23] probs max mean=0.9951, pred entropy mean=0.0224
+[DBG rnd=23] preds bincount=[6, 10, 5, 6, 10, 7, 5, 7, 1, 7]
+Clean ACC:              0.9850
+Attack Success Ratio:   0.0013
+Robustness ACC:           0.9852
+mean|client_grad| 0.001063987030647695
+local epoch 0 	 client: 0 	 mal: 0 	 loss: 0.07526798 	 time: 5.17
+local epoch 0 	 client: 1 	 mal: 0 	 loss: 0.03817406 	 time: 5.20
+local epoch 0 	 client: 2 	 mal: 0 	 loss: 0.04283371 	 time: 5.05
+local epoch 0 	 client: 3 	 mal: 0 	 loss: 0.06577744 	 time: 5.15
+local epoch 0 	 client: 4 	 mal: 0 	 loss: 0.05164242 	 time: 4.67
+[DBG rnd=24] logits mean=0.3122, std=5.1208, maxlogit mean=12.3576
+[DBG rnd=24] probs max mean=0.9946, pred entropy mean=0.0218
+[DBG rnd=24] preds bincount=[6, 10, 5, 6, 10, 7, 5, 7, 1, 7]
+Clean ACC:              0.9868
+Attack Success Ratio:   0.0018
+Robustness ACC:           0.9870
+mean|client_grad| 0.003591989167034626
+local epoch 0 	 client: 0 	 mal: 0 	 loss: 0.00145991 	 time: 5.04
+local epoch 0 	 client: 1 	 mal: 0 	 loss: 0.01810091 	 time: 4.67
+local epoch 0 	 client: 2 	 mal: 0 	 loss: 0.00604891 	 time: 4.84
+local epoch 0 	 client: 3 	 mal: 0 	 loss: 0.05044867 	 time: 4.89
+local epoch 0 	 client: 4 	 mal: 0 	 loss: 0.01007400 	 time: 5.16
+[DBG rnd=25] logits mean=0.3531, std=5.1155, maxlogit mean=12.6386
+[DBG rnd=25] probs max mean=0.9923, pred entropy mean=0.0262
+[DBG rnd=25] preds bincount=[6, 10, 5, 6, 10, 7, 5, 7, 1, 7]
+Clean ACC:              0.9852
+Attack Success Ratio:   0.0027
+Robustness ACC:           0.9852
+wandb: - 0.005 MB of 0.005 MB uploadedwandb: \ 0.005 MB of 0.005 MB uploadedwandb: | 0.005 MB of 0.005 MB uploadedwandb: / 0.005 MB of 0.026 MB uploadedwandb: - 0.026 MB of 0.026 MB uploadedwandb: \ 0.026 MB of 0.026 MB uploadedwandb: | 0.026 MB of 0.026 MB uploadedwandb:                                                                                
+wandb: 
+wandb: Run history:
+wandb:            asr █▂▂▂▂▂▁▁▁▂▂▁▁▁▁▁▁▁▁▁▁▁▁▁▁
+wandb:      clean_acc ▁▆▇▇▇▇███████████████████
+wandb: robustness acc ▁▆▇▇▇▇███████████████████
+wandb:          round ▁▁▂▂▂▂▃▃▃▄▄▄▅▅▅▅▆▆▆▇▇▇▇██
+wandb: 
+wandb: Run summary:
+wandb:            asr 0.00267
+wandb:      clean_acc 0.9852
+wandb: robustness acc 0.98518
+wandb:          round 25
+wandb: 
+wandb: 🚀 View run mnist_badnet_avg_avg_baseline at: https://wandb.ai/aleksic-milicica-tu-wien/split-fed-backdoor-3/runs/hxadotuw
+wandb: ️⚡ View job at https://wandb.ai/aleksic-milicica-tu-wien/split-fed-backdoor-3/jobs/QXJ0aWZhY3RDb2xsZWN0aW9uOjk0NTY0MTM5Mg==/version_details/v4
+wandb: Synced 5 W&B file(s), 0 media file(s), 0 artifact file(s) and 0 other file(s)
+wandb: Find logs at: ./wandb/run-20260401_121538-hxadotuw/logs

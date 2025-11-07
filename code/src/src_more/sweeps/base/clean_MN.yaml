@@ -1,0 +1,29 @@
+program: sfl.py
+entity: adavarts-tuwien
+project: sfl2
+
+method: grid
+command:
+  - ${env}
+  - python
+  - ${program}
+  - ${args}
+  - --clean
+parameters:
+  data:
+    value: mnist
+
+  num_agents:
+    value: 20
+
+  poison_frac:
+    value: 0
+
+  aggr:
+    values: [avg]
+  
+  aggr_server:
+    values: [avg]
+
+  seed:
+    values: [43, 44]

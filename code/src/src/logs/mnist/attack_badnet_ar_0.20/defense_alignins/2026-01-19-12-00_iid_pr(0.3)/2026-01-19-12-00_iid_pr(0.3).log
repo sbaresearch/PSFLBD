@@ -1,0 +1,22 @@
+2026-01-19 12:00:17,662 [MainThread  ] [INFO ]  Namespace(data='mnist', num_agents=20, agent_frac=1.0, num_corrupt=4, rounds=50, local_ep=1, bs=64, client_lr=0.01, server_lr=0.01, target_class=7, poison_frac=0.3, pattern_type='plus', theta=8, theta_ld=10, snap=1, device='cuda:2', num_workers=0, dense_ratio=0.25, anneal_factor=0.0001, se_threshold=0.0001, non_iid=False, debug=False, beta=0.5, attack='badnet', aggr='alignins', lr_decay=0.99, momentum=0.9, mask_init='ERK', wd=0.0001, same_mask=1, cease_poison=100000, exp_name_extra='', super_power=False, clean=False, sparsity=0.3, lambda_s=1.0, lambda_c=1.0, num_target=10, exp_name='iid_pr(0.3)')
+2026-01-19 12:00:19,377 [MainThread  ] [INFO ]  build client:0 mal:1 data_num:3006
+2026-01-19 12:00:19,445 [MainThread  ] [INFO ]  build client:1 mal:1 data_num:3005
+2026-01-19 12:00:19,513 [MainThread  ] [INFO ]  build client:2 mal:1 data_num:3003
+2026-01-19 12:00:19,580 [MainThread  ] [INFO ]  build client:3 mal:1 data_num:3002
+2026-01-19 12:00:19,589 [MainThread  ] [INFO ]  build client:4 mal:0 data_num:3002
+2026-01-19 12:00:19,598 [MainThread  ] [INFO ]  build client:5 mal:0 data_num:3001
+2026-01-19 12:00:19,607 [MainThread  ] [INFO ]  build client:6 mal:0 data_num:3001
+2026-01-19 12:00:19,616 [MainThread  ] [INFO ]  build client:7 mal:0 data_num:3001
+2026-01-19 12:00:19,625 [MainThread  ] [INFO ]  build client:8 mal:0 data_num:3001
+2026-01-19 12:00:19,634 [MainThread  ] [INFO ]  build client:9 mal:0 data_num:3000
+2026-01-19 12:00:19,643 [MainThread  ] [INFO ]  build client:10 mal:0 data_num:3000
+2026-01-19 12:00:19,652 [MainThread  ] [INFO ]  build client:11 mal:0 data_num:2998
+2026-01-19 12:00:19,661 [MainThread  ] [INFO ]  build client:12 mal:0 data_num:2998
+2026-01-19 12:00:19,670 [MainThread  ] [INFO ]  build client:13 mal:0 data_num:2998
+2026-01-19 12:00:19,679 [MainThread  ] [INFO ]  build client:14 mal:0 data_num:2998
+2026-01-19 12:00:19,688 [MainThread  ] [INFO ]  build client:15 mal:0 data_num:2998
+2026-01-19 12:00:19,697 [MainThread  ] [INFO ]  build client:16 mal:0 data_num:2998
+2026-01-19 12:00:19,706 [MainThread  ] [INFO ]  build client:17 mal:0 data_num:2998
+2026-01-19 12:00:19,715 [MainThread  ] [INFO ]  build client:18 mal:0 data_num:2996
+2026-01-19 12:00:19,724 [MainThread  ] [INFO ]  build client:19 mal:0 data_num:2996
+2026-01-19 12:00:19,724 [MainThread  ] [INFO ]  --------round 1 ------------
