@@ -1,7 +1,0 @@
-[INFO] Date: 2026-02-02 | PyTorch 2.6.0+cu124
-[INFO] Total CPUs: 32, Total GPUs: 3 on troubadix.ifs.tuwien.ac.at.
-[INFO] Client CPUS: 1, Client GPUs: 0.5
-[INFO] Number of concurrent clients: 6
-[INFO] Set random seed to 123456
-[INFO] Malicious clients: []
-[INFO] Attack type: all2one, Target class: 2

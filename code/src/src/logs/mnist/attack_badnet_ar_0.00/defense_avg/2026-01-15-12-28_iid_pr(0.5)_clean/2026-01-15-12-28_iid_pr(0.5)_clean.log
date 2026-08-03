@@ -1,4 +1,0 @@
-2026-01-15 12:28:30,399 [MainThread  ] [INFO ]  Namespace(data='mnist', num_agents=2, agent_frac=1.0, num_corrupt=0, rounds=25, local_ep=1, bs=64, client_lr=0.01, server_lr=0.01, target_class=7, poison_frac=0.5, pattern_type='plus', theta=8, theta_ld=10, snap=1, device=device(type='cuda', index=0), num_workers=0, dense_ratio=0.25, anneal_factor=0.0001, se_threshold=0.0001, non_iid=False, debug=False, beta=0.5, attack='badnet', aggr='avg', lr_decay=0.99, momentum=0.9, mask_init='ERK', wd=0.0001, same_mask=1, cease_poison=100000, exp_name_extra='clean', super_power=False, clean=True, sparsity=0.3, lambda_s=1.0, lambda_c=1.0, num_target=10, exp_name='iid_pr(0.5)_clean')
-2026-01-15 12:28:32,410 [MainThread  ] [INFO ]  build client:0 mal:0 data_num:30003
-2026-01-15 12:28:32,476 [MainThread  ] [INFO ]  build client:1 mal:0 data_num:29997
-2026-01-15 12:28:32,477 [MainThread  ] [INFO ]  --------round 1 ------------
