@@ -3,20 +3,18 @@ Pull fresh run data from the wandb API across all 3 projects, keep only runs
 that actually reached their target round count, group them by the full
 experiment configuration (everything except seed), and report mean +/- std
 across whichever of seed in {0, 43, 44} are available and complete.
-
-Does NOT touch `current paper results.txt` -- this only reads config/summary
-from wandb and writes fresh CSVs next to it for comparison.
 """
+import argparse
 import csv
 import statistics
 from pathlib import Path
 
 import wandb
 
-PROJECTS = [
-    "adavarts-tuwien/fl-backdoors-code_src_src_more",
-    "adavarts-tuwien/split-fed-backdoor-3",
-    "adavarts-tuwien/sfl2",
+PROJECT_NAMES = [
+    "fl-backdoors-code_src_src_more",
+    "split-fed-backdoor-3",
+    "sfl2",
 ]
 
 MIN_ROUNDS = 200
@@ -83,11 +81,12 @@ def metrics_for_run(r, cfg, summ, complete):
     return summ.get("asr"), summ.get("clean_acc"), summ.get("robustness acc"), "summary_fallback_no_history_le_200"
 
 
-def fetch_all_runs():
+def fetch_all_runs(project):
     records = []
-    for project in PROJECTS:
-        runs = wandb.Api().runs(project, per_page=200)
-        print(f"Fetched {len(runs)} runs from {project}")
+    for name in PROJECT_NAMES:
+        project_path = f"{project}/{name}" if project else name
+        runs = wandb.Api().runs(project_path, per_page=200)
+        print(f"Fetched {len(runs)} runs from {project_path}")
         for r in runs:
             cfg = r.config
             summ = dict(r.summary)
@@ -99,7 +98,7 @@ def fetch_all_runs():
             asr_val, clean_acc_val, robustness_val, metrics_source = metrics_for_run(r, cfg, summ, complete)
 
             records.append({
-                "project": project,
+                "project": name,
                 "run_id": r.id,
                 "run_name": r.name,
                 "state": r.state,
@@ -141,20 +140,12 @@ def group_key(rec):
     else:
         attack = rec["attack"]
         attack_mode = rec["attack_mode"]
-    # multiple_servers is documented in sfl.py's sfl_variant docstring as a
-    # memory-optimization-only flag ("same math") for the default v1 variant.
-    # Originally only merged for GTSRB (2026-08-04 decision, where the paper's
-    # True-logged baseline runs needed to pair with the False-logged seed-43/44
-    # sweep). Extended to all datasets (2026-08-13): a stray cifar10 seed-44 run
-    # surfaced with multiple_servers=True against an otherwise-False group,
-    # and the user confirmed the flag should just be ignored for grouping
-    # everywhere, not only GTSRB.
+    # multiple_servers is a memory-optimization-only flag (documented in
+    # sfl.py's sfl_variant docstring as "same math" for the default v1
+    # variant) and is ignored for grouping across all datasets.
     multiple_servers = "merged_ms_true_false"
-    # target_class: the paper's GTSRB attack runs used target_class=12
-    # (sweeps/base/BadNet_GTSRB_all.yaml); the current seed-43/44 sweeps use
-    # target_class=7 (attacks_GTSRB_all.yaml etc). Confirmed with the user
-    # (2026-08-04) this discrepancy doesn't matter -- merge it for GTSRB, same
-    # treatment as multiple_servers above.
+    # target_class varies between GTSRB run generations but is not a real
+    # experimental difference for that dataset, so it's ignored for grouping.
     target_class = "merged_target_class" if rec["data"] == "gtsrb" else rec["target_class"]
     return (
         rec["data"], rec["model"], attack, attack_mode,
@@ -229,9 +220,10 @@ def matches_reference(rec, ref_vals, tol=0.01):
 
 
 def promote_gtsrb_seed0(groups, ambiguous, paper_ref):
-    """Decision 2: don't blanket-exclude sfl2/seed==0 GTSRB runs. For every
-    GTSRB group (existing in `groups`, or only present in the ambiguous pool),
-    try to promote one sfl2/seed==0 candidate as that group's seed=0 value:
+    """GTSRB has no seed==0 runs in the legacy projects, so its seed==0 data
+    has to come from sfl2 itself. For every GTSRB group (existing in
+    `groups`, or only present in the ambiguous pool), try to promote one
+    sfl2/seed==0 candidate as that group's seed=0 value:
 
       - reference row exists AND a candidate matches it (within tolerance)
         -> promote most-recently-created matching candidate, tag exact_paper_match
@@ -285,8 +277,19 @@ def promote_gtsrb_seed0(groups, ambiguous, paper_ref):
     return provenance_by_key
 
 
+def parse_args():
+    parser = argparse.ArgumentParser(description=__doc__)
+    parser.add_argument(
+        "--project", type=str, default=None,
+        help="wandb entity/team the projects live under; "
+             "defaults to your wandb login's default entity if omitted",
+    )
+    return parser.parse_args()
+
+
 def main():
-    records = fetch_all_runs()
+    args = parse_args()
+    records = fetch_all_runs(args.project)
 
     complete = [r for r in records if r["complete"]]
     incomplete = [r for r in records if not r["complete"]]
@@ -306,28 +309,15 @@ def main():
         w.writerows(incomplete)
     print(f"Wrote {len(incomplete)} incomplete/excluded runs to {INCOMPLETE_OUT.name}")
 
-    # sfl2 has its own seed==0 runs that are leftover dev/hyperparameter churn
-    # predating the formal seed-43/44 sweeps (near-duplicate configs with wildly
-    # different metrics). NOTE: on inspection these turn out to have NO `seed`
-    # key at all (seed_source=="legacy_implicit0"), same as the two truly-legacy
-    # projects -- they predate the seed feature within sfl2 itself, created
-    # 2026-06-17..06-27, before the explicit seed=43/44 sweep configs existed.
-    # So seed_source alone can't tell them apart from genuine legacy-project
-    # runs; we key the exclusion off *project identity* instead: any sfl2 run
-    # that resolves to seed==0 (explicit or missing-key) is dev churn, NOT the
-    # paper's seed-0 source (that's the two dedicated legacy no-`seed`-key
-    # projects) -- exclude from aggregation/grouping, save for manual review.
-    # NOTE (decision 2 update): for GTSRB specifically, some of these ARE the
-    # paper's real seed-0 source (the two legacy projects have zero GTSRB
-    # runs at all) -- see promote_gtsrb_seed0() below, which re-admits the
-    # ones that reproduce (or best-effort approximate) the published numbers.
-    # For CIFAR-10/MNIST the legacy projects remain the trusted seed-0 source
-    # and this exclusion stands unmodified.
-    ambiguous = [r for r in complete if r["project"] == "adavarts-tuwien/sfl2" and r["seed"] == 0]
-    complete_for_agg = [r for r in complete if not (r["project"] == "adavarts-tuwien/sfl2" and r["seed"] == 0)]
+    # sfl2's own seed==0 runs (explicit or missing-key) are excluded from
+    # aggregation by default -- the trusted seed-0 source is the two legacy
+    # no-`seed`-key projects instead. GTSRB is the exception, handled by
+    # promote_gtsrb_seed0() below, since it has no runs in either legacy
+    # project at all.
+    ambiguous = [r for r in complete if r["project"] == "sfl2" and r["seed"] == 0]
+    complete_for_agg = [r for r in complete if not (r["project"] == "sfl2" and r["seed"] == 0)]
     print(f"\n{len(ambiguous)} runs excluded as ambiguous: seed==0 runs from sfl2 project itself "
-          f"(likely dev/hyperparameter-tuning churn predating the seed-43/44 sweeps; "
-          f"GTSRB candidates among these get re-evaluated below -- see {AMBIGUOUS_OUT.name} "
+          f"(GTSRB candidates among these get re-evaluated below -- see {AMBIGUOUS_OUT.name} "
           f"for the full unfiltered set)")
     if ambiguous:
         with AMBIGUOUS_OUT.open("w", newline="") as f:
@@ -342,12 +332,6 @@ def main():
         key = group_key(rec)
         groups.setdefault(key, {}).setdefault(rec["seed"], []).append(rec)
 
-    # Decision 2: GTSRB really is executed inside sfl2, and the two "legacy"
-    # projects have zero GTSRB runs at all -- blanket-excluding sfl2/seed==0
-    # would leave every GTSRB group with no seed0 whatsoever. Instead,
-    # cross-check each GTSRB group's sfl2/seed==0 candidates against the
-    # paper's published numbers (paper_reference_values.csv) and promote the
-    # best candidate back in, tagged with how confident that promotion is.
     paper_ref = load_paper_reference()
     provenance_by_key = promote_gtsrb_seed0(groups, ambiguous, paper_ref)
     n_exact = sum(1 for v in provenance_by_key.values() if v == "exact_paper_match")

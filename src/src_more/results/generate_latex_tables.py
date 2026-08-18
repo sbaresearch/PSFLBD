@@ -4,15 +4,14 @@ Render the paper's LaTeX result rows straight from `seed_results_aggregated.csv`
 mean^std (superscript notation, 1 decimal); cells still on a single seed are
 marked with a trailing `*` so they're visibly not-yet-final.
 
-Two output shapes, both written to distinctly-named files (nothing here
-overwrites all_results_by_ds.txt/.csv or current paper results.txt):
+Two output shapes:
 
 1. table{1,2,3}_*_rows.tex -- body rows only (no caption/label/tabular
    wrapper) matching the paper's actual multirow table layout, ready to
    paste between \\toprule and \\bottomrule of the existing tables.
-2. seed_results_by_ds.{txt,csv} -- flat pivot in the same row format as
-   all_results_by_ds.txt (Dataset & FS & MS & MR & badnet_ASR & ... \\),
-   covering every (dataset, FS, MS, MR) combo present in the data.
+2. seed_results_by_ds.{txt,csv} -- flat pivot (Dataset & FS & MS & MR &
+   badnet_ASR & ... \\), covering every (dataset, FS, MS, MR) combo present
+   in the data.
 """
 import csv
 import re
@@ -37,10 +36,9 @@ DEFENSE_LABEL = {
     "feddlad": "FedDLAD",
 }
 
-# Metrics shown in the table{1,2,3,4}_*.tex row generators only -- RA dropped
-# per request. Extraction/aggregation (extract_seed_results.py) and the
-# seed_results_by_ds.{csv,txt} pivot are untouched and still carry RA.
-TABLE_METRICS = ("asr", "acc")
+# Metrics shown per attack in the table{1,2,3,4}_*.tex row generators, in
+# column order.
+TABLE_METRICS = ("asr", "acc", "ra")
 
 # the "standard" experiment config -- excludes off-default variants (e.g. the
 # num_agents=10 dev run seen during verification) that would otherwise create
@@ -238,9 +236,9 @@ def best_worst_metric_both(idx, data, defenses, mode, metric, lower_is_better):
     return result
 
 
-LOWER_IS_BETTER = {"asr": True, "acc": False}
-# Acc only ever gets the bold "best" treatment -- a low-accuracy defense
-# isn't "worst" the way a high-ASR one clearly is, so no red box for it.
+LOWER_IS_BETTER = {"asr": True, "acc": False, "ra": False}
+# Acc/RA only ever get the bold "best" treatment -- a low-accuracy defense
+# isn't "worst" the way a high-ASR one clearly is, so no red box for them.
 RED_METRICS = {"asr"}
 
 
@@ -365,7 +363,7 @@ def render_both_defense_rows(idx, defenses, datasets=("cifar10", "gtsrb"), mode=
 
 
 # ---------------------------------------------------------------------------
-# Shape 2: flat all_results_by_ds.txt-style pivot, one row per (data,FS,MS,MR)
+# Shape 2: flat pivot, one row per (data,FS,MS,MR)
 # ---------------------------------------------------------------------------
 
 def build_by_ds_rows(rows):
