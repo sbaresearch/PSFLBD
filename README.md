@@ -8,7 +8,17 @@ Implementation of backdoors in Split Federated Learning environments
 
 ## Getting Started
 
-This project requires a specific enviroment to run correclty. It can be recreated using the provided `.yaml` file.
+```
+cd src
+./setup_env.sh          # creates a conda env named "sfl-backdoors" with everything installed
+conda activate sfl-backdoors
+```
+
+This installs torch/torchvision from PyTorch's cu121 wheel index (see `requirements.txt`) rather than
+via conda, and is the only verified setup for GTSRB: torchvision must be >=0.15 for its built-in
+`datasets.GTSRB` loader, otherwise `src_more/utils.py` falls back to a custom loader with a known
+filename bug and GTSRB training will crash. (An older `env.yaml`, pinned to torch 1.8 / torchvision
+0.9, predated this fix and has been removed.)
 
 ## Project Overview
 
