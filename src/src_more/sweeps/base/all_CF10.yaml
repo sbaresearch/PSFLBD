@@ -1,6 +1,4 @@
 program: sfl.py
-entity: adavarts-tuwien
-project: sfl2
 
 method: grid
 
@@ -8,11 +6,11 @@ parameters:
   attack:
     values: [badnet, DBA, neurotoxin]
 
+  attack_mode:
+    values: [baseline, replacement]
+
   data:
     value: cifar10
-
-  # attack_mode:
-  #   value: replacement
 
   num_agents:
     value: 20
@@ -30,10 +28,10 @@ parameters:
     value: false
 
   seed:
-    values: [44, 43]
+    values: [0, 43, 44]
 
   aggr:
-    values: [mkrum, alignins, foolsgold, mmetric, feddlad]
-  
+    values: [avg, mkrum, alignins, foolsgold, mmetric, feddlad]
+
   aggr_server:
-    values: [avg] #, feddlad, mkrum, alignins] #, mmetric] alignins
+    values: [avg, mkrum, alignins, foolsgold, mmetric, feddlad]

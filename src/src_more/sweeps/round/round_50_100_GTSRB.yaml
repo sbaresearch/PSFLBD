@@ -1,12 +1,10 @@
 program: sfl.py
-entity: adavarts-tuwien
-project: sfl2
 
 method: grid
 
 parameters:
   attack:
-    values: [neurotoxin] #badnet, DBA, neurotoxin]
+    values: [badnet, DBA, neurotoxin]
 
   data:
     value: gtsrb
@@ -14,8 +12,8 @@ parameters:
   model:
     value: googlenet
 
-  attack_mode:
-    value: replacement
+  defense_start_round:
+    values: [50, 100]
 
   num_agents:
     value: 20
@@ -33,10 +31,10 @@ parameters:
     value: false
 
   seed:
-    values: [44] #, 43]
+    values: [0, 43, 44]
 
   aggr:
-    values: [avg]
-  
+    values: [mkrum, alignins, foolsgold, feddlad]
+
   aggr_server:
-    values: [mkrum, alignins, foolsgold, mmetric, feddlad] #, feddlad, mkrum, alignins] #, mmetric] alignins
+    value: same

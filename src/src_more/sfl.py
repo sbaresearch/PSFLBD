@@ -227,15 +227,15 @@ if __name__ == "__main__":
         args.exp_name_extra = "sp"
 
     # wandb is entirely optional: only turn it on if the user asked for it
-    # (--wandb_entity/--wandb_project, e.g. via a sweep YAML's `entity`/
-    # `project` keys) or we're already running as a `wandb agent` sweep
-    # worker (which sets these env vars before invoking this script).
+    # (--wandb_entity/--wandb_project) or we're already running as a
+    # `wandb agent` sweep worker (which sets these env vars before invoking
+    # this script).
     use_wandb = bool(args.wandb_entity) or bool(args.wandb_project) or bool(
         os.environ.get("WANDB_SWEEP_ID") or os.environ.get("WANDB_RUN_ID")
     )
     if use_wandb:
         wandb.init(
-            entity=args.wandb_entity or "adavarts-tuwien",
+            entity=args.wandb_entity,
             project=args.wandb_project or "sfl2",
         )
     else:

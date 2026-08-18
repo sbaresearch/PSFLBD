@@ -1,17 +1,16 @@
 program: sfl.py
-project: sfl-with-start-round
 
 method: grid
 
 parameters:
   attack:
-    value: neurotoxin
+    values: [badnet, DBA, neurotoxin]
 
   data:
     value: cifar10
-  
+
   defense_start_round:
-    values: [200, 300]
+    value: 200
 
   rounds:
     value: 500
@@ -28,8 +27,14 @@ parameters:
   poison_frac:
     value: 0.5
 
+  multiple_servers:
+    value: false
+
+  seed:
+    values: [0, 43, 44]
+
   aggr:
-    values: [mkrum]
-  
+    values: [mkrum, alignins, foolsgold, feddlad]
+
   aggr_server:
-    values: [alignins, feddlad]
+    value: same

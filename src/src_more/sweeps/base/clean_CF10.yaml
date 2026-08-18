@@ -1,6 +1,4 @@
 program: sfl.py
-entity: adavarts-tuwien
-project: sfl2
 
 method: grid
 command:
@@ -26,4 +24,4 @@ parameters:
     values: [avg]
 
   seed:
-    values: [43, 44]
+    values: [0, 43, 44]
