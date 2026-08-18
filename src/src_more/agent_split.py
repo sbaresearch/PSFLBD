@@ -60,15 +60,6 @@ class Agent():
                     pin_memory=False,
                     drop_last=True,
                 )
-            if args.data in ("mnist"):
-                img_shape = (1, 28, 28)
-            else:
-                img_shape = (3, 32, 32)
-            self.trigger = torch.ones((1, *img_shape), requires_grad=True, device=self.args.device) * 0.5
-            self.mask = torch.zeros_like(self.trigger)
-            s = self.args.trigger_size
-            self.mask[:, :, 2:2+s, 2:2+s] = 1.0
-
     def _raise_if_nonfinite(self, name, value, round_idx, local_epoch, batch_idx):
         if torch.is_tensor(value):
             if torch.isfinite(value).all():
@@ -102,42 +93,6 @@ class Agent():
             self.train_loader = DataLoader(self.train_dataset, batch_size=self.args.bs, shuffle=True, \
                                            num_workers=self.args.num_workers, pin_memory=False, drop_last=True)
     
-    def _build_shadow_server_base(self, global_client_model, reference_server_model):
-        mode = getattr(self.args, "shadow_server_strategy", "copy")
-        if mode == "copy":
-            return copy.deepcopy(reference_server_model).to(self.args.device).eval()
-
-        if self.shadow_server_model is not None:
-            return copy.deepcopy(self.shadow_server_model).to(self.args.device).eval()
-
-        sample_inputs, _ = next(iter(self.train_loader))
-        sample_inputs = sample_inputs.to(self.args.device)
-
-        with torch.no_grad():
-            smashed = global_client_model(sample_inputs[:1])
-
-        if smashed.dim() == 4:
-            channels = smashed.size(1)
-            surrogate = nn.Sequential(
-                nn.Conv2d(channels, channels, kernel_size=3, padding=1, bias=False),
-                nn.BatchNorm2d(channels),
-                nn.ReLU(inplace=True),
-                nn.AdaptiveAvgPool2d((1, 1)),
-                nn.Flatten(),
-                nn.Linear(channels, self.args.num_target),
-            )
-        elif smashed.dim() == 2:
-            surrogate = nn.Sequential(
-                nn.Linear(smashed.size(1), self.args.num_target),
-            )
-        else:
-            surrogate = nn.Sequential(
-                nn.Flatten(),
-                nn.Linear(smashed[0].numel(), self.args.num_target),
-            )
-
-        return surrogate.to(self.args.device).eval()
-
     def _ensure_shadow_server_surrogate(self, global_client_model, reference_server_model, sample_inputs):
         if self.shadow_server_model is not None:
             return self.shadow_server_model
@@ -211,58 +166,6 @@ class Agent():
 
         shadow_server.eval()
 
-    @staticmethod
-    def _flatten_grad_list(grad_list, params):
-        flat = []
-        for grad, param in zip(grad_list, params):
-            if grad is None:
-                flat.append(torch.zeros_like(param).view(-1))
-            else:
-                flat.append(grad.contiguous().view(-1))
-        return torch.cat(flat)
-    
-    def get_adv_split_models(self, global_client_model, global_server_model, criterion):
-        adv_pairs, adv_ws = [], []
-
-        for _ in range(self.args.dm_adv_model_count):
-            adv_client = copy.deepcopy(global_client_model).to(self.args.device)
-            adv_server = copy.deepcopy(global_server_model).to(self.args.device)
-            adv_client.train()
-            adv_server.train()
-
-            if self.args.model == "googlenet":
-                adv_opt = torch.optim.Adam(
-                    list(adv_client.parameters()) + list(adv_server.parameters()),
-                    lr=0.01,
-                )
-            else:
-                adv_opt = torch.optim.SGD(
-                    list(adv_client.parameters()) + list(adv_server.parameters()),
-                    lr=0.01,
-                    momentum=0.9,
-                )
-
-            for _ in range(self.args.dm_adv_epochs):
-                for inputs, _ in self.train_loader:
-                    inputs = inputs.to(self.args.device)
-
-                    poisoned = self.trigger.detach() * self.mask + (1 - self.mask) * inputs
-
-                    with torch.no_grad():
-                        clean_logits = global_server_model(global_client_model(inputs))
-                        clean_labels = torch.argmax(clean_logits, dim=1)
-
-                    adv_opt.zero_grad()
-                    adv_logits = adv_server(adv_client(poisoned))
-                    loss = criterion(adv_logits, clean_labels)
-                    loss.backward()
-                    adv_opt.step()
-
-            adv_pairs.append((adv_client.eval(), adv_server.eval()))
-            adv_ws.append(torch.tensor(1.0, device=self.args.device))
-
-        return adv_pairs, adv_ws
-
     def local_train_splitfedv1(
     self,
     global_client_model,   # client-side model
@@ -290,16 +193,10 @@ class Agent():
             server_model = main_server.server_models[self.id]
             server_opt = main_server.server_opts[self.id]
 
-        # SplitFedV2 (main_server.sfl_variant == "v2"): the server-side model
-        # is meant to be updated sequentially in place by every client in
-        # turn, with no restore and no round-end aggregation (Thapa et al.
-        # never FedAvg the server side in V2). SplitFedV1 (default) needs the
-        # snapshot so it can restore the branch afterwards and hand only the
+        # Snapshot so we can restore the branch afterwards and hand only the
         # delta to aggregate_server_updates_round.
-        is_sflv2 = getattr(main_server, "sfl_variant", "v1") == "v2"
-        if not is_sflv2:
-            server_before_sd = copy.deepcopy(server_model.state_dict())
-            opt_before_state = copy.deepcopy(server_opt.state_dict())  # optional but keeps behavior identical
+        server_before_sd = copy.deepcopy(server_model.state_dict())
+        opt_before_state = copy.deepcopy(server_opt.state_dict())  # optional but keeps behavior identical
 
         # Malicious timing hook (keep existing)
         if self.id < self.args.num_corrupt:
@@ -427,22 +324,15 @@ class Agent():
                 client_update_vec = (after_train - initial_client_params) * scale
                 self.update = client_update_vec
 
-            if is_sflv2:
-                # SplitFedV2: leave the server-side model exactly as this
-                # client's training left it -- no restore, no delta to
-                # report (aggregate_server_updates_round is a no-op in this
-                # mode too, so an empty dict is never actually consumed).
-                server_update_dict = {}
-            else:
-                # Server delta dict (after - before)
-                server_after_sd = {k: v.detach().clone() for k, v in server_model.state_dict().items()}
-                server_update_dict = {}
-                for k in server_before_sd.keys():
-                    server_update_dict[k] = (server_after_sd[k] - server_before_sd[k].detach()).to(self.args.device)
+            # Server delta dict (after - before)
+            server_after_sd = {k: v.detach().clone() for k, v in server_model.state_dict().items()}
+            server_update_dict = {}
+            for k in server_before_sd.keys():
+                server_update_dict[k] = (server_after_sd[k] - server_before_sd[k].detach()).to(self.args.device)
 
-                # Restore server state so it doesn't propagate before robust aggregation
-                server_model.load_state_dict(server_before_sd)
-                server_opt.load_state_dict(opt_before_state)  # optional, kept for identical behavior
+            # Restore server state so it doesn't propagate before robust aggregation
+            server_model.load_state_dict(server_before_sd)
+            server_opt.load_state_dict(opt_before_state)  # optional, kept for identical behavior
             # After dfx, loss_s, acc_s = main_server.train_on_smashed(...)
             if self.id < self.args.num_corrupt and i == 0:
                 grad_norm = dfx.norm().item()

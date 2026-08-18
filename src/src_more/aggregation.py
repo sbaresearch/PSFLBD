@@ -7,7 +7,6 @@ import logging
 from utils import vector_to_model, vector_to_name_param
 
 import sklearn.metrics.pairwise as smp
-from geom_median.torch import compute_geometric_median 
 import numpy as np
 from sklearn.neighbors import LocalOutlierFactor # COF is often approximated/replaced by LOF or specific COF libs
 
@@ -28,35 +27,6 @@ class Aggregation():
         if self.args.aggr == 'foolsgold':
             self.memory_dict = dict()
             self.wv_history = []
-
-    
-        
-    # def aggregate_server_updates(self, global_server_model, agent_server_updates):
-    #     """ Perform Parallel SFL server-side aggregation. """
-        
-    #     # 1. Calculate total data for ONLY the participating agents this round
-    #     # This is where 'agent_server_updates' lives!
-    #     round_total_data = sum([self.agent_data_sizes[idx] for idx in agent_server_updates.keys()])
-        
-    #     # 2. Initialize an accumulator (grad_sum) for the weights
-    #     grad_sum = {}
-    #     first_agent_id = list(agent_server_updates.keys())[0]
-    #     for name in agent_server_updates[first_agent_id]:
-    #         grad_sum[name] = torch.zeros_like(agent_server_updates[first_agent_id][name])
-
-    #     # 3. Apply FedAvg: update * (local_n / round_total_n)
-    #     for agent_id, update in agent_server_updates.items():
-    #         weight = self.agent_data_sizes[agent_id] / round_total_data
-    #         for name in grad_sum:
-    #             grad_sum[name] += update[name].to(self.args.device) * weight
-
-    #     # 4. Apply the aggregated delta to the global server model
-    #     new_state_dict = global_server_model.state_dict()
-    #     for name in grad_sum:
-    #         new_state_dict[name] += grad_sum[name]
-        
-    #     global_server_model.load_state_dict(new_state_dict)
-    #     return global_server_model
 
     def aggregate_server_updates(self, global_server_model, agent_server_updates, rnd=None):
         """
@@ -81,7 +51,7 @@ class Aggregation():
 
         # 4) Run aggregation/defense (same switch style as FedServer)
         # NOTE: after pre-weighting, simple average == weighted FedAvg
-        if self.args.aggr_server in ("avg", "rlr", "lockdown") or (self.args.defense_start_round > 1 and rnd < self.args.defense_start_round):
+        if self.args.aggr_server == "avg" or (self.args.defense_start_round > 1 and rnd < self.args.defense_start_round):
             logging.info(">>> AGGR: Using simple average aggregation.")
             aggregated_vec = self.agg_avg(agent_update_vecs)
             if self.args.defense_start_round > 1:
@@ -113,9 +83,6 @@ class Aggregation():
             logging.info(f">>> AGGR: Using MKrum aggregation. Defense started at round {self.args.defense_start_round}. Current round: {rnd}.")
             aggregated_vec = self.agg_mkrum(agent_update_vecs)
 
-        elif self.args.aggr_server == "rfa":
-            logging.info(f">>> AGGR: Using RFA aggregation. Defense started at round {self.args.defense_start_round}. Current round: {rnd}.")
-            aggregated_vec = self.agg_rfa(agent_update_vecs)
         elif self.args.aggr_server == "feddlad":
             logging.info(f">>> AGGR: Using FedDlad aggregation. Defense started at round {self.args.defense_start_round}. Current round: {rnd}.")
             aggregated_vec = self.agg_feddlad(agent_update_vecs)
@@ -140,15 +107,11 @@ class Aggregation():
 
 
         lr_vector = torch.Tensor([self.server_lr]*self.n_params).to(self.args.device)
-        if self.args.aggr != "rlr":
-            lr_vector = lr_vector
-        else:
-            lr_vector, _ = self.compute_robustLR(agent_updates_dict)
         # mask = torch.ones_like(agent_updates_dict[0])
         aggregated_updates = 0
         cur_global_params = parameters_to_vector(
             [global_model.state_dict()[name] for name in global_model.state_dict()]).detach()
-        if self.args.aggr=='avg' or self.args.aggr == 'rlr' or self.args.aggr == 'lockdown' or (self.args.defense_start_round > 1 and rnd < self.args.defense_start_round):
+        if self.args.aggr == 'avg' or (self.args.defense_start_round > 1 and rnd < self.args.defense_start_round):
             print(">>> AGGR: Using simple average aggregation.")
             if self.args.defense_start_round > 1:
                 print(f">>> AGGR: Defense starts at round {self.args.defense_start_round}. Using simple average for now (round {rnd}).")
@@ -169,9 +132,6 @@ class Aggregation():
         elif self.args.aggr == "mkrum":
             logging.info(f">>> AGGR: Using MKrum aggregation. Defense started at round {self.args.defense_start_round}. Current round: {rnd}.")
             aggregated_updates = self.agg_mkrum(agent_updates_dict)
-        elif self.args.aggr == "rfa":
-            logging.info(f">>> AGGR: Using RFA aggregation. Defense started at round {self.args.defense_start_round}. Current round: {rnd}.")
-            aggregated_updates = self.agg_rfa(agent_updates_dict)
         elif self.args.aggr == "feddlad":
             logging.info(f">>> AGGR: Using FedDlad aggregation. Defense started at round {self.args.defense_start_round}. Current round: {rnd}.")
             aggregated_updates = self.agg_feddlad(agent_updates_dict)
@@ -193,23 +153,6 @@ class Aggregation():
         new_global_params =  (cur_global_params + lr_vector*aggregated_updates).float()
         vector_to_model(new_global_params, global_model)
         return updates_dict, neurotoxin_mask
-
-    def agg_rfa(self, agent_updates_dict):
-        local_updates = []
-
-        for _id, update in agent_updates_dict.items():
-            local_updates.append(update)
-
-        n = len(local_updates)
-        temp_updates = torch.stack(local_updates, dim=0)
-        weights = torch.ones(n).to(self.args.device)  
-        gw = compute_geometric_median(local_updates, weights).median
-        for i in range(2):
-            weights = torch.mul(weights, torch.exp(-1.0*torch.norm(temp_updates-gw, dim=1)))
-            gw = compute_geometric_median(local_updates, weights).median
-
-        aggregated_model = gw
-        return aggregated_model
 
     def agg_alignins(self, agent_updates_dict, flat_global_model):
         local_updates = []
@@ -385,17 +328,6 @@ class Aggregation():
 
 
         return sum(return_updates)/len(return_updates)
-
-    def compute_robustLR(self, agent_updates_dict):
-
-        agent_updates_sign = [torch.sign(update) for update in agent_updates_dict.values()]  
-        sm_of_signs = torch.abs(sum(agent_updates_sign))
-        mask=torch.zeros_like(sm_of_signs)
-        mask[sm_of_signs < self.args.theta] = 0
-        mask[sm_of_signs >= self.args.theta] = 1
-        sm_of_signs[sm_of_signs < self.args.theta] = -self.server_lr
-        sm_of_signs[sm_of_signs >= self.args.theta] = self.server_lr
-        return sm_of_signs.to(self.args.device), mask
 
     def agg_mul_metric(self, agent_updates_dict, global_model, flat_global_model):
         local_updates = []
@@ -582,10 +514,6 @@ class Aggregation():
 
         client_updates = [update.detach().cpu().numpy() for update in agent_updates_dict.values()]
         update_len = np.array(client_updates[0].shape).prod()
-        # print("client_updates size", client_models[0].parameters())
-        # update_len = len(client_updates)
-        # if self.memory is None:
-        #     self.memory = np.zeros((self.num_clients, update_len))
         if len(names) < len(client_updates):
             names = np.append([-1], names)  # put in adv
 

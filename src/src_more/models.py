@@ -308,20 +308,12 @@ class MainServer:
         self.wv_history = []
         self.server_lr = args.server_lr
 
-        # "v1" (default, unchanged behaviour): Thapa et al.'s SplitFedV1 --
-        # either a persistent per-client server branch (multiple_servers=True)
-        # or a single reused branch that every client trains-then-restores
-        # against the same snapshot (multiple_servers=False, used purely to
-        # save memory); both are FedAvg'd/defended together at round end via
+        # Thapa et al.'s SplitFedV1: either a persistent per-client server
+        # branch (multiple_servers=True) or a single reused branch that every
+        # client trains-then-restores against the same snapshot
+        # (multiple_servers=False, used purely to save memory); both are
+        # FedAvg'd/defended together at round end via
         # aggregate_server_updates_round.
-        # "v2": Thapa et al.'s SplitFedV2 -- exactly one server-side model
-        # that every client updates in place, sequentially, with no restore
-        # and no server-side aggregation ever (only the client side is
-        # FedAvg'd). A branch-per-client makes no sense here, so force
-        # multiple_servers off regardless of what was passed in.
-        self.sfl_variant = getattr(args, "sfl_variant", "v1")
-        if self.sfl_variant == "v2":
-            multiple_servers = False
         self.multiple_servers = multiple_servers
         self.server_models = []
         self.server_opts = []
@@ -389,24 +381,11 @@ class MainServer:
         loss.backward()
 
         dfx = smashed.grad
-        # print("server dfx norm:", dfx.norm().item())
         if dfx is None:
             raise RuntimeError("smashed.grad is None — ensure smashed.requires_grad=True and retain_grad() is called.")
 
-        # dfx = dfx.detach()  # feedback tensor to send to client
-        # max_feedback_norm = 1.0 # try 0.5–2.0
-        # n = dfx.norm()
-        # if torch.isfinite(n) and n > max_feedback_norm:
-        #     dfx = dfx * (max_feedback_norm / (n + 1e-12))
-        # dfx = dfx.detach()
-
         # gradient w.r.t smashed activations
         dfx = smashed.grad.detach().clone()
-        # print("mean|dfx|", smashed.grad.abs().mean().item())
-        # with torch.no_grad():
-        #     p0 = next(model.parameters())
-        #     gnorm = p0.grad.abs().mean().item() if p0.grad is not None else -1
-        # print("mean|server_grad|", gnorm)
 
         opt.step()
 
@@ -514,14 +493,6 @@ class MainServer:
 
         Expected: agent_server_updates contains DELTAS for server params (e.g., -lr * grad).
         """
-
-        if self.sfl_variant == "v2":
-            # SplitFedV2: the single server-side model was already updated in
-            # place, client after client, inside each Agent's training call
-            # (no restore happened, so there's nothing to aggregate here --
-            # matching Thapa et al., who never run FedAvg/a defense on the
-            # server side in V2, only on the client side).
-            return
 
         if len(agent_server_updates) == 0:
             return
@@ -919,10 +890,6 @@ class MainServer:
 
         client_updates = [update.detach().cpu().numpy() for update in agent_updates_dict.values()]
         update_len = np.array(client_updates[0].shape).prod()
-        # print("client_updates size", client_models[0].parameters())
-        # update_len = len(client_updates)
-        # if self.memory is None:
-        #     self.memory = np.zeros((self.num_clients, update_len))
         if len(names) < len(client_updates):
             names = np.append([-1], names)  # put in adv
 

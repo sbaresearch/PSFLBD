@@ -4,7 +4,6 @@ import math
 import copy
 import numpy as np
 from agent import Agent
-# from agent_sparse import Agent as Agent_s
 from aggregation import Aggregation
 import torch
 import random
@@ -18,6 +17,21 @@ import warnings
 import wandb
 
 warnings.filterwarnings("ignore")
+
+
+class _NullWandb:
+    """Stand-in for the wandb module when no credentials/project were given
+    and we're not running under a `wandb agent` sweep -- every call is a
+    no-op so the rest of the script doesn't need `if use_wandb` checks."""
+    def init(self, *args, **kwargs):
+        pass
+
+    def log(self, *args, **kwargs):
+        pass
+
+    def finish(self, *args, **kwargs):
+        pass
+
 
 if __name__ == "__main__":
     torch.backends.cudnn.enabled = True
@@ -148,13 +162,28 @@ if __name__ == "__main__":
     parser.add_argument("--lambda_s", type=float, default=1.0)
     parser.add_argument("--lambda_c", type=float, default=1.0)
     parser.add_argument("--beta", type=float, default=0.5)
+    parser.add_argument("--wandb_entity", type=str, default=None,
+        help="wandb entity to log to. If neither this nor --wandb_project is set "
+             "(and we're not running under `wandb agent`, i.e. a sweep), wandb "
+             "logging is skipped entirely -- no account/credentials needed.")
+    parser.add_argument("--wandb_project", type=str, default=None,
+        help="wandb project to log to (see --wandb_entity).")
 
 
     args = parser.parse_args()
 
-    wandb.init(project = "FL-2" if args.debug else "FL-2",
-    config = vars(args),
-    name = f"DEBUG_{args.exp_name_extra}" if args.debug else args.exp_name_extra)
+    use_wandb = bool(args.wandb_entity) or bool(args.wandb_project) or bool(
+        os.environ.get("WANDB_SWEEP_ID") or os.environ.get("WANDB_RUN_ID")
+    )
+    if use_wandb:
+        wandb.init(
+            entity=args.wandb_entity,
+            project=args.wandb_project or ("FL-2" if args.debug else "FL-2"),
+            config=vars(args),
+            name=f"DEBUG_{args.exp_name_extra}" if args.debug else args.exp_name_extra,
+        )
+    else:
+        wandb = _NullWandb()
 
 
     
@@ -244,7 +273,6 @@ if __name__ == "__main__":
     # initialize a model, and the agents
     global_model = models.get_model(args.data, args).to(args.device)
 
-    global_mask = {}
     neurotoxin_mask = {}
     updates_dict = {}
     n_model_params = len(
@@ -257,39 +285,16 @@ if __name__ == "__main__":
         for name in global_model.state_dict()
     }
 
-    if args.aggr == "lockdown":
-        sparsity = utils.calculate_sparsities(args, params, distribution=args.mask_init)
-        mask = utils.init_masks(params, sparsity)
     malicious_client_ids = list(range(args.num_corrupt))
     agents, agent_data_sizes = [], {}
     for _id in range(0, args.num_agents):
-        if args.aggr == "lockdown":
-            if args.same_mask == 0:
-                agent = Agent_s(
-                    _id,
-                    args,
-                    train_dataset,
-                    user_groups[_id],
-                    mask=utils.init_masks(params, sparsity),
-                    backdoor_train_dataset=backdoor_train_dataset,
-                )
-            else:
-                agent = Agent_s(
-                    _id,
-                    args,
-                    train_dataset,
-                    user_groups[_id],
-                    mask=mask,
-                    backdoor_train_dataset=backdoor_train_dataset,
-                )
-        else:
-            agent = Agent(
-                _id,
-                args,
-                train_dataset,
-                user_groups[_id],
-                backdoor_train_dataset=backdoor_train_dataset,
-            )
+        agent = Agent(
+            _id,
+            args,
+            train_dataset,
+            user_groups[_id],
+            backdoor_train_dataset=backdoor_train_dataset,
+        )
         agent.is_malicious = 1 if _id < args.num_corrupt else 0
         agent_data_sizes[_id] = agent.n_data
         agents.append(agent)
@@ -322,27 +327,15 @@ if __name__ == "__main__":
             replace=False,
         )
         chosen = sorted(chosen)
-        if args.aggr == "lockdown":
-            old_mask = [copy.deepcopy(agent.mask) for agent in agents]
 
         for agent_id in chosen:
             if agents[agent_id].is_malicious and args.super_power:
                 continue
             global_model = global_model.to(args.device)
 
-            if args.aggr == "lockdown":
-                update = agents[agent_id].local_train(
-                    global_model,
-                    criterion,
-                    rnd,
-                    global_mask=global_mask,
-                    neurotoxin_mask=neurotoxin_mask,
-                    updates_dict=updates_dict,
-                )
-            else:
-                update = agents[agent_id].local_train(
-                    global_model, criterion, rnd, neurotoxin_mask=neurotoxin_mask
-                )
+            update = agents[agent_id].local_train(
+                global_model, criterion, rnd, neurotoxin_mask=neurotoxin_mask
+            )
             agent_updates_dict[agent_id] = update
             utils.vector_to_model(copy.deepcopy(rnd_global_params), global_model)
 
@@ -354,59 +347,25 @@ if __name__ == "__main__":
         # inference in every args.snap rounds
         logging.info("---------Test {} ------------".format(rnd))
         if rnd % args.snap == 0:
-            if args.aggr != "lockdown":
-                val_acc = utils.get_loss_n_accuracy(
-                    global_model, criterion, val_loader, args, rnd, args.num_target
-                )
-                asr = utils.get_loss_n_accuracy(
-                    global_model,
-                    criterion,
-                    poisoned_val_loader,
-                    args,
-                    rnd,
-                    num_classes=args.num_target,
-                )
-                poison_acc = utils.get_loss_n_accuracy(
-                    global_model,
-                    criterion,
-                    poisoned_val_only_x_loader,
-                    args,
-                    rnd,
-                    args.num_target,
-                )
-            else:
-                test_model = copy.deepcopy(global_model)
-
-                # CF
-                for name, param in test_model.named_parameters():
-                    mask = 0
-                    for id, agent in enumerate(agents):
-                        mask += old_mask[id][name].to(args.device)
-                    param.data = torch.where(
-                        mask.to(args.device) >= args.theta_ld,
-                        param,
-                        torch.zeros_like(param),
-                    )
-                val_acc = utils.get_loss_n_accuracy(
-                    test_model, criterion, val_loader, args, rnd, args.num_target
-                )
-                asr = utils.get_loss_n_accuracy(
-                    test_model,
-                    criterion,
-                    poisoned_val_loader,
-                    args,
-                    rnd,
-                    args.num_target,
-                )
-                poison_acc = utils.get_loss_n_accuracy(
-                    test_model,
-                    criterion,
-                    poisoned_val_only_x_loader,
-                    args,
-                    rnd,
-                    args.num_target,
-                )
-                del test_model
+            val_acc = utils.get_loss_n_accuracy(
+                global_model, criterion, val_loader, args, rnd, args.num_target
+            )
+            asr = utils.get_loss_n_accuracy(
+                global_model,
+                criterion,
+                poisoned_val_loader,
+                args,
+                rnd,
+                num_classes=args.num_target,
+            )
+            poison_acc = utils.get_loss_n_accuracy(
+                global_model,
+                criterion,
+                poisoned_val_only_x_loader,
+                args,
+                rnd,
+                args.num_target,
+            )
 
             logging.info("Clean ACC:              %.4f" % val_acc)
             logging.info("Attack Success Ratio:   %.4f" % asr)

@@ -19,11 +19,6 @@ from torchvision.datasets.utils import download_and_extract_archive
 def setup_logging(args):
     # Create the directory for logs
     log_dir = f"outputs/{args.data}_{args.attack}_{args.aggr_server}_{args.aggr}"
-    # Keep v1's path exactly as before (default); only tag the dir for v2 so
-    # the two variants never collide/overwrite each other's results.csv when
-    # run with the same data/attack/aggr combo.
-    if getattr(args, "sfl_variant", "v1") != "v1":
-        log_dir = f"{log_dir}_{args.sfl_variant}"
     os.makedirs(log_dir, exist_ok=True)
     log_path = os.path.join(log_dir, "main.log")
 
@@ -129,10 +124,6 @@ class DatasetSplit_new(Dataset):
         return len(self.idxs)
 
     def __getitem__(self, item):
-        # print(target.type())
-        # print(item)
-        # print(self.benign_idx)
-        # print(self.backdoor_idx)
         if item not in self.benign_idx:
             inp, target = self.backdoor_dataset[self.idxs[item]]
             target = torch.ones_like(target)
@@ -190,12 +181,6 @@ def distribute_data_dirichlet(dataset, args):
     for k in range(K):
         for i in dict_users:
             num[i][k] = len(np.intersect1d(dict_users[i], labels_dict[k]))
-    # logging.info(num)
-    # print(dict_users)
-    # def intersection(lst1, lst2):
-    #     lst3 = [value for value in lst1 if value in lst2]
-    #     return lst3
-    # client_label_num = [len(intersection (dict_users[i], dict_users[i+1] )) for i in range(args.num_agents)]
 
     for each_client, id_ in zip(num, range(len(num))):
         logging.info('client:%d, distribution: %s' % (id_, each_client))
@@ -241,16 +226,6 @@ def distribute_data(dataset, args, n_classes=10):
                 del labels_dict[j % n_classes][0]
                 class_ctr += 1
         np.random.shuffle(dict_users[user_idx])
-    # num = [ [ 0 for k in range(n_classes) ] for i in range(args.num_agents)]
-    # for k in range(n_classes):
-    #     for i in dict_users:
-    #         num[i][k] = len(np.intersect1d(dict_users[i], hey[k]))
-    # logging.info(num)
-    # logging.info(args.num_agents)
-    # def intersection(lst1, lst2):
-    #     lst3 = [value for value in lst1 if value in lst2]
-    #     return lst3
-    # logging.info( len(intersection (dict_users[0], dict_users[1] )))
 
     return dict_users
 class FEMNISTDataset(torch.utils.data.Dataset):
@@ -460,17 +435,8 @@ def get_loss_n_accuracy(model, criterion, data_loader, args, round, num_classes=
     # disable BN stats during inference
     model.eval()
     total_loss, correctly_labeled_samples = 0, 0
-    # confusion_matrix = torch.zeros(num_classes, num_classes)
-    # not_correct_samples = []
     # forward-pass to get loss and predictions of the current batch
     all_labels = []
-    # if round % 20 == 0:
-    #     def hook(module, fea_n, fea_out):
-    #         representation.append(fea_out.detach().cpu())
-    #         return None
-    #     for (name, module) in model.named_modules():
-    #         if name == layer_name:
-    #             handle = module.register_forward_hook(hook=hook)
 
     for _, (inputs, labels) in enumerate(data_loader):
         inputs, labels = inputs.to(device=args.device, non_blocking=True), \
@@ -751,10 +717,6 @@ def add_pattern_bd(x, y, dataset='cifar10', pattern_type='square', agent_idx=-1,
                 for i in range(row):
                     for j in range(column):
                         x[i][j][d] = max(min(x[i][j][d] + 20 * math.sin((2 * math.pi * j * 6) / column), 255), 0)
-            # import matplotlib.pyplot as plt
-            # plt.imsave("visualization/input_images/backdoor2.png", x)
-            # print(y)
-            # plt.show()
         else:
             if pattern_type == 'plus':
                 start_idx = 5
@@ -827,12 +789,6 @@ def add_pattern_bd(x, y, dataset='cifar10', pattern_type='square', agent_idx=-1,
                                     x[start_idx + size // 2, i][d] = 0
                                 else:
                                     x[start_idx + size // 2, i][d] = 255
-
-                # import matplotlib.pyplot as plt
-                #
-                # plt.imsave("visualization/input_images/backdoor2.png", x)
-                # print(y)
-                # plt.show()
 
     elif dataset == 'gtsrb':
         IM_MEAN = [0.485, 0.456, 0.406]
@@ -1074,12 +1030,6 @@ def add_pattern_bd(x, y, dataset='cifar10', pattern_type='square', agent_idx=-1,
                     # horizontal line
                     for i in range(start_idx - size // 2, start_idx + size // 2 + 1):
                         x[start_idx + size // 2, i] = 255
-    # import matplotlib.pyplot as plt
-    # if agent_idx == -1:
-    #     # plt.imsave("visualization/input_images/backdoor2.png", x)
-    #     plt.imshow(x)
-    #     print(y)
-    #     plt.show()
     return x
 
 def extract_last_layer(net, model=""):
@@ -1122,67 +1072,3 @@ def parameters_dict_to_vector_flt(net_dict) -> torch.Tensor:
         #     continue
         vec.append(param.view(-1))
     return torch.cat(vec)
-
-
-
-# def setup_logging(args):
-#     """
-#     Sets up the logging environment and creates necessary directories.
-    
-#     Args:
-#         args: Arguments object containing logging parameters like non_iid, alpha, data, and aggr.
-        
-#     Returns:
-#         dir_path: The directory path where logs and backup files are stored.
-#     """
-#     log_formatter = logging.Formatter("%(asctime)s [%(threadName)-12.12s] [%(levelname)-5.5s]  %(message)s")
-#     root_logger = logging.getLogger()
-#     root_logger.setLevel(logging.INFO)
-    
-#     # Clear existing handlers to avoid duplicates
-#     if root_logger.hasHandlers():
-#         root_logger.handlers.clear()
-    
-#     logPath = "logs"
-#     time_str = time.strftime("%Y-%m-%d-%H-%M")
-
-#     if args.non_iid:
-#         iid_str = 'noniid(%.1f)' % args.beta
-#     else:
-#         iid_str = 'iid'
-
-#     args.exp_name = iid_str + '_pr(%.1f)' % args.poison_frac
-
-#     if args.exp_name_extra != '':
-#         args.exp_name += '_%s' % args.exp_name_extra
-
-#     fileName = "%s_%s" % (time_str, args.exp_name)
-
-#     dir_path = '%s/%s/attack_%s_ar_%.2f/defense_%s/%s/' % (logPath, args.data, args.attack, args.num_corrupt / args.num_agents, args.aggr, fileName)
-#     file_path = dir_path + 'backup_file/'
-
-#     if not os.path.exists(dir_path):
-#         os.makedirs(dir_path)
-
-#     if not os.path.exists(file_path):
-#         os.makedirs(file_path)
-
-#     backup_file = ['aggregation.py', 'federated.py', 'agent.py']
-
-#     for file in backup_file:
-#         copyfile('./%s' % file, file_path + file)
-    
-#     # Set up file handler for logging
-#     file_handler = logging.FileHandler(os.path.join(dir_path, f"{fileName}.log"))
-#     file_handler.setFormatter(log_formatter)
-#     root_logger.addHandler(file_handler)
-    
-#     # Set up console handler for logging
-#     console_handler = logging.StreamHandler()
-#     console_handler.setLevel(logging.INFO)
-#     console_handler.setFormatter(log_formatter)
-#     root_logger.addHandler(console_handler)
-    
-#     # Log initial arguments
-#     logging.info(args)
-#     return dir_path

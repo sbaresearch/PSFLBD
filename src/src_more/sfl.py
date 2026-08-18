@@ -22,7 +22,40 @@ from utils import *
 from tqdm import tqdm
 warnings.filterwarnings("ignore")
 
-wandb.init(entity="adavarts-tuwien", project="sfl2")
+
+class _NullWandbConfig:
+    """Stand-in for wandb.config when wandb is disabled -- looks empty."""
+    def items(self):
+        return []
+
+    def __contains__(self, key):
+        return False
+
+    def update(self, *args, **kwargs):
+        pass
+
+
+class _NullWandbRun:
+    name = None
+
+
+class _NullWandb:
+    """Stand-in for the wandb module when no credentials/project were given
+    and we're not running under a `wandb agent` sweep -- every call is a
+    no-op so the rest of the script doesn't need `if use_wandb` checks."""
+    def __init__(self):
+        self.config = _NullWandbConfig()
+        self.run = _NullWandbRun()
+
+    def init(self, *args, **kwargs):
+        pass
+
+    def log(self, *args, **kwargs):
+        pass
+
+    def finish(self, *args, **kwargs):
+        pass
+
 
 if __name__ == "__main__":
     best_acc = -1
@@ -117,24 +150,6 @@ if __name__ == "__main__":
     )
     parser.add_argument("--non_iid", action="store_true", default=False)
     parser.add_argument("--multiple_servers", type=bool, default=False)
-    parser.add_argument(
-        "--sfl_variant",
-        type=str,
-        default="v1",
-        choices=["v1", "v2"],
-        help=(
-            "Thapa et al. SplitFed variant. 'v1' (default, unchanged): "
-            "server-side branch(es) trained from a round-start snapshot and "
-            "restored/aggregated (FedAvg or --aggr_server defense) at round "
-            "end -- --multiple_servers only toggles whether that's realized "
-            "as one branch per client or a single reused branch (memory "
-            "optimization, same math). 'v2': a single server-side model is "
-            "updated in place, sequentially, by every client in turn within "
-            "the round, with no restore and no server-side aggregation ever "
-            "(only the client side is still FedAvg'd/defended); forces "
-            "--multiple_servers off internally."
-        ),
-    )
     parser.add_argument("--debug", action="store_true", default=False)
     parser.add_argument("--beta", type=float, default=0.5)
     parser.add_argument(
@@ -195,12 +210,12 @@ if __name__ == "__main__":
     parser.add_argument("--pg", type=int, default=0)
     parser.add_argument("--n_neighbors", type=int, default=0)
     parser.add_argument("--iqr_scale", type=float, default=0.5)
-    parser.add_argument('--pgd_eps', type=float, default=2.0, help='L2 norm constraint for PGD attack')
-    parser.add_argument("--trigger_size", type=int, default=3, help="Size of the square trigger")
-    parser.add_argument('--dm_adv_model_count', type=int, default=3, help='Number of adversarial shadow models')
-    parser.add_argument('--dm_adv_epochs', type=int, default=2, help='Epochs of shadow-model fitting')
-    parser.add_argument('--trigger_outter_epochs', type=int, default=10, help='Trigger optimization steps')
-    parser.add_argument('--trigger_lr', type=float, default=0.01, help='Trigger update step size')
+    parser.add_argument("--wandb_entity", type=str, default=None,
+        help="wandb entity to log to. If neither this nor --wandb_project is set "
+             "(and we're not running under `wandb agent`, i.e. a sweep), wandb "
+             "logging is skipped entirely -- no account/credentials needed.")
+    parser.add_argument("--wandb_project", type=str, default=None,
+        help="wandb project to log to (see --wandb_entity).")
 
     args = parser.parse_args()
 
@@ -210,6 +225,21 @@ if __name__ == "__main__":
 
     if args.super_power:
         args.exp_name_extra = "sp"
+
+    # wandb is entirely optional: only turn it on if the user asked for it
+    # (--wandb_entity/--wandb_project, e.g. via a sweep YAML's `entity`/
+    # `project` keys) or we're already running as a `wandb agent` sweep
+    # worker (which sets these env vars before invoking this script).
+    use_wandb = bool(args.wandb_entity) or bool(args.wandb_project) or bool(
+        os.environ.get("WANDB_SWEEP_ID") or os.environ.get("WANDB_RUN_ID")
+    )
+    if use_wandb:
+        wandb.init(
+            entity=args.wandb_entity or "adavarts-tuwien",
+            project=args.wandb_project or "sfl2",
+        )
+    else:
+        wandb = _NullWandb()
 
     per_data_dict = {
         "rounds": {"mnist": 200,"ets":200, "gtsrb": 200, "cifar10": 200, "cifar100": 200},
@@ -237,14 +267,7 @@ if __name__ == "__main__":
     args.log_dir = utils.setup_logging(args)
     wandb.config.update(vars(args), allow_val_change=True)
     wandb.run.name = f"{args.data}_{args.model}_{args.attack}_{args.aggr_server}_{args.aggr}_{args.attack_mode}"
-    if args.sfl_variant != "v1":
-        wandb.run.name = f"{wandb.run.name}_{args.sfl_variant}"
-    # wandb.init(
-    #     project="split-fed-backdoor-3", 
-    #     config=args, 
-    #     name=f"{args.data}_{args.attack}_{args.aggr_server}_{args.aggr}_{args.attack_mode}"
-    # )
-    
+
     # 2. Setup CSV Logger
     csv_file = os.path.join(args.log_dir, "results.csv")
     results_history = []
@@ -421,17 +444,6 @@ if __name__ == "__main__":
             agent_data_sizes=agent_data_sizes,
             rnd=rnd,
         )
-        #  # 1) Aggregate/defend client-side updates (as before)
-        # updates_dict, neurotoxin_mask = aggregator.aggregate_updates(
-        #     global_client_model,
-        #     agent_updates_dict
-        # )
-        # if updates_dict is None or isinstance(updates_dict, int):
-        #     print("!!! Aggregator rejected all updates. Round skipped.")
-        #     # No weight update this round
-        #     updates_dict = {} 
-        # else:
-        #     updates_dict = vector_to_name_param(updates_dict, copy.deepcopy(global_client_model.state_dict()))
 
         # 1. Get the result from the aggregator
         aggregated_result, neurotoxin_mask = aggregator.aggregate_updates(
