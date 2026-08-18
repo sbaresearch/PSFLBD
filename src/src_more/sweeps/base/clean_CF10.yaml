@@ -26,4 +26,4 @@ parameters:
     values: [avg]
 
   seed:
-    values: [44]
+    values: [43, 44]

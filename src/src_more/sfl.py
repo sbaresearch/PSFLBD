@@ -5,7 +5,6 @@ import math
 import copy
 import numpy as np
 from agent_split import Agent, FullSplitForEval
-# from agent_sparse import Agent as Agent_s
 from aggregation import Aggregation
 import torch
 import random
@@ -142,7 +141,7 @@ if __name__ == "__main__":
         "--attack",
         type=str,
         default="badnet",
-        choices=["badnet", "DBA", "neurotoxin", "pgd", "a3fl_opt", "alignment"],
+        choices=["badnet", "DBA", "neurotoxin"],
     )
     parser.add_argument(
         "--aggr",
@@ -151,12 +150,9 @@ if __name__ == "__main__":
         choices=[
             "avg",
             "alignins",
-            "rlr",
             "mkrum",
             "mmetric",
-            "lockdown",
             "foolsgold",
-            "rfa",
             "feddlad"
         ],
         help="aggregation function to aggregate agents' local weights",
@@ -168,33 +164,13 @@ if __name__ == "__main__":
         choices=[
             "avg",
             "alignins",
-            "rlr",
             "mkrum",
             "mmetric",
-            "lockdown",
             "foolsgold",
-            "rfa",
             "feddlad",
-            "safesplit",
+            "same"
         ],
-        help="aggregation function to aggregate agents' local weights. "
-             "'safesplit' is a sequential accept/rollback defense (ported "
-             "from this user's improved SLBD/SafeSplit/ss_claude.py) and "
-             "only makes sense with --sfl_variant v2 -- it does not "
-             "aggregate deltas like the others.",
     )
-    parser.add_argument("--safesplit_dct_low_freq_ratio", type=float, default=0.1,
-        help="SafeSplit (--aggr_server safesplit): fraction of low-frequency "
-             "DCT components compared per layer.")
-    parser.add_argument("--safesplit_reputation_decay", type=float, default=0.85,
-        help="SafeSplit (--aggr_server safesplit): EMA weight on a client's "
-             "prior reputation.")
-    parser.add_argument("--safesplit_reputation_floor", type=float, default=0.5,
-        help="SafeSplit (--aggr_server safesplit): below this reputation a "
-             "client is rejected regardless of this step's raw score.")
-    parser.add_argument("--safesplit_gap_min_k", type=int, default=2,
-        help="SafeSplit (--aggr_server safesplit): smallest per-channel "
-             "benign-cluster size the gap statistic may pick.")
     parser.add_argument("--defense_start_round", type=int, default=1, help="Round at which defense mechanisms start")
     parser.add_argument("--lr_decay", type=float, default=0.99)
     parser.add_argument("--momentum", type=float, default=0.0)
@@ -208,16 +184,12 @@ if __name__ == "__main__":
     parser.add_argument("--sparsity", type=float, default=0.3)
     parser.add_argument("--lambda_s", type=float, default=1.0)
     parser.add_argument("--lambda_c", type=float, default=1.0)
-    # parser.add_argument("--bg", type=int, default = 3)
-    # parser.add_argument("--pg", type=int, default=0)
-    # parser.add_argument("--n_neighbors", type=int, default=0)
-    # parser.add_argument("--iqr_scale", type=float, default=0.5)
     parser.add_argument("--split_point", type=str, default="layer1")
     parser.add_argument(
         "--attack_mode",
         type=str,
         default="baseline",
-        choices=["baseline", "replacement", "pgd"],
+        choices=["baseline", "replacement"],
     )
     parser.add_argument("--bg", type=int, default = 3)
     parser.add_argument("--pg", type=int, default=0)
@@ -229,20 +201,7 @@ if __name__ == "__main__":
     parser.add_argument('--dm_adv_epochs', type=int, default=2, help='Epochs of shadow-model fitting')
     parser.add_argument('--trigger_outter_epochs', type=int, default=10, help='Trigger optimization steps')
     parser.add_argument('--trigger_lr', type=float, default=0.01, help='Trigger update step size')
-    parser.add_argument('--lambda_a3fl', type=float, default=0.5, help='Weight for persistence loss')
-    parser.add_argument("--alignment_alpha", type=float, default=0.1, help="Weight for direction-alignment loss")
-    parser.add_argument("--alignment_beta", type=float, default=0.01, help="Weight for sign-mismatch penalty")
-    parser.add_argument("--surrogate_lr", type=float, default=0.01, help="Learning rate for surrogate server updates")
-    parser.add_argument("--surrogate_update_steps", type=int, default=1, help="How many surrogate updates to run per observed server feedback")
-    parser.add_argument("--surrogate_grad_weight", type=float, default=1.0, help="Weight on gradient-matching loss for the surrogate server")
-    parser.add_argument("--surrogate_cls_weight", type=float, default=1.0, help="Weight on label-classification loss for the surrogate server")
-    parser.add_argument(
-        "--shadow_server_strategy",
-        type=str,
-        default="copy",
-        choices=["copy", "surrogate"],
-        help="How the malicious client builds the server shadow for A3FL in split learning",
-    )
+
     args = parser.parse_args()
 
     if args.clean:
@@ -253,8 +212,8 @@ if __name__ == "__main__":
         args.exp_name_extra = "sp"
 
     per_data_dict = {
-        "rounds": {"mnist": 200,"fmnist": 200, "femnist":200, "ets":200, "gtsrb": 200, "cifar10": 200, "cifar100": 200, "tinyimagenet": 200,"sen140": 50},
-        "num_target": {"mnist": 10,"fmnist": 10, "femnist":62, "ets": 164, "gtsrb":43, "cifar10": 10, "cifar100": 100, "tinyimagenet": 200,"sen140": 2},
+        "rounds": {"mnist": 200,"ets":200, "gtsrb": 200, "cifar10": 200, "cifar100": 200},
+        "num_target": {"mnist": 10, "ets": 164, "gtsrb":43, "cifar10": 10, "cifar100": 100},
     }
 
     for key, value in wandb.config.items():
@@ -263,18 +222,12 @@ if __name__ == "__main__":
     if "rounds" not in wandb.config:
         args.rounds = per_data_dict["rounds"][args.data]
     args.num_target = per_data_dict["num_target"][args.data]
-    # args.aggr = args.aggr_server
+    if args.aggr_server == "same":
+        args.aggr_server = args.aggr
 
     if args.model == "googlenet":
         args.client_lr = 0.001
         args.server_lr = 0.001
-
-    if args.aggr_server == "safesplit" and args.sfl_variant != "v2":
-        raise ValueError(
-            "--aggr_server safesplit requires --sfl_variant v2: SafeSplit "
-            "analyzes/rolls back a single, sequentially-updated server "
-            "model, which only exists under sfl_variant='v2'."
-        )
 
     torch.manual_seed(args.seed)
     torch.cuda.manual_seed_all(args.seed)
@@ -315,7 +268,7 @@ if __name__ == "__main__":
 
     idxs = (val_dataset.targets != args.target_class).nonzero().flatten().tolist()
 
-    if args.data not in ("tinyimagenet", "ets", "gtsrb"):
+    if args.data not in ("ets", "gtsrb"):
         poisoned_val_set = utils.DatasetSplit(copy.deepcopy(val_dataset), idxs)
         utils.poison_dataset(poisoned_val_set.dataset, args, idxs, poison_all=True)
     else:
@@ -330,7 +283,7 @@ if __name__ == "__main__":
         num_workers=args.num_workers,
         pin_memory=False,
     )
-    if args.data not in ("tinyimagenet", "ets", "gtsrb"):
+    if args.data not in ("ets", "gtsrb"):
         idxs = (val_dataset.targets != args.target_class).nonzero().flatten().tolist()
         poisoned_val_set_only_x = utils.DatasetSplit(copy.deepcopy(val_dataset), idxs)
         utils.poison_dataset(
@@ -379,41 +332,18 @@ if __name__ == "__main__":
     for name in global_client_model.state_dict()
     }
 
-    if args.aggr == "lockdown":
-        sparsity = utils.calculate_sparsities(args, params, distribution=args.mask_init)
-        mask = utils.init_masks(params, sparsity)
     malicious_client_ids = list(range(args.num_corrupt)) # find which clients are corrupted
    
     agents, agent_data_sizes = [], {}
     for _id in range(0, args.num_agents):#builds all clients and assigns their data shards
-        if args.aggr == "lockdown":
-            if args.same_mask == 0:
-                agent = Agent_s(
-                    _id,
-                    args,
-                    train_dataset,
-                    user_groups[_id],
-                    mask=utils.init_masks(params, sparsity),
-                    backdoor_train_dataset=backdoor_train_dataset,
-                )
-            else:
-                agent = Agent_s(
-                    _id,
-                    args,
-                    train_dataset,
-                    user_groups[_id],
-                    mask=mask,
-                    backdoor_train_dataset=backdoor_train_dataset,
-                )
-        else:
-            agent = Agent( #this is a client in federated learning
-                _id,
-                args,
-                train_dataset,
-                user_groups[_id],
-                backdoor_train_dataset=backdoor_train_dataset,
-                main_server = main_server
-            )
+        agent = Agent( #this is a client in federated learning
+            _id,
+            args,
+            train_dataset,
+            user_groups[_id],
+            backdoor_train_dataset=backdoor_train_dataset,
+            main_server = main_server
+        )
         agent.is_malicious = 1 if _id < args.num_corrupt else 0
         agent_data_sizes[_id] = agent.n_data
         agents.append(agent)
@@ -448,42 +378,19 @@ if __name__ == "__main__":
         )
         chosen = sorted(chosen)
 
-        if args.aggr == "lockdown":
-            old_mask = [copy.deepcopy(agent.mask) for agent in agents]
-
         for agent_id in chosen:
             if agents[agent_id].is_malicious and args.super_power:
                 continue
 
-            if args.aggr == "lockdown":
-                # your existing lockdown client training
-                client_update = agents[agent_id].local_train(
-                    global_model,
-                    criterion,
-                    rnd,
-                    global_mask=global_mask,
-                    neurotoxin_mask=neurotoxin_mask,
-                    updates_dict=updates_dict,
-                )
-                agent_updates_dict[agent_id] = client_update
-
-            else:
-                # SplitFedV1: returns both client and server deltas
-                client_update, server_update = agents[agent_id].local_train_splitfedv1(
-                    global_client_model,
-                    main_server,
-                    round=rnd,
-                    neurotoxin_mask=neurotoxin_mask,
-                )
-                agent_updates_dict[agent_id] = client_update
-                agent_server_updates[agent_id] = server_update
-
-                if args.sfl_variant == "v2":
-                    # SafeSplit (aggr_server="safesplit") only: analyze/roll
-                    # back the server model right now, before the next
-                    # client in this round trains on top of it. No-op
-                    # whenever aggr_server != "safesplit".
-                    main_server.run_sequential_defense(client_id=agent_id)
+            # SplitFedV1: returns both client and server deltas
+            client_update, server_update = agents[agent_id].local_train_splitfedv1(
+                global_client_model,
+                main_server,
+                round=rnd,
+                neurotoxin_mask=neurotoxin_mask,
+            )
+            agent_updates_dict[agent_id] = client_update
+            agent_server_updates[agent_id] = server_update
 
             # IMPORTANT: reset client model back to round start for next agent
             utils.vector_to_model(copy.deepcopy(rnd_global_client_params), global_client_model)
@@ -508,13 +415,12 @@ if __name__ == "__main__":
                 print("!!! ALERT: Malicious signal is too quiet. FedAvg will wash this out.")
 
         # 2) Aggregate/defend server-side updates (only for SplitFed path)
-        if args.aggr != "lockdown":
-            main_server.aggregate_server_updates_round(
-                client_ids=chosen,
-                agent_server_updates=agent_server_updates,
-                agent_data_sizes=agent_data_sizes,
-                rnd=rnd,
-            )
+        main_server.aggregate_server_updates_round(
+            client_ids=chosen,
+            agent_server_updates=agent_server_updates,
+            agent_data_sizes=agent_data_sizes,
+            rnd=rnd,
+        )
         #  # 1) Aggregate/defend client-side updates (as before)
         # updates_dict, neurotoxin_mask = aggregator.aggregate_updates(
         #     global_client_model,
@@ -554,64 +460,30 @@ if __name__ == "__main__":
         # inference in every args.snap rounds
         logging.info("---------Test {} ------------".format(rnd))
         if rnd % args.snap == 0:
-            if args.aggr != "lockdown":
-                eval_model = FullSplitForEval(
-                    copy.deepcopy(global_client_model).to(args.device),
-                    copy.deepcopy(main_server.server_models[0]).to(args.device),
-                ).to(args.device)
-                eval_model.eval()
-                with torch.no_grad():
-                    x_dbg, y_dbg = next(iter(val_loader))
-                    x_dbg = x_dbg.to(args.device)
-                    y_dbg = y_dbg.to(args.device)
+            eval_model = FullSplitForEval(
+                copy.deepcopy(global_client_model).to(args.device),
+                copy.deepcopy(main_server.server_models[0]).to(args.device),
+            ).to(args.device)
+            eval_model.eval()
+            with torch.no_grad():
+                x_dbg, y_dbg = next(iter(val_loader))
+                x_dbg = x_dbg.to(args.device)
+                y_dbg = y_dbg.to(args.device)
 
-                    logits = eval_model(x_dbg)  # shape [B, num_classes]
-                    probs = torch.softmax(logits, dim=1)
+                logits = eval_model(x_dbg)  # shape [B, num_classes]
+                probs = torch.softmax(logits, dim=1)
 
-                    print(f"[DBG rnd={rnd}] logits mean={logits.mean().item():.4f}, std={logits.std().item():.4f}, "
-                        f"maxlogit mean={logits.max(dim=1).values.mean().item():.4f}")
-                    print(f"[DBG rnd={rnd}] probs max mean={probs.max(dim=1).values.mean().item():.4f}, "
-                        f"pred entropy mean={(- (probs * (probs+1e-12).log()).sum(dim=1)).mean().item():.4f}")
-                    print(f"[DBG rnd={rnd}] preds bincount={torch.bincount(logits.argmax(dim=1), minlength=args.num_target).cpu().tolist()}")
-                # -------------------------------------
-                val_acc = utils.get_loss_n_accuracy(eval_model, criterion, val_loader, args, rnd, args.num_target)
-                asr = utils.get_loss_n_accuracy(eval_model, criterion, poisoned_val_loader, args, rnd, num_classes=args.num_target)
-                poison_acc = utils.get_loss_n_accuracy(eval_model, criterion, poisoned_val_only_x_loader, args, rnd, args.num_target)
+                print(f"[DBG rnd={rnd}] logits mean={logits.mean().item():.4f}, std={logits.std().item():.4f}, "
+                    f"maxlogit mean={logits.max(dim=1).values.mean().item():.4f}")
+                print(f"[DBG rnd={rnd}] probs max mean={probs.max(dim=1).values.mean().item():.4f}, "
+                    f"pred entropy mean={(- (probs * (probs+1e-12).log()).sum(dim=1)).mean().item():.4f}")
+                print(f"[DBG rnd={rnd}] preds bincount={torch.bincount(logits.argmax(dim=1), minlength=args.num_target).cpu().tolist()}")
+            # -------------------------------------
+            val_acc = utils.get_loss_n_accuracy(eval_model, criterion, val_loader, args, rnd, args.num_target)
+            asr = utils.get_loss_n_accuracy(eval_model, criterion, poisoned_val_loader, args, rnd, num_classes=args.num_target)
+            poison_acc = utils.get_loss_n_accuracy(eval_model, criterion, poisoned_val_only_x_loader, args, rnd, args.num_target)
 
-                del eval_model
-            else:
-                test_model = copy.deepcopy(global_model)
-
-                # CF
-                for name, param in test_model.named_parameters():
-                    mask = 0
-                    for id, agent in enumerate(agents):
-                        mask += old_mask[id][name].to(args.device)
-                    param.data = torch.where(
-                        mask.to(args.device) >= args.theta_ld,
-                        param,
-                        torch.zeros_like(param),
-                    )
-                val_acc = utils.get_loss_n_accuracy(
-                    test_model, criterion, val_loader, args, rnd, args.num_target
-                )
-                asr = utils.get_loss_n_accuracy(
-                    test_model,
-                    criterion,
-                    poisoned_val_loader,
-                    args,
-                    rnd,
-                    args.num_target,
-                )
-                poison_acc = utils.get_loss_n_accuracy(
-                    test_model,
-                    criterion,
-                    poisoned_val_only_x_loader,
-                    args,
-                    rnd,
-                    args.num_target,
-                )
-                del test_model
+            del eval_model
 
             logging.info("Clean ACC:              %.4f" % val_acc)
             logging.info("Attack Success Ratio:   %.4f" % asr)

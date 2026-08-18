@@ -1,0 +1,44 @@
+program: sfl.py
+project: sfl-with-start-round
+
+method: grid
+
+parameters:
+  attack:
+    values: [DBA, neurotoxin] #, DBA, neurotoxin]
+
+  data:
+    value: gtsrb
+
+  model:
+    value: googlenet
+  
+  defense_start_round:
+    value: 200
+
+  rounds:
+    value: 500
+
+  num_agents:
+    value: 20
+
+  num_corrupt:
+    value: 4
+
+  target_class:
+    value: 12
+
+  poison_frac:
+    value: 0.5
+
+  multiple_servers:
+    value: false
+    
+  seed:
+    values: [43, 44]
+
+  aggr:
+    values: [alignins]
+  
+  aggr_server:
+    values: [alignins]

@@ -51,7 +51,7 @@ def local_train_splitfedv1(
                 
                 optimizer.step()
 
-        # 3. Post-Training Attack Logic (PGD and Model Replacement)
+        # 3. Post-Training Attack Logic (Model Replacement)
         with torch.no_grad():
             after_train = parameters_to_vector(
                 [global_client_model.state_dict()[name] for name in global_client_model.state_dict()]
@@ -68,15 +68,6 @@ def local_train_splitfedv1(
             # Apply scaling to the delta
             client_update_vec = (after_train - initial_client_params) * scale
 
-            # --- PGD CONSTRAINT ---
-            if self.id < self.args.num_corrupt and self.args.attack_constraint == "pgd":
-                # Calculate norm of the (potentially scaled) update
-                eps = torch.norm(initial_client_params) * self.args.pgd_eps
-                actual_norm = torch.norm(client_update_vec)
-                
-                if actual_norm > eps:
-                    client_update_vec = (client_update_vec / actual_norm) * eps
-            
             self.update = client_update_vec
 
             # --- Server Part (Scale server update as well if malicious) ---
@@ -91,17 +82,6 @@ def local_train_splitfedv1(
 
         return self.update, server_update_dict
 
-"""
-Combination,Command Flags
-BadNet + Baseline,--attack badnet --attack_mode baseline
-BadNet + Replacement,--attack badnet --attack_mode replacement
-DBA + PGD,--attack DBA --attack_mode baseline --attack_constraint pgd
-DBA + Replacement + PGD,--attack DBA --attack_mode replacement --attack_constraint pgd
-Component,Responsibility
-Trigger (--attack),Handled by utils.poison_dataset. Decides what the model learns (BadNet static or DBA pieces).
-Scaling (--attack_mode),Multiplies the delta. Decides how much impact the update has on the average.
-Constraint (--attack_constraint),Uses PGD to clip the delta. Decides how stealthy the update remains.
-"""
 
 
 import torch

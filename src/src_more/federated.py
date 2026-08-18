@@ -107,7 +107,7 @@ if __name__ == "__main__":
         "--attack",
         type=str,
         default="badnet",
-        choices=["badnet", "DBA", "neurotoxin", "pgd","aligning_bypass","a3fl","a3fl_opt","alignment"],
+        choices=["badnet", "DBA", "neurotoxin"],
     )
     parser.add_argument(
         "--aggr_server",
@@ -116,12 +116,9 @@ if __name__ == "__main__":
         choices=[
             "avg",
             "alignins",
-            "rlr",
             "mkrum",
             "mmetric",
-            "lockdown",
             "foolsgold",
-            "rfa",
         ],
         help="aggregation function to aggregate agents' local weights",
     )
@@ -132,12 +129,9 @@ if __name__ == "__main__":
         choices=[
             "avg",
             "alignins",
-            "rlr",
             "mkrum",
             "mmetric",
-            "lockdown",
             "foolsgold",
-            "rfa",
         ],
         help="aggregation function to aggregate agents' local weights",
     )
@@ -155,24 +149,6 @@ if __name__ == "__main__":
     parser.add_argument("--lambda_c", type=float, default=1.0)
     parser.add_argument("--beta", type=float, default=0.5)
 
-    parser.add_argument("--alignment_alpha", type=float, default=0.1)
-    parser.add_argument("--alignment_beta", type=float, default=0.01)
-
-    # A3FL Specific Hyperparameters
-    # parser.add_argument("--inner_lr", type=float, default=0.01, help="LR for trigger optimization")
-    # parser.add_argument("--lambda_a3fl", type=float, default=0.5, help="Weight for the adaptive loss")
-    parser.add_argument("--trigger_size", type=int, default=3, help="Size of the square trigger")
-    parser.add_argument("--exp_name_extra", type=str, default="running_sfl_no_attack_no_defense")
-    # parser.add_argument('--trigger_outter_epochs', type=int, default=10, help='A3FL outer loop epochs')
-    # parser.add_argument('--trigger_lr', type=float, default=0.01, help='A3FL trigger learning rate')
-
-    # A3FL Hyperparameters
-    parser.add_argument('--dm_adv_model_count', type=int, default=3, help='Number of adversarial shadow models')
-    parser.add_argument('--dm_adv_epochs', type=int, default=2, help='Epochs to simulate unlearning for each shadow model')
-    parser.add_argument('--trigger_outter_epochs', type=int, default=10, help='Number of iterations for trigger optimization')
-    parser.add_argument('--trigger_lr', type=float, default=0.01, help='Learning rate for trigger pixel updates')
-    parser.add_argument('--lambda_a3fl', type=float, default=0.5, help='Weight for persistence loss')
-    parser.add_argument('--inner_lr', type=float, default=0.01, help='Learning rate for shadow model unlearning')
 
     args = parser.parse_args()
 
@@ -190,8 +166,8 @@ if __name__ == "__main__":
         args.exp_name_extra = "sp"
 
     per_data_dict = {
-        "rounds": {"mnist": 100,"fmnist": 50, "cifar10": 300, "cifar100": 300, "tinyimagenet": 50,"sen140": 50},
-        "num_target": {"mnist": 10,"fmnist": 10, "cifar10": 10, "cifar100": 100, "tinyimagenet": 200,"sen140": 2},
+        "rounds": {"mnist": 100, "cifar10": 300, "cifar100": 300},
+        "num_target": {"mnist": 10, "cifar10": 10, "cifar100": 100},
     }
 
     args.rounds = per_data_dict["rounds"][args.data]
@@ -223,7 +199,7 @@ if __name__ == "__main__":
 
     idxs = (val_dataset.targets != args.target_class).nonzero().flatten().tolist()
 
-    if args.data != "tinyimagenet":
+    if args.data != "gtsrb":
         poisoned_val_set = utils.DatasetSplit(copy.deepcopy(val_dataset), idxs)
         utils.poison_dataset(poisoned_val_set.dataset, args, idxs, poison_all=True)
     else:
@@ -238,7 +214,7 @@ if __name__ == "__main__":
         num_workers=args.num_workers,
         pin_memory=False,
     )
-    if args.data != "tinyimagenet":
+    if args.data != "gtsrb":
         idxs = (val_dataset.targets != args.target_class).nonzero().flatten().tolist()
         poisoned_val_set_only_x = utils.DatasetSplit(copy.deepcopy(val_dataset), idxs)
         utils.poison_dataset(
@@ -285,49 +261,6 @@ if __name__ == "__main__":
         sparsity = utils.calculate_sparsities(args, params, distribution=args.mask_init)
         mask = utils.init_masks(params, sparsity)
     malicious_client_ids = list(range(args.num_corrupt))
-    # agents, agent_data_sizes = [], {}
-    # for _id in range(0, args.num_agents):
-    #     if args.aggr == "lockdown":
-    #         if args.same_mask == 0:
-    #             agent = Agent_s(
-    #                 _id,
-    #                 args,
-    #                 train_dataset,
-    #                 user_groups[_id],
-    #                 mask=utils.init_masks(params, sparsity),
-    #                 backdoor_train_dataset=backdoor_train_dataset,
-    #                 malicious_client_ids = malicious_client_ids
-    #             )
-    #         else:
-    #             agent = Agent_s(
-    #                 _id,
-    #                 args,
-    #                 train_dataset,
-    #                 user_groups[_id],
-    #                 mask=mask,
-    #                 backdoor_train_dataset=backdoor_train_dataset,
-    #                 malicious_client_ids = malicious_client_ids
-    #             )
-    #     else:
-    #         agent = Agent(
-    #             _id,
-    #             args,
-    #             train_dataset,
-    #             user_groups[_id],
-    #             backdoor_train_dataset=backdoor_train_dataset,
-    #             malicious_client_ids = malicious_client_ids
-    #         )
-    #     agent.is_malicious = 1 if _id < args.num_corrupt else 0
-    #     agent_data_sizes[_id] = agent.n_data
-    #     agents.append(agent)
-
-    #     logging.info(
-    #         "build client:{} mal:{} data_num:{}".format(
-    #             _id, agent.is_malicious, agent.n_data
-    #         )
-    #     )
-
-    # aggregator = Aggregation(agent_data_sizes, n_model_params, args)
     agents, agent_data_sizes = [], {}
     for _id in range(0, args.num_agents):
         if args.aggr == "lockdown":

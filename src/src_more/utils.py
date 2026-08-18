@@ -359,32 +359,10 @@ def get_datasets(data):
     train_dataset, test_dataset = None, None
     data_dir = './data'
 
-    if data == 'fmnist':
-        transform = transforms.Compose([transforms.ToTensor(), transforms.Normalize(mean=[0.5], std=[0.5])])
-        train_dataset = datasets.FashionMNIST(data_dir, train=True, download=True, transform=transform)
-        test_dataset = datasets.FashionMNIST(data_dir, train=False, download=True, transform=transform)
     if data == 'mnist':
         transform = transforms.Compose([transforms.ToTensor(), transforms.Normalize(mean=[0.5], std=[0.5])])
         train_dataset = datasets.MNIST(data_dir, train=True, download=True, transform=transform)
         test_dataset = datasets.MNIST(data_dir, train=False, download=True, transform=transform)
-    elif data == 'fedemnist':
-        train_dir = '../data/Fed_EMNIST/fed_emnist_all_trainset.pt'
-        test_dir = '../data/Fed_EMNIST/fed_emnist_all_valset.pt'
-        train_dataset = torch.load(train_dir)
-        test_dataset = torch.load(test_dir)
-    elif data == 'femnist':
-        transform = transforms.Compose([
-            transforms.Normalize((0.5,), (0.5,))
-        ])
-        train_path = './data/femnist/train.pt'
-        test_path = './data/femnist/test.pt'
-
-        X_train, Y_train = torch.load(train_path)
-        X_test, Y_test = torch.load(test_path)
-
-        train_dataset = FEMNISTDataset(X_train, Y_train, transform)
-        test_dataset = FEMNISTDataset(X_test, Y_test, transform)
-
     elif data == 'cifar10':
         transform_train = transforms.Compose([
             transforms.RandomCrop(32, padding=4),
@@ -416,23 +394,6 @@ def get_datasets(data):
                                          train=False, download=True, transform=valid_transform)
         train_dataset.targets, test_dataset.targets = torch.LongTensor(train_dataset.targets), torch.LongTensor(
             test_dataset.targets)
-    elif data == "tinyimagenet":
-        _data_transforms = {
-            'train': transforms.Compose([
-                transforms.ToTensor()
-            ]),
-            'test': transforms.Compose([
-                transforms.ToTensor()
-            ]),
-        }
-        _data_dir = './data/tiny-imagenet-200/'
-        train_dataset = datasets.ImageFolder(os.path.join(_data_dir, 'train'),
-                                             _data_transforms['train'])
-        # print(train_dataset[0][0].shape)
-        test_dataset = datasets.ImageFolder(os.path.join(_data_dir, 'test'),
-                                            _data_transforms['test'])
-        train_dataset.targets = torch.tensor(train_dataset.targets)
-        test_dataset.targets = torch.tensor(test_dataset.targets)
     elif data == 'gtsrb':
         IMAGENET_MEAN = [0.485, 0.456, 0.406]
         IMAGENET_STD = [0.229, 0.224, 0.225]
@@ -872,73 +833,6 @@ def add_pattern_bd(x, y, dataset='cifar10', pattern_type='square', agent_idx=-1,
                 # plt.imsave("visualization/input_images/backdoor2.png", x)
                 # print(y)
                 # plt.show()
-
-    elif dataset == 'tinyimagenet':
-        if pattern_type == 'plus':
-            start_idx = 5
-            size = 6
-            # vertical line
-            for d in range(0, 3):
-                for i in range(start_idx, start_idx + size + 1):
-                    if d == 2:
-                        x[d][i][start_idx] = 0
-                    else:
-                        x[d][i][start_idx] = 1
-            # horizontal line
-            for d in range(0, 3):
-                for i in range(start_idx - size // 2, start_idx + size // 2 + 1):
-                    if d == 2:
-                        x[d][start_idx + size // 2][i] = 0
-                    else:
-                        x[d][start_idx + size // 2][i] = 1
-
-            # if agent_idx == -1:
-            #     # plt.imsave("visualization/input_images/backdoor2.png", x)
-            #     print(y)
-            #     plt.show()
-            # plt.savefig()
-
-    elif dataset == 'fmnist':
-        x = np.array(x.squeeze())
-        if pattern_type == 'plus':
-            start_idx = 5
-            size = 6
-            if agent_idx == -1:
-                # vertical line
-                for i in range(start_idx, start_idx + size + 1):
-                    x[i, start_idx] = 255
-                # horizontal line
-                for i in range(start_idx - size // 2, start_idx + size // 2 + 1):
-                    x[start_idx + size // 2, i] = 255
-            else:
-                if attack == "DBA":
-                    # DBA attack
-                    # upper part of vertical
-                    if agent_idx % 4 == 0:
-                        for i in range(start_idx, start_idx + (size // 2) + 1):
-                            x[i, start_idx] = 255
-
-                    # lower part of vertical
-                    elif agent_idx % 4 == 1:
-                        for i in range(start_idx + (size // 2) + 1, start_idx + size + 1):
-                            x[i, start_idx] = 255
-
-                    # left-part of horizontal
-                    elif agent_idx % 4 == 2:
-                        for i in range(start_idx - size // 2, start_idx - size // 4 + 1):
-                            x[start_idx + size // 2, i] = 255
-
-                    # right-part of horizontal
-                    elif agent_idx % 4 == 3:
-                        for i in range(start_idx - size // 4 + 1, start_idx + size // 2 + 1):
-                            x[start_idx + size // 2, i] = 255
-                else:
-                    # vertical line
-                    for i in range(start_idx, start_idx + size + 1):
-                        x[i, start_idx] = 255
-                    # horizontal line
-                    for i in range(start_idx - size // 2, start_idx + size // 2 + 1):
-                        x[start_idx + size // 2, i] = 255
 
     elif dataset == 'gtsrb':
         IM_MEAN = [0.485, 0.456, 0.406]

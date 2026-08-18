@@ -16,16 +16,16 @@ class Agent():
 
         
         # get datasets, fedemnist is handled differently as it doesn't come with pytorch
-        if self.args.data != "tinyimagenet":
+        if self.args.data != "gtsrb":
             self.train_dataset = utils.DatasetSplit(train_dataset, data_idxs)
 
             # for backdoor attack, agent poisons his local dataset
-            if self.id < args.num_corrupt and self.args.attack != 'non' and self.args.data != 'sen140':
+            if self.id < args.num_corrupt and self.args.attack != 'non':
 
                 self.clean_backup_dataset = copy.deepcopy(train_dataset)
                 self.data_idxs = data_idxs
                 utils.poison_dataset(train_dataset, args, data_idxs, agent_idx=self.id)
-            elif self.id < args.num_corrupt and self.args.attack != 'non' and self.args.data == 'sen140':
+            elif self.id < args.num_corrupt and self.args.attack != 'non':
                 self.clean_backup_dataset = copy.deepcopy(train_dataset)
                 self.data_idxs = data_idxs
                 benign_part = data_idxs[:int(len(data_idxs) * (1 - self.args.poison_frac))]
@@ -148,10 +148,6 @@ class Agent():
         global_model.train()
         optimizer = torch.optim.SGD(global_model.parameters(), lr=self.args.client_lr * (self.args.lr_decay) ** round,
                                     weight_decay=self.args.wd, momentum=self.args.momentum)
-
-        
-
-
        
         if self.id < self.args.num_corrupt and self.args.attack == 'a3fl_opt':
                     # 1. Grab a single batch to serve as the "optimization proxy"

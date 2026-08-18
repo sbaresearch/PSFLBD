@@ -1,0 +1,1503 @@
+[
+  {
+    "id": "wrls18p1",
+    "state": "RUNNING",
+    "runCountExpected": 5,
+    "data": "gtsrb",
+    "model": "googlenet",
+    "attack": [
+      "badnet"
+    ],
+    "attack_mode": null,
+    "clean": null,
+    "aggr": [
+      "avg"
+    ],
+    "aggr_server": [
+      "mkrum",
+      "alignins",
+      "foolsgold",
+      "mmetric",
+      "feddlad"
+    ],
+    "seed": [
+      44
+    ],
+    "target_class": 12,
+    "multiple_servers": false
+  },
+  {
+    "id": "spne9fz8",
+    "state": "RUNNING",
+    "runCountExpected": 15,
+    "data": "cifar10",
+    "model": null,
+    "attack": [
+      "badnet",
+      "DBA",
+      "neurotoxin"
+    ],
+    "attack_mode": null,
+    "clean": null,
+    "aggr": [
+      "avg"
+    ],
+    "aggr_server": [
+      "mkrum",
+      "alignins",
+      "foolsgold",
+      "mmetric",
+      "feddlad"
+    ],
+    "seed": [
+      43
+    ],
+    "target_class": 7,
+    "multiple_servers": false
+  },
+  {
+    "id": "nz06x0mi",
+    "state": "RUNNING",
+    "runCountExpected": 5,
+    "data": "gtsrb",
+    "model": "googlenet",
+    "attack": [
+      "neurotoxin"
+    ],
+    "attack_mode": null,
+    "clean": null,
+    "aggr": [
+      "avg"
+    ],
+    "aggr_server": [
+      "mkrum",
+      "alignins",
+      "foolsgold",
+      "mmetric",
+      "feddlad"
+    ],
+    "seed": [
+      43
+    ],
+    "target_class": 12,
+    "multiple_servers": false
+  },
+  {
+    "id": "53j7tsc6",
+    "state": "RUNNING",
+    "runCountExpected": 5,
+    "data": "gtsrb",
+    "model": "googlenet",
+    "attack": [
+      "DBA"
+    ],
+    "attack_mode": null,
+    "clean": null,
+    "aggr": [
+      "avg"
+    ],
+    "aggr_server": [
+      "mkrum",
+      "alignins",
+      "foolsgold",
+      "mmetric",
+      "feddlad"
+    ],
+    "seed": [
+      43
+    ],
+    "target_class": 12,
+    "multiple_servers": false
+  },
+  {
+    "id": "lrmfcwny",
+    "state": "RUNNING",
+    "runCountExpected": 5,
+    "data": "gtsrb",
+    "model": "googlenet",
+    "attack": [
+      "badnet"
+    ],
+    "attack_mode": null,
+    "clean": null,
+    "aggr": [
+      "avg"
+    ],
+    "aggr_server": [
+      "mkrum",
+      "alignins",
+      "foolsgold",
+      "mmetric",
+      "feddlad"
+    ],
+    "seed": [
+      43
+    ],
+    "target_class": 12,
+    "multiple_servers": false
+  },
+  {
+    "id": "8zu1w6xe",
+    "state": "RUNNING",
+    "runCountExpected": 5,
+    "data": "gtsrb",
+    "model": "googlenet",
+    "attack": [
+      "neurotoxin"
+    ],
+    "attack_mode": "replacement",
+    "clean": null,
+    "aggr": [
+      "mkrum",
+      "alignins",
+      "foolsgold",
+      "mmetric",
+      "feddlad"
+    ],
+    "aggr_server": [
+      "avg"
+    ],
+    "seed": [
+      44
+    ],
+    "target_class": 7,
+    "multiple_servers": false
+  },
+  {
+    "id": "ni24d5yo",
+    "state": "RUNNING",
+    "runCountExpected": 5,
+    "data": "gtsrb",
+    "model": "googlenet",
+    "attack": [
+      "DBA"
+    ],
+    "attack_mode": "replacement",
+    "clean": null,
+    "aggr": [
+      "mkrum",
+      "alignins",
+      "foolsgold",
+      "mmetric",
+      "feddlad"
+    ],
+    "aggr_server": [
+      "avg"
+    ],
+    "seed": [
+      44
+    ],
+    "target_class": 7,
+    "multiple_servers": false
+  },
+  {
+    "id": "28a26uw5",
+    "state": "FINISHED",
+    "runCountExpected": 4,
+    "data": "gtsrb",
+    "model": "googlenet",
+    "attack": [
+      "badnet"
+    ],
+    "attack_mode": "replacement",
+    "clean": null,
+    "aggr": [
+      "alignins",
+      "foolsgold",
+      "mmetric",
+      "feddlad"
+    ],
+    "aggr_server": [
+      "avg"
+    ],
+    "seed": [
+      44
+    ],
+    "target_class": 7,
+    "multiple_servers": false
+  },
+  {
+    "id": "23rrnugt",
+    "state": "FINISHED",
+    "runCountExpected": 1,
+    "data": "gtsrb",
+    "model": "googlenet",
+    "attack": [
+      "badnet"
+    ],
+    "attack_mode": "replacement",
+    "clean": null,
+    "aggr": [
+      "mkrum"
+    ],
+    "aggr_server": [
+      "avg"
+    ],
+    "seed": [
+      44
+    ],
+    "target_class": 7,
+    "multiple_servers": false
+  },
+  {
+    "id": "gxym0p70",
+    "state": "RUNNING",
+    "runCountExpected": 15,
+    "data": "gtsrb",
+    "model": "googlenet",
+    "attack": [
+      "badnet",
+      "DBA",
+      "neurotoxin"
+    ],
+    "attack_mode": "replacement",
+    "clean": null,
+    "aggr": [
+      "mkrum",
+      "alignins",
+      "foolsgold",
+      "mmetric",
+      "feddlad"
+    ],
+    "aggr_server": [
+      "avg"
+    ],
+    "seed": [
+      43
+    ],
+    "target_class": 7,
+    "multiple_servers": false
+  },
+  {
+    "id": "y9k8g7ok",
+    "state": "RUNNING",
+    "runCountExpected": 15,
+    "data": "cifar10",
+    "model": null,
+    "attack": [
+      "badnet",
+      "DBA",
+      "neurotoxin"
+    ],
+    "attack_mode": "replacement",
+    "clean": null,
+    "aggr": [
+      "mkrum",
+      "alignins",
+      "foolsgold",
+      "mmetric",
+      "feddlad"
+    ],
+    "aggr_server": [
+      "avg"
+    ],
+    "seed": [
+      44
+    ],
+    "target_class": 7,
+    "multiple_servers": false
+  },
+  {
+    "id": "v2y7n820",
+    "state": "RUNNING",
+    "runCountExpected": 15,
+    "data": "cifar10",
+    "model": null,
+    "attack": [
+      "badnet",
+      "DBA",
+      "neurotoxin"
+    ],
+    "attack_mode": "replacement",
+    "clean": null,
+    "aggr": [
+      "mkrum",
+      "alignins",
+      "foolsgold",
+      "mmetric",
+      "feddlad"
+    ],
+    "aggr_server": [
+      "avg"
+    ],
+    "seed": [
+      43
+    ],
+    "target_class": 7,
+    "multiple_servers": false
+  },
+  {
+    "id": "6o6flwzk",
+    "state": "RUNNING",
+    "runCountExpected": 15,
+    "data": "gtsrb",
+    "model": "googlenet",
+    "attack": [
+      "badnet",
+      "DBA",
+      "neurotoxin"
+    ],
+    "attack_mode": null,
+    "clean": null,
+    "aggr": [
+      "mkrum",
+      "alignins",
+      "foolsgold",
+      "mmetric",
+      "feddlad"
+    ],
+    "aggr_server": [
+      "avg"
+    ],
+    "seed": [
+      44
+    ],
+    "target_class": 7,
+    "multiple_servers": false
+  },
+  {
+    "id": "6fgog1j8",
+    "state": "RUNNING",
+    "runCountExpected": 15,
+    "data": "gtsrb",
+    "model": "googlenet",
+    "attack": [
+      "badnet",
+      "DBA",
+      "neurotoxin"
+    ],
+    "attack_mode": null,
+    "clean": null,
+    "aggr": [
+      "mkrum",
+      "alignins",
+      "foolsgold",
+      "mmetric",
+      "feddlad"
+    ],
+    "aggr_server": [
+      "avg"
+    ],
+    "seed": [
+      43
+    ],
+    "target_class": 7,
+    "multiple_servers": false
+  },
+  {
+    "id": "9q1ki5ff",
+    "state": "FINISHED",
+    "runCountExpected": 15,
+    "data": "cifar10",
+    "model": null,
+    "attack": [
+      "badnet",
+      "DBA",
+      "neurotoxin"
+    ],
+    "attack_mode": null,
+    "clean": null,
+    "aggr": [
+      "mkrum",
+      "alignins",
+      "foolsgold",
+      "mmetric",
+      "feddlad"
+    ],
+    "aggr_server": [
+      "avg"
+    ],
+    "seed": [
+      44
+    ],
+    "target_class": 7,
+    "multiple_servers": false
+  },
+  {
+    "id": "xzdz2oit",
+    "state": "FINISHED",
+    "runCountExpected": 15,
+    "data": "cifar10",
+    "model": null,
+    "attack": [
+      "badnet",
+      "DBA",
+      "neurotoxin"
+    ],
+    "attack_mode": null,
+    "clean": null,
+    "aggr": [
+      "mkrum",
+      "alignins",
+      "foolsgold",
+      "mmetric",
+      "feddlad"
+    ],
+    "aggr_server": [
+      "avg"
+    ],
+    "seed": [
+      43
+    ],
+    "target_class": 7,
+    "multiple_servers": false
+  },
+  {
+    "id": "j9as59ew",
+    "state": "FINISHED",
+    "runCountExpected": 2,
+    "data": "mnist",
+    "model": null,
+    "attack": null,
+    "attack_mode": null,
+    "clean": null,
+    "aggr": [
+      "avg"
+    ],
+    "aggr_server": [
+      "avg"
+    ],
+    "seed": [
+      43,
+      44
+    ],
+    "target_class": null,
+    "multiple_servers": null
+  },
+  {
+    "id": "tlq5xwyp",
+    "state": "FINISHED",
+    "runCountExpected": 6,
+    "data": "cifar10",
+    "model": null,
+    "attack": [
+      "badnet",
+      "DBA",
+      "neurotoxin"
+    ],
+    "attack_mode": "replacement",
+    "clean": null,
+    "aggr": [
+      "avg"
+    ],
+    "aggr_server": [
+      "avg"
+    ],
+    "seed": [
+      43,
+      44
+    ],
+    "target_class": 7,
+    "multiple_servers": false
+  },
+  {
+    "id": "yl4j611o",
+    "state": "FINISHED",
+    "runCountExpected": 6,
+    "data": "cifar10",
+    "model": null,
+    "attack": [
+      "badnet",
+      "DBA",
+      "neurotoxin"
+    ],
+    "attack_mode": null,
+    "clean": null,
+    "aggr": [
+      "avg"
+    ],
+    "aggr_server": [
+      "avg"
+    ],
+    "seed": [
+      43,
+      44
+    ],
+    "target_class": 7,
+    "multiple_servers": false
+  },
+  {
+    "id": "vzef14ht",
+    "state": "FINISHED",
+    "runCountExpected": 2,
+    "data": "cifar10",
+    "model": null,
+    "attack": null,
+    "attack_mode": null,
+    "clean": null,
+    "aggr": [
+      "avg"
+    ],
+    "aggr_server": [
+      "avg"
+    ],
+    "seed": [
+      43,
+      44
+    ],
+    "target_class": null,
+    "multiple_servers": null
+  },
+  {
+    "id": "aez25ifq",
+    "state": "FINISHED",
+    "runCountExpected": 6,
+    "data": "gtsrb",
+    "model": "googlenet",
+    "attack": [
+      "badnet",
+      "DBA",
+      "neurotoxin"
+    ],
+    "attack_mode": "replacement",
+    "clean": null,
+    "aggr": [
+      "avg"
+    ],
+    "aggr_server": [
+      "avg"
+    ],
+    "seed": [
+      43,
+      44
+    ],
+    "target_class": 7,
+    "multiple_servers": false
+  },
+  {
+    "id": "k21uwjl2",
+    "state": "FINISHED",
+    "runCountExpected": 6,
+    "data": "gtsrb",
+    "model": "googlenet",
+    "attack": [
+      "badnet",
+      "DBA",
+      "neurotoxin"
+    ],
+    "attack_mode": null,
+    "clean": null,
+    "aggr": [
+      "avg"
+    ],
+    "aggr_server": [
+      "avg"
+    ],
+    "seed": [
+      43,
+      44
+    ],
+    "target_class": 7,
+    "multiple_servers": false
+  },
+  {
+    "id": "p9ptk8wu",
+    "state": "FINISHED",
+    "runCountExpected": 6,
+    "data": "cifar10",
+    "model": null,
+    "attack": [
+      "badnet",
+      "DBA",
+      "neurotoxin"
+    ],
+    "attack_mode": "replacement",
+    "clean": null,
+    "aggr": [
+      "avg"
+    ],
+    "aggr_server": [
+      "avg"
+    ],
+    "seed": [
+      43,
+      44
+    ],
+    "target_class": 7,
+    "multiple_servers": false
+  },
+  {
+    "id": "w97a9et9",
+    "state": "FINISHED",
+    "runCountExpected": 6,
+    "data": "cifar10",
+    "model": null,
+    "attack": [
+      "badnet",
+      "DBA",
+      "neurotoxin"
+    ],
+    "attack_mode": null,
+    "clean": null,
+    "aggr": [
+      "avg"
+    ],
+    "aggr_server": [
+      "avg"
+    ],
+    "seed": [
+      43,
+      44
+    ],
+    "target_class": 7,
+    "multiple_servers": false
+  },
+  {
+    "id": "2vfk0ptk",
+    "state": "FINISHED",
+    "runCountExpected": 2,
+    "data": "gtsrb",
+    "model": "googlenet",
+    "attack": null,
+    "attack_mode": null,
+    "clean": null,
+    "aggr": [
+      "avg"
+    ],
+    "aggr_server": [
+      "avg"
+    ],
+    "seed": [
+      43,
+      44
+    ],
+    "target_class": null,
+    "multiple_servers": null
+  },
+  {
+    "id": "aerkyhhe",
+    "state": "FINISHED",
+    "runCountExpected": 2,
+    "data": "mnist",
+    "model": null,
+    "attack": null,
+    "attack_mode": null,
+    "clean": null,
+    "aggr": [
+      "avg"
+    ],
+    "aggr_server": [
+      "avg"
+    ],
+    "seed": [
+      43,
+      44
+    ],
+    "target_class": null,
+    "multiple_servers": null
+  },
+  {
+    "id": "8jorv9a4",
+    "state": "FINISHED",
+    "runCountExpected": 1,
+    "data": "cifar10",
+    "model": null,
+    "attack": null,
+    "attack_mode": null,
+    "clean": null,
+    "aggr": [
+      "avg"
+    ],
+    "aggr_server": [
+      "avg"
+    ],
+    "seed": [
+      44
+    ],
+    "target_class": null,
+    "multiple_servers": null
+  },
+  {
+    "id": "84lwo8kj",
+    "state": "FINISHED",
+    "runCountExpected": 2,
+    "data": "cifar10",
+    "model": null,
+    "attack": null,
+    "attack_mode": null,
+    "clean": true,
+    "aggr": [
+      "avg"
+    ],
+    "aggr_server": [
+      "avg"
+    ],
+    "seed": [
+      43,
+      44
+    ],
+    "target_class": null,
+    "multiple_servers": null
+  },
+  {
+    "id": "vv3cahmg",
+    "state": "FINISHED",
+    "runCountExpected": 2,
+    "data": "gtsrb",
+    "model": "googlenet",
+    "attack": [
+      "DBA",
+      "neurotoxin"
+    ],
+    "attack_mode": "replacement",
+    "clean": null,
+    "aggr": null,
+    "aggr_server": null,
+    "seed": null,
+    "target_class": 12,
+    "multiple_servers": null
+  },
+  {
+    "id": "o2j9w8e6",
+    "state": "FINISHED",
+    "runCountExpected": 3,
+    "data": "gtsrb",
+    "model": "googlenet",
+    "attack": [
+      "badnet",
+      "DBA",
+      "neurotoxin"
+    ],
+    "attack_mode": null,
+    "clean": null,
+    "aggr": [
+      "foolsgold"
+    ],
+    "aggr_server": [
+      "foolsgold"
+    ],
+    "seed": null,
+    "target_class": 12,
+    "multiple_servers": null
+  },
+  {
+    "id": "o4fvubv5",
+    "state": "FINISHED",
+    "runCountExpected": 3,
+    "data": "gtsrb",
+    "model": "googlenet",
+    "attack": [
+      "badnet",
+      "DBA",
+      "neurotoxin"
+    ],
+    "attack_mode": null,
+    "clean": null,
+    "aggr": [
+      "feddlad"
+    ],
+    "aggr_server": [
+      "feddlad"
+    ],
+    "seed": null,
+    "target_class": 12,
+    "multiple_servers": null
+  },
+  {
+    "id": "m45atttn",
+    "state": "FINISHED",
+    "runCountExpected": 1,
+    "data": "gtsrb",
+    "model": "googlenet",
+    "attack": [
+      "badnet"
+    ],
+    "attack_mode": null,
+    "clean": null,
+    "aggr": [
+      "alignins"
+    ],
+    "aggr_server": [
+      "alignins"
+    ],
+    "seed": null,
+    "target_class": 12,
+    "multiple_servers": null
+  },
+  {
+    "id": "1l7tvuza",
+    "state": "FINISHED",
+    "runCountExpected": 5,
+    "data": "gtsrb",
+    "model": "googlenet",
+    "attack": [
+      "neurotoxin"
+    ],
+    "attack_mode": "replacement",
+    "clean": null,
+    "aggr": [
+      "mkrum",
+      "alignins",
+      "foolsgold",
+      "mmetric",
+      "feddlad"
+    ],
+    "aggr_server": null,
+    "seed": null,
+    "target_class": 12,
+    "multiple_servers": null
+  },
+  {
+    "id": "bra09hgf",
+    "state": "FINISHED",
+    "runCountExpected": 5,
+    "data": "gtsrb",
+    "model": "googlenet",
+    "attack": [
+      "DBA"
+    ],
+    "attack_mode": "replacement",
+    "clean": null,
+    "aggr": [
+      "mkrum",
+      "alignins",
+      "foolsgold",
+      "mmetric",
+      "feddlad"
+    ],
+    "aggr_server": null,
+    "seed": null,
+    "target_class": 12,
+    "multiple_servers": null
+  },
+  {
+    "id": "v7nuiygs",
+    "state": "FINISHED",
+    "runCountExpected": 6,
+    "data": "gtsrb",
+    "model": "googlenet",
+    "attack": [
+      "badnet"
+    ],
+    "attack_mode": "replacement",
+    "clean": null,
+    "aggr": [
+      "avg",
+      "mkrum",
+      "alignins",
+      "foolsgold",
+      "mmetric",
+      "feddlad"
+    ],
+    "aggr_server": null,
+    "seed": null,
+    "target_class": 12,
+    "multiple_servers": null
+  },
+  {
+    "id": "2u8eptfb",
+    "state": "FINISHED",
+    "runCountExpected": 3,
+    "data": "gtsrb",
+    "model": "googlenet",
+    "attack": [
+      "badnet",
+      "DBA",
+      "neurotoxin"
+    ],
+    "attack_mode": null,
+    "clean": null,
+    "aggr": [
+      "alignins"
+    ],
+    "aggr_server": [
+      "alignins"
+    ],
+    "seed": null,
+    "target_class": 12,
+    "multiple_servers": null
+  },
+  {
+    "id": "tg0o3lyi",
+    "state": "FINISHED",
+    "runCountExpected": 3,
+    "data": "gtsrb",
+    "model": "googlenet",
+    "attack": [
+      "badnet",
+      "DBA",
+      "neurotoxin"
+    ],
+    "attack_mode": null,
+    "clean": null,
+    "aggr": [
+      "alignins"
+    ],
+    "aggr_server": [
+      "alignins"
+    ],
+    "seed": null,
+    "target_class": 12,
+    "multiple_servers": null
+  },
+  {
+    "id": "6wvhi92h",
+    "state": "FINISHED",
+    "runCountExpected": 3,
+    "data": "gtsrb",
+    "model": "googlenet",
+    "attack": [
+      "badnet",
+      "DBA",
+      "neurotoxin"
+    ],
+    "attack_mode": null,
+    "clean": null,
+    "aggr": [
+      "mkrum"
+    ],
+    "aggr_server": [
+      "mkrum"
+    ],
+    "seed": null,
+    "target_class": 12,
+    "multiple_servers": null
+  },
+  {
+    "id": "02p40hq8",
+    "state": "FINISHED",
+    "runCountExpected": 3,
+    "data": "gtsrb",
+    "model": "googlenet",
+    "attack": [
+      "badnet",
+      "DBA",
+      "neurotoxin"
+    ],
+    "attack_mode": null,
+    "clean": null,
+    "aggr": [
+      "mkrum"
+    ],
+    "aggr_server": [
+      "mkrum"
+    ],
+    "seed": null,
+    "target_class": 12,
+    "multiple_servers": null
+  },
+  {
+    "id": "h0pnayk4",
+    "state": "FINISHED",
+    "runCountExpected": 3,
+    "data": "gtsrb",
+    "model": "googlenet",
+    "attack": [
+      "badnet",
+      "DBA",
+      "neurotoxin"
+    ],
+    "attack_mode": null,
+    "clean": null,
+    "aggr": [
+      "foolsgold"
+    ],
+    "aggr_server": [
+      "foolsgold"
+    ],
+    "seed": null,
+    "target_class": 12,
+    "multiple_servers": null
+  },
+  {
+    "id": "uhi4rzpz",
+    "state": "FINISHED",
+    "runCountExpected": 3,
+    "data": "gtsrb",
+    "model": "googlenet",
+    "attack": [
+      "badnet",
+      "DBA",
+      "neurotoxin"
+    ],
+    "attack_mode": null,
+    "clean": null,
+    "aggr": [
+      "feddlad"
+    ],
+    "aggr_server": [
+      "feddlad"
+    ],
+    "seed": null,
+    "target_class": 12,
+    "multiple_servers": null
+  },
+  {
+    "id": "oiekeoli",
+    "state": "FINISHED",
+    "runCountExpected": 3,
+    "data": "gtsrb",
+    "model": "googlenet",
+    "attack": [
+      "badnet",
+      "DBA",
+      "neurotoxin"
+    ],
+    "attack_mode": null,
+    "clean": null,
+    "aggr": [
+      "alignins"
+    ],
+    "aggr_server": [
+      "alignins"
+    ],
+    "seed": null,
+    "target_class": 12,
+    "multiple_servers": null
+  },
+  {
+    "id": "jl6ggbqq",
+    "state": "FINISHED",
+    "runCountExpected": 3,
+    "data": "gtsrb",
+    "model": "googlenet",
+    "attack": [
+      "badnet",
+      "DBA",
+      "neurotoxin"
+    ],
+    "attack_mode": null,
+    "clean": null,
+    "aggr": [
+      "mkrum"
+    ],
+    "aggr_server": [
+      "mkrum"
+    ],
+    "seed": null,
+    "target_class": 12,
+    "multiple_servers": null
+  },
+  {
+    "id": "kud0wkh3",
+    "state": "FINISHED",
+    "runCountExpected": 9,
+    "data": "gtsrb",
+    "model": "googlenet",
+    "attack": [
+      "badnet",
+      "DBA",
+      "neurotoxin"
+    ],
+    "attack_mode": null,
+    "clean": null,
+    "aggr": [
+      "foolsgold"
+    ],
+    "aggr_server": [
+      "feddlad",
+      "mkrum",
+      "alignins"
+    ],
+    "seed": null,
+    "target_class": 12,
+    "multiple_servers": null
+  },
+  {
+    "id": "1bab8o5i",
+    "state": "FINISHED",
+    "runCountExpected": 9,
+    "data": "gtsrb",
+    "model": "googlenet",
+    "attack": [
+      "badnet",
+      "DBA",
+      "neurotoxin"
+    ],
+    "attack_mode": null,
+    "clean": null,
+    "aggr": [
+      "mkrum"
+    ],
+    "aggr_server": [
+      "feddlad",
+      "foolsgold",
+      "alignins"
+    ],
+    "seed": null,
+    "target_class": 12,
+    "multiple_servers": null
+  },
+  {
+    "id": "vqvpv0qr",
+    "state": "FINISHED",
+    "runCountExpected": 9,
+    "data": "gtsrb",
+    "model": "googlenet",
+    "attack": [
+      "badnet",
+      "DBA",
+      "neurotoxin"
+    ],
+    "attack_mode": null,
+    "clean": null,
+    "aggr": [
+      "feddlad"
+    ],
+    "aggr_server": [
+      "mkrum",
+      "foolsgold",
+      "alignins"
+    ],
+    "seed": null,
+    "target_class": 12,
+    "multiple_servers": null
+  },
+  {
+    "id": "5x9t4iu2",
+    "state": "FINISHED",
+    "runCountExpected": 9,
+    "data": "gtsrb",
+    "model": "googlenet",
+    "attack": [
+      "badnet",
+      "DBA",
+      "neurotoxin"
+    ],
+    "attack_mode": null,
+    "clean": null,
+    "aggr": [
+      "alignins"
+    ],
+    "aggr_server": [
+      "mkrum",
+      "foolsgold",
+      "feddlad"
+    ],
+    "seed": null,
+    "target_class": 12,
+    "multiple_servers": null
+  },
+  {
+    "id": "96sw7wkj",
+    "state": "FINISHED",
+    "runCountExpected": 15,
+    "data": "gtsrb",
+    "model": "googlenet",
+    "attack": [
+      "badnet",
+      "DBA",
+      "neurotoxin"
+    ],
+    "attack_mode": "replacement",
+    "clean": null,
+    "aggr": null,
+    "aggr_server": [
+      "alignins",
+      "mkrum",
+      "foolsgold",
+      "feddlad",
+      "mmetric"
+    ],
+    "seed": null,
+    "target_class": 12,
+    "multiple_servers": null
+  },
+  {
+    "id": "qyiktr1t",
+    "state": "FINISHED",
+    "runCountExpected": 15,
+    "data": "gtsrb",
+    "model": "googlenet",
+    "attack": [
+      "badnet",
+      "DBA",
+      "neurotoxin"
+    ],
+    "attack_mode": "replacement",
+    "clean": null,
+    "aggr": [
+      "mkrum",
+      "foolsgold",
+      "alignins",
+      "feddlad",
+      "mmetric"
+    ],
+    "aggr_server": null,
+    "seed": null,
+    "target_class": 12,
+    "multiple_servers": null
+  },
+  {
+    "id": "e3txf9br",
+    "state": "FINISHED",
+    "runCountExpected": 3,
+    "data": "gtsrb",
+    "model": "googlenet",
+    "attack": [
+      "badnet",
+      "DBA",
+      "neurotoxin"
+    ],
+    "attack_mode": null,
+    "clean": null,
+    "aggr": [
+      "feddlad"
+    ],
+    "aggr_server": [
+      "feddlad"
+    ],
+    "seed": null,
+    "target_class": 12,
+    "multiple_servers": null
+  },
+  {
+    "id": "lwlvou1l",
+    "state": "FINISHED",
+    "runCountExpected": 2,
+    "data": "gtsrb",
+    "model": "googlenet",
+    "attack": [
+      "badnet",
+      "DBA"
+    ],
+    "attack_mode": null,
+    "clean": null,
+    "aggr": [
+      "mkrum"
+    ],
+    "aggr_server": [
+      "mkrum"
+    ],
+    "seed": null,
+    "target_class": 12,
+    "multiple_servers": null
+  },
+  {
+    "id": "ozod6mvd",
+    "state": "FINISHED",
+    "runCountExpected": 3,
+    "data": "gtsrb",
+    "model": "googlenet",
+    "attack": [
+      "badnet",
+      "DBA",
+      "neurotoxin"
+    ],
+    "attack_mode": null,
+    "clean": null,
+    "aggr": [
+      "mkrum"
+    ],
+    "aggr_server": [
+      "mkrum"
+    ],
+    "seed": null,
+    "target_class": 12,
+    "multiple_servers": null
+  },
+  {
+    "id": "gie4cx86",
+    "state": "FINISHED",
+    "runCountExpected": 3,
+    "data": "gtsrb",
+    "model": "googlenet",
+    "attack": [
+      "badnet",
+      "DBA",
+      "neurotoxin"
+    ],
+    "attack_mode": null,
+    "clean": null,
+    "aggr": [
+      "mmetric"
+    ],
+    "aggr_server": [
+      "mmetric"
+    ],
+    "seed": null,
+    "target_class": 12,
+    "multiple_servers": null
+  },
+  {
+    "id": "4yqey0j9",
+    "state": "FINISHED",
+    "runCountExpected": 3,
+    "data": "gtsrb",
+    "model": "googlenet",
+    "attack": [
+      "badnet",
+      "DBA",
+      "neurotoxin"
+    ],
+    "attack_mode": null,
+    "clean": null,
+    "aggr": [
+      "alignins"
+    ],
+    "aggr_server": [
+      "alignins"
+    ],
+    "seed": null,
+    "target_class": 12,
+    "multiple_servers": null
+  },
+  {
+    "id": "a2a15j0x",
+    "state": "FINISHED",
+    "runCountExpected": 10,
+    "data": "gtsrb",
+    "model": "googlenet",
+    "attack": [
+      "DBA",
+      "neurotoxin"
+    ],
+    "attack_mode": null,
+    "clean": null,
+    "aggr": [
+      "mkrum",
+      "foolsgold",
+      "alignins",
+      "feddlad",
+      "mmetric"
+    ],
+    "aggr_server": null,
+    "seed": null,
+    "target_class": 12,
+    "multiple_servers": null
+  },
+  {
+    "id": "yp6316uj",
+    "state": "FINISHED",
+    "runCountExpected": 10,
+    "data": "gtsrb",
+    "model": "googlenet",
+    "attack": [
+      "DBA",
+      "neurotoxin"
+    ],
+    "attack_mode": null,
+    "clean": null,
+    "aggr": null,
+    "aggr_server": [
+      "alignins",
+      "mkrum",
+      "foolsgold",
+      "feddlad",
+      "mmetric"
+    ],
+    "seed": null,
+    "target_class": 12,
+    "multiple_servers": null
+  },
+  {
+    "id": "3eojiljj",
+    "state": "FINISHED",
+    "runCountExpected": 5,
+    "data": "gtsrb",
+    "model": "googlenet",
+    "attack": "badnet",
+    "attack_mode": null,
+    "clean": null,
+    "aggr": [
+      "mkrum",
+      "foolsgold",
+      "alignins",
+      "feddlad",
+      "mmetric"
+    ],
+    "aggr_server": null,
+    "seed": null,
+    "target_class": 12,
+    "multiple_servers": null
+  },
+  {
+    "id": "a8sidfa7",
+    "state": "FINISHED",
+    "runCountExpected": 5,
+    "data": "gtsrb",
+    "model": "googlenet",
+    "attack": "badnet",
+    "attack_mode": null,
+    "clean": null,
+    "aggr": null,
+    "aggr_server": [
+      "alignins",
+      "mkrum",
+      "foolsgold",
+      "feddlad",
+      "mmetric"
+    ],
+    "seed": null,
+    "target_class": 12,
+    "multiple_servers": null
+  },
+  {
+    "id": "rhok14h5",
+    "state": "FINISHED",
+    "runCountExpected": 2,
+    "data": "gtsrb",
+    "model": "googlenet",
+    "attack": [
+      "DBA",
+      "neurotoxin"
+    ],
+    "attack_mode": null,
+    "clean": null,
+    "aggr": null,
+    "aggr_server": null,
+    "seed": null,
+    "target_class": 12,
+    "multiple_servers": null
+  },
+  {
+    "id": "bxq3i8wy",
+    "state": "FINISHED",
+    "runCountExpected": 1,
+    "data": "gtsrb",
+    "model": "googlenet",
+    "attack": "badnet",
+    "attack_mode": null,
+    "clean": null,
+    "aggr": null,
+    "aggr_server": null,
+    "seed": null,
+    "target_class": 12,
+    "multiple_servers": null
+  },
+  {
+    "id": "km113edv",
+    "state": "RUNNING",
+    "runCountExpected": 1,
+    "data": "gtsrb",
+    "model": "googlenet",
+    "attack": "badnet",
+    "attack_mode": null,
+    "clean": null,
+    "aggr": null,
+    "aggr_server": null,
+    "seed": null,
+    "target_class": 7,
+    "multiple_servers": null
+  },
+  {
+    "id": "sujydd9t",
+    "state": "FINISHED",
+    "runCountExpected": 1,
+    "data": "gtsrb",
+    "model": null,
+    "attack": "badnet",
+    "attack_mode": null,
+    "clean": null,
+    "aggr": null,
+    "aggr_server": null,
+    "seed": null,
+    "target_class": 7,
+    "multiple_servers": null
+  },
+  {
+    "id": "r07d9pxp",
+    "state": "FINISHED",
+    "runCountExpected": 1,
+    "data": "gtsrb",
+    "model": null,
+    "attack": "badnet",
+    "attack_mode": null,
+    "clean": null,
+    "aggr": null,
+    "aggr_server": null,
+    "seed": null,
+    "target_class": 7,
+    "multiple_servers": null
+  }
+]

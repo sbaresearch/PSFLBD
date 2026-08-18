@@ -24,7 +24,7 @@ parameters:
     value: 4
 
   target_class:
-    value: 7
+    value: 12
 
   poison_frac:
     value: 0.5

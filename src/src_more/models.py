@@ -8,7 +8,6 @@ import numpy as np
 from aggregation import *
 import torch.nn.functional as F
 from torchvision.models.googlenet import BasicConv2d
-from safesplit_defense import SafeSplitDefense
 class SplitModel(nn.Module):
     """
     A thin wrapper that applies a list of modules in sequence.
@@ -25,7 +24,7 @@ class SplitModel(nn.Module):
         return x
 
 
-def get_resnet18_custom(data: str = "tinyimagenet", input_size: int = 32, num_classes: int = 200) -> nn.Module:
+def get_resnet18_custom(data: str = "cifar10", input_size: int = 32, num_classes: int = 200) -> nn.Module:
     """
     ResNet-18 modified for CIFAR-like inputs (3x32x32) and MNIST (1x28x28):
       - conv1: 3x3 stride 1
@@ -34,22 +33,8 @@ def get_resnet18_custom(data: str = "tinyimagenet", input_size: int = 32, num_cl
     """
     model = models.resnet18()
 
-    in_channels = 1 if data in ["mnist", "fmnist", "femnist"] else 3
+    in_channels = 1 if data in ["mnist",] else 3
 
-    # if input_size >= 224:
-    #     # Keep the default 7x7 s2 conv1 and maxpool
-    #     if in_channels == 1:
-    #         # adapt conv1 to 1 channel by averaging RGB weights
-    #         old_w = model.conv1.weight.data
-    #         new_conv = nn.Conv2d(1, 64, kernel_size=7, stride=2, padding=3, bias=False)
-    #         with torch.no_grad():
-    #             if old_w.shape[1] == 3:
-    #                 new_conv.weight[:] = old_w.mean(dim=1, keepdim=True)
-    #             else:
-    #                 nn.init.kaiming_normal_(new_conv.weight, mode='fan_out', nonlinearity='relu')
-    #         model.conv1 = new_conv
-    # # else: 3-channel ETS/TinyImageNet: no change
-    # else:
     model.conv1 = nn.Conv2d(
         in_channels=in_channels,
         out_channels=64,
@@ -226,7 +211,7 @@ def get_resnet9_split(data: str, args) -> tuple[nn.Module, nn.Module, nn.Module]
     """
     from resnet import ResNet9
 
-    in_channels = 1 if data in ["mnist", "fmnist", "femnist"] else 3
+    in_channels = 1 if data in ["mnist"] else 3
     num_classes = 10  # CIFAR10/MNIST
 
     full_model = ResNet9(in_channels, num_classes=num_classes, args=args)
@@ -247,7 +232,7 @@ def get_split_models(data: str, args):
       returns client_part, server_part, full_model
     so you DON'T accidentally create two different full models for client/server.
     """
-    if data in ("cifar10", "mnist","fmnist"):
+    if data in ("cifar10", "mnist"):
         # choose one:
         # return get_resnet9_split(data, args)
         if args.model == "resnet18":
@@ -268,12 +253,6 @@ def get_split_models(data: str, args):
     if data == "cifar100":
         return get_resnet18_split(data=data, num_classes=100,split_point = args.split_point)
 
-    # if data == "femnist":
-    #     return get_resnet18_split(data=data, num_classes=62,split_point = args.split_point)
-
-    if data == "tinyimagenet":
-        return get_resnet18_split(data=data, num_classes=200,split_point = args.split_point)
-
     raise ValueError(f"No split model defined for data='{data}'")
 
 
@@ -290,12 +269,10 @@ def sanity_check_split(data: str, args, device: str = "cpu"):
     full = full.to(device)
 
     # Pick input size based on dataset
-    if data in ("mnist","fmnist"):
+    if data in ("mnist",):
         x = torch.randn(4, 1, 28, 28, device=device)
     elif data in ("cifar10", "cifar100", "gtsrb", "ets"):
         x = torch.randn(4, 3, 32, 32, device=device)
-    elif data == "tinyimagenet":
-        x = torch.randn(4, 3, 64, 64, device=device)
     else:
         x = torch.randn(4, 3, 32, 32, device=device)
 
@@ -369,58 +346,6 @@ class MainServer:
             self.server_opts.append(opt)
             if not multiple_servers:
                 break  # only one server branch for all clients
-
-        # Optional SafeSplit-style sequential defense on the server model.
-        # Only meaningful for sfl_variant="v2" (a single, continuously
-        # updated server model) -- see sfl.py's startup validation, which
-        # refuses aggr_server="safesplit" under "v1". None (the default)
-        # keeps every existing run byte-for-byte unaffected.
-        self.safesplit_defense = None
-        self._safesplit_step = 0
-        if getattr(args, "aggr_server", "avg") == "safesplit":
-            self.safesplit_defense = SafeSplitDefense(
-                fifo_window=num_clients,
-                device=device,
-                dct_low_freq_ratio=getattr(args, "safesplit_dct_low_freq_ratio", 0.1),
-                reputation_decay=getattr(args, "safesplit_reputation_decay", 0.85),
-                reputation_floor=getattr(args, "safesplit_reputation_floor", 0.5),
-                gap_min_k=getattr(args, "safesplit_gap_min_k", 2),
-            )
-
-    def run_sequential_defense(self, client_id: int):
-        """
-        SFLv2 only. Call once per client, right after that client's
-        local_train_splitfedv1 call has already mutated server_models[0] in
-        place (no restore, matching SFLv2) -- analyzes the resulting state
-        and rolls the server model back in place if SafeSplit flags this
-        step as malicious. No-op whenever aggr_server != "safesplit".
-        """
-        if self.safesplit_defense is None:
-            return True
-
-        model = self.server_models[0]
-        self._safesplit_step += 1
-        is_benign, rollback_sd = self.safesplit_defense.analyze(
-            model.state_dict(), client_id, self._safesplit_step
-        )
-        if not is_benign:
-            model.load_state_dict(rollback_sd)
-            # Optimizer momentum/state no longer matches the rolled-back
-            # weights -- reinit, mirroring ss_claude.py's Server.run_defense.
-            if self.args.model == "googlenet":
-                self.server_opts[0] = torch.optim.Adam(
-                    model.parameters(),
-                    lr=self.args.server_lr,
-                    weight_decay=getattr(self.args, "wd", 1e-4),
-                )
-            else:
-                self.server_opts[0] = torch.optim.SGD(
-                    model.parameters(),
-                    lr=self.args.server_lr,
-                    momentum=getattr(self.args, "momentum", 0.0),
-                    weight_decay=getattr(self.args, "weight_decay", 0.0),
-                )
-        return is_benign
 
     def smooth_cross_entropy(self, logits, targets, num_classes):
         with torch.no_grad():
@@ -719,30 +644,12 @@ class MainServer:
         elif getattr(self.args, "aggr_server", "avg") == "foolsgold":
             print(f'MS: foolsgold defended round:{rnd}, started at {defense_start_round}')
             aggregated = self.agg_foolsgold(agent_updates_dict)
-        elif getattr(self.args, "aggr_server", "avg") == "signguard":
-            print(f'MS: signguard defended round:{rnd}, started at {defense_start_round}')
-            aggregated = self.agg_signguard(agent_updates_dict)
         elif getattr(self.args, "aggr_server", "avg") == "mkrum":
             print(f'MS: mkrum defended round:{rnd}, started at {defense_start_round}')
             aggregated = self.agg_mkrum(agent_updates_dict)
-        elif getattr(self.args, "aggr_server", "avg") == "rfa":
-            print(f'MS: rfa defended round:{rnd}, started at {defense_start_round}')
-            aggregated = self.agg_rfa(agent_updates_dict)
         elif getattr(self.args, "aggr_server", "avg") == "feddlad":
             print(f'MS: feddlad defended round:{rnd}, started at {defense_start_round}')
             aggregated = self.agg_feddlad(agent_updates_dict)
-        elif getattr(self.args, "aggr_server", "avg") == "rlr":
-            # 1. Get the robustness mask from your function
-            # Note: we ignore the first return if it contains the raw sum_of_signs
-            _, rlr_mask = self.compute_robustLR(agent_updates_dict)
-            
-            # 2. Compute the standard average of updates
-            base_avg = torch.stack(list(agent_updates_dict.values())).mean(dim=0)
-            
-            # 3. Apply the mask and the server learning rate
-            # This ensures that only parameters with high agreement get updated
-            aggregated = base_avg * rlr_mask 
-        
         else:
             print(f'MS: not defended round:{rnd}, should have started at {defense_start_round}')
             # FedAvg-style weighted mean on deltas (no filtering)
@@ -785,23 +692,6 @@ class MainServer:
         
         return aggregated_tensor
 
-    def agg_rfa(self, agent_updates_dict):
-        local_updates = []
-
-        for _id, update in agent_updates_dict.items():
-            local_updates.append(update)
-
-        n = len(local_updates)
-        temp_updates = torch.stack(local_updates, dim=0)
-        weights = torch.ones(n).to(self.args.device)  
-        gw = compute_geometric_median(local_updates, weights).median
-        for i in range(2):
-            weights = torch.mul(weights, torch.exp(-1.0*torch.norm(temp_updates-gw, dim=1)))
-            gw = compute_geometric_median(local_updates, weights).median
-
-        aggregated_model = gw
-        return aggregated_model
-
     def agg_mkrum(self, agent_updates_dict):
         krum_param_m = 10
         def _compute_krum_score( vec_grad_list, byzantine_client_num):
@@ -843,20 +733,6 @@ class MainServer:
 
 
         return sum(return_updates)/len(return_updates)
-
-    def compute_robustLR(self, agent_updates_dict):
-        # Calculate the sum of signs across all clients
-        agent_updates_sign = [torch.sign(update) for update in agent_updates_dict.values()]  
-        sm_of_signs = torch.abs(sum(agent_updates_sign))
-        
-        # Create a mask: 1 where clients agree, 0 where they diverge
-        # self.args.theta is typically set to a value like 3 or 5
-        mask = torch.zeros_like(sm_of_signs)
-        mask[sm_of_signs >= self.args.theta] = 1.0
-        
-        # If you want to use the server_lr here:
-        # We return the mask. You apply the LR in the aggregation step.
-        return mask.to(self.args.device), mask
 
     def agg_mul_metric(self, agent_updates_dict, global_model, flat_global_model):
         local_updates = []
@@ -1101,11 +977,9 @@ import torchvision.models as models
 import torch.nn as nn
 def get_model(data, args):
     if data == 'cifar10':
-        model = ResNet9(3,num_classes=10, args=args)
+        model = ResNet18(3,num_classes=10, args=args)
     elif data == "mnist":
         model = ResNet18(1,num_classes=10, args=args)
-    elif data == 'tinyimagenet':
-        model = get_resnet18_64x64()
 
     return model
          
