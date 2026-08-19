@@ -3,21 +3,21 @@
 This repository contains the code accompanying the paper **"Can Federated Learning Backdoor
 Defenses Protect Parallel Split-Federated Learning?"**
 
-## What this is
+With the growing use of collaborative learning paradigms in distributed edge applications, hybrid approaches such as Split-Federated Learning (SFL) have emerged to combine the benefits of federated and split learning. 
+However, despite the increasing adoption of SFL to improve the trustworthiness of collaborative AI systems, the security of these systems has not been systematically studied, particularly with respect to backdoor attacks known to affect federated learning (FL). 
+While prior work has demonstrated that SFL is vulnerable to such attacks, it remains unexplored whether state-of-the-art FL defenses provide reliable protection in this setting.
 
-Split Federated Learning (SFL) splits each model between clients and one or more servers,
-combining the compute savings of split learning with the parallelism of federated learning.
-This codebase implements parallel SFL (SplitFedV1: clients train up to a split point, servers
-finish the forward/backward pass, updates are snapshotted and aggregated per round) alongside
-a standard Federated Learning (FL) baseline for comparison, and studies how well backdoor
-defenses originally designed for FL transfer to the SFL setting.
+In this work, we define multiple realistic threat models based on trust assumptions and the timing of defense deployment. We then analyze representative FL backdoor defenses in the parallel SFL setting under these models.
+Our findings show that in SFL, defense effectiveness is highly dependent on the entity responsible for defense deployment. 
+Among the considered methods, only one, namely \textit{AlignIns}, is found effective across most threat models. 
+Furthermore, in delayed-defense settings where the backdoor is already (at least partially) embedded into the model, defense effectiveness strongly depends on dataset complexity.
 
-It provides:
+## Contents:
 
 - **Backdoor attacks**: BadNets, DBA, and Neurotoxin, optionally combined with the Model
   Replacement technique (`--attack_mode replacement`).
 - **Defenses**: AlignIns, MKrum, MMetric, FoolsGold, and FedDLAD, applied independently on the
-  client-facing aggregation step and the (SFL-only) server-facing aggregation step.
+  Client Aggregation Server and Main Server.
 - **Datasets/models**: MNIST and CIFAR-10 (ResNet-18), and GTSRB (GoogLeNet).
 - A **sweeps/** folder of wandb sweep configs covering the full attack x defense x seed grid
   used in the paper, and a **results/** pipeline that pulls run data from wandb, aggregates it
@@ -29,7 +29,7 @@ It provides:
 * `src/src_more/`: Source code for the SFL/FL implementation, attacks, and defenses.
   * `sfl.py`: Entry point for Split Federated Learning experiments.
   * `federated.py`: Entry point for the standard FL baseline.
-  * `agent_split.py` / `agent.py`: Client-side training logic for SFL and FL respectively.
+  * `agent_split.py` / `agent.py`: Client-side training logic for SFL and FL, respectively.
   * `models.py`: Server-side split-model logic and update aggregation across rounds.
   * `aggregation.py`: Defense implementations (AlignIns, MKrum, MMetric, FoolsGold, FedDLAD).
   * `resnet.py`: ResNet/GoogLeNet architectures adapted for split training.
@@ -47,9 +47,7 @@ cd src
 conda activate sfl-backdoors
 ```
 
-This installs torch/torchvision from PyTorch's cu121 wheel index (see `requirements.txt`) rather than
-via conda, and is the only verified setup for GTSRB: torchvision must be >=0.15 for its built-in
-`datasets.GTSRB` loader.
+This installs torch/torchvision from PyTorch's cu121 wheel index (see `requirements.txt`) rather than via conda, and is the only verified setup for GTSRB: torchvision must be >=0.15 for its built-in `datasets.GTSRB` loader.
 
 ## Configuration and Parameters
 
@@ -77,19 +75,19 @@ via conda, and is the only verified setup for GTSRB: torchvision must be >=0.15 
 
 ### SFL
 
-**Basic experiment** -- 20 agents, AlignIns defense on the server side, CIFAR-10:
+**Basic experiment** -- 20 agents, AlignIns defense on the MS (server side), CIFAR-10:
 ```
 python sfl.py --num_agents 20 --aggr_server alignins --data cifar10
 ```
 
-**Backdoor attack only** -- BadNets with 5 corrupt agents targeting class 7:
+**Backdoor attack only** -- BadNets with 4 corrupt agents targeting class 7:
 ```
-python sfl.py --attack badnet --num_corrupt 5 --target_class 7 --poison_frac 0.5
+python sfl.py --attack badnet --num_corrupt 4 --target_class 7 --poison_frac 0.5
 ```
 
-**Attack + Model Replacement + defense** -- DBA with 4 corrupt agents, MKrum on both sides:
+**Attack + Model Replacement + defense** -- DBA with 4 corrupt agents, MKrum on both server, GTSRB:
 ```
-python sfl.py --attack DBA --attack_mode replacement --num_corrupt 4 --num_agents 20 --aggr mkrum --aggr_server mkrum --target_class 7 --poison_frac 0.5
+python sfl.py --data gtsrb --model googlenet --attack DBA --attack_mode replacement --num_corrupt 4 --num_agents 20 --aggr mkrum --aggr_server mkrum --target_class 7 --poison_frac 0.5
 ```
 
 ### FL
@@ -111,8 +109,7 @@ python federated.py --attack badnet --num_corrupt 4 --num_agents 20 --aggr_serve
 
 ### Reproducing the paper's experiment grid (wandb sweeps)
 
-`sweeps/base/` contains one sweep config per dataset covering the full attack x
-attack_mode x defense x seed grid (plus a `clean_*.yaml` companion for the no-attack baseline);
+`sweeps/base/` contains one sweep config per dataset covering the full attack x attack_mode x defense x seed grid (plus a `clean_*.yaml` companion for the no-attack baseline);
 `sweeps/round/` contains the defense-start-round experiments. To launch one:
 ```
 cd src/src_more
