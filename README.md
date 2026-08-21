@@ -131,5 +131,10 @@ own wandb project name(s) in its first cell (`PROJECTS = [...]`), then run it to
 ## Citation
 
 If you use this code, please cite:
-
-> Can Federated Learning Backdoor Defenses Protect Parallel Split-Federated Learning?
+```
+@inproceedings{
+  title={Can Federated Learning Backdoor Defenses Protect Parallel Split-Federated Learning?},
+  author={Yelyzaveta Klysa, Milica Aleksic, Rudolf Mayer},
+  year={2026}
+}
+```
