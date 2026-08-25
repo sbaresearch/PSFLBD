@@ -4,7 +4,7 @@ This repository contains the code accompanying the paper **"Can Federated Learni
 Defenses Protect Parallel Split-Federated Learning?"**
 
 With the growing use of collaborative learning paradigms in distributed edge applications, hybrid approaches such as Split-Federated Learning (SFL) have emerged to combine the benefits of federated and split learning. 
-However, despite the increasing adoption of SFL to improve the trustworthiness of collaborative AI systems, the security of these systems has not been systematically studied, particularly with respect to backdoor attacks known to affect federated learning (FL). 
+Despite the increasing adoption of SFL to improve the trustworthiness of collaborative AI systems, the security of these systems has not been systematically studied, particularly with respect to backdoor attacks known to affect federated learning (FL). 
 While prior work has demonstrated that SFL is vulnerable to such attacks, it remains unexplored whether state-of-the-art FL defenses provide reliable protection in this setting.
 
 In this work, we define multiple realistic threat models based on trust assumptions and the timing of defense deployment. We then analyze representative FL backdoor defenses in the parallel SFL setting under these models.
@@ -131,5 +131,10 @@ own wandb project name(s) in its first cell (`PROJECTS = [...]`), then run it to
 ## Citation
 
 If you use this code, please cite:
-
-> Can Federated Learning Backdoor Defenses Protect Parallel Split-Federated Learning?
+```
+@inproceedings{
+  title={Can Federated Learning Backdoor Defenses Protect Parallel Split-Federated Learning?},
+  author={Yelyzaveta Klysa, Milica Aleksic, Rudolf Mayer},
+  year={2026}
+}
+```
