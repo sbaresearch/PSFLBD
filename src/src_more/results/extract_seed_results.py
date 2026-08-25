@@ -12,9 +12,7 @@ from pathlib import Path
 import wandb
 
 PROJECT_NAMES = [
-    "fl-backdoors-code_src_src_more",
-    "split-fed-backdoor-3",
-    "sfl2",
+    ""
 ]
 
 MIN_ROUNDS = 200

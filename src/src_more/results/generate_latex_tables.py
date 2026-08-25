@@ -242,7 +242,7 @@ LOWER_IS_BETTER = {"asr": True, "acc": False, "ra": False}
 RED_METRICS = {"asr"}
 
 
-def render_table1_rows(idx, datasets=("cifar10", "gtsrb")):
+def render_table1_rows(idx, datasets=("mnist", "cifar10", "gtsrb")):
     """Table 1 body rows only (baseline attacks, aggr=avg, aggr_server=avg).
     No caption/label/tabular wrapper -- paste directly between \\toprule and
     \\bottomrule of the existing table."""
@@ -261,7 +261,7 @@ def render_table1_rows(idx, datasets=("cifar10", "gtsrb")):
     return "\n".join(lines)
 
 
-def render_defense_table_rows(idx, defenses, role, datasets=("cifar10", "gtsrb"), highlight_datasets=()):
+def render_defense_table_rows(idx, defenses, role, datasets=("mnist", "cifar10", "gtsrb"), highlight_datasets=()):
     """Table 2/3 body rows only (role='CAS': aggr varies, aggr_server=avg fixed;
     role='MS': aggr=avg fixed, aggr_server varies). No caption/label/tabular
     wrapper -- paste directly between \\toprule and \\bottomrule.
@@ -314,7 +314,7 @@ def render_defense_table_rows(idx, defenses, role, datasets=("cifar10", "gtsrb")
     return "\n".join(lines)
 
 
-def render_both_defense_rows(idx, defenses, datasets=("cifar10", "gtsrb"), mode="baseline", highlight_datasets=()):
+def render_both_defense_rows(idx, defenses, datasets=("mnist", "cifar10", "gtsrb"), mode="baseline", highlight_datasets=()):
     """Table 4 body rows only: both CAS and MS defenses applied together,
     neither side left at 'avg'. The paper's original both-defenses table has
     no MR column -- confirmed against the published numbers that it reports
@@ -434,8 +434,8 @@ def main():
     files = {
         "table1_baseline_rows.tex": render_table1_rows(idx),
         "table2_CAS_defense_rows.tex": render_defense_table_rows(idx, defenses, role="CAS", highlight_datasets=("gtsrb",)),
-        "table3_MS_defense_rows.tex": render_defense_table_rows(idx, defenses, role="MS", highlight_datasets=("gtsrb", "cifar10")),
-        "table4_both_defense_rows.tex": render_both_defense_rows(idx, both_defenses, highlight_datasets=("gtsrb", "cifar10")),
+        "table3_MS_defense_rows.tex": render_defense_table_rows(idx, defenses, role="MS", highlight_datasets=("gtsrb", "cifar10", "mnist")),
+        "table4_both_defense_rows.tex": render_both_defense_rows(idx, both_defenses, highlight_datasets=("gtsrb", "cifar10", "mnist")),
     }
     for name, content in files.items():
         path = OUT_DIR / name
