@@ -136,9 +136,9 @@ If you use this code, please cite:
   author={Klysa, Yelyzaveta and Aleksic, Milica and Mayer, Rudolf},
   booktitle={2026 22nd International Conference on Wireless and Mobile Computing, Networking and Communications (WiMob)}, 
   title={Can Federated Learning Backdoor Defenses Protect Parallel Split-Federated Learning?},
-  month = {oct},
+  month={oct},
   year={2026},
-  issn = {2160-4894},
+  issn={2160-4894},
   pages={1-8},
   keywords={Federated learning;Modeling;Servers;Printing;Training;Threat modeling;Learning (artificial intelligence);Architecture;Computer architecture;split-federated learning;machine learning security;backdoor defenses},
   doi={10.1109/WiMob70978.2026.11777847}
